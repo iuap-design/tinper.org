@@ -1,0 +1,213 @@
+/*下拉框开始*/
+    .u-combo{
+        /*width:500px;*/
+        margin:20px;
+    }
+/*下拉框结束*/
+
+/*复选框开始*/
+    .u-checkbox-labelauty {
+        width: auto;
+        height: 32px;
+        padding: 2px 8px;
+        border: solid 1px #ccc;
+    }
+
+    .u-checkbox-labelauty:hover {
+        border: solid 2px #e4393c;
+        padding: 1px 7px;
+        color: #e4393c;
+    }
+
+    .u-checkbox-labelauty.u-checkbox.is-upgraded {
+        padding-left: 8px;
+    }
+
+    .u-checkbox-labelauty:hover.u-checkbox.is-upgraded, .u-checkbox-labelauty.is-upgraded.is-checked {
+        padding-left: 7px;
+    }
+
+    .u-checkbox-labelauty.is-checked {
+        border: solid 2px #e4393c;
+        padding: 1px 7px;
+    }
+
+    .u-checkbox-labelauty .u-checkbox-label {
+        display: inline-block;
+    }
+
+    .u-checkbox-labelauty .u-checkbox-outline {
+        display: none;
+    }
+
+    .u-checkbox-labelauty.is-checked:before {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        content: ' ';
+        border-left: 12px solid transparent;
+        border-bottom: 12px solid #e4393c;
+    }
+
+    .u-checkbox-labelauty.is-checked:after {
+        -webkit-transform: rotate(45deg) scale(.8);
+        transform: rotate(45deg) scale(.8);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: table;
+        width: 5px;
+        height: 8px;
+        box-sizing: border-box;
+        border: 2px solid #fff;
+        border-top: 0;
+        border-left: 0;
+        content: ' ';
+        -webkit-transition: all .2s cubic-bezier(.12,.4,.29,1.46) .1s;
+        transition: all .2s cubic-bezier(.12,.4,.29,1.46) .1s;
+    }
+/*复选框结束*/
+
+/*单选框开始*/
+/*单选框结束*/
+
+/*输入框开始*/
+/*输入框结束*/
+
+/*自动完成开始*/
+
+    .demo .u-badge, .demo .u-avatar {
+        display: inline-block;
+    }
+
+/*自动完成结束*/
+
+
+.u-form-group h4{
+	line-height: 0px;
+    font-weight: normal;
+}
+.margin-bottom-30{
+	margin-bottom: 30px;
+}
+.margin-bottom-15{
+	margin-bottom: 15px;
+}
+.u-button-file input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+/*需要删除 测试完后再删除*/
+
+/*.u-form-control.round{
+	border-radius: 20px;
+}
+.u-form-control {
+	border-radius: 4px;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #f3f7f9;
+    opacity: 1;
+}
+.u-form-control.focus, .u-form-control:focus {
+    border-color: #62a8ea;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.form-control-static {
+    min-height: 36px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
+}
+
+.u-input-group {
+    margin-bottom:10px;
+}
+.u-button-file input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+.u-form-control-feedback.u-button-success{
+	border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #fff;
+}
+.help-block {
+    display: block;
+    color: #bcc2c8;
+    margin-top: 7px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+.noborder{
+	border:none;
+}
+.u-input-dark .u-form-control{
+	background: #f3f7f9;
+}
+.u-input-icon-left{
+	left: 0 !important;
+}
+.u-input-icon-left + .u-form-control{
+	padding-left: 30px;
+}
+.u-input-search .uf-removesymbol:hover{
+	color: #7C7A7A;
+}
+.u-input-sm {
+    height: 32px;
+    padding: 6px 13px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 2px;
+}
+.u-input-lg {
+    height: 46px;
+    padding: 10px 18px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 4px;
+}
+select[multiple]{
+    overflow-y: auto;
+    height: auto;
+}
+textarea.u-form-control{
+	height: auto;
+}
+.u-input-icon-left label.u-checkbox{
+	margin-left: 10px;
+    margin-top: 6px;
+}
+.u-input-icon-left label.u-radio{
+    margin-top: 2px;
+    position: inherit;
+    margin-left: -9px;
+}
+.rightborder{
+    border-right: 1px solid #CECECE;
+}
+.leftborder{
+    border-left: 1px solid #CECECE;
+}
+.input-group-addon{
+	width: auto;
+	padding: 0 5px;
+}*/

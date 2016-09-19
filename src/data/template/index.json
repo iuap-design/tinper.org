@@ -1,0 +1,292 @@
+{
+	"list":[
+	    {
+	        "title": "空模板",
+	        "id": "1302",
+	        "decription": "为设计器预置",
+	        "content_img": "img/main_23.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/blank/index.html",
+	        "editurl": "http://design.yyuap.com/designer/#/preview/blank",
+	        "download": "/templates/dist/blank.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "主题模板",
+	        "id": "1101",
+	        "decription": "模块化的宣传主题，整个网站围绕一个中心，效果较有冲击感",
+	        "content_img": "img/main_22.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/liyue-static/index.html",
+	        "download": "/templates/dist/liyue.zip",
+	        "editurl": "http://design.yyuap.com/designer/#/preview/liyue",
+	        "using_times": "298",
+	        "for_area": ["互联网","体育"]
+	    },{
+	        "title": "运维管理模板",
+	        "id": "0301",
+	        "decription": "发展可持续、完善易有序、拓展能稳定",
+	        "content_img": "img/main_5.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/tenxcloud/index.html",
+	        "download": "/templates/dist/tenxcloud.zip",
+	        "editurl": "http://design.yyuap.com/designer/#/preview/tenxcloud",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "运维管理模板",
+	        "id": "0102",
+	        "decription": "发展可持续、完善易有序、拓展能稳定",
+	        "content_img": "img/main_12.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/tenxcloud1/index.html",
+	        "download": "/templates/dist/tenxcloud.zip",
+	        "editurl": "http://design.yyuap.com/designer/#/preview/tenxcloud1",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "landing page模板",
+	        "id": "1002",
+	        "decription": "模块化的宣传，合理的防治图片和内容，利于产品的推广",
+	        "content_img": "img/main_20.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/talentHome/index.html",
+	        "editurl": "http://design.yyuap.com/designer/#/preview/talentHome",
+	        "download": "/templates/dist/talentHome.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "电商模板",
+	        "id": "0401",
+	        "decription": "站在用户的角度，针对性的为用户提供刚需",
+	        "content_img": "img/main_4.png",
+	        "phone_img": "img/phone_4.jpg",
+	        "url": "/templates/website/e-commerce/index.html",
+	        "download": "/templates/dist/e-commerce.zip",
+	        "using_times": "100",
+	        "for_area": ["电商"]
+	    },{
+	        "title": "电商模板",
+	        "id": "0402",
+	        "decription": "站在用户的角度，针对性的为用户提供刚需",
+	        "content_img": "img/main_24.png",
+	        "phone_img": "img/phone_4.jpg",
+	        "url": "/templates/website/chinaMobile/index.html",
+	        "download": "/templates/dist/chinaMobile.zip",
+	        "using_times": "120",
+	        "for_area": ["电商"]
+	    },{
+	        "title": "菜单布局模板",
+	        "id": "0201",
+	        "decription": "可伸缩导航布局，伸展时展示全部nav，收起显示具体图标",
+	        "content_img": "img/main_13.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/menuNavLayout/index.html",
+	        "download": "/templates/dist/menuNavLayout.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "landing page模板",
+	        "id": "1001",
+	        "decription": "模块化的宣传，合理的防治图片和内容，利于产品的推广",
+	        "content_img": "img/main_21.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/productHome/index.html",
+	        "download": "/templates/dist/productHome.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "金融理财模板",
+	        "id": "0101",
+	        "decription": "深耕银行、券商等金融机构的高净值客户，致力于打造专业的媒体管理模板",
+	        "content_img": "img/main_6.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "http://design.yyuap.com/ficloud/home/statistics",
+	        "download": "javascript:;",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "左侧菜单布局模板",
+	        "id": "0201",
+	        "decription": "可伸缩导航布局，伸展时展示全部nav，显示全部内容",
+	        "content_img": "img/main_19.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/left-menu-layout-1/index.html",
+	        "download": "/templates/dist/left-menu-layout-1.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","电商"]
+	    },{
+	        "title": "金融理财模板",
+	        "id": "0501",
+	        "decription": "犹如纸上办公，胜似之！方便！快捷！高效！",
+	        "content_img": "img/main_7.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "http://design.yyuap.com/ficloud/voucher/node/20020PREPA",
+	        "download": "javascript:;",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "数字营销模板",
+	        "id": "0601",
+	        "decription": " 简约、大气的类京东风格，适用于电商、金融或者其他领域！",
+	        "content_img": "img/main_8.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/eccm/html/baseinfo/baseinfo.html",
+	        "download": "/templates/dist/eccm.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "数字营销模板",
+	        "id": "0602",
+	        "decription": " 简约、大气的类京东风格，适用于电商、金融或者其他领域！",
+	        "content_img": "img/main_11.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/eccm/html/template/template.html",
+	        "download": "/templates/dist/eccm.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "数字营销模板",
+	        "id": "0603",
+	        "decription": " 简约、大气的类京东风格，适用于电商、金融或者其他领域！",
+	        "content_img": "img/main_9.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/eccm/html/goodsproperty/goodsproperty.html",
+	        "download": "/templates/dist/eccm.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "数字营销模板",
+	        "id": "0604",
+	        "decription": " 简约、大气的类京东风格，适用于电商、金融或者其他领域！",
+	        "content_img": "img/main_10.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/eccm/html/goodspublish/goodspublish.html",
+	        "download": "/templates/dist/eccm.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","金融"]
+	    },{
+	        "title": "SAAS应用类模板",
+	        "id": "0701",
+	        "decription": "给企业提供一个数据平台，支持接入各种数据库，整理企业数据",
+	        "content_img": "img/main_1.png",
+	        "phone_img": "img/phone_1.jpg",
+	        "url": "/templates/website/hr/list.html",
+	        "download": "/templates/dist/hr.zip",
+	        "using_times": "772",
+	        "for_area": ["互联网"]
+	    },{
+	        "title": "SAAS应用类模板",
+	        "id": "0702",
+	        "decription": "致力于为企业 | 企业内部交流",
+	        "content_img": "img/main_2.png",
+	        "phone_img": "img/phone_2.jpg",
+	        "url": "/templates/website/hr/apply.html",
+	        "download": "/templates/dist/hr.zip",
+	        "using_times": "772",
+	        "for_area": ["互联网"]
+	    },{
+	        "title": "协同办公模板",
+	        "id": "0801",
+	        "decription": "高效解决日常办公、资产管理、业务管理、信息交流等常规协同",
+	        "content_img": "img/main_3.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/cooperating/index.html",
+	        "download": "/templates/dist/cooperating.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","建筑"]
+	    },{
+	        "title": "登录模板",
+	        "id": "0901",
+	        "decription": "简易网页登录",
+	        "content_img": "img/main_14.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/login1/index-center.html",
+	        "download": "/templates/dist/login1.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","建筑"]
+	    },{
+	        "title": "登录模板",
+	        "id": "0902",
+	        "decription": "简易网页登录",
+	        "content_img": "img/main_15.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/login1/index-left.html",
+	        "download": "/templates/dist/login1.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","建筑"]
+	    },{
+	        "title": "登录模板",
+	        "id": "0903",
+	        "decription": "简易网页登录",
+	        "content_img": "img/main_16.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/login1/index.html",
+	        "download": "/templates/dist/login1.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","建筑"]
+	    },{
+	        "title": "电商后台管理——列表模板",
+	        "id": "0402",
+	        "decription": "后端管理的列表页面",
+	        "content_img": "img/main_17.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/yuncai/index.html",
+	        "download": "/templates/dist/yuncai.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","电商"]
+	    },{
+	        "title": "电商后台管理——左树右表模板",
+	        "id": "0403",
+	        "decription": "内容区左侧是树，右侧是tab页签里面有列表和表单内容",
+	        "content_img": "img/main_18.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/yuncai/departManager.html",
+	        "download": "/templates/dist/yuncai.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网","电商"]
+	    },{
+	        "title": "忘记密码模版",
+	        "id": "1401",
+	        "decription": "简易的忘记密码模版",
+	        "content_img": "img/main_25.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/forgot-password/index.html",
+	        "download": "/templates/dist/forgot-password.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网"]
+	    },{
+	        "title": "注册模版",
+	        "id": "1501",
+	        "decription": "简易的网页注册模版",
+	        "content_img": "img/main_26.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/register2/index.html",
+	        "download": "/templates/dist/register2.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网"]
+	    },{
+	        "title": "注册模版",
+	        "id": "1502",
+	        "decription": "简易的网页注册模版",
+	        "content_img": "img/main_27.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/register2/index-left.html",
+	        "download": "/templates/dist/register2.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网"]
+	    },{
+	        "title": "注册模版",
+	        "id": "1503",
+	        "decription": "简易的网页注册模版",
+	        "content_img": "img/main_28.png",
+	        "phone_img": "img/phone_3.jpg",
+	        "url": "/templates/website/register2/index-center.html",
+	        "download": "/templates/dist/register2.zip",
+	        "using_times": "228",
+	        "for_area": ["互联网"]
+	    }
+
+	]
+
+}

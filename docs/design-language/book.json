@@ -1,0 +1,27 @@
+{
+	"generator": "site",
+	"extension": null,
+	"github": null,
+	"githubHost": "https://github.com/iuap-design/iuap-design",
+	"title":"iUAP Design",
+	"description":"UI Framework For Enterprise",
+	"language":"zh-hans",
+	"output": "../../dist/pages/design-language",
+	"theme":"node_modules/gitbook-plugin-iuap-design/theme/",
+	"plugins": [
+		"anchor-navigation",
+		"-expandable-chapters",
+		"-search",
+		"-livereload",
+		"-fontsettings",
+		"-sharing",
+		"-search-pro",
+		"iuap-design"
+	],
+	"pluginsConfig": {
+		"iuap-design": {
+			"title": "设计语言",
+			"desc": "设计语言的特性、原则、字体、文案、排版等"
+		}
+	}
+}
