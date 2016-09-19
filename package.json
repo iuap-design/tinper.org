@@ -15,7 +15,7 @@
     "url": "git+https://github.com/iuap-design/tinper.io.git"
   },
   "author": "YY-FED",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iuap-design/tinper.io/issues"
   },
