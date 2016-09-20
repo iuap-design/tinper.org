@@ -88,19 +88,7 @@
         "name": "筛选栏",
         "url": "demos/complex/filterBar"
     }]
-}, {
-    "name": "kero",
-    "sub": [{
-        "name": "单选框",
-        "url": "demos/kero/radio"
-    }, {
-        "name": "下拉列表",
-        "url": "demos/kero/combobox"
-    }, {
-        "name": "复选框",
-        "url": "demos/kero/checkbox"
-    }]
-}, {
+},{
     "name": "表单",
     "sub": [{
         "name": "基本元素",
