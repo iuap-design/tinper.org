@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <!-- 引入head -->
+ {{include '../../../base/public/header'}}
+</head>
+<body>
+ <!-- side bar -->
+ <div>
+ <ul> <li><a href="message.html">提示消息 message</a></li> <li><a href="pagination.html">分页 pagination</a></li> <li><a href="message.html">消息 message</a></li> <li><a href="tooltip.html">提示 tooltip</a></li> <li><a href="breadcrumb.html">面包屑 breadcrumb</a></li> <li><a href="panel.html">面板 panel</a></li> <li><a href="dropdown.html">下拉 dropdown</a></li> <li><a href="buttongroup.html">按钮组 buttongroup</a></li> <li><a href="inputgroup.html">输入框组 inputgroup</a></li> <li><a href="navbar.html">导航条 navbar</a></li> <li><a href="thumbnail.html">缩略图 thumbnail</a></li> <li><a href="media.html">媒体对象 meida</a></li> <li><a href="listgroup.html">列表组 listgroup</a></li> <li><a href="gallery.html">图片画廊 gallery</a></li> <li><a href="statisticWidget.html">卡片</a></li> </ul>
+ </div>
+
+ <!-- content -->
+ <div>
+ 
+<p>#示例介绍
+该示例为一个输入框，可以将用户输入的内容绑定到datatable对象当中，输入的值可以在页面中立即显示，默认输入“hello World！”。</p>
+<h1 id="-">引入文件</h1>
+<p>相关文件的下载请参考基础开发内容。</p>
+<h2 id="-css-">引入css文件</h2>
+<p>在页头引入u.css</p>
+<pre><code>&lt;link href=&quot;//design.yyuap.com/static/uui/latest/css/u.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre><h2 id="-js-">引入js文件</h2>
+<p>kero模板依赖于knockout，所以需要先引入knockout文件，再引入u.js</p>
+<pre><code>&lt;script src=&quot;//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//design.yyuap.com/static/uui/latest/js/u.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>#具体代码</p>
+<ul>
+<li>创建<code>datatable</code>对象dt1，定义字段信息，初始化页面适配器app。</li>
+</ul>
+<pre><code>var app, viewModel;
+
+viewModel = {
+ dt1: new u.DataTable({
+ meta: {
+ field1: {}
+ }
+ })
+
+}
+
+app = u.createApp({
+ el: &#39;body&#39;,
+ model: viewModel
+ });
+
+//创建空行
+var r = viewModel.dt1.createEmptyRow();
+//对字段1赋值
+r.setValue(&#39;field1&#39;, &#39;hello World!&#39;);
+//将第0行最为当前行
+viewModel.dt1.setRowSelect(0);
+</code></pre><ul>
+<li>使用<code>u-meta</code>进行datatable和html页面进行绑定，此时输入的field1的值可以立即显示到下面的span标签中。</li>
+</ul>
+<pre><code>&lt;div class=&quot;u-text&quot; u-meta=&#39;{&quot;id&quot;:&quot;field1&quot;,&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;field1&quot;}&#39;&gt;
+ &lt;input class=&quot;u-input&quot; /&gt;
+ &lt;label class=&quot;u-label&quot;&gt;field1&lt;/label&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;br&gt; 您输入的值为：
+&lt;span data-bind=&quot;text:dt1.ref(&#39;field1&#39;)&quot;&gt;&lt;/span&gt;
+</code></pre><p><a href="../webIDE/index.html#/demos/quitstart/kero">试一试</a></p>
+ </div>
+
+ <!-- 引入end -->
+ {{include '../../../base/public/footer'}}
+</body>
+</html>

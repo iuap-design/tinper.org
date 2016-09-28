@@ -16,14 +16,23 @@
  <!-- content -->
  <div>
  
-<h1 id="tree-">tree控件</h1>
-<p>tree控件</p>
-<h1 id="-">如何使用</h1>
-<p>暂无</p>
+<h1 id="tree-">tree插件</h1>
+<p>多层嵌套节点显示</p>
+<h1 id="-">插件依赖</h1>
+<p><a href="http://design.yyuap.com/static/uui/latest/js/u.js">http://design.yyuap.com/static/uui/latest/js/u.js</a></p>
+<p><a href="http://design.yyuap.com/static/uui/latest/css/u.css">http://design.yyuap.com/static/uui/latest/css/u.css</a></p>
+<h1 id="-">用法</h1>
+<p>1.创建id为<code>treeTest</code>父元素，并且配置<code>u-meta</code></p>
+<pre><code>&lt;div id=&quot;treeTest&quot; class=&quot;ztree&quot; u-meta=&#39;{&quot;multiSelect&quot;:&quot;true&quot;,&quot;id&quot;:&quot;tree2&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;tree&quot;,&quot;idField&quot;:&quot;id&quot;,&quot;pidField&quot;:&quot;pid&quot;,&quot;nameField&quot;:&quot;title&quot;,&quot;setting&quot;:&quot;treeSetting&quot;}&#39;&gt;&lt;/div&gt;
+</code></pre><p>2.js配置数据并绑定事件，详情见示例</p>
 <h1 id="-">示例</h1>
 <p>##基础Tree</p>
 <p>用于多层目录的嵌套结构的数据。</p>
-<div class="example-content"><script>$(document).ready(function () {
+<div class="example-content"><!-- <div id="demoLeft"> -->
+ <div id="treeTest" class="ztree" u-meta='{"multiSelect":"true","id":"tree2","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'></div>
+<!-- </div> -->
+ </div>
+<div class="example-content ex-hide"><script>$(document).ready(function () {
  var viewModel = {
  treeSetting:{
  view:{
@@ -93,15 +102,17 @@ var app = u.createApp();
  }
  ]
  }
- // $.ajax({
- // type: &#39;GET&#39;,
- // url: &#39;treeJson.json&#39;,
- // dataType: &#39;JSON&#39;,
- // async: true,
- // success: function (data) {
+ // ajax 获取数据源
+ /<em> $.ajax({
+ type: &#39;GET&#39;,
+ url: &#39;treeJson.json&#39;,
+ dataType: &#39;JSON&#39;,
+ async: true,
+ success: function (data) {
 
- // }
- // });
+ }
+ }); 
+ </em>/
  viewModel.dataTable.setData(data);
  window.app=app;
  $(&quot;#addOneRow1&quot;).on(&quot;click&quot;,function(){
@@ -127,11 +138,11 @@ var app = u.createApp();
  viewModel.dataTable.removeAllRows();
  })
 });
-</script>
-<!-- <div id="demoLeft"> -->
- <div id="treeTest" class="ztree" u-meta='{"multiSelect":"true","id":"tree2","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'></div>
-<!-- </div> -->
-
+</script></div>
+<div class="examples-code"><pre><code>&lt;!-- &lt;div id=&quot;demoLeft&quot;&gt; --&gt;
+ &lt;div id=&quot;treeTest&quot; class=&quot;ztree&quot; u-meta=&#39;{&quot;multiSelect&quot;:&quot;true&quot;,&quot;id&quot;:&quot;tree2&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;tree&quot;,&quot;idField&quot;:&quot;id&quot;,&quot;pidField&quot;:&quot;pid&quot;,&quot;nameField&quot;:&quot;title&quot;,&quot;setting&quot;:&quot;treeSetting&quot;}&#39;&gt;&lt;/div&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+ </code></pre>
 </div>
 <div class="examples-code"><pre><code>$(document).ready(function () {
  var viewModel = {
@@ -203,15 +214,17 @@ var app = u.createApp();
  }
  ]
  }
- // $.ajax({
- // type: &#39;GET&#39;,
- // url: &#39;treeJson.json&#39;,
- // dataType: &#39;JSON&#39;,
- // async: true,
- // success: function (data) {
+ // ajax 获取数据源
+ /<em> $.ajax({
+ type: &#39;GET&#39;,
+ url: &#39;treeJson.json&#39;,
+ dataType: &#39;JSON&#39;,
+ async: true,
+ success: function (data) {
 
- // }
- // });
+ }
+ }); 
+ </em>/
  viewModel.dataTable.setData(data);
  window.app=app;
  $(&quot;#addOneRow1&quot;).on(&quot;click&quot;,function(){
@@ -238,33 +251,12 @@ var app = u.createApp();
  })
 });</code></pre>
 </div>
-<div class="examples-code"><pre><code>&lt;!-- &lt;div id=&quot;demoLeft&quot;&gt; --&gt;
- &lt;div id=&quot;treeTest&quot; class=&quot;ztree&quot; u-meta=&#39;{&quot;multiSelect&quot;:&quot;true&quot;,&quot;id&quot;:&quot;tree2&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;tree&quot;,&quot;idField&quot;:&quot;id&quot;,&quot;pidField&quot;:&quot;pid&quot;,&quot;nameField&quot;:&quot;title&quot;,&quot;setting&quot;:&quot;treeSetting&quot;}&#39;&gt;&lt;/div&gt;
-&lt;!-- &lt;/div&gt; --&gt;
- </code></pre>
-</div>
 
 
-<!--### 示例1
 
-示例1说明
-
-### 示例2
-
-示例2说-->
 <h1 id="api">API</h1>
-<h2 id="-">属性</h2>
-<p>暂无
-&lt;!--### 属性1</p>
-<p>属性1说明</p>
-<h3 id="-2">属性2</h3>
-<p>属性2说明--&gt;</p>
-<h2 id="-">方法</h2>
-<p>暂无
-&lt;!--### 方法1</p>
-<p>方法1说明</p>
-<h3 id="-2">方法2</h3>
-<p>方法2说明--&gt;</p>
+<p>##js参数
+data : 实际数据，自行配置数据结构</p>
  </div>
 
  <!-- 引入end -->

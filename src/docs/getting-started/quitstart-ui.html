@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <!-- 引入head -->
+ {{include '../../../base/public/header'}}
+</head>
+<body>
+ <!-- side bar -->
+ <div>
+ <ul> <li><a href="message.html">提示消息 message</a></li> <li><a href="pagination.html">分页 pagination</a></li> <li><a href="message.html">消息 message</a></li> <li><a href="tooltip.html">提示 tooltip</a></li> <li><a href="breadcrumb.html">面包屑 breadcrumb</a></li> <li><a href="panel.html">面板 panel</a></li> <li><a href="dropdown.html">下拉 dropdown</a></li> <li><a href="buttongroup.html">按钮组 buttongroup</a></li> <li><a href="inputgroup.html">输入框组 inputgroup</a></li> <li><a href="navbar.html">导航条 navbar</a></li> <li><a href="thumbnail.html">缩略图 thumbnail</a></li> <li><a href="media.html">媒体对象 meida</a></li> <li><a href="listgroup.html">列表组 listgroup</a></li> <li><a href="gallery.html">图片画廊 gallery</a></li> <li><a href="statisticWidget.html">卡片</a></li> </ul>
+ </div>
+
+ <!-- content -->
+ <div>
+ 
+<h1 id="-">下载文件</h1>
+<p>进入<a href="http://design.yyuap.com/">iuap design 官网</a>，点击右下角的“下载体验 iuap design”按钮进行下载。</p>
+<p>项目中需要引入的css、js文件可以从下载css、js目录中查找。以下为相关文件说明：</p>
+<p>整个文件分为三大类：</p>
+<ul>
+<li>u.js、u.css——项目开发必须引入的文件</li>
+<li>u-grid.js、grid.css——表格相关文件</li>
+<li>u-tree.js、tree.css——树相关文件</li>
+<li>u-polyfill.js——兼容ie浏览器相关文件</li>
+</ul>
+<p>其中u.js可以拆分为u-model.js（kero开发相关文件）、u-date.js(时间开发相关文件)、u-ui.js(基础控件相关文件)</p>
+<h1 id="-">引入文件</h1>
+<p>引入文件的路径有2种方式,分别为：通过cdn地址引入、将下载的文件放到项目中根据实际路径引入</p>
+<ul>
+<li>通过cdn引入</li>
+</ul>
+<pre><code>&lt;link href=&quot;//design.yyuap.com/static/uui/latest/css/u.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre><ul>
+<li>通过具体路径引入</li>
+</ul>
+<pre><code>&lt;link href=&quot;yourPath/uui/css/u.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre><h2 id="-css-">引入css文件</h2>
+<p>在head标签内，引入css文件。u.css文件是必要要引入的，其余的css文件可根据具体的需求引入。以cdn方式引入为例：</p>
+<pre><code>&lt;link href=&quot;//design.yyuap.com/static/uui/latest/css/u.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre><h2 id="-js-">引入js文件</h2>
+<p>在文件的尾部引入js文件。</p>
+<pre><code>&lt;script src=&quot;//design.yyuap.com/static/jquery/jquery-1.11.2.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//design.yyuap.com/static/uui/latest/js/u.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>如果开发kero相关项目，需要在引入u.js前引入knouckout.js</p>
+<pre><code>&lt;script src=&quot;//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>#编写页面内容</p>
+<p>在开发中需要的基础css、js插件、组件请参考<a href="http://design.yyuap.com/dist/pages/neoui/index.html">neoui</a>中的内容.</p>
+<p>#代码</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+ &lt;meta charset=&quot;UTF-8&quot;&gt;
+ &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+ &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+ &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;
+ &lt;meta name=&quot;viewport&quot;
+ content=&quot;width=device-width, initial-scale=1&quot;&gt;
+ &lt;title&gt;iuap design Demo&lt;/title&gt;
+
+ &lt;meta name=&quot;renderer&quot; content=&quot;webkit&quot;&gt;
+ &lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-siteapp&quot;/&gt;
+ &lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;
+ &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;
+ &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot;&gt;
+ &lt;meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;iuap design&quot;/&gt;
+
+ &lt;!-- 整体样式u.css,必须引入 --&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;//design.yyuap.com/static/uui/latest/css/u.css&quot;&gt;
+
+ &lt;!-- 可选：使用grid图表相关插件，加载grid.css --&gt;
+ &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//design.yyuap.com/static/uui/latest/css/grid.css&quot;&gt;
+
+ &lt;!-- 可选：使用tree相关插件，加载tree.css --&gt;
+ &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//design.yyuap.com/static/uui/latest/css/tree.css&quot;&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;h1&gt; Hi, iuap design &lt;/h1&gt;
+
+ &lt;!-- 你的代码 --&gt;
+
+ &lt;!-- 依赖jQuery,必须在核心js加载前引入 --&gt;
+ &lt;script src=&quot;//design.yyuap.com/static/jquery/jquery-1.11.2.js&quot;&gt;&lt;/script&gt;
+
+ &lt;!--[if lte IE 8 ]&gt;
+ &lt;!-- 针对ie8,Polyfill --&gt;
+
+ &lt;script src=&quot;//design.yyuap.com/static/uui/latest/js/u-polyfill.js&quot;&gt;&lt;/script&gt;
+ &lt;![endif]--&gt;
+
+ &lt;!-- 核心js 必须引入 --&gt;
+
+ &lt;script src=&quot;//design.yyuap.com/static/uui/latest/js/u.js&quot;&gt;&lt;/script&gt;
+ &lt;!-- 可选：使用grid图表相关插件，加载u-grid.js --&gt;
+ &lt;script src=&quot;//design.yyuap.com/static/uui/latest/js/u-grid.js&quot;&gt;&lt;/script&gt;
+
+ &lt;!-- 可选：使用tree相关插件，加载u-tree.js --&gt;
+ &lt;script src=&quot;//design.yyuap.com/static/uui/latest/js/u-tree.js&quot;&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+ </div>
+
+ <!-- 引入end -->
+ {{include '../../../base/public/footer'}}
+</body>
+</html>
