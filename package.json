@@ -7,8 +7,8 @@
     "dev": "node server/app.js",
     "cate": "node server/category",
     "build": "gulp",
-    "gitbook": "sh bin/gitbook-build.sh",
-    "deploy": "npm run cate && npm run build && npm run gitbook"
+    "product": "sh bin/mark.sh && sh bin/data.sh && node index.js",
+    "deploy": "npm run cate && npm run build && npm run product"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/iuap-design/tinper.io#readme",
   "devDependencies": {
-    "art-template": "^3.0.3",
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -33,7 +32,6 @@
     "copy-dir": "^0.3.0",
     "cz-conventional-changelog": "^1.2.0",
     "del": "^2.2.1",
-    "fs-extra": "^0.30.0",
     "gitbook-cli": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -50,6 +48,7 @@
     "gulp-watch": "^4.3.9",
     "gulp-webpack": "^1.5.0",
     "gulp-zip": "^3.2.0",
+    "node-native-zip": "^1.1.0",
     "rimraf": "^2.5.3",
     "webpack": "^1.13.2"
   },
@@ -66,7 +65,11 @@
     "neoui-grid": "^1.0.4",
     "neoui-polyfill": "^1.2.6",
     "neoui-sparrow": "^1.4.7",
-    "neoui-tree": "^1.0.4"
+    "neoui-tree": "^1.0.4",
+    "art-template": "^3.0.3",
+    "fs-extra": "^0.30.0",
+    "marked": "^0.3.6",
+    "pygmentize-bundled": "^2.3.0"
   },
   "config": {
     "commitizen": {
