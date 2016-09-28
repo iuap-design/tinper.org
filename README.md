@@ -1,2 +1,2 @@
-# tinper.io
+# tinper.org
 website for tinper
