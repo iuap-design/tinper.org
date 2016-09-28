@@ -7,9 +7,8 @@
     "dev": "node server/app.js",
     "cate": "node server/category",
     "build": "gulp",
-    "gitbook": "sh bin/gitbook-build.sh",
-    "deploy": "npm run cate && npm run build && npm run gitbook",
-    "product": "sh bin/mark.sh && sh bin/data.sh && node index.js"
+    "product": "sh bin/mark.sh && sh bin/data.sh && node index.js",
+    "deploy": "npm run cate && npm run build && npm run product"
   },
   "repository": {
     "type": "git",

@@ -24,6 +24,7 @@ if [ -d $src ]
 			then
 
 			cd $dir
+			mv README.html index.html
 
 			if [ -f "SUMMARY.html" ]
 				then
