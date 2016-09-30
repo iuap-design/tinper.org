@@ -13,9 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
     <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="http://design.yyuap.com/static/uui/latest/css/u.css">
+    <!-- <link rel="stylesheet" href="http://design.yyuap.com/static/uui/latest/css/u.css"> -->
+    <link rel="stylesheet" href="/dist/static/css/u.css">
     <link href="/dist/static/css/style.css" rel="stylesheet" media="screen">
     <!--[if lte IE 8]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -38,25 +39,35 @@
             <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
                 <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
                     <li class="dropdown">
-                        <a>设计器</a>
+                        <a>首页</a>
                     </li>
                     <li class="dropdown">
-                        <a>模版库</a>
+                        <a>开始使用</a>
                     </li>
                     <li class="dropdown">
-                        <a>kero</a>
-                    </li>
-                    <li class="dropdown">
-                        <a>案例</a>
-                    </li>
-                    <li class="dropdown">
-                        <a>文档</a>
-                    </li>
-                    <li class="dropdown">
-                        <a>下载</a>
+                        <a class="nav-par">产品</a>
+                        <ul>
+                          <li>sparrow</li>
+                          <li>neoui</li>
+                          <li>uba</li>
+                          <li>bee</li>
+                        </ul>
                     </li>
                     <li class="dropdown">
                         <a>样式板</a>
+                    </li>
+                    <li class="dropdown">
+                        <a>设计语言</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-par">下载</a>
+                        <ul>
+                          <li>版本下载</li>
+                          <li>定制下载</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>案例</a>
                     </li>
                 </ul>
             </div>
@@ -64,61 +75,60 @@
     </nav>
     <!-- 导航 结束 -->
     <!-- welcome <img src="images/iuapdesignicon1.png"alt=""><br>-->
-    <div class="wrap">
-        <div class="cont">
-            <div class="height-50"></div>
-            <h1 class="white"></h1>
-            <img src="images/tinperlogos 60w.png" alt=""><span style="padding-left:10px;"></span><span class="u-tag u-tag-danger">开源</span>
-            <br>
-            <p class="white font-size-60"><b>最好的企业级前端技术平台</b></p>
-            <button class="u-button u-button-success u-button-xg ">最新版本下载</button>
-            <p class="white">v3.1.2 | 更新于 2016-09-20 | <a>历史版本</a></p>
-        </div>
-    </div>
-    <!-- content start-->
-    <!-- 产品简述 start-->
-    <div class="u-row">
-        <div class="u-col-md-12 height-150 bg-grey-100">
-            <div class="height-50"></div>
-            <div class="page text-center">
-                <p class="font-size-18 grey-600">tinper，由前端集成开发工具uba、企业级前端UI框架neoui、react组件库neoui-react等技术产品组成，
-                    <br>旨在帮助开发者快速进行应用开发，提高开发效率。</p>
-            </div>
-            <div class="height-50"></div>
-        </div>
-    </div>
-    <div class="u-row  height-300 bg-grey-100">
-        <div class="page">
-            <div class="u-col-md-4">
-                <div class="u-col-md-12"><img class="width-200" src="images/neouik.png" alt=""></div>
-            </div>
-            <div class="u-col-md-4">
-                <div class="u-col-md-12 "><img class="width-200" src="images/uaok.png" alt=""></div>
-            </div>
-            <div class="u-col-md-4">
-                <div class="u-col-md-12"><img class="width-200" src="images/neoui-reactk.png" alt=""></div>
-            </div>
-        </div>
-        <!-- 产品简述 end-->
-        <!-- content end -->
-        <section class="bg-white height-500">
-            <div class="page">
-                <div class="height-50"></div>
-                <div class="row">
-                    <div class="u-col-md-4 u-col-sm-6 feature text-center">
-                        <span class="font-size-60  red uf uf-branchwithleavesblackshape"></span>
-                        <div class="feature-content">
-                            <h5><font><font>按需定制</font></font></h5>
-                            <p>
-                                <font>
-                                    <font class="text-left">通过开源定制页面可以轻松定制所需模块</font>
-                                    <font>减小文件尺寸</font>
-                                    <font>提升效率，节约资源</font>
-                                </font>
-                            </p>
+    <div class="content">
+      <div class="content-wrapper part1">
+          <div class="u-container">
+               <img src="/dist/static/images/tinperlogos 60w.png" alt="" class="width-250"><span style="padding-left:10px;"></span><span class="u-tag u-tag-danger">开源</span>
+                <br>
+                <p class="white font-size-60"><b>最好的企业级前端技术平台</b></p>
+                <button class="u-button u-button-success u-button-xg ">最新版本下载</button>
+                <p class="white">v3.1.2 | 更新于 2016-09-20 | <a>历史版本</a></p>
+          </div>
+      </div>
+      <!-- 产品简述 start-->
+      <div class="content-wrapper part2  bg-grey-100 padding-vertical-50">
+          <div class="u-container ">
+                 <div class="u-row text-center">
+                    <div class="u-col-md-12 height-150">
+                        <div class="page text-center">
+                            <p class="font-size-18 grey-600">tinper，由前端集成开发工具uba、企业级前端UI框架neoui、react组件库neoui-react等技术产品组成，
+                                <br>旨在帮助开发者快速进行应用开发，提高开发效率。</p>
                         </div>
+                        <div class="height-50"></div>
                     </div>
-                    <div class="u-col-md-4 u-col-sm-6 feature text-center">
+                  
+                    <div class="u-col-md-4 u-col-xs-4">
+                        <img  src="/dist/static/images/neouik.png" alt="">
+                    </div>
+                    <div class="u-col-md-4 u-col-xs-4">
+                        <img  src="/dist/static/images/uaok.png" alt="">
+                    </div>
+                    <div class="u-col-md-4 u-col-xs-4">
+                        <img  src="/dist/static/images/neoui-reactk.png" alt="">
+                    </div>
+                     
+                    
+                </div>
+          </div>
+      </div>
+      <!-- 产品简述 end-->
+      <div class="content-wrapper part3 padding-vertical-50">
+          <div class="u-container">
+              <div class="u-row text-center">
+                  <div class="u-col-md-4 u-col-sm-6 feature ">
+                      <span class="font-size-60  red uf uf-branchwithleavesblackshape"></span>
+                      <div class="feature-content">
+                          <h5><font><font>按需定制</font></font></h5>
+                          <p>
+                              <font>
+                                  <font class="text-left">通过开源定制页面可以轻松定制所需模块</font>
+                                  <font>减小文件尺寸</font>
+                                  <font>提升效率，节约资源</font>
+                              </font>
+                          </p>
+                      </div>
+                   </div>
+                    <div class="u-col-md-4 u-col-sm-6 feature">
                         <span class="font-size-60  red uf uf-earthglobe"></span>
                         <div class="feature-content">
                             <h5><font><font>Grid System布局系统</font></font></h5>
@@ -131,7 +141,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="u-col-md-4 u-col-sm-6 feature text-center">
+                    <div class="u-col-md-4 u-col-sm-6 feature ">
                         <span class="font-size-60  red uf uf-fluffycloudsilhouette"></span>
                         <div class="feature-content">
                             <h5><font><font>Iconfont 图标字体</font></font></h5>
@@ -144,7 +154,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="u-col-md-4 u-col-sm-6 feature text-center">
+                    <div class="u-col-md-4 u-col-sm-6 feature">
                         <span class="font-size-60  red uf uf-desktopmonitor"></span>
                         <div class="feature-content">
                             <h5><font><font>干净的代码</font></font></h5>
@@ -157,7 +167,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="u-col-md-4 u-col-sm-6 feature text-center">
+                    <div class="u-col-md-4 u-col-sm-6 feature ">
                         <span class="font-size-60  red uf uf-branchwithleavesblackshape"></span>
                         <div class="feature-content">
                             <h5><font><font>大量B端应用控件／组件</font></font></h5>
@@ -170,7 +180,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="u-col-md-4 u-col-sm-6 feature text-center">
+                    <div class="u-col-md-4 u-col-sm-6 feature ">
                         <span class="font-size-60  red uf uf-copydocument"></span>
                         <div class="feature-content">
                             <h5><font><font>开源＋免费</font></font></h5>
@@ -178,238 +188,145 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- 特性 start
+                        
+          </div>
+      </div>
 
-  <div class="u-row">
-            <div class="height-100 bg-white"></div>
-        <div class="u-col-md-3 u-col-sm-6 bg-green-300 height-400 text-center ">
-    <div class="height-50"></div>
-                <i class="icon uf font-size-80 green-50"><font><font></font></font></i>
-            <h4>快速开发</h4>
-            <span>快速开发</span>
-
-        </div>
-        <div class="u-col-md-3 u-col-sm-6 bg-amber-A400 height-400 text-center">
-            <div class="height-50"></div>
-            <i class="icon uf font-size-80 green-50"><font><font></font></font></i>
-        <h4>多端适配</h4>
-        <span>快速开发</span>
-        </div>
-        <div class="u-col-md-3 u-col-sm-6 bg-blue height-400 text-center">
-            <div class="height-50"></div>
-            <i class="icon uf font-size-80 green-50"><font><font></font></font></i>
-        <h4>在线设计</h4>
-        <span>快速开发</span>
-        </div>
-        <div class="u-col-md-3 u-col-sm-6 bg-red-300 height-400 text-center">
-            <div class="height-50"></div>
-            <i class="icon uf font-size-80 green-50"><font><font></font></font></i>
-        <h4>模版支持</h4>
-        <span>快速开发</span>
-        </div>
-    </div>-->
-        <!-- 特性 end -->
-        <!-- 特性-自适应 开始-->
-        <div class="u-row bg-white">
-            <div class="height-100"></div>
-            <div class="page">
-                <h2 class="text-center"><font><font>自适应网页设计</font></font></h2>
-                <p class="text-center">
-                    <font>
-                        <font>基于neoui 12栅格布局</font>
-                        <font>全面兼容多端</font>
-                    </font>
-                </p>
-                <div class="row">
-                    <div class="u-col-sm-12">
-                        <p class="text-center"><img src="images/responsive.png" alt="自适应网页设计" title="自适应网页设计"></p>
-                    </div>
-                </div>
+      <div class="content-wrapper part4 bg-white">
+        <div class="u-container">
+            <div class="u-row">
+              <div class="height-100"></div>
+              <div class="page">
+                  <h2 class="text-center"><font><font>自适应网页设计</font></font></h2>
+                  <p class="text-center">
+                      <font>
+                          <font>基于neoui 12栅格布局</font>
+                          <font>全面兼容多端</font>
+                      </font>
+                  </p>
+                  <div class="row">
+                      <div class="u-col-sm-12">
+                          <p class="text-center"><img src="/dist/static/images/responsive.png" alt="自适应网页设计" title="自适应网页设计"></p>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
-        <!-- 特性-自适应 结束-->
-        <!-- 特性-自适应 开始-->
-        <div class="u-row bg-grey-50">
-            <div class="height-50"></div>
-            <div class="page">
-                <div class="u-col-md-6">
-                    <div class="height-150"></div>
-                    <h2 class="text-left"><font><font>原子化设计</font></font></h2>
-                    <p class="text-left">
-                        <font>
-                            <font>界面元素打散重构</font>
-                            <font>元素化、组件化</font>
-                        </font>
-                    </p>
-                </div>
-                <div class="u-col-md-6">
-                    <img class="img-responsive" src="images/design development.png" alt="自适应网页设计" title="自适应网页设计">
-                    <div class="height-50"></div>
-                </div>
-            </div>
-        </div>
-        <!-- 特性-自适应 结束-->
-        <!-- 用户说  开始
-<div class="u-row bg-white height-400">
-<div class="page">
-    <div class="height-150"></div>
-    <div class="u-col-md-6">
-    <div class="u-col-md-4">
-<img class="img-bordered img-bordered-green width-100 pull-right" src="images/xie-profile-200.png" alt="">
-    </div>
-    <div class="u-col-md-8 ">
-        <h3>我们的用户说：</h3>
-<span>iuapdesign极快的提升了企业应用的开发效率</span>
-<p><a href="#">caven liu</a></p>
-    </div>
-</div>
+      </div>
 
-<div class="u-col-md-6">
-<div class="u-col-md-4">
-<img class="img-bordered img-bordered-green width-100 pull-right" src="images/caven-profile-200.png" alt="">
-</div>
-<div class="u-col-md-8 ">
-    <h3>我们的用户说：</h3>
-<span>iuapdesign极快的提升了企业应用的开发效率</span>
-<p><a href="#">caven liu</a></p>
-</div>
-</div>
-</div>
-</div>-->
-        <!-- 用户说  结束 -->
-        <!-- 模版库 start
-
-<div class="u-row height-500" style="background-image:url(images/c.png)">
-            <div class="page">
-<div class="height-100"></div>
-
-                <div class="row">
-                <div class="u-col-md-2">
-                    <img class="width-100" src="images/qq-2d-code.png" alt="1">
-                </div>
-                <div class="u-col-md-10">
-                    <article>
-                        <h1>协助</h1>
-                        <p>您有任何疑问请加入我们的iuap design官方交流群群</p>
-                    </article>
-                </div>
-            </div>
-
-            <div class="row">
-            <div class="u-col-md-2">
-            <img class="width-100" src="images/git-2d-code.png" alt="1">
-            </div>
-            <div class="u-col-md-10">
-                <article>
-                    <h1>参与</h1>
-                    <p>我们的github开源项目，我们期待你的贡献</p>
-                </article>
-            </div>
-            <div class="u-col-md-12  height-100">
-                                                                <div class="u-col-md-2">
-                                                                    <h2>邮件订阅</h2>
-
-                                                                </div>
-                                                                <div class="u-col-md-10">
-                                                                <p><input type="text" class="u-form-control u-col-md-4" placeholder="请输入邮箱">
-                                                                </p>
-                                                                <p><button class="u-button u-button-success u-button-lg u-button-squared">发送</button></p>  </div>
-                                                            </div>
-        </div>
-
-
-
-            </div>
-        </div>-->
-        <!-- 模版库 end -->
-        <!-- 特性- 优质模板 开始-->
-        <div class="u-row" style="background-color:#5acdd4">
-            <div class="u-col-md-12 height-50"></div>
-            <div class="page">
-                <div class="u-col-md-6">
-                    <img src="images/53088-original.jpg" alt="" title="">
-                </div>
-                <div class="u-col-6">
-                    <div class="grey-800">
-                        <h3 class="text-left"><font><font>用户开发案例</font></font></h3>
-                        <p>广大的toB开发者正在使用iup design构建企业级应用，我们汇聚部分优秀应用案例展示，供您参考。</p>
-                        <p>
-                            <button class="u-button u-button-success u-button-lg u-button-squared">查看客户案例</button>
+      <div class="content-wrapper part5 bg-grey-50">
+        <div class="u-container">
+            <div class="u-row ">
+                <div class="height-50"></div>
+                <div class="page">
+                    <div class="u-col-md-6">
+                        <div class="height-150"></div>
+                        <h2 class="text-left"><font><font>原子化设计</font></font></h2>
+                        <p class="text-left">
+                            <font>
+                                <font>界面元素打散重构</font>
+                                <font>元素化、组件化</font>
+                            </font>
                         </p>
                     </div>
-                </div>
-            </div>
-            <div class="u-col-md-12 height-50"></div>
-        </div>
-        <!-- 特性-优质模板 结束-->
-        <!-- 邮件订阅 开始
-        <div class="u-row bg-white">
-            <div class="height-50"></div>
-            <div class="page bg-orange height-100">
-                                    <div class="u-col-md-6 white">
-                                                                    <h2>邮件订阅</h2>
-                                                                    <p>提交您的邮件地址，订阅iuap design开发最新动向</p>
-                                    </div>
-                                    <div class="u-col-md-6">
-                                                                <p><input type="text" class="u-form-control u-col-md-8" placeholder="请输入邮箱">
-                                                                </p>
-                                                                <p><button class="u-button u-button-success u-button-squared">提交</button></p>  </div>
-                                                            </div>
-                                                            <div class="height-50"></div>
-                                  </div>-->
-        <!-- 邮件订阅 结束 -->
-        <!-- 用户说  开始 -->
-        <div class="u-row bg-grey-50 padding-30">
-            <div class="page">
-                <p>
-                    <font class="text-center font-size-60">1000＋</font>
-                    <font>多位企业用用开发者的选择</font>
-                </p>
-                <div class="u-col-md-8">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/song-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/dyl-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/wei-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/xry-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/caven-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/bail-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/xie-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/he-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/xry-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/jiangj-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/rose-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/he-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/lily-profile-200.png" alt="">
-                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="images/cross-profile-200.png" alt="">
-                </div>
-                <div class="u-col-md-4">
-                    <div class="vertical-align h">
-                        <p class="vertical-align-middle">
-                            <font>简单，方便，</br>非前端程序员的好帮手。</font>
-                        </p>
+                    <div class="u-col-md-6">
+                        <img class="img-responsive" src="/dist/static/images/design development.png" alt="自适应网页设计" title="自适应网页设计">
+                        <div class="height-50"></div>
                     </div>
                 </div>
-                <div class="u-col-md-12 height-100"></div>
             </div>
         </div>
-        <!-- 用户说  结束 -->
-        <!-- 开始使用 start-->
-        <div class="u-row text-center height-350" style="background-image:url(images/footer_bg.jpg)">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="height-50"></div>
-                    <p class=" u-counter-number font-size-20 grey-50" data-animated="bounceInLeft"></p>
-                    <p class=" u-counter-number font-size-30 grey-50" data-animated="bounceInUp">拿出你的创意，开始吧
-                        <br>
-                        <p class="grey-50">开源版本免费使用</p>
-                    </p>
-                    <button class="u-button u-button-warning u-button-xg"><i class="icon uf font-size-30 green-50"><font><font></font></font></i>定制下载</button>
+      </div>
+   
+       <!-- 特性- 优质模板 开始--> 
+      <div class="content-wrapper part6" style="background-color:#5acdd4">
+        <div class="u-container">
+          <div class="u-row" >
+                <div class="u-col-md-12 height-50"></div>
+                <div class="page">
+                    <div class="u-col-md-6">
+                        <img src="/dist/static/images/53088-original.jpg" alt="" title="">
+                    </div>
+                    <div class="u-col-6">
+                        <div class="grey-800">
+                            <h3 class="text-left"><font><font>用户开发案例</font></font></h3>
+                            <p>广大的toB开发者正在使用iup design构建企业级应用，我们汇聚部分优秀应用案例展示，供您参考。</p>
+                            <p>
+                                <button class="u-button u-button-success u-button-lg u-button-squared">查看客户案例</button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <div class="u-col-md-12 height-50"></div>
             </div>
+           
         </div>
-        <!-- 开始使用 end -->
-        <!-- 联系start -->
+      </div>
+      <!-- 特性-优质模板 结束-->
+      <div class="content-wrapper bg-grey-50">
+        <div class="u-container">
+               <!-- 用户说  开始 -->
+          <div class="u-row padding-30">
+              <div class="page">
+                  <p>
+                      <font class="text-center font-size-60">1000＋</font>
+                      <font>多位企业用用开发者的选择</font>
+                  </p>
+                  <div class="u-col-md-8">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/song-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/dyl-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/wei-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/xry-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/caven-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/bail-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/xie-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/he-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/xry-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/jiangj-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/rose-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/he-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/lily-profile-200.png" alt="">
+                      <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/dist/static/images/cross-profile-200.png" alt="">
+                  </div>
+                  <div class="u-col-md-4">
+                      <div class="vertical-align h">
+                          <p class="vertical-align-middle">
+                              <font>简单，方便，</br>非前端程序员的好帮手。</font>
+                          </p>
+                      </div>
+                  </div>
+                  <div class="u-col-md-12 height-100"></div>
+              </div>
+          </div>
+        <!-- 用户说  结束 -->
+        </div>
+      </div>
+     
+      <!-- 开始使用 start-->
+      <div class="content-wrapper padding-vertical-50" style="background-image:url(/dist/static/images/footer_bg.jpg)">
+        <div class="u-container">
+          
+          <div class="u-row text-center" >
+              <div class="container-fluid">
+                  <div class="row">
+                     <!--  <div class="height-50"></div> -->
+                      <p class=" u-counter-number font-size-20 grey-50" data-animated="bounceInLeft"></p>
+                      <p class=" u-counter-number font-size-30 grey-50" data-animated="bounceInUp">拿出你的创意，开始吧
+                          <br>
+                          <p class="grey-50">开源版本免费使用</p>
+                      </p>
+                      <button class="u-button u-button-warning u-button-xg"><i class="icon uf font-size-30 green-50"><font><font></font></font></i>定制下载</button>
+                  </div>
+              </div>
+          </div>
+         
+        </div>
+      </div>
+       <!-- 开始使用 end -->
+      
+      <footer class="u-container">
+        
+          <!-- 联系start -->
         <div class="u-row  padding-15 text-center bg-white font-size-12">
             <div class="page">
                 <div class="row">
@@ -446,10 +363,10 @@
                     </div>
                     <div class="u-col-md-3 text-left">
                         <h5><font><font>关注我们</font></font></h5>
-                        <div class="u-col-6">
+                        <div class="u-col-6 u-col-xs-6">
                             <div class="padding-0">
                                 <div class="u-counter u-counter-lg">
-                                    <span><img class="width-50" src="images/qq-2d-code.png" alt="1"></span>
+                                    <span><img class="width-50" src="/dist/static/images/qq-2d-code.png" alt="1"></span>
                                     <div class="u-counter-label text-uppercase">
                                         <font>
                                             <br>
@@ -459,10 +376,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="u-col-6">
+                        <div class="u-col-6 u-col-xs-6">
                             <div class=" padding-0">
                                 <div class="u-counter u-counter-lg">
-                                    <span><img class="width-50" src="images/git-2d-code.png" alt="1"></span>
+                                    <span><img class="width-50" src="/dist/static/images/git-2d-code.png" alt="1"></span>
                                     <div class="u-counter-label text-uppercase">
                                         <font>
                                             <br>
@@ -482,9 +399,14 @@
             <p>Copyright © 2016 yonyou iuapdesign. All Rights Reserved版权所有
                 <br>Made with <i class="fa fa-heart pulse red"></i> by iuapdesign team</p>
         </div>
+      </footer>
+        
         <!-- 版权 end -->
-        <script src="http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
-        <script src="http://design.yyuap.com/static/uui/latest/js/u.js">
+        <!-- <script src="http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script> -->
+        <script type="text/javascript" src="/dist/static/js/jquery-1.11.2.js"></script>
+        <!-- <script src="http://design.yyuap.com/static/uui/latest/js/u.js">
+        </script> -->
+        <script src="/dist/static/js/u.js">
         </script>
         <script src="/dist/static/js/scripts.js"></script>
 </body>
