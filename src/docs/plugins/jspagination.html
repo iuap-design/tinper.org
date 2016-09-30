@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <!-- 引入head -->
+ {{include '../../../base/public/header'}}
+</head>
+<body>
+ <!-- side bar -->
+ <div>
+ <ul> <li><a href="message.html">提示消息 message</a></li> <li><a href="pagination.html">分页 pagination</a></li> <li><a href="message.html">消息 message</a></li> <li><a href="tooltip.html">提示 tooltip</a></li> <li><a href="breadcrumb.html">面包屑 breadcrumb</a></li> <li><a href="panel.html">面板 panel</a></li> <li><a href="dropdown.html">下拉 dropdown</a></li> <li><a href="buttongroup.html">按钮组 buttongroup</a></li> <li><a href="inputgroup.html">输入框组 inputgroup</a></li> <li><a href="navbar.html">导航条 navbar</a></li> <li><a href="thumbnail.html">缩略图 thumbnail</a></li> <li><a href="media.html">媒体对象 meida</a></li> <li><a href="listgroup.html">列表组 listgroup</a></li> <li><a href="gallery.html">图片画廊 gallery</a></li> <li><a href="statisticWidget.html">卡片</a></li> </ul>
+ </div>
+
+ <!-- content -->
+ <div>
+ 
+<h1 id="-">分页控件</h1>
+<p>分页控件提供了基础分页、无border分页、有间距的分页、多尺寸分页。</p>
+<h1 id="-">插件依赖</h1>
+<p>依赖于 <a href="http://design.yyuap.com/static/uui/latest/js/u.js">http://design.yyuap.com/static/uui/latest/js/u.js</a></p>
+<h1 id="-">用法</h1>
+<p>1.分页通过添加<code>u-pagination</code>的样式来实现基本的分页效果</p>
+<p>2.创建一个分页对象，方法：new u.pagination(paramter)</p>
+<h1 id="-">示例</h1>
+<p>##基础分页</p>
+<div class="example-content"><div id='pagination' class='u-pagination'>
+</div></div>
+<div class="example-content ex-hide"><script> var element = document.getElementById(&quot;pagination&quot;);
+ var comp = new u.pagination({ el: element,showState:false });
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+ comp.on(&#39;pageChange&#39;, function(pageIndex) {
+ console.log(&#39;新的页号为&#39; + pageIndex);
+ });
+ comp.on(&#39;sizeChange&#39;, function(arg) {
+ console.log(&#39;每页显示条数为&#39; + arg[0]);
+ });
+</script></div>
+
+<p>##有间距的分页
+添加样式<code>pagination-gap</code>可以增加页码之间的间距</p>
+<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
+</div></div>
+<div class="example-content ex-hide"><script> var paginationGap = document.getElementById(&#39;paginationGap&#39;);
+
+ var comp = new u.pagination({ el: paginationGap, showState:false });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
+</script></div>
+
+
+<h1 id="api">API</h1>
+<p>##js方法与参数</p>
+<p><table>
+ <tbody>
+ <tr>
+ <td>名称</td>
+ <td>方法参数</td>
+ <td>用法</td>
+ <td style="width:10%">描述</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>pagination</td>
+ <td>1.el:分页绑定的dom元素 2.jumppage：是否可跳转到某页。type为：boolean</td>
+ <td>new u.pagination(paramter)</td>
+ <td>创建一个分页对象</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>update</td>
+ <td>
+ 1.totalPages:总页数 
+ 2.pageSize:每页显示的条数 
+ 3.currentPage:当前页面
+ 4.totalCount:总条数
+ </td>
+ <td>
+ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
+ </td>
+ <td>更新分页的一些属性</td>
+ <td></td>
+ </tr>
+ </tbody>
+</table>
+​ </p>
+ </div>
+
+ <!-- 引入end -->
+ {{include '../../../base/public/footer'}}
+</body>
+</html>

@@ -27,7 +27,7 @@ do
   fi
 
   # md文档转html
-  cd $docs/$name
+  cd "$docs/$name"
   for fullName in `ls $1`
   do
     suffix="${fullName##*.}"
@@ -45,6 +45,7 @@ do
       fi
     fi   
   done
+  cd ../..
 done
 
 # 替换SUMMARY.md链接
