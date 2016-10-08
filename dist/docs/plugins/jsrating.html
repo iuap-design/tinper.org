@@ -1,0 +1,114 @@
+<h1 id="raty-">raty插件</h1>
+<p>评级评分</p>
+<h1 id="-">插件依赖</h1>
+<p><a href="http://design.yyuap.com/static/uui/latest/js/u.js">http://design.yyuap.com/static/uui/latest/js/u.js</a></p>
+<p><a href="http://design.yyuap.com/static/uui/latest/css/u.css">http://design.yyuap.com/static/uui/latest/css/u.css</a></p>
+<p><a href="http://design.yyuap.com/static/raty/rating.js">http://design.yyuap.com/static/raty/rating.js</a></p>
+<h1 id="-">用法</h1>
+<p>1.定义类<code>`u-rating</code>的父元素,并配置属性<code>data-plugin=rating</code></p>
+<pre><code>&lt;div class=&quot;u-rating&quot; data-score=&quot;3&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;
+</code></pre><p>2.设置参数</p>
+<pre><code>    var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+})
+</code></pre><p>3.调用初始raty方法</p>
+<pre><code>    $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          $(this).raty(options);
+     });
+</code></pre><h1 id="-">示例</h1>
+<p>##基础Rating</p>
+<p>常用于评级评分</p>
+<div class="example-content ex-hide"><style>.content{
+    padding: 10px;
+}
+.example{
+    width: 60%;
+    margin: 80px;
+}
+.col-xs-4{
+    width: 33.3%;
+    float: left;
+}
+</style></div>
+<div class="example-content"> <div class="u-rating" data-score="3" data-plugin="rating"></div></div>
+<div class="example-content ex-hide"><script>(function(document, window, $) {
+    &#39;use strict&#39;;
+
+      var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+      $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          var $this = $(this);
+          var options = $.extend(true, {}, defaults, $this.data());
+
+          if (options.hints) {
+            options.hints = options.hints.split(&#39;,&#39;);
+          }
+
+          $this.raty(options);
+      });
+      // }
+    // });
+  })(document, window, jQuery);
+</script></div>
+<div class="examples-code"><pre><code>.content{
+    padding: 10px;
+}
+.example{
+    width: 60%;
+    margin: 80px;
+}
+.col-xs-4{
+    width: 33.3%;
+    float: left;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code> &lt;div class=&quot;u-rating&quot; data-score=&quot;3&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;</code></pre>
+</div>
+<div class="examples-code"><pre><code>(function(document, window, $) {
+    &#39;use strict&#39;;
+
+      var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+      $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          var $this = $(this);
+          var options = $.extend(true, {}, defaults, $this.data());
+
+          if (options.hints) {
+            options.hints = options.hints.split(&#39;,&#39;);
+          }
+
+          $this.raty(options);
+      });
+      // }
+    // });
+  })(document, window, jQuery);</code></pre>
+</div>
+
+
+
+<h1 id="api">API</h1>
+<p>详情参见与 <a href="http://testweb3.iecworld.com/jsdemo/js/lq_js_point/">http://testweb3.iecworld.com/jsdemo/js/lq_js_point/</a></p>

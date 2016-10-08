@@ -72,5 +72,20 @@ img{
 .bg-white {
     background: #fff;
     border-top: 1px solid #ecf0f1;
-        opacity:1;
+    opacity:1;
 }
+
+/*用户说*/
+
+.user-img .iu{
+    -webkit-filter: grayscale(75%);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    width:100px;}
+.user-img .ui{
+    -webkit-filter: grayscale(0%);  
+    width:100px;
+ }

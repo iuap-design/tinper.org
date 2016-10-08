@@ -1,0 +1,45 @@
+<h1 id="yearmonth-">yearmonth插件</h1>
+<p>只选择年与月</p>
+<h1 id="-">插件依赖</h1>
+<p><a href="http://design.yyuap.com/static/uui/latest/js/u.js">http://design.yyuap.com/static/uui/latest/js/u.js</a></p>
+<p><a href="http://design.yyuap.com/static/uui/latest/css/u.css">http://design.yyuap.com/static/uui/latest/css/u.css</a></p>
+<h1 id="-">用法</h1>
+<p>##引入文件
+在header中引入u.css</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&#39;http://design.yyuap.com/static/uui/latest/css/u.css&#39;&gt;
+</code></pre><p>在文件尾部加入u.js</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&#39;http://design.yyuap.com/static/uui/latest/js/u.js&#39;&gt;&lt;/script&gt;
+</code></pre><p>##代码</p>
+<p>定义样式为<code>u-yearmonth</code>的div父元素，包裹类<code>u-input</code>的input</p>
+<pre><code>&lt;div class=&#39;u-yearmonth&#39;&gt;
+    &lt;input class=&quot;u-input&quot; type=&quot;text&quot;&gt;
+&lt;/div&gt;
+</code></pre><p>js会根据<code>u-yearmonth</code>来定位dom，然后绑定事件。</p>
+<h1 id="-">示例</h1>
+<div class="example-content ex-hide"><style>.example .u-input{
+    border: 1px solid rgba(0,0,0, 0.12);
+    width: 250px;
+}
+</style></div>
+<div class="example-content"><div class="example">
+    <div class='u-yearmonth'>
+        <input class="u-input" type="text">
+    </div>
+</div></div>
+<div class="examples-code"><pre><code>.example .u-input{
+    border: 1px solid rgba(0,0,0, 0.12);
+    width: 250px;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;example&quot;&gt;
+    &lt;div class=&#39;u-yearmonth&#39;&gt;
+        &lt;input class=&quot;u-input&quot; type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+
+
+
+
