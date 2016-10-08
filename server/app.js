@@ -39,7 +39,7 @@ app.use(function *(next){
 
 app.use(serve(path.join(__dirname, '../')));
 
-app.listen( 8000 );
+app.listen( 8001 );
 
 // 起服务时清楚定制生成的临时文件同时创建临时scss文件
 // deleteFolderRecursive(path.resolve(__dirname, '../dist/pages/custom/temp/'));
@@ -56,7 +56,7 @@ app.listen( 8000 );
 //     }
 // });
 
-console.log('server started at http://localhost:8000');
+console.log('server started at http://localhost:8001');
 
 function deleteFolderRecursive(path) {
     var files = [];
