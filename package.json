@@ -53,6 +53,8 @@
     "webpack": "^1.13.2"
   },
   "dependencies": {
+    "art-template": "^3.0.3",
+    "fs-extra": "^0.30.0",
     "kero-adapter": "^1.5.7",
     "koa": "^1.1.2",
     "koa-body": "^1.4.0",
@@ -61,15 +63,13 @@
     "koa-gzip": "^0.1.0",
     "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
+    "marked": "^0.3.6",
     "neoui": "^4.1.6",
     "neoui-grid": "^1.0.4",
-    "neoui-polyfill": "^1.2.6",
     "neoui-sparrow": "^1.4.7",
     "neoui-tree": "^1.0.4",
-    "art-template": "^3.0.3",
-    "fs-extra": "^0.30.0",
-    "marked": "^0.3.6",
-    "pygmentize-bundled": "^2.3.0"
+    "pygmentize-bundled": "^2.3.0",
+    "tinper-neoui-polyfill": "0.0.1"
   },
   "config": {
     "commitizen": {
