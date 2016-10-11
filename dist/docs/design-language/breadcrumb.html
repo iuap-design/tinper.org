@@ -1,1 +1,106 @@
-\n<!DOCTYPE html>\n<html lang="en">\n<head>\n <meta charset="UTF-8">\n <title>Document</title>\n <!-- 引入head -->\n {{include '../../../base/public/header'}}\n</head>\n<body>\n <!-- side bar -->\n <div>\n <ul> <li><a href=".html">提示消息 message</a></li> <li><a href=".html">分页 pagination</a></li> <li><a href=".html">消息 message</a></li> <li><a href=".html">提示 tooltip</a></li> <li><a href=".html">面包屑 breadcrumb</a></li> <li><a href=".html">面板 panel</a></li> <li><a href=".html">下拉 dropdown</a></li> <li><a href=".html">按钮组 buttongroup</a></li> <li><a href=".html">输入框组 inputgroup</a></li> <li><a href=".html">导航条 navbar</a></li> <li><a href=".html">缩略图 thumbnail</a></li> <li><a href=".html">媒体对象 meida</a></li> <li><a href=".html">列表组 listgroup</a></li> <li><a href=".html">图片画廊 gallery</a></li> <li><a href=".html">卡片</a></li> </ul>\n </div>\n\n <!-- content -->\n <div>\n \n<h1 id="breadcrumb-">breadcrumb控件</h1>\n<p>用于带有层次的导航，active状态表明当前页面的位置</p>\n<h1 id="-">如何使用</h1>\n<p>给父元素添加<code>.u-breadcrumb</code>,自定义导航结构的分隔符</p>\n<h1 id="-">示例</h1>\n<p>##图标面包屑</p>\n<p>&quot;/&quot;为分隔符,并添加Home icon</p>\n<div class="example-content ex-hide"><style>.md-home:before {\n content: &quot;\e6a2&quot;;\n font-family: &#39;uf&#39;;\n}\n</style></div>\n<div class="example-content">\n<ol class="u-breadcrumb">\n <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>\n <li class="active">Data</li>\n</ol>\n<ol class="u-breadcrumb breadcrumb-arrow">\n <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>\n <li><a class="u-link" href="javascript:void(0)">Library</a></li>\n <li class="active">Data</li>\n</ol></div>\n<div class="examples-code"><pre><code>.md-home:before {\n content: &quot;\e6a2&quot;;\n font-family: &#39;uf&#39;;\n}</code></pre>\n</div>\n<div class="examples-code"><pre><code>\n&lt;ol class=&quot;u-breadcrumb&quot;&gt;\n &lt;li&gt;&lt;a class=&quot;icon md-home u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;\n&lt;/ol&gt;\n&lt;ol class=&quot;u-breadcrumb breadcrumb-arrow&quot;&gt;\n &lt;li&gt;&lt;a class=&quot;icon md-home u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;\n &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;\n&lt;/ol&gt;</code></pre>\n</div>\n\n<p>##&quot;&gt;&gt;&quot;为分隔符的面包屑</p>\n<div class="example-content ex-hide"><style>.md-home:before {\n content: &quot;\e6a2&quot;;\n font-family: &#39;uf&#39;;\n}\n</style></div>\n<div class="example-content">\n<ol class="u-breadcrumb u-breadcrumb-arrow">\n <li><a class="u-link" href="javascript:void(0)">Home</a></li>\n <li class="active">Library</li>\n</ol>\n<ol class="u-breadcrumb u-breadcrumb-arrow">\n <li><a class="u-link" href="javascript:void(0)">Home</a></li>\n <li><a class="u-link" href="javascript:void(0)">Library</a></li>\n <li class="active">Data</li>\n</ol></div>\n<div class="examples-code"><pre><code>.md-home:before {\n content: &quot;\e6a2&quot;;\n font-family: &#39;uf&#39;;\n}</code></pre>\n</div>\n<div class="examples-code"><pre><code>\n&lt;ol class=&quot;u-breadcrumb u-breadcrumb-arrow&quot;&gt;\n &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n &lt;li class=&quot;active&quot;&gt;Library&lt;/li&gt;\n&lt;/ol&gt;\n&lt;ol class=&quot;u-breadcrumb u-breadcrumb-arrow&quot;&gt;\n &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;\n &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;\n&lt;/ol&gt;</code></pre>\n</div>\n\n<p>##默认面包屑</p>\n<p>&quot;/&quot;为分隔符</p>\n<div class="example-content">\n<ol class="u-breadcrumb">\n <li><a class="u-link" href="javascript:void(0)">Home</a></li>\n <li class="active">Library</li>\n</ol>\n<ol class="u-breadcrumb">\n <li><a class="u-link" href="javascript:void(0)">Home</a></li>\n <li><a class="u-link" href="javascript:void(0)">Library</a></li>\n <li class="active">Data</li>\n</ol>\n</div>\n<div class="examples-code"><pre><code>\n&lt;ol class=&quot;u-breadcrumb&quot;&gt;\n &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n &lt;li class=&quot;active&quot;&gt;Library&lt;/li&gt;\n&lt;/ol&gt;\n&lt;ol class=&quot;u-breadcrumb&quot;&gt;\n &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;\n &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;\n&lt;/ol&gt;\n</code></pre>\n</div>\n\n\n<!--### 示例1\n\n示例1说明\n\n### 示例2\n\n示例2说-->\n </div>\n\n <!-- 引入end -->\n {{include '../../../base/public/footer'}}\n</body>\n</html>
+<h1 id="breadcrumb-">breadcrumb控件</h1>
+<p>用于带有层次的导航，active状态表明当前页面的位置</p>
+<h1 id="-">如何使用</h1>
+<p>给父元素添加<code>.u-breadcrumb</code>,自定义导航结构的分隔符</p>
+<h1 id="-">示例</h1>
+<p>##图标面包屑</p>
+<p>&quot;/&quot;为分隔符,并添加Home icon</p>
+<div class="example-content ex-hide"><style>.md-home:before {
+    content: &quot;\e6a2&quot;;
+    font-family: &#39;uf&#39;;
+}
+</style></div>
+<div class="example-content">
+<ol class="u-breadcrumb">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Data</li>
+</ol>
+<ol class="u-breadcrumb breadcrumb-arrow">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol></div>
+<div class="examples-code"><pre><code>.md-home:before {
+    content: &quot;\e6a2&quot;;
+    font-family: &#39;uf&#39;;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code>
+&lt;ol class=&quot;u-breadcrumb&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;icon md-home u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;u-breadcrumb breadcrumb-arrow&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;icon md-home u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+
+<p>##&quot;&gt;&gt;&quot;为分隔符的面包屑</p>
+<div class="example-content ex-hide"><style>.md-home:before {
+    content: &quot;\e6a2&quot;;
+    font-family: &#39;uf&#39;;
+}
+</style></div>
+<div class="example-content">
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol></div>
+<div class="examples-code"><pre><code>.md-home:before {
+    content: &quot;\e6a2&quot;;
+    font-family: &#39;uf&#39;;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code>
+&lt;ol class=&quot;u-breadcrumb u-breadcrumb-arrow&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;Library&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;u-breadcrumb u-breadcrumb-arrow&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+
+<p>##默认面包屑</p>
+<p>&quot;/&quot;为分隔符</p>
+<div class="example-content">
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+</div>
+<div class="examples-code"><pre><code>
+&lt;ol class=&quot;u-breadcrumb&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;Library&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;u-breadcrumb&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;u-link&quot; href=&quot;javascript:void(0)&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+</div>
+
+
+<!--### 示例1
+
+示例1说明
+
+### 示例2
+
+示例2说-->

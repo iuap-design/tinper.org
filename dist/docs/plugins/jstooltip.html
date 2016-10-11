@@ -1,3 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <!-- 引入head -->
+ {{include '../../../base/public/header'}}
+</head>
+<body>
+ <!-- side bar -->
+ <div>
+ <ul> <li><a href="message.html">提示消息 message</a></li> <li><a href="pagination.html">分页 pagination</a></li> <li><a href="message.html">消息 message</a></li> <li><a href="tooltip.html">提示 tooltip</a></li> <li><a href="breadcrumb.html">面包屑 breadcrumb</a></li> <li><a href="panel.html">面板 panel</a></li> <li><a href="dropdown.html">下拉 dropdown</a></li> <li><a href="buttongroup.html">按钮组 buttongroup</a></li> <li><a href="inputgroup.html">输入框组 inputgroup</a></li> <li><a href="navbar.html">导航条 navbar</a></li> <li><a href="thumbnail.html">缩略图 thumbnail</a></li> <li><a href="media.html">媒体对象 meida</a></li> <li><a href="listgroup.html">列表组 listgroup</a></li> <li><a href="gallery.html">图片画廊 gallery</a></li> <li><a href="statisticWidget.html">卡片</a></li> </ul>
+ </div>
+
+ <!-- content -->
+ <div>
+ 
 <h1 id="tooltip-">tooltip插件</h1>
 <p>当您想要描述一个链接的时候，提示工具（Tooltip）就显得非常有用。</p>
 <h1 id="-">插件依赖</h1>
@@ -13,20 +31,20 @@ title:&#39;默认向上显示&#39;
 <h1 id="-">示例</h1>
 <p>##基础tooltip</p>
 <div class="example-content"><style>.ws{
-    width: 60px;
-    display: inline-block;
-    border: 1px solid #ddd;
-    height:30px;
-    line-height: 30px;
-    text-align: center;
-    margin-left: 60px;
-    margin-top: 10px;
+ width: 60px;
+ display: inline-block;
+ border: 1px solid #ddd;
+ height:30px;
+ line-height: 30px;
+ text-align: center;
+ margin-left: 60px;
+ margin-top: 10px;
 }
 #example{
-    margin-left: 60px;
+ margin-left: 60px;
 }
 #example label:first-child,#example1 label:first-child{
-    margin-left: 0px;
+ margin-left: 0px;
 }
 
 </style></div>
@@ -57,27 +75,27 @@ placement:&#39;right&#39;
 });
 </script></div>
 <div class="example-content"><div id='example'>
-    <label id="top" class="ws">上提示</label>
-    <label id="down" class="ws">下提示</label>
-    <label id="left" class="ws">左提示</label>
-    <label id="right" class="ws">右提示</label>
+ <label id="top" class="ws">上提示</label>
+ <label id="down" class="ws">下提示</label>
+ <label id="left" class="ws">左提示</label>
+ <label id="right" class="ws">右提示</label>
 </div>
 </div>
 <div class="examples-code"><pre><code>.ws{
-    width: 60px;
-    display: inline-block;
-    border: 1px solid #ddd;
-    height:30px;
-    line-height: 30px;
-    text-align: center;
-    margin-left: 60px;
-    margin-top: 10px;
+ width: 60px;
+ display: inline-block;
+ border: 1px solid #ddd;
+ height:30px;
+ line-height: 30px;
+ text-align: center;
+ margin-left: 60px;
+ margin-top: 10px;
 }
 #example{
-    margin-left: 60px;
+ margin-left: 60px;
 }
 #example label:first-child,#example1 label:first-child{
-    margin-left: 0px;
+ margin-left: 0px;
 }
  </code></pre>
 </div>
@@ -108,10 +126,10 @@ placement:&#39;right&#39;
 });</code></pre>
 </div>
 <div class="examples-code"><pre><code>&lt;div id=&#39;example&#39;&gt;
-    &lt;label id=&quot;top&quot; class=&quot;ws&quot;&gt;上提示&lt;/label&gt;
-    &lt;label id=&quot;down&quot; class=&quot;ws&quot;&gt;下提示&lt;/label&gt;
-    &lt;label id=&quot;left&quot; class=&quot;ws&quot;&gt;左提示&lt;/label&gt;
-    &lt;label id=&quot;right&quot; class=&quot;ws&quot;&gt;右提示&lt;/label&gt;
+ &lt;label id=&quot;top&quot; class=&quot;ws&quot;&gt;上提示&lt;/label&gt;
+ &lt;label id=&quot;down&quot; class=&quot;ws&quot;&gt;下提示&lt;/label&gt;
+ &lt;label id=&quot;left&quot; class=&quot;ws&quot;&gt;左提示&lt;/label&gt;
+ &lt;label id=&quot;right&quot; class=&quot;ws&quot;&gt;右提示&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -120,20 +138,26 @@ placement:&#39;right&#39;
 <h1 id="api">API</h1>
 <h2 id="js-">JS 方法参数</h2>
 <table>
-  <tbody>
-        <tr>
-        <td>名称</td>
-        <td>参数</td>
-        <td>描述</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>new u.Tooltip()</td>
-        <td>1.title:显示内容 2.placement:显示方向 3.colorLevel:颜色主体</td>
-        <td>
-            1.colorLevel：取值范围tooltip-primary、tooltip-info、tooltip-warning、tooltip-success、tooltip-danger
-            2.placement： 取值范围top、bottom、left、right，默认top</td>
-        <td></td>
-      </tr>
-    </tbody>
+ <tbody>
+ <tr>
+ <td>名称</td>
+ <td>参数</td>
+ <td>描述</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>new u.Tooltip()</td>
+ <td>1.title:显示内容 2.placement:显示方向 3.colorLevel:颜色主体</td>
+ <td>
+ 1.colorLevel：取值范围tooltip-primary、tooltip-info、tooltip-warning、tooltip-success、tooltip-danger
+ 2.placement： 取值范围top、bottom、left、right，默认top</td>
+ <td></td>
+ </tr>
+ </tbody>
 </table>
+ </div>
+
+ <!-- 引入end -->
+ {{include '../../../base/public/footer'}}
+</body>
+</html>

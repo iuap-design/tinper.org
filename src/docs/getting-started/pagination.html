@@ -1,3 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <!-- 引入head -->
+ {{include '../../../base/public/header'}}
+</head>
+<body>
+ <!-- side bar -->
+ <div>
+ <ul> <li><a href="message.html">提示消息 message</a></li> <li><a href="pagination.html">分页 pagination</a></li> <li><a href="message.html">消息 message</a></li> <li><a href="tooltip.html">提示 tooltip</a></li> <li><a href="breadcrumb.html">面包屑 breadcrumb</a></li> <li><a href="panel.html">面板 panel</a></li> <li><a href="dropdown.html">下拉 dropdown</a></li> <li><a href="buttongroup.html">按钮组 buttongroup</a></li> <li><a href="inputgroup.html">输入框组 inputgroup</a></li> <li><a href="navbar.html">导航条 navbar</a></li> <li><a href="thumbnail.html">缩略图 thumbnail</a></li> <li><a href="media.html">媒体对象 meida</a></li> <li><a href="listgroup.html">列表组 listgroup</a></li> <li><a href="gallery.html">图片画廊 gallery</a></li> <li><a href="statisticWidget.html">卡片</a></li> </ul>
+ </div>
+
+ <!-- content -->
+ <div>
+ 
 <h1 id="-">分页控件</h1>
 <p>分页控件提供了无border分页、有间距的分页、多尺寸分页。</p>
 <h1 id="-">如何使用</h1>
@@ -6,28 +24,28 @@
 <p>##基础分页</p>
 <div class="example-content"><div id='pagination' class='u-pagination'>
 </div></div>
-<div class="example-content ex-hide"><script>  var element = document.getElementById(&quot;pagination&quot;);
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on(&#39;pageChange&#39;, function(pageIndex) {
-      console.log(&#39;新的页号为&#39; + pageIndex);
-  });
-  comp.on(&#39;sizeChange&#39;, function(arg) {
-      console.log(&#39;每页显示条数为&#39; + arg[0]);
-  });
+<div class="example-content ex-hide"><script> var element = document.getElementById(&quot;pagination&quot;);
+ var comp = new u.pagination({ el: element,showState:false });
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+ comp.on(&#39;pageChange&#39;, function(pageIndex) {
+ console.log(&#39;新的页号为&#39; + pageIndex);
+ });
+ comp.on(&#39;sizeChange&#39;, function(arg) {
+ console.log(&#39;每页显示条数为&#39; + arg[0]);
+ });
 </script></div>
 <div class="examples-code"><pre><code>&lt;div id=&#39;pagination&#39; class=&#39;u-pagination&#39;&gt;
 &lt;/div&gt;</code></pre>
 </div>
-<div class="examples-code"><pre><code>  var element = document.getElementById(&quot;pagination&quot;);
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on(&#39;pageChange&#39;, function(pageIndex) {
-      console.log(&#39;新的页号为&#39; + pageIndex);
-  });
-  comp.on(&#39;sizeChange&#39;, function(arg) {
-      console.log(&#39;每页显示条数为&#39; + arg[0]);
-  });</code></pre>
+<div class="examples-code"><pre><code> var element = document.getElementById(&quot;pagination&quot;);
+ var comp = new u.pagination({ el: element,showState:false });
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+ comp.on(&#39;pageChange&#39;, function(pageIndex) {
+ console.log(&#39;新的页号为&#39; + pageIndex);
+ });
+ comp.on(&#39;sizeChange&#39;, function(arg) {
+ console.log(&#39;每页显示条数为&#39; + arg[0]);
+ });</code></pre>
 </div>
 
 <p>##无边框的分页
@@ -36,7 +54,7 @@
 </div></div>
 <div class="example-content ex-hide"><script> var paginationNoBorder = document.getElementById(&quot;paginationNoBorder&quot;);
 
- var comp = new u.pagination({ el: paginationNoBorder,showState:false  });
+ var comp = new u.pagination({ el: paginationNoBorder,showState:false });
  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
 
 </script></div>
@@ -45,7 +63,7 @@
 </div>
 <div class="examples-code"><pre><code> var paginationNoBorder = document.getElementById(&quot;paginationNoBorder&quot;);
 
- var comp = new u.pagination({ el: paginationNoBorder,showState:false  });
+ var comp = new u.pagination({ el: paginationNoBorder,showState:false });
  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
 </code></pre>
 </div>
@@ -56,7 +74,7 @@
 </div></div>
 <div class="example-content ex-hide"><script> var paginationGap = document.getElementById(&#39;paginationGap&#39;);
 
- var comp = new u.pagination({ el: paginationGap, showState:false  });
+ var comp = new u.pagination({ el: paginationGap, showState:false });
 
  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
 
@@ -66,7 +84,7 @@
 </div>
 <div class="examples-code"><pre><code> var paginationGap = document.getElementById(&#39;paginationGap&#39;);
 
- var comp = new u.pagination({ el: paginationGap, showState:false  });
+ var comp = new u.pagination({ el: paginationGap, showState:false });
 
  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
 </code></pre>
@@ -121,3 +139,9 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 
 
 
+ </div>
+
+ <!-- 引入end -->
+ {{include '../../../base/public/footer'}}
+</body>
+</html>

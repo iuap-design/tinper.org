@@ -1,1 +1,118 @@
-\n<!DOCTYPE html>\n<html lang="en">\n<head>\n <meta charset="UTF-8">\n <title>Document</title>\n <!-- 引入head -->\n {{include '../../../base/public/header'}}\n</head>\n<body>\n <!-- side bar -->\n <div>\n <ul> <li><a href=".html">提示消息 message</a></li> <li><a href=".html">分页 pagination</a></li> <li><a href=".html">消息 message</a></li> <li><a href=".html">提示 tooltip</a></li> <li><a href=".html">面包屑 breadcrumb</a></li> <li><a href=".html">面板 panel</a></li> <li><a href=".html">下拉 dropdown</a></li> <li><a href=".html">按钮组 buttongroup</a></li> <li><a href=".html">输入框组 inputgroup</a></li> <li><a href=".html">导航条 navbar</a></li> <li><a href=".html">缩略图 thumbnail</a></li> <li><a href=".html">媒体对象 meida</a></li> <li><a href=".html">列表组 listgroup</a></li> <li><a href=".html">图片画廊 gallery</a></li> <li><a href=".html">卡片</a></li> </ul>\n </div>\n\n <!-- content -->\n <div>\n \n<h1 id="-">按钮组</h1>\n<p>是多个按钮的集合，实现各种排列与样式</p>\n<h1 id="-">如何使用</h1>\n<p>添加含有<code>u-button-group</code>样式的父元素，然后包裹一个以上的类为<code>u-button</code>button元素</p>\n<h1 id="-">示例</h1>\n<h2 id="-">尺寸</h2>\n<p><code>u-button-group</code>后添加尺寸类<code>u-button-group-lg</code>,<code>u-button-group-sm</code>,<code>u-button-group-xs</code>,不添加是默认尺寸</p>\n<div class="example-content ex-hide"><style>.example-content .u-button-group{\n margin: 5px;\n}\n</style></div>\n<div class="example-content"><div class="u-button-group u-button-group-xg"><br> <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n</div>\n<br>\n<div class="u-button-group u-button-group-lg"><br> <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n</div>\n<br>\n<div class="u-button-group "><br> <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n</div>\n<br>\n<div class="u-button-group u-button-group-xs"><br> <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n</div></div>\n<div class="examples-code"><pre><code>.example-content .u-button-group{\n margin: 5px;\n}</code></pre>\n</div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;u-button-group u-button-group-xg&quot;&gt;<br> &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n&lt;/div&gt;\n&lt;br&gt;\n&lt;div class=&quot;u-button-group u-button-group-lg&quot;&gt;<br> &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n&lt;/div&gt;\n&lt;br&gt;\n&lt;div class=&quot;u-button-group &quot;&gt;<br> &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n&lt;/div&gt;\n&lt;br&gt;\n&lt;div class=&quot;u-button-group u-button-group-xs&quot;&gt;<br> &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n&lt;/div&gt;</code></pre>\n</div>\n\n<h2 id="-">基础按钮组</h2>\n<p>类<code>u-group-button</code>包裹类<code>u-button</code>的button</p>\n<div class="example-content"><div class="u-button-group"><br> <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n</div></div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;u-button-group&quot;&gt;<br> &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n&lt;/div&gt;</code></pre>\n</div>\n\n<h2 id="-">嵌套</h2>\n<p>按钮组里嵌套下拉</p>\n<div class="example-content"><div class="u-button-group"><br> <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default">BUTTON</button>\n <button class="u-button raised u-button-border default" id="demo-menu-default">\n dropdown\n <span class="u-right-icon uf uf-anglearrowdown"></span>\n </button>\n <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">\n <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>\n <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>\n <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>\n <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>\n </ul>\n</div>\n</div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;u-button-group&quot;&gt;<br> &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border default&quot; id=&quot;demo-menu-default&quot;&gt;\n dropdown\n &lt;span class=&quot;u-right-icon uf uf-anglearrowdown&quot;&gt;&lt;/span&gt;\n &lt;/button&gt;\n &lt;ul class=&quot;u-menu u-menu-bottom-right u-menu-danger&quot; for=&quot;demo-menu-default&quot;&gt;\n &lt;li class=&quot;u-menu-item&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;action zero&lt;/a&gt;&lt;/li&gt;\n &lt;li class=&quot;u-menu-item&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;action one&lt;/a&gt;&lt;/li&gt;\n &lt;li class=&quot;u-menu-item&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;action two&lt;/a&gt;&lt;/li&gt;\n &lt;li class=&quot;u-menu-item&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;action three&lt;/a&gt;&lt;/li&gt;\n &lt;/ul&gt;\n&lt;/div&gt;\n</code></pre>\n</div>\n\n<h2 id="-">基础按钮组</h2>\n<p>在 <code>u-button</code> 后添加<code>default</code>,<code>primary</code>,<code>u-button-danger</code>,<code>u-button-warning</code>,<code>u-button-info</code>,<code>u-button-success</code> ,来改变button背景</p>\n<div class="example-content"><div class="u-button-group"><br> <button class="u-button raised u-button-border default">default</button>\n <button class="u-button raised u-button-border primary">primary</button>\n <button class="u-button raised u-button-border u-button-danger">danger</button>\n <button class="u-button raised u-button-border u-button-warning">warning</button>\n <button class="u-button raised u-button-border u-button-info">info</button>\n <button class="u-button raised u-button-border u-button-success">success</button>\n</div></div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;u-button-group&quot;&gt;<br> &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;default&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border primary&quot;&gt;primary&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border u-button-danger&quot;&gt;danger&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border u-button-warning&quot;&gt;warning&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border u-button-info&quot;&gt;info&lt;/button&gt;\n &lt;button class=&quot;u-button raised u-button-border u-button-success&quot;&gt;success&lt;/button&gt;\n&lt;/div&gt;</code></pre>\n</div>\n\n\n </div>\n\n <!-- 引入end -->\n {{include '../../../base/public/footer'}}\n</body>\n</html>
+<h1 id="-">按钮组</h1>
+<p>是多个按钮的集合，实现各种排列与样式</p>
+<h1 id="-">如何使用</h1>
+<p>添加含有<code>u-button-group</code>样式的父元素，然后包裹一个以上的类为<code>u-button</code>button元素</p>
+<h1 id="-">示例</h1>
+<h2 id="-">尺寸</h2>
+<p><code>u-button-group</code>后添加尺寸类<code>u-button-group-lg</code>,<code>u-button-group-sm</code>,<code>u-button-group-xs</code>,不添加是默认尺寸</p>
+<div class="example-content ex-hide"><style>.example-content .u-button-group{
+    margin: 5px;
+}
+</style></div>
+<div class="example-content"><div class="u-button-group u-button-group-xg"><br>    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group u-button-group-lg"><br>    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group "><br>    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group u-button-group-xs"><br>    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+</div></div>
+<div class="examples-code"><pre><code>.example-content .u-button-group{
+    margin: 5px;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;u-button-group u-button-group-xg&quot;&gt;<br>    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;u-button-group u-button-group-lg&quot;&gt;<br>    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;u-button-group &quot;&gt;<br>    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;u-button-group u-button-group-xs&quot;&gt;<br>    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<h2 id="-">基础按钮组</h2>
+<p>类<code>u-group-button</code>包裹类<code>u-button</code>的button</p>
+<div class="example-content"><div class="u-button-group"><br>    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+</div></div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;u-button-group&quot;&gt;<br>    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<h2 id="-">嵌套</h2>
+<p>按钮组里嵌套下拉</p>
+<div class="example-content"><div class="u-button-group"><br>    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default">BUTTON</button>
+    <button class="u-button raised u-button-border default" id="demo-menu-default">
+        dropdown
+        <span class="u-right-icon uf uf-anglearrowdown"></span>
+    </button>
+    <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">
+        <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+    </ul>
+</div>
+</div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;u-button-group&quot;&gt;<br>    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border default&quot; id=&quot;demo-menu-default&quot;&gt;
+        dropdown
+        &lt;span class=&quot;u-right-icon uf uf-anglearrowdown&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;u-menu u-menu-bottom-right u-menu-danger&quot; for=&quot;demo-menu-default&quot;&gt;
+        &lt;li class=&quot;u-menu-item&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;action zero&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;u-menu-item&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;action one&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;u-menu-item&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;action two&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;u-menu-item&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;action three&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<h2 id="-">基础按钮组</h2>
+<p>在 <code>u-button</code> 后添加<code>default</code>,<code>primary</code>,<code>u-button-danger</code>,<code>u-button-warning</code>,<code>u-button-info</code>,<code>u-button-success</code> ,来改变button背景</p>
+<div class="example-content"><div class="u-button-group"><br>    <button class="u-button raised u-button-border default">default</button>
+    <button class="u-button raised u-button-border primary">primary</button>
+    <button class="u-button raised u-button-border u-button-danger">danger</button>
+    <button class="u-button raised u-button-border u-button-warning">warning</button>
+    <button class="u-button raised u-button-border u-button-info">info</button>
+    <button class="u-button raised u-button-border u-button-success">success</button>
+</div></div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;u-button-group&quot;&gt;<br>    &lt;button class=&quot;u-button raised u-button-border default&quot;&gt;default&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border primary&quot;&gt;primary&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border u-button-danger&quot;&gt;danger&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border u-button-warning&quot;&gt;warning&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border u-button-info&quot;&gt;info&lt;/button&gt;
+    &lt;button class=&quot;u-button raised u-button-border u-button-success&quot;&gt;success&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+

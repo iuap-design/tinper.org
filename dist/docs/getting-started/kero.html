@@ -1,1 +1,77 @@
-\n<!DOCTYPE html>\n<html lang="en">\n<head>\n <meta charset="UTF-8">\n <title>Document</title>\n <!-- 引入head -->\n {{include '../../../base/public/header'}}\n</head>\n<body>\n <!-- side bar -->\n <div>\n <ul> <li><a href=".html">提示消息 message</a></li> <li><a href=".html">分页 pagination</a></li> <li><a href=".html">消息 message</a></li> <li><a href=".html">提示 tooltip</a></li> <li><a href=".html">面包屑 breadcrumb</a></li> <li><a href=".html">面板 panel</a></li> <li><a href=".html">下拉 dropdown</a></li> <li><a href=".html">按钮组 buttongroup</a></li> <li><a href=".html">输入框组 inputgroup</a></li> <li><a href=".html">导航条 navbar</a></li> <li><a href=".html">缩略图 thumbnail</a></li> <li><a href=".html">媒体对象 meida</a></li> <li><a href=".html">列表组 listgroup</a></li> <li><a href=".html">图片画廊 gallery</a></li> <li><a href=".html">卡片</a></li> </ul>\n </div>\n\n <!-- content -->\n <div>\n \n<h1 id="kero">Kero</h1>\n<blockquote>\n<p><code>Kero</code> 基于 <code>knockout</code> 封装的 <code>library</code>，用于增强 MVVM 架构中的 Model 层能力，能够处理企业级复杂数据交互。项目地址：<a href="https://github.com/iuap-design/kero">https://github.com/iuap-design/kero</a></p>\n</blockquote>\n<h2 id="1-">1、介绍</h2>\n<p><code>Kero</code> 主要功能有：</p>\n<ul>\n<li><p>以行、列的形式对数据做存储，并对外暴露一批增删改查的API，方便开发者对页面数据的处理，而且所有开发者之间做到统一，减少出错概率。</p>\n</li>\n<li><p>数据增加状态标识新增或修改，方便开发者使用。</p>\n</li>\n<li><p>具有分页缓存能力，可在前台处理分页(非必要情况下，不推荐前台分页)。</p>\n</li>\n<li><p>具有事件触发器，把数据变化触发出去，供开发者监听使用。</p>\n</li>\n</ul>\n<h2 id="2-">2、快速上手</h2>\n<p><a href="http://design.yyuap.com/dist/pages/kero/index.html">控件使用说明</a></p>\n<h2 id="3-">3、开发说明</h2>\n<h3 id="-">目录说明</h3>\n<pre><code>├─css 控件css\n├─dist 产出后的资源\n├─docs 文档相关\n├─examples 示例文件\n ├─datatable 关联datatable示例\n ├─ui 单独控件示例\n├─snippets 文档及代码片段\n ├─docs 文档片段\n │ ├─grid.md 文档片段:replaceui将替换为ui示例，replacedatatable将替换为datatable示例。\n └─examples 示例片段\n └─grid 与grid.md对应的目录,示例目录下必须存在widget.css,widget.html,widget.js,说明.txt\n └─datatable 关联datatable示例片段\n └─ui 单独控件示例片段\n├─vendor 第三方库，后续删除\n├─app.js 依据snippets中的片段生成docs以及examples中的最终产出\n├─gulpfile.js 通过gulp对项目源文件（CSS/JS）生成dist中的最终产出\n├─package.json node说明\n└─README.md 项目说明\n</code></pre><p>####snippets详细说明：</p>\n<p>docs目录与examples目录结构需要对应：docs下md文件在examples对应目录下存在同样名称的文件夹，并且此文件夹下面包含datatable以及ui文件夹用于存放对应示例片段</p>\n<p>示例1：</p>\n<p>docs/grid.md</p>\n<p>examples/examples/grid/datatable以及examples/examples/grid/ui</p>\n<p>示例2：</p>\n<p>docs/dir/grid.md</p>\n<p>examples/examples/dir/grid/datatable以及examples/examples/dir/grid/ui</p>\n<h3 id="-">控件开发过程说明</h3>\n<p>针对控件进行开发，修改css以及js文件之后通过调用gulp dist来生成项目产出</p>\n<pre><code>$ gulp dist\n</code></pre><h3 id="-">示例及文档开发过程说明</h3>\n<p>针对示例及文档进行开发，修改snippets文件之后通过node app.js来生成示例及文档产出</p>\n<pre><code>$ node app.js\n</code></pre>\n </div>\n\n <!-- 引入end -->\n {{include '../../../base/public/footer'}}\n</body>\n</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <!-- 引入head -->
+ {{include '../../../base/public/header'}}
+</head>
+<body>
+ <!-- side bar -->
+ <div>
+ <ul> <li><a href="message.html">提示消息 message</a></li> <li><a href="pagination.html">分页 pagination</a></li> <li><a href="message.html">消息 message</a></li> <li><a href="tooltip.html">提示 tooltip</a></li> <li><a href="breadcrumb.html">面包屑 breadcrumb</a></li> <li><a href="panel.html">面板 panel</a></li> <li><a href="dropdown.html">下拉 dropdown</a></li> <li><a href="buttongroup.html">按钮组 buttongroup</a></li> <li><a href="inputgroup.html">输入框组 inputgroup</a></li> <li><a href="navbar.html">导航条 navbar</a></li> <li><a href="thumbnail.html">缩略图 thumbnail</a></li> <li><a href="media.html">媒体对象 meida</a></li> <li><a href="listgroup.html">列表组 listgroup</a></li> <li><a href="gallery.html">图片画廊 gallery</a></li> <li><a href="statisticWidget.html">卡片</a></li> </ul>
+ </div>
+
+ <!-- content -->
+ <div>
+ 
+<h1 id="kero">Kero</h1>
+<blockquote>
+<p><code>Kero</code> 基于 <code>knockout</code> 封装的 <code>library</code>，用于增强 MVVM 架构中的 Model 层能力，能够处理企业级复杂数据交互。项目地址：<a href="https://github.com/iuap-design/kero">https://github.com/iuap-design/kero</a></p>
+</blockquote>
+<h2 id="1-">1、介绍</h2>
+<p><code>Kero</code> 主要功能有：</p>
+<ul>
+<li><p>以行、列的形式对数据做存储，并对外暴露一批增删改查的API，方便开发者对页面数据的处理，而且所有开发者之间做到统一，减少出错概率。</p>
+</li>
+<li><p>数据增加状态标识新增或修改，方便开发者使用。</p>
+</li>
+<li><p>具有分页缓存能力，可在前台处理分页(非必要情况下，不推荐前台分页)。</p>
+</li>
+<li><p>具有事件触发器，把数据变化触发出去，供开发者监听使用。</p>
+</li>
+</ul>
+<h2 id="2-">2、快速上手</h2>
+<p><a href="http://design.yyuap.com/dist/pages/kero/index.html">控件使用说明</a></p>
+<h2 id="3-">3、开发说明</h2>
+<h3 id="-">目录说明</h3>
+<pre><code>├─css 控件css
+├─dist 产出后的资源
+├─docs 文档相关
+├─examples 示例文件
+ ├─datatable 关联datatable示例
+ ├─ui 单独控件示例
+├─snippets 文档及代码片段
+ ├─docs 文档片段
+ │ ├─grid.md 文档片段:replaceui将替换为ui示例，replacedatatable将替换为datatable示例。
+ └─examples 示例片段
+ └─grid 与grid.md对应的目录,示例目录下必须存在widget.css,widget.html,widget.js,说明.txt
+ └─datatable 关联datatable示例片段
+ └─ui 单独控件示例片段
+├─vendor 第三方库，后续删除
+├─app.js 依据snippets中的片段生成docs以及examples中的最终产出
+├─gulpfile.js 通过gulp对项目源文件（CSS/JS）生成dist中的最终产出
+├─package.json node说明
+└─README.md 项目说明
+</code></pre><p>####snippets详细说明：</p>
+<p>docs目录与examples目录结构需要对应：docs下md文件在examples对应目录下存在同样名称的文件夹，并且此文件夹下面包含datatable以及ui文件夹用于存放对应示例片段</p>
+<p>示例1：</p>
+<p>docs/grid.md</p>
+<p>examples/examples/grid/datatable以及examples/examples/grid/ui</p>
+<p>示例2：</p>
+<p>docs/dir/grid.md</p>
+<p>examples/examples/dir/grid/datatable以及examples/examples/dir/grid/ui</p>
+<h3 id="-">控件开发过程说明</h3>
+<p>针对控件进行开发，修改css以及js文件之后通过调用gulp dist来生成项目产出</p>
+<pre><code>$ gulp dist
+</code></pre><h3 id="-">示例及文档开发过程说明</h3>
+<p>针对示例及文档进行开发，修改snippets文件之后通过node app.js来生成示例及文档产出</p>
+<pre><code>$ node app.js
+</code></pre>
+ </div>
+
+ <!-- 引入end -->
+ {{include '../../../base/public/footer'}}
+</body>
+</html>

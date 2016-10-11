@@ -1,1 +1,126 @@
-\n<!DOCTYPE html>\n<html lang="en">\n<head>\n <meta charset="UTF-8">\n <title>Document</title>\n <!-- 引入head -->\n {{include '../../../base/public/header'}}\n</head>\n<body>\n <!-- side bar -->\n <div>\n <ul> <li><a href=".html">提示消息 message</a></li> <li><a href=".html">分页 pagination</a></li> <li><a href=".html">消息 message</a></li> <li><a href=".html">提示 tooltip</a></li> <li><a href=".html">面包屑 breadcrumb</a></li> <li><a href=".html">面板 panel</a></li> <li><a href=".html">下拉 dropdown</a></li> <li><a href=".html">按钮组 buttongroup</a></li> <li><a href=".html">输入框组 inputgroup</a></li> <li><a href=".html">导航条 navbar</a></li> <li><a href=".html">缩略图 thumbnail</a></li> <li><a href=".html">媒体对象 meida</a></li> <li><a href=".html">列表组 listgroup</a></li> <li><a href=".html">图片画廊 gallery</a></li> <li><a href=".html">卡片</a></li> </ul>\n </div>\n\n <!-- content -->\n <div>\n \n<h1 id="-">导航条</h1>\n<p>提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在<a href="http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/navbar">webIDE</a>进行在线测试。</p>\n<h1 id="-">示例</h1>\n<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">\n <div class="u-container-fluid">\n <div class="u-navbar-header">\n <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">\n <!-- <span class="sr-only">Toggle navigation</span> -->\n <span class="u-hamburger-bar"></span>\n </button>\n <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>\n </div>\n <ul class="nav-list u-navbar-nav hidden-xs">\n <li>\n <a href="javascript:void(0)">\n <i class="uf uf-book" aria-hidden="true"></i>\n </a>\n </li>\n <li class="hidden-xs">\n <a class="uf uf-bellmusicaltool" data-toggle="fullscreen" href="#" role="button">\n </a>\n </li>\n <li class="hidden-xs">\n <a class="uf uf-zoomin" data-toggle="collapse" href="#example-default-search" role="button">\n <!-- <span class="sr-only">Toggle Search</span> -->\n </a>\n </li>\n </ul>\n <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">\n <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">\n <li class="dropdown">\n <a class="u-avatar w-32 u-avatar-online">\n <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">\n <i></i>\n </a>\n </li>\n <li class="dropdown">\n <a class="u-badge w-20 m" data-badge="1">\n <i class="uf uf-bellmusicaltool"></i>\n </a>\n </li>\n <li class="dropdown">\n <a class="u-badge u-badge-info w-20 m" data-badge="3">\n <i class="uf uf-envelope"></i>\n </a>\n </li>\n </ul>\n </div>\n </div>\n</nav>\n</div>\n<div class="example-content ex-hide"><script>u.on(window, &#39;load&#39;, function() {\n &#39;use strict&#39;;\n $(&#39;.u-hamburger&#39;).click(function(){\n var attrTarget = $(this).attr(&#39;data-target&#39;);\n var $targetDom = $(attrTarget);\n $(this).toggleClass(&quot;u-collapsed&quot;);\n $targetDom.toggleClass(&quot;in&quot;);\n\n });\n});\n</script></div>\n<div class="examples-code"><pre><code>&lt;nav class=&quot;u-navbar u-navbar-default&quot; role=&quot;navigation&quot;&gt;\n &lt;div class=&quot;u-container-fluid&quot;&gt;\n &lt;div class=&quot;u-navbar-header&quot;&gt;\n &lt;button type=&quot;button&quot; class=&quot;u-navbar-toggle u-hamburger u-hamburger-close u-collapsed&quot; data-target=&quot;#example-default-collapse&quot; data-toggle=&quot;collapse&quot;&gt;\n &lt;!-- &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt; --&gt;\n &lt;span class=&quot;u-hamburger-bar&quot;&gt;&lt;/span&gt;\n &lt;/button&gt;\n &lt;a class=&quot;u-navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Brand&lt;/a&gt;\n &lt;/div&gt;\n &lt;ul class=&quot;nav-list u-navbar-nav hidden-xs&quot;&gt;\n &lt;li&gt;\n &lt;a href=&quot;javascript:void(0)&quot;&gt;\n &lt;i class=&quot;uf uf-book&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;\n &lt;/a&gt;\n &lt;/li&gt;\n &lt;li class=&quot;hidden-xs&quot;&gt;\n &lt;a class=&quot;uf uf-bellmusicaltool&quot; data-toggle=&quot;fullscreen&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;\n &lt;/a&gt;\n &lt;/li&gt;\n &lt;li class=&quot;hidden-xs&quot;&gt;\n &lt;a class=&quot;uf uf-zoomin&quot; data-toggle=&quot;collapse&quot; href=&quot;#example-default-search&quot; role=&quot;button&quot;&gt;\n &lt;!-- &lt;span class=&quot;sr-only&quot;&gt;Toggle Search&lt;/span&gt; --&gt;\n &lt;/a&gt;\n &lt;/li&gt;\n &lt;/ul&gt;\n &lt;div class=&quot;u-collapse u-navbar-collapse u-navbar-collapse-group&quot; id=&quot;example-default-collapse&quot;&gt;\n &lt;ul class=&quot;nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right&quot;&gt;\n &lt;li class=&quot;dropdown&quot;&gt;\n &lt;a class=&quot;u-avatar w-32 u-avatar-online&quot;&gt;\n &lt;img src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; alt=&quot;...&quot; class=&quot;img-circle&quot;&gt;\n &lt;i&gt;&lt;/i&gt;\n &lt;/a&gt;\n &lt;/li&gt;\n &lt;li class=&quot;dropdown&quot;&gt;\n &lt;a class=&quot;u-badge w-20 m&quot; data-badge=&quot;1&quot;&gt;\n &lt;i class=&quot;uf uf-bellmusicaltool&quot;&gt;&lt;/i&gt;\n &lt;/a&gt;\n &lt;/li&gt;\n &lt;li class=&quot;dropdown&quot;&gt;\n &lt;a class=&quot;u-badge u-badge-info w-20 m&quot; data-badge=&quot;3&quot;&gt;\n &lt;i class=&quot;uf uf-envelope&quot;&gt;&lt;/i&gt;\n &lt;/a&gt;\n &lt;/li&gt;\n &lt;/ul&gt;\n &lt;/div&gt;\n &lt;/div&gt;\n&lt;/nav&gt;\n</code></pre>\n</div>\n<div class="examples-code"><pre><code>u.on(window, &#39;load&#39;, function() {\n &#39;use strict&#39;;\n $(&#39;.u-hamburger&#39;).click(function(){\n var attrTarget = $(this).attr(&#39;data-target&#39;);\n var $targetDom = $(attrTarget);\n $(this).toggleClass(&quot;u-collapsed&quot;);\n $targetDom.toggleClass(&quot;in&quot;);\n\n });\n});</code></pre>\n</div>\n\n\n\n<p><a href="http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/navbar">试一试</a></p>\n </div>\n\n <!-- 引入end -->\n {{include '../../../base/public/footer'}}\n</body>\n</html>
+<h1 id="-">导航条</h1>
+<p>提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在<a href="http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/navbar">webIDE</a>进行在线测试。</p>
+<h1 id="-">示例</h1>
+<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container-fluid">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <ul class="nav-list u-navbar-nav hidden-xs">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="uf uf-book" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-bellmusicaltool" data-toggle="fullscreen" href="#" role="button">
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-zoomin" data-toggle="collapse" href="#example-default-search" role="button">
+                    <!-- <span class="sr-only">Toggle Search</span> -->
+                </a>
+            </li>
+        </ul>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="u-avatar w-32 u-avatar-online">
+                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <i></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge w-20 m" data-badge="1">
+                        <i class="uf uf-bellmusicaltool"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
+                        <i class="uf uf-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+<div class="example-content ex-hide"><script>u.on(window, &#39;load&#39;, function() {
+    &#39;use strict&#39;;
+   $(&#39;.u-hamburger&#39;).click(function(){
+      var attrTarget = $(this).attr(&#39;data-target&#39;);
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass(&quot;u-collapsed&quot;);
+      $targetDom.toggleClass(&quot;in&quot;);
+
+   });
+});
+</script></div>
+<div class="examples-code"><pre><code>&lt;nav class=&quot;u-navbar u-navbar-default&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;u-container-fluid&quot;&gt;
+        &lt;div class=&quot;u-navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed&quot; data-target=&quot;#example-default-collapse&quot; data-toggle=&quot;collapse&quot;&gt;
+                &lt;!-- &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt; --&gt;
+                &lt;span class=&quot;u-hamburger-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;u-navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Brand&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;ul class=&quot;nav-list u-navbar-nav hidden-xs&quot;&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;javascript:void(0)&quot;&gt;
+                    &lt;i class=&quot;uf uf-book&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;hidden-xs&quot;&gt;
+                &lt;a class=&quot;uf uf-bellmusicaltool&quot; data-toggle=&quot;fullscreen&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;hidden-xs&quot;&gt;
+                &lt;a class=&quot;uf uf-zoomin&quot; data-toggle=&quot;collapse&quot; href=&quot;#example-default-search&quot; role=&quot;button&quot;&gt;
+                    &lt;!-- &lt;span class=&quot;sr-only&quot;&gt;Toggle Search&lt;/span&gt; --&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;u-collapse u-navbar-collapse u-navbar-collapse-group&quot; id=&quot;example-default-collapse&quot;&gt;
+            &lt;ul class=&quot;nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right&quot;&gt;
+                &lt;li class=&quot;dropdown&quot;&gt;
+                    &lt;a class=&quot;u-avatar w-32 u-avatar-online&quot;&gt;
+                        &lt;img src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; alt=&quot;...&quot; class=&quot;img-circle&quot;&gt;
+                        &lt;i&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;dropdown&quot;&gt;
+                    &lt;a class=&quot;u-badge w-20 m&quot; data-badge=&quot;1&quot;&gt;
+                        &lt;i class=&quot;uf uf-bellmusicaltool&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;dropdown&quot;&gt;
+                    &lt;a class=&quot;u-badge u-badge-info w-20 m&quot; data-badge=&quot;3&quot;&gt;
+                        &lt;i class=&quot;uf uf-envelope&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+</div>
+<div class="examples-code"><pre><code>u.on(window, &#39;load&#39;, function() {
+    &#39;use strict&#39;;
+   $(&#39;.u-hamburger&#39;).click(function(){
+      var attrTarget = $(this).attr(&#39;data-target&#39;);
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass(&quot;u-collapsed&quot;);
+      $targetDom.toggleClass(&quot;in&quot;);
+
+   });
+});</code></pre>
+</div>
+
+
+
+<p><a href="http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/navbar">试一试</a></p>

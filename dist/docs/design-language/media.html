@@ -1,1 +1,169 @@
-\n<!DOCTYPE html>\n<html lang="en">\n<head>\n <meta charset="UTF-8">\n <title>Document</title>\n <!-- 引入head -->\n {{include '../../../base/public/header'}}\n</head>\n<body>\n <!-- side bar -->\n <div>\n <ul> <li><a href=".html">提示消息 message</a></li> <li><a href=".html">分页 pagination</a></li> <li><a href=".html">消息 message</a></li> <li><a href=".html">提示 tooltip</a></li> <li><a href=".html">面包屑 breadcrumb</a></li> <li><a href=".html">面板 panel</a></li> <li><a href=".html">下拉 dropdown</a></li> <li><a href=".html">按钮组 buttongroup</a></li> <li><a href=".html">输入框组 inputgroup</a></li> <li><a href=".html">导航条 navbar</a></li> <li><a href=".html">缩略图 thumbnail</a></li> <li><a href=".html">媒体对象 meida</a></li> <li><a href=".html">列表组 listgroup</a></li> <li><a href=".html">图片画廊 gallery</a></li> <li><a href=".html">卡片</a></li> </ul>\n </div>\n\n <!-- content -->\n <div>\n \n<h1 id="-">媒体对象</h1>\n<p>允许在一个内容块的左边或右边展示一个多媒体内容（图像、视频、音频）</p>\n<h1 id="-">示例</h1>\n<h2 id="-">嵌套</h2>\n<p>媒体对象里嵌套媒体对象，只要整要嵌套的媒体对象放在父的<code>media-body</code>标签里</p>\n<div class="example-content"><div class="u-media">\n <div class="u-media-left">\n <a href="#">\n <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">\n </a>\n </div>\n <div class="u-media-body">\n <h4 class="u-media-heading">u-Media heading</h4>\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n <div class="u-media">\n <div class="u-media-left">\n <a href="#">\n <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">\n </a>\n </div>\n <div class="u-media-body">\n <h4 class="u-media-heading">u-Media heading</h4>\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n </div>\n </div>\n </div>\n</div></div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;u-media&quot;&gt;\n &lt;div class=&quot;u-media-left&quot;&gt;\n &lt;a href=&quot;#&quot;&gt;\n &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;\n &lt;/a&gt;\n &lt;/div&gt;\n &lt;div class=&quot;u-media-body&quot;&gt;\n &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n &lt;div class=&quot;u-media&quot;&gt;\n &lt;div class=&quot;u-media-left&quot;&gt;\n &lt;a href=&quot;#&quot;&gt;\n &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;\n &lt;/a&gt;\n &lt;/div&gt;\n &lt;div class=&quot;u-media-body&quot;&gt;\n &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n &lt;/div&gt;\n &lt;/div&gt;\n &lt;/div&gt;\n&lt;/div&gt;</code></pre>\n</div>\n\n<h2 id="-">对齐</h2>\n<p>默认上对齐\n<code>media-middle</code>: 中对齐\n<code>media-bottom</code>: 底对齐</p>\n<div class="example-content ex-hide"><style>.example-content .u-button-group{\n margin: 5px;\n}\n</style></div>\n<div class="example-content"><div class="u-media">\n <div class="u-media-left">\n <a href="#">\n <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">\n </a>\n </div>\n <div class="u-media-body">\n <h4 class="u-media-heading">u-Media heading</h4>\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n\n Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n </div>\n</div>\n<div class="u-media">\n <div class="u-media-left u-media-middle">\n <a href="#">\n <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">\n </a>\n </div>\n <div class="u-media-body">\n <h4 class="u-media-heading">u-Media heading</h4>\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n\n Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n </div>\n</div>\n<div class="u-media">\n <div class="u-media-left u-media-bottom">\n <a href="#">\n <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">\n </a>\n </div>\n <div class="u-media-body">\n <h4 class="u-media-heading">u-Media heading</h4>\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n\n Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n </div>\n</div></div>\n<div class="examples-code"><pre><code>.example-content .u-button-group{\n margin: 5px;\n}</code></pre>\n</div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;u-media&quot;&gt;\n &lt;div class=&quot;u-media-left&quot;&gt;\n &lt;a href=&quot;#&quot;&gt;\n &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;\n &lt;/a&gt;\n &lt;/div&gt;\n &lt;div class=&quot;u-media-body&quot;&gt;\n &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n\n Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=&quot;u-media&quot;&gt;\n &lt;div class=&quot;u-media-left u-media-middle&quot;&gt;\n &lt;a href=&quot;#&quot;&gt;\n &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;\n &lt;/a&gt;\n &lt;/div&gt;\n &lt;div class=&quot;u-media-body&quot;&gt;\n &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n\n Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=&quot;u-media&quot;&gt;\n &lt;div class=&quot;u-media-left u-media-bottom&quot;&gt;\n &lt;a href=&quot;#&quot;&gt;\n &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;\n &lt;/a&gt;\n &lt;/div&gt;\n &lt;div class=&quot;u-media-body&quot;&gt;\n &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n\n Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n &lt;/div&gt;\n&lt;/div&gt;</code></pre>\n</div>\n\n<h2 id="-">默认样式</h2>\n<div class="example-content"><div class="u-media">\n <div class="u-media-left">\n <a href="#">\n <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">\n </a>\n </div>\n <div class="u-media-body">\n <h4 class="u-media-heading">u-Media heading</h4>\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n </div>\n</div></div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;u-media&quot;&gt;\n &lt;div class=&quot;u-media-left&quot;&gt;\n &lt;a href=&quot;#&quot;&gt;\n &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;\n &lt;/a&gt;\n &lt;/div&gt;\n &lt;div class=&quot;u-media-body&quot;&gt;\n &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;\n Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n &lt;/div&gt;\n&lt;/div&gt;</code></pre>\n</div>\n\n\n </div>\n\n <!-- 引入end -->\n {{include '../../../base/public/footer'}}\n</body>\n</html>
+<h1 id="-">媒体对象</h1>
+<p>允许在一个内容块的左边或右边展示一个多媒体内容（图像、视频、音频）</p>
+<h1 id="-">示例</h1>
+<h2 id="-">嵌套</h2>
+<p>媒体对象里嵌套媒体对象，只要整要嵌套的媒体对象放在父的<code>media-body</code>标签里</p>
+<div class="example-content"><div class="u-media">
+  <div class="u-media-left">
+    <a href="#">
+      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    </a>
+  </div>
+  <div class="u-media-body">
+    <h4 class="u-media-heading">u-Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <div class="u-media">
+      <div class="u-media-left">
+        <a href="#">
+          <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+        </a>
+      </div>
+      <div class="u-media-body">
+        <h4 class="u-media-heading">u-Media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </div>
+  </div>
+</div></div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;u-media&quot;&gt;
+  &lt;div class=&quot;u-media-left&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;u-media-body&quot;&gt;
+    &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    &lt;div class=&quot;u-media&quot;&gt;
+      &lt;div class=&quot;u-media-left&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot;  style=&quot;width: 64px;height: 64px;&quot;&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;u-media-body&quot;&gt;
+        &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<h2 id="-">对齐</h2>
+<p>默认上对齐
+<code>media-middle</code>: 中对齐
+<code>media-bottom</code>: 底对齐</p>
+<div class="example-content ex-hide"><style>.example-content .u-button-group{
+    margin: 5px;
+}
+</style></div>
+<div class="example-content"><div class="u-media">
+  <div class="u-media-left">
+    <a href="#">
+      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    </a>
+  </div>
+  <div class="u-media-body">
+    <h4 class="u-media-heading">u-Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+    Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </div>
+</div>
+<div class="u-media">
+  <div class="u-media-left u-media-middle">
+    <a href="#">
+      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    </a>
+  </div>
+  <div class="u-media-body">
+    <h4 class="u-media-heading">u-Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+    Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </div>
+</div>
+<div class="u-media">
+  <div class="u-media-left u-media-bottom">
+    <a href="#">
+      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    </a>
+  </div>
+  <div class="u-media-body">
+    <h4 class="u-media-heading">u-Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+    Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  </div>
+</div></div>
+<div class="examples-code"><pre><code>.example-content .u-button-group{
+    margin: 5px;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;u-media&quot;&gt;
+  &lt;div class=&quot;u-media-left&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;u-media-body&quot;&gt;
+    &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+    Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;u-media&quot;&gt;
+  &lt;div class=&quot;u-media-left u-media-middle&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;u-media-body&quot;&gt;
+    &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+    Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;u-media&quot;&gt;
+  &lt;div class=&quot;u-media-left u-media-bottom&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;u-media-body&quot;&gt;
+    &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+    Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<h2 id="-">默认样式</h2>
+<div class="example-content"><div class="u-media">
+  <div class="u-media-left">
+    <a href="#">
+      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    </a>
+  </div>
+  <div class="u-media-body">
+    <h4 class="u-media-heading">u-Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div></div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;u-media&quot;&gt;
+  &lt;div class=&quot;u-media-left&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;u-media-object&quot; src=&quot;<a href="http://design.yyuap.com/static/img/navimg1.jpg">http://design.yyuap.com/static/img/navimg1.jpg</a>&quot; style=&quot;width: 64px;height: 64px;&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;u-media-body&quot;&gt;
+    &lt;h4 class=&quot;u-media-heading&quot;&gt;u-Media heading&lt;/h4&gt;
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+

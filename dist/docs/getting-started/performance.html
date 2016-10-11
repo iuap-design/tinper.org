@@ -1,1 +1,185 @@
-\n<!DOCTYPE html>\n<html lang="en">\n<head>\n <meta charset="UTF-8">\n <title>Document</title>\n <!-- 引入head -->\n {{include '../../../base/public/header'}}\n</head>\n<body>\n <!-- side bar -->\n <div>\n <ul> <li><a href=".html">提示消息 message</a></li> <li><a href=".html">分页 pagination</a></li> <li><a href=".html">消息 message</a></li> <li><a href=".html">提示 tooltip</a></li> <li><a href=".html">面包屑 breadcrumb</a></li> <li><a href=".html">面板 panel</a></li> <li><a href=".html">下拉 dropdown</a></li> <li><a href=".html">按钮组 buttongroup</a></li> <li><a href=".html">输入框组 inputgroup</a></li> <li><a href=".html">导航条 navbar</a></li> <li><a href=".html">缩略图 thumbnail</a></li> <li><a href=".html">媒体对象 meida</a></li> <li><a href=".html">列表组 listgroup</a></li> <li><a href=".html">图片画廊 gallery</a></li> <li><a href=".html">卡片</a></li> </ul>\n </div>\n\n <!-- content -->\n <div>\n \n<h1 id="-">性能优化</h1>\n<h2 id="1-">1.前言</h2>\n<ul>\n<li>前端性能优化不完全总结，性能优化任重而道远。但应该切记的是，不可为了优化而优化，性能优化和开发效率、用户体验以及实现成本等是相结合的。</li>\n<li>性能优化，其实现手段多样，关注领域复杂，从前到后，自上而下，方方面面都是性能优化的地方。</li>\n</ul>\n<h2 id="2-">2. 图片</h2>\n<ul>\n<li><p>优化图像</p>\n<ul>\n<li>检查gif图片图像颜色数量和调色板规格是否一致</li>\n<li>有gif的情况考虑换成png</li>\n<li>色值较少的图片切成jpg</li>\n</ul>\n</li>\n<li><p>Inline images</p>\n<ul>\n<li>通过编码的字符串将图片直接内嵌在网页文本中</li>\n<li>base64编码</li>\n</ul>\n</li>\n<li><p>image Maps</p>\n<ul>\n<li>将多张图拼在一起，通过坐标来控制显示导航</li>\n</ul>\n</li>\n<li><p>优化css sptite，合成雪碧图</p>\n<ul>\n<li>可以选用单独的工具来生成雪碧图</li>\n<li>使用构建工具来分析产出雪碧图</li>\n</ul>\n</li>\n<li><p>不在html中缩放图片</p>\n</li>\n<li><p>使用小且可缓存defavicon.ico</p>\n<ul>\n<li>浏览器总会去请求这个图标</li>\n<li>确保图标存在，否则报错</li>\n<li>文件尽量小，最好小于1K</li>\n<li>设置一个长的过期时间</li>\n</ul>\n</li>\n</ul>\n<h2 id="3-javascript">3. javascript</h2>\n<ul>\n<li>js脚本文件置底</li>\n<li>现在主流浏览器都支持defer关键字，可以指定脚本在文档加载后执行</li>\n<li>使用外链js和css文件</li>\n<li>减少DOM访问和查询<ul>\n<li>换成已经访问过的元素</li>\n<li>优化dom的选择器</li>\n<li>避免通过js修复layout</li>\n<li>优化逻辑减少dom操作</li>\n<li>双向数据绑定</li>\n<li>dom diff</li>\n<li>dom拼接</li>\n</ul>\n</li>\n<li>减少或避免引起页面repaint或reflow的代码逻辑</li>\n<li>使用智能事件处理方式<ul>\n<li>事件代理</li>\n</ul>\n</li>\n</ul>\n<h2 id="4-css">4. css</h2>\n<ul>\n<li>样式表置顶</li>\n<li>避免css表达式</li>\n<li>用link代替@import</li>\n<li>减少层级</li>\n<li>避免filters</li>\n<li>避免冗余</li>\n<li>css文件合理管理</li>\n</ul>\n<h2 id="5-cookie">5. cookie</h2>\n<ul>\n<li>减少cookie大小</li>\n<li>cookie用来做认证和个性化设置，在请求中包含在http报文头</li>\n<li>如果网页不需要用cookie，就完全禁掉</li>\n<li>cookie的domain不可影响到子domain</li>\n<li>设置合适的过期时间</li>\n<li>页面内容使用无cookie域名</li>\n</ul>\n<h2 id="6-">6. 服务器</h2>\n<ul>\n<li>使用cdn分发资源<ul>\n<li>cdn通过部署在不同地区的服务器来提高客户的下载速度</li>\n<li>可将站点大量的静态内容放上cdn</li>\n</ul>\n</li>\n<li>添加expires或cache-control报文头<ul>\n<li>静态内容添加expires，将静态内容设置为永不过期</li>\n<li>动态内容适合cache-control，让浏览器根据条件来发送请求</li>\n</ul>\n</li>\n<li>gzip压缩- 配置etags</li>\n<li>flush输出</li>\n<li>get请求</li>\n<li>避免空的图片src</li>\n</ul>\n<h2 id="7-">7. 网页内容</h2>\n<ul>\n<li>减少http请求次数<ul>\n<li>combo合并多个文件请求为一个</li>\n<li>打包合并文件，打包策略很重要</li>\n</ul>\n</li>\n<li>减少dns查询次数<ul>\n<li>愿意在于网页中包含不同domain的内容时，如嵌入广告或引用了外部图片或脚本导致</li>\n<li>dns查询结果可缓存在本地和浏览器一段时间，所以一般在首次访问时消耗流量</li>\n</ul>\n</li>\n<li>避免页面跳转</li>\n<li>缓存ajax请求</li>\n<li>延迟加载<ul>\n<li>确定页面初始加载需要的最小内容集，剩下内容推到延迟加载的集合中</li>\n</ul>\n</li>\n<li>提前加载<ul>\n<li>有条件提前加载<ul>\n<li>用户的输入推断需要加载的内容，如智能搜索框</li>\n</ul>\n</li>\n<li>无条件提前加载<ul>\n<li>当前网页加载完成后，马上去下载一些其他的内容，这些内容是必须会用到的或是公共依赖的</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>减少DOM元素数量</li>\n<li>根据域名划分内容</li>\n<li>减少iframe数量<ul>\n<li>优点<ul>\n<li>用来加载速度较慢的广告</li>\n<li>安全沙箱保护</li>\n<li>脚本可以并行下载</li>\n</ul>\n</li>\n<li>缺点<ul>\n<li>即使iframe内容为空也消耗加载时间</li>\n<li>会阻止页面的加载</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>避免404</li>\n</ul>\n<h2 id="8-">8. 移动端</h2>\n<ul>\n<li>localStorage本地存储与优化<ul>\n<li>大数据量交互，数据不怎么更新的，含版本控制机制，一次请求，之后高枕无忧</li>\n<li>充分利用其资源</li>\n</ul>\n</li>\n<li>保持单个内容小于25K<ul>\n<li>这是因为iphone的限制，它只能缓存解压后小于25K的资源</li>\n<li>所以单纯gzip不一定够用，精简文件工具</li>\n</ul>\n</li>\n<li>打包文档</li>\n</ul>\n </div>\n\n <!-- 引入end -->\n {{include '../../../base/public/footer'}}\n</body>\n</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <!-- 引入head -->
+ {{include '../../../base/public/header'}}
+</head>
+<body>
+ <!-- side bar -->
+ <div>
+ <ul> <li><a href="message.html">提示消息 message</a></li> <li><a href="pagination.html">分页 pagination</a></li> <li><a href="message.html">消息 message</a></li> <li><a href="tooltip.html">提示 tooltip</a></li> <li><a href="breadcrumb.html">面包屑 breadcrumb</a></li> <li><a href="panel.html">面板 panel</a></li> <li><a href="dropdown.html">下拉 dropdown</a></li> <li><a href="buttongroup.html">按钮组 buttongroup</a></li> <li><a href="inputgroup.html">输入框组 inputgroup</a></li> <li><a href="navbar.html">导航条 navbar</a></li> <li><a href="thumbnail.html">缩略图 thumbnail</a></li> <li><a href="media.html">媒体对象 meida</a></li> <li><a href="listgroup.html">列表组 listgroup</a></li> <li><a href="gallery.html">图片画廊 gallery</a></li> <li><a href="statisticWidget.html">卡片</a></li> </ul>
+ </div>
+
+ <!-- content -->
+ <div>
+ 
+<h1 id="-">性能优化</h1>
+<h2 id="1-">1.前言</h2>
+<ul>
+<li>前端性能优化不完全总结，性能优化任重而道远。但应该切记的是，不可为了优化而优化，性能优化和开发效率、用户体验以及实现成本等是相结合的。</li>
+<li>性能优化，其实现手段多样，关注领域复杂，从前到后，自上而下，方方面面都是性能优化的地方。</li>
+</ul>
+<h2 id="2-">2. 图片</h2>
+<ul>
+<li><p>优化图像</p>
+<ul>
+<li>检查gif图片图像颜色数量和调色板规格是否一致</li>
+<li>有gif的情况考虑换成png</li>
+<li>色值较少的图片切成jpg</li>
+</ul>
+</li>
+<li><p>Inline images</p>
+<ul>
+<li>通过编码的字符串将图片直接内嵌在网页文本中</li>
+<li>base64编码</li>
+</ul>
+</li>
+<li><p>image Maps</p>
+<ul>
+<li>将多张图拼在一起，通过坐标来控制显示导航</li>
+</ul>
+</li>
+<li><p>优化css sptite，合成雪碧图</p>
+<ul>
+<li>可以选用单独的工具来生成雪碧图</li>
+<li>使用构建工具来分析产出雪碧图</li>
+</ul>
+</li>
+<li><p>不在html中缩放图片</p>
+</li>
+<li><p>使用小且可缓存defavicon.ico</p>
+<ul>
+<li>浏览器总会去请求这个图标</li>
+<li>确保图标存在，否则报错</li>
+<li>文件尽量小，最好小于1K</li>
+<li>设置一个长的过期时间</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-javascript">3. javascript</h2>
+<ul>
+<li>js脚本文件置底</li>
+<li>现在主流浏览器都支持defer关键字，可以指定脚本在文档加载后执行</li>
+<li>使用外链js和css文件</li>
+<li>减少DOM访问和查询<ul>
+<li>换成已经访问过的元素</li>
+<li>优化dom的选择器</li>
+<li>避免通过js修复layout</li>
+<li>优化逻辑减少dom操作</li>
+<li>双向数据绑定</li>
+<li>dom diff</li>
+<li>dom拼接</li>
+</ul>
+</li>
+<li>减少或避免引起页面repaint或reflow的代码逻辑</li>
+<li>使用智能事件处理方式<ul>
+<li>事件代理</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-css">4. css</h2>
+<ul>
+<li>样式表置顶</li>
+<li>避免css表达式</li>
+<li>用link代替@import</li>
+<li>减少层级</li>
+<li>避免filters</li>
+<li>避免冗余</li>
+<li>css文件合理管理</li>
+</ul>
+<h2 id="5-cookie">5. cookie</h2>
+<ul>
+<li>减少cookie大小</li>
+<li>cookie用来做认证和个性化设置，在请求中包含在http报文头</li>
+<li>如果网页不需要用cookie，就完全禁掉</li>
+<li>cookie的domain不可影响到子domain</li>
+<li>设置合适的过期时间</li>
+<li>页面内容使用无cookie域名</li>
+</ul>
+<h2 id="6-">6. 服务器</h2>
+<ul>
+<li>使用cdn分发资源<ul>
+<li>cdn通过部署在不同地区的服务器来提高客户的下载速度</li>
+<li>可将站点大量的静态内容放上cdn</li>
+</ul>
+</li>
+<li>添加expires或cache-control报文头<ul>
+<li>静态内容添加expires，将静态内容设置为永不过期</li>
+<li>动态内容适合cache-control，让浏览器根据条件来发送请求</li>
+</ul>
+</li>
+<li>gzip压缩- 配置etags</li>
+<li>flush输出</li>
+<li>get请求</li>
+<li>避免空的图片src</li>
+</ul>
+<h2 id="7-">7. 网页内容</h2>
+<ul>
+<li>减少http请求次数<ul>
+<li>combo合并多个文件请求为一个</li>
+<li>打包合并文件，打包策略很重要</li>
+</ul>
+</li>
+<li>减少dns查询次数<ul>
+<li>愿意在于网页中包含不同domain的内容时，如嵌入广告或引用了外部图片或脚本导致</li>
+<li>dns查询结果可缓存在本地和浏览器一段时间，所以一般在首次访问时消耗流量</li>
+</ul>
+</li>
+<li>避免页面跳转</li>
+<li>缓存ajax请求</li>
+<li>延迟加载<ul>
+<li>确定页面初始加载需要的最小内容集，剩下内容推到延迟加载的集合中</li>
+</ul>
+</li>
+<li>提前加载<ul>
+<li>有条件提前加载<ul>
+<li>用户的输入推断需要加载的内容，如智能搜索框</li>
+</ul>
+</li>
+<li>无条件提前加载<ul>
+<li>当前网页加载完成后，马上去下载一些其他的内容，这些内容是必须会用到的或是公共依赖的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>减少DOM元素数量</li>
+<li>根据域名划分内容</li>
+<li>减少iframe数量<ul>
+<li>优点<ul>
+<li>用来加载速度较慢的广告</li>
+<li>安全沙箱保护</li>
+<li>脚本可以并行下载</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>即使iframe内容为空也消耗加载时间</li>
+<li>会阻止页面的加载</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>避免404</li>
+</ul>
+<h2 id="8-">8. 移动端</h2>
+<ul>
+<li>localStorage本地存储与优化<ul>
+<li>大数据量交互，数据不怎么更新的，含版本控制机制，一次请求，之后高枕无忧</li>
+<li>充分利用其资源</li>
+</ul>
+</li>
+<li>保持单个内容小于25K<ul>
+<li>这是因为iphone的限制，它只能缓存解压后小于25K的资源</li>
+<li>所以单纯gzip不一定够用，精简文件工具</li>
+</ul>
+</li>
+<li>打包文档</li>
+</ul>
+ </div>
+
+ <!-- 引入end -->
+ {{include '../../../base/public/footer'}}
+</body>
+</html>

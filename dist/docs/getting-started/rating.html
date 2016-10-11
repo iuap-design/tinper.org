@@ -1,1 +1,296 @@
-\n<!DOCTYPE html>\n<html lang="en">\n<head>\n <meta charset="UTF-8">\n <title>Document</title>\n <!-- 引入head -->\n {{include '../../../base/public/header'}}\n</head>\n<body>\n <!-- side bar -->\n <div>\n <ul> <li><a href=".html">提示消息 message</a></li> <li><a href=".html">分页 pagination</a></li> <li><a href=".html">消息 message</a></li> <li><a href=".html">提示 tooltip</a></li> <li><a href=".html">面包屑 breadcrumb</a></li> <li><a href=".html">面板 panel</a></li> <li><a href=".html">下拉 dropdown</a></li> <li><a href=".html">按钮组 buttongroup</a></li> <li><a href=".html">输入框组 inputgroup</a></li> <li><a href=".html">导航条 navbar</a></li> <li><a href=".html">缩略图 thumbnail</a></li> <li><a href=".html">媒体对象 meida</a></li> <li><a href=".html">列表组 listgroup</a></li> <li><a href=".html">图片画廊 gallery</a></li> <li><a href=".html">卡片</a></li> </ul>\n </div>\n\n <!-- content -->\n <div>\n \n<h1 id="rating-">rating控件</h1>\n<p>用于评级评分</p>\n<h1 id="-">如何使用</h1>\n<p>暂无</p>\n<h1 id="-">示例</h1>\n<p>##基础Rating</p>\n<p>常用于评级评分</p>\n<div class="example-content"><style>.content{\n padding: 10px;\n}\n.example{\n width: 60%;\n margin: 80px;\n}\n.col-xs-4{\n width: 33.3%;\n float: left;\n}\n</style></div>\n<div class="example-content"><script>(function(document, window, $) {\n &#39;use strict&#39;;\n\n var defaults= {\n targetKeep: true,\n icon: &quot;font&quot;,\n starType: &quot;i&quot;,\n starOff: &quot;icon uf uf-star&quot;,\n starOn: &quot;icon uf uf-star orange-600&quot;,\n cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,\n cancelOn: &quot;icon uf uf-minussigninsideablackcircle orange-600&quot;,\n starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;\n };\n $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {\n var $this = $(this);\n\n $this.raty(options);\n });\n // }\n // });\n })(document, window, jQuery);\n</script></div>\n<div class="example-content"> <div class="u-rating" data-score="3" data-plugin="rating"></div>\n</div>\n<div class="examples-code"><pre><code>.content{\n padding: 10px;\n}\n.example{\n width: 60%;\n margin: 80px;\n}\n.col-xs-4{\n width: 33.3%;\n float: left;\n}</code></pre>\n</div>\n<div class="examples-code"><pre><code>(function(document, window, $) {\n &#39;use strict&#39;;\n\n var defaults= {\n targetKeep: true,\n icon: &quot;font&quot;,\n starType: &quot;i&quot;,\n starOff: &quot;icon uf uf-star&quot;,\n starOn: &quot;icon uf uf-star orange-600&quot;,\n cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,\n cancelOn: &quot;icon uf uf-minussigninsideablackcircle orange-600&quot;,\n starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;\n };\n $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {\n var $this = $(this);\n\n\n $this.raty(options);\n });\n // }\n // });\n })(document, window, jQuery);</code></pre>\n</div>\n<div class="examples-code"><pre><code> &lt;div class=&quot;u-rating&quot; data-score=&quot;3&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;</code></pre>\n</div>\n\n<p>##所个star的Rating</p>\n<p>通过在html上 的属性 data-number值改变数量</p>\n<div class="example-content"><style>.content{\n padding: 10px;\n}\n.example{\n width: 60%;\n margin: 80px;\n}\n.col-xs-4{\n width: 33.3%;\n float: left;\n}\n</style></div>\n<div class="example-content"><div class="example">\n <div class="u-rating" data-number="10" data-plugin="rating"></div>\n </div>\n</div>\n<div class="example-content"><script>(function(document, window, $) {\n &#39;use strict&#39;;\n\n var defaults= {\n targetKeep: true,\n icon: &quot;font&quot;,\n starType: &quot;i&quot;,\n starOff: &quot;icon uf uf-star&quot;,\n starOn: &quot;icon uf uf-star orange-600&quot;,\n cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,\n cancelOn: &quot;icon uf uf-minussigninsideablackcircle orange-600&quot;,\n starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;\n };\n $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {\n var $this = $(this);\n var options = $.extend(true, {}, defaults, $this.data());\n\n if (options.hints) {\n options.hints = options.hints.split(&#39;,&#39;);\n }\n\n $this.raty(options);\n });\n // }\n // });\n })(document, window, jQuery);\n</script></div>\n<div class="examples-code"><pre><code>.content{\n padding: 10px;\n}\n.example{\n width: 60%;\n margin: 80px;\n}\n.col-xs-4{\n width: 33.3%;\n float: left;\n}</code></pre>\n</div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;example&quot;&gt;\n &lt;div class=&quot;u-rating&quot; data-number=&quot;10&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;\n &lt;/div&gt;</code></pre>\n</div>\n<div class="examples-code"><pre><code>(function(document, window, $) {\n &#39;use strict&#39;;\n\n var defaults= {\n targetKeep: true,\n icon: &quot;font&quot;,\n starType: &quot;i&quot;,\n starOff: &quot;icon uf uf-star&quot;,\n starOn: &quot;icon uf uf-star orange-600&quot;,\n cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,\n cancelOn: &quot;icon uf uf-minussigninsideablackcircle orange-600&quot;,\n starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;\n };\n $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {\n var $this = $(this);\n var options = $.extend(true, {}, defaults, $this.data());\n\n if (options.hints) {\n options.hints = options.hints.split(&#39;,&#39;);\n }\n\n $this.raty(options);\n });\n // }\n // });\n })(document, window, jQuery);</code></pre>\n</div>\n\n<p>##不同尺寸Rating</p>\n<p>u-rating-lg u-rating-sm供尺寸的选择</p>\n<div class="example-content"><style>.content{\n padding: 10px;\n}\n.example{\n width: 60%;\n margin: 80px;\n}\n.col-xs-4{\n width: 33.3%;\n float: left;\n}\n</style></div>\n<div class="example-content"><div class="example">\n <div class="margin-bottom-10">\n <div class="u-rating u-rating-sm" data-score="4" data-plugin="rating"></div>\n </div>\n <div class="margin-bottom-10">\n <div class="u-rating" data-score="4" data-plugin="rating"></div>\n </div>\n <div>\n <div class="u-rating u-rating-lg" data-score="4" data-plugin="rating"></div>\n </div>\n</div>\n</div>\n<div class="example-content"><script>(function(document, window, $) {\n &#39;use strict&#39;;\n\n var defaults= {\n targetKeep: true,\n icon: &quot;font&quot;,\n starType: &quot;i&quot;,\n starOff: &quot;icon uf uf-star&quot;,\n starOn: &quot;icon uf uf-star orange-600&quot;,\n cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,\n cancelOn: &quot;icon uf uf-minussigninsideablackcircle orange-600&quot;,\n starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;\n };\n $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {\n var $this = $(this);\n var options = $.extend(true, {}, defaults, $this.data());\n\n if (options.hints) {\n options.hints = options.hints.split(&#39;,&#39;);\n }\n\n $this.raty(options);\n });\n // }\n // });\n })(document, window, jQuery);\n</script></div>\n<div class="examples-code"><pre><code>.content{\n padding: 10px;\n}\n.example{\n width: 60%;\n margin: 80px;\n}\n.col-xs-4{\n width: 33.3%;\n float: left;\n}</code></pre>\n</div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;example&quot;&gt;\n &lt;div class=&quot;margin-bottom-10&quot;&gt;\n &lt;div class=&quot;u-rating u-rating-sm&quot; data-score=&quot;4&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;\n &lt;/div&gt;\n &lt;div class=&quot;margin-bottom-10&quot;&gt;\n &lt;div class=&quot;u-rating&quot; data-score=&quot;4&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;\n &lt;/div&gt;\n &lt;div&gt;\n &lt;div class=&quot;u-rating u-rating-lg&quot; data-score=&quot;4&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;\n &lt;/div&gt;\n&lt;/div&gt;</code></pre>\n</div>\n<div class="examples-code"><pre><code>(function(document, window, $) {\n &#39;use strict&#39;;\n\n var defaults= {\n targetKeep: true,\n icon: &quot;font&quot;,\n starType: &quot;i&quot;,\n starOff: &quot;icon uf uf-star&quot;,\n starOn: &quot;icon uf uf-star orange-600&quot;,\n cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,\n cancelOn: &quot;icon uf uf-minussigninsideablackcircle orange-600&quot;,\n starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;\n };\n $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {\n var $this = $(this);\n var options = $.extend(true, {}, defaults, $this.data());\n\n if (options.hints) {\n options.hints = options.hints.split(&#39;,&#39;);\n }\n\n $this.raty(options);\n });\n // }\n // });\n })(document, window, jQuery);</code></pre>\n</div>\n\n\n<!--### 示例1\n\n示例1说明\n\n### 示例2\n\n示例2说-->\n<h1 id="api">API</h1>\n<h2 id="-">属性</h2>\n<p>暂无\n&lt;!--### 属性1</p>\n<p>属性1说明</p>\n<h3 id="-2">属性2</h3>\n<p>属性2说明--&gt;</p>\n<h2 id="-">方法</h2>\n<p>暂无\n&lt;!--### 方法1</p>\n<p>方法1说明</p>\n<h3 id="-2">方法2</h3>\n<p>方法2说明--&gt;</p>\n </div>\n\n <!-- 引入end -->\n {{include '../../../base/public/footer'}}\n</body>\n</html>
+<h1 id="rating-">rating控件</h1>
+<p>用于评级评分</p>
+<h1 id="-">如何使用</h1>
+<p>暂无</p>
+<h1 id="-">示例</h1>
+<p>##基础Rating</p>
+<p>常用于评级评分</p>
+<div class="example-content"><style>.content{
+    padding: 10px;
+}
+.example{
+    width: 60%;
+    margin: 80px;
+}
+.col-xs-4{
+    width: 33.3%;
+    float: left;
+}
+</style></div>
+<div class="example-content"><script>(function(document, window, $) {
+    &#39;use strict&#39;;
+
+      var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+      $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          var $this = $(this);
+
+          $this.raty(options);
+      });
+      // }
+    // });
+  })(document, window, jQuery);
+</script></div>
+<div class="example-content"> <div class="u-rating" data-score="3" data-plugin="rating"></div>
+</div>
+<div class="examples-code"><pre><code>.content{
+    padding: 10px;
+}
+.example{
+    width: 60%;
+    margin: 80px;
+}
+.col-xs-4{
+    width: 33.3%;
+    float: left;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code>(function(document, window, $) {
+    &#39;use strict&#39;;
+
+      var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+      $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          var $this = $(this);
+
+
+          $this.raty(options);
+      });
+      // }
+    // });
+  })(document, window, jQuery);</code></pre>
+</div>
+<div class="examples-code"><pre><code> &lt;div class=&quot;u-rating&quot; data-score=&quot;3&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;</code></pre>
+</div>
+
+<p>##所个star的Rating</p>
+<p>通过在html上 的属性 data-number值改变数量</p>
+<div class="example-content"><style>.content{
+    padding: 10px;
+}
+.example{
+    width: 60%;
+    margin: 80px;
+}
+.col-xs-4{
+    width: 33.3%;
+    float: left;
+}
+</style></div>
+<div class="example-content"><div class="example">
+      <div class="u-rating" data-number="10" data-plugin="rating"></div>
+  </div>
+</div>
+<div class="example-content"><script>(function(document, window, $) {
+    &#39;use strict&#39;;
+
+      var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+      $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          var $this = $(this);
+          var options = $.extend(true, {}, defaults, $this.data());
+
+          if (options.hints) {
+            options.hints = options.hints.split(&#39;,&#39;);
+          }
+
+          $this.raty(options);
+      });
+      // }
+    // });
+  })(document, window, jQuery);
+</script></div>
+<div class="examples-code"><pre><code>.content{
+    padding: 10px;
+}
+.example{
+    width: 60%;
+    margin: 80px;
+}
+.col-xs-4{
+    width: 33.3%;
+    float: left;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;example&quot;&gt;
+      &lt;div class=&quot;u-rating&quot; data-number=&quot;10&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+</div>
+<div class="examples-code"><pre><code>(function(document, window, $) {
+    &#39;use strict&#39;;
+
+      var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+      $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          var $this = $(this);
+          var options = $.extend(true, {}, defaults, $this.data());
+
+          if (options.hints) {
+            options.hints = options.hints.split(&#39;,&#39;);
+          }
+
+          $this.raty(options);
+      });
+      // }
+    // });
+  })(document, window, jQuery);</code></pre>
+</div>
+
+<p>##不同尺寸Rating</p>
+<p>u-rating-lg u-rating-sm供尺寸的选择</p>
+<div class="example-content"><style>.content{
+    padding: 10px;
+}
+.example{
+    width: 60%;
+    margin: 80px;
+}
+.col-xs-4{
+    width: 33.3%;
+    float: left;
+}
+</style></div>
+<div class="example-content"><div class="example">
+    <div class="margin-bottom-10">
+        <div class="u-rating u-rating-sm" data-score="4" data-plugin="rating"></div>
+    </div>
+    <div class="margin-bottom-10">
+        <div class="u-rating" data-score="4" data-plugin="rating"></div>
+    </div>
+    <div>
+        <div class="u-rating u-rating-lg" data-score="4" data-plugin="rating"></div>
+    </div>
+</div>
+</div>
+<div class="example-content"><script>(function(document, window, $) {
+    &#39;use strict&#39;;
+
+      var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+      $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          var $this = $(this);
+          var options = $.extend(true, {}, defaults, $this.data());
+
+          if (options.hints) {
+            options.hints = options.hints.split(&#39;,&#39;);
+          }
+
+          $this.raty(options);
+      });
+      // }
+    // });
+  })(document, window, jQuery);
+</script></div>
+<div class="examples-code"><pre><code>.content{
+    padding: 10px;
+}
+.example{
+    width: 60%;
+    margin: 80px;
+}
+.col-xs-4{
+    width: 33.3%;
+    float: left;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;example&quot;&gt;
+    &lt;div class=&quot;margin-bottom-10&quot;&gt;
+        &lt;div class=&quot;u-rating u-rating-sm&quot; data-score=&quot;4&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;margin-bottom-10&quot;&gt;
+        &lt;div class=&quot;u-rating&quot; data-score=&quot;4&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;u-rating u-rating-lg&quot; data-score=&quot;4&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="examples-code"><pre><code>(function(document, window, $) {
+    &#39;use strict&#39;;
+
+      var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+      $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          var $this = $(this);
+          var options = $.extend(true, {}, defaults, $this.data());
+
+          if (options.hints) {
+            options.hints = options.hints.split(&#39;,&#39;);
+          }
+
+          $this.raty(options);
+      });
+      // }
+    // });
+  })(document, window, jQuery);</code></pre>
+</div>
+
+
+<!--### 示例1
+
+示例1说明
+
+### 示例2
+
+示例2说-->
+<h1 id="api">API</h1>
+<h2 id="-">属性</h2>
+<p>暂无
+&lt;!--### 属性1</p>
+<p>属性1说明</p>
+<h3 id="-2">属性2</h3>
+<p>属性2说明--&gt;</p>
+<h2 id="-">方法</h2>
+<p>暂无
+&lt;!--### 方法1</p>
+<p>方法1说明</p>
+<h3 id="-2">方法2</h3>
+<p>方法2说明--&gt;</p>

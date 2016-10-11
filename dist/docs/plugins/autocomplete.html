@@ -1,3 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <!-- 引入head -->
+ {{include '../../../base/public/header'}}
+</head>
+<body>
+ <!-- side bar -->
+ <div>
+ <ul> <li><a href="message.html">提示消息 message</a></li> <li><a href="pagination.html">分页 pagination</a></li> <li><a href="message.html">消息 message</a></li> <li><a href="tooltip.html">提示 tooltip</a></li> <li><a href="breadcrumb.html">面包屑 breadcrumb</a></li> <li><a href="panel.html">面板 panel</a></li> <li><a href="dropdown.html">下拉 dropdown</a></li> <li><a href="buttongroup.html">按钮组 buttongroup</a></li> <li><a href="inputgroup.html">输入框组 inputgroup</a></li> <li><a href="navbar.html">导航条 navbar</a></li> <li><a href="thumbnail.html">缩略图 thumbnail</a></li> <li><a href="media.html">媒体对象 meida</a></li> <li><a href="listgroup.html">列表组 listgroup</a></li> <li><a href="gallery.html">图片画廊 gallery</a></li> <li><a href="statisticWidget.html">卡片</a></li> </ul>
+ </div>
+
+ <!-- content -->
+ <div>
+ 
 <h1 id="autocomplete">Autocomplete</h1>
 <h2 id="-">基本使用</h2>
 <p>下面的例子是autocomplete的基本使用<br>html 代码</p>
@@ -7,42 +25,42 @@
 <p>javascript 代码</p>
 <pre><code class="lang-javascript">// JS
 var sourceValue = [
-        {
-            label : &quot;C++&quot;
-        },
-        {
-            label : &#39;Java&#39;
-        },
-        {
-            label : &#39;Python&#39;
-        },
-        {
-            label : &#39;JavaScript&#39;
-        },
-        {
-            label : &#39;C#&#39;
-        },
-        {
-            label : &#39;C&#39;
-        },
-        {
-            label : &#39;Jython&#39;
-        },
-        {
-            label : &#39;Html&#39;
-        },
-        {
-            label : &#39;html&#39;
-        }
-    ];
+ {
+ label : &quot;C++&quot;
+ },
+ {
+ label : &#39;Java&#39;
+ },
+ {
+ label : &#39;Python&#39;
+ },
+ {
+ label : &#39;JavaScript&#39;
+ },
+ {
+ label : &#39;C#&#39;
+ },
+ {
+ label : &#39;C&#39;
+ },
+ {
+ label : &#39;Jython&#39;
+ },
+ {
+ label : &#39;Html&#39;
+ },
+ {
+ label : &#39;html&#39;
+ }
+ ];
 
-    new u.Autocomplete({
-        el:&#39;#test1&#39;,
-        source: sourceValue,
-        select: function(item){
-            alert(&#39;select&#39;);
-        }
-    })
+ new u.Autocomplete({
+ el:&#39;#test1&#39;,
+ source: sourceValue,
+ select: function(item){
+ alert(&#39;select&#39;);
+ }
+ })
 </code></pre>
 <h2 id="-">参数详解</h2>
 <h6 id="source">source</h6>
@@ -62,7 +80,8 @@ var sourceValue = [
 <h6 id="resultsclass">resultsClass</h6>
 <p>下拉框的自定义样式</p>
 <h6 id="lineseparator">lineSeparator</h6>
-<p>ajax请求返回数据的行的分隔符。默认为\n</p>
+<p>ajax请求返回数据的行的分隔符。默认为
+</p>
 <h6 id="cellseparator">cellSeparator</h6>
 <p>ajax请求返回数据的数据项的分隔符。默认为|</p>
 <h6 id="matchcase">matchCase</h6>
@@ -73,3 +92,9 @@ var sourceValue = [
 <p>加载数据时input框的样式</p>
 <h6 id="selectfirst">selectFirst</h6>
 <p>是否默认选中第一项。默认为false</p>
+ </div>
+
+ <!-- 引入end -->
+ {{include '../../../base/public/footer'}}
+</body>
+</html>

@@ -1,1 +1,131 @@
-\n<!DOCTYPE html>\n<html lang="en">\n<head>\n <meta charset="UTF-8">\n <title>Document</title>\n <!-- 引入head -->\n {{include '../../../base/public/header'}}\n</head>\n<body>\n <!-- side bar -->\n <div>\n <ul> <li><a href=".html">提示消息 message</a></li> <li><a href=".html">分页 pagination</a></li> <li><a href=".html">消息 message</a></li> <li><a href=".html">提示 tooltip</a></li> <li><a href=".html">面包屑 breadcrumb</a></li> <li><a href=".html">面板 panel</a></li> <li><a href=".html">下拉 dropdown</a></li> <li><a href=".html">按钮组 buttongroup</a></li> <li><a href=".html">输入框组 inputgroup</a></li> <li><a href=".html">导航条 navbar</a></li> <li><a href=".html">缩略图 thumbnail</a></li> <li><a href=".html">媒体对象 meida</a></li> <li><a href=".html">列表组 listgroup</a></li> <li><a href=".html">图片画廊 gallery</a></li> <li><a href=".html">卡片</a></li> </ul>\n </div>\n\n <!-- content -->\n <div>\n \n<h1 id="message-">message控件</h1>\n<p>用于即时信息的提示，消息背景色取决于消息类型，易可添加相对应的<code>icon</code></p>\n<h1 id="-">如何使用</h1>\n<p>给父元素添加<code>.u-message</code>类</p>\n<p>自定义类型背景 例如消息内容为<code>!new</code>的父元素添加<code>.u-mesnews</code>类</p>\n<h1 id="-">示例</h1>\n<p>##带<code>icon</code>的加深颜色版message</p>\n<p>背景色加深 <code>.dark</code>类提供了选择</p>\n<p>消息类型对应相应的icon</p>\n<div class="example-content ex-hide"><style>.margin-r-10{\n margin-right: 10px; \n}\n.example .u-message{\n position: inherit;\n}\n</style></div>\n<div class="example-content"><div class="example">\n <div class="u-message dark u-mesnews active" ><br> <span class="u-msg-close uf uf-removesymbol"></span>\n <i class="uf uf-bellmusicaltool margin-r-10"></i>News!\n </div>\n <div class="u-message dark u-mesinfo active">\n <span class="u-msg-close uf uf-removesymbol"></span>\n <i class="uf uf-informationbutton margin-r-10"></i>Info!\n </div>\n <div class="u-message dark u-messuccess active"><br> <span class="u-msg-close uf uf-removesymbol"></span>\n <i class="uf uf-checkedsymbol margin-r-10"></i>Success!\n </div>\n <div class="u-message dark u-mesdanger active">\n <span class="u-msg-close uf uf-removesymbol"></span>\n <i class="uf uf-crossmarkonablackcirclebackground margin-r-10"></i>Danger!\n </div>\n <div class="u-message dark u-meswarning active">\n <span class="u-msg-close uf uf-removesymbol"></span>\n <i class="uf uf-warningmd margin-r-10"></i>Warning!\n </div>\n</div></div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;example&quot;&gt;\n &lt;div class=&quot;u-message dark u-mesnews active&quot; &gt;<br> &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n &lt;i class=&quot;uf uf-bellmusicaltool margin-r-10&quot;&gt;&lt;/i&gt;News!\n &lt;/div&gt;\n &lt;div class=&quot;u-message dark u-mesinfo active&quot;&gt;\n &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n &lt;i class=&quot;uf uf-informationbutton margin-r-10&quot;&gt;&lt;/i&gt;Info!\n &lt;/div&gt;\n &lt;div class=&quot;u-message dark u-messuccess active&quot;&gt;<br> &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n &lt;i class=&quot;uf uf-checkedsymbol margin-r-10&quot;&gt;&lt;/i&gt;Success!\n &lt;/div&gt;\n &lt;div class=&quot;u-message dark u-mesdanger active&quot;&gt;\n &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n &lt;i class=&quot;uf uf-crossmarkonablackcirclebackground margin-r-10&quot;&gt;&lt;/i&gt;Danger!\n &lt;/div&gt;\n &lt;div class=&quot;u-message dark u-meswarning active&quot;&gt;\n &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n &lt;i class=&quot;uf uf-warningmd margin-r-10&quot;&gt;&lt;/i&gt;Warning!\n &lt;/div&gt;\n&lt;/div&gt;</code></pre>\n</div>\n<div class="examples-code"><pre><code>.margin-r-10{\n margin-right: 10px; \n}\n.example .u-message{\n position: inherit;\n}</code></pre>\n</div>\n\n<p>##基础message</p>\n<p>消息类型对应不同class属性则显示不同的背景色</p>\n<div class="example-content ex-hide"><style>.margin-r-10{\n margin-right: 10px; \n}\n.example .u-message{\n position: inherit;\n}\n</style></div>\n<div class="example-content"><div class="example">\n <div class="u-message u-mesnews active" ><br> <span class="u-msg-close uf uf-removesymbol"></span>\n News!\n </div>\n <div class="u-message u-mesinfo active">\n <span class="u-msg-close uf uf-removesymbol"></span>\n Info!\n </div>\n <div class="u-message u-messuccess active"><br> <span class="u-msg-close uf uf-removesymbol"></span>\n Success!\n </div>\n <div class="u-message u-mesdanger active">\n <span class="u-msg-close uf uf-removesymbol"></span>\n Danger!\n </div>\n <div class="u-message u-meswarning active">\n <span class="u-msg-close uf uf-removesymbol"></span>\n Warning!\n </div>\n</div></div>\n<div class="examples-code"><pre><code>.margin-r-10{\n margin-right: 10px; \n}\n.example .u-message{\n position: inherit;\n}</code></pre>\n</div>\n<div class="examples-code"><pre><code>&lt;div class=&quot;example&quot;&gt;\n &lt;div class=&quot;u-message u-mesnews active&quot; &gt;<br> &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n News!\n &lt;/div&gt;\n &lt;div class=&quot;u-message u-mesinfo active&quot;&gt;\n &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n Info!\n &lt;/div&gt;\n &lt;div class=&quot;u-message u-messuccess active&quot;&gt;<br> &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n Success!\n &lt;/div&gt;\n &lt;div class=&quot;u-message u-mesdanger active&quot;&gt;\n &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n Danger!\n &lt;/div&gt;\n &lt;div class=&quot;u-message u-meswarning active&quot;&gt;\n &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;\n Warning!\n &lt;/div&gt;\n&lt;/div&gt;</code></pre>\n</div>\n\n\n<!--### 示例1\n\n示例1说明\n\n### 示例2\n\n示例2说-->\n </div>\n\n <!-- 引入end -->\n {{include '../../../base/public/footer'}}\n</body>\n</html>
+<h1 id="message-">message控件</h1>
+<p>用于即时信息的提示，消息背景色取决于消息类型，易可添加相对应的<code>icon</code></p>
+<h1 id="-">如何使用</h1>
+<p>给父元素添加<code>.u-message</code>类</p>
+<p>自定义类型背景  例如消息内容为<code>!new</code>的父元素添加<code>.u-mesnews</code>类</p>
+<h1 id="-">示例</h1>
+<p>##带<code>icon</code>的加深颜色版message</p>
+<p>背景色加深 <code>.dark</code>类提供了选择</p>
+<p>消息类型对应相应的icon</p>
+<div class="example-content ex-hide"><style>.margin-r-10{
+    margin-right: 10px; 
+}
+.example .u-message{
+    position: inherit;
+}
+</style></div>
+<div class="example-content"><div class="example">
+    <div class="u-message dark u-mesnews active" ><br>        <span class="u-msg-close uf uf-removesymbol"></span>
+        <i class="uf uf-bellmusicaltool margin-r-10"></i>News!
+    </div>
+    <div class="u-message dark u-mesinfo active">
+        <span class="u-msg-close uf uf-removesymbol"></span>
+        <i class="uf uf-informationbutton margin-r-10"></i>Info!
+    </div>
+    <div class="u-message dark u-messuccess active"><br>        <span class="u-msg-close uf uf-removesymbol"></span>
+        <i class="uf uf-checkedsymbol margin-r-10"></i>Success!
+    </div>
+    <div class="u-message dark u-mesdanger active">
+        <span class="u-msg-close uf uf-removesymbol"></span>
+        <i class="uf uf-crossmarkonablackcirclebackground margin-r-10"></i>Danger!
+    </div>
+    <div class="u-message dark u-meswarning active">
+        <span class="u-msg-close uf uf-removesymbol"></span>
+        <i class="uf uf-warningmd margin-r-10"></i>Warning!
+    </div>
+</div></div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;example&quot;&gt;
+    &lt;div class=&quot;u-message dark u-mesnews active&quot; &gt;<br>        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        &lt;i class=&quot;uf uf-bellmusicaltool margin-r-10&quot;&gt;&lt;/i&gt;News!
+    &lt;/div&gt;
+    &lt;div class=&quot;u-message dark u-mesinfo active&quot;&gt;
+        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        &lt;i class=&quot;uf uf-informationbutton margin-r-10&quot;&gt;&lt;/i&gt;Info!
+    &lt;/div&gt;
+    &lt;div class=&quot;u-message dark u-messuccess active&quot;&gt;<br>        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        &lt;i class=&quot;uf uf-checkedsymbol margin-r-10&quot;&gt;&lt;/i&gt;Success!
+    &lt;/div&gt;
+    &lt;div class=&quot;u-message dark u-mesdanger active&quot;&gt;
+        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        &lt;i class=&quot;uf uf-crossmarkonablackcirclebackground margin-r-10&quot;&gt;&lt;/i&gt;Danger!
+    &lt;/div&gt;
+    &lt;div class=&quot;u-message dark u-meswarning active&quot;&gt;
+        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        &lt;i class=&quot;uf uf-warningmd margin-r-10&quot;&gt;&lt;/i&gt;Warning!
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="examples-code"><pre><code>.margin-r-10{
+    margin-right: 10px; 
+}
+.example .u-message{
+    position: inherit;
+}</code></pre>
+</div>
+
+<p>##基础message</p>
+<p>消息类型对应不同class属性则显示不同的背景色</p>
+<div class="example-content ex-hide"><style>.margin-r-10{
+    margin-right: 10px; 
+}
+.example .u-message{
+    position: inherit;
+}
+</style></div>
+<div class="example-content"><div class="example">
+    <div class="u-message u-mesnews active" ><br>        <span class="u-msg-close uf uf-removesymbol"></span>
+        News!
+    </div>
+    <div class="u-message u-mesinfo active">
+        <span class="u-msg-close uf uf-removesymbol"></span>
+        Info!
+    </div>
+    <div class="u-message u-messuccess active"><br>        <span class="u-msg-close uf uf-removesymbol"></span>
+        Success!
+    </div>
+    <div class="u-message u-mesdanger active">
+        <span class="u-msg-close uf uf-removesymbol"></span>
+        Danger!
+    </div>
+    <div class="u-message u-meswarning active">
+        <span class="u-msg-close uf uf-removesymbol"></span>
+        Warning!
+    </div>
+</div></div>
+<div class="examples-code"><pre><code>.margin-r-10{
+    margin-right: 10px; 
+}
+.example .u-message{
+    position: inherit;
+}</code></pre>
+</div>
+<div class="examples-code"><pre><code>&lt;div class=&quot;example&quot;&gt;
+    &lt;div class=&quot;u-message u-mesnews active&quot; &gt;<br>        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        News!
+    &lt;/div&gt;
+    &lt;div class=&quot;u-message u-mesinfo active&quot;&gt;
+        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        Info!
+    &lt;/div&gt;
+    &lt;div class=&quot;u-message u-messuccess active&quot;&gt;<br>        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        Success!
+    &lt;/div&gt;
+    &lt;div class=&quot;u-message u-mesdanger active&quot;&gt;
+        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        Danger!
+    &lt;/div&gt;
+    &lt;div class=&quot;u-message u-meswarning active&quot;&gt;
+        &lt;span class=&quot;u-msg-close uf uf-removesymbol&quot;&gt;&lt;/span&gt;
+        Warning!
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+<!--### 示例1
+
+示例1说明
+
+### 示例2
+
+示例2说-->
