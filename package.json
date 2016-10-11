@@ -65,8 +65,8 @@
     "koa-static": "^2.0.0",
     "marked": "^0.3.6",
     "pygmentize-bundled": "^2.3.0",
-    "tinper-neoui": "^0.0.2",
-    "tinper-neoui-polyfill": "^0.0.1"
+    "tinper-neoui": "^0.1.0",
+    "tinper-neoui-polyfill": "^0.1.0"
   },
   "config": {
     "commitizen": {
