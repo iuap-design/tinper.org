@@ -16,11 +16,10 @@
  <!-- content -->
  <div>
  
-<h1 id="modal-">modal插件</h1>
+<h1 id="modal-">modal控件</h1>
 <p>区分与message,显示更多的信息,且自带确认取消回调。</p>
 <h1 id="-">插件依赖</h1>
-<p><a href="http://design.yyuap.com/static/uui/latest/js/u.js">http://design.yyuap.com/static/uui/latest/js/u.js</a></p>
-<p><a href="http://design.yyuap.com/static/uui/latest/css/u.css">http://design.yyuap.com/static/uui/latest/css/u.css</a></p>
+<p>依赖于 <a href="http://design.yyuap.com/static/uui/latest/js/u.js">http://design.yyuap.com/static/uui/latest/js/u.js</a></p>
 <h1 id="-">用法</h1>
 <p>1.定义触发弹出事件的DOM</p>
 <pre><code>&lt;button id=&quot;modalBtn&quot; class=&quot;u-button&quot; &gt;Success&lt;/button&gt;
@@ -44,148 +43,7 @@
  });
 })
 </code></pre><h1 id="-">示例</h1>
-<p>##消息摸态框</p>
-<p>通过<code>confirmDialog</code>方法调出模态框
-当点击取消或者保存，可在js中的方法里进行业务的回调 </p>
-<div class="example-content"><button id="msgDialogBtn2" class="u-button raised accent">消息确认框</button></div>
-<div class="example-content ex-hide"><script>u.compMgr.apply({
- el:&#39;body&#39;
-})
-var msgBtn2 = document.body.querySelector(&quot;#msgDialogBtn2&quot;);
-u.on(msgBtn2,&#39;click&#39;, function(){
- u.confirmDialog({
- msg: &quot;是否保存单据？&quot;,
- title: &quot;测试确认&quot;,
- onOk: function () {
- alert(&#39;ok&#39;)
- },
- onCancel: function () {
- alert(&#39;cancel&#39;)
- }
- });
-})
-</script></div>
-<div class="examples-code"><pre><code>&lt;button id=&quot;msgDialogBtn2&quot; class=&quot;u-button raised accent&quot;&gt;消息确认框&lt;/button&gt;</code></pre>
-</div>
-<div class="examples-code"><pre><code>u.compMgr.apply({
- el:&#39;body&#39;
-})
-var msgBtn2 = document.body.querySelector(&quot;#msgDialogBtn2&quot;);
-u.on(msgBtn2,&#39;click&#39;, function(){
- u.confirmDialog({
- msg: &quot;是否保存单据？&quot;,
- title: &quot;测试确认&quot;,
- onOk: function () {
- alert(&#39;ok&#39;)
- },
- onCancel: function () {
- alert(&#39;cancel&#39;)
- }
- });
-})</code></pre>
-</div>
-
-<p>##自定义摸态框</p>
-<p>通过<code>dialog</code>方法调出模态框
-用户自定在html文件自定义所要展现的内容
-点击保存，做进一步的确认校验</p>
-<div class="example-content"><button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
-<div id="dialog_content" style="display:none;">
- <div class="u-msg-title">
- <h4>单据名称</h4>
- </div>
- <div class="u-msg-content">
- <p>单据内容区</p>
- </div>
- <div class="u-msg-footer">
- <button class="u-msg-ok u-button">保存<span class="u-button-container"><span class="u-ripple"></span></span></button>
- <button class="u-msg-cancel u-button">取消<span class="u-button-container"><span class="u-ripple"></span></span></button>
- </div>
-</div></div>
-<div class="example-content ex-hide"><script>u.compMgr.apply({
- el:&#39;body&#39;
-})
-var msgBtn3 = document.body.querySelector(&quot;#msgDialogBtn3&quot;);
-u.on(msgBtn3,&#39;click&#39;, function(){
- window.md = u.dialog({id:&#39;testDialg&#39;,content:&quot;#dialog_content&quot;,hasCloseMenu:true});
-});
-
-var okButton = document.body.querySelector(&quot;.u-msg-ok&quot;);
-u.on(okButton,&#39;click&#39;, function(){
- alert(&#39;ok&#39;);
-});
-
-var cancelButton = document.body.querySelector(&quot;.u-msg-cancel&quot;);
-u.on(cancelButton,&#39;click&#39;, function(){
- md.close();
-});
-</script></div>
-<div class="examples-code"><pre><code>&lt;button id=&quot;msgDialogBtn3&quot; class=&quot;u-button raised accent&quot;&gt;模态框&lt;/button&gt;
-&lt;div id=&quot;dialog_content&quot; style=&quot;display:none;&quot;&gt;
- &lt;div class=&quot;u-msg-title&quot;&gt;
- &lt;h4&gt;单据名称&lt;/h4&gt;
- &lt;/div&gt;
- &lt;div class=&quot;u-msg-content&quot;&gt;
- &lt;p&gt;单据内容区&lt;/p&gt;
- &lt;/div&gt;
- &lt;div class=&quot;u-msg-footer&quot;&gt;
- &lt;button class=&quot;u-msg-ok u-button&quot;&gt;保存&lt;span class=&quot;u-button-container&quot;&gt;&lt;span class=&quot;u-ripple&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
- &lt;button class=&quot;u-msg-cancel u-button&quot;&gt;取消&lt;span class=&quot;u-button-container&quot;&gt;&lt;span class=&quot;u-ripple&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
- &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-<div class="examples-code"><pre><code>u.compMgr.apply({
- el:&#39;body&#39;
-})
-var msgBtn3 = document.body.querySelector(&quot;#msgDialogBtn3&quot;);
-u.on(msgBtn3,&#39;click&#39;, function(){
- window.md = u.dialog({id:&#39;testDialg&#39;,content:&quot;#dialog_content&quot;,hasCloseMenu:true});
-});
-
-var okButton = document.body.querySelector(&quot;.u-msg-ok&quot;);
-u.on(okButton,&#39;click&#39;, function(){
- alert(&#39;ok&#39;);
-});
-
-var cancelButton = document.body.querySelector(&quot;.u-msg-cancel&quot;);
-u.on(cancelButton,&#39;click&#39;, function(){
- md.close();
-});</code></pre>
-</div>
-
-<p>##提示摸态框</p>
-<p>只有一个确认按钮
-通过<code>messageDialog</code>方法调出模态框</p>
-<div class="example-content"><button id="msgDialogBtn" class="u-button raised accent">消息提示框</button>
-
- </div>
-<div class="example-content ex-hide"><script>u.compMgr.apply({
- el:&#39;body&#39;
-})
-var msgBtn = document.body.querySelector(&quot;#msgDialogBtn&quot;);
-u.on(msgBtn, &#39;click&#39;, function() {
- // u.showMessage(&quot;HELLO!!!&quot;);
- u.messageDialog({ msg: &quot;HELLO!!!&quot;, title: &quot;测试提示&quot;, btnText: &quot;OK!&quot; });
-})
-
-</script></div>
-<div class="examples-code"><pre><code>&lt;button id=&quot;msgDialogBtn&quot; class=&quot;u-button raised accent&quot;&gt;消息提示框&lt;/button&gt;
-
- </code></pre>
-</div>
-<div class="examples-code"><pre><code>u.compMgr.apply({
- el:&#39;body&#39;
-})
-var msgBtn = document.body.querySelector(&quot;#msgDialogBtn&quot;);
-u.on(msgBtn, &#39;click&#39;, function() {
- // u.showMessage(&quot;HELLO!!!&quot;);
- u.messageDialog({ msg: &quot;HELLO!!!&quot;, title: &quot;测试提示&quot;, btnText: &quot;OK!&quot; });
-})
-</code></pre>
-</div>
-
-
-
+<p>replaceExamp</p>
 <h1 id="api">API</h1>
 <p>##js方法与参数</p>
 <table>

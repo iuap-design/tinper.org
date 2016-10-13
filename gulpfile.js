@@ -63,7 +63,7 @@ gulp.task('compile', ['common'], function() {
     return compile('./dist');
 });
 gulp.task('del', ['compile'], function() {
-    del(['./dist/public', './dist/data','./dist/common']);
+    del(['./dist/public', './dist/data','./dist/common','./dist/docs']);
 });
 
 /**

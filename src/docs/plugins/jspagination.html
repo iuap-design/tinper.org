@@ -24,33 +24,7 @@
 <p>1.分页通过添加<code>u-pagination</code>的样式来实现基本的分页效果</p>
 <p>2.创建一个分页对象，方法：new u.pagination(paramter)</p>
 <h1 id="-">示例</h1>
-<p>##基础分页</p>
-<div class="example-content"><div id='pagination' class='u-pagination'>
-</div></div>
-<div class="example-content ex-hide"><script> var element = document.getElementById(&quot;pagination&quot;);
- var comp = new u.pagination({ el: element,showState:false });
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
- comp.on(&#39;pageChange&#39;, function(pageIndex) {
- console.log(&#39;新的页号为&#39; + pageIndex);
- });
- comp.on(&#39;sizeChange&#39;, function(arg) {
- console.log(&#39;每页显示条数为&#39; + arg[0]);
- });
-</script></div>
-
-<p>##有间距的分页
-添加样式<code>pagination-gap</code>可以增加页码之间的间距</p>
-<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
-</div></div>
-<div class="example-content ex-hide"><script> var paginationGap = document.getElementById(&#39;paginationGap&#39;);
-
- var comp = new u.pagination({ el: paginationGap, showState:false });
-
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-</script></div>
-
-
+<p>replaceExamp</p>
 <h1 id="api">API</h1>
 <p>##js方法与参数</p>
 <p><table>
