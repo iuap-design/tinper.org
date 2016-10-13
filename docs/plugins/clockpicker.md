@@ -4,9 +4,9 @@
 
 # 插件依赖
 
-http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
 
-http://design.yyuap.com/static/uui/latest/css/u.css
+除了js文件还需引入u.css。
 
 # 用法
 
@@ -37,30 +37,7 @@ js会根据`u-clockpicker`来定位dom，然后绑定事件。
 
 # 示例
 
-
-##clockpicker
-<div class="example-content ex-hide"><style>.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-</style></div>
-<div class="example-content"><div class="example">
-	<div class='u-clockpicker'>
-	    <input class="u-input" type="text">
-	</div>
-</div></div>
-<div class="examples-code"><pre><code>.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}</code></pre>
-</div>
-<div class="examples-code"><pre><code>&lt;div class="example">
-	&lt;div class='u-clockpicker'>
-	    &lt;input class="u-input" type="text">
-	&lt;/div>
-&lt;/div></code></pre>
-</div>
-
+replaceExamp
 
 
 

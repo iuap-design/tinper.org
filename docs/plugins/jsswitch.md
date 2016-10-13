@@ -1,68 +1,104 @@
-# switch控件
+# 开关
 
-两种状态的切换
-
-# 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-# 用法
-
-1.详情见示例
-
-# 示例
+开关控件实现了两种状态的切换，提供了多种色彩、多种尺寸样式。
 
 
-##基础switch
+replaceExamp
 
-`<input>` 的`id`与`<label>`的`for`属性值保持一致
-<div class="example-content">
-<label class="u-switch u-switch-info" for="switch-info-unchecked">
-    <input type="checkbox" id="switch-info-unchecked" class="u-switch-input">
-    <span class="u-switch-label"></span>
-</label>
-
-<label class="u-switch u-switch-info" for="switch-info-checked">
-    <input type="checkbox" id="switch-info-checked" class="u-switch-input" checked>
-    <span class="u-switch-label"></span>
-</label></div>
-<div class="examples-code"><pre><code>
-&lt;label class="u-switch u-switch-info" for="switch-info-unchecked">
-    &lt;input type="checkbox" id="switch-info-unchecked" class="u-switch-input">
-    &lt;span class="u-switch-label">&lt;/span>
-&lt;/label>
-
-&lt;label class="u-switch u-switch-info" for="switch-info-checked">
-    &lt;input type="checkbox" id="switch-info-checked" class="u-switch-input" checked>
-    &lt;span class="u-switch-label">&lt;/span>
-&lt;/label></code></pre>
-</div>
+[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/switch)
 
 
 # API
 
-## css 参数
+## \# switch对象
 
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>参数</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>颜色</td>
-	    <td>1.u-switch-primary 2.u-switch-success 3.u-switch-info 4. u-switch-warning 5.u-switch-danger 6.u-switch-dark</td>
-	    <td>颜色类加在父元素的类后面 设置不同的色值</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>大小</td>
-	    <td>1.u-switch-lg 2.u-switch-default 3.u-switch-sm</td>
-	    <td>大小类名父元素的类u-switch后面 设置不同的尺寸</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
+* 类型：`Object`
+* 说明： 获取switch对象
+* 用法：
 
+获取方式：1、获取绑定switch的dom元素 ； 2、读取dom元素上的属性'u.Switch'
+
+
+```
+
+var switchObject = document.getElementById('domId')['u.Switch'];
+
+```
+
+## \# check
+
+* 类型：`Function`
+* 说明： 调用switch对象的check方法，打开开关
+* 用法：
+
+```
+
+switchObject.check();
+
+```
+
+## \# uncheck
+
+* 类型：`Function`
+* 说明： 调用switch对象的uncheck方法，关闭开关
+* 用法：
+
+```
+
+switchObject.uncheck();
+
+```
+
+## \# disable
+
+* 类型：`Function`
+* 说明： 调用switch对象的disable方法，使开关不可用
+* 用法：
+
+```
+
+switchObject.disable();
+
+```
+## \# enable
+
+* 类型：`Function`
+* 说明： 调用switch对象的enable方法，使开关可用
+* 用法：
+
+```
+
+switchObject.enable();
+
+```
+
+## \# toggle
+
+* 类型：`Function`
+* 说明： 调用switch对象的toggle方法，反选开关的另一个状态
+* 用法：
+
+```
+
+switchObject.toggle();
+
+```
+
+## \# isChecked
+
+* 类型：`Function`
+* 说明： 调用switch对象的isChecked方法，获取当前开关的状态，true为打开，false为关闭
+* 用法：
+
+```
+
+switchObject.isChecked();
+
+```
+
+
+相关内容：
+
+[开关在kero中使用](http://design.yyuap.com/dist/pages/kero/ex_switch.html)    
+
+[开关在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)

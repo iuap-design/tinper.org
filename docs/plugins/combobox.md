@@ -2,49 +2,10 @@
 
 combobox组合框是由一个文本输入控件和一个下拉菜单组成的，类似于select元素。用户可以从一个预先定义的列表里选择一个或者多个选项。
 
+* `.u-combo` - 单选下拉框
+* `.u-combo .mutil-select` - 多选下拉框
 
-
-## 默认单选下拉框
-<div class="example-content"><div class="u-combo" id="combo1">
-    <div class="u-input-group u-has-feedback">
-        <input class="u-form-control" />
-        <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
-    </div>
-</div></div>
-<div class="example-content ex-hide"><script>u.compMgr.updateComp();
-document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);
-</script></div>
-<div class="examples-code"><pre><code>&lt;div class="u-combo" id="combo1">
-    &lt;div class="u-input-group u-has-feedback">
-        &lt;input class="u-form-control" />
-        &lt;span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button">&lt;/span>
-    &lt;/div>
-&lt;/div></code></pre>
-</div>
-<div class="examples-code"><pre><code>document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);</code></pre>
-</div>
-
-## 多选下拉框
-添加 `mutil-select`样式 支持多选
-<div class="example-content"><div class="u-combo mutil-select" id="combo3">
-    <div class="u-input-group u-has-feedback">
-        <input class="u-form-control" />
-        <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
-    </div>
-</div></div>
-<div class="example-content ex-hide"><script>u.compMgr.updateComp();
-document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
-</script></div>
-<div class="examples-code"><pre><code>&lt;div class="u-combo mutil-select" id="combo3">
-    &lt;div class="u-input-group u-has-feedback">
-        &lt;input class="u-form-control" />
-        &lt;span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button">&lt;/span>
-    &lt;/div>
-&lt;/div></code></pre>
-</div>
-<div class="examples-code"><pre><code>document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);</code></pre>
-</div>
-
+replaceExamp
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/combobox)
 
@@ -64,6 +25,7 @@ var comboObject = document.getElementById('domId')['u.Combo'];
 
 ```
 
+**注：** 如果获取的下拉对象为空，原因为下拉框没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取下拉对象。
 ## \# setComboData 设置数据源
 
 * 类型： `Function`
@@ -80,10 +42,22 @@ document.getElementById('domId')['u.Combo'].setComboData(dataArray);
 
 ```
 
+## \# selectItem 选中某行
+* 类型： `Function`
+* 说明：设置选中下拉框的某条数据
+* 参数：
+	* `{Integer} index`：要选中的某行，从0开始
+* 用法：
 
+```
+
+document.getElementById('domId')['u.Combo'].selectItem(index);
+
+```
 
 相关内容：
 
 [下拉框在kero中使用](http://design.yyuap.com/dist/pages/kero/combobox_ex.html)    
 
 [下拉框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+

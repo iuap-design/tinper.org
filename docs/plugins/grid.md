@@ -1,12 +1,16 @@
-# 表格插件
+# 表格控件
 
 表格控件将数据以表格的方式进行展示，同时提供了排序、交换列、数字列、复选、合计、自定义渲染、修改等复杂功能，满足了复杂场景下数据展示的需求。
 
 # 插件依赖
 
+http://design.yyuap.com/static/uui/latest/css/font-awesome.css
+
 http://design.yyuap.com/static/uui/latest/css/u.css
 
 http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js
+
+http://design.yyuap.com/static/uui/latest/js/u-polyfill.js
 
 http://design.yyuap.com/static/uui/latest/js/u.js
 
@@ -76,122 +80,7 @@ http://design.yyuap.com/static/uui/latest/js/u.js
     
 # 示例
 
-
-
-<div class="example-content"><div class="grid-body">
-	<div class="grid" id="grid-comp1"></div>
-</div></div>
-<div class="example-content ex-hide"><script>$(document).ready(function () {
-	var data1 = {
-        values: [{
-            column1: "11",
-            column2: "12",
-            column3: "13",
-            id: '0',
-            pid: ''
-        }, {
-            column1: "21",
-            column2: "22",
-            column3: "23",
-            id: '1',
-            pid: '0'
-        }, {
-            column1: "31",
-            column2: "32",
-            column3: "33",
-            id: '3',
-            pid: '1'
-        }
-        ]
-    };
-
-    var colu = [{
-        field: "id",
-        title: "id"
-    }, {
-        field: "pid",
-        title: "pid"
-    }, {
-        field: "column1",
-        title: "column1"
-    }, {
-        field: "column2",
-        title: "column2"
-    }, {
-        field: "column3",
-        title: "column3"
-    }
-    ];
-
-    $("#grid-comp1").grid({
-        dataSource: data1,
-        id: 'case-g1',
-        editable: true,
-        keyField: 'id',
-        parentKeyField: 'pid',
-        columns: colu
-
-    });
-});
-</script></div>
-<div class="examples-code"><pre><code>&lt;div class="grid-body">
-	&lt;div class="grid" id="grid-comp1">&lt;/div>
-&lt;/div></code></pre>
-</div>
-<div class="examples-code"><pre><code>$(document).ready(function () {
-	var data1 = {
-        values: [{
-            column1: "11",
-            column2: "12",
-            column3: "13",
-            id: '0',
-            pid: ''
-        }, {
-            column1: "21",
-            column2: "22",
-            column3: "23",
-            id: '1',
-            pid: '0'
-        }, {
-            column1: "31",
-            column2: "32",
-            column3: "33",
-            id: '3',
-            pid: '1'
-        }
-        ]
-    };
-
-    var colu = [{
-        field: "id",
-        title: "id"
-    }, {
-        field: "pid",
-        title: "pid"
-    }, {
-        field: "column1",
-        title: "column1"
-    }, {
-        field: "column2",
-        title: "column2"
-    }, {
-        field: "column3",
-        title: "column3"
-    }
-    ];
-
-    $("#grid-comp1").grid({
-        dataSource: data1,
-        id: 'case-g1',
-        editable: true,
-        keyField: 'id',
-        parentKeyField: 'pid',
-        columns: colu
-
-    });
-});</code></pre>
-</div>
-
+replaceExamp
 
 # API
 

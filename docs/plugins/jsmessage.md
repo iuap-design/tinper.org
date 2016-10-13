@@ -1,12 +1,11 @@
-# message插件
+# message控件
 
-用于即时信息的提示，消息背景色取决于消息类型，也可添加相对应的`icon`
+用于即时信息的提示，消息背景色取决于消息类型，易可添加相对应的`icon`
 
 # 插件依赖
 
-http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
 
-http://design.yyuap.com/static/uui/latest/css/u.css
 # 用法
 
 1.定义触发弹出事件的DOM
@@ -40,26 +39,7 @@ u.on(msgBtn,'click', function(){
 
 # 示例
 
-
-点击 Success 弹出提示消息
-<div class="example-content"><button id="msgBtn" class="u-button" >Success</button>
-</div>
-<div class="example-content ex-hide"><script>var msgBtn = document.body.querySelector("#msgBtn");
-var rightInfo='<i class="uf uf-checkedsymbol margin-r-5"></i>成功信息!!!';
-u.on(msgBtn,'click', function(){ 
-    u.showMessage({msg:rightInfo,position:"center"})
-})
-</script></div>
-<div class="examples-code"><pre><code>&lt;button id="msgBtn" class="u-button" >Success&lt;/button>
-</code></pre>
-</div>
-<div class="examples-code"><pre><code>var msgBtn = document.body.querySelector("#msgBtn");
-var rightInfo='&lt;i class="uf uf-checkedsymbol margin-r-5">&lt;/i>成功信息!!!';
-u.on(msgBtn,'click', function(){ 
-    u.showMessage({msg:rightInfo,position:"center"})
-})</code></pre>
-</div>
-
+replaceExamp
 
 
 # API

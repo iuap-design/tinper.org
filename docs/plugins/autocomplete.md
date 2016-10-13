@@ -90,3 +90,4 @@ ajax请求返回数据的数据项的分隔符。默认为|
 ###### selectFirst
 是否默认选中第一项。默认为false
 
+replaceExamp

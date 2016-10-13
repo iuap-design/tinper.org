@@ -1,12 +1,10 @@
-# progress插件
+# progress控件
 
 常用于跟踪进度
 
 # 插件依赖
 
-http://design.yyuap.com/static/uui/latest/js/u.js
-
-http://design.yyuap.com/static/uui/latest/css/u.css
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
 
 # 用法
 
@@ -14,50 +12,7 @@ http://design.yyuap.com/static/uui/latest/css/u.css
 
 # 示例
 
-
-##基本Progress
-<div class="example-content"><div id="p1" class="u-progress"></div></div>
-<div class="example-content ex-hide"><script>u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p1')['u.Progress'].setProgress(33);
-
-});
-</script></div>
-<div class="examples-code"><pre><code>u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p1')['u.Progress'].setProgress(33);
-
-});</code></pre>
-</div>
-<div class="examples-code"><pre><code>&lt;div id="p1" class="u-progress">&lt;/div></code></pre>
-</div>
-
-##不确定Progress
-<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div>
-</p></div>
-<div class="examples-code"><pre><code>&lt;div id="p2" class="u-progress u-progress__indeterminate">&lt;/div>
-&lt;/p></code></pre>
-</div>
-
-##缓冲Progress
-
-有缓冲标识的进度条
-<div class="example-content"><div id="p3" class="u-progress"></div></div>
-<div class="example-content ex-hide"><script>u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
-
-});
-</script></div>
-<div class="examples-code"><pre><code>&lt;div id="p3" class="u-progress">&lt;/div></code></pre>
-</div>
-<div class="examples-code"><pre><code>u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
-
-});</code></pre>
-</div>
-
+replaceExamp
 
 # API
 
