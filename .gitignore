@@ -143,3 +143,4 @@ dist/vendor/uui
 download/
 entry.js
 src/data/package/index.json
+src/docs/
