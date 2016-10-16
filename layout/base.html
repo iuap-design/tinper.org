@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<!-- 引入head -->
-	{{include '../../../base/public/header'}}
+	{{include '../../../public/header'}}
 </head>
 <body>
 	<!-- side bar -->
 	<div>
-		<%Summary%>
+		{{include './SUMMARY'}}
 	</div>
 
 	<!-- content -->
 	<div>
-		<%Replace%>
+		<%Content%>
 	</div>
 
 	<!-- 引入end -->
-	{{include '../../../base/public/footer'}}
+	{{include '../../../public/footer'}}
 </body>
 </html>
