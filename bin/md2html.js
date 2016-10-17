@@ -17,6 +17,7 @@ var ymlPath = path.join(envPath,'_config.yml');
 var tinper = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
 var REData = tinper.data;
 
+
 var srcPath = path.join(envPath,'src');
 var mdFun = function(srcPath) {
 	fs.readdir(srcPath, function(err, sub){
@@ -63,7 +64,12 @@ var mdFun = function(srcPath) {
 var markedFun = function(oldPath,newPath,fullName) {
 	var oldCont = fs.readFileSync(oldPath,'utf-8');
 	var markedCont = marked(oldCont);
-	var baseCont = fs.readFileSync(path.join(envPath,'layout/base.html'),'utf-8');
+	
+	// 待优化 - 遍历layout文件夹
+	// layout default content
+	var baseCont = fs.readFileSync(path.join(envPath,'layout/menu.html'),'utf-8');
+	var mainLayout = fs.readFileSync(path.join(envPath,'layout/main.html'),'utf-8');
+	
 	var markedHtml;
 	if(fullName !== 'SUMMARY.md'){
 		markedHtml = baseCont.replace('<%Content%>',markedCont);

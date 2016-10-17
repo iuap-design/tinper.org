@@ -12,8 +12,12 @@ data:
 
 
 # Directory目录
-source_dir: src
-dist_dir: dist
+root: /
+target: dist
 
 # layout布局
-
+source: src
+layout:
+    main:
+      - 'package/package.html'
+      - '*/index.html'
