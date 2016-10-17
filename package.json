@@ -7,7 +7,6 @@
     "dev": "node server/app.js",
     "build": "gulp",
     "cate": "node bin/category",
-    // "product": "sh bin/mark.sh && sh bin/data.sh && node index.js",
     "mark": "node bin/md2html",
     "deploy": "sh bin/fetch.sh && npm run cate && npm run build && npm run product"
   },
@@ -56,6 +55,7 @@
   "dependencies": {
     "art-template": "^3.0.3",
     "fs-extra": "^0.30.0",
+    "js-yaml": "^3.6.1",
     "kero-adapter": "^1.5.7",
     "koa": "^1.1.2",
     "koa-body": "^1.4.0",

@@ -5,15 +5,20 @@ var execSync = require('child_process').execSync;
 var path = require('path');
 var gulp = require('gulp');
 var marked = require('marked');
-var 
+var yaml = require('js-yaml');
 
-
+/**
+ * tinper基本配置获取
+ * reData:模板渲染数据集合
+ */
 var envPath = process.cwd();
 console.log(envPath);
+var ymlPath = path.join(envPath,'_config.yml');
+var tinper = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
+var REData = tinper.data;
+
 var srcPath = path.join(envPath,'src');
-
 var mdFun = function(srcPath) {
-
 	fs.readdir(srcPath, function(err, sub){
 		sub.forEach(function(subNum, index){
 			var subPath = path.join(srcPath,subNum);
@@ -35,9 +40,10 @@ var mdFun = function(srcPath) {
 				} else if(/\.html$/.test(subPath)){
 
 					// html文件copy到dist目录执行渲染
-					var newDir = copyFun(subPath,lastDiv);
-					console.log('newDir:',newDir);
-					renderFun(newDir);
+					// var newDir = copyFun(subPath,lastDiv);
+					// console.log('newDir:',newDir);
+					// renderFun(newDir);
+					copyFun(subPath,lastDiv,renderFun);
 
 				} else if( fullName != '.DS_Store') {
 
@@ -48,7 +54,6 @@ var mdFun = function(srcPath) {
 			}
 		});
 	});
-
 };
 
 /**
@@ -81,14 +86,21 @@ var markedFun = function(oldPath,newPath,fullName) {
  * @param  {[type]} lastDiv [description]
  * @return {[type]}         [description]
  */
-var copyFun = function(oldPath,lastDiv) {
+var copyFun = function(oldPath,lastDiv,callback) {
 	newPath = oldPath.replace('/src/','/dist/');
 	newDir = newPath.substring(0,lastDiv);
 	gulp.task('copy', function() {
 		return gulp.src(oldPath).pipe(gulp.dest(newDir));
 	});
-	gulp.start('copy');
-	return newPath;
+	gulp.task('render',['copy'], function(){
+		// 注意判断callback是否存在
+		if(callback){
+			callback(newPath);
+		}
+	});
+	
+	gulp.start('render');
+	
 };
 
 /**
@@ -97,11 +109,16 @@ var copyFun = function(oldPath,lastDiv) {
  * @return {[type]}         [description]
  */
 var renderFun = function(newPath) {
-	var fileName = newPath.lastIndexOf('/')
-	var isMenu = newPath.substr(++fileName);
-	var data = {};
+	var fileIndex = newPath.lastIndexOf('/');
+	var fullName = newPath.substr(++fileIndex);
+	// 待优化- 先上线功能
+	var dataAry = Object.keys(REData);
+	var data={};
+	for (var i=0; i<dataAry.length; i++){
+		fullName == dataAry[i] ? data=require(REData[dataAry[i]]) : data={};
+	}
 	var temp = newPath.replace(/\.html$/,'')
-	if(isMenu != 'SUMMARY.html'){
+	if(fullName != 'SUMMARY.html'){
 		var renders = template(temp,data);
 		fs.writeFileSync(newPath, renders);
 	}

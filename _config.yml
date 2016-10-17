@@ -1,0 +1,17 @@
+#Site
+title: Tinper
+description: Tinper官网
+author: onvno
+email: 
+
+# Render模板渲染
+url: http://tinper.org
+include: ./partial/
+data:
+  package.html: ../data/package/index.json
+
+
+# Directory目录
+source_dir: src
+dist_dir: dist
+
