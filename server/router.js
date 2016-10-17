@@ -67,9 +67,9 @@ module.exports = {
       var _html  = _css = _script = '';
 
       // 相对于当前执行文件的目录
-      var widgetPath = path.resolve(__dirname, '../dist/pages/webIDE/' + url + '/widget.html');
-      var cssPath = path.resolve(__dirname, '../dist/pages/webIDE/' + url + '/widget.css');
-      var scriptPath = path.resolve(__dirname, '../dist/pages/webIDE/' + url + '/widget.js');
+      var widgetPath = path.resolve(__dirname, '../dist/webIDE/' + url + '/widget.html');
+      var cssPath = path.resolve(__dirname, '../dist/webIDE/' + url + '/widget.css');
+      var scriptPath = path.resolve(__dirname, '../dist/webIDE/' + url + '/widget.js');
 
       if (fs.existsSync( widgetPath ))
         _html = fs.readFileSync( widgetPath );
