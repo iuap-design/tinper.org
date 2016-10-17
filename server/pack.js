@@ -9,7 +9,7 @@ var zip = require('gulp-zip');
 var clean = require('gulp-clean');
 
 // 获取Neoui es6模块依赖关系
-var neojson = require('./neoui.json');
+var neojson = require('../bin/neoui.json');
 var neoModule = neojson.es6;
 var koModule = neojson.ko;
 
