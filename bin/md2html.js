@@ -38,11 +38,8 @@ var mdFun = function(srcPath) {
 					markedFun(subPath,newPath,fullName);
 
 				} else if(/\.html$/.test(subPath)){
-
+					debugger
 					// html文件copy到dist目录执行渲染
-					// var newDir = copyFun(subPath,lastDiv);
-					// console.log('newDir:',newDir);
-					// renderFun(newDir);
 					copyFun(subPath,lastDiv,renderFun);
 
 				} else if( fullName != '.DS_Store') {
@@ -89,18 +86,26 @@ var markedFun = function(oldPath,newPath,fullName) {
 var copyFun = function(oldPath,lastDiv,callback) {
 	newPath = oldPath.replace('/src/','/dist/');
 	newDir = newPath.substring(0,lastDiv);
-	gulp.task('copy', function() {
-		return gulp.src(oldPath).pipe(gulp.dest(newDir));
-	});
-	gulp.task('render',['copy'], function(){
-		// 注意判断callback是否存在
-		if(callback){
-			callback(newPath);
-		}
-	});
 	
-	gulp.start('render');
+	// 执行gulp不能正确执行callback
+	// gulp.task('copy', function() {
+	// 	return gulp.src(oldPath).pipe(gulp.dest(newDir));
+	// });
+	// gulp.task('render',['copy'], function(){
+	// 	// 注意判断callback是否存在
+	// 	console.log("callback:",callback,",,newPath:",newPath);
+	// 	if(callback){
+	// 		console.log('callback执行');
+	// 		callback(newPath);
+	// 		console.log('callback执行完毕')
+	// 	}
+	// });
+	// gulp.start('render');
 	
+	fse.copySync(oldPath,newPath);
+	if(callback){
+		callback(newPath);
+	}
 };
 
 /**
@@ -113,9 +118,9 @@ var renderFun = function(newPath) {
 	var fullName = newPath.substr(++fileIndex);
 	// 待优化- 先上线功能
 	var dataAry = Object.keys(REData);
-	var data={};
+	var data;
 	for (var i=0; i<dataAry.length; i++){
-		fullName == dataAry[i] ? data=require(REData[dataAry[i]]) : data={};
+		fullName == dataAry[i] ? data=require(REData[dataAry[i]]) : data={}
 	}
 	var temp = newPath.replace(/\.html$/,'')
 	if(fullName != 'SUMMARY.html'){
