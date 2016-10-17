@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 引入head -->
+	<style>
+	* {
+		margin:0;
+		padding:0;
+	}
+</style>
+</head>
+<body>
+	<!-- side bar -->
+	<div>
+		<ul>
+<li>时间插件<ul>
+<li><a href="clockpicker.md">表盘选择 clockpicker</a>    <ul>
+<li><a href="date.md">日期 date</a></li>
+</ul>
+</li>
+<li><a href="month.md">月份选择 month</a></li>
+<li><a href="time.md">时分秒 time</a></li>
+<li><a href="year.md">年份选择 year</a></li>
+<li><a href="yearmonth.md">年月选择 yearmonth</a></li>
+</ul>
+</li>
+<li>表格插件<ul>
+<li><a href="grid.md">基础说明</a>    <ul>
+<li><a href="gridCustom.md">扩展说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="loading.md">Loading loading</a></li>
+<li><a href="combobox.md">下拉框 combobox</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jsmodal.md">模态框 modal</a></li>
+<li><a href="autocomplete.md">自动完成 autocomplete</a></li>
+<li><a href="jspagination.md">分页 pagination</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jstabs.md">页签 tabs</a></li>
+<li><a href="jstooltip.md">即时提示 tooltip</a></li>
+<li><a href="menu.md">隐藏菜单 menu</a></li>
+<li><a href="jsprogress.md">进度条 progress</a></li>
+<li><a href="tree.md">树 tree</a></li>
+<li><a href="jsswitch.md">开关 switch</a></li>
+<li>第三方<ul>
+<li><a href="jsrating.md">评分 raty</a></li>
+</ul>
+</li>
+</ul>
+
+	</div>
+
+	<!-- content -->
+	<div>
+		<h1 id="-">表格控件扩展说明</h1>
+<p>在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。</p>
+<h2 id="css-">css覆盖</h2>
+<p>如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。</p>
+<h2 id="-">切换主题</h2>
+<p>通过引用不同的主题文件的方式来修改当前表格的主题。</p>
+<p><strong>注：后续提供</strong></p>
+<h2 id="aftercreate">afterCreate</h2>
+<p>表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
+详见API：</p>
+<h2 id="-">扩展表格方法</h2>
+<p>此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
+源码库：<a href="https://github.com/iuap-design/neoui-grid.git">https://github.com/iuap-design/neoui-grid.git</a></p>
+
+	</div>
+
+	<!-- 引入end -->
+	<div>footer</div>
+</body>
+</html>

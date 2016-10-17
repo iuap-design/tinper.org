@@ -5,9 +5,10 @@
   "main": "server/app.js",
   "scripts": {
     "dev": "node server/app.js",
-    "cate": "node server/category",
     "build": "gulp",
-    "product": "sh bin/mark.sh && sh bin/data.sh && node index.js",
+    "cate": "node bin/category",
+    // "product": "sh bin/mark.sh && sh bin/data.sh && node index.js",
+    "mark": "node bin/md2html",
     "deploy": "sh bin/fetch.sh && npm run cate && npm run build && npm run product"
   },
   "repository": {

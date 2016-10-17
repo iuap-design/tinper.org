@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 引入head -->
+	<style>
+	* {
+		margin:0;
+		padding:0;
+	}
+</style>
+</head>
+<body>
+	<!-- side bar -->
+	<div>
+		<ul>
+<li>时间插件<ul>
+<li><a href="clockpicker.md">表盘选择 clockpicker</a>    <ul>
+<li><a href="date.md">日期 date</a></li>
+</ul>
+</li>
+<li><a href="month.md">月份选择 month</a></li>
+<li><a href="time.md">时分秒 time</a></li>
+<li><a href="year.md">年份选择 year</a></li>
+<li><a href="yearmonth.md">年月选择 yearmonth</a></li>
+</ul>
+</li>
+<li>表格插件<ul>
+<li><a href="grid.md">基础说明</a>    <ul>
+<li><a href="gridCustom.md">扩展说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="loading.md">Loading loading</a></li>
+<li><a href="combobox.md">下拉框 combobox</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jsmodal.md">模态框 modal</a></li>
+<li><a href="autocomplete.md">自动完成 autocomplete</a></li>
+<li><a href="jspagination.md">分页 pagination</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jstabs.md">页签 tabs</a></li>
+<li><a href="jstooltip.md">即时提示 tooltip</a></li>
+<li><a href="menu.md">隐藏菜单 menu</a></li>
+<li><a href="jsprogress.md">进度条 progress</a></li>
+<li><a href="tree.md">树 tree</a></li>
+<li><a href="jsswitch.md">开关 switch</a></li>
+<li>第三方<ul>
+<li><a href="jsrating.md">评分 raty</a></li>
+</ul>
+</li>
+</ul>
+
+	</div>
+
+	<!-- content -->
+	<div>
+		<h1 id="-">年月</h1>
+<p>用户可以通过此插件进行年月的选择。</p>
+<p>replaceExamp</p>
+<p><a href="http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/yearmonth">试一试</a></p>
+<h1 id="api">API</h1>
+<h2 id="-yearmonth-"># YearMonth 对象</h2>
+<ul>
+<li>类型：<code>Object</code></li>
+<li>说明： YearMonth表示一个年月对象</li>
+<li>用法：</li>
+</ul>
+<p>获取方式：1、获取绑定年月的dom元素 ； 2、读取dom元素上的属性&#39;u.YearMonth&#39;</p>
+<pre><code>
+var yearMonthObject = document.getElementById(&#39;domId&#39;)[&#39;u.YearMonth&#39;];
+</code></pre><p><strong>注：</strong> 如果获取的年月对象为空，原因为年月没有初始化成功，可以先调用<code>u.compMgr.updateComp();</code>来初始化页面中的控件。然后再获取日期对象。</p>
+<h2 id="-setvalue"># setValue</h2>
+<ul>
+<li>类型： <code>Function</code></li>
+<li>说明：设置具体的年月</li>
+<li>参数：<ul>
+<li><code>{String} value</code> 具体格式：&quot;YYYY-MM&quot;</li>
+</ul>
+</li>
+<li>用法：</li>
+</ul>
+<pre><code>yearMonthObject.setValue(&#39;2016-02&#39;);
+</code></pre><p>相关内容：</p>
+<p><a href="http://design.yyuap.com/dist/pages/kero/ex_yearmonth.html">年月在kero中使用</a>    </p>
+<p><a href="http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit">年月在grid中使用</a></p>
+
+	</div>
+
+	<!-- 引入end -->
+	<div>footer</div>
+</body>
+</html>

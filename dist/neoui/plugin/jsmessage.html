@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 引入head -->
+	<style>
+	* {
+		margin:0;
+		padding:0;
+	}
+</style>
+</head>
+<body>
+	<!-- side bar -->
+	<div>
+		<ul>
+<li>时间插件<ul>
+<li><a href="clockpicker.md">表盘选择 clockpicker</a>    <ul>
+<li><a href="date.md">日期 date</a></li>
+</ul>
+</li>
+<li><a href="month.md">月份选择 month</a></li>
+<li><a href="time.md">时分秒 time</a></li>
+<li><a href="year.md">年份选择 year</a></li>
+<li><a href="yearmonth.md">年月选择 yearmonth</a></li>
+</ul>
+</li>
+<li>表格插件<ul>
+<li><a href="grid.md">基础说明</a>    <ul>
+<li><a href="gridCustom.md">扩展说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="loading.md">Loading loading</a></li>
+<li><a href="combobox.md">下拉框 combobox</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jsmodal.md">模态框 modal</a></li>
+<li><a href="autocomplete.md">自动完成 autocomplete</a></li>
+<li><a href="jspagination.md">分页 pagination</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jstabs.md">页签 tabs</a></li>
+<li><a href="jstooltip.md">即时提示 tooltip</a></li>
+<li><a href="menu.md">隐藏菜单 menu</a></li>
+<li><a href="jsprogress.md">进度条 progress</a></li>
+<li><a href="tree.md">树 tree</a></li>
+<li><a href="jsswitch.md">开关 switch</a></li>
+<li>第三方<ul>
+<li><a href="jsrating.md">评分 raty</a></li>
+</ul>
+</li>
+</ul>
+
+	</div>
+
+	<!-- content -->
+	<div>
+		<h1 id="message-">message控件</h1>
+<p>用于即时信息的提示，消息背景色取决于消息类型，易可添加相对应的<code>icon</code></p>
+<h1 id="-">插件依赖</h1>
+<p>依赖于 <a href="http://design.yyuap.com/static/uui/latest/js/u.js">http://design.yyuap.com/static/uui/latest/js/u.js</a></p>
+<h1 id="-">用法</h1>
+<p>1.定义触发弹出事件的DOM</p>
+<pre><code>&lt;button id=&quot;msgBtn&quot; class=&quot;u-button&quot; &gt;Success&lt;/button&gt;
+</code></pre><p>2.定义弹出信息的具体内容</p>
+<pre><code>var rightInfo=&#39;&lt;i class=&quot;uf uf-checkedsymbol margin-r-5&quot;&gt;&lt;/i&gt;成功信息!!!&#39;;
+</code></pre><p>3.js 获取dom</p>
+<pre><code>var msgBtn = document.body.querySelector(&quot;#msgBtn&quot;);
+</code></pre><p>4.绑定弹框事件</p>
+<pre><code>u.on(msgBtn,&#39;click&#39;, function(){ 
+    u.showMessage({msg:rightInfo,position:&quot;center&quot;})
+})
+</code></pre><h1 id="-">示例</h1>
+<p>replaceExamp</p>
+<h1 id="api">API</h1>
+<p>##js参数</p>
+<table>
+  <tbody>
+        <tr>
+        <td>名称</td>
+        <td>类型</td>
+        <td>默认值</td>
+        <td>描述</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>msg</td>
+        <td>html片段</td>
+        <td>无</td>
+        <td><i class="uf uf-checkedsymbol margin-r-5"></i>成功信息!!!&#39;;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>position</td>
+        <td>string</td>
+        <td>center</td>
+        <td>取值范围：center,top,right,left,bottom.定义弹框显示位置</td>
+        <td></td>
+      </tr>
+    </tbody>
+</table>
+
+
+
+	</div>
+
+	<!-- 引入end -->
+	<div>footer</div>
+</body>
+</html>

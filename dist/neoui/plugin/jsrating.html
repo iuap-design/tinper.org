@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 引入head -->
+	<style>
+	* {
+		margin:0;
+		padding:0;
+	}
+</style>
+</head>
+<body>
+	<!-- side bar -->
+	<div>
+		<ul>
+<li>时间插件<ul>
+<li><a href="clockpicker.md">表盘选择 clockpicker</a>    <ul>
+<li><a href="date.md">日期 date</a></li>
+</ul>
+</li>
+<li><a href="month.md">月份选择 month</a></li>
+<li><a href="time.md">时分秒 time</a></li>
+<li><a href="year.md">年份选择 year</a></li>
+<li><a href="yearmonth.md">年月选择 yearmonth</a></li>
+</ul>
+</li>
+<li>表格插件<ul>
+<li><a href="grid.md">基础说明</a>    <ul>
+<li><a href="gridCustom.md">扩展说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="loading.md">Loading loading</a></li>
+<li><a href="combobox.md">下拉框 combobox</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jsmodal.md">模态框 modal</a></li>
+<li><a href="autocomplete.md">自动完成 autocomplete</a></li>
+<li><a href="jspagination.md">分页 pagination</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jstabs.md">页签 tabs</a></li>
+<li><a href="jstooltip.md">即时提示 tooltip</a></li>
+<li><a href="menu.md">隐藏菜单 menu</a></li>
+<li><a href="jsprogress.md">进度条 progress</a></li>
+<li><a href="tree.md">树 tree</a></li>
+<li><a href="jsswitch.md">开关 switch</a></li>
+<li>第三方<ul>
+<li><a href="jsrating.md">评分 raty</a></li>
+</ul>
+</li>
+</ul>
+
+	</div>
+
+	<!-- content -->
+	<div>
+		<h1 id="rating-">rating控件</h1>
+<p>评级评分</p>
+<h1 id="-">插件依赖</h1>
+<p>首先依赖于 <a href="http://design.yyuap.com/static/uui/latest/js/u.js">http://design.yyuap.com/static/uui/latest/js/u.js</a></p>
+<p>再引入js: <a href="http://design.yyuap.com/static/raty/raty.js">http://design.yyuap.com/static/raty/raty.js</a></p>
+<h1 id="-">用法</h1>
+<p>1.定义类<code>`u-rating</code>的父元素,并配置属性<code>data-plugin=rating</code></p>
+<pre><code>&lt;div class=&quot;u-rating&quot; data-score=&quot;3&quot; data-plugin=&quot;rating&quot;&gt;&lt;/div&gt;
+</code></pre><p>2.设置参数</p>
+<pre><code>    var  defaults= {
+        targetKeep: true,
+        icon: &quot;font&quot;,
+        starType: &quot;i&quot;,
+        starOff: &quot;icon uf uf-star&quot;,
+        starOn: &quot;icon uf uf-star orange-600&quot;,
+        cancelOff: &quot;icon uf uf-minussigninsideablackcircle&quot;,
+        cancelOn: &quot;icon  uf uf-minussigninsideablackcircle orange-600&quot;,
+        starHalf: &quot;icon uf uf-starhalfempty orange-500&quot;
+      };
+})
+</code></pre><p>3.调用初始raty方法</p>
+<pre><code>    $(&#39;[data-plugin=&quot;rating&quot;]&#39;).each(function() {
+          $(this).raty(options);
+     });
+</code></pre><h1 id="-">示例</h1>
+<p>replaceExamp</p>
+<h1 id="api">API</h1>
+<p>详情参见与 <a href="http://testweb3.iecworld.com/jsdemo/js/lq_js_point/">http://testweb3.iecworld.com/jsdemo/js/lq_js_point/</a></p>
+
+	</div>
+
+	<!-- 引入end -->
+	<div>footer</div>
+</body>
+</html>

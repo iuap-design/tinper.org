@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 引入head -->
+	<style>
+	* {
+		margin:0;
+		padding:0;
+	}
+</style>
+</head>
+<body>
+	<!-- side bar -->
+	<div>
+		<ul>
+<li>时间插件<ul>
+<li><a href="clockpicker.md">表盘选择 clockpicker</a>    <ul>
+<li><a href="date.md">日期 date</a></li>
+</ul>
+</li>
+<li><a href="month.md">月份选择 month</a></li>
+<li><a href="time.md">时分秒 time</a></li>
+<li><a href="year.md">年份选择 year</a></li>
+<li><a href="yearmonth.md">年月选择 yearmonth</a></li>
+</ul>
+</li>
+<li>表格插件<ul>
+<li><a href="grid.md">基础说明</a>    <ul>
+<li><a href="gridCustom.md">扩展说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="loading.md">Loading loading</a></li>
+<li><a href="combobox.md">下拉框 combobox</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jsmodal.md">模态框 modal</a></li>
+<li><a href="autocomplete.md">自动完成 autocomplete</a></li>
+<li><a href="jspagination.md">分页 pagination</a></li>
+<li><a href="jsmessage.md">提示消息 message</a></li>
+<li><a href="jstabs.md">页签 tabs</a></li>
+<li><a href="jstooltip.md">即时提示 tooltip</a></li>
+<li><a href="menu.md">隐藏菜单 menu</a></li>
+<li><a href="jsprogress.md">进度条 progress</a></li>
+<li><a href="tree.md">树 tree</a></li>
+<li><a href="jsswitch.md">开关 switch</a></li>
+<li>第三方<ul>
+<li><a href="jsrating.md">评分 raty</a></li>
+</ul>
+</li>
+</ul>
+
+	</div>
+
+	<!-- content -->
+	<div>
+		<h1 id="-">日期</h1>
+<p>用户可以自定义日期的显示格式，默认返回的日期是年-月-日，也可以返回年-月-日 时:分:秒。</p>
+<p>replaceExamp</p>
+<p><a href="http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/datetime">试一试</a></p>
+<p>用户可以在<code>u-datepicker</code>的dom元素添加format属性，来自定义日期的显示格式。具体fomat内容定义如下：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">标记</th>
+<th style="text-align:right">输出结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Year</td>
+<td style="text-align:center">YY</td>
+<td style="text-align:right">70 71 ... 29 30</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">YYYY</td>
+<td style="text-align:right">1970 1971 ... 2029 2030</td>
+</tr>
+<tr>
+<td>Month</td>
+<td style="text-align:center">M</td>
+<td style="text-align:right">1 2 ... 11 12</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">MM</td>
+<td style="text-align:right">01 02 ... 11 12</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">MMM</td>
+<td style="text-align:right">1月 2月 ... 11月 12月</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">MMMM</td>
+<td style="text-align:right">一月 二月 ... 十一月 十二月</td>
+</tr>
+<tr>
+<td>Day of Month</td>
+<td style="text-align:center">D</td>
+<td style="text-align:right">1 2 ... 30 31</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">DD</td>
+<td style="text-align:right">01 02 ... 30 31</td>
+</tr>
+<tr>
+<td>Hour</td>
+<td style="text-align:center">H</td>
+<td style="text-align:right">0 1 ... 22 23</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">HH</td>
+<td style="text-align:right">00 01 ... 22 23</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">h</td>
+<td style="text-align:right">1 2 ... 11 12</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">hh</td>
+<td style="text-align:right">01 02 ... 11 12</td>
+</tr>
+<tr>
+<td>Minute</td>
+<td style="text-align:center">m</td>
+<td style="text-align:right">0 1 ... 58 59</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">mm</td>
+<td style="text-align:right">00 01 ... 58 59</td>
+</tr>
+<tr>
+<td>Second</td>
+<td style="text-align:center">s</td>
+<td style="text-align:right">0 1 ... 58 59</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">ss</td>
+<td style="text-align:right">00 01 ... 58 59</td>
+</tr>
+<tr>
+<td>12小时制时间后缀</td>
+<td style="text-align:center">a</td>
+<td style="text-align:right">am/pm</td>
+</tr>
+</tbody>
+</table>
+<h1 id="api">API</h1>
+<h2 id="-datetimepicker-"># DateTimePicker 对象</h2>
+<ul>
+<li>类型：<code>Object</code></li>
+<li>说明： DateTimePicker表示一个时间对象</li>
+<li>用法：</li>
+</ul>
+<p>获取方式：1、获取绑定日期的dom元素 ； 2、读取dom元素上的属性&#39;u.DateTimePicker&#39;</p>
+<pre><code>
+var dateObject = document.getElementById(&#39;domId&#39;)[&#39;u.DateTimePicker&#39;];
+</code></pre><p><strong>注：</strong> 如果获取的日期对象为空，原因为日期没有初始化成功，可以先调用<code>u.compMgr.updateComp();</code>来初始化页面中的控件。然后再获取日期对象。</p>
+<h2 id="-setdate"># setDate</h2>
+<ul>
+<li>类型： <code>Function</code></li>
+<li>说明：设置具体的日期</li>
+<li>参数：<ul>
+<li><code>{String} dateStr</code> 具体格式：&quot;YYYY-MM-DD hh:mm:ss&quot;</li>
+</ul>
+</li>
+<li>用法：</li>
+</ul>
+<pre><code>dateObject.setDate(&#39;2016-02-03&#39;);
+</code></pre><h2 id="-setenable"># setEnable</h2>
+<ul>
+<li>类型：<code>Function</code></li>
+<li>说明： 设置日期控件是否可用</li>
+<li>参数：<ul>
+<li><code>{Boolean} isEnable</code> 为<code>true</code>时可用，为<code>false</code>为不可用 </li>
+</ul>
+</li>
+<li>用法：</li>
+</ul>
+<pre><code>
+dateObject.setEnable(false);
+</code></pre><h2 id="-setstartdate"># setStartDate</h2>
+<ul>
+<li>类型：<code>Function</code></li>
+<li>说明： 设置可选时间范围的起始日期</li>
+<li>参数：<ul>
+<li><code>{String} startDate</code> 具体格式：&quot;YYYY-MM-DD&quot;</li>
+</ul>
+</li>
+<li>用法：</li>
+</ul>
+<pre><code>
+dateObject.setStartDate(&#39;2016-01-01&#39;);
+</code></pre><h2 id="-setenddate"># setEndDate</h2>
+<ul>
+<li>类型：<code>Function</code></li>
+<li>说明： 设置可选时间范围的结束日期</li>
+<li>参数：<ul>
+<li><code>{String} endDate</code> 具体格式：&quot;YYYY-MM-DD&quot;</li>
+</ul>
+</li>
+<li>用法：</li>
+</ul>
+<pre><code>
+dateObject.setEndDate(&#39;2016-01-01&#39;);
+</code></pre><h2 id="-setformat"># setFormat</h2>
+<ul>
+<li>类型：<code>Function</code></li>
+<li>说明： 规定日期的显示格式</li>
+<li>参数：<ul>
+<li><code>{String} format</code> 具体格式：参考format内容</li>
+</ul>
+</li>
+<li>用法：</li>
+</ul>
+<pre><code>
+dateObject.setFormat(&#39;YYYY&#39;);
+</code></pre><p>相关内容：</p>
+<p><a href="http://design.yyuap.com/dist/pages/kero/ex_datetime.html">日期在kero中使用</a>    </p>
+<p><a href="http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit">日期在grid中使用</a></p>
+
+	</div>
+
+	<!-- 引入end -->
+	<div>footer</div>
+</body>
+</html>
