@@ -1,0 +1,56 @@
+.u-cards-watermark {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 1;
+    opacity: .1;
+}
+.u-cards-watermark.darker {
+    color: #000;
+}
+
+
+.icon.icon-2x {
+     font-size: 2em; 
+}
+.icon.icon-circle {
+    position: relative;
+    margin: .5em;
+}
+
+
+.icon {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon.icon-circle:before {
+    position: relative;
+    z-index: 1;
+}
+
+.icon.icon-circle:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    width: 2em;
+    height: 2em;
+    content: "";
+    background-color: inherit;
+    border-radius: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
