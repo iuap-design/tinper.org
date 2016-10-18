@@ -1,0 +1,91 @@
+img{
+    max-width: 100%;
+}
+
+/*头部*/
+.u-navbar {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+
+.nav-list .dropdown {
+    position: relative;
+}
+
+.nav-list .dropdown .nav-par+ul{
+    list-style: none;
+    display: none;
+    position: absolute;
+    background: #FFF;
+}
+
+@media (max-width: 767px) {
+ .nav-list .dropdown .nav-par+ul{
+    position: fixed;
+    z-index: 100;
+ }
+}
+
+.nav-list .dropdown:hover .nav-par+ul{
+    display: block;
+    margin:  0px;
+    padding: 10px 0px;
+}
+
+.nav-list .dropdown:hover .nav-par+ul li {
+    margin: 2px 0;
+    padding: 6px 13px;
+    word-break: keep-all;
+}
+.nav-list .dropdown:hover .nav-par+ul li:hover {
+
+    background-color: #eeeeee;
+    color: rgb(97,97,97);
+}
+/*内容区*/
+
+.content-wrapper.part1 {
+    padding-top: 50px;
+    background-attachment:fixed;
+    background-size:cover;
+    background-image:url(../images/0003.jpg);
+    text-align: center;
+}
+
+.content-wrapper.part1  .u-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+/* part2 */
+
+@media (min-width: 768px) {
+ .content-wrapper.part2 img{
+    width: 200px;
+ }
+}
+
+.bg-white {
+    background: #fff;
+    border-top: 1px solid #ecf0f1;
+    opacity:1;
+}
+
+/*用户说*/
+
+.user-img .iu{
+    -webkit-filter: grayscale(75%);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    width:100px;}
+.user-img .ui{
+    -webkit-filter: grayscale(0%);  
+    width:100px;
+ }
