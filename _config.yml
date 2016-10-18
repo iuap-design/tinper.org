@@ -7,9 +7,10 @@ email:
 # Render模板渲染
 url: http://tinper.org
 include: ./partial/
-data:
-  package.html: ../data/package/index.json
-
+# data:
+#   package.html: ../data/package/index.json
+data_default: true
+data_exclude:
 
 # Directory目录
 root: /

@@ -1,0 +1,59 @@
+<!-- 导航 开始  -->
+<nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)"><img src="/assets/images/tinperlogos32.png" alt=""></a>
+        </div>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+
+               <!--  <li class="dropdown">
+                    <a>首页</a>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-par">产品</a>
+                    <ul>
+                      <li><a>前端集成开发工具uba</a></li>
+                      <li><a>UI框架neoui</a></li>
+                      <li><a>React组件库bee</a></li>
+                      <li><a>前端基础库sparrow</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/dist/webIDE/index.html">样式板</a>
+                </li>
+                <li class="dropdown">
+                    <a>设计语言</a>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-par">下载</a>
+                    <ul>
+                      <li><a>版本下载</a></li>
+                      <li><a>用户定制</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a>案例</a>
+                </li> -->
+
+                {{each nav as value i}}
+                    <li class="dropdown">
+                        <a href="">{{i}}</a>
+                        {{if value}}
+                            <ul>
+                            {{each value as subName}}
+                                <li><a href="">{{subName}}</a></li>
+                            {{/each}} 
+                            </ul>
+                        {{/if}}    
+                    </li>
+                {{/each}}
+                
+            </ul>
+        </div>
+    </div>
+</nav>

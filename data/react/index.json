@@ -1,0 +1,12 @@
+{
+    "nav": {
+        "Home": {},
+        "React Component": [],
+        "API": [],
+        "Other": [
+            "list1",
+            "list2",
+            "list3"
+        ]
+    }
+}

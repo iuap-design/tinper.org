@@ -1,0 +1,13 @@
+{
+    "nav": {
+        "Home": {},
+        "Component": [],
+        "Global": [],
+        "Plugin": [],
+        "Other": [
+            "list1",
+            "list2",
+            "list3"
+        ]
+    }
+}
