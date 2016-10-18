@@ -5,10 +5,9 @@
   "main": "server/app.js",
   "scripts": {
     "dev": "node server/app.js",
-    "build": "gulp",
     "cate": "node bin/category",
     "mark": "node bin/md2html",
-    "deploy": "sh bin/fetch.sh && npm run cate && npm run build && npm run product"
+    "deploy": "sh bin/fetch.sh && npm run cate && npm run mark"
   },
   "repository": {
     "type": "git",
