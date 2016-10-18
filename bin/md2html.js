@@ -30,25 +30,22 @@ var mdFun = function(srcPath) {
 				mdFun(subPath);
 			} else {
 				// 处理文档
-				var lastDiv = subPath.lastIndexOf('/');
-				var fullName = subPath.substr(++lastDiv);
+				// var lastDiv = subPath.lastIndexOf('/');
+				// var fullName = subPath.substr(++lastDiv);
+				var fullName = path.basename(subPath);
 				var newPath;
 				if(/\.md$/.test(subPath)){
 
 					// md文档进行mark转html,再进行渲染
-					newPath = subPath.replace('/src/','/dist/').replace(/\.md$/,'.html');
+					newPath = subPath.replace('src','dist').replace(/\.md$/,'.html');
 					markedFun(subPath,newPath,fullName);
 
 				} else if(/\.html$/.test(subPath)){
-					debugger
 					// html文件copy到dist目录执行渲染
-					copyFun(subPath,lastDiv,renderFun);
-
+					copyFun(subPath,renderFun);
 				} else if( fullName != '.DS_Store') {
-
 					// 其他文件直接copy
-					copyFun(subPath,lastDiv);
-
+					copyFun(subPath);
 				} 
 			}
 		});
@@ -87,45 +84,27 @@ var markedFun = function(oldPath,newPath,fullName) {
 /**
  * 复制文档
  * @param  {[type]} oldPath [description]
- * @param  {[type]} lastDiv [description]
- * @return {[type]}         [description]
  */
-var copyFun = function(oldPath,lastDiv,callback) {
-	var oldPath = path.resolve(oldPath);
-	newPath = oldPath.replace('/src/','/dist/');
-	newDir = newPath.substring(0,lastDiv);
+var copyFun = function(oldPath,callback) {
+	newPath = oldPath.replace('src','dist');
 	
-	// 执行gulp不能正确执行callback
-	// gulp.task('copy', function() {
-	// 	return gulp.src(oldPath).pipe(gulp.dest(newDir));
-	// });
-	// gulp.task('render',['copy'], function(){
-	// 	// 注意判断callback是否存在
-	// 	console.log("callback:",callback,",,newPath:",newPath);
-	// 	if(callback){
-	// 		console.log('callback执行');
-	// 		callback(newPath);
-	// 		console.log('callback执行完毕')
-	// 	}
-	// });
-	// gulp.start('render');
+	// 测试此处fse不能执行异步
 	fse.copySync(oldPath,newPath);
 	if(callback){
 		callback(newPath);
 	}
-
 	
 };
 
 /**
  * 模板引擎渲染
- * @param  {[type]} newPath [description]
- * @return {[type]}         [description]
  */
 var renderFun = function(newPath) {
 	var newPath = path.resolve(newPath);
-	var fileIndex = newPath.lastIndexOf('/');
-	var fullName = newPath.substr(++fileIndex);
+	// ‘/’获取filename存在缺陷
+	// var fileIndex = newPath.lastIndexOf('/');
+	// var fullName = newPath.substr(++fileIndex);
+	var fullName = path.basename(newPath);
 	// 待优化- 先上线功能
 	var dataAry = Object.keys(REData);
 	var data;
