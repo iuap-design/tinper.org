@@ -66,7 +66,6 @@ var markedFun = function(oldPath,newPath,fullName) {
 	// 待优化 - 遍历layout文件夹
 	// layout default content
 	var baseCont = fs.readFileSync(path.join(envPath,'layout/menu.html'),'utf-8');
-	var mainLayout = fs.readFileSync(path.join(envPath,'layout/main.html'),'utf-8');
 	
 	var markedHtml;
 	if(fullName !== 'SUMMARY.md'){
