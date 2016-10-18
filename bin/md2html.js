@@ -20,6 +20,7 @@ var REData = tinper.data;
 
 var srcPath = path.join(envPath,'src');
 var mdFun = function(srcPath) {
+	// console.log('srcPath--'+srcPath);
 	fs.readdir(srcPath, function(err, sub){
 		sub.forEach(function(subNum, index){
 			var subPath = path.join(srcPath,subNum);
@@ -90,7 +91,7 @@ var markedFun = function(oldPath,newPath,fullName) {
  * @return {[type]}         [description]
  */
 var copyFun = function(oldPath,lastDiv,callback) {
-	newPath = oldPath.replace('/src/','/dist/');
+	newPath = oldPath.replace('src','dist');
 	newDir = newPath.substring(0,lastDiv);
 	
 	// 执行gulp不能正确执行callback
@@ -107,11 +108,12 @@ var copyFun = function(oldPath,lastDiv,callback) {
 	// 	}
 	// });
 	// gulp.start('render');
-	
 	fse.copySync(oldPath,newPath);
 	if(callback){
 		callback(newPath);
 	}
+
+	
 };
 
 /**
