@@ -91,7 +91,8 @@ var markedFun = function(oldPath,newPath,fullName) {
  * @return {[type]}         [description]
  */
 var copyFun = function(oldPath,lastDiv,callback) {
-	newPath = oldPath.replace('src','dist');
+	var oldPath = path.resolve(oldPath);
+	newPath = oldPath.replace('/src/','/dist/');
 	newDir = newPath.substring(0,lastDiv);
 	
 	// 执行gulp不能正确执行callback
@@ -122,6 +123,7 @@ var copyFun = function(oldPath,lastDiv,callback) {
  * @return {[type]}         [description]
  */
 var renderFun = function(newPath) {
+	var newPath = path.resolve(newPath);
 	var fileIndex = newPath.lastIndexOf('/');
 	var fullName = newPath.substr(++fileIndex);
 	// 待优化- 先上线功能
