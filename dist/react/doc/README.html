@@ -4,32 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<!-- 引入head -->
-	<style>
-	* {
-		margin:0;
-		padding:0;
-	}
-</style>
+	{{include '../../../public/header'}}
 </head>
 <body>
 	<!-- side bar -->
 	<div>
-		<ul>
-<li><a href="layout.md">布局</a></li>
-<li><a href="typography.md">排版</a></li>
-<li><a href="color.md">色彩</a></li>
-<li><a href="utilities.md">辅助类</a></li>
-<li><a href="icon.md">图标字体</a></li>
-<li><a href="badge.md">徽章 badge</a></li>
-<li><a href="input.md">输入框 input</a></li>
-<li><a href="button.md">按钮 button</a></li>
-<li><a href="checkbox.md">复选框 checkbox</a></li>
-<li><a href="radio.md">单选 radio</a></li>
-<li><a href="label.md">标签 label</a></li>
-<li><a href="table.md">表格 table</a></li>
-<li><a href="image.md">图片 image</a></li>
-</ul>
-
+		{{include './SUMMARY'}}
 	</div>
 
 	<!-- content -->
@@ -53,6 +33,6 @@
 	</div>
 
 	<!-- 引入end -->
-	<div>footer</div>
+	{{include '../../../public/footer'}}
 </body>
 </html>

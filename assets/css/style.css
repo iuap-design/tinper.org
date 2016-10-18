@@ -11,6 +11,15 @@ img{
 }
 
 
+.u-navbar-default .u-navbar-toolbar > li:hover > a {
+    color: rgb(97,97,97);
+    background-color: #eeeeee;
+}
+
+.u-navbar-default .u-navbar-toolbar > li  a {
+    cursor: pointer;
+}
+
 .nav-list .dropdown {
     position: relative;
 }
