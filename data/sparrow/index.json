@@ -1,0 +1,20 @@
+{
+    "nav": [
+        {
+            "name":"首页",
+            "href":"/dist/sparrow/index.html"
+        },
+        {
+            "name":"快速上手",
+            "href":"/dist/sparrow/start/install.html"
+        },
+        {
+            "name":"API",
+            "href":"/dist/sparrow/api/api.html"
+        },
+        {
+            "name":"Tinper",
+            "href":"/dist/index.html"
+        }
+    ]
+}
