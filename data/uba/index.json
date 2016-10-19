@@ -1,31 +1,19 @@
 {
     "nav": [
         {
-            "name":"Uba首页",
-            "href":"index.html",
-            "sub": [
-                {
-                    "name":"二级1",
-                    "href":"#"
-                },{
-                    "name":"二级2",
-                    "href":"#"
-                }
-            ]
+            "name":"首页",
+            "href":"/dist/uba/index.html"
         },
         {
-            "name":"全局样式",
-            "href":"#"
+            "name":"uba使用",
+            "href":"/dist/uba/doc/intro.html"
         },
         {
-            "name":"CSS组件",
-            "href":"#"
-        },{
-            "name":"JS插件",
-            "href":"#"
+            "name":"模板使用",
+            "href":"/dist/uba/template/template.html"
         },{
             "name":"Tinper",
-            "href":"#"
+            "href":"/dist/index.html"
         }
     ]
 }
