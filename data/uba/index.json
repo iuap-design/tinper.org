@@ -1,13 +1,19 @@
 {
-    "nav": {
-        "Home": {},
-        "Component": [],
-        "Global": [],
-        "Plugin": [],
-        "Other": [
-            "list1",
-            "list2",
-            "list3"
-        ]
-    }
+    "nav": [
+        {
+            "name":"首页",
+            "href":"/dist/uba/index.html"
+        },
+        {
+            "name":"uba使用",
+            "href":"/dist/uba/doc/intro.html"
+        },
+        {
+            "name":"模板使用",
+            "href":"/dist/uba/template/template.html"
+        },{
+            "name":"Tinper",
+            "href":"/dist/index.html"
+        }
+    ]
 }

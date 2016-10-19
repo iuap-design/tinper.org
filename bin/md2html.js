@@ -145,6 +145,8 @@ var renderFun = function(newPath) {
 		var temp = newPath.replace(/\.html$/,'')
 		if(fullName != 'SUMMARY.html'){
 			var renders = template(temp,data);
+			// 增加active样式
+			renders = renders.replace(`href="${fullName}"`,`href="${fullName}" class="active"`);
 			fs.writeFileSync(newPath, renders);
 		}
 	}

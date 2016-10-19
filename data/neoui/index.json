@@ -1,9 +1,22 @@
 {
-    "nav": {
-        "首页": [],
-        "全局样式": [],
-        "CSS组件": [],
-        "JS插件": [],
-        "Tinper":[]
-    }
+    "nav": [
+    	{
+    		"name":"首页",
+    		"href":"/dist/neoui/index.html"
+    	},
+    	{
+    		"name":"全局样式",
+    		"href":"/dist/neoui/global/README.html"
+    	},
+    	{
+    		"name":"CSS组件",
+    		"href":"/dist/neoui/component/README.html"
+    	},{
+    		"name":"JS插件",
+    		"href":"/dist/neoui/plugin/README.html"
+    	},{
+    		"name":"Tinper",
+    		"href":"/dist/index.html"
+    	}
+    ]
 }
