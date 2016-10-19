@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
 	<!-- 引入head -->
 	{{include '../../../partial/docs/header'}}
 </head>
@@ -10,14 +8,20 @@
 	<!-- nav头部 -->
 	{{include '../../../partial/_nav'}}
 
-	<!-- side bar -->
-	<div>
-		{{include './SUMMARY'}}
-	</div>
+	<div id="content-wrap">
+		<div id="content" class="wrapper">
+			<div id="content-inner">
+				<!-- content -->
+				<div class="article-container">
+					<%Content%>
+				</div>
 
-	<!-- content -->
-	<div>
-		<%Content%>
+				<!-- side bar -->
+				<div id="sidebar">
+					{{include './SUMMARY'}}
+				</div>				
+			</div>
+		</div>
 	</div>
 
 	<!-- 引入end -->
