@@ -1,19 +1,33 @@
 {
     "nav": [
         {
-            "name":"React首页",
+            "name":"首页",
             "href":"index.html"
         },
         {
-            "name":"全局样式",
+            "name":"开始使用",
             "href":"#"
         },
         {
-            "name":"CSS组件",
+            "name":"组件",
             "href":"#"
         },{
-            "name":"JS插件",
-            "href":"#"
+            "name":"其他",
+            "href":"#",
+            "sub":[
+                {
+                    "name":"版本及链接",
+                    "href":"#"
+                },
+                {
+                    "name":"谁在使用",
+                    "href":"#"
+                },
+                {
+                    "name":"如何贡献",
+                    "href":"#"
+                }
+            ]
         },{
             "name":"Tinper",
             "href":"#"
