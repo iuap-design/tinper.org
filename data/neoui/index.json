@@ -1,13 +1,9 @@
 {
     "nav": {
-        "Home": {},
-        "Neoui Component": [],
-        "Global": [],
-        "Plugin": [],
-        "Other": [
-            "list1",
-            "list2",
-            "list3"
-        ]
+        "首页": [],
+        "全局样式": [],
+        "CSS组件": [],
+        "JS插件": [],
+        "Tinper":[]
     }
 }

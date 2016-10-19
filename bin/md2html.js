@@ -69,7 +69,7 @@ var markedFun = function(oldPath,newPath,fullName) {
 	if(fullName !== 'SUMMARY.md'){
 		markedHtml = baseCont.replace('<%Content%>',markedCont);
 	} else {
-		markedHtml = markedCont;
+		markedHtml = markedCont.replace(/\.md/g,'.html');
 	}
 	// console.log(markedHtml);
 	fse.ensureFileSync(newPath);
