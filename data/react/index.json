@@ -1,12 +1,22 @@
 {
-    "nav": {
-        "Home": {},
-        "React Component": [],
-        "API": [],
-        "Other": [
-            "list1",
-            "list2",
-            "list3"
-        ]
-    }
+    "nav": [
+        {
+            "name":"React首页",
+            "href":"index.html"
+        },
+        {
+            "name":"全局样式",
+            "href":"#"
+        },
+        {
+            "name":"CSS组件",
+            "href":"#"
+        },{
+            "name":"JS插件",
+            "href":"#"
+        },{
+            "name":"Tinper",
+            "href":"#"
+        }
+    ]
 }

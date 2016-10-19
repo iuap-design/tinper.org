@@ -1,13 +1,31 @@
 {
-    "nav": {
-        "Home": {},
-        "Component": [],
-        "Global": [],
-        "Plugin": [],
-        "Other": [
-            "list1",
-            "list2",
-            "list3"
-        ]
-    }
+    "nav": [
+        {
+            "name":"Uba首页",
+            "href":"index.html",
+            "sub": [
+                {
+                    "name":"二级1",
+                    "href":"#"
+                },{
+                    "name":"二级2",
+                    "href":"#"
+                }
+            ]
+        },
+        {
+            "name":"全局样式",
+            "href":"#"
+        },
+        {
+            "name":"CSS组件",
+            "href":"#"
+        },{
+            "name":"JS插件",
+            "href":"#"
+        },{
+            "name":"Tinper",
+            "href":"#"
+        }
+    ]
 }
