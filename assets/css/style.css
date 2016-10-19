@@ -42,6 +42,7 @@ img{
 
 .u-navbar-default .u-navbar-toolbar > li  a {
     cursor: pointer;
+    color: rgb(117,117,117);
 }
 
 .nav-list .dropdown {
