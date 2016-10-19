@@ -1,11 +1,26 @@
-# 徽章控件
 
-徽章控件主要包括不同色彩的徽章、含有图标的徽章。
+# 徽章 bee-badge
 
-# 如何使用
+用来醒目的展示新的或未读的信息条目
 
-添加含有`u-badge`就可以创建一个徽章，徽章的内容在data-badge中设置。
+## 使用
 
-# 示例
+```js
+import { Badge } from 'tinper-bee';
+ReactDOM.render(
+    <div>
+        <div>
+            <Badge color="primary">a</Badge>
+        </div>
+    </div>,
+    document.getElementById('target'));
 
-replaceExamp
+```
+
+
+
+## API
+|参数|说明|类型|默认值|
+|---|----|---|------|
+|color|one of: `primary` `success` `info` `error`  `warning` `dark`|string|''|
+|className|增加额外的class|string|''|
