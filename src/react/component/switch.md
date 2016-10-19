@@ -16,6 +16,7 @@ React.render(
 
 
 ## API
+
 |参数|说明|类型|默认值|
 |---|----|---|------|
 |checked	|指定当前是否选中|	Boolean	|false
