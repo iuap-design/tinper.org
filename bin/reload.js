@@ -13,8 +13,11 @@ bs.init({
 	index: '/dist/index.html'
 });
 
-chokidar.watch(srcPath).on('all', function(event,path){
-	md2html(srcPath,function(){
-		bs.reload();
-	});
+var srcFiles = path.join(envPath,'src/**/*');
+
+// 此部分目前没有跑通
+chokidar.watch(srcFiles).on('change', function(event,path){
+	console.log('change');
+	md2html(srcPath);
+	bs.reload();
 });
