@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server/app.js",
     "cate": "node bin/category",
-    "mark": "node bin/md2html",
+    "mark": "node bin/index",
     "deploy": "sh bin/fetch.sh && npm run cate && npm run mark"
   },
   "repository": {

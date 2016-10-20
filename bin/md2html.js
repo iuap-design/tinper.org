@@ -17,12 +17,12 @@ console.log(envPath);
 var ymlPath = path.join(envPath,'_config.yml');
 var ymlConfig = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
 
-var bs = browserSync.create();
-bs.init({
-	server: envPath,
-	port: 8002,
-	index: '/dist/index.html'
-});
+// var bs = browserSync.create();
+// bs.init({
+// 	server: envPath,
+// 	port: 8002,
+// 	index: '/dist/index.html'
+// });
 
 var srcPath = path.join(envPath,'src');
 var mdFun = function(srcPath) {
@@ -163,9 +163,10 @@ var renderFun = function(newPath) {
 
 
 
-mdFun(srcPath);
+// mdFun(srcPath);
+module.exports = mdFun;
 // renderFun('/Users/liwei/Desktop/o/work/tinper.org/dist/neoui/component/breadcrumb.html')
 
-var srcFiles = path.join(srcPath, '**/*');
-chokidar.watch(srcFiles).on('all', function(event,path){
-});
+// var srcFiles = path.join(srcPath, '**/*');
+// chokidar.watch(srcFiles).on('all', function(event,path){
+// });
