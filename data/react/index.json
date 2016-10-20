@@ -7,28 +7,14 @@
         },
         {
             "name":"开始使用",
-            "href":"#"
+            "href":"/dist/react/start/start.html"
         },
         {
             "name":"组件",
             "href":"/dist/react/component/button.html"
         },{
             "name":"其他",
-            "href":"#",
-            "sub":[
-                {
-                    "name":"版本及链接",
-                    "href":"#"
-                },
-                {
-                    "name":"谁在使用",
-                    "href":"#"
-                },
-                {
-                    "name":"如何贡献",
-                    "href":"#"
-                }
-            ]
+            "href":"/dist/react/other/other.html"
         },{
             "name":"Tinper",
             "href":"/dist/index.html"
