@@ -98,3 +98,91 @@
     font-size: 14px;
     line-height: 1.85;
 }
+
+.info-box1 {
+    width: 100%;
+    position: relative;
+}
+
+[class*="info-box"] {
+    margin-bottom: 0;
+}
+
+.info-box1 .info-box-icon {
+    position: absolute;
+}
+.icon.rounded, .icon.rounded i, .icon.rounded img {
+    border-radius: 9999px;
+}
+
+.x4 {
+    width: 80px;
+    height: 80px;
+}
+
+.icon.clean i {
+    color: #0556dd;
+    /*box-shadow: inset 0 0 0 1px #ccc;*/
+}
+
+
+.x4 i {
+    line-height: 80px;
+    font-size: 34px;
+}
+.icon i {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    text-align: center;
+    border-radius: 4px;
+    transition: all .2s;
+    background: transparent;
+}
+
+.icon i, .icon img {
+    width: 100%;
+}
+
+.icon i::after {
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 4px;
+    content: '';
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.icon.clean i::after {
+    background-color: transparent;
+}
+
+.info-box1 .info-box-icon.x4 + .info-box-content {
+    /*padding-left: 110px;*/
+    padding-left: 90px;
+    min-height: 80px;
+}
+
+.info-box1 .info-box-icon.x4 + .info-box-content h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 145%;
+}
+
+.info-box1 .info-box-icon.x4 + .info-box-content  p {
+    margin-bottom: 20px;
+}
+
+[class*="info-box-content"] p:last-child {
+    padding-bottom: 0;
+}
