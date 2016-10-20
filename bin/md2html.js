@@ -151,6 +151,8 @@ var renderFun = function(newPath) {
 			var renders = template(temp,data);
 			// 增加active样式
 			renders = renders.replace(`href="${fullName}"`,`href="${fullName}" class="active"`);
+			// 去除代码高亮换行bug
+			renders = renders.replace(/<code>\s/g,'<code>');
 			fs.writeFileSync(newPath, renders);
 		}
 	}
