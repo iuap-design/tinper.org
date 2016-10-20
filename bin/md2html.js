@@ -6,8 +6,7 @@ var path = require('path');
 var gulp = require('gulp');
 var marked = require('marked');
 var yaml = require('js-yaml');
-var browserSync = require('browser-sync');
-var chokidar = require('chokidar');
+
 
 /**
  * tinper基本配置获取
@@ -17,17 +16,10 @@ console.log(envPath);
 var ymlPath = path.join(envPath,'_config.yml');
 var ymlConfig = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
 
-// var bs = browserSync.create();
-// bs.init({
-// 	server: envPath,
-// 	port: 8002,
-// 	index: '/dist/index.html'
-// });
-
 var srcPath = path.join(envPath,'src');
-var mdFun = function(srcPath) {
+var mdFun = function(srcPath,callback) {
 	// console.log('srcPath--'+srcPath);
-	fs.readdir(srcPath, function(err, sub){
+	fs.readdir(srcPath, function(err, sub, callback){
 		sub.forEach(function(subNum, index){
 			var subPath = path.join(srcPath,subNum);
 			var isDir = fs.statSync(subPath).isDirectory();
@@ -55,6 +47,10 @@ var mdFun = function(srcPath) {
 				} 
 			}
 		});
+
+		if(callback){
+			callback();
+		}
 	});
 };
 
@@ -167,6 +163,3 @@ var renderFun = function(newPath) {
 module.exports = mdFun;
 // renderFun('/Users/liwei/Desktop/o/work/tinper.org/dist/neoui/component/breadcrumb.html')
 
-// var srcFiles = path.join(srcPath, '**/*');
-// chokidar.watch(srcFiles).on('all', function(event,path){
-// });
