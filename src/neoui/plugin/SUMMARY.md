@@ -1,13 +1,13 @@
 * 时间插件
   * [表盘选择 clockpicker](clockpicker.md)	
-    * [日期 date](date.md)
+  * [日期 date](date.md)
   * [月份选择 month](month.md)
   * [时分秒 time](time.md)
   * [年份选择 year](year.md)
   * [年月选择 yearmonth](yearmonth.md)
 * 表格插件
   * [基础说明](grid.md)	
-    * [扩展说明](gridCustom.md)
+  * [扩展说明](gridCustom.md)
 * [Loading loading](loading.md)
 * [下拉框 combobox](combobox.md)
 * [提示消息 message](jsmessage.md)

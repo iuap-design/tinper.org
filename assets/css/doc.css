@@ -18,6 +18,10 @@
 #content-wrap {
     background: #fff;
     margin-top:52px;
+    font-size:14px;
+}
+#content-wrap li,#content-wrap ul{
+    list-style:none;
 }
 
 /*左导航内容*/
@@ -46,7 +50,21 @@
     color:#4caf50;
     background:#F3F7F9;
 }
+#sidebar > ul > li{
+    cursor: not-allowed;
+    color: #999;
+    list-style:none;
+}
 
+#sidebar li > ul{
+    padding-left:15px;
+}
+
+#sidebar li > ul > li {
+    border-left:1px solid #e3e3e3;
+}
+
+/*内容区域*/
 #content-inner {
     margin-left: 220px;
     border-left:1px solid #e3e3e3;
@@ -103,7 +121,13 @@
 .article-container table th{
     font-weight:500;
 }
-.article-container table
+.article-container a{
+    color:#4caf50;
+    text-decoration: none;
+}
+.article-container p,.article-container li{
+    font-size:14px;
+}
 
 
 
