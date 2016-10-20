@@ -7,6 +7,8 @@ var gulp = require('gulp');
 var marked = require('marked');
 var yaml = require('js-yaml');
 
+// 关闭模板引擎渲染缓存，否则无法执行reload
+template.config('cache',false);
 
 /**
  * tinper基本配置获取
@@ -19,7 +21,7 @@ var ymlConfig = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
 var srcPath = path.join(envPath,'src');
 var mdFun = function(srcPath,callback) {
 	// console.log('srcPath--'+srcPath);
-	fs.readdir(srcPath, function(err, sub, callback){
+	fs.readdir(srcPath, function(err, sub){
 		sub.forEach(function(subNum, index){
 			var subPath = path.join(srcPath,subNum);
 			var isDir = fs.statSync(subPath).isDirectory();
@@ -28,8 +30,6 @@ var mdFun = function(srcPath,callback) {
 				mdFun(subPath);
 			} else {
 				// 处理文档
-				// var lastDiv = subPath.lastIndexOf('/');
-				// var fullName = subPath.substr(++lastDiv);
 				var fullName = path.basename(subPath);
 				var newPath;
 				if(/\.md$/.test(subPath)){
@@ -49,7 +49,7 @@ var mdFun = function(srcPath,callback) {
 		});
 
 		if(callback){
-			console.log(callback)
+			callback();
 		}
 	});
 };
@@ -75,6 +75,7 @@ var markedFun = function(oldPath,newPath,fullName) {
 	} else {
 		markedHtml = markedCont.replace(/\.md/g,'.html');
 	}
+
 	// console.log(markedHtml);
 	fse.ensureFileSync(newPath);
 	fs.writeFile(newPath, markedHtml,function(err){
@@ -125,7 +126,7 @@ var renderFun = function(newPath) {
 	var dirData = dirName.replace('dist','data');
 	// /Users/AYA/Desktop/work/tinper.org/data/neoui/component
 	
-	var fullName = path.basename(newPath)
+	var fullName = path.basename(newPath);
 	
 	var data={};
 	/**
@@ -149,8 +150,13 @@ var renderFun = function(newPath) {
 		var temp = newPath.replace(/\.html$/,'')
 		if(fullName != 'SUMMARY.html'){
 			var renders = template(temp,data);
+			if(fullName=='button.html'){
+				console.log("renders:",renders);
+			}
 			// 增加active样式
 			renders = renders.replace(`href="${fullName}"`,`href="${fullName}" class="active"`);
+			// 去除代码高亮换行bug
+			renders = renders.replace(/<code>\s/g,'<code>');
 			fs.writeFileSync(newPath, renders);
 		}
 	}
