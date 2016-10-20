@@ -49,7 +49,7 @@ var mdFun = function(srcPath,callback) {
 		});
 
 		if(callback){
-			callback();
+			console.log(callback)
 		}
 	});
 };

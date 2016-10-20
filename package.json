@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node server/app.js",
     "cate": "node bin/category",
+    "dev":"node bin/reload",
     "mark": "node bin/index",
     "deploy": "sh bin/fetch.sh && npm run cate && npm run mark"
   },
