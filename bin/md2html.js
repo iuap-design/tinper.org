@@ -150,9 +150,6 @@ var renderFun = function(newPath) {
 		var temp = newPath.replace(/\.html$/,'')
 		if(fullName != 'SUMMARY.html'){
 			var renders = template(temp,data);
-			if(fullName=='button.html'){
-				console.log("renders:",renders);
-			}
 			// 增加active样式
 			renders = renders.replace(`href="${fullName}"`,`href="${fullName}" class="active"`);
 			// 去除代码高亮换行bug
