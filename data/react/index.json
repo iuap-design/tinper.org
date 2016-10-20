@@ -32,5 +32,38 @@
             "name":"Tinper",
             "href":"#"
         }
-    ]
+    ],
+    "product":{
+            "proName":"bee",
+            "backgroundImg":"/assets/images/about-us-bee.jpg",
+            "docHref":"/dist/react/component/button.html",
+            "introduce":"tinper-bee 是基于 iuap design 的 react 组件库，包含丰富的基础组件和应用组件，支持组件的灵活调用和扩展，助力快速进行应用的组件化开发。",
+            "features": [
+                {
+                    "name":"响应式",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"提供响应式解决方案，组件多端适配，一次代码书写，多端运行"
+                },
+                {
+                    "name":"浏览器兼容性",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题"
+                },
+                {
+                    "name":"按需定制",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"开发者可以通过自定义 Syle样式组件、JavaScript 插件，定制一份属于特制的neoui框架"
+                },
+                {
+                    "name":"丰富的组件",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"丰富的CSS组件、30+个JavaScript插件并在持续开发中，代码简洁、 规范、易于修改"
+                },
+                {
+                    "name":"完善文档示例",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"每个组件都有详细的文档讲解、API说明、示例展示，用户可以在线调试，下载示例"
+                }   
+            ]
+    }
 }
