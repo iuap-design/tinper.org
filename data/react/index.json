@@ -1,8 +1,9 @@
 {
+    "title":"react",
     "nav": [
         {
             "name":"首页",
-            "href":"index.html"
+            "href":"/dist/react/index.html"
         },
         {
             "name":"开始使用",
@@ -30,7 +31,7 @@
             ]
         },{
             "name":"Tinper",
-            "href":"#"
+            "href":"/dist/index.html"
         }
     ],
     "product":{
