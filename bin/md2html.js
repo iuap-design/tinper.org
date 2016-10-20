@@ -19,7 +19,7 @@ var ymlConfig = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
 var srcPath = path.join(envPath,'src');
 var mdFun = function(srcPath,callback) {
 	// console.log('srcPath--'+srcPath);
-	fs.readdir(srcPath, function(err, sub, callback){
+	fs.readdir(srcPath, function(err, sub){
 		sub.forEach(function(subNum, index){
 			var subPath = path.join(srcPath,subNum);
 			var isDir = fs.statSync(subPath).isDirectory();
@@ -28,8 +28,6 @@ var mdFun = function(srcPath,callback) {
 				mdFun(subPath);
 			} else {
 				// 处理文档
-				// var lastDiv = subPath.lastIndexOf('/');
-				// var fullName = subPath.substr(++lastDiv);
 				var fullName = path.basename(subPath);
 				var newPath;
 				if(/\.md$/.test(subPath)){
@@ -49,7 +47,7 @@ var mdFun = function(srcPath,callback) {
 		});
 
 		if(callback){
-			console.log(callback)
+			callback();
 		}
 	});
 };

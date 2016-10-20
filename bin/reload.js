@@ -14,10 +14,14 @@ bs.init({
 });
 
 var srcFiles = path.join(envPath,'src/**/*');
+var distFiles = path.join(envPath,'dist/**/*');
 
 // 此部分目前没有跑通
 chokidar.watch(srcFiles).on('change', function(event,path){
 	console.log('change');
-	md2html(srcPath);
-	bs.reload();
+	md2html(srcPath,function(){
+		console.log('convert finish,browser start to refresh');
+		bs.reload();
+	});
+	
 });
