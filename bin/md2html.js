@@ -7,6 +7,8 @@ var gulp = require('gulp');
 var marked = require('marked');
 var yaml = require('js-yaml');
 
+// 关闭模板引擎渲染缓存，否则无法执行reload
+template.config('cache',false);
 
 /**
  * tinper基本配置获取
@@ -73,6 +75,7 @@ var markedFun = function(oldPath,newPath,fullName) {
 	} else {
 		markedHtml = markedCont.replace(/\.md/g,'.html');
 	}
+
 	// console.log(markedHtml);
 	fse.ensureFileSync(newPath);
 	fs.writeFile(newPath, markedHtml,function(err){
@@ -123,7 +126,7 @@ var renderFun = function(newPath) {
 	var dirData = dirName.replace('dist','data');
 	// /Users/AYA/Desktop/work/tinper.org/data/neoui/component
 	
-	var fullName = path.basename(newPath)
+	var fullName = path.basename(newPath);
 	
 	var data={};
 	/**
@@ -147,6 +150,9 @@ var renderFun = function(newPath) {
 		var temp = newPath.replace(/\.html$/,'')
 		if(fullName != 'SUMMARY.html'){
 			var renders = template(temp,data);
+			if(fullName=='button.html'){
+				console.log("renders:",renders);
+			}
 			// 增加active样式
 			renders = renders.replace(`href="${fullName}"`,`href="${fullName}" class="active"`);
 			// 去除代码高亮换行bug
