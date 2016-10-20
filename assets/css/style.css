@@ -132,8 +132,11 @@ img{
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray;
-    width:100px;}
+    width:100px;
+    margin-bottom: 5px;
+}
 .user-img .ui{
     -webkit-filter: grayscale(0%);  
     width:100px;
+    margin-bottom: 5px;
  }

@@ -16,5 +16,38 @@
             "name":"Tinper",
             "href":"/dist/index.html"
         }
-    ]
+    ],
+    "product":{
+            "proName":"sparrow",
+            "backgroundImg":"/assets/images/about-us-sparrow.jpg",
+            "docHref":"/dist/sparrow/start/install.html",
+            "introduce":"tinper-sparrow 是一个轻量级 javascript 库，让开发者能更方便地进行 DOM操作、events处理、动画效果实现和AJAX交互等，并且提供丰富的API封装，如多平台多浏览器判断、Cookies操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。",
+            "features": [
+                {
+                    "name":"响应式",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"提供响应式解决方案，组件多端适配，一次代码书写，多端运行"
+                },
+                {
+                    "name":"浏览器兼容性",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题"
+                },
+                {
+                    "name":"按需定制",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"开发者可以通过自定义 Syle样式组件、JavaScript 插件，定制一份属于特制的neoui框架"
+                },
+                {
+                    "name":"丰富的组件",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"丰富的CSS组件、30+个JavaScript插件并在持续开发中，代码简洁、 规范、易于修改"
+                },
+                {
+                    "name":"完善文档示例",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"每个组件都有详细的文档讲解、API说明、示例展示，用户可以在线调试，下载示例"
+                }   
+            ]
+    }
 }
