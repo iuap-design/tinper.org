@@ -1,8 +1,59 @@
-img{
+img {
     max-width: 100%;
 }
 
+
+/*动画*/
+
+.fadeInLeft {
+    -webkit-animation: fadeInLeft 1s .2s ease both;
+    -moz-animation: fadeInLeft 1s .2s ease both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-30px)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0)
+    }
+}
+
+@-moz-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(-30px)
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0)
+    }
+}
+
+
+
+.bounceIn{
+-webkit-animation:bounceIn 1s .3s ease both;
+-moz-animation:bounceIn 1s .3s ease both;}
+@-webkit-keyframes bounceIn{
+0%{opacity:0;
+-webkit-transform:scale(.3)}
+50%{opacity:1;
+-webkit-transform:scale(1.05)}
+100%{-webkit-transform:scale(1)}
+}
+@-moz-keyframes bounceIn{
+0%{opacity:0;
+-moz-transform:scale(.3)}
+50%{opacity:1;
+-moz-transform:scale(1.05)}
+100%{-moz-transform:scale(1)}
+}
+
 /*头部*/
+
 .u-navbar {
     z-index: 10;
     position: fixed;
@@ -10,12 +61,10 @@ img{
     margin-bottom: 0px;
 }
 
-
 .u-navbar-default .u-navbar-toolbar > li:hover > a {
-    color: rgb(97,97,97);
+    color: rgb(97, 97, 97);
     background-color: #eeeeee;
 }
-
 
 .u-navbar-default .u-navbar-toolbar > li:hover:after {
     -webkit-transform: scaleX(1);
@@ -33,41 +82,39 @@ img{
     -webkit-transition: -webkit-transform .2s ease;
     transition: -webkit-transform .2s ease;
     transition: transform .2s ease;
-    transition: transform .2s ease,-webkit-transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    }
+}
 
-
-
-.u-navbar-default .u-navbar-toolbar > li  a {
+.u-navbar-default .u-navbar-toolbar > li a {
     cursor: pointer;
-    color: rgb(117,117,117);
+    color: rgb(117, 117, 117);
 }
 
 .nav-list .dropdown {
     position: relative;
 }
 
-.nav-list .dropdown .nav-par+ul{
+.nav-list .dropdown .nav-par+ul {
     list-style: none;
     display: none;
     position: absolute;
     background: #FFF;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
 
 @media (max-width: 767px) {
- .nav-list .dropdown .nav-par+ul{
-    position: fixed;
-    z-index: 100;
- }
+    .nav-list .dropdown .nav-par+ul {
+        position: fixed;
+        z-index: 100;
+    }
 }
 
-.nav-list .dropdown:hover .nav-par+ul{
+.nav-list .dropdown:hover .nav-par+ul {
     display: block;
-    margin:  0px;
+    margin: 0px;
     padding: 10px 0px;
 }
 
@@ -76,22 +123,24 @@ img{
     padding: 6px 13px;
     word-break: keep-all;
 }
-.nav-list .dropdown:hover .nav-par+ul li:hover {
 
+.nav-list .dropdown:hover .nav-par+ul li:hover {
     background-color: #eeeeee;
-    color: rgb(97,97,97);
+    color: rgb(97, 97, 97);
 }
+
+
 /*内容区*/
 
 .content-wrapper.part1 {
     padding-top: 50px;
-    background-attachment:fixed;
-    background-size:cover;
-    background-image:url(../images/0003.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../images/0003.jpg);
     text-align: center;
 }
 
-.content-wrapper.part1  .u-container {
+.content-wrapper.part1 .u-container {
     padding-top: 16px;
     padding-bottom: 16px;
 }
@@ -100,43 +149,40 @@ img{
 /* part2 */
 
 @media (min-width: 768px) {
- .content-wrapper.part2 img{
-    width: 200px;
- }
-
- .part6 .userdev {
-    margin-top: 150px;
- }
+    .content-wrapper.part2 img {
+        width: 200px;
+    }
+    .part6 .userdev {
+        margin-top: 150px;
+    }
 }
 
 .part6 {
-    background-color:#5acdd4
+    background-color: #5acdd4
 }
 
 .bg-white {
     background: #fff;
     border-top: 1px solid #ecf0f1;
-    opacity:1;
+    opacity: 1;
 }
-
-
-
 
 
 /*用户说*/
 
-.user-img .iu{
+.user-img .iu {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(1);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray;
-    width:100px;
+    width: 100px;
     margin-bottom: 5px;
 }
-.user-img .ui{
-    -webkit-filter: grayscale(0%);  
-    width:100px;
+
+.user-img .ui {
+    -webkit-filter: grayscale(0%);
+    width: 100px;
     margin-bottom: 5px;
- }
+}
