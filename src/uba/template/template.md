@@ -1,14 +1,14 @@
-#uba-template文档
+# uba-template文档
 uba-template 是一个集成了timper组件库的开源模板,是uba前端开发工具的重要组成部分
 
-##安装方式
+## 安装方式
 首先需要全局安装 [uba](uba.md)
 ​    
     npm install uba -g
 
-##使用姿势
+## 使用姿势
 
-###快速生成一个项目
+### 快速生成一个项目
 
 执行uba的指令
 
@@ -22,7 +22,7 @@ uba-template 是一个集成了timper组件库的开源模板,是uba前端开发
     uba server
 然后打开浏览器,输入localhost:3000可以看到生成的项目效果
 
-###生成一个页面
+### 生成一个页面
 
 执行uba的生成页面指令,生成一个页面,暂且就叫 mypage
 
