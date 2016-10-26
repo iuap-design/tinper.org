@@ -2,7 +2,7 @@
 title: Tinper
 description: Tinper官网
 author: onvno
-email: 
+email:
 
 # Render模板渲染
 url: http://tinper.org
@@ -22,3 +22,9 @@ layout:
     main:
       - 'package/package.html'
       - '*/index.html'
+
+# 文档片段
+snip_dir: /snippets
+snip_sum: SUMMARY.md
+snip_base: base.md
+snip_demo: demo
