@@ -88,25 +88,104 @@ async.auto({
                   var kitfiles = ut.rmdot(kitfiles);
                   kitfiles.forEach(function(kfile, index){
                     var kpath;
-                    var baseData = null;
+                    var baseMd = null;
                     var baseDemo = null;
+
+
                     if(kfile === snipBase){
-                      // kpath: base.md路径,读取内容
+                      // kpath: base.md路径,读取基本内容
                       kpath = path.join(kitpath, kfile)
                       fs.readFile(kpath,'utf-8',function(err,data){
-                        baseData = data;
+                        baseMd = data;
                       })
                     } else if(kfile === snipDemo) {
                       // kpath: demo路径,读取内容
                       kpath = path.join(kitpath, kfile)
-                      console.log(kpath);
-                      // fs.readdir(kpath, function(err, files){
-                      //   var files = ut.rmdot(files).sort();
-                      //   console.log(files);
-                      // })
-                      var filess = fs.readdirSync(kpath);
-                      console.log(filess);
+                      fs.readdir(kpath, function(err, files){
+                        var files = ut.rmdot(files).sort();
+                        files.forEach(function(exfile, index){
+                          var exPath = path.join(kpath, exfile)
+                          fs.readdir(exPath, function(err,files){
+                            // files为最终层级文件，如.html .md .css .js
+                            var files = ut.rmdot(files);
+                            var demoMd = null;
+                            var demoHtml = null;
+                            var demoCss = null;
+                            var demoJs = null;
+                            var codeHtml = null;
+                            var codeCss = null;
+                            var codeJs = null;
+
+                            var codeFun = function(data){
+                              return '<div class="examples-code"><pre><code>\r\n' + data + '</code></pre>\r\n</div>\r\n';
+                            }
+
+                            async.map(files,function(item,cb){
+                              var filePath = path.join(exPath,item);
+
+                              if(/\.md$/.test(filePath)){
+                                fs.readFile(filePath, 'utf-8',function(err,data){
+                                  demoMd = data;
+                                  cb(null,null)
+                                })
+                              } else if(/\.html$/.test(filePath)){
+                                fs.readFile(filePath, 'utf-8',function(err,data){
+                                  demoHtml = '<div class="example-content">' + data + '</div>\r\n';
+                                  codeHtml = codeFun(data);
+                                  cb(null,null)
+                                })
+                              } else if(/\.css$/.test(filePath)){
+                                fs.readFile(filePath, 'utf-8',function(err,data){
+                                  demoCss = '<style>\r\n' + data + '\r\n</style>';
+                                  codeCss = codeFun(data);
+                                  cb(null,null)
+                                })
+                              } else if(/\.js$/.test(filePath)){
+                                fs.readFile(filePath, 'utf-8',function(err,data){
+                                  demoJs = '<script>\r\n' + data + '\r\n</script>';
+                                  codeJs = codeFun(data);
+                                  cb(null,null)
+                                })
+                              }
+
+                            },function(err,results){
+                              baseDemo ='\r\n' + demoMd + '\r\n' + demoHtml + '\r\n' + demoCss + '\r\n' + demoJs + '\r\n'
+                                + codeHtml + '\r\n' + codeCss + '\r\n' + codeJs + '\r\n';
+                              var outfile = path.join(envPath,'out.html')
+                              fs.writeFile(outfile,baseDemo,'utf-8')
+                            })
+
+                            files.forEach(function(file,index){
+                              var filePath = path.join(exPath,file)
+                              // var readFun = function(filePath,cb){
+                              //   if(/\.md$/.test(filePath)){
+                              //     fs.readFile(filePath, 'utf-8',function(err,data){
+                              //       demoMd = data;
+                              //     })
+                              //   } else if(/\.html$/.test(file)){
+                              //     fs.readFile(filePath, 'utf-8',function(err,data){
+                              //       demoHtml = data;
+                              //     })
+                              //   } else if(/\.css$/.test(file)){
+                              //     fs.readFile(filePath, 'utf-8',function(err,data){
+                              //       demoCss = data;
+                              //     })
+                              //   } else if(/\.js$/.test(file)){
+                              //     fs.readFile(filePath, 'utf-8',function(err,data){
+                              //       demoJs = data;
+                              //     })
+                              //   }
+                              // }
+                              // readFun(filePath);
+
+                            })
+
+                          })
+
+                        })
+                      })
                     }
+
                   })
                 })
               })
