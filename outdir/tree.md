@@ -112,7 +112,16 @@ var app = u.createApp();
       ]
     }
     // ajax 获取数据源
-
+    /* $.ajax({
+         type: 'GET',
+         url: 'treeJson.json',
+         dataType: 'JSON',
+         async: true,
+         success: function (data) {
+            
+          }
+       }); 
+    */
     viewModel.dataTable.setData(data);
     window.app=app;
     $("#addOneRow1").on("click",function(){
@@ -122,8 +131,7 @@ var app = u.createApp();
                 "id": "202",
                 "pid": "02",
                 "title": "f22"
-            }
-		};
+            }};
         //先创建行模型，然后将数据插入行
         var r=new u.Row({parent:viewModel.dataTable});
         r.setData(row);
@@ -224,7 +232,16 @@ var app = u.createApp();
       ]
     }
     // ajax 获取数据源
-
+    /* $.ajax({
+         type: 'GET',
+         url: 'treeJson.json',
+         dataType: 'JSON',
+         async: true,
+         success: function (data) {
+            
+          }
+       }); 
+    */
     viewModel.dataTable.setData(data);
     window.app=app;
     $("#addOneRow1").on("click",function(){
@@ -234,8 +251,7 @@ var app = u.createApp();
                 "id": "202",
                 "pid": "02",
                 "title": "f22"
-            }
-		};
+            }};
         //先创建行模型，然后将数据插入行
         var r=new u.Row({parent:viewModel.dataTable});
         r.setData(row);
@@ -252,3 +268,4 @@ var app = u.createApp();
     })
 });</code></pre>
 </div>
+
