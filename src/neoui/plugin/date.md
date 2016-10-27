@@ -124,3 +124,19 @@ dateObject.setFormat('YYYY');
 [日期在kero中使用](http://design.yyuap.com/dist/pages/kero/ex_datetime.html)    
 
 [日期在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+,
+定义样式为`u-datepicker`的div父元素，包裹样式为`u-input`的input元素。
+<div class="example-content"><div class='u-datepicker'>
+    <input class="u-input" type="text">
+</div></div>
+
+
+
+<div class="examples-code"><pre><code>
+<div class='u-datepicker'>
+    <input class="u-input" type="text">
+</div></code></pre>
+</div>
+
+
+

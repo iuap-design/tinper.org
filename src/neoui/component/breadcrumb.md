@@ -18,3 +18,125 @@ replaceExamp
 
 示例2说-->
 
+,
+##默认面包屑
+
+"/"为分隔符
+
+<div class="example-content">
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+</div>
+
+
+
+<div class="examples-code"><pre><code>
+
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+</code></pre>
+</div>
+
+
+
+
+
+##图标面包屑
+
+"/"为分隔符,并添加Home icon
+
+<div class="example-content">
+<ol class="u-breadcrumb">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Data</li>
+</ol>
+<ol class="u-breadcrumb breadcrumb-arrow">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol></div>
+
+<div class="example-content ex-hide"><style>
+.md-home:before {
+    content: "\e6a2";
+    font-family: 'uf';
+}
+</style></div>
+
+<div class="examples-code"><pre><code>
+
+<ol class="u-breadcrumb">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Data</li>
+</ol>
+<ol class="u-breadcrumb breadcrumb-arrow">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol></code></pre>
+</div>
+
+<div class="examples-code"><pre><code>
+.md-home:before {
+    content: "\e6a2";
+    font-family: 'uf';
+}</code></pre>
+</div>
+
+
+
+
+##">>"为分隔符的面包屑
+<div class="example-content">
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol></div>
+
+<div class="example-content ex-hide"><style>
+.md-home:before {
+    content: "\e6a2";
+    font-family: 'uf';
+}
+</style></div>
+
+<div class="examples-code"><pre><code>
+
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol></code></pre>
+</div>
+
+<div class="examples-code"><pre><code>
+.md-home:before {
+    content: "\e6a2";
+    font-family: 'uf';
+}</code></pre>
+</div>
+
+

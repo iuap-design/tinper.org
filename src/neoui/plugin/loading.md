@@ -29,3 +29,15 @@ replaceExamp
 
 
 
+,
+
+<div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
+
+
+
+<div class="examples-code"><pre><code>
+<div class="u-loading is-active u-loading-single-color"></div></code></pre>
+</div>
+
+
+

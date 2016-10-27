@@ -88,7 +88,8 @@ var app = u.createApp();
                 "id": "202",
                 "pid": "02",
                 "title": "f22"
-            }};
+            }
+		};
         //先创建行模型，然后将数据插入行
         var r=new u.Row({parent:viewModel.dataTable});
         r.setData(row);

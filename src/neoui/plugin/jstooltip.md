@@ -42,3 +42,117 @@ replaceExamp
 	  </tr>
 	</tbody>
 </table>
+,
+##基础tooltip
+<div class="example-content"><div id='example'>
+	<label id="top" class="ws">上提示</label>
+	<label id="down" class="ws">下提示</label>
+	<label id="left" class="ws">左提示</label>
+	<label id="right" class="ws">右提示</label>
+</div></div>
+
+<div class="example-content ex-hide"><style>
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+ 
+</style></div>
+
+<script>
+var toptoolEle=document.getElementById('top');
+var bottomtoolEle=document.getElementById('down');
+var lefttoolEle=document.getElementById('left');
+var righttoolEle=document.getElementById('right');
+
+var toptip=new u.Tooltip(toptoolEle,{
+title:'默认向上显示'
+});
+
+
+var bottomtip=new u.Tooltip(bottomtoolEle,{
+title:'向下显示',
+placement:'bottom'
+
+});
+
+var leftTip=new u.Tooltip(lefttoolEle,{
+title:'向左显示',
+placement:'left'
+});
+
+var rightTip=new u.Tooltip(righttoolEle,{
+title:'向右显示',
+placement:'right'
+});
+</script>
+
+<div class="examples-code"><pre><code>
+<div id='example'>
+	<label id="top" class="ws">上提示</label>
+	<label id="down" class="ws">下提示</label>
+	<label id="left" class="ws">左提示</label>
+	<label id="right" class="ws">右提示</label>
+</div></code></pre>
+</div>
+
+<div class="examples-code"><pre><code>
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+ </code></pre>
+</div>
+
+<div class="examples-code"><pre><code>
+var toptoolEle=document.getElementById('top');
+var bottomtoolEle=document.getElementById('down');
+var lefttoolEle=document.getElementById('left');
+var righttoolEle=document.getElementById('right');
+
+var toptip=new u.Tooltip(toptoolEle,{
+title:'默认向上显示'
+});
+
+
+var bottomtip=new u.Tooltip(bottomtoolEle,{
+title:'向下显示',
+placement:'bottom'
+
+});
+
+var leftTip=new u.Tooltip(lefttoolEle,{
+title:'向左显示',
+placement:'left'
+});
+
+var rightTip=new u.Tooltip(righttoolEle,{
+title:'向右显示',
+placement:'right'
+});</code></pre>
+</div>
+

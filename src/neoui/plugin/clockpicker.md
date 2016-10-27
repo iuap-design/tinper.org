@@ -43,3 +43,34 @@ replaceExamp
 
 
 
+,
+##clockpicker
+<div class="example-content"><div class="example">
+	<div class='u-clockpicker'>
+	    <input class="u-input" type="text">
+	</div>
+</div></div>
+
+<div class="example-content ex-hide"><style>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+</style></div>
+
+<div class="examples-code"><pre><code>
+<div class="example">
+	<div class='u-clockpicker'>
+	    <input class="u-input" type="text">
+	</div>
+</div></code></pre>
+</div>
+
+<div class="examples-code"><pre><code>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}</code></pre>
+</div>
+
+

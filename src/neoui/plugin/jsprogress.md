@@ -66,3 +66,82 @@ replaceExamp
 	</tbody>
 </table>
 
+,
+##基本Progress
+<div class="example-content"><div id="p1" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});
+</script>
+
+<div class="examples-code"><pre><code>
+<div id="p1" class="u-progress"></div></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});</code></pre>
+</div>
+
+
+
+##不确定Progress
+<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div>
+</p></div>
+
+
+
+<script>
+
+</script>
+
+<div class="examples-code"><pre><code>
+<div id="p2" class="u-progress u-progress__indeterminate"></div>
+</p></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+</code></pre>
+</div>
+
+
+
+##缓冲Progress
+
+有缓冲标识的进度条
+<div class="example-content"><div id="p3" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});
+</script>
+
+<div class="examples-code"><pre><code>
+<div id="p3" class="u-progress"></div></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});</code></pre>
+</div>
+

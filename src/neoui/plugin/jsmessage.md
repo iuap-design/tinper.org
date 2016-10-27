@@ -72,3 +72,37 @@ replaceExamp
 </table>
 
 
+,
+点击 Success 弹出提示消息
+<div class="example-content"><button id="msgBtn" class="u-button" >Success</button>
+</div>
+
+<div class="example-content ex-hide"><style>
+
+</style></div>
+
+<script>
+var msgBtn = document.body.querySelector("#msgBtn");
+var rightInfo='<i class="uf uf-checkedsymbol margin-r-5"></i>成功信息!!!';
+u.on(msgBtn,'click', function(){ 
+    u.showMessage({msg:rightInfo,position:"center"})
+})
+</script>
+
+<div class="examples-code"><pre><code>
+<button id="msgBtn" class="u-button" >Success</button>
+</code></pre>
+</div>
+
+<div class="examples-code"><pre><code>
+</code></pre>
+</div>
+
+<div class="examples-code"><pre><code>
+var msgBtn = document.body.querySelector("#msgBtn");
+var rightInfo='<i class="uf uf-checkedsymbol margin-r-5"></i>成功信息!!!';
+u.on(msgBtn,'click', function(){ 
+    u.showMessage({msg:rightInfo,position:"center"})
+})</code></pre>
+</div>
+

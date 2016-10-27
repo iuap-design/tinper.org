@@ -73,4 +73,89 @@ radioObject.enable();
 
 [单选框在kero中使用](http://design.yyuap.com/dist/pages/kero/ex_radio.html)    
 
-[单选框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[单选框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit),
+## 基础radio
+
+在单选框中input元素上添加如下属性可以实现多种效果。
+
+* `checked`单选框选中
+* `disabled`单选框不可用
+
+<div class="example-content"><span>可用已选radio</span>
+<label class="u-radio" for="option-6">
+    <input type="radio" id="option-6" class="u-radio-button" name="options" value="1" checked>
+    <span class="u-radio-label">First</span>
+</label>
+</div>
+
+
+
+<div class="examples-code"><pre><code>
+<span>可用已选radio</span>
+<label class="u-radio" for="option-6">
+    <input type="radio" id="option-6" class="u-radio-button" name="options" value="1" checked>
+    <span class="u-radio-label">First</span>
+</label>
+</code></pre>
+</div>
+
+
+
+
+
+##不同色彩radio
+
+* `u-radio-success` - 绿色按钮
+* `u-radio-info` - 蓝色按钮
+* `u-radio-warning` - 黄色按钮
+* `u-radio-danger` - 红色按钮
+* `u-radio-dark` - 灰色按钮
+
+<div class="example-content"><label class="u-radio u-radio-success" >
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">green</span>
+</label>
+<label class="u-radio u-radio-info">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">blue</span>
+</label>
+<label class="u-radio u-radio-warning">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">yellow</span>
+</label>
+<label class="u-radio u-radio-danger">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">red</span>
+</label>
+<label class="u-radio u-radio-dark">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">grey</span>
+</label></div>
+
+
+
+<div class="examples-code"><pre><code>
+<label class="u-radio u-radio-success" >
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">green</span>
+</label>
+<label class="u-radio u-radio-info">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">blue</span>
+</label>
+<label class="u-radio u-radio-warning">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">yellow</span>
+</label>
+<label class="u-radio u-radio-danger">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">red</span>
+</label>
+<label class="u-radio u-radio-dark">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">grey</span>
+</label></code></pre>
+</div>
+
+
+

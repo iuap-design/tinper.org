@@ -131,8 +131,7 @@ var app = u.createApp();
                 "id": "202",
                 "pid": "02",
                 "title": "f22"
-            }
-		};
+            }};
         //先创建行模型，然后将数据插入行
         var r=new u.Row({parent:viewModel.dataTable});
         r.setData(row);
@@ -148,7 +147,6 @@ var app = u.createApp();
     	viewModel.dataTable.removeAllRows();
     })
 });
-
 </script>
 
 <div class="examples-code"><pre><code>
@@ -253,8 +251,7 @@ var app = u.createApp();
                 "id": "202",
                 "pid": "02",
                 "title": "f22"
-            }
-		};
+            }};
         //先创建行模型，然后将数据插入行
         var r=new u.Row({parent:viewModel.dataTable});
         r.setData(row);
@@ -269,7 +266,6 @@ var app = u.createApp();
     $("#deleteAllRows").on("click",function(){
     	viewModel.dataTable.removeAllRows();
     })
-});
-</code></pre>
+});</code></pre>
 </div>
 
