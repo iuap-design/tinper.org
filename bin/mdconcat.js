@@ -174,45 +174,24 @@ async.auto({
                       }
                   },function(err, results){
                       var data = results.join('\r\n');
-                      
-                      var outdir = path.join(envPath,'outdir')
-                      fse.ensureDirSync(outdir)
-                      var outPath = path.join(outdir,`${kit}.md`)
-                      fs.writeFile(outPath,results,'utf-8')
+                      var srcFile = ymlConfig.source;
+                      var srcMdir = dir.replace(snipConfig, srcFile)
+                      //   console.log("srcMdir:",srcMdir,"\nkit:",kit);
+                      var outdir = path.join(srcMdir,`${kit}.md`);
+                      fse.ensureFile(outdir,function(){
+                          fs.writeFile(outdir,results,'utf-8')
+                      });
 
                   })
-
 
                 })
               })
 
             }]
 
-
-
           })
         })
       }
   }]
-  // logdir: ['loopdir',function(val,cb) {
-  //   console.log('获取到的文件夹是:',val)
-  // }]
+
 })
-
-
-
-
-/**
- * 读取base.md内容
- */
-
-
-/**
- * 读取demo内容
- * 依次合并demo内容
- */
-
-/**
- * 合并base.md 及 demo 内容
- * 输出合并后文件
- */
