@@ -140,5 +140,8 @@
     display: none;
 }
 
-
-
+/*编辑代码高亮*/
+.examples-code code.hljs{
+    font-size:12px;
+    line-height: 20px;
+}

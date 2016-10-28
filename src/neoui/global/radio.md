@@ -144,7 +144,22 @@ radioObject.enable();
     <input type="radio" class="u-radio-button"  checked>
     <span class="u-radio-label">green</span>
 </label>
-</div>
+<label class="u-radio u-radio-info">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">blue</span>
+</label>
+<label class="u-radio u-radio-warning">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">yellow</span>
+</label>
+<label class="u-radio u-radio-danger">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">red</span>
+</label>
+<label class="u-radio u-radio-dark">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">grey</span>
+</label></div>
 
 
 
@@ -153,7 +168,22 @@ radioObject.enable();
     &lt;input type="radio" class="u-radio-button"  checked>
     &lt;span class="u-radio-label">green&lt;/span>
 &lt;/label>
-</code></pre>
+&lt;label class="u-radio u-radio-info">
+    &lt;input type="radio" class="u-radio-button"   checked>
+    &lt;span class="u-radio-label">blue&lt;/span>
+&lt;/label>
+&lt;label class="u-radio u-radio-warning">
+    &lt;input type="radio" class="u-radio-button"  checked>
+    &lt;span class="u-radio-label">yellow&lt;/span>
+&lt;/label>
+&lt;label class="u-radio u-radio-danger">
+    &lt;input type="radio" class="u-radio-button"   checked>
+    &lt;span class="u-radio-label">red&lt;/span>
+&lt;/label>
+&lt;label class="u-radio u-radio-dark">
+    &lt;input type="radio" class="u-radio-button"  checked>
+    &lt;span class="u-radio-label">grey&lt;/span>
+&lt;/label></code></pre>
 </div>
 
 

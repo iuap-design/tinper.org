@@ -76,9 +76,7 @@ u.on(msgBtn,'click', function(){
 <div class="example-content"><button id="msgBtn" class="u-button" >Success</button>
 </div>
 
-<div class="example-content ex-hide"><style>
 
-</style></div>
 
 <script>
 var msgBtn = document.body.querySelector("#msgBtn");
@@ -93,9 +91,6 @@ u.on(msgBtn,'click', function(){
 </code></pre>
 </div>
 
-<div class="examples-code"><pre><code>
-</code></pre>
-</div>
 
 <div class="examples-code"><pre><code>
 var msgBtn = document.body.querySelector("#msgBtn");

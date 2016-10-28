@@ -111,18 +111,46 @@ switchObject.isChecked();
 
 - `checked` 选中
 - `disabled` 不可用
-<div class="example-content"><label class="u-switch u-switch-info" for="switch-info-unchecked">
+<div class="example-content">
+<label class="u-switch u-switch-info" for="switch-info-unchecked">
     <input type="checkbox" id="switch-info-unchecked" class="u-switch-input">
     <span class="u-switch-label"></span>
-</label></div>
+</label>
+<label class="u-switch u-switch-info" for="switch-info-checked">
+    <input type="checkbox" id="switch-info-checked" class="u-switch-input" checked>
+    <span class="u-switch-label"></span>
+</label>
+<label class="u-switch u-switch-info" for="switch-info-disable">
+    <input type="checkbox" id="switch-info-disable" class="u-switch-input" disabled>
+    <span class="u-switch-label"></span>
+</label>
+<label class="u-switch u-switch-info" for="switch-info-checkdisalbed">
+    <input type="checkbox" id="switch-info-checkdisalbed" class="u-switch-input" checked disabled>
+    <span class="u-switch-label"></span>
+</label>
+</div>
 
 
 
 <div class="examples-code"><pre><code>
+
 &lt;label class="u-switch u-switch-info" for="switch-info-unchecked">
     &lt;input type="checkbox" id="switch-info-unchecked" class="u-switch-input">
     &lt;span class="u-switch-label">&lt;/span>
-&lt;/label></code></pre>
+&lt;/label>
+&lt;label class="u-switch u-switch-info" for="switch-info-checked">
+    &lt;input type="checkbox" id="switch-info-checked" class="u-switch-input" checked>
+    &lt;span class="u-switch-label">&lt;/span>
+&lt;/label>
+&lt;label class="u-switch u-switch-info" for="switch-info-disable">
+    &lt;input type="checkbox" id="switch-info-disable" class="u-switch-input" disabled>
+    &lt;span class="u-switch-label">&lt;/span>
+&lt;/label>
+&lt;label class="u-switch u-switch-info" for="switch-info-checkdisalbed">
+    &lt;input type="checkbox" id="switch-info-checkdisalbed" class="u-switch-input" checked disabled>
+    &lt;span class="u-switch-label">&lt;/span>
+&lt;/label>
+</code></pre>
 </div>
 
 

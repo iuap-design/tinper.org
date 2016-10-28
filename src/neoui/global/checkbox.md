@@ -100,18 +100,46 @@ checkboxObject.toggle();
 - `checked` 选中
 - `disabled` 不可用
 
-<div class="example-content"><label  class="u-checkbox">
+<div class="example-content">
+<label  class="u-checkbox">
     <input type="checkbox" class="u-checkbox-input" checked>
     <span class="u-checkbox-label">Checkbox</span>
-</label></div>
+</label>
+<label  class="u-checkbox">
+    <input type="checkbox" class="u-checkbox-input" >
+    <span class="u-checkbox-label">Checkbox</span>
+</label>
+<label  class="u-checkbox"  >
+    <input type="checkbox" class="u-checkbox-input" disabled>
+    <span class="u-checkbox-label">Checkbox</span>
+</label>
+<label  class="u-checkbox">
+    <input type="checkbox" class="u-checkbox-input" disabled checked>
+    <span class="u-checkbox-label">Checkbox</span>
+</label>
+</div>
 
 
 
 <div class="examples-code"><pre><code>
+
 &lt;label  class="u-checkbox">
     &lt;input type="checkbox" class="u-checkbox-input" checked>
     &lt;span class="u-checkbox-label">Checkbox&lt;/span>
-&lt;/label></code></pre>
+&lt;/label>
+&lt;label  class="u-checkbox">
+    &lt;input type="checkbox" class="u-checkbox-input" >
+    &lt;span class="u-checkbox-label">Checkbox&lt;/span>
+&lt;/label>
+&lt;label  class="u-checkbox"  >
+    &lt;input type="checkbox" class="u-checkbox-input" disabled>
+    &lt;span class="u-checkbox-label">Checkbox&lt;/span>
+&lt;/label>
+&lt;label  class="u-checkbox">
+    &lt;input type="checkbox" class="u-checkbox-input" disabled checked>
+    &lt;span class="u-checkbox-label">Checkbox&lt;/span>
+&lt;/label>
+</code></pre>
 </div>
 
 

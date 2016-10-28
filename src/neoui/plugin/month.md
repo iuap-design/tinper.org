@@ -53,8 +53,7 @@ monthObject.setValue(2);
 
 
 定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
-<div class="example-content">
-<div class='u-month'>
+<div class="example-content"><div class='u-month'>
     <input class="u-input" type="text">
 </div>
 </div>
@@ -62,7 +61,6 @@ monthObject.setValue(2);
 
 
 <div class="examples-code"><pre><code>
-
 &lt;div class='u-month'>
     &lt;input class="u-input" type="text">
 &lt;/div>

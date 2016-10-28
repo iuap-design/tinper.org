@@ -2256,9 +2256,7 @@ focus行对应的index
 	<div class="grid" id="grid-comp1"></div>
 </div></div>
 
-<div class="example-content ex-hide"><style>
 
-</style></div>
 
 <script>
 $(document).ready(function () {
@@ -2321,9 +2319,6 @@ $(document).ready(function () {
 &lt;/div></code></pre>
 </div>
 
-<div class="examples-code"><pre><code>
-</code></pre>
-</div>
 
 <div class="examples-code"><pre><code>
 $(document).ready(function () {
