@@ -5,7 +5,7 @@ combobox组合框是由一个文本输入控件和一个下拉菜单组成的，
 * `.u-combo` - 单选下拉框
 * `.u-combo .mutil-select` - 多选下拉框
 
-replaceExamp
+
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/combobox)
 

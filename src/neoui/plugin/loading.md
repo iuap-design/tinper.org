@@ -23,20 +23,21 @@ js会根据`u-loading`来定位dom，然后绑定事件。
 
 # 示例
 
-replaceExamp
 
 
 
 
 
-,
+
+
+
 
 <div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
 
 
 
 <div class="examples-code"><pre><code>
-<div class="u-loading is-active u-loading-single-color"></div></code></pre>
+&lt;div class="u-loading is-active u-loading-single-color">&lt;/div></code></pre>
 </div>
 
 

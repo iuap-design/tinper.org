@@ -9,7 +9,8 @@
 #如何使用
 根据文档说明，添加对应样式即可。例如向左浮动只需添加`pull-left`就能达到向左浮动效果
 #示例
- replaceExamp,
+ 
+
 #块级元素水平居中
 添加`.center-block`实现水平居中
 <div class="example-content"> <div class="example example-box">
@@ -23,11 +24,11 @@
 </style></div>
 
 <div class="examples-code"><pre><code>
- <div class="example example-box">
-	<div class="h-64 w-64 bg-blue center-block ">
+ &lt;div class="example example-box">
+	&lt;div class="h-64 w-64 bg-blue center-block ">
 		我是内容
-	</div>
-</div></code></pre>
+	&lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -53,10 +54,10 @@
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="example example-box">
-  <button type="button" class="u-button  u-button-success ">Left</button>
-  <button type="button" class="u-button  u-button-success  pull-right" >Pull right</button>
-</div></code></pre>
+&lt;div class="example example-box">
+  &lt;button type="button" class="u-button  u-button-success ">Left&lt;/button>
+  &lt;button type="button" class="u-button  u-button-success  pull-right" >Pull right&lt;/button>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -95,21 +96,21 @@
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="example example-box u-container-fluid">
-	<div class="u-row">
+&lt;div class="example example-box u-container-fluid">
+	&lt;div class="u-row">
 
-		<div class="u-col-6">
-			<div class="vertical-align h" >
-      		    <button type="button" class="vertical-align-middle u-button  u-button-success ">垂直居中</button>
-	        </div>
-		</div>
-		<div class="u-col-6">
-			<div class="vertical-align h" >
-	 			<button type="button" class="vertical-align-bottom u-button  u-button-success ">垂直向下</button>
-	 		</div>
-		</div>
-	</div>
-</div></code></pre>
+		&lt;div class="u-col-6">
+			&lt;div class="vertical-align h" >
+      		    &lt;button type="button" class="vertical-align-middle u-button  u-button-success ">垂直居中&lt;/button>
+	        &lt;/div>
+		&lt;/div>
+		&lt;div class="u-col-6">
+			&lt;div class="vertical-align h" >
+	 			&lt;button type="button" class="vertical-align-bottom u-button  u-button-success ">垂直向下&lt;/button>
+	 		&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -189,11 +190,11 @@
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="example example-box">
-	<p class="text-lowercase">Lowercased text.</p>
-	<p class="text-uppercase">Uppercased text.</p>
-	<p class="text-capitalize">Capitalized text.</p>
-</div></code></pre>
+&lt;div class="example example-box">
+	&lt;p class="text-lowercase">Lowercased text.&lt;/p>
+	&lt;p class="text-uppercase">Uppercased text.&lt;/p>
+	&lt;p class="text-capitalize">Capitalized text.&lt;/p>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -243,31 +244,31 @@
 </style></div>
 
 <div class="examples-code"><pre><code>
-<p>文字是否包裹换行</p>
-<div class="example example-box u-container-fluid " style="width:500px">
-    <div class="u-row">
-        <div class="u-col-md-3">
-            <div class="text-hide h" style="border:1px solid #e6e8ea;">
+&lt;p>文字是否包裹换行&lt;/p>
+&lt;div class="example example-box u-container-fluid " style="width:500px">
+    &lt;div class="u-row">
+        &lt;div class="u-col-md-3">
+            &lt;div class="text-hide h" style="border:1px solid #e6e8ea;">
                 我被隐藏了
-            </div>
-        </div>
-        <div class="u-col-md-3">
-            <div class="text-truncate h" style="border:1px solid #e6e8ea;">
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-md-3">
+            &lt;div class="text-truncate h" style="border:1px solid #e6e8ea;">
                 内容显示一行，超出的内容使用“...”代替 This is text truncate.This is text truncate.
-            </div>
-        </div>
-        <div class="u-col-md-3">
-            <div class="text-break h " style="border:1px solid #e6e8ea;">
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-md-3">
+            &lt;div class="text-break h " style="border:1px solid #e6e8ea;">
                 This-is-text-break.This-is-text-break.This-is-text-break.This-is-text-break.
-            </div>
-        </div>
-        <div class="u-col-md-3">
-            <div class="text-nowrap h" style="border:1px solid #e6e8ea;overflow: hidden;">
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-md-3">
+            &lt;div class="text-nowrap h" style="border:1px solid #e6e8ea;overflow: hidden;">
                 内容显示一行，不换行 This is text nowrap.This is text nowrap.
-            </div>
-        </div>
-    </div>
-</div></code></pre>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -317,28 +318,28 @@
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="example example-box u-container-fluid">
-    <div class="row">
-        <div class="col-md-4 m-b-sm bg-grey h-64">
-    		<img src="../../static/img/img2.png" height="64" width="64" style="vertical-align:top">
-           <span class="text-top">文字顶部对齐</span>
-        </div>
-        <div class="col-md-4  m-b-sm bg-grey h-64" >
-        <img src="../../static/img/img2.png" height="64" width="64" style="vertical-align:middle">
-           <span class="text-middle">文字居中对齐</span>
-        </div>
-        <div class="col-md-4  m-b-sm bg-grey h-64" >
-          <img src="../../static/img/img2.png" height="64" width="64" style="vertical-align:bottom">
-            <span class="text-bottom">文字底部对齐</span>
-        </div>
-    </div>
-    <div class="margin-top-20">
-        <p class="text-left">文字向左对齐</p>
-        <p class="text-center">文字居中对齐</p>
-        <p class="text-right">文件向右对齐</p>
-        <p class="text-justify">文件两端对齐</p>
-    </div>
-</div></code></pre>
+&lt;div class="example example-box u-container-fluid">
+    &lt;div class="row">
+        &lt;div class="col-md-4 m-b-sm bg-grey h-64">
+    		&lt;img src="../../static/img/img2.png" height="64" width="64" style="vertical-align:top">
+           &lt;span class="text-top">文字顶部对齐&lt;/span>
+        &lt;/div>
+        &lt;div class="col-md-4  m-b-sm bg-grey h-64" >
+        &lt;img src="../../static/img/img2.png" height="64" width="64" style="vertical-align:middle">
+           &lt;span class="text-middle">文字居中对齐&lt;/span>
+        &lt;/div>
+        &lt;div class="col-md-4  m-b-sm bg-grey h-64" >
+          &lt;img src="../../static/img/img2.png" height="64" width="64" style="vertical-align:bottom">
+            &lt;span class="text-bottom">文字底部对齐&lt;/span>
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="margin-top-20">
+        &lt;p class="text-left">文字向左对齐&lt;/p>
+        &lt;p class="text-center">文字居中对齐&lt;/p>
+        &lt;p class="text-right">文件向右对齐&lt;/p>
+        &lt;p class="text-justify">文件两端对齐&lt;/p>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

@@ -4,7 +4,7 @@
 
 # 示例
 
-replaceExamp
+
 
 <!--### 示例1
 
@@ -14,7 +14,8 @@ replaceExamp
 
 示例2说-->
 
-,
+
+
 ##多形状img
 
 在`img`标签上添加`img-rounded`可以显示成圆角图片，添加`img-circle`可以显示成圆形图片
@@ -30,11 +31,11 @@ replaceExamp
 
 <div class="examples-code"><pre><code>
 
-<img class="img-rounded" width="150" height="150" src="../../static/img/img1.png" alt="...">
+&lt;img class="img-rounded" width="150" height="150" src="../../static/img/img1.png" alt="...">
 
-<img class="img-circle" width="150" height="150" src="../../static/img/img1.png" alt="...">
+&lt;img class="img-circle" width="150" height="150" src="../../static/img/img1.png" alt="...">
 
-<img width="150" height="150" src="../../static/img/img1.png" alt="...">
+&lt;img width="150" height="150" src="../../static/img/img1.png" alt="...">
 </code></pre>
 </div>
 
@@ -54,11 +55,11 @@ replaceExamp
 
 
 <div class="examples-code"><pre><code>
-<img class="img-rounded img-bordered img-bordered-primary" width="150" height="150" src="../../static/img/img1.png" alt="...">
+&lt;img class="img-rounded img-bordered img-bordered-primary" width="150" height="150" src="../../static/img/img1.png" alt="...">
 
-<img class="img-circle img-bordered img-bordered-orange" width="150" height="150" src="../../static/img/img1.png" alt="...">
+&lt;img class="img-circle img-bordered img-bordered-orange" width="150" height="150" src="../../static/img/img1.png" alt="...">
 
-<img class="img-rounded img-bordered img-bordered-green" width="150" height="150" src="../../static/img/img1.png" alt="..."></code></pre>
+&lt;img class="img-rounded img-bordered img-bordered-green" width="150" height="150" src="../../static/img/img1.png" alt="..."></code></pre>
 </div>
 
 

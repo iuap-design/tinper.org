@@ -5,7 +5,7 @@ combobox组合框是由一个文本输入控件和一个下拉菜单组成的，
 * `.u-combo` - 单选下拉框
 * `.u-combo .mutil-select` - 多选下拉框
 
-replaceExamp
+
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/combobox)
 
@@ -99,7 +99,8 @@ document.getElementById('domId')['u.Combo'].emptyValue();
 
 [下拉框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
 
-,
+
+
 ## 默认单选下拉框
 <div class="example-content"><div class="u-combo" id="combo1">
     <div class="u-input-group u-has-feedback">
@@ -116,12 +117,12 @@ document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男
 </script>
 
 <div class="examples-code"><pre><code>
-<div class="u-combo" id="combo1">
-    <div class="u-input-group u-has-feedback">
-        <input class="u-form-control" />
-        <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
-    </div>
-</div></code></pre>
+&lt;div class="u-combo" id="combo1">
+    &lt;div class="u-input-group u-has-feedback">
+        &lt;input class="u-form-control" />
+        &lt;span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button">&lt;/span>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 
@@ -149,12 +150,12 @@ document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'jav
 </script>
 
 <div class="examples-code"><pre><code>
-<div class="u-combo mutil-select" id="combo3">
-    <div class="u-input-group u-has-feedback">
-        <input class="u-form-control" />
-        <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
-    </div>
-</div></code></pre>
+&lt;div class="u-combo mutil-select" id="combo3">
+    &lt;div class="u-input-group u-has-feedback">
+        &lt;input class="u-form-control" />
+        &lt;span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button">&lt;/span>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 

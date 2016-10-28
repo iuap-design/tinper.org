@@ -52,7 +52,7 @@ u.on(msgBtn2,'click', function(){
 
 # 示例
 
-replaceExamp
+
 
 
 # API
@@ -91,7 +91,8 @@ replaceExamp
 </table>
 
 
-,
+
+
 ##消息摸态框
 
 通过`confirmDialog`方法调出模态框
@@ -121,7 +122,7 @@ u.on(msgBtn2,'click', function(){
 </script>
 
 <div class="examples-code"><pre><code>
-<button id="msgDialogBtn2" class="u-button raised accent">消息确认框</button></code></pre>
+&lt;button id="msgDialogBtn2" class="u-button raised accent">消息确认框&lt;/button></code></pre>
 </div>
 
 
@@ -189,19 +190,19 @@ u.on(cancelButton,'click', function(){
 </script>
 
 <div class="examples-code"><pre><code>
-<button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
-<div id="dialog_content" style="display:none;">
-	<div class="u-msg-title">
-		<h4>单据名称</h4>
-	</div>
-	<div class="u-msg-content">
-		<p>单据内容区</p>
-	</div>
-	<div class="u-msg-footer">
-		<button class="u-msg-ok u-button">保存<span class="u-button-container"><span class="u-ripple"></span></span></button>
-		<button class="u-msg-cancel u-button">取消<span class="u-button-container"><span class="u-ripple"></span></span></button>
-	</div>
-</div></code></pre>
+&lt;button id="msgDialogBtn3" class="u-button raised accent">模态框&lt;/button>
+&lt;div id="dialog_content" style="display:none;">
+	&lt;div class="u-msg-title">
+		&lt;h4>单据名称&lt;/h4>
+	&lt;/div>
+	&lt;div class="u-msg-content">
+		&lt;p>单据内容区&lt;/p>
+	&lt;/div>
+	&lt;div class="u-msg-footer">
+		&lt;button class="u-msg-ok u-button">保存&lt;span class="u-button-container">&lt;span class="u-ripple">&lt;/span>&lt;/span>&lt;/button>
+		&lt;button class="u-msg-cancel u-button">取消&lt;span class="u-button-container">&lt;span class="u-ripple">&lt;/span>&lt;/span>&lt;/button>
+	&lt;/div>
+&lt;/div></code></pre>
 </div>
 
 
@@ -252,7 +253,7 @@ u.on(msgBtn, 'click', function() {
 </script>
 
 <div class="examples-code"><pre><code>
-<button id="msgDialogBtn" class="u-button raised accent">消息提示框</button>
+&lt;button id="msgDialogBtn" class="u-button raised accent">消息提示框&lt;/button>
 
    </code></pre>
 </div>

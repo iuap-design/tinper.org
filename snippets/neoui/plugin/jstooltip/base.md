@@ -19,7 +19,7 @@ title:'默认向上显示'
 创建对象时，添加显示内容title、显示位置placement、显示颜色级别colorLevel
 
 # 示例
-replaceExamp
+
 
 
 # API

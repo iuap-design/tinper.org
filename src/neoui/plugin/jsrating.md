@@ -49,12 +49,13 @@
 
 # 示例
 
-replaceExamp
+
 
 
 # API
 
-详情参见与 http://testweb3.iecworld.com/jsdemo/js/lq_js_point/,
+详情参见与 http://testweb3.iecworld.com/jsdemo/js/lq_js_point/
+
 ##基础Rating
 
 常用于评级评分
@@ -104,7 +105,7 @@ replaceExamp
 </script>
 
 <div class="examples-code"><pre><code>
- <div class="u-rating" data-score="3" data-plugin="rating"></div></code></pre>
+ &lt;div class="u-rating" data-score="3" data-plugin="rating">&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

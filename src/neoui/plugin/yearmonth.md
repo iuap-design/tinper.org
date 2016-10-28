@@ -2,7 +2,7 @@
 
 用户可以通过此插件进行年月的选择。
 
-replaceExamp
+
 
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/yearmonth)
@@ -46,7 +46,8 @@ yearMonthObject.setValue('2016-02');
 [年月在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
 
 
-,
+
+
 定义样式为`u-yearmonth`的div父元素，包裹样式为`u-input`的input元素。
 <div class="example-content">
 <div class='u-yearmonth'>
@@ -62,9 +63,9 @@ yearMonthObject.setValue('2016-02');
 
 <div class="examples-code"><pre><code>
 
-<div class='u-yearmonth'>
-    <input class="u-input" type="text">
-</div></code></pre>
+&lt;div class='u-yearmonth'>
+    &lt;input class="u-input" type="text">
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

@@ -20,4 +20,4 @@
 ## 扩展表格方法
 
 此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
-源码库：https://github.com/iuap-design/neoui-grid.git,
+源码库：https://github.com/iuap-design/neoui-grid.git

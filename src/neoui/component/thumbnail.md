@@ -5,9 +5,10 @@
 
 ## 示例
 
-replaceExamp
 
-,
+
+
+
 
 <div class="example-content"><div class="row">
   <div class="col-md-3">
@@ -37,28 +38,28 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="row">
-  <div class="col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://design.yyuap.com/static/img/thumimg.png">
-    </a>
-  </div>
-  <div class="col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://design.yyuap.com/static/img/thumimg.png">
-    </a>
-  </div>
-  <div class="col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://design.yyuap.com/static/img/thumimg.png">
-    </a>
-  </div>
-  <div class="col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://design.yyuap.com/static/img/thumimg.png">
-    </a>
-  </div>
-</div></code></pre>
+&lt;div class="row">
+  &lt;div class="col-md-3">
+    &lt;a href="#" class="thumbnail">
+      &lt;img src="http://design.yyuap.com/static/img/thumimg.png">
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="col-md-3">
+    &lt;a href="#" class="thumbnail">
+      &lt;img src="http://design.yyuap.com/static/img/thumimg.png">
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="col-md-3">
+    &lt;a href="#" class="thumbnail">
+      &lt;img src="http://design.yyuap.com/static/img/thumimg.png">
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="col-md-3">
+    &lt;a href="#" class="thumbnail">
+      &lt;img src="http://design.yyuap.com/static/img/thumimg.png">
+    &lt;/a>
+  &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -119,52 +120,52 @@ replaceExamp
 
 
 <div class="examples-code"><pre><code>
-<div class="row">
-  <div class="col-md-4">
-        <div class="thumbnail">
-                <img src="http://design.yyuap.com/static/img/thumimg1.png" alt="...">
-                <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>
+&lt;div class="row">
+  &lt;div class="col-md-4">
+        &lt;div class="thumbnail">
+                &lt;img src="http://design.yyuap.com/static/img/thumimg1.png" alt="...">
+                &lt;div class="caption">
+                    &lt;h3>Thumbnail label&lt;/h3>
+                    &lt;p>
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </p>
-                    <p>
-                        <button class="u-button raised u-button-warning u-button-xg">button</button>
-                        <button class="u-button raised primary u-button-xg">button</button>
-                    </p>
-                </div>
-        </div>
-  </div>
-  <div class="col-md-4">
-        <div class="thumbnail">
-                <img src="http://design.yyuap.com/static/img/thumimg1.png" alt="...">
-                <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>
+                    &lt;/p>
+                    &lt;p>
+                        &lt;button class="u-button raised u-button-warning u-button-xg">button&lt;/button>
+                        &lt;button class="u-button raised primary u-button-xg">button&lt;/button>
+                    &lt;/p>
+                &lt;/div>
+        &lt;/div>
+  &lt;/div>
+  &lt;div class="col-md-4">
+        &lt;div class="thumbnail">
+                &lt;img src="http://design.yyuap.com/static/img/thumimg1.png" alt="...">
+                &lt;div class="caption">
+                    &lt;h3>Thumbnail label&lt;/h3>
+                    &lt;p>
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </p>
-                    <p>
-                        <button class="u-button raised u-button-danger u-button-xg">button</button>
-                        <button class="u-button raised primary u-button-xg">button</button>
-                    </p>
-                </div>
-        </div>
-  </div>
-  <div class="col-md-4">
-        <div class="thumbnail">
-                <img src="http://design.yyuap.com/static/img/thumimg1.png" alt="...">
-                <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>
+                    &lt;/p>
+                    &lt;p>
+                        &lt;button class="u-button raised u-button-danger u-button-xg">button&lt;/button>
+                        &lt;button class="u-button raised primary u-button-xg">button&lt;/button>
+                    &lt;/p>
+                &lt;/div>
+        &lt;/div>
+  &lt;/div>
+  &lt;div class="col-md-4">
+        &lt;div class="thumbnail">
+                &lt;img src="http://design.yyuap.com/static/img/thumimg1.png" alt="...">
+                &lt;div class="caption">
+                    &lt;h3>Thumbnail label&lt;/h3>
+                    &lt;p>
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </p>
-                    <p>
-                        <button class="u-button raised primary u-button-xg">button</button>
-                        <button class="u-button raised u-button-info u-button-xg">button</button>
-                </div>
-        </div>
-  </div>
-</div></code></pre>
+                    &lt;/p>
+                    &lt;p>
+                        &lt;button class="u-button raised primary u-button-xg">button&lt;/button>
+                        &lt;button class="u-button raised u-button-info u-button-xg">button&lt;/button>
+                &lt;/div>
+        &lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 

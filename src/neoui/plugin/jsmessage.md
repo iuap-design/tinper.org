@@ -39,7 +39,7 @@ u.on(msgBtn,'click', function(){
 
 # 示例
 
-replaceExamp
+
 
 
 # API
@@ -72,7 +72,8 @@ replaceExamp
 </table>
 
 
-,
+
+
 点击 Success 弹出提示消息
 <div class="example-content"><button id="msgBtn" class="u-button" >Success</button>
 </div>
@@ -90,7 +91,7 @@ u.on(msgBtn,'click', function(){
 </script>
 
 <div class="examples-code"><pre><code>
-<button id="msgBtn" class="u-button" >Success</button>
+&lt;button id="msgBtn" class="u-button" >Success&lt;/button>
 </code></pre>
 </div>
 

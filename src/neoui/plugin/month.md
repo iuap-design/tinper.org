@@ -2,7 +2,7 @@
 
 用户可以通过此插件进行月份的选择。
 
-replaceExamp
+
 
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/month)
@@ -50,7 +50,8 @@ monthObject.setValue(2);
 
 
 
-,
+
+
 定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
 <div class="example-content">
 <div class='u-month'>
@@ -62,9 +63,9 @@ monthObject.setValue(2);
 
 <div class="examples-code"><pre><code>
 
-<div class='u-month'>
-    <input class="u-input" type="text">
-</div>
+&lt;div class='u-month'>
+    &lt;input class="u-input" type="text">
+&lt;/div>
 </code></pre>
 </div>
 

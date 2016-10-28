@@ -15,7 +15,7 @@
 
 # 示例
 
-replaceExamp
+
 
 # API
 ##js方法与参数

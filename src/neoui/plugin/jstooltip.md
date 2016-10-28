@@ -19,7 +19,7 @@ title:'默认向上显示'
 创建对象时，添加显示内容title、显示位置placement、显示颜色级别colorLevel
 
 # 示例
-replaceExamp
+
 
 
 # API
@@ -42,7 +42,8 @@ replaceExamp
 	  </tr>
 	</tbody>
 </table>
-,
+
+
 ##基础tooltip
 <div class="example-content"><div id='example'>
 	<label id="top" class="ws">上提示</label>
@@ -100,12 +101,12 @@ placement:'right'
 </script>
 
 <div class="examples-code"><pre><code>
-<div id='example'>
-	<label id="top" class="ws">上提示</label>
-	<label id="down" class="ws">下提示</label>
-	<label id="left" class="ws">左提示</label>
-	<label id="right" class="ws">右提示</label>
-</div></code></pre>
+&lt;div id='example'>
+	&lt;label id="top" class="ws">上提示&lt;/label>
+	&lt;label id="down" class="ws">下提示&lt;/label>
+	&lt;label id="left" class="ws">左提示&lt;/label>
+	&lt;label id="right" class="ws">右提示&lt;/label>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

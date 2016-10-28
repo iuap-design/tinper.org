@@ -3,7 +3,7 @@
 
 # 示例
 
-replaceExamp
+
 
 <!--### 示例1
 
@@ -14,7 +14,8 @@ replaceExamp
 示例2说-->
 
 
-,
+
+
 ##普通输入框
 在普通的input元素上添加`u-form-control`样式
 <div class="example-content"><input type="text" class="u-form-control" id="exampleInput3"  placeholder="jane.doe@example.com"></div>
@@ -34,7 +35,7 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<input type="text" class="u-form-control" id="exampleInput3"  placeholder="jane.doe@example.com"></code></pre>
+&lt;input type="text" class="u-form-control" id="exampleInput3"  placeholder="jane.doe@example.com"></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -65,7 +66,7 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<input type="text" class="u-form-control" id="exampleInput3" disabled placeholder="jane.doe@example.com">
+&lt;input type="text" class="u-form-control" id="exampleInput3" disabled placeholder="jane.doe@example.com">
 </code></pre>
 </div>
 
@@ -92,10 +93,10 @@ replaceExamp
 </script>
 
 <div class="examples-code"><pre><code>
-<div class="u-input-group u-has-feedback">
-    <input type="email" class="u-form-control" placeholder="jane.doe@example.com">
-    <span class="u-form-control-feedback uf uf-magnifyingglass"></span>
-</div></code></pre>
+&lt;div class="u-input-group u-has-feedback">
+    &lt;input type="email" class="u-form-control" placeholder="jane.doe@example.com">
+    &lt;span class="u-form-control-feedback uf uf-magnifyingglass">&lt;/span>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -148,14 +149,14 @@ if(mustinlen>0){
 </script>
 
 <div class="examples-code"><pre><code>
-<div class="u-form-group">
-    <label for="exampleInput3">必输:</label>
-    <div class="u-input-group u-has-feedback must-in">
-        <div class="u-input-group-before " style="color: red;">*</div>
-        <input type="text" class="u-form-control" id="exampleInput3" placeholder="jane.doe@example.com">
-        <span class="u-form-control-feedback uf uf-magnifyingglass"></span>
-    </div>
-</div></code></pre>
+&lt;div class="u-form-group">
+    &lt;label for="exampleInput3">必输:&lt;/label>
+    &lt;div class="u-input-group u-has-feedback must-in">
+        &lt;div class="u-input-group-before " style="color: red;">*&lt;/div>
+        &lt;input type="text" class="u-form-control" id="exampleInput3" placeholder="jane.doe@example.com">
+        &lt;span class="u-form-control-feedback uf uf-magnifyingglass">&lt;/span>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

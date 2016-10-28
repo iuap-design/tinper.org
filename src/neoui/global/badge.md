@@ -8,8 +8,9 @@
 
 # 示例
 
-replaceExamp
-,
+
+
+
 ##不同颜色的badge
 使用`u-badge-primary`、`u-badge-success`、`u-badge-info`、`u-badge-warning`、`u-badge-danger`、`u-badge-dark`这七个基础类，来显示不同的颜色。
 <div class="example-content"><label class="u-badge u-badge-primary" data-badge="1">
@@ -32,18 +33,18 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<label class="u-badge u-badge-primary" data-badge="1">
-</label>
-<label class="u-badge u-badge-success" data-badge="1">
-</label>
-<label class="u-badge u-badge-info" data-badge="1">
-</label>
-<label class="u-badge u-badge-warning" data-badge="1">
-</label>
-<label class="u-badge u-badge-danger" data-badge="1">
-</label>
-<label class="u-badge u-badge-dark" data-badge="1">
-</label></code></pre>
+&lt;label class="u-badge u-badge-primary" data-badge="1">
+&lt;/label>
+&lt;label class="u-badge u-badge-success" data-badge="1">
+&lt;/label>
+&lt;label class="u-badge u-badge-info" data-badge="1">
+&lt;/label>
+&lt;label class="u-badge u-badge-warning" data-badge="1">
+&lt;/label>
+&lt;label class="u-badge u-badge-danger" data-badge="1">
+&lt;/label>
+&lt;label class="u-badge u-badge-dark" data-badge="1">
+&lt;/label></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -71,12 +72,12 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="u-badge w-20 m" data-badge="1">
-    <i class="uf uf-bellmusicaltool"></i>
-</div>
-<div class="u-badge u-badge-no-background w-20 m" data-badge="1">
-    <i class="uf uf-bellmusicaltool"></i>
-</div></code></pre>
+&lt;div class="u-badge w-20 m" data-badge="1">
+    &lt;i class="uf uf-bellmusicaltool">&lt;/i>
+&lt;/div>
+&lt;div class="u-badge u-badge-no-background w-20 m" data-badge="1">
+    &lt;i class="uf uf-bellmusicaltool">&lt;/i>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

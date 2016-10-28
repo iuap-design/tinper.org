@@ -5,7 +5,8 @@
 
 # 示例
 
-replaceExamp,
+
+
 ## 基础
 <div class="example-content"><ul class="u-list-group">
   <li class="u-list-group-item">Cras justo odio</li>
@@ -18,13 +19,13 @@ replaceExamp,
 
 
 <div class="examples-code"><pre><code>
-<ul class="u-list-group">
-  <li class="u-list-group-item">Cras justo odio</li>
-  <li class="u-list-group-item">Dapibus ac facilisis in</li>
-  <li class="u-list-group-item">Morbi leo risus</li>
-  <li class="u-list-group-item">Porta ac consectetur ac</li>
-  <li class="u-list-group-item">Vestibulum at eros</li>
-</ul></code></pre>
+&lt;ul class="u-list-group">
+  &lt;li class="u-list-group-item">Cras justo odio&lt;/li>
+  &lt;li class="u-list-group-item">Dapibus ac facilisis in&lt;/li>
+  &lt;li class="u-list-group-item">Morbi leo risus&lt;/li>
+  &lt;li class="u-list-group-item">Porta ac consectetur ac&lt;/li>
+  &lt;li class="u-list-group-item">Vestibulum at eros&lt;/li>
+&lt;/ul></code></pre>
 </div>
 
 
@@ -50,20 +51,20 @@ replaceExamp,
 
 
 <div class="examples-code"><pre><code>
-<ul class="u-list-group">
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="14"></label>
+&lt;ul class="u-list-group">
+  &lt;li class="u-list-group-item">
+    &lt;label class="u-badge u-badge-primary" data-badge="14">&lt;/label>
     Cras justo odio
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="2"></label>
+  &lt;/li>
+  &lt;li class="u-list-group-item">
+    &lt;label class="u-badge u-badge-primary" data-badge="2">&lt;/label>
     Dapibus ac facilisis in
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="1"></label>
+  &lt;/li>
+  &lt;li class="u-list-group-item">
+    &lt;label class="u-badge u-badge-primary" data-badge="1">&lt;/label>
     Morbi leo risus
-  </li>
-</ul></code></pre>
+  &lt;/li>
+&lt;/ul></code></pre>
 </div>
 
 
@@ -84,15 +85,15 @@ replaceExamp,
 
 
 <div class="examples-code"><pre><code>
-<div class="u-list-group">
-  <a href="#" class="u-list-group-item active">
+&lt;div class="u-list-group">
+  &lt;a href="#" class="u-list-group-item active">
     Cras justo odio
-  </a>
-  <a href="#" class="u-list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="u-list-group-item">Morbi leo risus</a>
-  <a href="#" class="u-list-group-item">Porta ac consectetur ac</a>
-  <a href="#" class="u-list-group-item">Vestibulum at eros</a>
-</div></code></pre>
+  &lt;/a>
+  &lt;a href="#" class="u-list-group-item">Dapibus ac facilisis in&lt;/a>
+  &lt;a href="#" class="u-list-group-item">Morbi leo risus&lt;/a>
+  &lt;a href="#" class="u-list-group-item">Porta ac consectetur ac&lt;/a>
+  &lt;a href="#" class="u-list-group-item">Vestibulum at eros&lt;/a>
+&lt;/div></code></pre>
 </div>
 
 

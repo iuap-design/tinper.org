@@ -3,7 +3,7 @@
 开关控件实现了两种状态的切换，提供了多种色彩、多种尺寸样式。
 
 
-replaceExamp
+
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/switch)
 

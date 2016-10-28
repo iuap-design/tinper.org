@@ -80,7 +80,7 @@ http://design.yyuap.com/static/uui/latest/js/u.js
     
 # 示例
 
-replaceExamp
+
 
 # API
 

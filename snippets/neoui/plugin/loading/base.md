@@ -23,7 +23,7 @@ js会根据`u-loading`来定位dom，然后绑定事件。
 
 # 示例
 
-replaceExamp
+
 
 
 

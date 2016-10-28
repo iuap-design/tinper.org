@@ -39,7 +39,7 @@ u.on(msgBtn,'click', function(){
 
 # 示例
 
-replaceExamp
+
 
 
 # API

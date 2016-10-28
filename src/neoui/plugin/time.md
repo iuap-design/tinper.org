@@ -38,13 +38,14 @@ js会根据`u-time`来定位dom，然后绑定事件。
 
 # 示例
 
-replaceExamp
 
 
 
 
 
-,
+
+
+
 
 <div class="example-content"><div class="example">
 	<div class='u-time'>
@@ -60,11 +61,11 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="example">
-	<div class='u-time'>
-	    <input class="u-input" type="text">
-	</div>
-</div></code></pre>
+&lt;div class="example">
+	&lt;div class='u-time'>
+	    &lt;input class="u-input" type="text">
+	&lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

@@ -18,9 +18,10 @@
 
 #示例
 
-replaceExamp
 
-,
+
+
+
 ##基本布局
 
 使用单一的一组`Row`和`col`栅格组件，就可以创建一个基本的栅格系统。所有的列`col`必须放在`Row`中。
@@ -52,18 +53,18 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="u-container-fluid example">
-	<div class="u-row">
-	    <div class="u-col-4"><div class="example-col">4</div></div>
-	    <div class="u-col-4"><div class="example-col">4</div></div>
-	    <div class="u-col-4"><div class="example-col">4</div></div>
-	</div>
-	<div class="u-row">
-	    <div class="u-col-6"><div class="example-col">6</div></div>
-	    <div class="u-col-4"><div class="example-col">4</div></div>
-	    <div class="u-col-2"><div class="example-col">2</div></div>
-	</div>
-</div></code></pre>
+&lt;div class="u-container-fluid example">
+	&lt;div class="u-row">
+	    &lt;div class="u-col-4">&lt;div class="example-col">4&lt;/div>&lt;/div>
+	    &lt;div class="u-col-4">&lt;div class="example-col">4&lt;/div>&lt;/div>
+	    &lt;div class="u-col-4">&lt;div class="example-col">4&lt;/div>&lt;/div>
+	&lt;/div>
+	&lt;div class="u-row">
+	    &lt;div class="u-col-6">&lt;div class="example-col">6&lt;/div>&lt;/div>
+	    &lt;div class="u-col-4">&lt;div class="example-col">4&lt;/div>&lt;/div>
+	    &lt;div class="u-col-2">&lt;div class="example-col">2&lt;/div>&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -121,25 +122,25 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="u-container-fluid example">
-    <div class="u-row">
-        <div class="u-col-xs-12 u-col-md-8">
-            <div class="example-col">u-col-xs-12 u-col-md-8</div>
-        </div>
-        <div class="u-col-xs-6 u-col-md-4">
-            <div class="example-col">u-col-xs-6 u-col-md-4</div>
-        </div>
-        <div class="u-col-xs-6 u-col-md-4">
-            <div class="example-col">u-col-xs-6 u-col-md-4</div>
-        </div>
-        <div class="u-col-xs-6 u-col-md-4">
-            <div class="example-col">u-col-xs-6 u-col-md-4</div>
-        </div>
-        <div class="u-col-xs-6 u-col-md-4">
-            <div class="example-col">u-col-xs-6 u-col-md-4</div>
-        </div>
-    </div>
-</div></code></pre>
+&lt;div class="u-container-fluid example">
+    &lt;div class="u-row">
+        &lt;div class="u-col-xs-12 u-col-md-8">
+            &lt;div class="example-col">u-col-xs-12 u-col-md-8&lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-xs-6 u-col-md-4">
+            &lt;div class="example-col">u-col-xs-6 u-col-md-4&lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-xs-6 u-col-md-4">
+            &lt;div class="example-col">u-col-xs-6 u-col-md-4&lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-xs-6 u-col-md-4">
+            &lt;div class="example-col">u-col-xs-6 u-col-md-4&lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-xs-6 u-col-md-4">
+            &lt;div class="example-col">u-col-xs-6 u-col-md-4&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -198,24 +199,24 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="u-container-fluid example">
-    <div class="u-row">
-        <div class="u-col-xs-6 u-col-sm-3">
-            <div class="example-col">.col-xs-6 .col-sm-3我的内容比较多。修改屏幕的宽度或者在手机端可以看到clearfix所起到的效果</div>
-        </div>
-        <div class="u-col-xs-6 u-col-sm-3">
-            <div class="example-col">.col-xs-6 .col-sm-3</div>
-        </div>
-        <!-- Add the extra clearfix for only the required viewport -->
-        <div class="clearfix visible-xs-block"></div>
-        <div class="u-col-xs-6 u-col-sm-3">
-            <div class="example-col">.col-xs-6 .col-sm-3</div>
-        </div>
-        <div class="u-col-xs-6 u-col-sm-3">
-            <div class="example-col">.col-xs-6 .col-sm-3</div>
-        </div>
-    </div>
-</div>
+&lt;div class="u-container-fluid example">
+    &lt;div class="u-row">
+        &lt;div class="u-col-xs-6 u-col-sm-3">
+            &lt;div class="example-col">.col-xs-6 .col-sm-3我的内容比较多。修改屏幕的宽度或者在手机端可以看到clearfix所起到的效果&lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-xs-6 u-col-sm-3">
+            &lt;div class="example-col">.col-xs-6 .col-sm-3&lt;/div>
+        &lt;/div>
+        &lt;!-- Add the extra clearfix for only the required viewport -->
+        &lt;div class="clearfix visible-xs-block">&lt;/div>
+        &lt;div class="u-col-xs-6 u-col-sm-3">
+            &lt;div class="example-col">.col-xs-6 .col-sm-3&lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-xs-6 u-col-sm-3">
+            &lt;div class="example-col">.col-xs-6 .col-sm-3&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
 </code></pre>
 </div>
 
@@ -275,22 +276,22 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="u-container-fluid example">
-    <div class="u-row">
-        <div class="u-col-sm-9">
-            <div class="example-col">Level 1: .col-sm-9
-                <div class="u-row">
-                    <div class="u-col-xs-8 u-col-sm-6">
-                        <div class="example-col-sub">Level 2: .col-xs-8 .col-sm-6</div>
-                    </div>
-                    <div class="u-col-xs-4 u-col-sm-6">
-                        <div class="example-col-sub">Level 2: .col-xs-4 .col-sm-6</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div></code></pre>
+&lt;div class="u-container-fluid example">
+    &lt;div class="u-row">
+        &lt;div class="u-col-sm-9">
+            &lt;div class="example-col">Level 1: .col-sm-9
+                &lt;div class="u-row">
+                    &lt;div class="u-col-xs-8 u-col-sm-6">
+                        &lt;div class="example-col-sub">Level 2: .col-xs-8 .col-sm-6&lt;/div>
+                    &lt;/div>
+                    &lt;div class="u-col-xs-4 u-col-sm-6">
+                        &lt;div class="example-col-sub">Level 2: .col-xs-4 .col-sm-6&lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -342,16 +343,16 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="u-container-fluid example">
-    <div class="u-row">
-        <div class="u-col-md-4  u-col-md-offset-4">
-            <div class="example-col">.u-col-md-4  .u-col-md-offset-4</div>
-        </div>
-        <div class="u-col-md-4">
-            <div class="example-col">.u-col-md-4</div>
-        </div>
-    </div>
-</div></code></pre>
+&lt;div class="u-container-fluid example">
+    &lt;div class="u-row">
+        &lt;div class="u-col-md-4  u-col-md-offset-4">
+            &lt;div class="example-col">.u-col-md-4  .u-col-md-offset-4&lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-md-4">
+            &lt;div class="example-col">.u-col-md-4&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -400,16 +401,16 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="u-container-fluid example">
-    <div class="u-row">
-        <div class="u-col-md-8 u-col-md-push-4">
-            <div class="example-col">.u-col-md-8 .u-col-md-push-4</div>
-        </div>
-        <div class="u-col-md-4 u-col-md-pull-8">
-            <div class="example-col">.u-col-md-4 .u-col-md-pull-8</div>
-        </div>
-    </div>
-</div></code></pre>
+&lt;div class="u-container-fluid example">
+    &lt;div class="u-row">
+        &lt;div class="u-col-md-8 u-col-md-push-4">
+            &lt;div class="example-col">.u-col-md-8 .u-col-md-push-4&lt;/div>
+        &lt;/div>
+        &lt;div class="u-col-md-4 u-col-md-pull-8">
+            &lt;div class="example-col">.u-col-md-4 .u-col-md-pull-8&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

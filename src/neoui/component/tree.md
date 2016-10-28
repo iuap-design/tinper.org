@@ -18,7 +18,7 @@
 
 # 示例
 
-replaceExamp
+
 
 
 # API
@@ -27,7 +27,8 @@ replaceExamp
 data : 实际数据，自行配置数据结构
 
 
-,
+
+
 ##基础Tree
 
 用于多层目录的嵌套结构的数据。
@@ -150,9 +151,9 @@ var app = u.createApp();
 </script>
 
 <div class="examples-code"><pre><code>
-<!-- <div id="demoLeft"> -->
-	<div id="treeTest" class="ztree" u-meta='{"multiSelect":"true","id":"tree2","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'></div>
-<!-- </div> -->
+&lt;!-- &lt;div id="demoLeft"> -->
+	&lt;div id="treeTest" class="ztree" u-meta='{"multiSelect":"true","id":"tree2","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'>&lt;/div>
+&lt;!-- &lt;/div> -->
        </code></pre>
 </div>
 

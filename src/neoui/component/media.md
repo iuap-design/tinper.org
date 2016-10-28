@@ -5,9 +5,10 @@
 
 # 示例
 
-replaceExamp
 
-,
+
+
+
 ## 默认样式
 <div class="example-content"><div class="u-media">
   <div class="u-media-left">
@@ -24,17 +25,17 @@ replaceExamp
 
 
 <div class="examples-code"><pre><code>
-<div class="u-media">
-  <div class="u-media-left">
-    <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
-    </a>
-  </div>
-  <div class="u-media-body">
-    <h4 class="u-media-heading">u-Media heading</h4>
+&lt;div class="u-media">
+  &lt;div class="u-media-left">
+    &lt;a href="#">
+      &lt;img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="u-media-body">
+    &lt;h4 class="u-media-heading">u-Media heading&lt;/h4>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-  </div>
-</div></code></pre>
+  &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 
@@ -70,28 +71,28 @@ replaceExamp
 
 
 <div class="examples-code"><pre><code>
-<div class="u-media">
-  <div class="u-media-left">
-    <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
-    </a>
-  </div>
-  <div class="u-media-body">
-    <h4 class="u-media-heading">u-Media heading</h4>
+&lt;div class="u-media">
+  &lt;div class="u-media-left">
+    &lt;a href="#">
+      &lt;img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="u-media-body">
+    &lt;h4 class="u-media-heading">u-Media heading&lt;/h4>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-    <div class="u-media">
-	  <div class="u-media-left">
-	    <a href="#">
-	      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
-	    </a>
-	  </div>
-	  <div class="u-media-body">
-	    <h4 class="u-media-heading">u-Media heading</h4>
+    &lt;div class="u-media">
+	  &lt;div class="u-media-left">
+	    &lt;a href="#">
+	      &lt;img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+	    &lt;/a>
+	  &lt;/div>
+	  &lt;div class="u-media-body">
+	    &lt;h4 class="u-media-heading">u-Media heading&lt;/h4>
 	    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-	  </div>
-	</div>
-  </div>
-</div></code></pre>
+	  &lt;/div>
+	&lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 
@@ -149,45 +150,45 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="u-media">
-  <div class="u-media-left">
-    <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
-    </a>
-  </div>
-  <div class="u-media-body">
-    <h4 class="u-media-heading">u-Media heading</h4>
+&lt;div class="u-media">
+  &lt;div class="u-media-left">
+    &lt;a href="#">
+      &lt;img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="u-media-body">
+    &lt;h4 class="u-media-heading">u-Media heading&lt;/h4>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
     Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-  </div>
-</div>
-<div class="u-media">
-  <div class="u-media-left u-media-middle">
-    <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
-    </a>
-  </div>
-  <div class="u-media-body">
-    <h4 class="u-media-heading">u-Media heading</h4>
+  &lt;/div>
+&lt;/div>
+&lt;div class="u-media">
+  &lt;div class="u-media-left u-media-middle">
+    &lt;a href="#">
+      &lt;img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="u-media-body">
+    &lt;h4 class="u-media-heading">u-Media heading&lt;/h4>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
     Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-  </div>
-</div>
-<div class="u-media">
-  <div class="u-media-left u-media-bottom">
-    <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
-    </a>
-  </div>
-  <div class="u-media-body">
-    <h4 class="u-media-heading">u-Media heading</h4>
+  &lt;/div>
+&lt;/div>
+&lt;div class="u-media">
+  &lt;div class="u-media-left u-media-bottom">
+    &lt;a href="#">
+      &lt;img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="u-media-body">
+    &lt;h4 class="u-media-heading">u-Media heading&lt;/h4>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
     Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-  </div>
-</div></code></pre>
+  &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

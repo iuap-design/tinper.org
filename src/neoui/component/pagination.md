@@ -8,11 +8,12 @@
 
 # 示例
 
-replaceExamp
+
 
 	
 
-,
+
+
 ##基础分页
 <div class="example-content"><div id='pagination' class='u-pagination'>
 </div></div>
@@ -32,8 +33,8 @@ replaceExamp
 </script>
 
 <div class="examples-code"><pre><code>
-<div id='pagination' class='u-pagination'>
-</div></code></pre>
+&lt;div id='pagination' class='u-pagination'>
+&lt;/div></code></pre>
 </div>
 
 
@@ -67,8 +68,8 @@ replaceExamp
 </script>
 
 <div class="examples-code"><pre><code>
-<div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
-</div></code></pre>
+&lt;div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
+&lt;/div></code></pre>
 </div>
 
 
@@ -99,8 +100,8 @@ replaceExamp
 </script>
 
 <div class="examples-code"><pre><code>
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div></code></pre>
+&lt;div id='paginationGap' class='u-pagination pagination-gap'>
+&lt;/div></code></pre>
 </div>
 
 
@@ -144,15 +145,15 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 </script>
 
 <div class="examples-code"><pre><code>
-<p>大尺寸</p>
-<div id='paginationLg' class='u-pagination pagination-lg'>
-</div>
-<p>默认尺寸</p>
-<div id='paginationDefault' class='u-pagination'>
-</div>
-<p>小尺寸</p>
-<div id='paginationSm' class='u-pagination pagination-sm'>
-</div></code></pre>
+&lt;p>大尺寸&lt;/p>
+&lt;div id='paginationLg' class='u-pagination pagination-lg'>
+&lt;/div>
+&lt;p>默认尺寸&lt;/p>
+&lt;div id='paginationDefault' class='u-pagination'>
+&lt;/div>
+&lt;p>小尺寸&lt;/p>
+&lt;div id='paginationSm' class='u-pagination pagination-sm'>
+&lt;/div></code></pre>
 </div>
 
 

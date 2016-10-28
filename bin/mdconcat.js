@@ -123,6 +123,9 @@ async.auto({
                                       var codeFun = function(data){
                                           return '<div class="examples-code"><pre><code>\r\n' + data + '</code></pre>\r\n</div>\r\n';
                                       }
+                                      var codeHtmlFun = function(data){
+                                          return '<div class="examples-code"><pre><code>\r\n' + data.replace(/\</g,'&lt;') + '</code></pre>\r\n</div>\r\n';
+                                      }
 
                                       //遍历demo文件夹start
 
@@ -137,7 +140,7 @@ async.auto({
                                           } else if(/\.html$/.test(filePath)){
                                                 fs.readFile(filePath, 'utf-8',function(err,data){
                                                       demoHtml = '<div class="example-content">' + data + '</div>\r\n';
-                                                      codeHtml = codeFun(data);
+                                                      codeHtml = codeHtmlFun(data);
                                                       cb(null,null)
                                                 })
                                           } else if(/\.css$/.test(filePath)){
@@ -178,6 +181,7 @@ async.auto({
                       var srcMdir = dir.replace(snipConfig, srcFile)
                       //   console.log("srcMdir:",srcMdir,"\nkit:",kit);
                       var outdir = path.join(srcMdir,`${kit}.md`);
+                      var results = results.join('\r\n');
                       fse.ensureFile(outdir,function(){
                           fs.writeFile(outdir,results,'utf-8')
                       });

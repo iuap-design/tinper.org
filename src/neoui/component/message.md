@@ -10,7 +10,7 @@
 
 # 示例
 
-replaceExamp
+
 
 <!--### 示例1
 
@@ -18,7 +18,8 @@ replaceExamp
 
 ### 示例2
 
-示例2说-->,
+示例2说-->
+
 ##基础message
 
 消息类型对应不同class属性则显示不同的背景色
@@ -56,28 +57,28 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="example">
-    <div class="u-message u-mesnews active" >    
-        <span class="u-msg-close uf uf-removesymbol"></span>
+&lt;div class="example">
+    &lt;div class="u-message u-mesnews active" >    
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
         News!
-    </div>
-    <div class="u-message u-mesinfo active">
-        <span class="u-msg-close uf uf-removesymbol"></span>
+    &lt;/div>
+    &lt;div class="u-message u-mesinfo active">
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
         Info!
-    </div>
-    <div class="u-message u-messuccess active">    
-        <span class="u-msg-close uf uf-removesymbol"></span>
+    &lt;/div>
+    &lt;div class="u-message u-messuccess active">    
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
         Success!
-    </div>
-    <div class="u-message u-mesdanger active">
-        <span class="u-msg-close uf uf-removesymbol"></span>
+    &lt;/div>
+    &lt;div class="u-message u-mesdanger active">
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
         Danger!
-    </div>
-    <div class="u-message u-meswarning active">
-        <span class="u-msg-close uf uf-removesymbol"></span>
+    &lt;/div>
+    &lt;div class="u-message u-meswarning active">
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
         Warning!
-    </div>
-</div></code></pre>
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
@@ -131,28 +132,28 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="example">
-    <div class="u-message dark u-mesnews active" >    
-        <span class="u-msg-close uf uf-removesymbol"></span>
-        <i class="uf uf-bellmusicaltool margin-r-10"></i>News!
-    </div>
-    <div class="u-message dark u-mesinfo active">
-        <span class="u-msg-close uf uf-removesymbol"></span>
-        <i class="uf uf-informationbutton margin-r-10"></i>Info!
-    </div>
-    <div class="u-message dark u-messuccess active">    
-        <span class="u-msg-close uf uf-removesymbol"></span>
-        <i class="uf uf-checkedsymbol margin-r-10"></i>Success!
-    </div>
-    <div class="u-message dark u-mesdanger active">
-        <span class="u-msg-close uf uf-removesymbol"></span>
-        <i class="uf uf-crossmarkonablackcirclebackground margin-r-10"></i>Danger!
-    </div>
-    <div class="u-message dark u-meswarning active">
-        <span class="u-msg-close uf uf-removesymbol"></span>
-        <i class="uf uf-warningmd margin-r-10"></i>Warning!
-    </div>
-</div></code></pre>
+&lt;div class="example">
+    &lt;div class="u-message dark u-mesnews active" >    
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
+        &lt;i class="uf uf-bellmusicaltool margin-r-10">&lt;/i>News!
+    &lt;/div>
+    &lt;div class="u-message dark u-mesinfo active">
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
+        &lt;i class="uf uf-informationbutton margin-r-10">&lt;/i>Info!
+    &lt;/div>
+    &lt;div class="u-message dark u-messuccess active">    
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
+        &lt;i class="uf uf-checkedsymbol margin-r-10">&lt;/i>Success!
+    &lt;/div>
+    &lt;div class="u-message dark u-mesdanger active">
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
+        &lt;i class="uf uf-crossmarkonablackcirclebackground margin-r-10">&lt;/i>Danger!
+    &lt;/div>
+    &lt;div class="u-message dark u-meswarning active">
+        &lt;span class="u-msg-close uf uf-removesymbol">&lt;/span>
+        &lt;i class="uf uf-warningmd margin-r-10">&lt;/i>Warning!
+    &lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

@@ -12,7 +12,7 @@
 
 # 示例
 
-replaceExamp
+
 
 # API
 
@@ -66,7 +66,8 @@ replaceExamp
 	</tbody>
 </table>
 
-,
+
+
 ##基本Progress
 <div class="example-content"><div id="p1" class="u-progress"></div></div>
 
@@ -81,7 +82,7 @@ u.on(window, 'load', function() {
 </script>
 
 <div class="examples-code"><pre><code>
-<div id="p1" class="u-progress"></div></code></pre>
+&lt;div id="p1" class="u-progress">&lt;/div></code></pre>
 </div>
 
 
@@ -106,8 +107,8 @@ u.on(window, 'load', function() {
 </script>
 
 <div class="examples-code"><pre><code>
-<div id="p2" class="u-progress u-progress__indeterminate"></div>
-</p></code></pre>
+&lt;div id="p2" class="u-progress u-progress__indeterminate">&lt;/div>
+&lt;/p></code></pre>
 </div>
 
 
@@ -133,7 +134,7 @@ u.on(window, 'load', function() {
 </script>
 
 <div class="examples-code"><pre><code>
-<div id="p3" class="u-progress"></div></code></pre>
+&lt;div id="p3" class="u-progress">&lt;/div></code></pre>
 </div>
 
 

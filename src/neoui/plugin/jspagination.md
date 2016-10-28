@@ -15,7 +15,7 @@
 
 # 示例
 
-replaceExamp
+
 
 # API
 ##js方法与参数
@@ -53,7 +53,8 @@ replaceExamp
 </table>
 ​	
 
-,
+
+
 ##基础分页
 <div class="example-content"><div id='pagination' class='u-pagination'>
 </div></div>
@@ -73,8 +74,8 @@ replaceExamp
 </script>
 
 <div class="examples-code"><pre><code>
-<div id='pagination' class='u-pagination'>
-</div></code></pre>
+&lt;div id='pagination' class='u-pagination'>
+&lt;/div></code></pre>
 </div>
 
 
@@ -109,8 +110,8 @@ replaceExamp
 </script>
 
 <div class="examples-code"><pre><code>
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div></code></pre>
+&lt;div id='paginationGap' class='u-pagination pagination-gap'>
+&lt;/div></code></pre>
 </div>
 
 

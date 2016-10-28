@@ -5,7 +5,7 @@
 
 # 示例
 
-replaceExamp
+
 
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/navbar)

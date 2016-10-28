@@ -2,7 +2,7 @@
 
 用户可以通过此插件进行月份的选择。
 
-replaceExamp
+
 
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/month)

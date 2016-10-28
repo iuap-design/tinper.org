@@ -37,13 +37,14 @@ js会根据`u-clockpicker`来定位dom，然后绑定事件。
 
 # 示例
 
-replaceExamp
 
 
 
 
 
-,
+
+
+
 ##clockpicker
 <div class="example-content"><div class="example">
 	<div class='u-clockpicker'>
@@ -59,11 +60,11 @@ replaceExamp
 </style></div>
 
 <div class="examples-code"><pre><code>
-<div class="example">
-	<div class='u-clockpicker'>
-	    <input class="u-input" type="text">
-	</div>
-</div></code></pre>
+&lt;div class="example">
+	&lt;div class='u-clockpicker'>
+	    &lt;input class="u-input" type="text">
+	&lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>

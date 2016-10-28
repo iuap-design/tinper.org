@@ -80,7 +80,7 @@ http://design.yyuap.com/static/uui/latest/js/u.js
     
 # 示例
 
-replaceExamp
+
 
 # API
 
@@ -2247,7 +2247,8 @@ focus行对应的index
     </tr>
 </table>
 
-,
+
+
 
 <div class="example-content"><div class="grid-body">
 	<div class="grid" id="grid-comp1"></div>
@@ -2313,9 +2314,9 @@ $(document).ready(function () {
 </script>
 
 <div class="examples-code"><pre><code>
-<div class="grid-body">
-	<div class="grid" id="grid-comp1"></div>
-</div></code></pre>
+&lt;div class="grid-body">
+	&lt;div class="grid" id="grid-comp1">&lt;/div>
+&lt;/div></code></pre>
 </div>
 
 <div class="examples-code"><pre><code>
