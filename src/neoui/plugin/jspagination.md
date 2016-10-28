@@ -13,12 +13,8 @@
 
 2.创建一个分页对象，方法：new u.pagination(paramter)
 
-# 示例
-
-replaceExamp
-
 # API
-##js方法与参数
+## js方法与参数
 <table>
   <tbody>
   	  <tr>
@@ -51,5 +47,77 @@ replaceExamp
 	  </tr>
 	</tbody>
 </table>
-​	
+​
+# 示例	
+
+
+
+## 基础分页
+<div class="example-content"><div id='pagination' class='u-pagination'>
+</div></div>
+
+
+
+<script>
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });
+</script>
+
+<div class="examples-code"><pre><code>
+&lt;div id='pagination' class='u-pagination'>
+&lt;/div></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });</code></pre>
+</div>
+
+
+
+## 有间距的分页
+添加样式`pagination-gap`可以增加页码之间的间距
+<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
+</div></div>
+
+
+
+<script>
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
+</script>
+
+<div class="examples-code"><pre><code>
+&lt;div id='paginationGap' class='u-pagination pagination-gap'>
+&lt;/div></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+</code></pre>
+</div>
 

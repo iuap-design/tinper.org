@@ -3,7 +3,7 @@
 checkbox提供了基础复选框、不同色彩复选框、图片复选框、个性复选框
 
 
-replaceExamp
+
 
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/checkbox)
@@ -92,3 +92,54 @@ checkboxObject.toggle();
 [复选框在kero中使用](http://design.yyuap.com/dist/pages/kero/ex_checkbox.html)    
 
 [复选框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+
+
+## 基础checkbox
+在复选框中input元素添加如下属性来实现多种效果
+
+- `checked` 选中
+- `disabled` 不可用
+
+<div class="example-content"><label  class="u-checkbox">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label">Checkbox</span>
+</label></div>
+
+
+
+<div class="examples-code"><pre><code>
+&lt;label  class="u-checkbox">
+    &lt;input type="checkbox" class="u-checkbox-input" checked>
+    &lt;span class="u-checkbox-label">Checkbox&lt;/span>
+&lt;/label></code></pre>
+</div>
+
+
+
+
+
+## 不同颜色的checkbox
+在复选框中label里面添加如下样式来实现不同色彩的复选框
+
+- `u-checkbox-success` 绿色
+- `u-checkbox-info` 蓝色
+- `u-checkbox-warning` 黄色
+- `u-checkbox-danger` 红色
+- `u-checkbox-dark` 灰色
+
+<div class="example-content"><label  class="u-checkbox u-checkbox-success w-xs">
+    <input type="checkbox" class="u-checkbox-input"  checked>
+    <span class="u-checkbox-label">green</span>
+</label></div>
+
+
+
+<div class="examples-code"><pre><code>
+&lt;label  class="u-checkbox u-checkbox-success w-xs">
+    &lt;input type="checkbox" class="u-checkbox-input"  checked>
+    &lt;span class="u-checkbox-label">green&lt;/span>
+&lt;/label></code></pre>
+</div>
+
+
+

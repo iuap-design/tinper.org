@@ -5,7 +5,7 @@ combobox组合框是由一个文本输入控件和一个下拉菜单组成的，
 * `.u-combo` - 单选下拉框
 * `.u-combo .mutil-select` - 多选下拉框
 
-replaceExamp
+
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/combobox)
 
@@ -55,9 +55,112 @@ document.getElementById('domId')['u.Combo'].selectItem(index);
 
 ```
 
+## \# setValue 根据真实值选中某行
+* 类型： `Function`
+* 说明： 查找下拉框数据中与传入的参数相同的真实值，并选中对应的某条数据
+* 参数：
+	* `{String} value`： 要选中行的真实值
+* 用法：
+
+```
+
+document.getElementById('domId')['u.Combo'].setValue(value);
+
+```
+
+## \# setName 根据显示值选中某行
+* 类型： `Function`
+* 说明： 查找下拉框数据中与传入的参数相同的显示值，并选中对应的某条数据
+* 参数：
+	* `{String} name`： 要选中行的显示值
+* 用法：
+
+```
+
+document.getElementById('domId')['u.Combo'].setName(name);
+
+```
+
+
+## \# emptyValue 清空所选内容
+* 类型： `Function`
+* 说明： 清空下拉列表所选内容
+* 用法：
+
+```
+
+document.getElementById('domId')['u.Combo'].emptyValue();
+
+```
+
 相关内容：
 
 [下拉框在kero中使用](http://design.yyuap.com/dist/pages/kero/combobox_ex.html)    
 
 [下拉框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+
+
+
+## 默认单选下拉框
+<div class="example-content"><div class="u-combo" id="combo1">
+    <div class="u-input-group u-has-feedback">
+        <input class="u-form-control" />
+        <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
+    </div>
+</div></div>
+
+
+
+<script>
+u.compMgr.updateComp();
+document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);
+</script>
+
+<div class="examples-code"><pre><code>
+&lt;div class="u-combo" id="combo1">
+    &lt;div class="u-input-group u-has-feedback">
+        &lt;input class="u-form-control" />
+        &lt;span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button">&lt;/span>
+    &lt;/div>
+&lt;/div></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+u.compMgr.updateComp();
+document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);</code></pre>
+</div>
+
+
+
+## 多选下拉框
+添加 `mutil-select`样式 支持多选
+<div class="example-content"><div class="u-combo mutil-select" id="combo3">
+    <div class="u-input-group u-has-feedback">
+        <input class="u-form-control" />
+        <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
+    </div>
+</div></div>
+
+
+
+<script>
+u.compMgr.updateComp();
+document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
+</script>
+
+<div class="examples-code"><pre><code>
+&lt;div class="u-combo mutil-select" id="combo3">
+    &lt;div class="u-input-group u-has-feedback">
+        &lt;input class="u-form-control" />
+        &lt;span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button">&lt;/span>
+    &lt;/div>
+&lt;/div></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+u.compMgr.updateComp();
+document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);</code></pre>
+</div>
 

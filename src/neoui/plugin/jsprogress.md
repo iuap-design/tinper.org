@@ -10,10 +10,6 @@
 
 1.详情见示例
 
-# 示例
-
-replaceExamp
-
 # API
 
 ## JS 方法参数
@@ -65,4 +61,87 @@ replaceExamp
 	  </tr>
 	</tbody>
 </table>
+
+# 示例
+
+
+
+
+## 基本Progress
+<div class="example-content"><div id="p1" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});
+</script>
+
+<div class="examples-code"><pre><code>
+&lt;div id="p1" class="u-progress">&lt;/div></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});</code></pre>
+</div>
+
+
+
+## 不确定Progress
+<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div>
+</p></div>
+
+
+
+<script>
+
+</script>
+
+<div class="examples-code"><pre><code>
+&lt;div id="p2" class="u-progress u-progress__indeterminate">&lt;/div>
+&lt;/p></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+</code></pre>
+</div>
+
+
+
+## 缓冲Progress
+
+有缓冲标识的进度条
+<div class="example-content"><div id="p3" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});
+</script>
+
+<div class="examples-code"><pre><code>
+&lt;div id="p3" class="u-progress">&lt;/div></code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});</code></pre>
+</div>
 

@@ -10,7 +10,7 @@
 
 # 用法
 
-##引入文件
+## 引入文件
 在header中引入u.css
 ```
 <link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
@@ -22,7 +22,7 @@
 
 ```
 
-##代码
+## 代码
 
 定义样式为`u-time`的div父元素，包裹类`u-input`的input
 
@@ -38,9 +38,41 @@ js会根据`u-time`来定位dom，然后绑定事件。
 
 # 示例
 
-replaceExamp
 
 
 
+
+
+
+
+
+
+<div class="example-content"><div class="example">
+	<div class='u-time'>
+	    <input class="u-input" type="text">
+	</div>
+</div></div>
+
+<div class="example-content ex-hide"><style>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+</style></div>
+
+<div class="examples-code"><pre><code>
+&lt;div class="example">
+	&lt;div class='u-time'>
+	    &lt;input class="u-input" type="text">
+	&lt;/div>
+&lt;/div></code></pre>
+</div>
+
+<div class="examples-code"><pre><code>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}</code></pre>
+</div>
 
 

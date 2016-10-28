@@ -37,14 +37,9 @@ u.on(msgBtn,'click', function(){
 
 ```
 
-# 示例
-
-replaceExamp
-
-
 # API
 
-##js参数
+## js参数
 <table>
   <tbody>
   	  <tr>
@@ -71,4 +66,37 @@ replaceExamp
 	</tbody>
 </table>
 
+# 示例
+
+
+
+
+
+点击 Success 弹出提示消息
+<div class="example-content"><button id="msgBtn" class="u-button" >Success</button>
+</div>
+
+
+
+<script>
+var msgBtn = document.body.querySelector("#msgBtn");
+var rightInfo='<i class="uf uf-checkedsymbol margin-r-5"></i>成功信息!!!';
+u.on(msgBtn,'click', function(){ 
+    u.showMessage({msg:rightInfo,position:"center"})
+})
+</script>
+
+<div class="examples-code"><pre><code>
+&lt;button id="msgBtn" class="u-button" >Success&lt;/button>
+</code></pre>
+</div>
+
+
+<div class="examples-code"><pre><code>
+var msgBtn = document.body.querySelector("#msgBtn");
+var rightInfo='<i class="uf uf-checkedsymbol margin-r-5"></i>成功信息!!!';
+u.on(msgBtn,'click', function(){ 
+    u.showMessage({msg:rightInfo,position:"center"})
+})</code></pre>
+</div>
 

@@ -10,7 +10,8 @@ var bs = browserSync.create();
 bs.init({
 	server: envPath,
 	port: 8002,
-	index: '/dist/index.html'
+	index: '/dist/index.html',
+	reloadDelay: 1500
 });
 
 var srcFiles = path.join(envPath,'src/**/*');
@@ -22,5 +23,5 @@ chokidar.watch(srcFiles).on('change', function(event,path){
 			console.log('convert finish,browser start to refresh');
 			bs.reload();
 	});
-	
+
 });

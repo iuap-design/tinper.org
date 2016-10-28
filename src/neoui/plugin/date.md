@@ -3,7 +3,7 @@
 用户可以自定义日期的显示格式，默认返回的日期是年-月-日，也可以返回年-月-日 时:分:秒。
 
 
-replaceExamp
+
 
 
 [试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/datetime)
@@ -124,3 +124,20 @@ dateObject.setFormat('YYYY');
 [日期在kero中使用](http://design.yyuap.com/dist/pages/kero/ex_datetime.html)    
 
 [日期在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+
+
+定义样式为`u-datepicker`的div父元素，包裹样式为`u-input`的input元素。
+<div class="example-content"><div class='u-datepicker'>
+    <input class="u-input" type="text">
+</div></div>
+
+
+
+<div class="examples-code"><pre><code>
+&lt;div class='u-datepicker'>
+    &lt;input class="u-input" type="text">
+&lt;/div></code></pre>
+</div>
+
+
+
