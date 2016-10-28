@@ -16,24 +16,12 @@
 * `.u-button-danger` - 红色按钮
 * `.u-button-warning` - 橙色按钮
 
-<div class="example-content"><button class="u-button ">BUTTON</button>
-<button class="u-button u-button-primary">主色按钮</button>
-<button class="u-button u-button-accent">辅色按钮</button>
-<button class="u-button u-button-success">success</button>
-<button class="u-button u-button-info">info</button>
-<button class="u-button u-button-danger">danger</button>
-<button class="u-button u-button-warning">warning</button></div>
+<div class="example-content"><button class="u-button u-button-primary">主色按钮</button></div>
 
 
 
 <div class="examples-code"><pre><code>
-&lt;button class="u-button ">BUTTON&lt;/button>
-&lt;button class="u-button u-button-primary">主色按钮&lt;/button>
-&lt;button class="u-button u-button-accent">辅色按钮&lt;/button>
-&lt;button class="u-button u-button-success">success&lt;/button>
-&lt;button class="u-button u-button-info">info&lt;/button>
-&lt;button class="u-button u-button-danger">danger&lt;/button>
-&lt;button class="u-button u-button-warning">warning&lt;/button></code></pre>
+&lt;button class="u-button u-button-primary">主色按钮&lt;/button></code></pre>
 </div>
 
 
