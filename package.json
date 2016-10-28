@@ -8,7 +8,8 @@
     "cate": "node bin/category",
     "reload": "node bin/reload",
     "mark": "node bin/index",
-    "deploy": "sh bin/fetch.sh && npm run cate && npm run mark"
+    "docs": "node bin/mdconcat",
+    "deploy": "sh bin/fetch.sh && npm run cate && npm run docs && npm run mark"
   },
   "repository": {
     "type": "git",
