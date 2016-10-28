@@ -50,14 +50,9 @@ u.on(msgBtn2,'click', function(){
 
 ```
 
-# 示例
-
-
-
-
 # API
 
-##js方法与参数
+## js方法与参数
 <table>
   <tbody>
   	  <tr>
@@ -90,10 +85,11 @@ u.on(msgBtn2,'click', function(){
 	</tbody>
 </table>
 
+# 示例
 
 
 
-##消息摸态框
+## 消息摸态框
 
 通过`confirmDialog`方法调出模态框
 当点击取消或者保存，可在js中的方法里进行业务的回调 
@@ -147,7 +143,7 @@ u.on(msgBtn2,'click', function(){
 
 
 
-##自定义摸态框
+## 自定义摸态框
 
 通过`dialog`方法调出模态框
 用户自定在html文件自定义所要展现的内容
@@ -228,7 +224,7 @@ u.on(cancelButton,'click', function(){
 
 
 
-##提示摸态框
+## 提示摸态框
 
 只有一个确认按钮
 通过`messageDialog`方法调出模态框

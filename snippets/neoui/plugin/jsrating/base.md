@@ -44,14 +44,8 @@
 
 ```
 
-
-
-
-# 示例
-
-
-
-
 # API
 
 详情参见与 http://testweb3.iecworld.com/jsdemo/js/lq_js_point/
+
+# 示例

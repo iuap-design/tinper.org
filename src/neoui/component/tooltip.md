@@ -9,7 +9,7 @@
 
 
 
-##四个方向tooltip 
+## 四个方向tooltip 
 
 <div class="example-content"><div id='example2'>
     <div class="tooltip top active" role="tooltip" >
@@ -86,7 +86,7 @@
 
 
 
-##多种颜色tooltip
+## 多种颜色tooltip
 <div class="example-content"><div id='example3'>
     <div class="tooltip tooltip-primary top active" role="tooltip">
         <div class="tooltip-arrow"></div>

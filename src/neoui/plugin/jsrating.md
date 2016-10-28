@@ -44,19 +44,13 @@
 
 ```
 
-
-
-
-# 示例
-
-
-
-
 # API
 
 详情参见与 http://testweb3.iecworld.com/jsdemo/js/lq_js_point/
 
-##基础Rating
+# 示例
+
+## 基础Rating
 
 常用于评级评分
 <div class="example-content"> <div class="u-rating" data-score="3" data-plugin="rating"></div></div>

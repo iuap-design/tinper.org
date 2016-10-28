@@ -1,10 +1,10 @@
-#图标字体
+# 图标字体
 
 图标字体不用依赖任何JavaScript，只要CSS支持，无论颜色、大小或者其它任何效果，都可以轻易展现。
 
-#如何使用
+# 如何使用
 
-##引入图标字体文件
+## 引入图标字体文件
 
 1、通过CDN引入
 
@@ -20,7 +20,7 @@
 
 
 
-##显示某个图标
+## 显示某个图标
 
 使用方法
 
@@ -33,7 +33,7 @@
 <i class="uf uf-androidcharactersymbol"></i>
 
 是不是很简单，快上手试试吧！
-##具体的图标
+## 具体的图标
 <div class="content">
 <style type="text/css" src='/dist/static/css/demo.css'></style>
 </div>

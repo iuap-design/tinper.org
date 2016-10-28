@@ -14,7 +14,7 @@
 
 
 
-##基础分页
+## 基础分页
 <div class="example-content"><div id='pagination' class='u-pagination'>
 </div></div>
 
@@ -52,7 +52,7 @@
 
 
 
-##无边框的分页
+## 无边框的分页
 在含有`u-pagination`的div元素中添加`u-pagination-no-border`样式即可
 <div class="example-content"><div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
 </div></div>
@@ -83,7 +83,7 @@
 
 
 
-##有间距的分页
+## 有间距的分页
 添加样式`pagination-gap`可以增加页码之间的间距
 <div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
 </div></div>
@@ -116,7 +116,7 @@
 
 
 
-##不同尺寸的按钮
+## 不同尺寸的按钮
 添加`pagination-lg`、`pagination-sm`样式可以使分页变大、变小
 <div class="example-content"><p>大尺寸</p>
 <div id='paginationLg' class='u-pagination pagination-lg'>

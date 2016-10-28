@@ -8,22 +8,18 @@
 
 # 用法
 
-##创建tooltip对象
+## 创建tooltip对象
 ```
 var toptip=new u.Tooltip(toptoolEle,{
 title:'默认向上显示'
 });
 
 ```
-##参数设置
+## 参数设置
 创建对象时，添加显示内容title、显示位置placement、显示颜色级别colorLevel
 
-# 示例
-
-
-
 # API
-###JS 方法参数
+### JS 方法参数
 <table>
   <tbody>
   	  <tr>
@@ -43,8 +39,12 @@ title:'默认向上显示'
 	</tbody>
 </table>
 
+# 示例
 
-##基础tooltip
+
+
+
+## 基础tooltip
 <div class="example-content"><div id='example'>
 	<label id="top" class="ws">上提示</label>
 	<label id="down" class="ws">下提示</label>

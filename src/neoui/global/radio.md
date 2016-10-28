@@ -132,7 +132,7 @@ radioObject.enable();
 
 
 
-##不同色彩radio
+## 不同色彩radio
 
 * `u-radio-success` - 绿色按钮
 * `u-radio-info` - 蓝色按钮

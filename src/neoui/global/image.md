@@ -6,17 +6,8 @@
 
 
 
-<!--### 示例1
 
-示例1说明
-
-### 示例2
-
-示例2说-->
-
-
-
-##多形状img
+## 多形状img
 
 在`img`标签上添加`img-rounded`可以显示成圆角图片，添加`img-circle`可以显示成圆形图片
 <div class="example-content">
@@ -43,7 +34,7 @@
 
 
 
-##带有边框的img
+## 带有边框的img
 
 在`img`标签上添加样式`img-bordered`即可实现一个灰色边框的图片。在上面的基础添加`img-bordered-orange`可以显示警告黄色边框，添加`img-bordered-green`实现成功绿色边框
 <div class="example-content"><img class="img-rounded img-bordered img-bordered-primary" width="150" height="150" src="../../static/img/img1.png" alt="...">

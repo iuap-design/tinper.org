@@ -18,7 +18,7 @@
 
 
 
-##左边menu
+## 左边menu
 <div class="example-content"><!-- Left aligned menu below button -->
 <div class="example">
 	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
@@ -64,7 +64,7 @@
 
 
 
-##右边menu
+## 右边menu
 <div class="example-content"><!-- right aligned menu below button -->
 <div class="example">
 	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">

@@ -4,17 +4,9 @@
 
 
 
-<!--### 示例1
-
-示例1说明
-
-### 示例2
-
-示例2说-->
 
 
-
-##只有body的panel
+## 只有body的panel
 <div class="example-content"><div class="panel-example">
       <!-- Example Heading With Desc -->
       <div class="u-panel">
@@ -78,7 +70,7 @@
 
 
 
-##head和foot具有的panel
+## head和foot具有的panel
 <div class="example-content"><div class="panel-example">
     <!-- Example Panel With All -->
     <div class="u-panel u-panel-bordered">
@@ -140,7 +132,7 @@
 
 
 
-##只有footer的panel
+## 只有footer的panel
 <div class="example-content"><div class="panel-example">
       <!-- Example Panel With Footer -->
     <div class="u-panel u-panel-bordered">
@@ -198,7 +190,7 @@
 
 
 
-##只有head的panel
+## 只有head的panel
 
 <div class="example-content"><div class="panel-example">
   <!-- Example Panel With Heading -->

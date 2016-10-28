@@ -16,20 +16,16 @@
 ```
 2.js配置数据并绑定事件，详情见示例
 
+# API
+
+## js参数
+data : 实际数据，自行配置数据结构
+
 # 示例
 
 
 
-
-# API
-
-##js参数
-data : 实际数据，自行配置数据结构
-
-
-
-
-##基础Tree
+## 基础Tree
 
 用于多层目录的嵌套结构的数据。
 <div class="example-content"><!-- <div id="demoLeft"> -->

@@ -13,12 +13,8 @@
 
 2.创建一个分页对象，方法：new u.pagination(paramter)
 
-# 示例
-
-
-
 # API
-##js方法与参数
+## js方法与参数
 <table>
   <tbody>
   	  <tr>
@@ -51,5 +47,6 @@
 	  </tr>
 	</tbody>
 </table>
-​	
+​
+# 示例	
 

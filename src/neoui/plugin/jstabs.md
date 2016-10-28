@@ -22,7 +22,7 @@
 
 
 
-##背景tabs
+## 背景tabs
 
 切换 背景色跟随作为`active`状态
 <div class="example-content"><div class="u-widget-body">
@@ -132,7 +132,7 @@
 
 
 
-##线性tabs
+## 线性tabs
 
 切换 线性跟随作为`active`状态
 <div class="example-content"><div class="u-tabs">

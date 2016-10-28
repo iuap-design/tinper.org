@@ -4,16 +4,8 @@
 
 
 
-<!--### 示例1
 
-示例1说明
-
-### 示例2
-
-示例2说-->
-
-
-##基础label
+## 基础label
 
 不同背景具有相应的样式名
 例如 u-tab-default 默认灰色
@@ -41,7 +33,7 @@
 
 
 
-##圆形label
+## 圆形label
 
 
 `span` 标签上添加样式 `u-tag-round`
@@ -69,7 +61,7 @@
 
 
 
-##描边label
+## 描边label
 
 `span` 标签上添加样式 `u-tag-outline`
 <div class="example-content"><span class="u-tag u-tag-default u-tag-outline">Default</span>
@@ -96,7 +88,7 @@
 
 
 
-##不同尺寸的label
+## 不同尺寸的label
 
 span标签 添加 `.u-tag-lg` 或 `.u-tag-sm`类，来改变标签大小.
 <div class="example-content"><span class="u-tag u-tag-lg u-tag-primary">大标签</span>

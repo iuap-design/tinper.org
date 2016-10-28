@@ -68,12 +68,14 @@
 
 如果想按钮充满，添加样式 `.u-button-block`。
 
-<div class="example-content"><button class="u-button u-button-block u-button-primary">块级按钮</button>   </div>
+<div class="example-content"><button class="u-button u-button-block u-button-primary">块级按钮</button>   
+<button class="u-button u-button-block u-button-accent">块级按钮</button>   </div>
 
 
 
 <div class="examples-code"><pre><code>
-&lt;button class="u-button u-button-block u-button-primary">块级按钮&lt;/button>   </code></pre>
+&lt;button class="u-button u-button-block u-button-primary">块级按钮&lt;/button>   
+&lt;button class="u-button u-button-block u-button-accent">块级按钮&lt;/button>   </code></pre>
 </div>
 
 
@@ -88,12 +90,24 @@
 * `.u-button-round` + `.u-button-pill-left` - 左半圆按钮
 * `.u-button-round` + `.u-button-pill-right` - 右半圆按钮
 
-<div class="example-content"><button class="u-button u-button-primary u-button-round">椭圆按钮</button></div>
+<div class="example-content"><button class="u-button u-button-primary u-button-round">椭圆按钮</button>
+<button class="u-button u-button-primary u-button-squared">直角按钮</button>
+<button class="u-button u-button-primary u-button-floating">
+    <i class="uf uf-plusblacksymbol"></i>
+</button>
+<button class="u-button u-button-primary u-button-round u-button-pill-left">左半圆按钮</button>
+<button class="u-button u-button-primary u-button-round u-button-pill-right">右半圆按钮</button></div>
 
 
 
 <div class="examples-code"><pre><code>
-&lt;button class="u-button u-button-primary u-button-round">椭圆按钮&lt;/button></code></pre>
+&lt;button class="u-button u-button-primary u-button-round">椭圆按钮&lt;/button>
+&lt;button class="u-button u-button-primary u-button-squared">直角按钮&lt;/button>
+&lt;button class="u-button u-button-primary u-button-floating">
+    &lt;i class="uf uf-plusblacksymbol">&lt;/i>
+&lt;/button>
+&lt;button class="u-button u-button-primary u-button-round u-button-pill-left">左半圆按钮&lt;/button>
+&lt;button class="u-button u-button-primary u-button-round u-button-pill-right">右半圆按钮&lt;/button></code></pre>
 </div>
 
 

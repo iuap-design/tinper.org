@@ -37,14 +37,9 @@ u.on(msgBtn,'click', function(){
 
 ```
 
-# 示例
-
-
-
-
 # API
 
-##js参数
+## js参数
 <table>
   <tbody>
   	  <tr>
@@ -70,6 +65,9 @@ u.on(msgBtn,'click', function(){
 	  </tr>
 	</tbody>
 </table>
+
+# 示例
+
 
 
 

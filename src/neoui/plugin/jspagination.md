@@ -13,12 +13,8 @@
 
 2.创建一个分页对象，方法：new u.pagination(paramter)
 
-# 示例
-
-
-
 # API
-##js方法与参数
+## js方法与参数
 <table>
   <tbody>
   	  <tr>
@@ -51,11 +47,12 @@
 	  </tr>
 	</tbody>
 </table>
-​	
+​
+# 示例	
 
 
 
-##基础分页
+## 基础分页
 <div class="example-content"><div id='pagination' class='u-pagination'>
 </div></div>
 
@@ -93,7 +90,7 @@
 
 
 
-##有间距的分页
+## 有间距的分页
 添加样式`pagination-gap`可以增加页码之间的间距
 <div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
 </div></div>

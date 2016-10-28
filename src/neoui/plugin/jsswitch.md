@@ -103,7 +103,7 @@ switchObject.isChecked();
 
 [开关在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
 
-##基础开关
+## 基础开关
 
 `<input>`元素的属性`id`值与`<label>`元素的属性`for`值需保持一致
 
@@ -111,53 +111,25 @@ switchObject.isChecked();
 
 - `checked` 选中
 - `disabled` 不可用
-<div class="example-content">
-<label class="u-switch u-switch-info" for="switch-info-unchecked">
+<div class="example-content"><label class="u-switch u-switch-info" for="switch-info-unchecked">
     <input type="checkbox" id="switch-info-unchecked" class="u-switch-input">
     <span class="u-switch-label"></span>
-</label>
-<label class="u-switch u-switch-info" for="switch-info-checked">
-    <input type="checkbox" id="switch-info-checked" class="u-switch-input" checked>
-    <span class="u-switch-label"></span>
-</label>
-<label class="u-switch u-switch-info" for="switch-info-disable">
-    <input type="checkbox" id="switch-info-disable" class="u-switch-input" disabled>
-    <span class="u-switch-label"></span>
-</label>
-<label class="u-switch u-switch-info" for="switch-info-checkdisalbed">
-    <input type="checkbox" id="switch-info-checkdisalbed" class="u-switch-input" checked disabled>
-    <span class="u-switch-label"></span>
-</label>
-</div>
+</label></div>
 
 
 
 <div class="examples-code"><pre><code>
-
 &lt;label class="u-switch u-switch-info" for="switch-info-unchecked">
     &lt;input type="checkbox" id="switch-info-unchecked" class="u-switch-input">
     &lt;span class="u-switch-label">&lt;/span>
-&lt;/label>
-&lt;label class="u-switch u-switch-info" for="switch-info-checked">
-    &lt;input type="checkbox" id="switch-info-checked" class="u-switch-input" checked>
-    &lt;span class="u-switch-label">&lt;/span>
-&lt;/label>
-&lt;label class="u-switch u-switch-info" for="switch-info-disable">
-    &lt;input type="checkbox" id="switch-info-disable" class="u-switch-input" disabled>
-    &lt;span class="u-switch-label">&lt;/span>
-&lt;/label>
-&lt;label class="u-switch u-switch-info" for="switch-info-checkdisalbed">
-    &lt;input type="checkbox" id="switch-info-checkdisalbed" class="u-switch-input" checked disabled>
-    &lt;span class="u-switch-label">&lt;/span>
-&lt;/label>
-</code></pre>
+&lt;/label></code></pre>
 </div>
 
 
 
 
 
-##多彩开关
+## 多彩开关
 
 * `.u-switch-primary` - 主色开关
 * `.u-switch-success` - 绿色开关
@@ -227,23 +199,43 @@ switchObject.isChecked();
 
 
 
-##多种尺寸开关
+## 多种尺寸开关
 
 * `.u-switch-lg` - 大尺寸开关
 * `.u-switch-default` - 默认尺寸开关
 * `.u-switch-sm` - 小尺寸开关
-<div class="example-content"><label class="u-switch u-switch-primary u-switch-lg" for="switch-primary-lg">
+<div class="example-content">
+<label class="u-switch u-switch-primary u-switch-lg margin-bottom-20" for="switch-primary-lg">
     <input type="checkbox" id="switch-primary-lg" class="u-switch-input" checked="true">
     <span class="u-switch-label"></span>
-</label></div>
+</label>
+<label class="u-switch u-switch-primary u-switch-default margin-bottom-10" for="switch-primary-default">
+    <input type="checkbox" id="switch-primary-default" class="u-switch-input" checked="true">
+    <span class="u-switch-label"></span>
+</label>
+<label class="u-switch u-switch-primary u-switch-sm" for="switch-primary-sm">
+    <input type="checkbox" id="switch-primary-sm" class="u-switch-input" checked="true">
+    <span class="u-switch-label"></span>
+</label>
+</div>
 
 
 
 <div class="examples-code"><pre><code>
-&lt;label class="u-switch u-switch-primary u-switch-lg" for="switch-primary-lg">
+
+&lt;label class="u-switch u-switch-primary u-switch-lg margin-bottom-20" for="switch-primary-lg">
     &lt;input type="checkbox" id="switch-primary-lg" class="u-switch-input" checked="true">
     &lt;span class="u-switch-label">&lt;/span>
-&lt;/label></code></pre>
+&lt;/label>
+&lt;label class="u-switch u-switch-primary u-switch-default margin-bottom-10" for="switch-primary-default">
+    &lt;input type="checkbox" id="switch-primary-default" class="u-switch-input" checked="true">
+    &lt;span class="u-switch-label">&lt;/span>
+&lt;/label>
+&lt;label class="u-switch u-switch-primary u-switch-sm" for="switch-primary-sm">
+    &lt;input type="checkbox" id="switch-primary-sm" class="u-switch-input" checked="true">
+    &lt;span class="u-switch-label">&lt;/span>
+&lt;/label>
+</code></pre>
 </div>
 
 

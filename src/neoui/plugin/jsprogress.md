@@ -10,10 +10,6 @@
 
 1.详情见示例
 
-# 示例
-
-
-
 # API
 
 ## JS 方法参数
@@ -66,9 +62,12 @@
 	</tbody>
 </table>
 
+# 示例
 
 
-##基本Progress
+
+
+## 基本Progress
 <div class="example-content"><div id="p1" class="u-progress"></div></div>
 
 
@@ -96,7 +95,7 @@ u.on(window, 'load', function() {
 
 
 
-##不确定Progress
+## 不确定Progress
 <div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div>
 </p></div>
 
@@ -118,7 +117,7 @@ u.on(window, 'load', function() {
 
 
 
-##缓冲Progress
+## 缓冲Progress
 
 有缓冲标识的进度条
 <div class="example-content"><div id="p3" class="u-progress"></div></div>

@@ -10,7 +10,7 @@
 
 # 用法
 
-##引入文件
+## 引入文件
 在header中引入u.css
 ```
 <link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
@@ -22,7 +22,7 @@
 
 ```
 
-##代码
+## 代码
 定义样式为`u-clockpicker`的div父元素，包裹类`u-input`的input
 
 ```

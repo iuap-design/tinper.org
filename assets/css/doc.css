@@ -129,6 +129,16 @@
     font-size:14px;
 }
 
+.example-content{
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.example-content.ex-hide{
+    display: none;
+}
 
 
 

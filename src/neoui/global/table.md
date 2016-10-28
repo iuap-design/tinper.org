@@ -10,16 +10,8 @@
 
 
 
-<!--### 示例1
 
-示例1说明
-
-### 示例2
-
-示例2说-->
-
-
-##基本表格
+## 基本表格
 
 基本的表格没有外边框、悬浮特效、只是一个最基本的表格,需要开发者在`table`标签上添加样式`u-table-base`
 <div class="example-content"><table class="u-table-base">
@@ -173,7 +165,7 @@
 
 
 
-##边框表格
+## 边框表格
 含有外边框的表格，需要在`table`标签上添加样式`u-table-base u-table-bordered`
 <div class="example-content"><table class="u-table-base u-table-bordered">
     <thead>
@@ -482,7 +474,7 @@
 
 
 
-##常用table
+## 常用table
 常用表格的表头含有背景色，表格整体具有边框，悬浮到tr上会有蓝色特效。开发者需要在`table`标签上添加样式`u-table`。
 <div class="example-content"><table class="u-table">
     <thead>
@@ -553,7 +545,7 @@
 
 
 
-##斑马线表格
+## 斑马线表格
 
 斑马线表格的奇数行和偶数行的显示效果不同，需要开发者在`table`标签上添加样式`u-table-base u-table-striped`
 <div class="example-content"><div class="example table-responsive">
