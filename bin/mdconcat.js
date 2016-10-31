@@ -72,8 +72,35 @@ async.auto({
                 fs.readdir(dir, function(err,kits){
                     kits = ut.rmdot(kits);
 
+                    var copymdAry = kits.filter(function(kit){
+                        return /\.md$/.test(kit)
+                    })
+                    // console.log(copymdAry)
+                    // ignore Summary && README
+                    var newkits = kits.filter(function(kit){
+                        return !(/\.md$/.test(kit))
+                    })
+
                     /**
-                     * copy SUMMARY & README
+                     * 判断`.md`是否与文件件重名,报错
+                     */
+                     var repeater = copymdAry.filter(function(ele){
+                         var basename = ele.replace(/\.md$/,'');
+                         return (newkits.indexOf(basename) === -1) ? null : basename;
+                     })
+
+                     function RepeatError(ary){
+                         var repeatMenu = path.basename(dir);
+                         console.log('%s目录下\n%s\n文件重复,请手动处理\n',repeatMenu,ary)
+                     }
+                     if(repeater.length != 0){
+                         throw new RepeatError(repeater);
+                     }
+
+
+
+                    /**
+                     * copy 根目录下md文档（包括SUMMARY & README）
                      * 使用到全局变量: sumFile,readFile,snipConfig,srcFile
                      */
                     var markCopy = function(dir, kits, file){
@@ -82,39 +109,35 @@ async.auto({
                             var copySnippet = path.join(dir, file);
                             var copySrc = copySnippet.replace(snipConfig,srcFile);
                             var data = fs.readFileSync(copySnippet,'utf-8');
+                            fse.ensureFileSync(copySrc);
                             fs.writeFileSync(copySrc,data,'utf-8');
                             // console.log("copySnippet:",copySnippet,"...copySrc",copySrc)
                         }
                     }
-                    var copymdAry = [sumFile, readFile];
                     copymdAry.forEach(function(file){
                         markCopy(DIR,kits,file);
                     })
 
-                    // ignore Summary && README
-                    kits = kits.filter(function(kit){
-                        return kit != sumFile && kit != readFile;
-                    })
-                    cb(null, kits);
+                    cb(null, newkits);
                     // kits value = [ breadcrumb','buttongroup','dropdown','tree' ...]
 
                 })
             },
             // 读取单一组件内容
             readkit: ['kits',function(ele,cb){
-                // ele为上一级返回的对象
+                // ele为上一级返回的对象,key值为上一fun函数的函数名
                 // {kits:[ breadcrumb','buttongroup','dropdown','tree' ...]}
                 // 需要执行ele.kits
                 var kits = ele.kits;
                 var snipBase = ymlConfig.snip_base
                 var snipDemo = ymlConfig.snip_demo
-
               // kit: 组件文件夹,如 button | navbar | ...
               kits.forEach(function(kit, index){
                 // 最后的回调使用到了此kit变量
                 var KIT = kit;
 
                 var kitpath = path.resolve(dir, kit)
+
                 fs.readdir(kitpath, function(err,kitfiles){
                   // kitfiles:单一组件合集，包括base.md及文件夹demo
                   var kitfiles = ut.rmdot(kitfiles);
@@ -228,6 +251,7 @@ async.auto({
                   })
 
                 })
+
               })
 
             }]
