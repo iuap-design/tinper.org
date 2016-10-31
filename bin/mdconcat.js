@@ -13,6 +13,7 @@ var ymlConfig = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
 var snipConfig = ymlConfig.snip_dir;
 var sumFile = ymlConfig.snip_sum;
 var srcFile = ymlConfig.source;
+var readFile = ymlConfig.snip_index;
 var snipPath = path.join(envPath,snipConfig);
 // ...tinper.org/snippets
 
@@ -71,23 +72,31 @@ async.auto({
                 fs.readdir(dir, function(err,kits){
                     kits = ut.rmdot(kits);
 
-                    // ignore Summary
-                    // copy summary to src menu
-                    var sumindex = kits.indexOf(sumFile);
-                    if(sumindex != -1){
-                        kits.splice(sumindex, 1);
-                        var sumSnippet = path.join(DIR, sumFile)
-                        var sumSrc = sumSnippet.replace(snipConfig,srcFile)
-                        fs.readFile(sumSnippet,'utf-8', function(err,data){
-                            fse.ensureFile(sumSrc, function(){
-                                fs.writeFile(sumSrc,data,'utf-8')
-                            })
-                            cb(null,kits)
-                            // kits value = [ breadcrumb','buttongroup','dropdown','tree' ...]
-                        })
+                    /**
+                     * copy SUMMARY & README
+                     * 使用到全局变量: sumFile,readFile,snipConfig,srcFile
+                     */
+                    var markCopy = function(dir, kits, file){
+                        var fillindex = kits.indexOf(file);
+                        if(fillindex != -1){
+                            var copySnippet = path.join(dir, file);
+                            var copySrc = copySnippet.replace(snipConfig,srcFile);
+                            var data = fs.readFileSync(copySnippet,'utf-8');
+                            fs.writeFileSync(copySrc,data,'utf-8');
+                            // console.log("copySnippet:",copySnippet,"...copySrc",copySrc)
+                        }
                     }
+                    var copymdAry = [sumFile, readFile];
+                    copymdAry.forEach(function(file){
+                        markCopy(DIR,kits,file);
+                    })
 
-
+                    // ignore Summary && README
+                    kits = kits.filter(function(kit){
+                        return kit != sumFile && kit != readFile;
+                    })
+                    cb(null, kits);
+                    // kits value = [ breadcrumb','buttongroup','dropdown','tree' ...]
 
                 })
             },
