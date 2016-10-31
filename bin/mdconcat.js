@@ -56,10 +56,13 @@ async.auto({
    * docPath:获取单一组件（即文件夹内容），进行处理
    * 忽略SUMMARY.md
    */
+  // `navPath` finished to exec `docPath` func.
   docPath: ['navPath', function(cb){
       for(key in navObj){
         // dir：/Users/AYA/Desktop/work/tinper.org/snippets/neoui/component
+        // 最后的回调使用到了此dir
         navObj[key].forEach(function(dir, index){
+          var DIR = dir;
           async.auto({
             //获取组件列表
             kits: function(cb){
@@ -70,18 +73,25 @@ async.auto({
                 var sumfile = ymlConfig.snip_sum;
                 var sumindex = kits.indexOf(sumfile);
                 kits.splice(sumindex, 1)
+                // kits value = [ breadcrumb','buttongroup','dropdown','tree' ...]
 
                 cb(null,kits)
               })
             },
             // 读取单一组件内容
             readkit: ['kits',function(ele,cb){
+                // ele为上一级返回的对象
+                // {kits:[ breadcrumb','buttongroup','dropdown','tree' ...]}
+                // 需要执行ele.kits
                 var kits = ele.kits;
                 var snipBase = ymlConfig.snip_base
                 var snipDemo = ymlConfig.snip_demo
 
               // kit: 组件文件夹,如 button | navbar | ...
               kits.forEach(function(kit, index){
+                // 最后的回调使用到了此kit变量
+                var KIT = kit;
+
                 var kitpath = path.resolve(dir, kit)
                 fs.readdir(kitpath, function(err,kitfiles){
                   // kitfiles:单一组件合集，包括base.md及文件夹demo
@@ -91,7 +101,6 @@ async.auto({
                       var kpath;
                       var baseMd = null;
 
-
                       if(kfile === snipBase){
                           // kpath: base.md路径,读取基本内容
                           kpath = path.join(kitpath, kfile)
@@ -100,11 +109,14 @@ async.auto({
                               wholeback(null, baseMd);
                           })
                       } else if(kfile === snipDemo){
+                          // kpath: 单一demo路径.
+                          // 进行读取排序，合并
                           kpath = path.join(kitpath, kfile)
 
                           fs.readdir(kpath, function(err, files){
                               var files = ut.rmdot(files).sort();
 
+                              // mapSeries顺序执行以上 sort结果
                               async.mapSeries(files, function(exfile, callback) {
                                   var exPath = path.join(kpath, exfile);
 
@@ -123,6 +135,7 @@ async.auto({
                                       var codeFun = function(data){
                                           return '<div class="examples-code"><pre><code>\r\n' + data + '</code></pre>\r\n</div>\r\n';
                                       }
+                                      // 转义pre > code 下的html标签
                                       var codeHtmlFun = function(data){
                                           return '<div class="examples-code"><pre><code>\r\n' + data.replace(/\</g,'&lt;') + '</code></pre>\r\n</div>\r\n';
                                       }
@@ -168,6 +181,7 @@ async.auto({
                                   //end 示例文件夹遍历
 
                               }, function(err,results) {
+                                  // 返回的数据以数组形式返回需要合并
                                   var data = results.join('\r\n');
                                   wholeback(null,data);
                               });
@@ -176,12 +190,16 @@ async.auto({
 
                       }
                   },function(err, results){
+                      // 返回的数据以数组形式返回需要合并
                       var data = results.join('\r\n');
                       var srcFile = ymlConfig.source;
-                      var srcMdir = dir.replace(snipConfig, srcFile)
-                      //   console.log("srcMdir:",srcMdir,"\nkit:",kit);
-                      var outdir = path.join(srcMdir,`${kit}.md`);
+
+                      // 调用 `DIR` & `KIT`
+                      var srcMdir = DIR.replace(snipConfig, srcFile)
+                      // console.log("srcMdir:",srcMdir,"\nkit:",kit);
+                      var outdir = path.join(srcMdir,`${KIT}.md`);
                       var results = results.join('\r\n');
+
                       fse.ensureFile(outdir,function(){
                           fs.writeFile(outdir,results,'utf-8')
                       });
