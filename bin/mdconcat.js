@@ -11,6 +11,8 @@ var envPath = process.cwd();
 var ymlPath = path.join(envPath,'_config.yml');
 var ymlConfig = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
 var snipConfig = ymlConfig.snip_dir;
+var sumFile = ymlConfig.snip_sum;
+var srcFile = ymlConfig.source;
 var snipPath = path.join(envPath,snipConfig);
 // ...tinper.org/snippets
 
@@ -66,17 +68,28 @@ async.auto({
           async.auto({
             //获取组件列表
             kits: function(cb){
-              fs.readdir(dir, function(err,kits){
-                kits = ut.rmdot(kits);
+                fs.readdir(dir, function(err,kits){
+                    kits = ut.rmdot(kits);
 
-                // ignore Summary
-                var sumfile = ymlConfig.snip_sum;
-                var sumindex = kits.indexOf(sumfile);
-                kits.splice(sumindex, 1)
-                // kits value = [ breadcrumb','buttongroup','dropdown','tree' ...]
+                    // ignore Summary
+                    // copy summary to src menu
+                    var sumindex = kits.indexOf(sumFile);
+                    if(sumindex != -1){
+                        kits.splice(sumindex, 1);
+                        var sumSnippet = path.join(DIR, sumFile)
+                        var sumSrc = sumSnippet.replace(snipConfig,srcFile)
+                        fs.readFile(sumSnippet,'utf-8', function(err,data){
+                            fse.ensureFile(sumSrc, function(){
+                                fs.writeFile(sumSrc,data,'utf-8')
+                            })
+                            cb(null,kits)
+                            // kits value = [ breadcrumb','buttongroup','dropdown','tree' ...]
+                        })
+                    }
 
-                cb(null,kits)
-              })
+
+
+                })
             },
             // 读取单一组件内容
             readkit: ['kits',function(ele,cb){
@@ -192,7 +205,6 @@ async.auto({
                   },function(err, results){
                       // 返回的数据以数组形式返回需要合并
                       var data = results.join('\r\n');
-                      var srcFile = ymlConfig.source;
 
                       // 调用 `DIR` & `KIT`
                       var srcMdir = DIR.replace(snipConfig, srcFile)

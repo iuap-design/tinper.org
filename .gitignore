@@ -140,5 +140,4 @@ src/docs/
 
 # src下生成的目录
 src/neoui/**/*.md
-!src/neoui/**/SUMMARY.md
 !src/neoui/**/README.md
