@@ -6,6 +6,7 @@ var path = require('path');
 var gulp = require('gulp');
 var marked = require('marked');
 var yaml = require('js-yaml');
+var ut = require('./utool.js')
 
 /**
  * 模板引擎设置项：
@@ -23,11 +24,14 @@ var envPath = process.cwd();
 console.log(envPath);
 var ymlPath = path.join(envPath,'_config.yml');
 var ymlConfig = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
+var MDLAYOUT = ymlConfig.md_layout;
 
 var srcPath = path.join(envPath,'src');
 var mdFun = function(srcPath,callback) {
 	// console.log('srcPath--'+srcPath);
 	fs.readdir(srcPath, function(err, sub){
+		var sub = ut.rmdot(sub);
+
 		sub.forEach(function(subNum, index){
 			var subPath = path.join(srcPath,subNum);
 			var isDir = fs.statSync(subPath).isDirectory();
@@ -39,7 +43,6 @@ var mdFun = function(srcPath,callback) {
 				var fullName = path.basename(subPath);
 				var newPath;
 				if(/\.md$/.test(subPath)){
-
 					// md文档进行mark转html,再进行渲染
 					newPath = subPath.replace('src','dist').replace(/\.md$/,'.html');
 					markedFun(subPath,newPath,fullName);
@@ -47,7 +50,7 @@ var mdFun = function(srcPath,callback) {
 				} else if(/\.html$/.test(subPath)){
 					// html文件copy到dist目录执行渲染
 					copyFun(subPath,renderFun);
-				} else if( fullName != '.DS_Store') {
+				} else {
 					// 其他文件直接copy
 					copyFun(subPath);
 				}
@@ -71,18 +74,29 @@ var markedFun = function(oldPath,newPath,fullName) {
 	var oldCont = fs.readFileSync(oldPath,'utf-8');
 	var markedCont = marked(oldCont);
 
-	// 待优化 - 遍历layout文件夹
-	// layout default content
-	var baseCont = fs.readFileSync(path.join(envPath,'layout/menu.html'),'utf-8');
+	// 获取md所属目录
+	var splitPath = oldPath.split(path.sep)
+	var catIndex = splitPath.length - 3;
+	var cataMenu = splitPath[catIndex];
 
+	// 读取layout,后续优化为缓存,或本级处理单一目录
+	var baseCont;
+	if(MDLAYOUT[cataMenu]){
+		baseCont = fs.readFileSync(path.join(envPath, 'layout', MDLAYOUT[cataMenu]),'utf-8');
+	} else {
+		baseCont = fs.readFileSync(path.join(envPath, 'layout', MDLAYOUT.default), 'utf-8');
+	}
+
+	// 填充layout
 	var markedHtml;
 	if(fullName !== 'SUMMARY.md'){
 		markedHtml = baseCont.replace('<%Content%>',markedCont);
 	} else {
 		markedHtml = markedCont.replace(/\.md/g,'.html');
 	}
-
 	// console.log(markedHtml);
+
+	// 输出待渲染html文件
 	fse.ensureFileSync(newPath);
 	fs.writeFile(newPath, markedHtml,function(err){
 		renderFun(newPath);

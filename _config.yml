@@ -18,10 +18,10 @@ target: dist
 
 # layout布局
 source: src
-layout:
-    main:
-      - 'package/package.html'
-      - '*/index.html'
+md_layout:
+    default: menu.html
+    react: react_layout.html
+    kero: kero_layout.html
 
 # 文档片段
 snip_dir: snippets
