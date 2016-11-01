@@ -177,6 +177,10 @@ async.auto({
                                       var codeHtml = [];
                                       var codeCss = [];
                                       var codeJs = [];
+
+                                      // react js代码
+                                      var beeScript = beeShow = [];
+
                                       var codeFun = function(data){
                                           return '<div class="examples-code"><pre><code>\r\n' + data + '</code></pre>\r\n</div>\r\n';
                                       }
@@ -192,32 +196,45 @@ async.auto({
 
                                           if(/\.md$/.test(filePath)){
                                                 fs.readFile(filePath, 'utf-8',function(err,data){
-                                                      demoMd = data;
-                                                      cb(null,null)
+                                                    demoMd = data;
+                                                    cb(null,null)
                                                 })
                                           } else if(/\.html$/.test(filePath)){
                                                 fs.readFile(filePath, 'utf-8',function(err,data){
-                                                      demoHtml = '<div class="example-content">' + data + '</div>\r\n';
-                                                      codeHtml = codeHtmlFun(data);
-                                                      cb(null,null)
+                                                    demoHtml = '<div class="example-content">' + data + '</div>\r\n';
+                                                    codeHtml = codeHtmlFun(data);
+                                                    cb(null,null)
                                                 })
                                           } else if(/\.css$/.test(filePath)){
                                                 fs.readFile(filePath, 'utf-8',function(err,data){
-                                                      demoCss = '<div class="example-content ex-hide"><style>\r\n' + data + '\r\n</style></div>';
-                                                      codeCss = codeFun(data);
-                                                      cb(null,null)
+                                                    demoCss = '<div class="example-content ex-hide"><style>\r\n' + data + '\r\n</style></div>';
+                                                    codeCss = codeFun(data);
+                                                    cb(null,null)
                                                 })
                                           } else if(/\.js$/.test(filePath)){
                                                 fs.readFile(filePath, 'utf-8',function(err,data){
-                                                      demoJs = '\r\n<script>\r\n' + data + '\r\n</script>\r\n';
-                                                      codeJs = codeFun(data);
-                                                      cb(null,null)
+                                                    demoJs = '\r\n<script>\r\n' + data + '\r\n</script>\r\n';
+                                                    codeJs = codeFun(data);
+                                                    cb(null,null)
+                                                })
+                                          } else if(/\.jsx$/.test(filePath)){
+                                                // .jsx用于代码显示
+                                                fs.readFile(filePath, 'utf-8',function(err,data){
+                                                    beeShow = codeHtmlFun(data);
+                                                    cb(null,null)
+                                                })
+                                          } else if(/\.jsc$/.test(filePath)){
+                                                // .jsc用于实际demo执行
+                                                fs.readFile(filePath, 'utf-8',function(err,data){
+                                                    beeScript = '\r\n<script>\r\n' + data + '\r\n</script>\r\n';
+                                                    cb(null,null)
                                                 })
                                           }
 
                                       },function(err,results){
-                                            baseDemo ='\r\n' + demoMd + '\r\n' + demoHtml + '\r\n' + demoCss + '\r\n' + demoJs + '\r\n'
-                                                + codeHtml + '\r\n' + codeCss + '\r\n' + codeJs + '\r\n';
+                                            baseDemo ='\r\n' + demoMd + '\r\n' +
+                                                demoHtml + '\r\n' + demoCss + '\r\n' + demoJs + '\r\n' + beeScript + '\r\n' +
+                                                codeHtml + '\r\n' + codeCss + '\r\n' + codeJs + '\r\n' + beeShow + '\r\n';
                                             callback(null,baseDemo);
                                         })
                                         //遍历demo文件夹end

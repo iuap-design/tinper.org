@@ -2,15 +2,6 @@
 
 按钮可用于一个交互操作。
 
-## 使用
-
-```js
-import { Button } from 'tinper-bee';
-import Button from 'bee-button';
-React.render(
-        <Button type="primary" size="lg" style={{color: '#000'}}>Button</Button>
-        , document.getElementById('target'));
-```
 
 ## API
 
