@@ -2,26 +2,26 @@
 <html>
 
 <head>
-    {{include '../partial/index/header'}}
+    {{{include '../partial/index/header'}}}
 </head>
 
 <body>
     <!-- 导航 开始  -->
-    {{include '../partial/_nav'}}
+    {{{include '../partial/_nav'}}}
     <!-- 导航 结束 -->
     <!-- welcome <img src="images/iuapdesignicon1.png"alt=""><br>-->
     <div class="content">
         <div class="desc">
-          <div class="desc-headings" style="background-image: url('{{product.backgroundImg}}')">
+          <div class="desc-headings" style="background-image: url('{{{product.backgroundImg}}}')">
             
           </div>
           <div class="desc-content ">
              <div class="padding-horizontal-50">
-                 <h1 class="font-size-24 margin-bottom-45 font-weight-600">{{product.proName}}</h1>
+                 <h1 class="font-size-24 margin-bottom-45 font-weight-600">{{{product.proName}}}</h1>
                  <div class="font-size-18 font-weight-300">
-                   {{product.introduce}}
+                   {{{product.introduce}}}
                  </div>
-                  <a class="u-button u-button-border info docInfo" href="{{product.docHref}}" >查看具体文档</a>
+                  <a class="u-button u-button-border info docInfo" href="{{{product.docHref}}}" >查看具体文档</a>
              </div>
           </div>
         </div>
@@ -87,28 +87,28 @@
               
 
               <div class="u-row">
-                {{each product.features as item}}
+                {{{each product.features as item}}}
                 <div class="u-col-md-4 u-col-sm-6">
                     <div class="info-box1">
                         <span class="info-box-icon icon clean hover-colorful effect1 x4 rounded"> 
-                            <i class="{{item.img}}"></i>
+                            <i class="{{{item.img}}}"></i>
                         </span>
                         <div class="info-box-content">
-                           <h4>{{item.name}}</h4>
+                           <h4>{{{item.name}}}</h4>
                           <p>
-                            {{item.desc}}
+                            {{{item.desc}}}
                           </p>
                         </div>
                     </div>
                 </div>
-                {{/each}}
+                {{{/each}}}
               </div>
           </div>
         </div>
     </div>
     <!-- 开始使用 end -->
     <!-- 导航 开始  -->
-    {{include '../partial/index/footer'}}
+    {{{include '../partial/index/footer'}}}
     <!-- 导航 结束 -->
     <!-- 版权 end -->
 

@@ -7,8 +7,14 @@ var gulp = require('gulp');
 var marked = require('marked');
 var yaml = require('js-yaml');
 
-// 关闭模板引擎渲染缓存，否则无法执行reload
+/**
+ * 模板引擎设置项：
+ * cache: 关闭模板引擎渲染缓存，否则无法执行 npm run reload
+ * openTag,closeTag: 修改开关标签，支持react组件'{{}}'
+ */
 template.config('cache',false);
+template.config('openTag','{{{');
+template.config('closeTag','}}}');
 
 /**
  * tinper基本配置获取
@@ -44,7 +50,7 @@ var mdFun = function(srcPath,callback) {
 				} else if( fullName != '.DS_Store') {
 					// 其他文件直接copy
 					copyFun(subPath);
-				} 
+				}
 			}
 		});
 
@@ -64,11 +70,11 @@ var mdFun = function(srcPath,callback) {
 var markedFun = function(oldPath,newPath,fullName) {
 	var oldCont = fs.readFileSync(oldPath,'utf-8');
 	var markedCont = marked(oldCont);
-	
+
 	// 待优化 - 遍历layout文件夹
 	// layout default content
 	var baseCont = fs.readFileSync(path.join(envPath,'layout/menu.html'),'utf-8');
-	
+
 	var markedHtml;
 	if(fullName !== 'SUMMARY.md'){
 		markedHtml = baseCont.replace('<%Content%>',markedCont);
@@ -89,13 +95,13 @@ var markedFun = function(oldPath,newPath,fullName) {
  */
 var copyFun = function(oldPath,callback) {
 	newPath = oldPath.replace('src','dist');
-	
+
 	// 测试此处fse不能执行异步
 	fse.copySync(oldPath,newPath);
 	if(callback){
 		callback(newPath);
 	}
-	
+
 };
 
 var dirFun = function(baseDir) {
@@ -125,9 +131,9 @@ var renderFun = function(newPath) {
 	var dirName = path.dirname(newPath);
 	var dirData = dirName.replace('dist','data');
 	// /Users/AYA/Desktop/work/tinper.org/data/neoui/component
-	
+
 	var fullName = path.basename(newPath);
-	
+
 	var data={};
 	/**
 	 * DATAARY: data目录下存放的文件夹
@@ -157,7 +163,7 @@ var renderFun = function(newPath) {
 			fs.writeFileSync(newPath, renders);
 		}
 	}
-	
+
 };
 
 
@@ -165,4 +171,3 @@ var renderFun = function(newPath) {
 // mdFun(srcPath);
 module.exports = mdFun;
 // renderFun('/Users/liwei/Desktop/o/work/tinper.org/dist/neoui/component/breadcrumb.html')
-

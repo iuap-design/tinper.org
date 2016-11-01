@@ -11,18 +11,18 @@
         <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
             <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
 
-                {{each nav as top}}
+                {{{each nav as top}}}
                     <li class="dropdown">
-                        <a class="nav-par" href="{{top.href}}">{{top.name}}</a>
-                        {{if top.sub}}
+                        <a class="nav-par" href="{{{top.href}}}">{{{top.name}}}</a>
+                        {{{if top.sub}}}
                             <ul>
-                                {{each top.sub as second}}
-                                    <li><a href="{{second.href}}"></a>{{second.name}}</li>
-                                {{/each}}
+                                {{{each top.sub as second}}}
+                                    <li><a href="{{{second.href}}}"></a>{{{second.name}}}</li>
+                                {{{/each}}}
                             </ul>
-                        {{/if}}
+                        {{{/if}}}
                     </li>
-                {{/each}}
+                {{{/each}}}
                 
             </ul>
         </div>

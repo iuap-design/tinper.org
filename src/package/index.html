@@ -10,7 +10,7 @@
 </head>
 <body>
 <!-- 引入head -->
-{{include '../../partial/package/header'}}
+{{{include '../../partial/package/header'}}}
 
 <!-- Content -->
 <div id="content">
@@ -69,9 +69,9 @@
                                     <input id="color0" value="63,81,181" class="color-in">
                                     <div id="colorGroup">
                                         <ul>
-                                            {{each theme.list as value}}
-                                                <li class={{value.class}} data-color={{value.color}}></li>
-                                            {{/each}}
+                                            {{{each theme.list as value}}}
+                                                <li class={{{value.class}}} data-color={{{value.color}}}></li>
+                                            {{{/each}}}
                                         </ul>
                                         <div id="colorShow">
                                         </div>
@@ -217,10 +217,10 @@
                 <!-- 面板2 -->
                 <div class="u-tabs__panel" id="tab-panel-2">
 
-                    {{each mod as value i}}
+                    {{{each mod as value i}}}
                     <div class="color-whole-div">
-                        <h2 class="second-title">{{value.title}}</h2>
-                        <p>{{value.description}}</p>
+                        <h2 class="second-title">{{{value.title}}}</h2>
+                        <p>{{{value.description}}}</p>
                         <span class="u-checkbox tree-parent is-upgraded">
                             <input type="checkbox" class="u-checkbox-input">
                             <span class="u-checkbox-label select-module">全选</span>
@@ -228,17 +228,17 @@
                         <div class="coreModel">
                             <div class="tree-whole-div">
                                 <ul class="tree-div u-row textDiv">
-                                    {{each value.list as lival j}}
-                                        <li class="u-checkbox tree-leaf u-col-md-4" data-catlog="{{value.catlog}}" data-file='{{lival.file}}'>
+                                    {{{each value.list as lival j}}}
+                                        <li class="u-checkbox tree-leaf u-col-md-4" data-catlog="{{{value.catlog}}}" data-file='{{{lival.file}}}'>
                                             <input type="checkbox" class="u-checkbox-input">
-                                            <span class="u-checkbox-label select-module">{{lival.name}}</span>
+                                            <span class="u-checkbox-label select-module">{{{lival.name}}}</span>
                                         </li>
-                                    {{/each}}
+                                    {{{/each}}}
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    {{/each}}
+                    {{{/each}}}
 
                 </div>
 
@@ -271,7 +271,7 @@
 
 
 <!-- 引入footer -->
-{{include '../../partial/package/footer'}}
+{{{include '../../partial/package/footer'}}}
 <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
 <!--[if lt IE 8]>

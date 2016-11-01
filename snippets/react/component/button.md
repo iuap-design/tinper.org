@@ -4,7 +4,13 @@
 
 ## 使用
 
-
+```js
+import { Button } from 'tinper-bee';
+import Button from 'bee-button';
+React.render(
+        <Button type="primary" size="lg" style={{color: '#000'}}>Button</Button>
+        , document.getElementById('target'));
+```
 
 ## API
 
@@ -17,4 +23,3 @@
 | className |                增加额外的class                | string |     '' |
 | htmlType  | html dom 的 type 属性(`submit` `button` `reset`) | string | button |
 | style     |                 style 属性                 | object |     '' |
-
