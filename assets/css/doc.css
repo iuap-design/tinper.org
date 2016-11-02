@@ -1,3 +1,5 @@
+/*md文档公共样式*/
+
 /*导航*/
 .u-navbar{top:0px;}
 
@@ -22,6 +24,10 @@
 }
 #content-wrap li,#content-wrap ul{
     list-style:none;
+}
+#content-wrap ul.ui-gallery{
+    padding-left:0px;
+    overflow: hidden;
 }
 
 /*左导航内容*/
