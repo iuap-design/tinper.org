@@ -13,7 +13,6 @@ ReactDOM.render(
     document.getElementById('target'));
 ```
 
-test
 
 ## API
 
