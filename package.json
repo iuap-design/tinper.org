@@ -71,6 +71,7 @@
     "koa-static": "^2.0.0",
     "marked": "^0.3.6",
     "pygmentize-bundled": "^2.3.0",
+    "tinper-bee": "0.0.5",
     "tinper-neoui": "^0.1.0",
     "tinper-neoui-polyfill": "^0.1.0"
   },
