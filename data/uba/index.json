@@ -8,10 +8,6 @@
         {
             "name":"uba使用",
             "href":"/dist/uba/doc/intro.html"
-        },
-        {
-            "name":"模板使用",
-            "href":"/dist/uba/template/template.html"
         },{
             "name":"Tinper",
             "href":"/dist/index.html"
@@ -47,7 +43,7 @@
                     "name":"完善文档示例",
                     "img":"uf uf-branchwithleavesblackshape",
                     "desc":"每个组件都有详细的文档讲解、API说明、示例展示，用户可以在线调试，下载示例"
-                }   
+                }
             ]
     }
 }
