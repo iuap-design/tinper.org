@@ -102,7 +102,15 @@
 .info-box1 {
     width: 100%;
     position: relative;
+    
 }
+
+@media (min-width: 768px)  and (max-width: 1200px){
+    .info-box1 {
+        min-height: 160px;
+    }
+}
+
 
 [class*="info-box"] {
     margin-bottom: 0;

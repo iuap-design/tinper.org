@@ -88,7 +88,15 @@
     border-top: 1px solid #ecf0f1;
     opacity: 1;
 }
-
+    
+.feature:before, .feature:after {
+  
+    content: " "; 
+    display: table; 
+}
+.feature:after {
+    clear: both;
+}
 
 /*用户说*/
 

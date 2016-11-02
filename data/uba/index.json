@@ -20,29 +20,24 @@
             "introduce":"tinper-uba 是一个集项目初始化、本地服务、数据模拟、资源编译、发布部署于一体的前端集成开发工具。为您提供多种项目最佳实践，使用五条命令即可打通开发全过程。轻量小巧，上手简单，是你强大的开发助手。",
             "features": [
                 {
-                    "name":"响应式",
+                    "name":"功能强大",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"提供响应式解决方案，组件多端适配，一次代码书写，多端运行"
+                    "desc":"uba是一个集合并、压缩、模板生成、打包及发布为一体的前端application开发工具"
                 },
                 {
-                    "name":"浏览器兼容性",
+                    "name":"操作简单",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题"
+                    "desc":"指令简单易用，提供完善的帮助文档,帮助开发人员专注开发"
                 },
                 {
-                    "name":"按需定制",
+                    "name":"快速构建应用",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"开发者可以通过自定义 Syle样式组件、JavaScript 插件，定制一份属于特制的neoui框架"
+                    "desc":"生成项目结构明朗清晰，同时内部集成强大的tinper前端组件库，可快速搭建起前端项目"
                 },
                 {
-                    "name":"丰富的组件",
+                    "name":"多平台支持",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"丰富的CSS组件、30+个JavaScript插件并在持续开发中，代码简洁、 规范、易于修改"
-                },
-                {
-                    "name":"完善文档示例",
-                    "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"每个组件都有详细的文档讲解、API说明、示例展示，用户可以在线调试，下载示例"
+                    "desc":"使用npm发包，覆盖主流开发平台，便于代码迁移"
                 }
             ]
     }

@@ -25,30 +25,25 @@
             "introduce":"tinper-sparrow 是一个轻量级 javascript 库，让开发者能更方便地进行 DOM操作、events处理、动画效果实现和AJAX交互等，并且提供丰富的API封装，如多平台多浏览器判断、Cookies操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。",
             "features": [
                 {
-                    "name":"响应式",
+                    "name":"多平台多浏览器支持",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"提供响应式解决方案，组件多端适配，一次代码书写，多端运行"
+                    "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，支持iOS、Android、windows、MAC，轻松帮您解决浏览器兼容问题"
                 },
                 {
-                    "name":"浏览器兼容性",
+                    "name":"丰富易用的工具方法",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题"
+                    "desc":"方便的进行DOM操作、events处理、动画效果实现、AJAX交互，提供多平台多浏览器判断、Cookies操作、数据类型处理等一系列功能方法"
                 },
                 {
-                    "name":"按需定制",
+                    "name":"ES6语法特性",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"开发者可以通过自定义 Syle样式组件、JavaScript 插件，定制一份属于特制的neoui框架"
+                    "desc":"核心代码使用ES6语法编写，发挥全新语法特性优势，支持API按需导入"
                 },
                 {
-                    "name":"丰富的组件",
+                    "name":"完善的文档说明",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"丰富的CSS组件、30+个JavaScript插件并在持续开发中，代码简洁、 规范、易于修改"
-                },
-                {
-                    "name":"完善文档示例",
-                    "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"每个组件都有详细的文档讲解、API说明、示例展示，用户可以在线调试，下载示例"
-                }   
+                    "desc":"从快速上手到具体使用进行详细说明，每个API都有详细文档讲解、示例展示，方便用户使用"
+                }
             ]
     }
 }
