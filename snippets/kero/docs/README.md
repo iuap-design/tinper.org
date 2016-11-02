@@ -101,7 +101,7 @@ u.createApp({
 html:
 ```html
 //控件模型的定义
-<input type="text" u-meta='{"type":"string","data":"dt","field":"field1"}'/>	
+<input type="text" u-meta='{"type":"string","data":"dt","field":"field1"}'/>
 ```
 
 控件模型的声明，在html的UI对象属性中，以`u-meta`做为属性名。属性值中指定了数据模型以及数据模型中的字段。属性中的`type`为控件模型的类型，示例中使用的是string字符串输入控件模型。该控件模型会解析dataTable中field1字段的required属性，并控制input中的值不能为空，如果为空，则弹出警告提示。

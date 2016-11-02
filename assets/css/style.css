@@ -51,6 +51,17 @@
 }
 
 
+/*顶部标题*/
+
+.tag-title {
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .tag-title {
+        font-size: 30px;
+    }
+}
 
 /*内容区*/
 

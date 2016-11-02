@@ -4,7 +4,7 @@ Kero是希望基于NeoUI组件，快速实现数据绑定，提供完整前端�
 
 
 
-##浏览器格局
+## 浏览器格局
 
 20世纪90年代，网景公司发布了Navigator浏览器，实现了内容的展示。为满足市场更多需求，网景仓促发布了：Javascript。
 
@@ -12,7 +12,7 @@ Kero是希望基于NeoUI组件，快速实现数据绑定，提供完整前端�
 
 开源方面的后起之秀随之也获得了强势的发展和极高的拥趸，以下为目前浏览器情况。
 
-![浏览器市场占有率](../../static/img/all/mainbrowser.png)
+![浏览器市场占有率](/assets/static/img/all/mainbrowser.png)
 
 
 
@@ -32,7 +32,7 @@ JavaScript 过于灵活，代码的组织过于零散，一旦需求变得复杂
 
 
 
-##设计模式
+## 设计模式
 
 设计模式常见的有MVC，MVP，MVVM。有关他们的介绍，引用阮一峰的[MVC，MVP 和 MVVM 的图示](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)：
 

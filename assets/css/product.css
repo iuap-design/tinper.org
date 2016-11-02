@@ -25,6 +25,10 @@
     float: left;
 }
 
+
+.desc-headings img {
+    height: 100%;
+}
 .desc-content {
     width: 50%;
     position: relative;
