@@ -1,18 +1,5 @@
 # 开关 bee-switch
 
-开关。
-
-## 使用
-
-```js
-import { Switch } from 'tinper-bee';
-React.render(
-    <div>
-            <Switch />
-    </div>,
-    document.getElementById('target'));
-```
-
 
 
 ## API
