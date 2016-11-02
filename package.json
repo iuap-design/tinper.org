@@ -61,7 +61,7 @@
     "chokidar": "^1.6.1",
     "fs-extra": "^0.30.0",
     "js-yaml": "^3.6.1",
-    "kero-adapter": "^1.5.7",
+    "kero-adapter": "^3.1.5",
     "koa": "^1.1.2",
     "koa-body": "^1.4.0",
     "koa-bodyparser": "^2.0.1",
@@ -72,8 +72,8 @@
     "marked": "^0.3.6",
     "pygmentize-bundled": "^2.3.0",
     "tinper-bee": "0.0.5",
-    "tinper-neoui": "^0.1.0",
-    "tinper-neoui-polyfill": "^0.1.0"
+    "tinper-neoui": "^3.1.5",
+    "tinper-neoui-polyfill": "^3.1.5"
   },
   "config": {
     "commitizen": {
