@@ -387,6 +387,9 @@ body {
 #main {
     height: 100%;
 }
+.main{
+    margin-top: 62px;
+}
 
 /* ----- Hero Section Styling Starts ----- */
 
@@ -402,7 +405,7 @@ body {
 
 .jarallax {
     position: relative;
-    background-image: url("../images/hero.jpg");
+    background-image: url("../../images/kero/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -1856,6 +1859,7 @@ ul, li, span {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    line-height: 1.4;
 }
 
 .footer {
@@ -2699,7 +2703,7 @@ input.validate {
     width: 140px;
     height: 100%!important;
     background: #fff;
-    background-image: url("../images/hero.jpg");
+    background-image: url("../../images/kero/hero.jpg");
     height: -webkit-calc(100% - 65px);
     height: calc(100% - 65px);
     font-family: "Roboto", sans-serif;
