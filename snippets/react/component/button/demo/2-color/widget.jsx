@@ -1,10 +1,10 @@
 import { Button } from 'tinper-bee';
 function demo2 () {
     return (
-        <div>
+        <div className="demo-button">
                 <Button type="primary">default 主色按钮</Button>
                 <Button type="accent">辅色按钮</Button>
-      <Button disabled>不可点击</Button>
+                <Button disabled>不可点击</Button>
                 <Button type="success">辅色按钮</Button>
                 <Button type="info">辅色按钮</Button>
                 <Button type="warning">辅色按钮</Button>

@@ -2,7 +2,6 @@
 * [按钮](button.md)
 * [开关](switch.md)
 * [标签](control-label.md)
-* [FormControl](form-control.md)
 * [FormGroup](form-group.md)
 * [Addon](input-group-addon.md)
 * [FormButton](input-group-button.md)
