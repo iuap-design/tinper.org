@@ -8,3 +8,11 @@
 	margin-left: 10px;
 	margin-right: 10px;
 }
+.demo-form-group .form-group{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.demo-button button{
+	margin-right: 10px;
+}

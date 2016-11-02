@@ -1,7 +1,7 @@
 import { Button } from 'tinper-bee';
 function demo3 () {
     return (
-        <div>
+        <div className="demo-button">
             <Button shape="block" type="primary">块状按钮</Button>
             <Button shape="round" type="primary">圆形边按钮</Button>
             <Button shape="squared" type="primary">方形按钮</Button>
