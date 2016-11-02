@@ -27,30 +27,25 @@
             "introduce":"tinper-bee 是基于 iuap design 的 react 组件库，包含丰富的基础组件和应用组件，支持组件的灵活调用和扩展，助力快速进行应用的组件化开发。",
             "features": [
                 {
-                    "name":"响应式",
+                    "name":"组件支持可插拔使用",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"提供响应式解决方案，组件多端适配，一次代码书写，多端运行"
+                    "desc":"支持组件单独引入，需要哪个引入哪个，不添加冗余文件"
                 },
                 {
-                    "name":"浏览器兼容性",
+                    "name":"提供丰富基础组件",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题"
+                    "desc":"包含大量简单易用的基础组件，支持快速搭建页面的结构性组件，适用于企业应用的复杂表单表格组件"
                 },
                 {
-                    "name":"按需定制",
+                    "name":"丰富的企业级特性组件",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"开发者可以通过自定义 Syle样式组件、JavaScript 插件，定制一份属于特制的neoui框架"
+                    "desc":"提供适用于企业级应用的表单，表格和grid组件，满足您大量数据处理操作展示和复杂交互需求"
                 },
                 {
-                    "name":"丰富的组件",
+                    "name":"支持组件的扩展和自定义",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"丰富的CSS组件、30+个JavaScript插件并在持续开发中，代码简洁、 规范、易于修改"
-                },
-                {
-                    "name":"完善文档示例",
-                    "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"每个组件都有详细的文档讲解、API说明、示例展示，用户可以在线调试，下载示例"
-                }   
+                    "desc":"每个组件提供了丰富的API接口和充分自由度给用户来定义自己的组件，实现用户想要的效果和特性"
+                }
             ]
     }
 }

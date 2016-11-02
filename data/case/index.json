@@ -44,55 +44,53 @@
         "part1": [
             {
                 "name":"友人才",
-                "specName":"用友NC友人才",
+                "specName":"用友新一代人力资源云服务平台",
                 "thumbImg":"/assets/images/case-hr-logo.png",
                 "detailImg":"/assets/images/case-hr.png"
             },
             {
                 "name":"友云采",
-                "specName":"用友NC友云采",
-                "thumbImg":"/assets/images/case-hr-logo.png",
-                "detailImg":"/assets/images/case-hr.png"
+                "specName":"用友布局企业互联网采购",
+                "thumbImg":"/assets/images/case-yc-logo.png",
+                "detailImg":"/assets/images/case-yyc.jpg"
             },
             {
-                "name":"数字营销",
-                "specName":"用友数字营销",
-                "thumbImg":"/assets/images/case-hr-logo.png",
-                "detailImg":"/assets/images/case-hr.png"
+                "name":"用友云审批",
+                "specName":"真正适合互联网+的云审批",
+                "thumbImg":"/assets/images/case-sp-logo.png",
+                "detailImg":"/assets/images/case-sp.jpg"
+            },
+            {
+                "name":"电商通",
+                "specName":"多电商平台一站式管理",
+                "thumbImg":"/assets/images/case-dst-logo.png",
+                "detailImg":"/assets/images/case-dst.png"
             }
         ],
         "part2": [
             {
-                "name":"用友NC共享服务平台",
-                "thumbImg":"/assets/images/case-3f.png"
+                "name":"民太安集团",
+                "thumbImg":"/assets/images/mta.jpg"
             },
             {
-                "name":"用友云portal",
-                "thumbImg":"/assets/images/case-3f.png"
+                "name":"象屿集团",
+                "thumbImg":"/assets/images/xmxy.jpg"
             },
             {
-                "name":"用友UI模板",
-                "thumbImg":"/assets/images/case-3f.png"
+                "name":"华科诚信",
+                "thumbImg":"/assets/images/hkcx.jpg"
             },
             {
-                "name":"用友云表单",
-                "thumbImg":"/assets/images/case-3f.png"
+                "name":"物流河北",
+                "thumbImg":"/assets/images/wlhb.jpg"
             },
             {
-                "name":"用友电子发票",
-                "thumbImg":"/assets/images/case-3f.png"
+                "name":"唐山三友集团",
+                "thumbImg":"/assets/images/tssy.jpg"
             },
             {
-                "name":"用友电商通",
-                "thumbImg":"/assets/images/case-3f.png"
-            },
-             {
-                "name":"用友物业收费管理",
-                "thumbImg":"/assets/images/case-3f.png"
-            },
-            {
-                "name":"用友NC云审",
-                "thumbImg":"/assets/images/case-3f.png"
+                "name":"全友家私",
+                "thumbImg":"/assets/images/qyjs.jpg"
             }
         ],
         "part3": [
@@ -100,34 +98,40 @@
                 "name":"用友iuap-studio"
             },
             {
-                "name":"用友IT信息中心"
+                "name":"用友网络UI模板"
             },
             {
-                "name":"用友互联网平台"
+                "name":"北京用友政务软件有限公司"
             },
             {
-                "name":"用友小贷系统"
+                "name":"用友网络云表单"
             },
             {
-                "name":"用友移动报账"
+                "name":"用友集团IT信息中心"
+            },
+            {
+                "name":"用友金融信息技术有限公司"
+            },
+            {
+                "name":"用友网络数字营销"
+            },
+            {
+                "name":"用友广信网络科技有限公司"
+            },
+            {
+                "name":"用友网络电子发票"
             },
             {
                 "name":"民太安集团"
             },
             {
-                "name":"华科诚信"
+                "name":"用友网络NC共享服务"
             },
             {
-                "name":"厦门象屿集团"
+                "name":"用友网络物业收费管理"
             },
             {
-                "name":"全友家私"
-            },
-            {
-                "name":"唐山三友集团"
-            },
-            {
-                "name":"河北物流交通公共服务平台"
+                "name":"用友网络云portal"
             }
         ]
     }

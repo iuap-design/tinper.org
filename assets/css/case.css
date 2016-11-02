@@ -181,6 +181,12 @@ a {
     -o-transition: 200ms;
     transition: 200ms;
 }
+
 ul li{
 	list-style:none;
+}
+
+.part3-case ul li{
+    list-style:none;
+    margin-top: 15px;
 }
