@@ -1,5 +1,5 @@
 # 色彩
-<link rel="stylesheet" type="text/css" href="../../static/css/color.css">
+<link rel="stylesheet" type="text/css" href="/assets/static/css/color.css">
 <div class="color">
 <h2>基础调色板</h2>
 <div class="primaries">

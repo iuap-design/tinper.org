@@ -12,7 +12,7 @@ Kero是希望基于NeoUI组件，快速实现数据绑定，提供完整前端�
 
 开源方面的后起之秀随之也获得了强势的发展和极高的拥趸，以下为目前浏览器情况。
 
-![浏览器市场占有率](../../static/img/all/mainbrowser.png)
+![浏览器市场占有率](/assets/static/img/all/mainbrowser.png)
 
 
 

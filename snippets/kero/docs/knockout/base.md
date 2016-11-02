@@ -34,9 +34,9 @@ Ko的官网除了提供[Live examples](http://knockoutjs.com/examples/),还提�
   (如果有下载打不开，请进行如下操作。）
   * 先关闭文件，右键点击文件--》选择“属性”
   
- ![](../../static/img/kero/ko1.png)
+ ![](/assets/static/img/kero/ko1.png)
 
   * 点击“解除锁定”，重新打开就可以了
  
- ![](../../static/img/kero/ko2.png)
+ ![](/assets/static/img/kero/ko2.png)
   
