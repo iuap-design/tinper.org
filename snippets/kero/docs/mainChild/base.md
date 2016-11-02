@@ -212,4 +212,4 @@ DOM说明：#mainGridDiv 为主表对应的表格控件的顶层div，#childGrid
 	viewModel.mainDataTable.setSimpleData(mainData);
 # 示例
 
-replaceExamp
+

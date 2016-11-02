@@ -8,28 +8,32 @@
 	<!-- nav头部 -->
 	{{{include '../../../partial/kero/nav'}}}
 
-	<div id="content-wrap">
-		<div id="content" class="wrapper">
-			<div id="content-inner">
-				<!-- content -->
-				<div class="article-container">
-					<div class="article">
-						<div class="article-header">
-							<a href="#" id="docBtn">
-								<i class="uf uf-reorderoption"> </i>
-							</a>
+	<div class="main">
+		<div id="content-wrap">
+			<div id="content" class="wrapper">
+				<div id="content-inner">
+					<!-- content -->
+					<div class="article-container">
+						<div class="article">
+							<div class="article-header">
+								<a href="#" id="docBtn">
+									<i class="uf uf-reorderoption"> </i>
+								</a>
+							</div>
+							<%Content%>
 						</div>
-						<%Content%>
 					</div>
-				</div>
 
-				<!-- side bar -->
-				<div id="sidebar">
-					{{{include './SUMMARY'}}}
+					<!-- side bar -->
+					<div id="sidebar">
+						{{{include './SUMMARY'}}}
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
 
 	<!-- 引入end -->
 	{{{include '../../../partial/kero/footer'}}}

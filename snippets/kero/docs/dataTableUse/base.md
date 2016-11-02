@@ -68,7 +68,7 @@ dataTable1.on('valueChange',function(event){
 
 ## Example
 
-replaceExamp
+
 
 
 
