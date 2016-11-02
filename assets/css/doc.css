@@ -65,9 +65,20 @@
 }
 
 /*内容区域*/
+
+
+#content-inner #sidebar {
+    display: block;
+}
+
+
 #content-inner {
     margin-left: 220px;
     border-left:1px solid #e3e3e3;
+    webkit-transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860) ;
+    -moz-transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860) ;
+    -o-transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860) ;
+    transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860) ;
 }
 #content-inner:after, #content-inner:before {
     content: "";
@@ -77,10 +88,57 @@
     clear: both
 }
 
+#content-inner.doctoggle  {
+    margin-left: 0px;
+    border-left: 0px;
+}
+
+
+#content-inner.doctoggle  #sidebar {
+    display: none;
+    webkit-transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860) ;
+    -moz-transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860) ;
+    -o-transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860) ;
+    transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860) ;
+}
+
+
+/*文档手机端响应式处理*/
+@media (max-width: 767px) {
+    #content-inner  {
+        margin-left: 0px;
+        border-left: 0px;
+    }
+
+
+    #content-inner #sidebar {
+        display: none;
+    }
+
+    #content-inner.doctoggle  {
+        margin-left: 220px;
+        border-left:1px solid #e3e3e3;
+    }
+
+
+    #content-inner.doctoggle  #sidebar {
+        display: block;
+    }
+
+}
+
+
+
+
 .article-container {
     float: right;
     width: 100%
 }
+.article-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .article-container h1{
     font-size:24px;
     font-weight: normal;
