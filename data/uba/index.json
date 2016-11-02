@@ -26,17 +26,17 @@
                 },
                 {
                     "name":"操作简单",
-                    "img":"uf uf-branchwithleavesblackshape",
+                    "img":"uf uf-bullseye",
                     "desc":"指令简单易用，提供完善的帮助文档,帮助开发人员专注开发"
                 },
                 {
                     "name":"快速构建应用",
-                    "img":"uf uf-branchwithleavesblackshape",
+                    "img":"uf uf-fourblacksquares",
                     "desc":"生成项目结构明朗清晰，同时内部集成强大的tinper前端组件库，可快速搭建起前端项目"
                 },
                 {
                     "name":"多平台支持",
-                    "img":"uf uf-branchwithleavesblackshape",
+                    "img":"uf uf-twocolumnslayout",
                     "desc":"使用npm发包，覆盖主流开发平台，便于代码迁移"
                 }
             ]
