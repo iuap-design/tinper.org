@@ -7,4 +7,8 @@ u.on(window, 'load', function() {
       $targetDom.toggleClass("in");
 
    });
+
+   $('#docBtn').click(function(){
+	   $('#content-inner').toggleClass('doctoggle');
+	});
 });
