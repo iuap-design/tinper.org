@@ -13,12 +13,14 @@
 		"neoui-list-group":"列表",
 		"neoui-nav":"导航",
 		"neoui-panel":"面板",
-		"neoui-pearls":"步骤",
+		"neoui-pearls":"流程引导",
 		"neoui-rating":"评分",
 		"neoui-ribbon":"色带",
 		"neoui-tags":"标签",
 		"neoui-weather":"天气",
-		"neoui-widget":"挂件"
+		"neoui-widget":"挂件",
+		"neoui-navbar":"导航条",
+		"neoui-steps":"步骤"
 	},
 	"jsPlugin": {
 		"neoui-autocomplete":"自动完成",
