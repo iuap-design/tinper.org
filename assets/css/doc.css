@@ -30,7 +30,14 @@
     list-style-type: disc;
 }
 
-    
+#content-wrap .article-container ul.icon_lists li,#content-wrap  .article-container ul.icon_lists{
+    list-style-type: none;
+}
+
+#content-wrap .article-container .u-pagination li, #content-wrap  .article-container .u-pagination ul{
+    list-style-type: none;
+}
+
 #content-wrap ul.ui-gallery{
     padding-left:0px;
     overflow: hidden;

@@ -6,8 +6,8 @@
 
 ## API
 
-| 参数        | 说明                                       | 类型     | 默认值  |
-| --------- | ---------------------------------------- | ------ | ---- |
+|参数|说明|类型|默认值|
+|:--|:---:|:--:|---:|
 | color     | one of: `primary` `success` `info` `error`  `warning` `dark` | string | ''   |
 | className | 增加额外的class                               | string | ''   |
 

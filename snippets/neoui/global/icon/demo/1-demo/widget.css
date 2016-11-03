@@ -206,6 +206,7 @@ table {
     width: 100px;
     height: 180px;
     text-align: center;
+    list-style: none;
 }
 
 .icon_lists .icon {
