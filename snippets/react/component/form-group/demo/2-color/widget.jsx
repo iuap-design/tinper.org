@@ -1,5 +1,5 @@
 import { FormGroup } from 'tinper-bee';
-function demo1 () {
+function demo2 () {
     return (
         <div className="demo-form-group">
             <FormGroup validationState="error"> 
@@ -16,4 +16,4 @@ function demo1 () {
 }
 
 
-ReactDOM.render(demo1(), document.getElementById('ReactFormGroupDemo2'));
+ReactDOM.render(demo2(), document.getElementById('ReactFormGroupDemo2'));
