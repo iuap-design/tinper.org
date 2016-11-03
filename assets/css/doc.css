@@ -215,3 +215,13 @@
     font-size:12px;
     line-height: 20px;
 }
+
+
+.example-content:after {
+    clear: both;
+}
+
+.example-content:after ,.example-content:before {
+    display: table;
+    content: "";
+}
