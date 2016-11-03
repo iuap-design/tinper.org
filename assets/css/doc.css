@@ -25,6 +25,12 @@
 #content-wrap li,#content-wrap ul{
     list-style:none;
 }
+
+#content-wrap .article-container li,#content-wrap  .article-container ul{
+    list-style-type: disc;
+}
+
+    
 #content-wrap ul.ui-gallery{
     padding-left:0px;
     overflow: hidden;

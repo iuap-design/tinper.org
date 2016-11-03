@@ -78,3 +78,11 @@ img {
     background-color: #eeeeee;
     color: rgb(97, 97, 97);
 }
+
+/*底部*/
+
+.bg-white {
+    background: #fff;
+    border-top: 1px solid #ecf0f1;
+    opacity: 1;
+}
