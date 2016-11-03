@@ -18,7 +18,7 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    min-height: 200px;
+    /*min-height: 200px;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -27,19 +27,21 @@
 
 
 .desc-headings img {
-    height: 100%;
+    /*height: 100%;*/
 }
 .desc-content {
     width: 50%;
     position: relative;
     overflow: hidden;
     float: right;
-    padding: 70px 0px;
+    /*padding: 70px 0px;*/
+    padding:15px 0px;
+    box-sizing:border-box;
     background: rgb(241,244,244);
 }
 
 .desc-content .docInfo {
-    margin-top: 45px;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -57,7 +59,7 @@
 
 @media only screen and (max-width: 768px) {
     .desc-headings {
-        min-height: 300px !important;
+        /*min-height: 300px !important;*/
     }
 }
 
@@ -106,7 +108,7 @@
 .info-box1 {
     width: 100%;
     position: relative;
-    
+
 }
 
 @media (min-width: 768px)  and (max-width: 1200px){
@@ -133,7 +135,7 @@
 }
 
 .icon.clean i {
-    color: #0556dd;
+    color: #BDBDBD;
     /*box-shadow: inset 0 0 0 1px #ccc;*/
 }
 

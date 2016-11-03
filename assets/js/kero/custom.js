@@ -13,22 +13,24 @@ jQuery(function ($) {
         if (stop > mainbottom) {
             $('.navbar').addClass('past-main');
             $('.navbar').addClass('effect-main')
-            $(".change_link_img").attr("src","/assets/images/kero/logox.png");
+            $(".navbar").removeClass("self-nav-bg");
+            /*    $(".change_link_img").attr("src","/assets/images/kero/logox.png");
             $(".navbar").removeClass("self-nav-bg");
             $(".navbar-nav li").hover(function(){
                 $(this).css("backgroundColor","#eeeeee");
             },function(){
                 $(this).removeAttr("style");
-            })
+            })*/
         } else {
             $('.navbar').removeClass('past-main');
-            $(".change_link_img").attr("src","/assets/images/kero/iuapdesignlogow.png");
+            $('.navbar').addClass('self-nav-bg');
+            /*   $(".change_link_img").attr("src","/assets/images/kero/iuapdesignlogow.png");
             $('.navbar').addClass('self-nav-bg');
             $(".navbar-nav li").hover(function(){
                 $(this).css("backgroundColor","#8a70fc");
             },function(){
                 $(this).removeAttr("style");
-            })
+            })*/
 
         }
 

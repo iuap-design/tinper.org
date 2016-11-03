@@ -11,18 +11,18 @@
     <!-- 导航 结束 -->
     <!-- welcome <img src="images/iuapdesignicon1.png"alt=""><br>-->
     <div class="content">
-        <div class="desc"><!-- 
+        <div class="desc"><!--
           <div class="desc-headings" style="background-image: url('{{{product.backgroundImg}}}')">
-            
+
           </div> -->
           <div class="desc-headings">
               <img src="{{{product.backgroundImg}}}" >
           </div>
-          
+
           <div class="desc-content ">
              <div class="padding-horizontal-50">
-                 <h1 class="font-size-24 margin-bottom-45 font-weight-600">{{{product.proName}}}</h1>
-                 <div class="font-size-18 font-weight-300">
+                 <h1 class="font-size-24 margin-bottom-20 font-weight-600">{{{product.proName}}}</h1>
+                 <div class="font-size-16 font-weight-300" id="prodetail">
                    {{{product.introduce}}}
                  </div>
                   <a class="u-button u-button-border info docInfo" href="{{{product.docHref}}}" >查看具体文档</a>
@@ -86,15 +86,15 @@
 每个组件都有详细的文档讲解、API说明、示例展示。为了方便开发者使用，我们将常用的示例放在了样式版上，开发者可以在线调试，而且可下载对应示例代码</p>
                       </div>
                   </div>
-                  
+
               </div> -->
-              
+
 
               <div class="u-row">
                 {{{each product.features as item}}}
                 <div class="u-col-md-4 u-col-sm-6">
                     <div class="info-box1">
-                        <span class="info-box-icon icon clean hover-colorful effect1 x4 rounded"> 
+                        <span class="info-box-icon icon clean hover-colorful effect1 x4 rounded">
                             <i class="{{{item.img}}}"></i>
                         </span>
                         <div class="info-box-content">

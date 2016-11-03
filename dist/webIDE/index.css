@@ -391,3 +391,42 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 .u-navlayout-header {
     min-height: 50px;
 }
+
+
+/*下载按钮*/
+.downBtn {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+}
+/*运行按钮*/
+.runBtn {
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    margin-right: 100px;
+}
+
+/*兼容手机端*/
+@media (max-width: 768px) {
+    .runBtn {
+        margin-right: 0px;
+    }
+    .downBtn {
+        display: none;
+    }
+    
+
+}
+
+   /*导航按钮*/
+@media screen and (max-width: 1024px) {
+    .u-navlayout-drawer-button {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .u-navlayout-drawer-button .uf {
+        font-size: 20px;
+    }
+}
