@@ -93,6 +93,7 @@ window.onload = function() {
                 var catUis = document.querySelectorAll(uiObj[key]);
                 for(var i = 0; i<catUis.length; i++){
                     catUis[i].style.backgroundColor = selColor;
+                    catUis[i].style.borderColor = selColor;
                 }
             }
 
@@ -126,7 +127,7 @@ window.onload = function() {
             var contWrap = this.Dom.blockWrap;
             var selFun = function(ele, index, ary) {
                 var selWrap = ele.querySelectorAll('.tree-parent')[0];
-                var subCheckbox = ele.querySelectorAll('li.u-checkbox'); 
+                var subCheckbox = ele.querySelectorAll('li.u-checkbox');
                 selWrap.addEventListener('click', function() {
                     var isCheck = u.hasClass(this,"is-checked");
 
@@ -204,7 +205,7 @@ window.onload = function() {
             downAry.forEach(submitEvent);
         }
 
-        
+
     };
     cs.init();
 

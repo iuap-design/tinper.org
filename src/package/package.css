@@ -196,7 +196,7 @@
     position: absolute;
     right: 0px;
     top: 40px;
-    
+
 }
 .download-top{
     background: #007aff;
@@ -251,11 +251,13 @@
     border:1px solid transparent;
     cursor:pointer;
     list-style: none;
+    box-sizing:border-box;
 }
 #colorGroup ul{
     border:1px solid #000;
     overflow: hidden;
     padding: 0px;
+    margin:0px;
 }
 
 #colorShow{
