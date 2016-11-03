@@ -1,6 +1,6 @@
 # bee-form-control
 
-用 `<FormControl>` 来代替 `<input>`, `<textarea>`, and `<select>`
+用 `<FormControl>` 来表达 `<input>`, `<textarea>`, and `<select>`
 
 
 ## API
