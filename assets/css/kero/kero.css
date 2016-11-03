@@ -189,7 +189,7 @@ body {
     font-family: Poppins;
     font-weight: 500;
     text-transform: uppercase;
-    padding-top: 5px;
+    padding-top: 25px;
     letter-spacing: 1px;
 }
 
@@ -242,7 +242,7 @@ body {
 }
 
 .navbar-default .navbar-nav > li:hover {
-    background-color: #8a70fc;
+   /* background-color: #8a70fc;*/
 }
 
 .navbar-default .navbar-nav > .active > a {
@@ -387,9 +387,6 @@ body {
 #main {
     height: 100%;
 }
-.main{
-    margin-top: 62px;
-}
 
 /* ----- Hero Section Styling Starts ----- */
 
@@ -403,13 +400,7 @@ body {
     background-position: 50% 60%;
 }
 
-.jarallax {
-    position: relative;
-    background-image: url("../../images/kero/hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
+
 
 .hero-content {
     width: 100%;
@@ -1859,7 +1850,6 @@ ul, li, span {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    line-height: 1.4;
 }
 
 .footer {
@@ -2703,7 +2693,7 @@ input.validate {
     width: 140px;
     height: 100%!important;
     background: #fff;
-    background-image: url("../../images/kero/hero.jpg");
+    background-image: url("/assets/images/kero/hero.jpg");
     height: -webkit-calc(100% - 65px);
     height: calc(100% - 65px);
     font-family: "Roboto", sans-serif;
@@ -2736,12 +2726,13 @@ span.uf.uf-anglepointingtoleft,span.uf.uf-anglearrowpointingtoright {
     margin-top:15px;
 }
 .self-nav-bg{
+    background-image: url("/assets/images/kero/hero.jpg");
     filter: alpha(opacity=70);
     -moz-opacity: 0.7;
     -khtml-opacity: 0.7;
     opacity: 0.7;
-    background-color: #6637f9
 }
+
 .self-li-bg{
     background-color: #eeeeee;
 }
@@ -2752,4 +2743,10 @@ span.uf.uf-anglepointingtoleft,span.uf.uf-anglearrowpointingtoright {
     .self-font-size {
         font-size: 12px;
     }
+}
+.main {
+    margin-top: 82px;
+}
+li{
+    line-height: 1.4;
 }
