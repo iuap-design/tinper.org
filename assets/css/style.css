@@ -96,13 +96,8 @@
 
 
     
-.feature:before, .feature:after {
-  
-    content: " "; 
-    display: table; 
-}
-.feature:after {
-    clear: both;
+.feature {
+    min-height: 210px;
 }
 
 /*用户说*/
