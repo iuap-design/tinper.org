@@ -8,3 +8,4 @@
 * [InputGroupAddon](input-group-addon.md)
 * [InputGroupButton](input-group-button.md)
 * [Loadingstate](loading-state.md)
+* [Alert](alert.md)
