@@ -250,10 +250,12 @@
     float:left;
     border:1px solid transparent;
     cursor:pointer;
+    list-style: none;
 }
 #colorGroup ul{
     border:1px solid #000;
     overflow: hidden;
+    padding: 0px;
 }
 
 #colorShow{
