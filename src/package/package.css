@@ -267,3 +267,9 @@
     height: 60px;
     background-color: rgb(244,67,54);
 }
+
+/*footer*/
+.friend-link a {
+    color: inherit;
+    text-decoration: none;
+}
