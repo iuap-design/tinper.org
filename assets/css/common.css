@@ -9,6 +9,19 @@ img {
     position: fixed;
     width: 100%;
     margin-bottom: 0px;
+
+}
+
+
+
+
+.u-navbar:before , .u-navbar:after ,.u-navbar-header:before , .u-navbar-header:after {
+    content: "";
+    display: table;
+}
+
+.u-navbar:after,.u-navbar-header:after{ 
+    clear: both;
 }
 
 .u-navbar-default .u-navbar-toolbar > li:hover > a {
