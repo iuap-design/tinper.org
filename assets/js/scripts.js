@@ -13,18 +13,15 @@ $(document).ready(function() {
 
 
     // 暂时处理iphone fix导致二级目录无法展开bug
-    if (navigator.platform == 'iPhone') {
+    if (!navigator.platform == 'iPhone') {
         $('.u-navbar').css({
-            'position': 'absolute',
-            'left': 0,
-            'top': 0
+            'position': 'fixed'
         });
-
-        $("document").scroll(function() {
-
-            $('.u-navbar').css("top", $(window).scrollTop());
-
-        })
-
     }
+
+    // $(document).scroll(function() {
+    //     if(navigator.platform == 'iPhone'){
+    //         $('.u-navbar').css("top", $(window).scrollTop());
+    //     }
+    // })
 })

@@ -19,7 +19,7 @@
 /*整体内容区域*/
 #content-wrap {
     background: #fff;
-    margin-top:52px;
+    /*margin-top:52px;*/
     font-size:14px;
 }
 #content-wrap li,#content-wrap ul{
