@@ -10,4 +10,9 @@ $(document).ready(function(){
    $('#docBtn').click(function(){
      $('#content-inner').toggleClass('doctoggle');
   });
+
+  if(!u.isSafari){
+      $('.u-navbar').css('position','fixed');
+  }
+
 })
