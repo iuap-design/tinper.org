@@ -7,7 +7,7 @@
         },
         {
             "name":"文档",
-            "href":"/dist/kero/docs/README.html"
+            "href":"/dist/kero/docs/overview.html"
         },
         {
             "name":"Tinper",
@@ -17,7 +17,7 @@
     "product":{
             "proName":"kero",
             "backgroundImg":"/assets/images/about-us-kero.jpg",
-            "docHref":"/dist/kero/docs/README.html",
+            "docHref":"/dist/kero/docs/overview.html",
             "introduce":"kero是一个基于knockout扩展的Library，做为MVVM架构中Model层的增强，提供多维数据模型，解决企业应用中复杂的业务应用场景的开发问题",
             "features": [
                 {
