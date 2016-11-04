@@ -24,7 +24,7 @@ $(document).ready(function() {
 
             $('.u-navbar').css("top", $(window).scrollTop());
 
-        }
+        })
 
     }
 })
