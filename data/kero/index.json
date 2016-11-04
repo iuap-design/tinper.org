@@ -1,56 +1,50 @@
 {
-    "title":"react",
+    "title":"kero",
     "nav": [
         {
             "name":"首页",
-            "href":"/dist/react/index.html"
+            "href":"/dist/kero/index.html"
         },
         {
-            "name":"开始使用",
-            "href":"/dist/react/start/start.html"
+            "name":"文档",
+            "href":"/dist/kero/docs/README.html"
         },
         {
-            "name":"组件",
-            "href":"/dist/react/component/button.html"
-        },{
-            "name":"其他",
-            "href":"/dist/react/other/other.html"
-        },{
             "name":"Tinper",
             "href":"/dist/index.html"
         }
     ],
     "product":{
-            "proName":"bee",
-            "backgroundImg":"/assets/images/about-us-bee.jpg",
-            "docHref":"/dist/react/component/button.html",
-            "introduce":"tinper-bee 是基于 iuap design 的 react 组件库，包含丰富的基础组件和应用组件，支持组件的灵活调用和扩展，助力快速进行应用的组件化开发。",
+            "proName":"kero",
+            "backgroundImg":"/assets/images/about-us-kero.jpg",
+            "docHref":"/dist/kero/docs/README.html",
+            "introduce":"kero是一个基于knockout扩展的Library，做为MVVM架构中Model层的增强，提供多维数据模型，解决企业应用中复杂的业务应用场景的开发问题",
             "features": [
                 {
-                    "name":"响应式",
-                    "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"提供响应式解决方案，组件多端适配，一次代码书写，多端运行"
+                    "name":"多终端支持",
+                    "img":"uf uf-twocolumnslayout",
+                    "desc":"支持IE8+、Firefox、Chrome、safari等多平台主流浏览器"
                 },
                 {
-                    "name":"浏览器兼容性",
+                    "name":"完善的控件体系",
                     "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题"
+                    "desc":"包含常用控件，常见NeoUI，支持多端适配"
                 },
                 {
-                    "name":"按需定制",
-                    "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"开发者可以通过自定义 Syle样式组件、JavaScript 插件，定制一份属于特制的neoui框架"
+                    "name":"双向数据绑定",
+                    "img":"uf uf-horizontalresizeoption",
+                    "desc":"实现了模型与UI之间的双向自动更新"
                 },
                 {
-                    "name":"丰富的组件",
-                    "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"丰富的CSS组件、30+个JavaScript插件并在持续开发中，代码简洁、 规范、易于修改"
+                    "name":"多维数据模型",
+                    "img":"uf uf-cogwheelsilhouette",
+                    "desc":"解决了字段关联、主子数据、主子孙等多维数据模型的绑定问题"
                 },
                 {
-                    "name":"完善文档示例",
-                    "img":"uf uf-branchwithleavesblackshape",
-                    "desc":"每个组件都有详细的文档讲解、API说明、示例展示，用户可以在线调试，下载示例"
-                }   
+                    "name":"完善的文档说明",
+                    "img":"uf uf-book",
+                    "desc":"从快速上手到具体使用进行详细说明，每个API都有详细文档讲解、示例展示，方便用户使用"
+                }
             ]
     }
 }

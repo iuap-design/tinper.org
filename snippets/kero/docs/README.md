@@ -5,16 +5,16 @@
 * 优先加载jQuery + Knockout,再引入u.js
 
   ```
-  <script src="http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
-  <script src="http://design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
-  <script src="http://design.yyuap.com/static/uui/latest/js/u.js"></script>
+  <script src="//design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
+  <script src="//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
+  <script src="//design.yyuap.com/static/uui/latest/js/u.js"></script>
   ```
 
 
 * 如需兼容ie8，需要单独引入`polyfill.js`
 
   ```
-  <script src="http://design.yyuap.com/static/uui/latest/js/u-polyfill.js"></script>
+  <script src="//design.yyuap.com/static/uui/latest/js/u-polyfill.js"></script>
   ```
 
 ## Kero定位
@@ -40,7 +40,7 @@ Kero是一个包含了UI控件库以及模型框架(基于MVVM)的前端类库�
 
 UI控件遵循iUAP Design设计规范，构建跨平台和超越设备尺寸的统一体验。遵循基本的移动设计定则，同时支持触摸、语音、鼠标、键盘等输入方式。
 
-![](img/materialdesign.png)
+![](/assets/images/img/materialdesign.png)
 
 
 UI控件的使用，采用了类似bootstrap的用法，通过定义class名称来声明控件，如按钮控件的定义：
