@@ -1,6 +1,6 @@
 # bee-loading-state
 
-是一种状态切换的按钮，组件基于Button,需另引入bee-button,因为button所具备的能力，Loadingstate都具备，比如换颜色改大小。
+是一种状态切换的按钮，组件基于`Button`,所以`button`所具备的能力，`Loadingstate`都具备，比如换颜色改大小。
 
 
 ## API

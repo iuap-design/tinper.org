@@ -1,6 +1,6 @@
 # bee-form-control
 
-用 `<FormControl>` 来表达 `<input>`, `<textarea>`, and `<select>`
+用 `<FormControl>` 来表达 `<input>`, `<textarea>`, and `<select>`，默认解析成`input`标签 `type="text"`.
 
 
 ## API
