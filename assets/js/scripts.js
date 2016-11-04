@@ -11,8 +11,13 @@ $(document).ready(function(){
      $('#content-inner').toggleClass('doctoggle');
   });
 
-  if(!u.isSafari){
-      $('.u-navbar').css('position','fixed');
+  // 暂时处理iphone fix导致二级目录无法展开bug
+  if(navigator.platform == 'iPhone'){
+      $('.u-navbar').css({
+          'position':'absolute',
+          'left':0,
+          'top':0
+      });
   }
 
 })
