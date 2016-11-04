@@ -14,7 +14,6 @@
 * [模态框](jsmodal.md)
 * [自动完成](autocomplete.md)
 * [分页](jspagination.md)
-* [提示消息](jsmessage.md)
 * [页签](jstabs.md)
 * [即时提示](jstooltip.md)
 * [隐藏菜单](menu.md)

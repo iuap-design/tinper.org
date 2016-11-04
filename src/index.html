@@ -18,7 +18,7 @@
     <!-- Theme Stylesheet -->
     <link rel="stylesheet" href="//design.yyuap.com/static/uui/latest/css/u.css">
     <link href="/assets/css/style.css" rel="stylesheet" media="screen">
-
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css"  rel="stylesheet" media="screen">
     <!--[if lte IE 8]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -28,43 +28,8 @@
 
 <body>
     <!-- 导航 开始  -->
-    <nav class="u-navbar u-navbar-default" role="navigation">
-        <div class="u-container">
-            <div class="u-navbar-header">
-                <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
-                    <!-- <span class="sr-only">Toggle navigation</span> -->
-                    <span class="u-hamburger-bar"></span>
-                </button>
-                <a class="u-navbar-brand" href="/"><img src="/assets/images/tinperlogos32.png" alt=""></a>
-            </div>
-            <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
-                <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
-                    <li class="dropdown">
-                        <a href="/">首页</a>
-                    </li>
-                    <li class="dropdown">
-                        <a class="nav-par">产品</a>
-                        <ul>
-                          <li><a href="/dist/uba/index.html" >前端集成开发工具uba</a></li>
-                          <li><a href="/dist/neoui/index.html" >UI框架neoui</a></li>
-                          <li><a href="/dist/react/index.html" >React组件库bee</a></li>
-                          <li><a href="/dist/sparrow/index.html">前端基础库sparrow</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="/dist/webIDE/index.html">样式板</a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a class="nav-par" href="/dist/package/index.html">下载</a>
-                    </li>
-                    <!-- <li class="dropdown">
-                        <a href="/dist/case/index.html">案例</a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- 引入head -->
+    {{{include '/../partial/package/header'}}}
     <!-- 导航 结束 -->
     <!-- welcome <img src="images/iuapdesignicon1.png"alt=""><br>-->
     <div class="content">
@@ -87,26 +52,34 @@
                  <div class="u-row text-center">
                     <div class="u-col-md-12 height-150">
                         <div class="page text-center">
-                            <p class="font-size-18 grey-600">tinper，由前端集成开发工具uba、前端UI框架neoui、react组件库bee
+                            <p class="font-size-18 grey-600">tinper，由前端集成开发工具uba、前端UI框架neoui、react组件库bee、UI数据模型kero、
                             、前端基础库sparrow组成，
                                 <br>旨在帮助开发者快速进行应用开发，提高开发效率。</p>
                         </div>
                         <div class="height-50"></div>
                     </div>
 
-                    <div class="u-col-md-3 u-col-xs-3">
+                    <div class="u-col-md-1 u-col-xs-1">
+                    </div>
+                    <div class="u-col-md-2 u-col-xs-2">
                         <a href="/dist/uba/index.html"><img  src="/assets/images/uba.png" alt=""></a>
                     </div>
-                    <div class="u-col-md-3 u-col-xs-3">
+                    <div class="u-col-md-2 u-col-xs-2">
                         <a href="/dist/neoui/index.html"><img  src="/assets/images/neouik.png" alt=""><a>
                     </div>
 
-                    <div class="u-col-md-3 u-col-xs-3">
+                    <div class="u-col-md-2 u-col-xs-2">
                         <a href="/dist/react/index.html"><img  src="/assets/images/bee.png" alt=""><a>
                     </div>
-                    <div class="u-col-md-3 u-col-xs-3">
+                    <div class="u-col-md-2 u-col-xs-2">
+                        <a href="/dist/kero/index.html"><img  src="/assets/images/kero.png" alt=""><a>
+                    </div>
+                    <div class="u-col-md-2 u-col-xs-2">
                         <a href="/dist/sparrow/index.html"><img  src="/assets/images/sparrow.png" alt=""><a>
                     </div>
+                    <div class="u-col-md-1 u-col-xs-1">
+                    </div>
+
 
                 </div>
           </div>
@@ -257,7 +230,7 @@
               <div class="page">
                   <p>
                       <font class="text-center font-size-60">100＋</font>
-                      <font>企业开发者用户的选择</font>
+                      <font>企业开发者的选择</font>
                   </p>
                   <div class="u-col-md-8 user-img">
                       <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/song-profile-200.jpg" alt="">
