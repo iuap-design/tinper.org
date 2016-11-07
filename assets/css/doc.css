@@ -16,6 +16,17 @@
     margin: 0 auto
 }
 
+/*代码code背景*/
+p code{
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+}
+
 /*整体内容区域*/
 #content-wrap {
     background: #fff;
