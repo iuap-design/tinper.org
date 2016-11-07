@@ -38,6 +38,9 @@
         {
             "name":"下载",
             "href":"/dist/package/index.html"
+        },{
+            "name":"反馈",
+            "href":"https://github.com/iuap-design/tinper.org/issues"
         }
     ]
 }
