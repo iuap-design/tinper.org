@@ -1,8 +1,9 @@
 {
+    "title": "tinepr homepage",
     "nav": [
         {
             "name":"首页",
-            "href":"/dist/sparrow/index.html"
+            "href":"/"
         },
         {
             "name":"产品",
@@ -19,6 +20,10 @@
                 {
                     "name":"React组件库bee",
                     "href":"/dist/react/index.html"
+                },
+                {
+                    "name":"UI数据模型kero",
+                    "href":"/dist/kero/index.html"
                 },
                 {
                     "name":"前端基础库sparrow",

@@ -142,9 +142,9 @@ var DATAARY = dirFun(DATABASE);
  */
 var renderFun = function(newPath) {
 	var newPath = path.resolve(newPath);
-	var dirName = path.dirname(newPath);
-	var dirData = dirName.replace('dist','data');
-	// /Users/AYA/Desktop/work/tinper.org/data/neoui/component
+	// var dirName = path.dirname(newPath);
+	var dirData = newPath.replace('dist','data');
+	// /Users/AYA/Desktop/work/tinper.org/data/react/component/form-group.html
 
 	var fullName = path.basename(newPath);
 
