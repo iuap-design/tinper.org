@@ -1,5 +1,5 @@
 import { Alert } from 'tinper-bee';
-import { Button } from 'bee-button';
+import { Button } from 'tinper-bee';
 
 class Demo2 extends Component {
 	constructor(props) {
