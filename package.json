@@ -10,7 +10,8 @@
     "mark": "node bin/index",
     "docs": "node bin/mdconcat",
     "dist": "npm run docs && npm run mark",
-    "deploy": "sh bin/fetch.sh && npm run cate && npm run docs && npm run mark"
+    "packdata": "node bin/packdata",
+    "deploy": "sh bin/fetch.sh && npm run cate && npm run packdata && npm run docs && npm run mark"
   },
   "repository": {
     "type": "git",
