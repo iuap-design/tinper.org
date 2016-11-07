@@ -12,7 +12,9 @@ img {
 }
 
 
-
+.u-container {
+    box-sizing: border-box;
+}
 
 .u-navbar:before , .u-navbar:after ,.u-navbar-header:before , .u-navbar-header:after {
     content: "";
