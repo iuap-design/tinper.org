@@ -9,6 +9,7 @@ img {
     /*position: fixed;*/
     width: 100%;
     margin-bottom: 0px;
+    box-sizing: border-box;
 }
 
 
