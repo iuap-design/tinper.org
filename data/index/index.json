@@ -1,5 +1,5 @@
 {
-    "title": "tinper首页",
+    "title": "tinper,企业级Web应用前端框架",
     "nav": [
         {
             "name":"首页",
@@ -20,6 +20,10 @@
                 {
                     "name":"React组件库bee",
                     "href":"/dist/react/index.html"
+                },
+                {
+                    "name":"表格控件grid",
+                    "href":"/dist/grid/index.html"
                 },
                 {
                     "name":"UI数据模型kero",

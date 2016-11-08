@@ -22,6 +22,10 @@
                     "href":"/dist/react/index.html"
                 },
                 {
+                    "name":"表格控件grid",
+                    "href":"/dist/grid/index.html"
+                },
+                {
                     "name":"UI数据模型kero",
                     "href":"/dist/kero/index.html"
                 },
