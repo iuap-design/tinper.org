@@ -311,27 +311,39 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 }
 
 // 左侧menu按钮
-.u-nav .u-nav-link .fa-chevron-right {
+/*.u-nav .u-nav-link .uf-anglearrowpointingtoright {
     webkit-transition: transform .5s ease-in-out;
     transition: -webkit-transform .5s ease-in-out;
     transition: transform .5s ease-in-out;
     transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
     vertical-align: middle;
-}
+}*/
 
-.u-nav .u-nav-link-open .fa-chevron-right {
+/*.u-nav .u-nav-link-open .uf-anglearrowpointingtoright {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+*/
 
 .u-nav-link {
     cursor: pointer;
     font-size: 12px;
 }
 
-.u-nav-link .fa{
-	  font-size: 12px;
+.u-nav .u-nav-link .icon-pointer:before {
+    content: "\e611";
+    font-size: 12px;
+    font-family: "uf" !important;
+    font-style: normal;
 }
+.u-nav .u-nav-link-open .icon-pointer:before {
+    content: "\e608";
+    font-size: 12px;
+    font-family: "uf" !important;
+
+}
+
+
 
 .content-fullScreen {
     margin-left: 0 !important;
@@ -429,4 +441,11 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
     .u-navlayout-drawer-button .uf {
         font-size: 20px;
     }
+}
+
+
+/*导航图标*/
+
+.demo-navigation .u-nav-link .uf {
+    font-size: 12px;
 }
