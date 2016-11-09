@@ -325,21 +325,25 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 }
 */
 
+.u-nav-link {
+    cursor: pointer;
+    font-size: 12px;
+}
+
 .u-nav .u-nav-link .icon-pointer:before {
-    content: "\e608";
+    content: "\e611";
     font-size: 12px;
     font-family: "uf" !important;
+    font-style: normal;
 }
 .u-nav .u-nav-link-open .icon-pointer:before {
     content: "\e608";
     font-size: 12px;
     font-family: "uf" !important;
+
 }
 
-.u-nav-link {
-    cursor: pointer;
-    font-size: 12px;
-}
+
 
 .content-fullScreen {
     margin-left: 0 !important;
