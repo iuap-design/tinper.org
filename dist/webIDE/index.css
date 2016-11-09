@@ -311,21 +311,29 @@ a.demo-drawer-nav-brand:focus, a.demo-drawer-nav-brand:hover {
 }
 
 // 左侧menu按钮
-.u-nav .u-nav-link .uf-anglearrowpointingtoright {
+/*.u-nav .u-nav-link .uf-anglearrowpointingtoright {
     webkit-transition: transform .5s ease-in-out;
     transition: -webkit-transform .5s ease-in-out;
     transition: transform .5s ease-in-out;
     transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
     vertical-align: middle;
-}
+}*/
 
 /*.u-nav .u-nav-link-open .uf-anglearrowpointingtoright {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 */
-.u-nav .u-nav-link-open .uf-anglearrowpointingtoright:before {
+
+.u-nav .u-nav-link .icon-pointer:before {
     content: "\e608";
+    font-size: 12px;
+    font-family: "uf" !important;
+}
+.u-nav .u-nav-link-open .icon-pointer:before {
+    content: "\e608";
+    font-size: 12px;
+    font-family: "uf" !important;
 }
 
 .u-nav-link {

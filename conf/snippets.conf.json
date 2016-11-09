@@ -58,9 +58,6 @@
         "name": "下拉菜单",
         "url": "demos/ui/menu"
     }, {
-        "name": "按钮组",
-        "url": "demos/ui/button"
-    }, {
         "name": "色带",
         "url": "demos/ui/ribbon"
     }, {
