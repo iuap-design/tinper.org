@@ -7,7 +7,7 @@ var path = require('path');
 module.exports = function(viewCode, self, cb){
 
 	var zipName = 'download.zip';
-    var downPath = '../dist/pages/webIDE/temp';
+    var downPath = '../dist/webIDE/temp';
     var tempDir = path.resolve(__dirname, downPath);
     fs.exists( tempDir, function(exist) {
       if(!exist){
