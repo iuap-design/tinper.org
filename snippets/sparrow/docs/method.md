@@ -138,3 +138,97 @@
 
 
 
+
+## # getOffset(ele, offset)
+* 说明：
+
+  获取/设置元素`ele`相对顶层`body`的偏移量
+
+* 参数：
+  * {HTMLElement} element：必需。目标对象
+  * {Object} config：可选。设置的元素偏移量。默认则最终返回`ele`相对`body`的偏移量
+* 返回值：
+
+  {Object}：包含`top`,`left`值
+* 用法：
+  	var offsetObj = {
+  		top : 10,
+  		left : 20
+  	};
+  	var ele = document.getElementById('tit');
+  	
+  	u.getOffset(ele,offsetObj) // {top: 120, left:100}
+
+
+
+## # getScroll(ele, offset)
+
+- 说明：
+
+  获取/设置元素`ele`滚动的偏移量
+
+- 参数：
+
+  - {HTMLElement} element：必需。目标对象
+  - {Object} config：可选。设置的元素偏移量。默认则最终返回`ele`相对浏览器顶部的偏移量
+
+- 返回值：
+
+  {Object}：包含`top`,`left`值
+
+- 用法：
+
+  ```
+  同getOffset
+  ```
+
+
+
+## # ajax({...})
+
+- 说明：
+
+  执行Ajax数交互
+
+- 参数：
+
+  ```
+  {
+    url: 'test.html',
+    type: 'GET'
+    success: function(){},
+    async: true,
+    error: function(){},
+  }
+  ```
+
+  ​
+
+  - {String} url：必需，文件在服务器上的位置
+  - {String} type：可选，默认为`post`
+  - {Function} success：可选，回调函数
+  - {Function} error：可选，回调函数
+  - {Boolean} async: 可选，默认为`true`
+
+- 返回值：
+
+  {Object}
+
+- 用法：
+
+  ```
+
+  document.getElementById('btn').addEventListener('click', function(){
+      u.ajax({
+          url: './package.json',
+          type: 'GET',
+          success: function(data){
+              alert(data)
+          },
+          error: function(){
+              alert("error")
+          }
+      })
+  })
+  ```
+
