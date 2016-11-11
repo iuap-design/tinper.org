@@ -61,7 +61,7 @@ http://design.yyuap.com/static/uui/latest/js/u-grid.js
 - passwordRender
 - percentRender
 
-表格的详细API：http://design.yyuap.com/dist/pages/plugins/grid.html
+表格的详细API：http://tinper.org/dist/neoui/plugin/grid.html
 
 2、创建viewModel
 	

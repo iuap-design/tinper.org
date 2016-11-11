@@ -4,7 +4,7 @@ radio提供了基本的单选框和不同色彩的单选框
 
 
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/radio)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/radio)
 
 # API
 
@@ -71,6 +71,6 @@ radioObject.enable();
 
 相关内容：
 
-[单选框在kero中使用](http://design.yyuap.com/dist/pages/kero/ex_radio.html)    
+[单选框在kero中使用](http://tinper.org/dist/kero/docs/ex_radio.html)    
 
-[单选框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[单选框在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)

@@ -6,7 +6,8 @@
 
 
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/datetime)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/datetime)
+(http://tinper.org/dist/webIDE/index.html#/demos/ui/datetime)
 
 
 用户可以在`u-datepicker`的dom元素添加format属性，来自定义日期的显示格式。具体fomat内容定义如下：
@@ -52,23 +53,26 @@ var dateObject = document.getElementById('domId')['u.DateTimePicker'];
 
 **注：** 如果获取的日期对象为空，原因为日期没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取日期对象。
 
-## \# setDate 
-* 类型： `Function`
-* 说明：设置具体的日期
-* 参数：
-	* `{String} dateStr` 具体格式："YYYY-MM-DD hh:mm:ss"
+
+##Methods
+
+### \# setDate 
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 设置具体的日期 | * `{String} dateStr` 具体格式："YYYY-MM-DD hh:mm:ss" |
+
 * 用法：
 
 ```
-dateObject.setDate('2016-02-03');
+dateObject.setDate('2016-02-03'),可以设置空值，清掉之前设置的值，dateObject.setDate('')。
 
 ```
-## \# setEnable 
+### \# setEnable 
 
-* 类型：`Function`
-* 说明： 设置日期控件是否可用
-* 参数：
-	* `{Boolean} isEnable` 为`true`时可用，为`false`为不可用 
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 设置日期控件是否可用 | * `{Boolean},  `true`时可用，为`false`为不可用 |
+
 * 用法：
 
 ```
@@ -77,26 +81,25 @@ dateObject.setEnable(false);
 
 ```
 
-## \# setStartDate 
+### \# setStartDate 
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 设置可选时间范围的起始日期 | * `{String} startDate` 具体格式："YYYY-MM-DD" |
 
-* 类型：`Function`
-* 说明： 设置可选时间范围的起始日期
-* 参数：
-	* `{String} startDate` 具体格式："YYYY-MM-DD"
 * 用法：
 
 ```
 
-dateObject.setStartDate('2016-01-01');
+    dateObject.setStartDate('2016-01-01');
 
 ```
 
-## \# setEndDate 
+### \# setEndDate 
 
-* 类型：`Function`
-* 说明： 设置可选时间范围的结束日期
-* 参数：
-	* `{String} endDate` 具体格式："YYYY-MM-DD"
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 设置可选时间范围的结束日期 | * `{String} endDate` 具体格式："YYYY-MM-DD" |
+
 * 用法：
 
 ```
@@ -105,12 +108,13 @@ dateObject.setEndDate('2016-01-01');
 
 ```
 
-## \# setFormat
+### \# setFormat
 
-* 类型：`Function`
-* 说明： 规定日期的显示格式
-* 参数：
-	* `{String} format` 具体格式：参考format内容
+| 类型        | 说明          | 参数  | 
+| ------------- |:-------------:| -----:|
+| Function     | 规定日期的显示格式 |  `{String} format` 具体格式：参考format内容 |
+
+
 * 用法：
 
 ```
@@ -119,8 +123,18 @@ dateObject.setFormat('YYYY');
 
 ```
 
+##Event
+
+### \# select
+
+| 类型        | 说明          | 参数  | 
+| ------------- |:-------------:| -----:|
+| Function     | 规定日期的显示格式 |  `{String} format` 具体格式：参考format内容 |
+
+
+
 相关内容：
 
-[日期在kero中使用](http://design.yyuap.com/dist/pages/kero/ex_datetime.html)    
+[日期在kero中使用](http://tinper.org/dist/kero/docs/ex_datetime.html)    
 
-[日期在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[日期在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
