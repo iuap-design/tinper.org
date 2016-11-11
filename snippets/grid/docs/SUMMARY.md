@@ -1,6 +1,7 @@
 * [快速使用](README.md)
-* [属性API](grid_attribute.md)
+* 属性API
+  * [基本属性](grid_attribute.md)
+  * [生命周期](grid_lifecycle.md)
+  * [列属性](grid_column.md)
 * [方法API](grid_method.md)
 * [扩展介绍](gridcustom.md)
-
-
