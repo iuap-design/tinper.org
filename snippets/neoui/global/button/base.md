@@ -5,4 +5,4 @@
 
 
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/button)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/button)

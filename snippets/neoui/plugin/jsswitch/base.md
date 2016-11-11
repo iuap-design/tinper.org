@@ -5,7 +5,7 @@
 
 
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/switch)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/switch)
 
 
 # API
@@ -99,6 +99,6 @@ switchObject.isChecked();
 
 相关内容：
 
-[开关在kero中使用](http://design.yyuap.com/dist/pages/kero/ex_switch.html)    
+[开关在kero中使用](http://tinper.org/dist/kero/docs/ex_switch.html)    
 
-[开关在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[开关在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
