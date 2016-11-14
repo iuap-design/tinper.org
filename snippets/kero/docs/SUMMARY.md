@@ -20,6 +20,7 @@
   * [时间选择](ex_time.md)
   * [表盘选择](clockpicker.md)
   * [年月选择](ex_yearmonth.md)
+  * [月日选择](ex_monthdate.md)
   * [日期时间选择](ex_datetime.md)
   * [金额转换](currency_ex.md)
   * [下拉列表](combobox_ex.md)
