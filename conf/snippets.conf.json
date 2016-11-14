@@ -43,6 +43,9 @@
         "name": "年月",
         "url": "demos/ui/yearmonth"
     },{
+        "name": "月日",
+        "url": "demos/ui/monthdate"
+    },{
         "name": "月份",
         "url": "demos/ui/month"
     }, {
@@ -224,6 +227,9 @@
     }, {
         "name": "年月",
         "url": "demos/kero/yearmonth"
+    }, {
+        "name": "月日",
+        "url": "demos/kero/monthdate"
     }, {
         "name": "月份",
         "url": "demos/kero/month"
