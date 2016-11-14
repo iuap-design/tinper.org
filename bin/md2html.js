@@ -92,7 +92,7 @@ var markedFun = function(oldPath,newPath,fullName) {
 	if(fullName !== 'SUMMARY.md'){
 		markedHtml = baseCont.replace('<%Content%>',markedCont);
 	} else {
-		markedHtml = markedCont.replace(/\.md/g,'.html');
+		markedHtml = markedCont.replace(/\.md/g,'.html').replace(/<li>(\S*)<ul>/g,`<li><span>$1</span><ul>`);
 	}
 	// console.log(markedHtml);
 
