@@ -18,6 +18,10 @@ var zipPath;
 var tinperPoly = 'tinper-neoui-polyfill';
 var tinperNeoui = 'tinper-neoui';
 
+var showError = function(err){
+	 console.log( '\n错误文件:',err.file,'\n错误行数:',err.line,'\n错误信息:',err.message);
+}
+
 module.exports = function(data, self, cb){
 
 	/**
@@ -27,7 +31,7 @@ module.exports = function(data, self, cb){
 	 * JS Match: jsselect
 	 */
 	var dataJson = data;
-	console.log(dataJson);
+	// console.log(dataJson);
 	var basePath = '../node_modules/';
 
 	/**
@@ -67,7 +71,7 @@ module.exports = function(data, self, cb){
 	var corData = fs.readFileSync(corPath, 'utf-8');
 	var corNewData = corData.replace(/(\$color-primary: ).*(;)/g,`$1"${dataColor}"$2`);
 	fs.writeFileSync(corPath,corNewData, 'utf-8');
-	
+
 	/**
 	 * neoui定制部分
 	 */
@@ -87,7 +91,7 @@ module.exports = function(data, self, cb){
 		}
 
 		if(dataJson.adselect){
-			console.log('选择ko');
+			// console.log('选择ko');
 		}
 	}
 
@@ -122,7 +126,7 @@ module.exports = function(data, self, cb){
 					ex[key] = key;
 				}
 			}
-		}		
+		}
 	};
 	koFun();
 
@@ -148,13 +152,13 @@ module.exports = function(data, self, cb){
 
 
 
-	
-	
+
+
 
 	// sass部分
 	gulp.task('sass', function() {
 		return gulp.src(neouiCss)
-			.pipe(sass())
+			.pipe(sass()).on('error', function(err){ showError(err) })
 			.pipe(concat('u.css'))
 			.pipe(gulp.dest(path.resolve(__dirname,'../download')))
 	});
@@ -168,9 +172,9 @@ module.exports = function(data, self, cb){
 						{
 							test: /(\.jsx|\.js)$/,
 							loader: 'babel',
-							exclude: /(bower_components)/ 
+							exclude: /(bower_components)/
 						}
-					]				
+					]
 				},
 				output:{
 					filename:'u.js',
@@ -181,16 +185,16 @@ module.exports = function(data, self, cb){
 					extensions: ['','.js','.jsx']
 				},
 				resolveLoader: {
-					root: path.join(__dirname, "../node_modules") 
+					root: path.join(__dirname, "../node_modules")
 				}
-			}))
+			})).on('error', function(err){ showError(err) })
 			.pipe(gulp.dest(path.resolve(__dirname,'../download')));
 	});
 
 	var downFiles = path.resolve(__dirname, '../download/');
 	// zip压缩
 	gulp.task('zip', ['webpack'], function() {
-		
+
 		return gulp.src([downFiles + '/*.js', downFiles + '/*.css'])
 			.pipe(zip('down.zip'))
 			.pipe(gulp.dest(path.resolve(__dirname, '../download')));
@@ -210,6 +214,6 @@ module.exports = function(data, self, cb){
 	// gulp.watch(path.resolve(__dirname, '../entry.js'), ['zip']);
 
 
-	
+
 
 };
