@@ -86,6 +86,12 @@ p code{
     list-style:none;
 }
 
+#sidebar > ul > li > span{
+    display: block;
+    padding: 7px 0;
+    text-indent: 15px;
+}
+
 #sidebar li > ul{
     padding-left:15px;
 }
