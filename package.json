@@ -9,8 +9,9 @@
     "reload": "node bin/reload",
     "mark": "node bin/index",
     "docs": "node bin/mdconcat",
-    "dist": "npm run docs && npm run mark",
-    "deploy": "sh bin/fetch.sh && npm run cate && npm run docs && npm run mark"
+    "dist": "npm run cate && npm run packdata && npm run docs && npm run mark",
+    "packdata": "node bin/packdata",
+    "deploy": "sh bin/fetch.sh && npm run cate && npm run packdata && npm run docs && npm run mark"
   },
   "repository": {
     "type": "git",
@@ -68,6 +69,7 @@
     "koa-bodyparser": "^2.0.1",
     "koa-cache-control": "^1.0.0",
     "koa-gzip": "^0.1.0",
+    "koa-logger": "^1.3.0",
     "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
     "marked": "^0.3.6",

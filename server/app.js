@@ -5,7 +5,7 @@ var router = require('koa-router')();
 var serve = require('koa-static');
 var koaBody = require('koa-body');
 var gzip = require('koa-gzip');
-
+var logger = require('koa-logger');
 
 var app = koa();
 var iwebRouter = require('./router');
@@ -37,8 +37,8 @@ app.use(function *(next){
   }
 });
 
+app.use(logger());
 app.use(serve(path.join(__dirname, '../'),{maxAge: 2592000000}));
-
 app.listen( 8001 );
 
 // 起服务时清楚定制生成的临时文件同时创建临时scss文件

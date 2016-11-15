@@ -1,6 +1,6 @@
 # bee-input-group-button
 
-InputGroupButton 作为FormControl的边按钮容器存在，因已集成到InputGroup,用法InputGroup.Button.
+`InputGroupButton` 作为`FormControl`的边按钮容器存在，因已集成到`InputGroup`,用法`InputGroup.Button`.
 
 ## 案列
 

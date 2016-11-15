@@ -1,5 +1,5 @@
 import { Loadingstate } from 'tinper-bee';
-import { Button } from 'bee-button';
+import { Button } from 'tinper-bee';
 
 
 class Demo3 extends Component {

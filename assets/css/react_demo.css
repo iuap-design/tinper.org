@@ -19,3 +19,21 @@
 .demo-input-group .input-group {
 	margin-top: 10px;
 }
+#ReactAlertDemo3 button{
+	margin-bottom: 10px;
+}
+#ReactFormControlDemo2 .demo-form-control span{
+	padding: 10px;
+}
+#beeButtonDemo1 button{
+	margin-right: 10px;
+}
+#beeButtonDemo2 button{
+	margin-right: 10px;
+}
+#beeButtonDemo3 button{
+	margin-right: 10px;
+}
+#beeSwitchDemo3 .bee-switch{
+	margin-bottom: 10px;
+}

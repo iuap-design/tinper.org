@@ -2,10 +2,10 @@
 * [按钮](button.md)
 * [开关](switch.md)
 * [标签](control-label.md)
-<!-- * [表单元素](form-control.md) -->
+* [表单元素](form-control.md)
 * [输入框图标](input-group-addon.md)
 * [输入框按钮](input-group-button.md)
 * [输入组](input-group.md)
 * [表单容器](form-group.md)
 * [状态按钮](loading-state.md)
-<!-- * [消息框](alert.md) -->
+* [消息框](alert.md)

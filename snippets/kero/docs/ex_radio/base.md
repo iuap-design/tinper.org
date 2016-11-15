@@ -4,7 +4,7 @@
 
 replaceExamp
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/kero/radio)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/radio)
 
 **注意**：
 
@@ -72,6 +72,6 @@ radioAObject.setEnable(true);//设置可用
 
 相关内容：
 
-[基础单选框](http://design.yyuap.com/dist/pages/global-style/radio.html)    
+[基础单选框](http://tinper.org/dist/neoui/global/radio.html)  
 
-[单选框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[单选框在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
