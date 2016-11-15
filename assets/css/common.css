@@ -186,3 +186,47 @@ img {
         display: none;
     }
 }
+
+/*首页产品图文描述*/
+a.product_img{
+    display: block;
+    position:relative;
+}
+
+a.product_img:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-width: 0px;
+    border-style: solid;
+    transition-duration: .4s;
+    transition-property: top,right,bottom,left;
+}
+a.product_img:hover:before{
+    border-width:2px;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+}
+a.product_img.uba_link:hover:before{
+    border-color: rgba(107, 214, 56, 0.6)
+}
+a.product_img.neoui_link:hover:before{
+    border-color: rgba(26, 152, 252, 0.6)
+}
+a.product_img.react_link:hover:before{
+    border-color: rgba(253, 179, 43, 0.6)
+}
+a.product_img.grid_link:hover:before{
+    border-color: rgba(249, 149, 110, 0.6)
+}
+a.product_img.kero_link:hover:before{
+    border-color: rgba(167, 120, 244, 0.6)
+}
+a.product_img.sparrow_link:hover:before{
+    border-color: rgba(247, 106, 125, 0.6)
+}
