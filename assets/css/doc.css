@@ -223,6 +223,10 @@ p code{
     font-size:14px;
 }
 
+#content-wrap .example-content li{
+    list-style: none;
+}
+
 .example-content{
     position: relative;
     padding: 10px;
