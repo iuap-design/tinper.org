@@ -22,5 +22,5 @@ var NEW_VERSION = PKG_VERSION.join('.');
  * 命令执行
  */
 // var execSync = require('child_process').execSync;
-// var command = `git tag v${NEW_VERSION} && git push origin v${NEW_VERSION} && git add . && git commit -m 'build tag & CHANGELOG' && git push origin release`
+// var command = `git tag v${NEW_VERSION} && git push origin v${NEW_VERSION} && git add -A && git commit -m 'build tag & CHANGELOG' && git push origin release`
 // execSync(command);
