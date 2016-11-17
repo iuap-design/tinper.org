@@ -2,7 +2,7 @@
 * [按钮](button.md)
 * [开关](switch.md)
 * [标签](control-label.md)
-* [表单元素](form-control.md)
+* [表单元素(input)](form-control.md)
 * [输入框图标](input-group-addon.md)
 * [输入框按钮](input-group-button.md)
 * [输入组](input-group.md)
