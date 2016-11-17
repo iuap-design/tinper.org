@@ -13,9 +13,9 @@ $(document).ready(function() {
 
 
     // 暂时处理iphone fix导致二级目录无法展开bug
-    if (!navigator.platform == 'iPhone') {
-        $('.u-navbar').css({
-            'position': 'fixed'
+    if (!!(navigator.platform == 'iPhone')) {
+        $('.u-navbar').eq(0).css({
+            'position': 'static'
         });
     }
 

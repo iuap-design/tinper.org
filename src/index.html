@@ -2,34 +2,13 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <!-- Site Title -->
-    <title>tinper</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="iuap design tinper UI 企业级 Web 应用 前端 框架 解决方案" />
-    <meta name="keywords" content="iuap design UI tinper 企业级 Web 应用 前端 框架 解决方案" />
-    <meta name="author" content="iuap" />
-    <!-- Mobile Specific Meta Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <!-- Favicon Icon -->
-   <!--  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
-   <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
-    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
-    <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="//design.yyuap.com/static/uui/latest/css/u.css">
-    <link href="/assets/css/style.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="/assets/css/common.css"  rel="stylesheet" media="screen">
-    <!--[if lte IE 8]>
-    <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    {{{include '/../partial/index/header'}}}
 </head>
 
 <body>
     <!-- 导航 开始  -->
     <!-- 引入head -->
-    {{{include '/../partial/package/header'}}}
+    {{{include '/../partial/_nav'}}}
     <!-- 导航 结束 -->
     <!-- welcome <img src="images/iuapdesignicon1.png"alt=""><br>-->
     <div class="content">
@@ -54,32 +33,39 @@
                  <div class="u-row text-center">
                     <div class="u-col-md-12 height-150">
                         <div class="page text-center">
-                            <p class="font-size-18 grey-600">tinper，由前端集成开发工具uba、前端UI框架neoui、react组件库bee、UI数据模型kero、前端基础库sparrow组成，
+                            <p class="font-size-18 grey-600">tinper，由前端集成开发工具uba、前端UI框架neoui、react组件库bee、表格组件grid、UI数据模型kero、前端基础库sparrow组成，
                                 <br>旨在帮助开发者快速进行应用开发，提高开发效率。</p>
                         </div>
                         <div class="height-50"></div>
                     </div>
 
-                    <div class="u-col-sm-1 hidden-xs margin-top-10">
+
+                    <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
+                        <a class="product_img uba_link" href="/dist/uba/index.html"><img  src="/assets/images/uba.png" alt=""></a>
+                        <a href="/dist/uba/index.html" class="product-title"> 前端集成开发工具uba</a>
                     </div>
                     <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a href="/dist/uba/index.html"><img  src="/assets/images/uba.png" alt=""></a>
-                    </div>
-                    <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a href="/dist/neoui/index.html"><img  src="/assets/images/neouik.png" alt=""><a>
+                        <a class="product_img neoui_link" href="/dist/neoui/index.html"><img  src="/assets/images/neouik.png" alt=""><a>
+                        <a href="/dist/neoui/index.html"  class="product-title"> UI框架neoui</a>
                     </div>
 
                     <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a href="/dist/react/index.html"><img  src="/assets/images/bee.png" alt=""><a>
+                        <a class="product_img react_link" href="/dist/react/index.html"><img  src="/assets/images/bee.png" alt=""><a>
+                        <a href="/dist/react/index.html" class="product-title">React组件库bee</a>
                     </div>
                     <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a href="/dist/kero/index.html"><img  src="/assets/images/kero.png" alt=""><a>
+                        <a class="product_img grid_link" href="/dist/grid/index.html"><img  src="/assets/images/grid.png" alt=""><a>
+                        <a href="/dist/grid/index.html" class="product-title">表格控件grid</a>
                     </div>
                     <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a href="/dist/sparrow/index.html"><img  src="/assets/images/sparrow.png" alt=""><a>
+                        <a class="product_img kero_link" href="/dist/kero/index.html"><img  src="/assets/images/kero.png" alt=""><a>
+                        <a href="/dist/kero/index.html" class="product-title">UI数据模型kero</a>
                     </div>
-                    <div class="u-col-sm-1 hidden-xs">
+                    <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
+                        <a class="product_img sparrow_link" href="/dist/sparrow/index.html"><img  src="/assets/images/sparrow.png" alt=""><a>
+                        <a href="/dist/sparrow/index.html" class="product-title">前端基础库sparrow</a>
                     </div>
+
 
 
                 </div>
@@ -276,7 +262,7 @@
                           <br>
                           <p class="grey-50">开源版本免费使用</p>
                       </p>
-                      <a class="u-button u-button-warning u-button-lg" href="/dist/package/index.html"><i class="icon uf font-size-30 green-50"><font><font></font></font></i>定制下载</a>
+                      <!-- <a class="u-button u-button-warning u-button-lg" href="#"><i class="icon uf font-size-30 green-50"><font><font></font></font></i>定制下载</a> -->
                   </div>
               </div>
           </div>

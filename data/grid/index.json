@@ -1,0 +1,45 @@
+{
+    "title":"grid",
+    "nav": [
+        {
+            "name":"首页",
+            "href":"/dist/grid/index.html"
+        },
+        {
+            "name":"文档",
+            "href":"/dist/grid/docs/README.html"
+        },
+        {
+            "name":"Tinper",
+            "href":"/dist/index.html"
+        }
+    ],
+    "product":{
+            "proName":"grid",
+            "backgroundImg":"/assets/images/about-us-grid.jpg",
+            "docHref":"/dist/grid/docs/README.html",
+            "introduce":"Grid表格控件将数据以表格的方式进行展示，同时提供了排序、交换列、数字列、复选、合计、自定义渲染、修改等复杂功能，满足了复杂场景下数据展示的需求。",
+            "features": [
+                {
+                    "name":"多终端支持",
+                    "img":"uf uf-twocolumnslayout",
+                    "desc":"支持IE8+、Firefox、Chrome、safari等多平台主流浏览器"
+                },
+                {
+                    "name":"功能强大",
+                    "img":"uf uf-branchwithleavesblackshape",
+                    "desc":"支持表格排序、交换列、数字列、复选、合计等复杂功能"
+                },
+                {
+                    "name":"丰富组件配套",
+                    "img":"uf uf-horizontalresizeoption",
+                    "desc":"与neoui完美结合，打造致美表格控"
+                },
+                {
+                    "name":"完善的文档说明",
+                    "img":"uf uf-book",
+                    "desc":"从快速上手到具体使用进行详细说明，每个API都有详细文档讲解、示例展示，方便用户使用"
+                }
+            ]
+    }
+}

@@ -1,5 +1,4 @@
 
-@import 'common.css';
 
 /*动画*/
 
@@ -95,7 +94,7 @@
 }
 
 
-    
+
 .feature {
     min-height: 210px;
 }
@@ -117,4 +116,13 @@
     -webkit-filter: grayscale(0%);
     width: 100px;
     margin-bottom: 5px;
+}
+
+
+a.product-title {
+    margin-top: 10px;
+    display: inline-block;
+    color: rgb(117, 117, 117);
+    text-decoration: none;
+    margin-bottom: 20px;
 }

@@ -4,7 +4,7 @@
 
 replaceExamp
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/kero/combobox)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/combobox)
 
 
 # API
@@ -27,7 +27,7 @@ replaceExamp
 **注**：如果在开发时要求兼容ie8,ie9，datasource必须定义。　
 
 
-u-meta基础api请参考[这里](http://design.yyuap.com/dist/pages/kero/moduleapi.html)
+u-meta基础api请参考[这里](http://tinper.org/dist/kero/docs/moduleapi.html)
 
 
 
@@ -66,6 +66,6 @@ comboboxAObject.setEnable(true);//设置可用
 
 相关内容：
 
-[基础下拉框](http://design.yyuap.com/dist/pages/plugins/combobox.html)    
+[基础下拉框](http://tinper.org/dist/neoui/plugin/combobox.html)    
 
-[下拉框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[下拉框在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)

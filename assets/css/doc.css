@@ -30,7 +30,7 @@ p code{
 /*整体内容区域*/
 #content-wrap {
     background: #fff;
-    /*margin-top:52px;*/
+    margin-top:52px;
     font-size:14px;
 }
 #content-wrap li,#content-wrap ul{
@@ -84,6 +84,12 @@ p code{
     cursor: not-allowed;
     color: #999;
     list-style:none;
+}
+
+#sidebar > ul > li > span{
+    display: block;
+    padding: 7px 0;
+    text-indent: 15px;
 }
 
 #sidebar li > ul{
@@ -215,6 +221,10 @@ p code{
 }
 .article-container p,.article-container li{
     font-size:14px;
+}
+
+#content-wrap .example-content li{
+    list-style: none;
 }
 
 .example-content{

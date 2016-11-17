@@ -4,7 +4,7 @@
 
 replaceExamp
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/kero/checkbox)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/checkbox)
 
 **注意**：
 
@@ -40,7 +40,7 @@ replaceExamp
 	* 说明：是否含有其他复选框，当hasOther为true时，复选框会自动多一个显示值为“其他”的复选框和一个输入框，输入框默认是不可输入的，当复选框选中时，输入框可输入，存放该复选框的真实值。默认为false。
 
 
-u-meta基础api请参考[这里](http://design.yyuap.com/dist/pages/kero/moduleapi.html)
+u-meta基础api请参考[这里](http://tinper.org/dist/kero/docs/moduleapi.html)
 
 
 
@@ -83,6 +83,6 @@ checkboxAObject.setEnable(true);//设置可用
 
 相关内容：
 
-[复选框](http://design.yyuap.com/dist/pages/global-style/checkbox.html)    
+[复选框](http://tinper.org/dist/neoui/global/checkbox.html)    
 
-[复选框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[复选框在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)

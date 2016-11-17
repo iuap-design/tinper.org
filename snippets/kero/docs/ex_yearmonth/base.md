@@ -4,7 +4,7 @@
 
 replaceExamp
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/kero/yearmonth)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/yearmonth)
 
 
 # API
@@ -13,10 +13,10 @@ replaceExamp
 
 * type：`u-yearmonth`
 
-u-meta基础api请参考[这里](http://design.yyuap.com/dist/pages/kero/moduleapi.html)
+u-meta基础api请参考[这里](http://tinper.org/dist/kero/docs/moduleapi.html)
 
 相关内容：
 
-[基础年月控件](http://design.yyuap.com/dist/pages/plugins/yearmonth.html)    
+[基础年月控件](http://tinper.org/dist/neoui/plugin/yearmonth.html)    
 
-[年月控件在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[年月控件在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)

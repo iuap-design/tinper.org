@@ -5,7 +5,7 @@
 
 
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/yearmonth)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/yearmonth)
 
 # API
 
@@ -41,8 +41,8 @@ yearMonthObject.setValue('2016-02');
 
 相关内容：
 
-[年月在kero中使用](http://design.yyuap.com/dist/pages/kero/ex_yearmonth.html)    
+[年月在kero中使用](http://tinper.org/dist/kero/docs/ex_yearmonth.html)    
 
-[年月在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[年月在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
 
 

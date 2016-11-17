@@ -6,12 +6,8 @@
             "href":"/dist/sparrow/index.html"
         },
         {
-            "name":"快速上手",
-            "href":"/dist/sparrow/start/install.html"
-        },
-        {
-            "name":"API",
-            "href":"/dist/sparrow/api/api.html"
+            "name":"文档",
+            "href":"/dist/sparrow/docs/install.html"
         },
         {
             "name":"Tinper",
@@ -21,7 +17,7 @@
     "product":{
             "proName":"sparrow",
             "backgroundImg":"/assets/images/about-us-sparrow.jpg",
-            "docHref":"/dist/sparrow/start/install.html",
+            "docHref":"/dist/sparrow/docs/install.html",
             "introduce":"tinper-sparrow 是一个轻量级 javascript 库，让开发者能更方便地进行 DOM操作、events处理、动画效果实现和AJAX交互等，并且提供丰富的API封装，如多平台多浏览器判断、Cookies操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。",
             "features": [
                 {
