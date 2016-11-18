@@ -9,3 +9,8 @@
 * [表单容器](form-group.md)
 * [状态按钮](loading-state.md)
 * [消息框](alert.md)
+* [进度条](progress-bar.md)
+* [分页](pagination.md)
+* [单选按钮组](radio-group.md)
+* [复选按钮](checkbox.md)
+* [即时提示](tooltip.md)
