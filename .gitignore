@@ -23,7 +23,7 @@ _book/
 download/
 
 dist/
-!dist/webIDE/
+!dist/webIDE/**
 
 
 # render ignore

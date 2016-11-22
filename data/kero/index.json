@@ -2,16 +2,16 @@
     "title":"kero",
     "nav": [
         {
-            "name":"首页",
-            "href":"/dist/kero/index.html"
+    		"name":"首页",
+    		"href":"/"
+    	},
+        {
+            "name":"产品概述",
+    		"href":"/dist/kero/index.html"
         },
         {
             "name":"文档",
             "href":"/dist/kero/docs/overview.html"
-        },
-        {
-            "name":"Tinper",
-            "href":"/dist/index.html"
         }
     ],
     "product":{
