@@ -143,6 +143,7 @@ src/**/*.md
 # data/package生成的index.json
 data/package/index.json
 
-
-dist/
+# 调整webide
+dist/**/*.*
 !dist/webIDE/**/*.*
+dist/webIDE/**/.DS_Store
