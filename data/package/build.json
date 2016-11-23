@@ -82,6 +82,7 @@
                 {"name":"菜单","file":"neoui-menu"},
                 {"name":"消息框","file":"neoui-message"},
                 {"name":"月份","file":"neoui-month"},
+                {"name":"月日","file":"neoui-monthdate"},
                 {"name":"多语言","file":"neoui-multilang"},
                 {"name":"导航菜单","file":"neoui-navmenu"},
                 {"name":"分页","file":"neoui-pagination"},
