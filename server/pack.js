@@ -7,6 +7,7 @@ var webpack = require('gulp-webpack');
 var rename = require('gulp-rename');
 var zip = require('gulp-zip');
 var clean = require('gulp-clean');
+var replace = require('gulp-replace');
 
 // 获取Neoui es6模块依赖关系
 var neojson = require('../bin/neoui.json');
@@ -187,6 +188,7 @@ module.exports = function(data, self, cb){
 	gulp.task('styleconcat',function(){
 		return gulp.src(neouiCss)
 		.pipe(concat('u.css'))
+		.pipe(replace(/THEMETEST/g, dataColor))
 		.pipe(gulp.dest(path.resolve(__dirname,'../download')))
 	})
 
