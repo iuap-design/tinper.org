@@ -31,7 +31,7 @@ module.exports = function(data, self, cb){
 	 * JS Match: jsselect
 	 */
 	var dataJson = data;
-	// console.log(dataJson);
+	console.log(dataJson);
 	var basePath = '../node_modules/';
 
 	/**
