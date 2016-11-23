@@ -108,7 +108,7 @@ module.exports = {
     // 新定制
     router.post('/package', function *(next) {
       var self = this;
-      console.log(this.request.body);
+      // console.log(this.request.body);
 
       var data = this.request.body;
       var pack = require('./pack.js');
@@ -133,7 +133,7 @@ module.exports = {
       yield function(cb) {
         downLoad(viewCode,self,cb);
       };
-                
+
     });
 
     router.get('/down', function *(next) {

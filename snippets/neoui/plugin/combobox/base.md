@@ -7,7 +7,7 @@ combobox组合框是由一个文本输入控件和一个下拉菜单组成的，
 
 
 
-[试一试](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/ui/combobox)
+[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/combobox)
 
 # API
 
@@ -95,7 +95,7 @@ document.getElementById('domId')['u.Combo'].emptyValue();
 
 相关内容：
 
-[下拉框在kero中使用](http://design.yyuap.com/dist/pages/kero/combobox_ex.html)    
+[下拉框在kero中使用](http://tinper.org/dist/kero/docs/combobox_ex.html)    
 
-[下拉框在grid中使用](http://design.yyuap.com/dist/pages/webIDE/index.html#/demos/grids/edit)
+[下拉框在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
 

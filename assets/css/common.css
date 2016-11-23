@@ -9,10 +9,13 @@ img {
     position: fixed;
     width: 100%;
     margin-bottom: 0px;
+    box-sizing: border-box;
 }
 
 
-
+.u-container {
+    box-sizing: border-box;
+}
 
 .u-navbar:before , .u-navbar:after ,.u-navbar-header:before , .u-navbar-header:after {
     content: "";
@@ -105,4 +108,125 @@ img {
 .friend-link a {
     color: inherit;
     text-decoration: none;
+}
+
+/*github-fork-button*/
+
+/*github fork*/
+.github-fork-ribbon img{
+   position: absolute;
+   top: 0;
+   right: 0;
+   border: 0;
+   width:125px;
+}
+
+.github-fork-button{
+   display: none;
+}
+
+.github-fork-button a{
+   display: inline-block;
+   padding: 0px 5px;
+   margin-top:15px;
+   font-size: 12px;
+   line-height: 18px;
+   color: #333;
+   white-space: nowrap;
+   vertical-align: middle;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   background-color: #eee;
+   background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+   background-image: linear-gradient(#fcfcfc, #eee);
+   border: 1px solid #d5d5d5;
+   border-radius: 3px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.github-fork-button a .octicon{
+   vertical-align: text-top;
+   overflow: hidden;
+   display: inline-block;
+   fill: currentColor;
+}
+
+.github-fork-button.show-min{
+    display: none;
+}
+
+@media screen and (max-width:1450px) {
+   .github-fork-ribbon{
+       display: none;
+   }
+
+   .github-fork-button{
+       display: table-cell;
+       float:right;
+       margin-right:10px;
+   }
+}
+
+@media screen and (max-width:1000px) {
+   .github-fork-button{
+       margin-right: 18px;
+   }
+}
+
+@media (max-width: 767px) {
+    .github-fork-button.show-min{
+        display: block;
+    }
+    .github-fork-button.show-max{
+        display: none;
+    }
+}
+
+/*首页产品图文描述*/
+a.product_img{
+    display: block;
+    position:relative;
+}
+
+a.product_img:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-width: 0px;
+    border-style: solid;
+    transition-duration: .4s;
+    transition-property: top,right,bottom,left;
+}
+a.product_img:hover:before{
+    border-width:2px;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+}
+a.product_img.uba_link:hover:before{
+    border-color: rgba(107, 214, 56, 0.6)
+}
+a.product_img.neoui_link:hover:before{
+    border-color: rgba(26, 152, 252, 0.6)
+}
+a.product_img.react_link:hover:before{
+    border-color: rgba(253, 179, 43, 0.6)
+}
+a.product_img.grid_link:hover:before{
+    border-color: rgba(249, 149, 110, 0.6)
+}
+a.product_img.kero_link:hover:before{
+    border-color: rgba(167, 120, 244, 0.6)
+}
+a.product_img.sparrow_link:hover:before{
+    border-color: rgba(247, 106, 125, 0.6)
 }

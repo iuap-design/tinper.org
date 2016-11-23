@@ -10,7 +10,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 50px;
+    padding-top:50px;
 }
 
 .desc-headings {
@@ -65,7 +65,7 @@
 
 .feature {
     padding-bottom: 80px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .feature-icon {

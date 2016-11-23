@@ -39,7 +39,7 @@ var dataTable = new u.DataTable({
 
 * 参数：
 
-`meta`: 字段信息集合，其中的key为字段名，value为字段属性信息，属性信息可自定义。详情请参考[模型定义](http://design.yyuap.com/dist/pages/kero/datatable.html#模型定义)
+`meta`: 字段信息集合，其中的key为字段名，value为字段属性信息，属性信息可自定义。详情请参考[模型定义](http://tinper.org/dist/kero/docs/datatable.html#模型定义)
 
 
 

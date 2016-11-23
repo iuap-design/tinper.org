@@ -1,17 +1,56 @@
 [{
-    "name": "快速入门",
+    "name": "元素",
     "sub": [{
-        "name": "kero",
-        "url": "demos/quitstart/kero"
+        "name": "按钮",
+        "url": "demos/ui/button"
+    }, {
+        "name": "单选框",
+        "url": "demos/ui/radio"
+    }, {
+        "name": "复选框",
+        "url": "demos/ui/checkbox"
+    }, {
+        "name": "下拉框",
+        "url": "demos/ui/combobox"
+    },{
+        "name": "开关",
+        "url": "demos/ui/switch"
+    }, {
+        "name": "徽章标签",
+        "url": "demos/ui/badge"
+    }, {
+        "name": "辅助样式",
+        "url": "demos/assist"
+    }, {
+        "name": "图片",
+        "url": "demos/ui/image"
+    }, {
+        "name": "卡片",
+        "url": "demos/ui/cards"
     }]
 }, {
-    "name": "基本控件",
+    "name": "组件",
     "sub": [{
+        "name": "面包屑",
+        "url": "demos/ui/breadcrumbs"
+    }, {
         "name": "消息框",
         "url": "demos/ui/dialog"
     },{
-        "name": "单选框",
-        "url": "demos/ui/radio"
+        "name": "日期",
+        "url": "demos/ui/datetime"
+    },{
+        "name": "年月",
+        "url": "demos/ui/yearmonth"
+    },{
+        "name": "月日",
+        "url": "demos/ui/monthdate"
+    },{
+        "name": "月份",
+        "url": "demos/ui/month"
+    }, {
+        "name": "分页",
+        "url": "demos/ui/pagination"
     }, {
         "name": "加载进度条",
         "url": "demos/ui/progress"
@@ -22,62 +61,23 @@
         "name": "下拉菜单",
         "url": "demos/ui/menu"
     }, {
-        "name": "按钮",
-        "url": "demos/ui/button"
-    }, {
-        "name": "下拉框",
-        "url": "demos/ui/combobox"
-    }, {
-        "name": "徽章标签",
-        "url": "demos/ui/badge"
-    }, {
-        "name": "卡片",
-        "url": "demos/ui/cards"
-    }, {
-        "name": "面包屑",
-        "url": "demos/ui/breadcrumbs"
-    }, {
-        "name": "复选框",
-        "url": "demos/ui/checkbox"
-    }, {
-        "name": "页签",
-        "url": "demos/ui/tabs"
-    }, {
-        "name": "分页",
-        "url": "demos/ui/pagination"
-    }, {
-        "name": "天气",
-        "url": "demos/ui/weather"
-    }, {
-        "name": "图表",
-        "url": "demos/ui/chart"
-    }, {
-        "name": "列表",
-        "url": "demos/ui/listgroup"
-    }, {
-        "name": "图片",
-        "url": "demos/ui/image"
-    }, {
         "name": "色带",
         "url": "demos/ui/ribbon"
     }, {
         "name": "步骤",
         "url": "demos/ui/step"
     }, {
-        "name": "上传控件",
-        "url": "demos/ui/uploader"
+        "name": "页签",
+        "url": "demos/ui/tabs"
     }, {
-        "name": "辅助",
-        "url": "demos/assist"
+        "name": "列表",
+        "url": "demos/ui/listgroup"
     }, {
-        "name": "导航条",
-        "url": "demos/ui/navbar"
-    }]
-}, {
-    "name": "复杂控件",
-    "sub": [{
         "name": "树",
         "url": "demos/complex/tree-dt"
+    }, {
+        "name": "上传控件",
+        "url": "demos/ui/uploader"
     }, {
         "name": "穿梭框",
         "url": "demos/complex/transfer-dt"
@@ -87,25 +87,32 @@
     }, {
         "name": "筛选栏",
         "url": "demos/complex/filterBar"
-    }]
-},{
-    "name": "表单",
-    "sub": [{
-        "name": "基本元素",
-        "url": "demos/forms/baseElements"
     }, {
-        "name": "表单布局",
-        "url": "demos/forms/formLayout"
+        "name": "导航条",
+        "url": "demos/ui/navbar"
     }, {
-        "name": "元素校验",
-        "url": "demos/forms/validate"
+        "name": "天气",
+        "url": "demos/ui/weather"
     }, {
-        "name": "浏览态表单",
-        "url": "demos/forms/browse"
-    }]
-}, {
-    "name": "表格",
-    "sub": [{
+        "name": "图表",
+        "url": "demos/ui/chart"
+    }, {
+        "name": "表单",
+        "sub": [{
+            "name": "基本元素",
+            "url": "demos/forms/baseElements"
+        }, {
+            "name": "表单布局",
+            "url": "demos/forms/formLayout"
+        }, {
+            "name": "元素校验",
+            "url": "demos/forms/validate"
+        }, {
+            "name": "浏览态表单",
+            "url": "demos/forms/browse"
+        }]
+    }, {
+
         "name": "基础表格",
         "sub": [{
             "name": "简单表格",
@@ -126,51 +133,52 @@
             "name": "左树右表",
             "url": "demos/tables/tree-table"
         }]
+
+    }]
+}, {
+    "name": "grid控件",
+    "sub": [{
+        "name": "基础grid",
+        "url": "demos/grids/base"
     }, {
-        "name": "grid控件",
-        "sub": [{
-            "name": "基础grid",
-            "url": "demos/grids/base"
-        }, {
-            "name": "表头设置",
-            "url": "demos/grids/columnMenu"
-        }, {
-            "name": "拖拽",
-            "url": "demos/grids/drag"
-        }, {
-            "name": "编辑功能",
-            "url": "demos/grids/edit"
-        }, {
-            "name": "表单形式编辑",
-            "url": "demos/grids/editForm"
-        }, {
-            "name": "固定列",
-            "url": "demos/grids/fixed"
-        }, {
-            "name": "二级表头",
-            "url": "demos/grids/headerLevel"
-        }, {
-            "name": "宽度不足自动隐藏数据列",
-            "url": "demos/grids/overWidthHidden"
-        }, {
-            "name": "排序",
-            "url": "demos/grids/sort"
-        }, {
-            "name": "合计",
-            "url": "demos/grids/sumRow"
-        }, {
-            "name": "交换列",
-            "url": "demos/grids/swap"
-        }, {
-            "name": "树表",
-            "url": "demos/grids/tree"
-        }, {
-            "name": "单表格控件展现数据",
-            "url": "demos/grids/singGrid"
-        }, {
-            "name": "主（列表）子（表格控件）交互",
-            "url": "demos/grids/mainsub"
-        }]
+        "name": "表头设置",
+        "url": "demos/grids/columnMenu"
+    }, {
+        "name": "拖拽",
+        "url": "demos/grids/drag"
+    }, {
+        "name": "编辑功能",
+        "url": "demos/grids/edit"
+    }, {
+        "name": "表单形式编辑",
+        "url": "demos/grids/editForm"
+    }, {
+        "name": "固定列",
+        "url": "demos/grids/fixed"
+    }, {
+        "name": "二级表头",
+        "url": "demos/grids/headerLevel"
+    }, {
+        "name": "宽度不足自动隐藏数据列",
+        "url": "demos/grids/overWidthHidden"
+    }, {
+        "name": "排序",
+        "url": "demos/grids/sort"
+    }, {
+        "name": "合计",
+        "url": "demos/grids/sumRow"
+    }, {
+        "name": "交换列",
+        "url": "demos/grids/swap"
+    }, {
+        "name": "树表",
+        "url": "demos/grids/tree"
+    }, {
+        "name": "单表格控件展现数据",
+        "url": "demos/grids/singGrid"
+    }, {
+        "name": "主（列表）子（表格控件）交互",
+        "url": "demos/grids/mainsub"
     }]
 }, {
     "name": "布局",
@@ -198,6 +206,36 @@
     }, {
         "name": "导航布局",
         "url": "demos/layouts/navLayout"
+    }]
+}, {
+    "name": "kero",
+    "sub": [{
+        "name": "单选框",
+        "url": "demos/kero/radio"
+    }, {
+        "name": "复选框",
+        "url": "demos/kero/checkbox"
+    }, {
+        "name": "下拉框",
+        "url": "demos/kero/combobox"
+    }, {
+        "name": "开关",
+        "url": "demos/kero/switch"
+    }, {
+        "name": "日期",
+        "url": "demos/kero/datetime"
+    }, {
+        "name": "年月",
+        "url": "demos/kero/yearmonth"
+    }, {
+        "name": "月日",
+        "url": "demos/kero/monthdate"
+    }, {
+        "name": "月份",
+        "url": "demos/kero/month"
+    }, {
+        "name": "校验",
+        "url": "demos/kero/validate"
     }]
 }, {
     "name": "空页面",

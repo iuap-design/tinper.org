@@ -15,7 +15,7 @@ Iuap Design React 致力于提供给程序员愉悦快速的开发体验
 
 >小甜点
 
-在开始之前，推荐学习 <a href="http:facebook.github.io/react">React</a> 和 <a href="http://www.nodeclass.com/api/ECMAScript6.html">ES2016</a>
+在开始之前，推荐学习 <a href="http://facebook.github.io/react">React</a> 和 <a href="http://www.nodeclass.com/api/ECMAScript6.html">ES2016</a>
 
 # 标准开发
 

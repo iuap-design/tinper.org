@@ -140,3 +140,6 @@ src/docs/
 
 # src下生成的目录
 src/**/*.md
+
+# data/package生成的index.json
+data/package/index.json

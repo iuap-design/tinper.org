@@ -5,6 +5,7 @@
   * [时分秒](time.md)
   * [年份](year.md)
   * [年月](yearmonth.md)
+  * [月日](monthdate.md)
 * 表格插件
   * [基础说明](grid.md)	
   * [扩展说明](gridCustom.md)

@@ -161,7 +161,7 @@ fs.readdir(scssPath, function(err, scssFiles) {
 			fs.mkdirSync(packDir);
 		}
 
-		var indexPath = path.resolve(__dirname,'../data/package/index.json')
+		var indexPath = path.resolve(__dirname,'../data/package/build.json')
 		fs.writeFileSync(indexPath, totalConcat, 'utf-8');
 
 	});
