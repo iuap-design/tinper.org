@@ -9,9 +9,10 @@
     "reload": "node bin/reload",
     "mark": "node bin/index",
     "docs": "node bin/mdconcat",
-    "dist": "npm run cate && npm run packdata && npm run docs && npm run mark",
+    "custom": "gulp",
+    "dist": "npm run custom && npm run cate && npm run packdata && npm run docs && npm run mark",
     "packdata": "node bin/packdata",
-    "deploy": "sh bin/fetch.sh && npm run cate && npm run packdata && npm run docs && npm run mark"
+    "deploy": "sh bin/fetch.sh && npm run custom && npm run cate && npm run packdata && npm run docs && npm run mark"
   },
   "repository": {
     "type": "git",
