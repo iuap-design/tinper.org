@@ -1,7 +1,6 @@
 import { Pagination } from 'tinper-bee';
 
-
-class Demo5 extends React.Component {
+class Demo2 extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -17,12 +16,13 @@ class Demo5 extends React.Component {
 	    return (
 	      <div>
 	        <Pagination
-	        	first
-	        	last
-	        	prev
-	        	next
+		    	noBorder
 		        items={20}
-		        maxButtons={5}
+		        activePage={this.state.activePage}
+		        onSelect={this.handleSelect.bind(this)} />
+		    <Pagination
+		    	gap
+		        items={20}
 		        activePage={this.state.activePage}
 		        onSelect={this.handleSelect.bind(this)} />
 	      </div>
@@ -30,5 +30,5 @@ class Demo5 extends React.Component {
 	}
 }
 
+ReactDOM.render(<Demo2/>, document.getElementById('ReactPaginationDemo2'));
 
-ReactDOM.render(<Demo5 />, document.getElementById('ReactPaginationDemo5'));
