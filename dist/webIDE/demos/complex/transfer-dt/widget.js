@@ -53,6 +53,10 @@ events = {
     leftSelAll: function() {
         
         viewModel.srcListData.toggleAllSelect()
+    },
+    rightSelAll: function() {
+
+        viewModel.destListData.toggleAllSelect()
     }
 
 }
