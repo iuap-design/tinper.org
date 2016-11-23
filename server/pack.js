@@ -31,7 +31,7 @@ module.exports = function(data, self, cb){
 	 * JS Match: jsselect
 	 */
 	var dataJson = data;
-	console.log(dataJson);
+	// console.log(dataJson);
 	var basePath = '../node_modules/';
 
 	/**
@@ -79,14 +79,33 @@ module.exports = function(data, self, cb){
 	var neouiBasePath = path.resolve(__dirname,basePath + tinperNeoui);
 	var neouiCss =[];
 	var neouiJs =[];
+	/**
+	 * 以下注释部分为线上scss编译css准备,对应gulp任务为gulp sass
+	 */
+	// if(dataJson.cssselect) {
+	// 	for (var ci=0; ci<dataJson.cssselect.length; ci++) {
+	// 		neouiCss.push(neouiBasePath + '/scss/ui/' + dataJson.cssselect[ci] + '.scss');
+	// 	}
+	// }
+	// if(dataJson.jsselect) {
+	// 	for (var ji=0; ji<dataJson.jsselect.length; ji++) {
+	// 		neouiCss.push(neouiBasePath + '/scss/ui/' + dataJson.jsselect[ji] + '.scss');
+	// 		neouiJs.push(neouiBasePath + '/js/' + dataJson.jsselect[ji] + '.js');
+	// 	}
+	//
+	// 	if(dataJson.adselect){
+	// 		// console.log('选择ko');
+	// 	}
+	// }
+
 	if(dataJson.cssselect) {
 		for (var ci=0; ci<dataJson.cssselect.length; ci++) {
-			neouiCss.push(neouiBasePath + '/scss/ui/' + dataJson.cssselect[ci] + '.scss');
+			neouiCss.push(neouiBasePath + '/custom/' + dataJson.cssselect[ci] + '.css');
 		}
 	}
 	if(dataJson.jsselect) {
 		for (var ji=0; ji<dataJson.jsselect.length; ji++) {
-			neouiCss.push(neouiBasePath + '/scss/ui/' + dataJson.jsselect[ji] + '.scss');
+			neouiCss.push(neouiBasePath + '/custom/' + dataJson.jsselect[ji] + '.css');
 			neouiJs.push(neouiBasePath + '/js/' + dataJson.jsselect[ji] + '.js');
 		}
 
@@ -155,16 +174,24 @@ module.exports = function(data, self, cb){
 
 
 
-	// sass部分
-	gulp.task('sass', function() {
+	/**
+	 * 取消在线编译
+	 */
+	// gulp.task('sass', function() {
+	// 	return gulp.src(neouiCss)
+	// 		.pipe(sass()).on('error', function(err){ showError(err) })
+	// 		.pipe(concat('u.css'))
+	// 		.pipe(gulp.dest(path.resolve(__dirname,'../download')))
+	// });
+
+	gulp.task('styleconcat',function(){
 		return gulp.src(neouiCss)
-			.pipe(sass()).on('error', function(err){ showError(err) })
-			.pipe(concat('u.css'))
-			.pipe(gulp.dest(path.resolve(__dirname,'../download')))
-	});
+		.pipe(concat('u.css'))
+		.pipe(gulp.dest(path.resolve(__dirname,'../download')))
+	})
 
 	// js部分
-	gulp.task('webpack', ['sass','poly'], function() {
+	gulp.task('webpack', ['styleconcat','poly'], function() {
 		return gulp.src(path.resolve(__dirname, '../entry.js'))
 			.pipe(webpack({
 				module:{
