@@ -77,6 +77,15 @@
     padding-bottom: 16px;
 }
 
+.content-wrapper.part1 .white a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.content-wrapper.part1 .white a:hover{
+    text-decoration: underline;
+}
+
 
 /* part2 */
 

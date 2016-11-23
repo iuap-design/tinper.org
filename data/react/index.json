@@ -2,22 +2,24 @@
     "title":"react",
     "nav": [
         {
-            "name":"首页",
-            "href":"/dist/react/index.html"
+    		"name":"首页",
+    		"href":"/"
+    	},
+        {
+            "name":"产品概述",
+    		"href":"/dist/react/index.html"
         },
         {
             "name":"开始使用",
             "href":"/dist/react/start/start.html"
         },
+
         {
             "name":"组件",
             "href":"/dist/react/component/button.html"
         },{
             "name":"其他",
             "href":"/dist/react/other/other.html"
-        },{
-            "name":"Tinper",
-            "href":"/dist/index.html"
         }
     ],
     "product":{

@@ -1,6 +1,6 @@
 {
   "name": "tinper",
-  "version": "3.0.6",
+  "version": "1.0.0",
   "description": "iuap-design tinper",
   "main": "server/app.js",
   "scripts": {

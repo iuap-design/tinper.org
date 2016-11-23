@@ -2,16 +2,16 @@
     "title":"grid",
     "nav": [
         {
-            "name":"首页",
-            "href":"/dist/grid/index.html"
+    		"name":"首页",
+    		"href":"/"
+    	},
+        {
+            "name":"产品概述",
+    		"href":"/dist/grid/index.html"
         },
         {
             "name":"文档",
             "href":"/dist/grid/docs/README.html"
-        },
-        {
-            "name":"Tinper",
-            "href":"/dist/index.html"
         }
     ],
     "product":{

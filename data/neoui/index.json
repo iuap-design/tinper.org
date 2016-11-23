@@ -3,8 +3,12 @@
     "nav": [
     	{
     		"name":"首页",
-    		"href":"/dist/neoui/index.html"
+    		"href":"/"
     	},
+        {
+            "name":"产品概述",
+    		"href":"/dist/neoui/index.html"
+        },
     	{
     		"name":"全局样式",
     		"href":"/dist/neoui/global/README.html"
@@ -15,9 +19,6 @@
     	},{
     		"name":"JS插件",
     		"href":"/dist/neoui/plugin/README.html"
-    	},{
-    		"name":"Tinper",
-    		"href":"/dist/index.html"
     	}
     ],
     "product":{
@@ -50,7 +51,7 @@
                     "name":"完善文档示例",
                     "img":"uf uf-book",
                     "desc":"每个组件都有详细的文档讲解、API说明、示例展示，用户可以在线调试，下载示例"
-                }   
+                }
             ]
     }
 
