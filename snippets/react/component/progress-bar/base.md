@@ -13,7 +13,7 @@
 |srOnly|label 只读不显示|bool|false|
 |striped|条纹样式|bool|false|
 |active|激活状态|bool|false|
-|colors|颜色oneOf:danger,info,warning,success|string|''|
+|colors|颜色oneOf:danger,info,warning,success,primary,dark,''|string|''|
 
 
 ## 案例
