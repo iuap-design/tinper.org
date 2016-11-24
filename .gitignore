@@ -22,8 +22,7 @@ _book/
 # 下载
 download/
 
-dist/
-!dist/webIDE/
+
 
 
 # render ignore
@@ -143,3 +142,8 @@ src/**/*.md
 
 # data/package生成的index.json
 data/package/index.json
+
+# 调整webide
+dist/**/*.*
+!dist/webIDE/**/*.*
+dist/webIDE/**/.DS_Store

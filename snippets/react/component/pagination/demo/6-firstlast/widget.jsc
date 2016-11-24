@@ -93,6 +93,16 @@
 				'div',
 				null,
 				React.createElement(_src2['default'], {
+					size: 'lg',
+					items: 20,
+					activePage: this.state.activePage,
+					onSelect: this.handleSelect.bind(this) }),
+				React.createElement(_src2['default'], {
+					items: 20,
+					activePage: this.state.activePage,
+					onSelect: this.handleSelect.bind(this) }),
+				React.createElement(_src2['default'], {
+					size: 'sm',
 					items: 20,
 					activePage: this.state.activePage,
 					onSelect: this.handleSelect.bind(this) })
@@ -127,8 +137,13 @@
 				'div',
 				null,
 				React.createElement(_src2['default'], {
+					noBorder: true,
 					items: 20,
-					maxButtons: 5,
+					activePage: this.state.activePage,
+					onSelect: this.handleSelect.bind(this) }),
+				React.createElement(_src2['default'], {
+					gap: true,
+					items: 20,
 					activePage: this.state.activePage,
 					onSelect: this.handleSelect.bind(this) })
 			);
@@ -162,7 +177,6 @@
 				'div',
 				null,
 				React.createElement(_src2['default'], {
-					boundaryLinks: true,
 					items: 20,
 					maxButtons: 5,
 					activePage: this.state.activePage,
@@ -198,8 +212,6 @@
 				'div',
 				null,
 				React.createElement(_src2['default'], {
-					prev: true,
-					next: true,
 					boundaryLinks: true,
 					items: 20,
 					maxButtons: 5,
@@ -236,10 +248,9 @@
 				'div',
 				null,
 				React.createElement(_src2['default'], {
-					first: true,
-					last: true,
 					prev: true,
 					next: true,
+					boundaryLinks: true,
 					items: 20,
 					maxButtons: 5,
 					activePage: this.state.activePage,
@@ -250,11 +261,52 @@
 		return Demo5;
 	}(React.Component);
 
+	var Demo6 = function (_React$Component6) {
+		_inherits(Demo6, _React$Component6);
+
+		function Demo6(props) {
+			_classCallCheck(this, Demo6);
+
+			var _this6 = _possibleConstructorReturn(this, _React$Component6.call(this, props));
+
+			_this6.state = {
+				activePage: 1
+			};
+			return _this6;
+		}
+
+		Demo6.prototype.handleSelect = function handleSelect(eventKey) {
+			this.setState({
+				activePage: eventKey
+			});
+		};
+
+		Demo6.prototype.render = function render() {
+			return React.createElement(
+				'div',
+				null,
+				React.createElement(_src2['default'], {
+					first: true,
+					last: true,
+					prev: true,
+					next: true,
+					boundaryLinks: true,
+					items: 20,
+					maxButtons: 5,
+					activePage: this.state.activePage,
+					onSelect: this.handleSelect.bind(this) })
+			);
+		};
+
+		return Demo6;
+	}(React.Component);
+
 	_reactDom2['default'].render(React.createElement(Demo1, null), document.getElementById('ReactPaginationDemo1'));
 	_reactDom2['default'].render(React.createElement(Demo2, null), document.getElementById('ReactPaginationDemo2'));
 	_reactDom2['default'].render(React.createElement(Demo3, null), document.getElementById('ReactPaginationDemo3'));
 	_reactDom2['default'].render(React.createElement(Demo4, null), document.getElementById('ReactPaginationDemo4'));
 	_reactDom2['default'].render(React.createElement(Demo5, null), document.getElementById('ReactPaginationDemo5'));
+	_reactDom2['default'].render(React.createElement(Demo6, null), document.getElementById('ReactPaginationDemo6'));
 
 /***/ },
 /* 1 */
@@ -391,56 +443,56 @@
 	  /**
 	   * 当前激活状态页
 	   */
-	  activePage: _react2['default'].PropTypes.number,
+	  activePage: _react.PropTypes.number,
 	  /**
 	   * 总页数
 	   */
-	  items: _react2['default'].PropTypes.number,
+	  items: _react.PropTypes.number,
 	  /**
 	   * 显示按钮从1到maxButton的按钮数
 	   */
-	  maxButtons: _react2['default'].PropTypes.number,
+	  maxButtons: _react.PropTypes.number,
 
 	  /**
 	   * 当为true,不管切换到多少页都显示第一页和最后一页的按钮
 	   */
-	  boundaryLinks: _react2['default'].PropTypes.bool,
+	  boundaryLinks: _react.PropTypes.bool,
 
 	  /**
 	   * 当为true,显示省略号，否则
 	   * 
 	   */
-	  ellipsis: _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.bool, _react2['default'].PropTypes.node]),
+	  ellipsis: _react.PropTypes.oneOfType([_react.PropTypes.bool, _react.PropTypes.node]),
 
 	  /**
 	   *  当为true,显示点击到第一页的按钮
 	   */
-	  first: _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.bool, _react2['default'].PropTypes.node]),
+	  first: _react.PropTypes.oneOfType([_react.PropTypes.bool, _react.PropTypes.node]),
 
 	  /**
 	   *  当为true,显示点击到最后一页的按钮
 	   */
-	  last: _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.bool, _react2['default'].PropTypes.node]),
+	  last: _react.PropTypes.oneOfType([_react.PropTypes.bool, _react.PropTypes.node]),
 
 	  /**
 	   * 当为true,显示前一页按钮
 	   */
-	  prev: _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.bool, _react2['default'].PropTypes.node]),
+	  prev: _react.PropTypes.oneOfType([_react.PropTypes.bool, _react.PropTypes.node]),
 
 	  /**
 	   * 当为true,显示下一页按钮
 	   */
-	  next: _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.bool, _react2['default'].PropTypes.node]),
+	  next: _react.PropTypes.oneOfType([_react.PropTypes.bool, _react.PropTypes.node]),
 
 	  /**
 	   * 暴露给用户的切换页的方法
 	   */
-	  onSelect: _react2['default'].PropTypes.func,
+	  onSelect: _react.PropTypes.func,
 
 	  /**
 	   * You can use a custom element for the buttons
 	   */
-	  buttonComponentClass: _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.element, _react2['default'].PropTypes.string])
+	  buttonComponentClass: _react.PropTypes.oneOfType([_react.PropTypes.element, _react.PropTypes.string])
 	};
 
 	var defaultProps = {
@@ -452,7 +504,10 @@
 	  prev: false,
 	  next: false,
 	  ellipsis: true,
-	  boundaryLinks: false
+	  boundaryLinks: false,
+	  clsPrefix: 'u-pagination',
+	  gap: false,
+	  noBorder: false
 	};
 
 	var Pagination = function (_React$Component) {
@@ -574,13 +629,25 @@
 	    var next = _props.next;
 	    var onSelect = _props.onSelect;
 	    var buttonComponentClass = _props.buttonComponentClass;
+	    var noBorder = _props.noBorder;
 	    var className = _props.className;
+	    var clsPrefix = _props.clsPrefix;
+	    var size = _props.size;
+	    var gap = _props.gap;
 
-	    var others = _objectWithoutProperties(_props, ['activePage', 'items', 'maxButtons', 'boundaryLinks', 'ellipsis', 'first', 'last', 'prev', 'next', 'onSelect', 'buttonComponentClass', 'className']);
+	    var others = _objectWithoutProperties(_props, ['activePage', 'items', 'maxButtons', 'boundaryLinks', 'ellipsis', 'first', 'last', 'prev', 'next', 'onSelect', 'buttonComponentClass', 'noBorder', 'className', 'clsPrefix', 'size', 'gap']);
 
-	    var classes = {
-	      "u-pagination": true
-	    };
+	    var classes = {};
+	    if (noBorder) {
+	      classes[clsPrefix + '-no-border'] = true;
+	    }
+	    if (size) {
+	      classes[clsPrefix + '-' + size] = true;
+	    }
+	    if (gap) {
+	      classes[clsPrefix + '-gap'] = true;
+	    }
+	    var classNames = (0, _classnames2['default'])(clsPrefix, classes);
 
 	    /**
 	     *  页按钮属性
@@ -595,7 +662,7 @@
 	    return _react2['default'].createElement(
 	      'ul',
 	      _extends({}, others, {
-	        className: (0, _classnames2['default'])(className, classes)
+	        className: (0, _classnames2['default'])(className, classNames)
 	      }),
 	      first && _react2['default'].createElement(
 	        _PaginationButton2['default'],
@@ -755,15 +822,16 @@
 	// TODO: This should use `componentClass` like other components.
 
 	var propTypes = {
-	  className: _react2['default'].PropTypes.string,
-	  eventKey: _react2['default'].PropTypes.any,
-	  onSelect: _react2['default'].PropTypes.func,
-	  disabled: _react2['default'].PropTypes.bool,
-	  active: _react2['default'].PropTypes.bool,
-	  onClick: _react2['default'].PropTypes.func
+	  className: _react.PropTypes.string,
+	  eventKey: _react.PropTypes.any,
+	  onSelect: _react.PropTypes.func,
+	  disabled: _react.PropTypes.bool,
+	  active: _react.PropTypes.bool,
+	  onClick: _react.PropTypes.func
 	};
 
 	var defaultProps = {
+	  componentClass: 'a',
 	  active: false,
 	  disabled: false
 	};
@@ -815,7 +883,7 @@
 	        className: (0, _classnames2['default'])(className, { active: active, disabled: disabled }),
 	        style: style
 	      },
-	      _react2['default'].createElement('a', _extends({ href: '#'
+	      _react2['default'].createElement(Component, _extends({ href: '#'
 	      }, props, {
 	        disabled: disabled,
 	        onClick: this.handleClick

@@ -1,7 +1,7 @@
 import { Pagination } from 'tinper-bee';
 
 
-class Demo3 extends React.Component {
+class Demo5 extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -17,6 +17,8 @@ class Demo3 extends React.Component {
 	    return (
 	      <div>
 	        <Pagination
+	        	prev
+	        	next
 	        	boundaryLinks
 		        items={20}
 		        maxButtons={5}
@@ -28,4 +30,4 @@ class Demo3 extends React.Component {
 }
 
 
-ReactDOM.render(<Demo3 />, document.getElementById('ReactPaginationDemo3'));
+ReactDOM.render(<Demo5 />, document.getElementById('ReactPaginationDemo5'));

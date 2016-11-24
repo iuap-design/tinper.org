@@ -16,6 +16,16 @@ class Demo1 extends React.Component {
 	    return (
 	      <div>
 	        <Pagination
+		    	size="lg"
+		        items={20}
+		        activePage={this.state.activePage}
+		        onSelect={this.handleSelect.bind(this)} />
+		    <Pagination
+		        items={20}
+		        activePage={this.state.activePage}
+		        onSelect={this.handleSelect.bind(this)} />
+		    <Pagination
+		    	size="sm"
 		        items={20}
 		        activePage={this.state.activePage}
 		        onSelect={this.handleSelect.bind(this)} />

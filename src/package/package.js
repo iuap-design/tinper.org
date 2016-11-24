@@ -167,7 +167,7 @@ window.onload = function() {
             // 增加主题颜色
             var colorVal = inColor.value;
             dataJson.themeColor = colorVal;
-            console.log(dataJson);
+            // console.log(dataJson);
 
             var options={
                 hasback:true//不含有遮罩层
@@ -180,7 +180,7 @@ window.onload = function() {
                 data: dataJson,
                 url: '/package',
                 success: function (patch) {
-                    u.hideLoader();
+                    u.hideLoader({hasback:true});
                     location.href = patch;
                 },
                 error: function (patch) {

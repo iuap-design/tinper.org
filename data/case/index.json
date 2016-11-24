@@ -3,7 +3,7 @@
     "nav": [
         {
             "name":"首页",
-            "href":"/dist/index.html"
+            "href":"/"
         },
         {
             "name":"产品",

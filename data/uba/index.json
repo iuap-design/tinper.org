@@ -2,15 +2,16 @@
     "title":"uba",
     "nav": [
         {
-            "name":"首页",
-            "href":"/dist/uba/index.html"
+    		"name":"首页",
+    		"href":"/"
+    	},
+        {
+            "name":"产品概述",
+    		"href":"/dist/uba/index.html"
         },
         {
             "name":"uba使用",
             "href":"/dist/uba/doc/intro.html"
-        },{
-            "name":"Tinper",
-            "href":"/dist/index.html"
         }
     ],
     "product":{
