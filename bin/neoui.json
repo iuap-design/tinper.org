@@ -53,7 +53,8 @@
 		"neoui-tooltip":"提示tip",
 		"neoui-validate":"验证",
 		"neoui-year":"年份",
-		"neoui-yearmonth":"年月"
+		"neoui-yearmonth":"年月",
+		"neoui-monthdate":"月日"
 	},
 	"theme": [
 		{"class":"bg-red","color":"244,67,54"},
