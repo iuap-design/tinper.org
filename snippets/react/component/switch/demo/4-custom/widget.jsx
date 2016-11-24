@@ -4,7 +4,7 @@ function changeHandle () {
     alert('点我点我点我~');
 }
 
-function demo3 () {
+function demo4 () {
     return (
         <div>
             <Switch onChangeHandler = {changeHandle} checkedChildren={'开'} unCheckedChildren={'关'} />
@@ -13,4 +13,4 @@ function demo3 () {
     )
 }
 
-ReactDOM.render(demo3(), document.getElementById('beeSwitchDemo3'));
+ReactDOM.render(demo4(), document.getElementById('beeSwitchDemo4'));
