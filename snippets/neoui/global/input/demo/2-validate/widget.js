@@ -10,9 +10,7 @@ var checkInput=function(){
 }
 if(mustinlen>0){
     for(var i=0;i<mustinlen;i++){
-        
         u.on(mustinDom[i],'blur',checkInput);
-
         u.on(mustinDom[i],'keydown',function(){
         	this.previousElementSibling.innerHTML='';
         });
