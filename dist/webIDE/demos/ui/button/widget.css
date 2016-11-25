@@ -1,0 +1,86 @@
+.u-margin-1{
+    margin:1px;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+.liHover{
+    background-color: #F7F7F7;
+}
+.liActive{
+    background-color: rgba(158,158,158, 0.40);
+}
+
+.u-button.primary {
+    color: rgb(255,255,255);
+    background-color: rgb(63,81,181);
+    border: 1px rgb(63,81,181) solid; }
+.u-button.primary:hover {
+    background-color: rgb(92,107,192);
+    border-color: rgb(92,107,192); }
+
+.u-button.accent {
+    color: rgb(255,255,255);
+    background-color: rgb(67,160,71);
+    border: 1px rgb(67,160,71) solid; }
+.u-button.accent:hover {
+    background-color: rgb(76,175,80);
+    border-color: rgb(76,175,80); }
+
+.u-button.success {
+    color: #fff;
+    background-color: #4caf50;
+    border: 1px  #4caf50 solid; }
+
+.u-button.success.focus, .u-button.success:focus, .u-button.success:hover {
+    background-color: #66bb6a;
+    border-color: #66bb6a; }
+
+.u-button.success.active, .u-button.success:active, .open > .dropdown-toggle.u-button.success {
+    background-color: #43a047;
+    border-color: #43a047; }
+
+
+
+.u-button.info {
+    color: #fff;
+    background-color: #00bcd4;
+    border: 1px  #00bcd4 solid; }
+
+.u-button.info.focus, .u-button.info:focus, .u-button.info:hover {
+    background-color: #26c6da;
+    border-color: #26c6da; }
+
+.u-button.info.active, .u-button.info:active, .open > .dropdown-toggle.u-button.info {
+    background-color: #00acc1;
+    border-color: #00acc1; }
+
+.u-button.warning {
+    color: #fff;
+    background-color: #ff9800;
+    border: 1px  #ff9800 solid; }
+
+.u-button.warning.focus, .u-button.warning:focus, .u-button.warning:hover {
+    background-color: #ffa726;
+    border-color: #ffa726; }
+
+.u-button.warning.active, .u-button.warning:active, .open > .dropdown-toggle.u-button.warning {
+    background-color: #fb8c00;
+    border-color: #fb8c00; }
+
+.u-button.danger {
+    color: #fff;
+    background-color: #f44336;
+    border: 1px  #f44336 solid; }
+
+.u-button.danger.focus, .u-button.danger:focus, .u-button.danger:hover {
+    background-color: #ef5350;
+    border-color: #ef5350; }
+
+.u-button.danger.active, .u-button.danger:active, .open > .dropdown-toggle.u-button.danger {
+    background-color: #e53935;
+    border-color: #e53935; }
