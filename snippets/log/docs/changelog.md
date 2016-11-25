@@ -182,7 +182,7 @@ NaN
 NaN
 
 <a name="3.1.5"></a>
-## [3.1.5]((//design.yyuap.com/static/download/iuap-design-3.1.5.zip))\(2016-11-1\)
+## [3.1.5](//design.yyuap.com/static/download/iuap-design-3.1.5.zip)\(2016-11-1\)
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/kero-adapter/commit/ef520ed))
 
@@ -236,7 +236,7 @@ NaN
 
 
 <a name="3.1.4"></a>
-## [3.1.4]((//design.yyuap.com/static/download/iuap-design-3.1.4.zip))\(2016-10-27\)
+## [3.1.4](//design.yyuap.com/static/download/iuap-design-3.1.4.zip)\(2016-10-27\)
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/kero-adapter/commit/ef520ed))
 
