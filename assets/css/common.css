@@ -188,12 +188,50 @@ img {
 }
 
 /*首页产品图文描述*/
+.tg-hover {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    height: calc(100% - 0px);
+    background: #cccccc;
+    font-family: "HelveticaNeueW01-45Ligh", "HelveticaNeueW02-45Ligh", "HelveticaNeueW10-45Ligh", "'Helvetica Neue', Helvetica, Arial, メイリオ, Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif";
+    z-index: 10;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: opacity 0.4s ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
 a.product_img{
     display: block;
     position:relative;
 }
+.show-link-color{
+    color: rgb(117, 117, 117);
+    text-decoration: none;
+}
 
-a.product_img:before{
+/*a.product_img:before{
     content: "";
     position: absolute;
     top: 0;
@@ -211,7 +249,7 @@ a.product_img:hover:before{
     right: -6px;
     bottom: -6px;
     left: -6px;
-}
+}*/
 a.product_img.uba_link:hover:before{
     border-color: rgba(107, 214, 56, 0.6)
 }
