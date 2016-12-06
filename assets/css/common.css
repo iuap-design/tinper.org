@@ -271,3 +271,8 @@ a.product_img.kero_link:hover:before{
 a.product_img.sparrow_link:hover:before{
     border-color: rgba(247, 106, 125, 0.6)
 }
+
+/*首页更改*/
+.tg-hover .u-button{
+    text-transform:inherit;
+}
