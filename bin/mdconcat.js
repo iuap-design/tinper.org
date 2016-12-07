@@ -197,10 +197,16 @@ async.auto({
                                       var codeFun = function(data){
                                           return '<div class="examples-code"><pre><code>\r\n' + data + '</code></pre>\r\n</div>\r\n';
                                       }
+                                      // 处理js注释不显示星号问题
+                                      var jsCodeFun = function(data){
+                                          return '<pre class="examples-code"><code>\r\n' + data + '</code></pre>\r\n';
+                                      }
                                       // 转义pre > code 下的html标签
                                       var codeHtmlFun = function(data){
                                           return '<div class="examples-code"><pre><code>\r\n' + data.replace(/\</g,'&lt;') + '</code></pre>\r\n</div>\r\n';
                                       }
+
+
 
                                       //遍历demo文件夹start
                                     //   console.log('exPath',exPath);
@@ -241,7 +247,7 @@ async.auto({
                                                 //     cb(null,null)
                                                 // })
                                                 demoJs = '\r\n<script>\r\n' + ts + '\r\n</script>\r\n';
-                                                codeJs = codeFun(ts);
+                                                codeJs = jsCodeFun(ts);
                                                 cb(null,null)
                                           } else if(/\.jsx$/.test(filePath)){
                                                 // .jsx用于代码显示
