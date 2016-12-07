@@ -2,8 +2,6 @@
 
 本例展示:月日UI控件绑定默认数据。
 
-replaceExamp
-
 [试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/monthdate)
 
 

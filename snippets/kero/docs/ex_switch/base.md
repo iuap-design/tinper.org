@@ -2,8 +2,6 @@
 
 本例实现UI控件switch的数据绑定。
 
-replaceExamp
-
 [试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/switch)
 
 
@@ -18,7 +16,7 @@ replaceExamp
 	* 类型： String
 	* 说明：开关未选中的值
 * checkedValue
-	* 类型：　String 
+	* 类型：　String
 	* 说明：开关选中的值，当行对象中的字段值与checkedValue值相同时，开关就会选中，否则为未选中状态。
 
 

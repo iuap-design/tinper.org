@@ -2,8 +2,6 @@
 
 本例展示下拉框示例。
 
-replaceExamp
-
 [试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/combobox)
 
 
