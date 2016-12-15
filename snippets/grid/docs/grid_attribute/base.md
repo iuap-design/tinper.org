@@ -1,6 +1,6 @@
 # Grid 属性API
 
-### ﻿id
+## ﻿id
 
 <table>
     <tr>
@@ -15,7 +15,7 @@
     </tr>
 </table>
 
-### cancelFocus
+## cancelFocus
 
 <table>
     <tr>
@@ -30,7 +30,22 @@
     </tr>
 </table>
 
-### showHeader
+## cancelSelect
+
+<table>
+    <tr>
+        <td>类型</td>
+          <td>默认值</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>boolean</td>
+          <td>false</td>
+          <td>第二次点击行是否取消select效果。true表示取消select效果，false表示不取消select效果</td>
+    </tr>
+</table>
+
+## showHeader
 
 <table>
     <tr>
@@ -45,7 +60,7 @@
     </tr>
 </table>
 
-### showNumCol
+## showNumCol
 
 <table>
     <tr>
@@ -60,7 +75,7 @@
     </tr>
 </table>
 
-### multiSelect
+## multiSelect
 
 <table>
     <tr>
@@ -75,7 +90,7 @@
     </tr>
 </table>
 
-### columnMenu
+## columnMenu
 
 <table>
     <tr>
@@ -86,11 +101,11 @@
     <tr>
     	  <td>boolean</td>
     	  <td>true</td>
-    	  <td>是否显示表头操作按钮，通过表头操作按钮可以动态设置数据列是否显示。是表示显示表头操作按钮，false表示不显示表头操作按钮</td>
+    	  <td>是否显示表头操作按钮，通过表头操作按钮可以动态设置数据列是否显示。true表示显示表头操作按钮，false表示不显示表头操作按钮</td>
     </tr>
 </table>
 
-### canDrag
+## canDrag
 
 <table>
     <tr>
@@ -105,7 +120,9 @@
     </tr>
 </table>
 
-### maxHeaderLevel
+
+
+## maxHeaderLevel
 
 <table>
     <tr>
@@ -116,11 +133,11 @@
     <tr>
     	  <td>integer</td>
     	  <td>1</td>
-    	  <td>表头的最高层级，用于计算表头区的高度。目前只支持最大为2</td>
+    	  <td>多级表头情况下，表头的最高层级。目前只支持最大为2</td>
     </tr>
 </table>
 
-### overWidthHiddenColumn
+## overWidthHiddenColumn
 
 <table>
     <tr>
@@ -135,7 +152,7 @@
     </tr>
 </table>
 
-### sortable
+## sortable
 
 <table>
     <tr>
@@ -150,7 +167,7 @@
     </tr>
 </table>
 
-### showSumRow
+## showSumRow
 
 <table>
     <tr>
@@ -165,7 +182,7 @@
     </tr>
 </table>
 
-### canSwap
+## canSwap
 
 <table>
     <tr>
@@ -180,7 +197,7 @@
     </tr>
 </table>
 
-### showTree
+## showTree
 
 <table>
     <tr>
@@ -195,7 +212,7 @@
     </tr>
 </table>
 
-### autoExpand
+## autoExpand
 
 <table>
     <tr>
@@ -210,7 +227,7 @@
     </tr>
 </table>
 
-### needTreeSort
+## needTreeSort
 
 <table>
     <tr>
@@ -221,11 +238,88 @@
     <tr>
     	  <td>boolean</td>
     	  <td>false</td>
-    	  <td>树表形式下是否需要对传入数据进行排序，次设置是为了优化性能。如果传入数据是无序的则设置为true，如果可以保证先传入父节点后传入子节点则设置为false提高性能。目前只支持为false的情况</td>
+    	  <td>树表形式下是否需要对传入数据进行排序，此设置是为了优化性能。如果传入数据是无序的则设置为true，如果可以保证先传入父节点后传入子节点则设置为false提高性能。目前只支持为false的情况</td>
     </tr>
 </table>
 
-### editable
+## needLocalStorage
+
+<table>
+    <tr>
+        <td>类型</td>
+          <td>默认值</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>boolean</td>
+          <td>false</td>
+          <td>是否使用前端缓存，使用前端缓存的情况会在浏览器保存数据列的宽度、是否显示、位置等信息，再次进入页面会按照上次的状态进行显示。true表示使用前端缓存,false表示不使用前端缓存</td>
+    </tr>
+</table>
+
+## noScroll
+
+<table>
+    <tr>
+        <td>类型</td>
+          <td>默认值</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>boolean</td>
+          <td>false</td>
+          <td>是否显示滚动条。如果数据列宽度中存在百分比的设置则此参数自动修改为true。true表示不显示滚动条，数据列的宽度会根据整体宽度重新计算,false表示按照默认显示，如果列宽度超过整体宽度则显示滚动条</td>
+    </tr>
+</table>
+
+## contentSelect
+
+<table>
+    <tr>
+        <td>类型</td>
+          <td>默认值</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>boolean</td>
+          <td>true</td>
+          <td>点击内容区是否执行选中逻辑，单选情况下则此参数修改为true。true表示执行选中逻辑,false表示不执行选中逻辑</td>
+    </tr>
+</table>
+
+## contentFocus
+
+<table>
+    <tr>
+        <td>类型</td>
+          <td>默认值</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>boolean</td>
+          <td>true</td>
+          <td>点击内容区是否执行focus逻辑。true表示执行focus逻辑,false表示不执行focus逻辑</td>
+    </tr>
+</table>
+
+## showEditIcon
+
+<table>
+    <tr>
+        <td>类型</td>
+          <td>默认值</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>boolean</td>
+          <td>false</td>
+          <td>数据列可修改情况下是否显示编辑图标。true表示显示编辑图标,false表示不显示编辑图标</td>
+    </tr>
+</table>
+
+
+
+## editable
 
 <table>
     <tr>
@@ -236,11 +330,11 @@
     <tr>
     	  <td>boolean</td>
     	  <td>false</td>
-    	  <td>是否支持编辑功能，true表示支持编辑功能，false表示不支持编辑功能</td>
+    	  <td>是否支持编辑功能。true表示支持编辑功能，false表示不支持编辑功能</td>
     </tr>
 </table>
 
-### editType
+## editType
 
 <table>
     <tr>
@@ -251,6 +345,6 @@
     <tr>
     	  <td>string</td>
     	  <td>default</td>
-    	  <td>设置编辑方式，default表示在数据行上进行编辑，form表示在单独的form区域进行编辑</td>
+    	  <td>设置编辑方式。default表示在数据行上进行编辑，form表示在单独的form区域进行编辑</td>
     </tr>
 </table>

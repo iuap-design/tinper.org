@@ -1,6 +1,6 @@
 # Grid 方法API
 
-### ﻿setRequired
+## ﻿setRequired
 
 **说明**
 
@@ -16,7 +16,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -33,17 +33,9 @@
     </tr>
 </table>
 
-### repairContent
 
-**说明**
 
-重画内容区
-
-**返回值**
-
-无
-
-### getColumnAttr
+## getColumnAttr
 
 **说明**
 
@@ -59,7 +51,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -76,7 +68,7 @@
     </tr>
 </table>
 
-### getColumnByField
+## getColumnByField
 
 **说明**
 
@@ -92,7 +84,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -103,7 +95,7 @@
     </tr>
 </table>
 
-### getIndexOfColumn
+## getIndexOfColumn
 
 **说明**
 
@@ -119,7 +111,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -130,7 +122,7 @@
     </tr>
 </table>
 
-### getVisibleIndexOfColumn
+## getVisibleIndexOfColumn
 
 **说明**
 
@@ -146,7 +138,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -157,7 +149,34 @@
     </tr>
 </table>
 
-### setColumnVisibleByColumn
+## getNextVisibleInidexOfColumn
+
+**说明**
+
+获取column后面第一个显示列所在第几列
+
+**返回值**
+
+对应的index
+
+**参数说明**
+
+<table>
+    <tr>
+        <td>参数</td>
+          <td>类型</td>
+          <td>是否必须</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>column</td>
+          <td>object</td>
+          <td>true</td>
+          <td>column对象</td>
+    </tr>
+</table>
+
+## setColumnVisibleByColumn
 
 **说明**
 
@@ -173,7 +192,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -190,7 +209,7 @@
     </tr>
 </table>
 
-### setColumnVisibleByIndex
+## setColumnVisibleByIndex
 
 **说明**
 
@@ -206,7 +225,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -223,7 +242,73 @@
     </tr>
 </table>
 
-### setDataSource
+## setCoulmnWidthByField
+
+**说明**
+
+通过field属性设置数据列宽度
+
+**返回值**
+
+无
+
+**参数说明**
+
+<table>
+    <tr>
+        <td>参数</td>
+          <td>类型</td>
+          <td>是否必须</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>field</td>
+          <td>string</td>
+          <td>true</td>
+          <td>所需修改数据对应的field</td>
+    </tr>
+    <tr>
+          <td>newWidth</td>
+          <td>string</td>
+          <td>true</td>
+          <td>所需修改数据的新宽度的数值</td>
+    </tr>
+</table>
+
+## setCoulmnWidth
+
+**说明**
+
+通过coulmn对象设置宽度
+
+**返回值**
+
+无
+
+**参数说明**
+
+<table>
+    <tr>
+        <td>参数</td>
+          <td>类型</td>
+          <td>是否必须</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>column</td>
+          <td>object</td>
+          <td>true</td>
+          <td>column对象</td>
+    </tr>
+    <tr>
+          <td>newWidth</td>
+          <td>string</td>
+          <td>true</td>
+          <td>所需修改数据的新宽度的数值</td>
+    </tr>
+</table>
+
+## setDataSource
 
 **说明**
 
@@ -239,7 +324,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -275,7 +360,7 @@
             pid: '1'
         }]
     });
-### setDataSourceFun1
+## setDataSourceFun1
 
 **说明**
 
@@ -291,7 +376,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -317,7 +402,7 @@
 			["cl16","6","cl36","cl46","cl56","cl66"]
 			]
 	});
-### addOneRow
+## addOneRow
 
 **说明**
 
@@ -333,7 +418,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -359,7 +444,7 @@
 	        "column2": "value2",
 	        "column3": "value3"
 	    },1);
-### addRows
+## addRows
 
 **说明**
 
@@ -375,7 +460,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -405,7 +490,7 @@
 	        "column2": "value22",
 	        "column3": "value33"
 	    }],1);
-### deleteOneRow
+## deleteOneRow
 
 **说明**
 
@@ -421,7 +506,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -432,7 +517,7 @@
     </tr>
 </table>
 
-### deleteRows
+## deleteRows
 
 **说明**
 
@@ -448,7 +533,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -459,7 +544,7 @@
     </tr>
 </table>
 
-### updateRow
+## updateRow
 
 **说明**
 
@@ -475,7 +560,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -501,7 +586,7 @@
 	        "column2": "value2",
 	        "column3": "value3"
 	    });
-### updateValueAt
+## updateValueAt
 
 **说明**
 
@@ -517,7 +602,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -546,7 +631,7 @@
     </tr>
 </table>
 
-### setRowSelect
+## setRowSelect
 
 **说明**
 
@@ -562,7 +647,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -573,7 +658,7 @@
     </tr>
 </table>
 
-### setRowUnselect
+## setRowUnselect
 
 **说明**
 
@@ -589,7 +674,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -600,7 +685,7 @@
     </tr>
 </table>
 
-### setAllRowSelect
+## setAllRowSelect
 
 **说明**
 
@@ -610,7 +695,7 @@
 
 无 
 
-### setAllRowUnSelect
+## setAllRowUnSelect
 
 **说明**
 
@@ -620,7 +705,7 @@
 
 无 
 
-### getSelectRows
+## getSelectRows
 
 **说明**
 
@@ -630,7 +715,7 @@
 
 所有选中行对象
 
-### getSelectRowsIndex
+## getSelectRowsIndex
 
 **说明**
 
@@ -640,7 +725,7 @@
 
 所有选中行index
 
-### setRowFocus
+## setRowFocus
 
 **说明**
 
@@ -656,7 +741,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -667,7 +752,7 @@
     </tr>
 </table>
 
-### setRowUnFocus
+## setRowUnFocus
 
 **说明**
 
@@ -683,7 +768,7 @@
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -694,7 +779,7 @@
     </tr>
 </table>
 
-### getFocusRow
+## getFocusRow
 
 **说明**
 
@@ -704,7 +789,7 @@
 
 focus行对象
 
-### getFocusRowIndex
+## getFocusRowIndex
 
 **说明**
 
@@ -714,7 +799,7 @@ focus行对象
 
 focus行对应的index
 
-### getAllRows
+## getAllRows
 
 **说明**
 
@@ -724,7 +809,7 @@ focus行对应的index
 
 所有行对象
 
-### getRowByIndex
+## getRowByIndex
 
 **说明**
 
@@ -740,7 +825,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -751,7 +836,7 @@ focus行对应的index
     </tr>
 </table>
 
-### getRowIndexByValue
+## getRowIndexByValue
 
 **说明**
 
@@ -767,7 +852,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -784,7 +869,61 @@ focus行对应的index
     </tr>
 </table>
 
-### setRenderType
+## getChildRowIndex
+
+**说明**
+
+树表展示下根据row对象获取此row下所有子元素的rowIndex
+
+**返回值**
+
+查找到的行号
+
+**参数说明**
+
+<table>
+    <tr>
+        <td>参数</td>
+          <td>类型</td>
+          <td>是否必须</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>row</td>
+          <td>object</td>
+          <td>true</td>
+          <td>grid中的row对象</td>
+    </tr>
+</table>
+
+## getColumnByVisibleIndex
+
+**说明**
+
+获取显示的第N列的column对象
+
+**返回值**
+
+查找到的行号
+
+**参数说明**
+
+<table>
+    <tr>
+        <td>参数</td>
+          <td>类型</td>
+          <td>是否必须</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>index</td>
+          <td>integer</td>
+          <td>true</td>
+          <td>需要查找的列在所有显示列中的序号</td>
+    </tr>
+</table>
+
+## setRenderType
 
 **说明**
 
@@ -800,7 +939,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -817,7 +956,7 @@ focus行对应的index
     </tr>
 </table>
 
-### setShowHeader
+## setShowHeader
 
 **说明**
 
@@ -833,7 +972,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -844,7 +983,7 @@ focus行对应的index
     </tr>
 </table>
 
-### setColumnPrecision
+## setColumnPrecision
 
 **说明**
 
@@ -860,18 +999,18 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
     	  <td>field</td>
     	  <td>string</td>
     	  <td>true</td>
-    	  <td>需要设置的数据列对应的fieldprecision</td>
+    	  <td>需要设置的数据列对应的field</td>
     </tr>
 </table>
 
-### setMultiSelect
+## setMultiSelect
 
 **说明**
 
@@ -887,7 +1026,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -898,7 +1037,7 @@ focus行对应的index
     </tr>
 </table>
 
-### setShowNumCol
+## setShowNumCol
 
 **说明**
 
@@ -914,7 +1053,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -925,7 +1064,7 @@ focus行对应的index
     </tr>
 </table>
 
-### setEditType
+## setEditType
 
 **说明**
 
@@ -941,14 +1080,14 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
     	  <td>field</td>
     	  <td>string</td>
     	  <td>true</td>
-    	  <td>设置renderType属性数据列对应的field</td>
+    	  <td>设置editType属性数据列对应的field</td>
     </tr>
     <tr>
     	  <td>editType</td>
@@ -958,7 +1097,7 @@ focus行对应的index
     </tr>
 </table>
 
-### setEditable
+## setEditable
 
 **说明**
 
@@ -974,7 +1113,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -985,7 +1124,7 @@ focus行对应的index
     </tr>
 </table>
 
-### setGridEditType
+## setGridEditType
 
 **说明**
 
@@ -1001,7 +1140,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -1012,7 +1151,7 @@ focus行对应的index
     </tr>
 </table>
 
-### setGridEditTypeAndEditRow
+## setGridEditTypeAndEditRow
 
 **说明**
 
@@ -1028,7 +1167,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -1051,7 +1190,7 @@ focus行对应的index
     </tr>
 </table>
 
-### expandNode
+## expandNode
 
 **说明**
 
@@ -1067,7 +1206,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>
@@ -1078,7 +1217,7 @@ focus行对应的index
     </tr>
 </table>
 
-### expandNodeByIndex
+## expandNodeByIndex
 
 **说明**
 
@@ -1094,7 +1233,7 @@ focus行对应的index
     <tr>
         <td>参数</td>
     	  <td>类型</td>
-    	  <td>默认值</td>
+    	  <td>是否必须</td>
     	  <td>说明</td>
     </tr>
     <tr>

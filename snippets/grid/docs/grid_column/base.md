@@ -1,6 +1,6 @@
 # Grid 列属性API
 
-### ﻿field
+## ﻿field
 
 <table>
     <tr>
@@ -15,7 +15,7 @@
     </tr>
 </table>
 
-### width
+## width
 
 <table>
     <tr>
@@ -26,11 +26,11 @@
     <tr>
     	  <td>integer</td>
     	  <td>200</td>
-    	  <td>数据列显示的宽度</td>
+    	  <td>数据列显示的宽度，可支持百分比和数字两种方式。百分比情况下则内容区不显示滚动条。</td>
     </tr>
 </table>
 
-### sortable
+## sortable
 
 <table>
     <tr>
@@ -45,7 +45,7 @@
     </tr>
 </table>
 
-### canDrag
+## canDrag
 
 <table>
     <tr>
@@ -60,7 +60,7 @@
     </tr>
 </table>
 
-### fixed
+## fixed
 
 <table>
     <tr>
@@ -75,7 +75,7 @@
     </tr>
 </table>
 
-### visible
+## visible
 
 <table>
     <tr>
@@ -90,7 +90,7 @@
     </tr>
 </table>
 
-### canVisible
+## canVisible
 
 <table>
     <tr>
@@ -105,7 +105,7 @@
     </tr>
 </table>
 
-### sumCol
+## sumCol
 
 <table>
     <tr>
@@ -120,7 +120,7 @@
     </tr>
 </table>
 
-### editable
+## editable
 
 <table>
     <tr>
@@ -135,7 +135,7 @@
     </tr>
 </table>
 
-### editFormShow
+## editFormShow
 
 <table>
     <tr>
@@ -146,11 +146,11 @@
     <tr>
     	  <td>boolean</td>
     	  <td>true</td>
-    	  <td>在表格以form形式编辑时，数据列是否显示。true表示显示，false表示不显示</td>
+    	  <td>在表格以form形式编辑时，数据列是否显示，此参数用于支持form编辑模式下可对未显示的数据列进行编辑。true表示显示，false表示不显示</td>
     </tr>
 </table>
 
-### autoExpand
+## autoExpand
 
 <table>
     <tr>
@@ -165,7 +165,7 @@
     </tr>
 </table>
 
-### editType
+## editType
 
 <table>
     <tr>
@@ -180,7 +180,37 @@
     </tr>
 </table>
 
-### headerLevel
+## dataType
+
+<table>
+    <tr>
+        <td>类型</td>
+          <td>默认值</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>string</td>
+          <td>String</td>
+          <td>数据列的数据类型，支持：String, Date, Datetime, Int, Float</td>
+    </tr>
+</table>
+
+## format
+
+<table>
+    <tr>
+        <td>类型</td>
+          <td>默认值</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>string</td>
+          <td>String</td>
+          <td>数据列显示时的格式化方式。目前只对日期类型进行处理，例如：YYYY-MM-DD、YYYY-MM-DD hh:mm:ss</td>
+    </tr>
+</table>
+
+## headerLevel
 
 <table>
     <tr>
@@ -195,7 +225,7 @@
     </tr>
 </table>
 
-### hiddenLevel
+## hiddenLevel
 
 <table>
     <tr>
