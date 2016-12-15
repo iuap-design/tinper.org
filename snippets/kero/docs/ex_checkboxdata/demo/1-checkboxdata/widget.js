@@ -45,7 +45,7 @@ var getDtValue = function() {
     demoDiv.innerHTML = dtVal;
 };
 
-for(var i=0; i<demoCheckbox.length; i++){
+for(var i = 0; i < demoCheckbox.length; i++){
     demoCheckbox[i].addEventListener('click',getDtValue);
 }
 
@@ -55,9 +55,3 @@ viewModel.dt1.setSimpleData([
     {"f1":"setSimpleData"}
 ]);
 demoDiv.innerHTML = viewModel.dt1.getValue('f1');
-
-
-
-
-
-
