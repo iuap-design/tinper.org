@@ -35,7 +35,8 @@
                 {
                     "name":"浏览器兼容性",
                     "img":"uf uf-desktopmonitor",
-                    "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题"
+                    "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题",
+                    "link":"https://github.com/iuap-design/tinper-neoui-polyfill/blob/release/README.md"
                 },
                 {
                     "name":"按需定制",
