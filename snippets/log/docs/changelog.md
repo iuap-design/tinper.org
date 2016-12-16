@@ -1,5 +1,16 @@
 <a name="3.1.17"></a>
-## V3.1.17 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.17.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-15)</i>
+<h2 class="logtit"> V3.1.17 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.17.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-16)</i></h2>
+
+### Bug Fixes
+* form情况下按照showFix展示 ([986f72f](https://github.com/iuap-design/kero-adapter/commit/986f72f))
+
+* i18n & add json files & test example ([8f7a9e3](https://github.com/iuap-design/kero-adapter/commit/8f7a9e3))
+
+* i18n demo ([fa27546](https://github.com/iuap-design/kero-adapter/commit/fa27546))
+
+<a name="3.1.17"></a>
+<h2 class="logtit"> V3.1.17 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.17.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-15)</i></h2>
+
 ### Bug Fixes
 * form情况下按照showFix展示 ([986f72f](https://github.com/iuap-design/kero-adapter/commit/986f72f))
 
@@ -24,7 +35,8 @@
 * 日期组件点击确定的时候控制时间范围 ([9769c22](https://github.com/iuap-design/tinper-neoui/commit/9769c22))
 
 <a name="3.1.16"></a>
-## V3.1.16 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.16.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-8)</i>
+<h2 class="logtit"> V3.1.16 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.16.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-8)</i></h2>
+
 ### Bug Fixes
 * grid中checkbox值变时dataTable字段值不变 ([12011c8](https://github.com/iuap-design/kero-adapter/commit/12011c8))
 
@@ -37,7 +49,8 @@
 * 兼容子表的情况，避免json转字符串的情况出现死循环 ([361d04c](https://github.com/iuap-design/tinper-neoui-grid/commit/361d04c))
 
 <a name="3.1.15"></a>
-## V3.1.15 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.15.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-1)</i>
+<h2 class="logtit"> V3.1.15 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.15.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-1)</i></h2>
+
 ### Bug Fixes
 * 优化ztree选中之后更新至datatable会出现错误的情况 ([deb7f3f](https://github.com/iuap-design/kero-adapter/commit/deb7f3f))
 
@@ -46,7 +59,8 @@
 * grid增加onBeforeValueChange处理 ([be4fee3](https://github.com/iuap-design/tinper-neoui-grid/commit/be4fee3))
 
 <a name="3.1.14"></a>
-## V3.1.14 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.14.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-29)</i>
+<h2 class="logtit"> V3.1.14 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.14.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-29)</i></h2>
+
 ### Bug Fixes
 * 翻页及pageSize改变时清空grid数据。datatable发生改变时设置silence为true。 ([cae6110](https://github.com/iuap-design/kero-adapter/commit/cae6110))
 
@@ -68,7 +82,8 @@
 NaN
 
 <a name="3.1.13"></a>
-## V3.1.13 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.13.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-24)</i>
+<h2 class="logtit"> V3.1.13 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.13.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-24)</i></h2>
+
 ### Bug Fixes
 * 解决tree传递数据的时候除了id pid name，其他字段丢失的情况 ([db11473](https://github.com/iuap-design/kero-adapter/commit/db11473))
 
@@ -77,17 +92,19 @@ NaN
 * 云彩—-可编辑时显示图标 ([a95c9b3](https://github.com/iuap-design/tinper-neoui-grid/commit/a95c9b3))
 
 <a name="3.1.12"></a>
-## V3.1.12 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.12.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-17)</i>
+<h2 class="logtit"> V3.1.12 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.12.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-17)</i></h2>
 
 <a name="3.1.9"></a>
-## V3.1.9 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.9.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-16)</i>
+<h2 class="logtit"> V3.1.9 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.9.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-16)</i></h2>
+
 ### Bug Fixes
 * 日期组件支持对应特定行 ([fea8fe1](https://github.com/iuap-design/kero-adapter/commit/fea8fe1))
 
 * 参照兼容之前的逻辑 ([d867879](https://github.com/iuap-design/tinper-neoui/commit/d867879))
 
 <a name="3.1.8"></a>
-## V3.1.8 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.8.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-15)</i>
+<h2 class="logtit"> V3.1.8 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.8.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-15)</i></h2>
+
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/kero-adapter/commit/ef520ed))
 
@@ -119,7 +136,8 @@ NaN
 NaN
 
 <a name="3.1.7"></a>
-## V3.1.7 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.7.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-10)</i>
+<h2 class="logtit"> V3.1.7 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.7.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-10)</i></h2>
+
 ### Bug Fixes
 * pro-IUAPDESIGN-106:友云采：模态框需要支持设置高度 ([534509d](https://github.com/iuap-design/tinper-neoui/commit/534509d))
 
@@ -191,7 +209,8 @@ NaN
 NaN
 
 <a name="3.1.6"></a>
-## V3.1.6 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.6.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-3)</i>
+<h2 class="logtit"> V3.1.6 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.6.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-3)</i></h2>
+
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/kero-adapter/commit/ef520ed))
 
@@ -261,7 +280,8 @@ NaN
 NaN
 
 <a name="3.1.5"></a>
-## V3.1.5 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.5.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-1)</i>
+<h2 class="logtit"> V3.1.5 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.5.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-1)</i></h2>
+
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/kero-adapter/commit/ef520ed))
 
@@ -315,7 +335,8 @@ NaN
 
 
 <a name="3.1.4"></a>
-## V3.1.4 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.4.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-10-27)</i>
+<h2 class="logtit"> V3.1.4 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.4.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-10-27)</i></h2>
+
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/kero-adapter/commit/ef520ed))
 

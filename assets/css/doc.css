@@ -253,3 +253,27 @@ p code{
     display: table;
     content: "";
 }
+
+/*changelog页面样式*/
+.article-container a.loglink{
+    background: #4caf50;
+}
+.article-container a.loglink:hover{
+    background: #fff;
+}
+.article-container a.loglink:hover .logicon{
+    color:#4caf50;
+}
+.u-button .uf.logicon{
+    color:#fff;
+}
+i.logdate{
+    font-size:14px;
+    font-style:normal;
+    display: inline-block;
+    margin-left:5px;
+}
+p + h2.logtit{
+    padding-top:20px;
+    border-top:1px dotted #666;
+}
