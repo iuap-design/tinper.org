@@ -1,14 +1,4 @@
 <a name="3.1.17"></a>
-<h2 class="logtit"> V3.1.17 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.17.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-16)</i></h2>
-
-### Bug Fixes
-* form情况下按照showFix展示 ([986f72f](https://github.com/iuap-design/kero-adapter/commit/986f72f))
-
-* i18n & add json files & test example ([8f7a9e3](https://github.com/iuap-design/kero-adapter/commit/8f7a9e3))
-
-* i18n demo ([fa27546](https://github.com/iuap-design/kero-adapter/commit/fa27546))
-
-<a name="3.1.17"></a>
 <h2 class="logtit"> V3.1.17 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.17.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-15)</i></h2>
 
 ### Bug Fixes
