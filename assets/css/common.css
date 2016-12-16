@@ -124,14 +124,20 @@ footer p {
 
 footer i.lable-icon {
     /*font-size: 50px;*/
-    font-size: 30px;
-    vertical-align: middle;
+    font-size: 45px;
+    // vertical-align: middle;
 }
 
 footer .footer-part {
     overflow: hidden;
     margin-top: 15px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+   footer .footer-part {
+        text-align: left;
+   }
 }
 
 footer .footer-part-label {
@@ -144,12 +150,30 @@ footer .footer-part-label {
 }
 
 footer .footer-part-info {
-    /*width: 75%;*/
     display: inline-block;
+}
+
+
+footer .footer-part-title {
+    color: rgba(0,0,0, 0.87);
+    margin-bottom: 5px;
+}
+
+
+
+
+footer .footer-part-desc {
+    /*width: 75%;*/
+    // display: inline-block;
     /*float: left;*/
 /*
     margin-top: 11px;*/
     color: rgb(97, 97, 97);
+}
+
+
+footer .footer-part-desc:hover {
+    color: rgba(0,0,0, 0.87);
 }
 
 footer .overhide {
