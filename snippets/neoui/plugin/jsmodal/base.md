@@ -27,7 +27,7 @@ u.compMgr.apply({
 3.获取dom
 
 ```
-var msgBtn2 = document.body.querySelector("#msgDialogBtn2");
+var msgBtn2 = document.body.querySelector("#modalBtn");
 
 ```
 
