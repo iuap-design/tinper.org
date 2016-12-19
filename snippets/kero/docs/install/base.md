@@ -12,10 +12,10 @@ kero资源已打包在`u.js`中，配合`u.css` ， 依赖`jquery`实现完整�
 
   <!-- 整体样式u.css,必须引入 -->
   <link rel="stylesheet" href="//design.yyuap.com/static/uui/latest/css/u.css">
-  
+
   <!-- 可选：使用grid图表相关插件，加载grid.css -->
   <link rel="stylesheet" type="text/css" href="//design.yyuap.com/static/uui/latest/css/grid.css">
-  
+
   <!-- 可选：使用tree相关插件，加载tree.css -->
   <link rel="stylesheet" type="text/css" href="//design.yyuap.com/static/uui/latest/css/tree.css">
 </head>
@@ -34,7 +34,7 @@ kero资源已打包在`u.js`中，配合`u.css` ， 依赖`jquery`实现完整�
 
   <!-- 核心js 必须引入 -->
   <script src="//design.yyuap.com/static/uui/latest/js/u.js"></script>
-  
+
   <!-- 可选：使用grid图表相关插件，加载u-grid.js -->
   <script src="//design.yyuap.com/static/uui/latest/js/u-grid.js"></script>
 
@@ -51,7 +51,7 @@ kero资源已打包在`u.js`中，配合`u.css` ， 依赖`jquery`实现完整�
 可通过官网首页点击下载资源，获得完整资源包(包含空页面及所需样式)，下载地址
 
 ```
-http://design.yyuap.com/static/download/iuap-design-3.0.6.zip
+http://design.yyuap.com/static/download/iuap-design-3.1.12.zip
 ```
 核心文件`u.js`可通过以下方式获取
 

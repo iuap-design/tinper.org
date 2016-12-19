@@ -37,7 +37,21 @@
         },
         {
             "name":"样式板",
-            "href":"/dist/webIDE/index.html"
+            "href":"//tinper.org/webide/"
+        },
+        {
+            "name":"下载",
+            "href":"#",
+            "sub":[
+                {
+                    "name":"版本下载",
+                    "href":"/dist/log/docs/changelog.html"
+                },
+                {
+                    "name":"定制下载",
+                    "href":"/dist/package/index.html"
+                }
+            ]
         },
         {
             "name":"反馈",

@@ -72,14 +72,16 @@ async.auto({
                 fs.readdir(dir, function(err,kits){
                     kits = ut.rmdot(kits);
 
+                    // copymdAry - 目录下直接拷贝，无需合并的部分，包含summary.md,readme.md,及没有实力的纯文档组件
                     var copymdAry = kits.filter(function(kit){
                         return /\.md$/.test(kit)
                     })
                     // console.log(copymdAry)
-                    // ignore Summary && README
+                    // 排除Summary && README及单一文档组件外的组件名集合
                     var newkits = kits.filter(function(kit){
                         return !(/\.md$/.test(kit))
                     })
+
 
                     /**
                      * 判断`.md`是否与文件件重名,报错
@@ -137,38 +139,49 @@ async.auto({
                 var KIT = kit;
 
                 var kitpath = path.resolve(dir, kit)
-
-                fs.readdir(kitpath, function(err,kitfiles){
+                var kitfiles = fs.readdirSync(kitpath);
+                var kitfiles = ut.rmdot(kitfiles);
+                // fs.readdir(kitpath, function(err,kitfiles){
                   // kitfiles:单一组件合集，包括base.md及文件夹demo
-                  var kitfiles = ut.rmdot(kitfiles);
-
-                  async.map(kitfiles, function(kfile, wholeback){
+                //   var kitfiles = ut.rmdot(kitfiles);
+                // console.log(kitpath,'----',kitfiles);
+                // 最后修改
+                  async.mapSeries(kitfiles, function(kfile, wholeback){
                       var kpath;
                       var baseMd = null;
 
                       if(kfile === snipBase){
                           // kpath: base.md路径,读取基本内容
                           kpath = path.join(kitpath, kfile)
-                          fs.readFile(kpath,'utf-8',function(err,data){
-                              baseMd = data;
-                              wholeback(null, baseMd);
-                          })
+                          var bdata = fs.readFileSync(kpath,'utf-8');
+                          baseMd = bdata;
+                          wholeback(null, baseMd);
+                        //   fs.readFile(kpath,'utf-8',function(err,data){
+                        //       baseMd = data;
+                        //       wholeback(null, baseMd);
+                        //   })
                       } else if(kfile === snipDemo){
                           // kpath: 单一demo路径.
                           // 进行读取排序，合并
                           kpath = path.join(kitpath, kfile)
+                          // kpath: /Users/AYA/Desktop/work/tinper.org/snippets/neoui/component/gallery/demo
+                          var demofile = fs.readdirSync(kpath,'utf-8');
 
-                          fs.readdir(kpath, function(err, files){
-                              var files = ut.rmdot(files).sort();
-
+                          demofiles = ut.rmdot(demofile).sort();
+                        //   console.log(kpath,'----',demofiles)
+                        //   fs.readdir(kpath, function(err, files){
+                            //   var files = ut.rmdot(files).sort();
                               // mapSeries顺序执行以上 sort结果
-                              async.mapSeries(files, function(exfile, callback) {
+                              async.mapSeries(demofiles, function(exfile, callback) {
                                   var exPath = path.join(kpath, exfile);
-
+                                  //   console.log(exPath);
+                                  // /Users/AYA/Desktop/work/tinper.org/snippets/neoui/global/utilities/demo/4-other-display
                                   //start 示例文件夹遍历
-                                  fs.readdir(exPath, function(err,files){
+                                  var exfiles = fs.readdirSync(exPath,'utf-8');
+                                  var files = ut.rmdot(exfiles).sort();
+                                //   fs.readdir(exPath, function(err,files){
                                       // files为最终层级文件，如.html .md .css .js
-                                      var files = ut.rmdot(files);
+                                    //   var files = ut.rmdot(files);
                                       var baseDemo = [];
                                       var demoMd = [];
                                       var demoHtml = [];
@@ -184,62 +197,93 @@ async.auto({
                                       var codeFun = function(data){
                                           return '<div class="examples-code"><pre><code>\r\n' + data + '</code></pre>\r\n</div>\r\n';
                                       }
+                                      // 处理js注释不显示星号问题
+                                      var jsCodeFun = function(data){
+                                          return '<pre class="examples-code"><code>\r\n' + data + '</code></pre>\r\n';
+                                      }
                                       // 转义pre > code 下的html标签
                                       var codeHtmlFun = function(data){
                                           return '<div class="examples-code"><pre><code>\r\n' + data.replace(/\</g,'&lt;') + '</code></pre>\r\n</div>\r\n';
                                       }
 
+
+
                                       //遍历demo文件夹start
-
-                                      async.map(files,function(item,cb){
+                                    //   console.log('exPath',exPath);
+                                      async.mapSeries(files,function(item,cb){
                                           var filePath = path.join(exPath,item);
-
+                                            // console.log('filePath',filePath,"---files:",files);
+                                            // console.log("files:",files,'\npath',exPath);
+                                            var ts = fs.readFileSync(filePath, 'utf-8')
                                           if(/\.md$/.test(filePath)){
-                                                fs.readFile(filePath, 'utf-8',function(err,data){
-                                                    demoMd = data;
-                                                    cb(null,null)
-                                                })
+                                                // fs.readFile(filePath, 'utf-8',function(err,data){
+                                                //     demoMd = data;
+                                                //     cb(null,null)
+                                                // })
+                                                demoMd = ts;
+                                                cb(null,null)
                                           } else if(/\.html$/.test(filePath)){
-                                                fs.readFile(filePath, 'utf-8',function(err,data){
-                                                    demoHtml = '<div class="example-content">' + data + '</div>\r\n';
-                                                    codeHtml = codeHtmlFun(data);
-                                                    cb(null,null)
-                                                })
+                                                // fs.readFile(filePath, 'utf-8',function(err,data){
+                                                //     demoHtml = '<div class="example-content">' + data + '</div>\r\n';
+                                                //     codeHtml = codeHtmlFun(data);
+                                                //     cb(null,null)
+                                                // })
+                                                demoHtml = '<div class="example-content">' + ts + '</div>\r\n';
+                                                codeHtml = codeHtmlFun(ts);
+                                                cb(null,null)
                                           } else if(/\.css$/.test(filePath)){
-                                                fs.readFile(filePath, 'utf-8',function(err,data){
-                                                    demoCss = '<div class="example-content ex-hide"><style>\r\n' + data + '\r\n</style></div>';
-                                                    codeCss = codeFun(data);
-                                                    cb(null,null)
-                                                })
+                                                // fs.readFile(filePath, 'utf-8',function(err,data){
+                                                //     demoCss = '<div class="example-content ex-hide"><style>\r\n' + data + '\r\n</style></div>';
+                                                //     codeCss = codeFun(data);
+                                                //     cb(null,null)
+                                                // })
+                                                demoCss = '<div class="example-content ex-hide"><style>\r\n' + ts + '\r\n</style></div>';
+                                                codeCss = codeFun(ts);
+                                                cb(null,null)
                                           } else if(/\.js$/.test(filePath)){
-                                                fs.readFile(filePath, 'utf-8',function(err,data){
-                                                    demoJs = '\r\n<script>\r\n' + data + '\r\n</script>\r\n';
-                                                    codeJs = codeFun(data);
-                                                    cb(null,null)
-                                                })
+                                                // fs.readFile(filePath, 'utf-8',function(err,data){
+                                                //     demoJs = '\r\n<script>\r\n' + data + '\r\n</script>\r\n';
+                                                //     codeJs = codeFun(data);
+                                                //     cb(null,null)
+                                                // })
+                                                demoJs = '\r\n<script>\r\n' + ts + '\r\n</script>\r\n';
+                                                codeJs = jsCodeFun(ts);
+                                                cb(null,null)
                                           } else if(/\.jsx$/.test(filePath)){
                                                 // .jsx用于代码显示
-                                                fs.readFile(filePath, 'utf-8',function(err,data){
-                                                    beeShow = codeHtmlFun(data);
-                                                    cb(null,null)
-                                                })
+                                                // fs.readFile(filePath, 'utf-8',function(err,data){
+                                                //     beeShow = codeHtmlFun(data);
+                                                //     cb(null,null)
+                                                // })
+                                                beeShow = codeHtmlFun(ts);
+                                                cb(null,null)
                                           } else if(/\.jsc$/.test(filePath)){
                                                 // .jsc用于实际demo执行
-                                                fs.readFile(filePath, 'utf-8',function(err,data){
-                                                    beeScript = '\r\n<script>\r\n' + data + '\r\n</script>\r\n';
-                                                    cb(null,null)
-                                                })
+                                                // fs.readFile(filePath, 'utf-8',function(err,data){
+                                                //     beeScript = '\r\n<script>\r\n' + data + '\r\n</script>\r\n';
+                                                //     cb(null,null)
+                                                // })
+                                                beeScript = '\r\n<script>\r\n' + ts + '\r\n</script>\r\n';
+                                                cb(null,null)
                                           }
 
                                       },function(err,results){
+                                            // console.log("exPath:",exPath,"\nfiles:",files,'\nbeeShow:'+ beeShow.length);
                                             baseDemo ='\r\n' + demoMd + '\r\n' +
                                                 demoHtml + '\r\n' + demoCss + '\r\n' + demoJs + '\r\n' + beeScript + '\r\n' +
                                                 codeHtml + '\r\n' + codeCss + '\r\n' + codeJs + '\r\n' + beeShow + '\r\n';
+                                                demoMd = [];
+                                                demoHtml = [];
+                                                demoCss = [];
+                                                demoJs = [];
+                                                codeHtml = [];
+                                                codeCss = [];
+                                                codeJs = [];
                                             callback(null,baseDemo);
                                         })
                                         //遍历demo文件夹end
 
-                                  })
+                                //   })
                                   //end 示例文件夹遍历
 
                               }, function(err,results) {
@@ -248,7 +292,7 @@ async.auto({
                                   wholeback(null,data);
                               });
 
-                          })
+                        //   })
 
                       }
                   },function(err, results){
@@ -267,7 +311,7 @@ async.auto({
 
                   })
 
-                })
+                // })
 
               })
 

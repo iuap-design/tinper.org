@@ -2,8 +2,6 @@
 
 本例实现NeoUI组件checkbox数据绑定。
 
-replaceExamp
-
 [试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/checkbox)
 
 **注意**：
