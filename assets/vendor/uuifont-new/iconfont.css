@@ -1,10 +1,10 @@
 
 @font-face {font-family: "uf";
-  src: url('iconfont.eot?t=1482134597882'); /* IE9*/
-  src: url('iconfont.eot?t=1482134597882#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1482134597882') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1482134597882') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1482134597882#uf') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1482291692022'); /* IE9*/
+  src: url('iconfont.eot?t=1482291692022#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1482291692022') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1482291692022') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1482291692022#uf') format('svg'); /* iOS 4.1- */
 }
 
 .uf {
@@ -111,6 +111,8 @@
 
 .uf-table-2:before { content: "\e95f"; }
 
+.uf-anglearrowpointingtoright:before { content: "\e61e"; }
+
 .uf-exc-c-o:before { content: "\e615"; }
 
 .uf-group:before { content: "\e651"; }
@@ -124,6 +126,8 @@
 .uf-sync-c-o:before { content: "\e655"; }
 
 .uf-grid:before { content: "\e657"; }
+
+.uf-anglepointingtoleft:before { content: "\e624"; }
 
 .uf-activate-3:before { content: "\e65b"; }
 
@@ -149,7 +153,7 @@
 
 .uf-tapp:before { content: "\e773"; }
 
-.uf-search-s:before { content: "\e628"; }
+.uf-treefolder:before { content: "\e628"; }
 
 .uf-advice:before { content: "\e6cf"; }
 
@@ -179,7 +183,7 @@
 
 .uf-pad:before { content: "\e6bd"; }
 
-.uf-treeadd:before { content: "\e688"; }
+.uf-treefolder-closed:before { content: "\e688"; }
 
 .uf-reduce-c-o:before { content: "\e635"; }
 
@@ -357,7 +361,7 @@
 
 .uf-folderopen-o:before { content: "\e6d7"; }
 
-.uf-folderopen:before { content: "\e6d8"; }
+.uf-treefolderopen:before { content: "\e6d8"; }
 
 .uf-mac:before { content: "\e6ed"; }
 
@@ -449,6 +453,8 @@
 
 .uf-truck-o:before { content: "\e6b6"; }
 
+.uf-super:before { content: "\e62c"; }
+
 .uf-equipment:before { content: "\e630"; }
 
 .uf-arrow-c-o-left-2:before { content: "\e6b8"; }
@@ -474,6 +480,8 @@
 .uf-zhenxue:before { content: "\e77a"; }
 
 .uf-zhongyu:before { content: "\e77b"; }
+
+.uf-es:before { content: "\e747"; }
 
 .uf-flow-o-2:before { content: "\e6bc"; }
 
@@ -545,8 +553,6 @@
 
 .uf-dropbox:before { content: "\e69d"; }
 
-.uf-3line-c-o:before { content: "\e716"; }
-
 .uf-search-light:before { content: "\e622"; }
 
 .uf-cart-o:before { content: "\e8c4"; }
@@ -602,4 +608,10 @@
 .uf-qi-c-o:before { content: "\e621"; }
 
 .uf-exc-c:before { content: "\e61d"; }
+
+.uf-plug-o:before { content: "\e60d"; }
+
+.uf-search-s:before { content: "\e991"; }
+
+.uf-treeadd:before { content: "\e992"; }
 
