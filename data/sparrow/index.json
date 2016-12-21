@@ -22,12 +22,12 @@
             "features": [
                 {
                     "name":"多终端支持",
-                    "img":"uf uf-twocolumnslayout",
+                    "img":"uf uf-equipment",
                     "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，支持iOS、Android、windows、MAC"
                 },
                 {
                     "name":"丰富的工具方法",
-                    "img":"uf uf-branchwithleavesblackshape",
+                    "img":"uf uf-leaf",
                     "desc":"方便进行DOM操作、AJAX交互，提供多平台多浏览器判断、Cookies操作、数据类型处理等一系列功能方法"
                 },
                 {
@@ -37,7 +37,7 @@
                 },
                 {
                     "name":"ES6语法特性",
-                    "img":"uf uf-asterisk",
+                    "img":"uf uf-es",
                     "desc":"核心代码使用ES6语法编写，发挥全新语法特性优势，支持API按需导入"
                 }
             ]

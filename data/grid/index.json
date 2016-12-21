@@ -22,17 +22,17 @@
             "features": [
                 {
                     "name":"多终端支持",
-                    "img":"uf uf-twocolumnslayout",
+                    "img":"uf uf-equipment",
                     "desc":"支持IE8+、Firefox、Chrome、safari等多平台主流浏览器"
                 },
                 {
                     "name":"功能强大",
-                    "img":"uf uf-branchwithleavesblackshape",
+                    "img":"uf uf-super",
                     "desc":"支持表格排序、交换列、数字列、复选、合计等复杂功能"
                 },
                 {
                     "name":"丰富组件配套",
-                    "img":"uf uf-horizontalresizeoption",
+                    "img":"uf uf-puzzle-o",
                     "desc":"与neoui完美结合，打造致美表格控"
                 },
                 {

@@ -17,7 +17,7 @@
 2.定义弹出信息的具体内容
 
 ```
-var rightInfo='<i class="uf uf-checkedsymbol margin-r-5"></i>成功信息!!!';
+var rightInfo='<i class="uf uf-correct margin-r-5"></i>成功信息!!!';
 
 ```
 
@@ -53,7 +53,7 @@ u.on(msgBtn,'click', function(){
 	    <td>msg</td>
 	    <td>html片段</td>
 	    <td>无</td>
-	    <td><i class="uf uf-checkedsymbol margin-r-5"></i>成功信息!!!';</td>
+	    <td><i class="uf uf-correct margin-r-5"></i>成功信息!!!';</td>
 	    <td></td>
 	  </tr>
 	  <tr>
