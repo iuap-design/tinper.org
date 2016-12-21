@@ -6,16 +6,16 @@
 
 ## 引入图标字体文件
 
-1、通过CDN引入
+1、引入项目下面生成的fontclass代码
 
 ````
-<link href="//design.yyuap.com/static/uui/latest/css/u.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./iconfont.css">
 ````
 
-2、赋值整个`iconfont` 文件夹到您的项目中,使用路径引入
+2、挑选相应图标并获取类名，应用于页面
 
 ```
-<link rel="stylesheet" href="path/to/iconfont/css/u.css">
+<i class="uf uf-xxx"></i>
 ```
 
 
@@ -26,11 +26,11 @@
 
 `<i class="uf uf-图标字体类名"></i>`
 
-例如：显示安卓的图标
+例如：显示咨询的图标
 
-`<i class="uf uf-androidcharactersymbol"></i>`
+`<i class="uf uf-advice"></i>`
 
-<i class="uf uf-androidcharactersymbol"></i>
+<i class="uf uf-advice"></i>
 
 是不是很简单，快上手试试吧！
 ## 具体的图标
