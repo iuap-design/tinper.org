@@ -37,7 +37,7 @@
                 },
                 {
                     "name":"多平台支持",
-                    "img":"uf uf-twocolumnslayout",
+                    "img":"uf uf-equipment",
                     "desc":"使用npm发包，覆盖主流开发平台，便于代码迁移"
                 }
             ]

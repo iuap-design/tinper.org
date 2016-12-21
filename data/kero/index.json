@@ -22,7 +22,7 @@
             "features": [
                 {
                     "name":"多终端支持",
-                    "img":"uf uf-twocolumnslayout",
+                    "img":"uf uf-equipment",
                     "desc":"支持IE8+、Firefox、Chrome、safari等多平台主流浏览器"
                 },
                 {
@@ -32,12 +32,12 @@
                 },
                 {
                     "name":"双向数据绑定",
-                    "img":"uf uf-heart-o",
+                    "img":"uf uf-link",
                     "desc":"实现了模型与UI之间的双向自动更新"
                 },
                 {
                     "name":"多维数据模型",
-                    "img":"uf uf-bag-s",
+                    "img":"uf uf-box-o-2",
                     "desc":"解决了字段关联、主子数据、主子孙等多维数据模型的绑定问题"
                 },
                 {

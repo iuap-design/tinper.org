@@ -22,7 +22,7 @@
             "features": [
                 {
                     "name":"多终端支持",
-                    "img":"uf uf-twocolumnslayout",
+                    "img":"uf uf-equipment",
                     "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，支持iOS、Android、windows、MAC"
                 },
                 {
@@ -37,7 +37,7 @@
                 },
                 {
                     "name":"ES6语法特性",
-                    "img":"uf uf-loan",
+                    "img":"uf uf-es",
                     "desc":"核心代码使用ES6语法编写，发挥全新语法特性优势，支持API按需导入"
                 }
             ]
