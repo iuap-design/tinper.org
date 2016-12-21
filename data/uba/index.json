@@ -22,7 +22,7 @@
             "features": [
                 {
                     "name":"功能强大",
-                    "img":"uf uf-branchwithleavesblackshape",
+                    "img":"uf uf-leaf",
                     "desc":"uba是一个集合并、压缩、模板生成、打包及发布为一体的前端application开发工具"
                 },
                 {
@@ -32,7 +32,7 @@
                 },
                 {
                     "name":"快速构建应用",
-                    "img":"uf uf-fourblacksquares",
+                    "img":"uf uf-4square",
                     "desc":"生成项目结构明朗清晰，同时内部集成强大的tinper前端组件库，可快速搭建起前端项目"
                 },
                 {

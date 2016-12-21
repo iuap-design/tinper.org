@@ -34,18 +34,18 @@
                 },
                 {
                     "name":"浏览器兼容性",
-                    "img":"uf uf-desktopmonitor",
+                    "img":"uf uf-qrcode",
                     "desc":"支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题",
                     "link":"https://github.com/iuap-design/tinper-neoui-polyfill/blob/release/README.md"
                 },
                 {
                     "name":"按需定制",
-                    "img":"uf uf-downloadtostoragedrive",
+                    "img":"uf uf-download",
                     "desc":"开发者可以通过自定义 Syle样式组件、JavaScript 插件，定制一份属于特制的neoui框架"
                 },
                 {
                     "name":"丰富的组件",
-                    "img":"uf uf-branchwithleavesblackshape",
+                    "img":"uf uf-leaf",
                     "desc":"丰富的CSS组件、30+个JavaScript插件并在持续开发中，代码简洁、 规范、易于修改"
                 },
                 {
