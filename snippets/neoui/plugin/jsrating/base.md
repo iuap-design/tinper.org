@@ -29,7 +29,7 @@
         starOn: "icon uf uf-star orange-600",
         cancelOff: "icon uf uf-minussigninsideablackcircle",
         cancelOn: "icon  uf uf-minussigninsideablackcircle orange-600",
-        starHalf: "icon uf uf-starhalfempty orange-500"
+        starHalf: "icon uf uf-star-2 orange-500"
       };
 })
 
