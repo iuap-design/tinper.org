@@ -233,7 +233,10 @@ p code{
     background: #fff;
     border: 1px solid #ddd;
 }
-
+.example-content-edge{
+    padding-top:20px;
+    padding-bottom: 0px;
+}
 .example-content.ex-hide{
     display: none;
 }

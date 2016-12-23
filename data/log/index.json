@@ -19,7 +19,7 @@
                 },
                 {
                     "name":"React组件库bee",
-                    "href":"/dist/react/index.html"
+                    "href":"http://bee.tinper.org/"
                 },
                 {
                     "name":"表格控件grid",
