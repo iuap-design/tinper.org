@@ -23,6 +23,8 @@
 		"neoui-steps":"步骤"
 	},
 	"jsPlugin": {
+		"neoui-collapse":"折叠组件",
+		"neoui-mobdatetimepicker":"移动端日期组件",
 		"neoui-autocomplete":"自动完成",
 		"neoui-button":"按钮",
 		"neoui-checkbox":"checkbox框",
