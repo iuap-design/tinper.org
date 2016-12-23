@@ -1,3 +1,13 @@
+<a name="3.1.18"></a>
+<h2 class="logtit"> V3.1.18 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.18.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-22)</i></h2>
+
+### Bug Fixes 
+* changelog样式 ([7079bde](https://github.com/iuap-design/kero-adapter/commit/7079bde))
+
+* 云表单radio、单选框其他输入框disable设置 ([3717e56](https://github.com/iuap-design/kero-adapter/commit/3717e56))
+
+* 表盘setValue ([2a4ac82](https://github.com/iuap-design/tinper-neoui/commit/2a4ac82))
+
 <a name="3.1.17"></a>
 <h2 class="logtit"> V3.1.17 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.17.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-15)</i></h2>
 
