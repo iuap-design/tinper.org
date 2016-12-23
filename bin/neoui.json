@@ -1,5 +1,6 @@
 {
 	"stylePlugin": {
+		"nenoui-collapse":"折叠组件",
 		"neoui-avatar":"头像",
 		"neoui-badge":"徽章",
 		"neoui-breadcrumbs":"面包屑",
