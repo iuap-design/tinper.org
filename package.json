@@ -10,9 +10,10 @@
     "mark": "node bin/index",
     "docs": "node bin/mdconcat",
     "custom": "node presass",
-    "dist": "npm run custom && npm run cate && npm run packdata && npm run docs && npm run mark",
+    "logcopy": "node logcopy",
+    "dist": "npm run custom && npm run logcopy && npm run cate && npm run packdata && npm run docs && npm run mark",
     "packdata": "node bin/packdata",
-    "deploy": "sh bin/fetch.sh && npm run custom && npm run cate && npm run packdata && npm run docs && npm run mark"
+    "deploy": "sh bin/fetch.sh && npm run custom && npm run logcopy && npm run cate && npm run packdata && npm run docs && npm run mark"
   },
   "repository": {
     "type": "git",

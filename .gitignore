@@ -147,3 +147,6 @@ data/package/index.json
 dist/**/*.*
 !dist/webIDE/**/*.*
 dist/webIDE/**/.DS_Store
+
+# 注销log文件，使用命令生成
+snippets/log/docs/changelog.md
