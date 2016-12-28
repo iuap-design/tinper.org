@@ -2,7 +2,7 @@
 
 本例展示下拉框示例。
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/combobox)
+[试一试](http://tinper.org/webide/#/demos/kero/combobox)
 
 
 # API
@@ -66,4 +66,4 @@ comboboxAObject.setEnable(true);//设置可用
 
 [基础下拉框](http://tinper.org/dist/neoui/plugin/combobox.html)    
 
-[下拉框在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
+[下拉框在grid中使用](http://tinper.org/webide/#/demos/grids/edit)

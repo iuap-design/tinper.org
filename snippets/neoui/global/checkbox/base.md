@@ -6,7 +6,7 @@ checkbox提供了基础复选框、不同色彩复选框、图片复选框、个
 
 
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/checkbox)
+[试一试](http://tinper.org/webide/#/demos/ui/checkbox)
 
 
 
@@ -91,4 +91,4 @@ checkboxObject.toggle();
 
 [复选框在kero中使用](http://tinper.org/dist/kero/docs/ex_checkbox.html)    
 
-[复选框在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
+[复选框在grid中使用](http://tinper.org/webide/#/demos/grids/edit)

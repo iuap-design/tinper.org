@@ -5,7 +5,7 @@
 
 
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/month)
+[试一试](http://tinper.org/webide/#/demos/ui/month)
 
 
 # API
@@ -42,7 +42,7 @@ monthObject.setValue(2);
 
 [月份在kero中使用](http://tinper.org/dist/kero/docs/ex_month.html)    
 
-[月份在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
+[月份在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
 
 
 

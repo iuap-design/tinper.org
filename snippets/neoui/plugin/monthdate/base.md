@@ -5,7 +5,7 @@
 
 
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/monthdate)
+[试一试](http://tinper.org/webide/#/demos/ui/monthdate)
 
 # API
 

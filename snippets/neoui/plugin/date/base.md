@@ -6,8 +6,8 @@
 
 
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/datetime)
-(http://tinper.org/dist/webIDE/index.html#/demos/ui/datetime)
+[试一试](http://tinper.org/webide/#/demos/ui/datetime)
+(http://tinper.org/webide/#/demos/ui/datetime)
 
 
 用户可以在`u-datepicker`的dom元素添加format属性，来自定义日期的显示格式。具体fomat内容定义如下：
@@ -137,4 +137,4 @@ dateObject.setFormat('YYYY');
 
 [日期在kero中使用](http://tinper.org/dist/kero/docs/ex_datetime.html)    
 
-[日期在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
+[日期在grid中使用](http://tinper.org/webide/#/demos/grids/edit)

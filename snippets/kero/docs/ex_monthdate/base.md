@@ -2,7 +2,7 @@
 
 本例展示:月日UI控件绑定默认数据。
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/monthdate)
+[试一试](http://tinper.org/webide/#/demos/kero/monthdate)
 
 
 # API

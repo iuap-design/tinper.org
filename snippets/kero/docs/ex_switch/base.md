@@ -2,7 +2,7 @@
 
 本例实现UI控件switch的数据绑定。
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/switch)
+[试一试](http://tinper.org/webide/#/demos/kero/switch)
 
 
 
@@ -63,4 +63,4 @@ switchAObject.setEnable(true);//设置可用
 相关内容：
 
 [基础开关](http://tinper.org/dist/neoui/plugin/jsswitch.html)    
-[开关在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
+[开关在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
