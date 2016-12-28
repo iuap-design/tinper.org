@@ -28,6 +28,7 @@
   * [数值百分比](ex_percent.md)
   * [进度条](ex_progress.md)
   * [分页](ex_pagination.md)
+  * [文本输入](textfield.md)
   * [自定义验证](ex_validate.md)
 * 典型场景开发
   * [表格插件基础应用](grid.md)
