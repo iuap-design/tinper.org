@@ -18,6 +18,8 @@ var zipPath;
 
 var tinperPoly = 'tinper-neoui-polyfill';
 var tinperNeoui = 'tinper-neoui';
+var readfile = '../custom/README.md';
+var readmePath = path.resolve(__dirname,readfile);
 
 var showError = function(err){
 	 console.log( '\n错误文件:',err.file,'\n错误行数:',err.line,'\n错误信息:',err.message);
@@ -224,7 +226,7 @@ module.exports = function(data, self, cb){
 	// zip压缩
 	gulp.task('zip', ['webpack'], function() {
 
-		return gulp.src([downFiles + '/*.js', downFiles + '/*.css'])
+		return gulp.src([downFiles + '/*.js', downFiles + '/*.css',readmePath])
 			.pipe(zip('down.zip'))
 			.pipe(gulp.dest(path.resolve(__dirname, '../download')));
 	});
