@@ -34,5 +34,4 @@ viewModel.listData.setSimpleData([
     {"enterprise": "阿里巴巴","depart": "测试","name": "张丽丹","sex": "female"}
 ]);
 
-
-
+viewModel.listData.totalPages(10);
