@@ -1,6 +1,6 @@
 * [提示消息](message.md)
-* [分页](pagination.md)
-* [提示](tooltip.md)
+<!-- * [分页](pagination.md) -->
+<!-- * [提示](tooltip.md) -->
 * [面包屑](breadcrumb.md)
 * [面板](panel.md)
 * [下拉菜单](dropdown.md)
