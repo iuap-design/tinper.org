@@ -1,5 +1,5 @@
 * 时间插件
-  * [表盘](clockpicker.md)	
+  * [表盘](clockpicker.md)
   * [日期](date.md)
   * [月份](month.md)
   * [时分秒](time.md)
@@ -7,12 +7,13 @@
   * [年月](yearmonth.md)
   * [月日](monthdate.md)
 * 表格插件
-  * [基础说明](grid.md)	
+  * [基础说明](grid.md)
   * [扩展说明](gridCustom.md)
 * [加载图标](loading.md)
 * [下拉框](combobox.md)
 * [提示消息](jsmessage.md)
 * [模态框](jsmodal.md)
+* [参照层](jsrefer.md)
 * [自动完成](autocomplete.md)
 * [分页](jspagination.md)
 * [页签](jstabs.md)
