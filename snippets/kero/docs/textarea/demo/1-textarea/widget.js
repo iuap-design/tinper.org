@@ -27,4 +27,4 @@ app = u.createApp({
 
 // 数据集dt1创建空行，并为字符f1赋值
 var r = viewModel.dt1.createEmptyRow();
-r.setValue('f1', "我是普通输入框");
+r.setValue('f1', "落红不是无情物，化作春泥更护花.－龚自珍《己亥杂诗》 ");
