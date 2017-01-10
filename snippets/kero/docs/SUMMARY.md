@@ -14,6 +14,8 @@
 * 基本示例
   * [单选框](ex_radio.md)
   * [复选框](ex_checkbox.md)
+  * [文本输入](textfield.md)
+  * [多行文本输入](textarea.md)
   * [开关](ex_switch.md)
   * [年份选择](ex_year.md)
   * [月份选择](ex_month.md)
@@ -28,7 +30,6 @@
   * [数值百分比](ex_percent.md)
   * [进度条](ex_progress.md)
   * [分页](ex_pagination.md)
-  * [文本输入](textfield.md)
   * [自定义验证](ex_validate.md)
 * 典型场景开发
   * [表格插件基础应用](grid.md)

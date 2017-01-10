@@ -1,89 +1,68 @@
-# modal控件
+# 模态框
 
-区分与message,显示更多的信息,且自带确认取消回调。
-
-# 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-# 用法
-
-1.定义触发弹出事件的DOM
-
-```
-<button id="modalBtn" class="u-button" >Success</button>
-
-```
-
-2.js 定义应用范围
-
-```
-u.compMgr.apply({
-        el:'body'
-})
-
-```
-
-3.获取dom
-
-```
-var msgBtn2 = document.body.querySelector("#modalBtn");
-
-```
+用户自定义的内容以弹出对话框的形式显示，具有最小和最实用的功能集。
 
 
-4.绑定modal事件
+[试一试](http://tinper.org/webide/#/demos/ui/modalDialog)
 
-```
-u.on(msgBtn2,'click', function(){
-        u.confirmDialog({
-            msg: "是否保存单据？",       //modal内容
-            title: "测试确认",           //modal title
-            onOk: function () {          //确认后的回调
-                alert('ok')
-            },
-            onCancel: function () {		 //取消后的回调
-                alert('cancel')
-            }
-        });
-})
-
-```
 
 # API
 
-## js方法与参数
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>方法参数</td>
-	    <td>回调方法</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>confirmDialog</td>
-	    <td>1.msg  2.title</td>
-	    <td>1.onOk 2.onCancel</td>
-	    <td>确认和取消都有回调</td>
-	    <td></td>
-	  </tr>
-	    <td>messageDialog</td>
-	    <td>1.msg  2.title  3.btnText</td>
-	    <td>无</td>
-	    <td>只有确认按钮，自定义确认按钮字样btnText</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>dialog</td>
-	    <td>1.id  2.content  3.hasCloseMenu </td>
-	    <td>自定义回调</td>
-	    <td>id定义dialog唯一性,content自定义内容,可以是html.确认取消时间自行绑定</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
+## \# u.dialog 创建一个模态框
 
-# 示例
+* 类型： `Function`
+* 说明：创建一个模态框
+* 参数：
+	* `{Object} dialogParam` dialogParam包括了模态框的初始化所需字段。
+	 
+下面对dialogParam具体字段内容进行说明。
+
+| 字段名称      |字段类型       |字段说明  |默认值|
+| ------------- |:-------------:| :-----:|----:|
+| id      | String | 自定义dialog的id值，确定唯一性 |空|
+| hasCloseMenu   | Boolean      |   是否含有右上角的关闭图标 | true|
+| content  | String  |   具体内容的选择器(例如：#dialog_content，.dialog_content) |空|
+| width   | String      |  模态框的宽度 | 空|
+| height  | String  |   模态框的高度  |空|
+| closeFun| Function  |   点击关闭按钮时触发的函数 |空|
+
+
+	
+* 用法：
+
+```
+
+var dialogParam ={ id:'testDialg',
+			       content:"#dialog_content",
+			       hasCloseMenu:true,
+			       closeFun:closeFun
+				 };
+
+var dialogObject = u.dialog(dialogParam);
+
+```
+
+## \# close 关闭模态框
+
+* 类型： `Function`
+* 说明：将显示的模态框关闭
+* 用法：
+
+```
+
+dialogObject.close();//这里的dialog是通过上u.dialog创建的对象
+
+```
+
+## \# show 显示模态框
+* 类型： `Function`
+* 说明：将隐藏的模态框显示
+* 用法：
+
+```
+
+dialogObject.show();//这里的dialog是通过u.dialog创建的对象
+
+```
+
 
