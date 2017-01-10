@@ -2,7 +2,7 @@
 
 本例实现NeoUI组件radio的数据绑定。
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/radio)
+[试一试](http://tinper.org/webide/#/demos/kero/radio)
 
 **注意**：
 
@@ -72,4 +72,4 @@ radioAObject.setEnable(true);//设置可用
 
 [基础单选框](http://tinper.org/dist/neoui/global/radio.html)  
 
-[单选框在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
+[单选框在grid中使用](http://tinper.org/webide/#/demos/grids/edit)

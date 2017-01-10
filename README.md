@@ -1,108 +1,130 @@
-# tinper官网说明
+[![logo](http://tinper.org/assets/images/tinperlogos32.png)](http://tinper.org)
 
-### 待开发工作
+---
 
-- 官网待优化
-  - 维护文档补充（卫东）
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/badges/shields.svg)](https://github.com/iuap-design/tinper.org)
+
+[中文文档](./README_CN.md)
+
+## Introduction
+
+`tinper.org` is `tinper` offical website，save documentation and examples。
+
+> Online webIDE demo：[tinper-webide](https://github.com/iuap-design/tinper-webide)
 
 
-### 注意事项
 
-* !!! snippets下创建子目录（即子站），需要创建下一及目录作为子站，否则会报错
-* 使用模板引擎，需要注意`{{include ./header}}`,需要使用`.`开头相对路径，文件名不能加后缀
+## Features
+
+`tinper.org`based on`hexo`,`jekyll` document structure，as `marked` markdown tool core, achieving the following：
+
+* Support Markdown & Template to HTML
+
+* Reuse Documention & Demo
+
+* Support templates
+
+* Support custom download
+
+* Use `tinper-neoui`UI component
 
 
+## Quickstart
 
-### 整体说明
+#### Install
 
-未采用`hexo`,`jeykll`等第三方博客系统，原因如下：
+* Clone
 
-- 样式`.styl`文件采用模板语法，不利于维护
-- 模板多为`blog`列表形式，可选范围小
-- 模板修改需要学习模板引擎（多为后端模板引擎语法），操作复杂
-- 增加功能有局限性
-- 不方便扩展或直接使用`neoui`框架内容
-- 多官网需要多仓库管理
+  ```
+  $ git clone git@github.com:iuap-design/tinper.org.git
+  ```
 
-借鉴`hexo`，根据`tinper`1主4子官网业务需求，做了单一仓库，合理目录管理的输出机制：
+* Install dependencies
 
-- 支持多文件形态(md & 模板引擎)输出静态页
-- 最大程度复用`iuap-design`文档
-- 支持模板扩展
-- 原生使用neoui
+  ```
+  $ npm install
+  ```
 
-### 完成情况
 
-- 实现目前业务需求的输出机制
-- 实现官网主体内容部署
-- 完成子库文档迁移整合
-- 实现neoui 页面demo效果展示
+#### Usage 
 
-### 目录结构
+* Output pages
 
-| 名称              | 内容         | 备注                                      |
-| --------------- | ---------- | --------------------------------------- |
-| assets          | 静态及第三方资源   | 存放样式&图片&JS文件                            |
-| bin             | 执行文件       | 注意需要依赖`_config.yml`配置                   |
-| conf            | webIDE依赖文件 | 待迁移                                     |
-| data            | 页面渲染需要的数据  |                                         |
-| dist            | 输出目录       | 所有输出的静态页面                               |
-| download        | 定制下载输出目录   |                                         |
-| layout          | 页面模板       | 创建页面模板                                  |
-| partial         | 页面公用部分(头尾) | 创建头尾                                    |
-| src             | 源文件        | 所有html原文件在此目录下修改                        |
-| entry.js        | 定制下载入口文件   |                                         |
-| snippets        | 原始md及示例    | 所有md及示例在此目录下修改                          |
-| **_config.yml** | **全局配置文件** | `bin/md2html.js`,`bin/mdconcat.js`依赖此配置 |
+  ```
+  $ npm run dist
+  ```
 
-### 官网机制说明
+* Server
 
-官网按照以下顺序输出最终页面：
+  ```
+  $ node server/app
+  or
+  $ npm run dev
+  ```
+
+  ​
+
+## Document
+
+#### Menu
+
+| Name            | Content                 | Note                                     |
+| --------------- | ----------------------- | ---------------------------------------- |
+| assets          | static resources        | style & jpeg & js files                  |
+| bin             | execute                 | depend`_config.yml`                      |
+| data            | render data             |                                          |
+| dist            | dist menu               | all static pages                         |
+| download        | custom package download |                                          |
+| layout          | page template           | create template                          |
+| partial         | public files            | create header & footer                   |
+| src             | src files               | change html file                         |
+| entry.js        | custom download entry   |                                          |
+| snippets        | origin md file          |                                          |
+| **_config.yml** | **config file**         | `bin/md2html.js`,`bin/mdconcat.js` depend __config.yml |
+
+#### Website Output Introduction 
+
+Output the order：
 
 1. `snippets`：
 
-   * 存放md和实例文档:可执行合并等其他处理，输出合并后文档到`src`下
-   * 存放目录`SUMMARY`(目录),`README`(首页):可执行拷贝输出到`src`下
+   - md & demo files: Merging  to `src` directory
+   - `SUMMARY`,`README`:Copy to src directory
 
-   实现以上功能，执行:
+   Finish the merge & copy, just in command line:
 
    ```
    npm run docs
    ```
 
-   ​
+2. `src`directory to store merged `md` files , orgin `html`，just to build：
 
-2. `src`文件用于存放官网静态页面源文件，包含合并后的md文档，html原文件，可执行：
+   - `md` convert to `html`
+   - `html` load public resources
+     - load public header & footer
+     - read `data`
+   - html to render
 
-   * md文档转为html格式
-   * html加载公共资源
-     * html加载layout布局，加载partial中的公共头尾
-     * html读取`data`文件下数据
-   * html执行渲染
-
-   实现以上功能，执行：
+   Execute：
 
    ```
    npm run mark
    ```
-   ​
 
-3. 查看演示效果
+3. Show the demo:
 
    ```
    node server/app.js
-   或者
+   or
    npm run reload
    ```
 
-   ​
 
+#### Website Edit
 
-### 官网编辑说明
+- Origin `md` stored in `snippets`:
 
-* 所有md文档的初始片段均存放于`snippets`下，可在此文件按照以下说明进行编辑删除组件。
-
-  * 按照最终网站展示目录进行存放，以neoui为例，导航包含三部分，故目录结构：
+  - List as the final directory. ex. Neoui
 
     ```
     snippets/neoui
@@ -111,17 +133,17 @@
     |── plugin
     ```
 
-  * 单一组件（有示例）如下例`breadcrumb`，文档需要按照以下目录：
+  - Single component( with demo). ex `breadcrumb`，documentation need as the follow structure：
 
     ```
     snippets/neoui/component/breadcrumb
     ├── base.md
     └── demo
         ├── 1-base
-        │   ├── widget.html // 1-base 示例的html片段，如没有则无需创建此片段
-        │   ├── widget.js // 1-base 示例的js片段，如没有则无需创建此片段
-        │   ├── widget.css // 1-base 示例的css片段，如没有则无需创建此片段
-        │   └── 说明.md //1-base 示例的基本描述
+        │   ├── widget.html // 1-base base html snippet, optional
+        │   ├── widget.js // 1-base base js snippet, optional
+        │   ├── widget.css // 1-base base css snippet, optional
+        │   └── 说明.md //1-base base demo introduction
         ├── 2-base-icon
         │   ├── widget.css
         │   ├── widget.html
@@ -132,24 +154,24 @@
             └── 说明.md
     ```
 
-    目录说明
+    menu introduction:
 
-    * base.md ：组件的基本描述
+    - base.md ：base demo introduction
 
-    * demo： 文件夹存放组件的示例，多个示例创建子集目录如有次序，请以数字开头进行排序，方便脚本筛选次序，以正确顺序展示示例
+    - demo： store single or multi demos. demo need start with number for ordering
 
-    * 1-base：单一示例，根据示例情况，可以创建对应片段，注意
+    - 1-base：single demo
 
-      > 要求后缀名为md,html,css,js，文件名不做要求，建议统一采用上述语义化文件名
+      > The suffix name:md,html,css,js
 
-  * 单一组件（没有示例），可以直接在组件目录创建对应的md文档即可,不需要创建文件夹
+  - Single component(without demo), directly create file ,not need to create directory
 
     ```
     snippets/neoui/component/
     ├── button.md
     ```
 
-  * 输出：如编辑过程需要输出到src目录下查看md和实例合并后的输出结构，可通过**在tinper.org仓库的根目录下**执行以下命令，即可在`src`目录下查看输出`合并后的md文档`:
+  - Out：Output to `src` directory:
 
     ```
     npm run docs
@@ -157,47 +179,66 @@
 
 
 
+- `src`menu:
+  - md：`SUMMARY.md` to match the directory other `md` file name
+  - html：use default template or create custom template
+- default develop branch：
+  - `develop`
+- website online branch：
+  - `release`
 
+#### Out Process
 
-- 官网文档及内容页面均存放于`src`目录下，合理按照官网内容层级分配。可增删html或md文件
-  - md文档：增加md文档，需要在同一目录下的`SUMMARY.md`增加对应md文档链接
-  - html：html文件可在`layout`选择所需模板或自行创建模板
-- 默认开发分支：
-  - `develop`分支
-- 官网线上分支：
-  - `release`分支
-
-### 输出流程
-
-- 本地输出：项目根目录下执行
+- dist
 
   ```
   $ npm run mark
-  或
+  or
   $ node bin/index.js
   ```
 
-  以上命令完成：
+  - md convert html
+  - html render
+  - output dist directory
 
-  - md转换为html，嵌入对应layout布局模板
-  - html文件执行文件渲染，获取data数据
-  - 输出最终dist目录
-
-- 本地调试:
+- debug:
 
   ```
   $ npm run reload
-  或
+  or
   $ node bin/reload.js
   ```
 
-  以上命令：
+  - listen 8002 port
+  - automatic reload browser
 
-  - 默认开启8002端口
-  - `src`目录文件修改后，会自动执行输出并刷新浏览器
-
-- 官网部署
+- deploy:
 
   ```
   $ npm run deploy
   ```
+
+
+#### Warn
+
+- !!! snippets create directory，Need create directory with the navigation name.
+- Template `{{include ./header}}`,start with`.` relative path，dont contain suffix name.
+
+
+
+
+## Contributing
+
+#### PR code
+
+[CONTRIBUTING.md](./CONTRIBUTING.md)
+
+#### Website Chat Group
+
+527124070
+
+
+
+## Licence
+
+[MIT](./LICENSE)

@@ -174,5 +174,5 @@
 
 
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/validate)
+[试一试](http://tinper.org/webide/#/demos/kero/validate)
 

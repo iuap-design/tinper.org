@@ -2,7 +2,7 @@
 
 本例实现NeoUI组件checkbox数据绑定。
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/checkbox)
+[试一试](http://tinper.org/webide/#/demos/kero/checkbox)
 
 **注意**：
 
@@ -21,17 +21,17 @@
 	* 类型： Array
 	* 说明：设置复选框的数据源，具体数组内容需要在viewmodel中定义，数组中的每个对象需要有value，name字段。其中name为复选框的显示值，value为复选框的真实值。
 	* 用法：
-	 
+
 		```
-	
+
 		checkboxData: [{value: 'test1', name: '产品一'}, {value: 'test2', name: '产品二'}]
-	
+
 		```
 * unCheckedValue
 	* 类型： String
 	* 说明：复选框未选中的值
 * checkedValue
-	* 类型：　String 
+	* 类型：　String
 	* 说明：复选框选中的值，当行对象中的字段值与checkedValue值相同时，复选框就会选中，否则为未选中状态。
 * hasOther
 	* 类型：Boolean
@@ -52,14 +52,14 @@ u-meta基础api请参考[这里](http://tinper.org/dist/kero/docs/moduleapi.html
 
 ```
 
-<div u-meta='{"id":"c1","type":"u-checkbox","data":"dt1","field":"f1","datasource":"cehckboxData"}'>
+<div u-meta='{"id":"c1","type":"u-checkbox","data":"dt1","field":"f1","datasource":"checkboxData"}'>
     <label class="u-checkbox">
         <input type="checkbox" class="u-checkbox-input">
         <span class="u-checkbox-label" data-role="name"></span>
     </label>
 </div>
 
-
+// js
 var checkboxAObject = app.getComp('c1');//c1为在u-meta中定义的id值
 
 ```
@@ -83,4 +83,4 @@ checkboxAObject.setEnable(true);//设置可用
 
 [复选框](http://tinper.org/dist/neoui/global/checkbox.html)    
 
-[复选框在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
+[复选框在grid中使用](http://tinper.org/webide/#/demos/ui/checkbox)

@@ -2,7 +2,7 @@
 
 本例展示:日期时间UI控件绑定默认数据。
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/kero/datetime)
+[试一试](http://tinper.org/webide/#/demos/kero/datetime)
 
 注意：
 
@@ -78,4 +78,4 @@ dateTimeAObject.setEnable(true);//设置可用
 
 [基础日期控件](http://tinper.org/dist/neoui/plugin/date.html)    
 
-[日期控件在grid中使用](http://tinper.org/dist/webIDE/index.html#/demos/grids/edit)
+[日期控件在grid中使用](http://tinper.org/webide/#/demos/grids/edit)

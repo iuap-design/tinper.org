@@ -38,7 +38,6 @@
             "description": "CSS组件描述",
             "catlog": "cssselect",
             "list":[
-                {"name":"折叠组件","file":"nenoui-collapse"},
                 {"name":"头像","file":"neoui-avatar"},
                 {"name":"徽章","file":"neoui-badge"},
                 {"name":"面包屑","file":"neoui-breadcrumbs"},

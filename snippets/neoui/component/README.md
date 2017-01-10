@@ -2,7 +2,7 @@
 
 ## 大体介绍
 NeoUI把一些常见的网页组件拆分成不同的部分，进行类似 Web Components 的封装，包括分页、下拉菜单、进度条、弹出框等更多功能。
-另外，还为大家精心制作了实用方便的样式板，可以在 [WebIDE](http://tinper.org/dist/webIDE/index.html#/demos/ui/dialog/message) 中找到你想要的效果，并且可以直接copy代码，所见即所得，非常贴心方便。
+另外，还为大家精心制作了实用方便的样式板，可以在 [WebIDE](http://tinper.org/webide/#/demos/ui/dialog/message) 中找到你想要的效果，并且可以直接copy代码，所见即所得，非常贴心方便。
 
 ## 具体使用
 

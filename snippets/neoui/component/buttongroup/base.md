@@ -4,4 +4,4 @@
 
 
 
-[试一试](http://tinper.org/dist/webIDE/index.html#/demos/ui/buttongroup)
+[试一试](http://tinper.org/webide/#/demos/ui/buttongroup)

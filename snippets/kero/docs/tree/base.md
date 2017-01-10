@@ -1,23 +1,35 @@
 # 树控件
 
 树控件以ztree为核心，框架主要对关联datatable进行了处理。
+UI组件的使用方式，可点击[链接查看](/dist/neoui/plugin/tree.html).
+
 
 
 # 依赖资源
 
+**CSS资源**
+
+需要引入字体图标(font-awesome.css)，框架样式(u.css)，Tree组件样式(tree.css),资源CDN地址：
+
+```
 http://design.yyuap.com/static/uui/latest/css/font-awesome.css
-
 http://design.yyuap.com/static/uui/latest/css/u.css
-
 http://design.yyuap.com/static/uui/latest/css/tree.css
+```
 
-http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js
+**JS依赖**
 
+需要引入jquery,knockout,框架文件(u.js),Tree组件脚本(u-tree.js)如需支持ie8，需额外引入腻子脚本(u-polyfill.js)，资源CDN地址：
+
+```
 http://design.yyuap.com/static/uui/latest/js/u-polyfill.js
-
+http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js
+http://design.yyuap.com/static/knockout/knockout-3.2.0.debug.js
 http://design.yyuap.com/static/uui/latest/js/u.js
-
 http://design.yyuap.com/static/uui/latest/js/u-tree.js
+```
+
+
 
 # 如何使用
 
@@ -33,7 +45,7 @@ http://design.yyuap.com/static/uui/latest/js/u-tree.js
 树的详细API：http://www.ztree.me/v3/api.php
 
 2、创建viewModel
-	
+
 	$(document).ready(function () {
 		viewModel = {
 			dataTable: new u.DataTable({
@@ -55,49 +67,47 @@ http://design.yyuap.com/static/uui/latest/js/u-tree.js
 	                multiSelect:true
 	            }
 	        }
-	        
+	
 		}
 	});
 
 过程1中使用的dataTable以及ztree对应配置信息都需要定义到viewModel中。
-    
+
 3、创建app
 
 	var app = u.createApp({
-        el: 'body',
-        model: viewModel
-    });
+	    el: 'body',
+	    model: viewModel
+	});
 
 创建app的时候会根据传入的el对应的选择器查找dom元素，并将dom元素下的所有代码u-meta的元素解析为控件，model属性为对应之前定义的viewModel。
 
 4、dataTable中添加数据
 
 	var data = [{
-                "id": "01",
-                "pid": "root",
-                "title": "f1"
-            },{
-                "id": "02",
-                "pid": "root",
-                "title": "f2"
-            },{
-                "id": "101",
-                "pid": "01",
-                "title": "f11"
-            },{
-                "id": "102",
-                "pid": "01",
-                "title": "f12"
-            },{
-                "id": "201",
-                "pid": "02",
-                "title": "f21"
-            }]
-    viewModel.dataTable.removeAllRows();
-    viewModel.dataTable.setSimpleData(data);
+	            "id": "01",
+	            "pid": "root",
+	            "title": "f1"
+	        },{
+	            "id": "02",
+	            "pid": "root",
+	            "title": "f2"
+	        },{
+	            "id": "101",
+	            "pid": "01",
+	            "title": "f11"
+	        },{
+	            "id": "102",
+	            "pid": "01",
+	            "title": "f12"
+	        },{
+	            "id": "201",
+	            "pid": "02",
+	            "title": "f21"
+	        }]
+	viewModel.dataTable.removeAllRows();
+	viewModel.dataTable.setSimpleData(data);
 
 通过dataTable的setSimpleData方法将数据插入dataTable中。框架会自动将数据传入树控件并显示。
 
 # 示例
-
-

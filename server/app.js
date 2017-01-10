@@ -38,7 +38,7 @@ app.use(function *(next){
 });
 
 app.use(logger());
-app.use(serve(path.join(__dirname, '../'),{maxAge: 2592000000}));
+app.use(serve(path.join(__dirname, '../')));
 app.listen( 8001 );
 
 // 起服务时清楚定制生成的临时文件同时创建临时scss文件
