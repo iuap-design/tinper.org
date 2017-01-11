@@ -14,13 +14,50 @@
 
 		var myDataTable = new u.DataTable({
 			meta:{
-				field1:{required:true},
+				field1:{type:date},
 				field2:{}
 			}
 		})
 
 
-meta中是模型的字段信息，字段名对应的对象为字段的属性定义。没有字段属性时，可以为空对象。
+meta中是模型的字段信息，字段名对应的对象为字段的属性定义。其中常用字段的属性定义的有type、以及一些校验属性（详情参考[这里](validateapi.html)）、default（设置字段的默认值）等。没有字段属性时，可以为空对象。
+
+default可以对应函数（返回具体的默认值），也可以是具体的对象。
+	
++ 对应函数的写法。
+
+``` 
+meta: {
+	        f1: {
+	            default: function() {
+	                return '02-01';//'02-01'为返回的默认值
+	            }
+	        }
+	   }
+```
+
++ 对应对象的写法。default:function(){return 'aa'}。
+
+``` 
+meta: {
+	        f1: {
+            	default: {
+                    value: '02-01'//value对应具体的默认值
+                } 
+	        }
+	   }
+```
+
+下面是常用的type类型。
+
++ string：字符串
++ integer：整型
++ float：浮点型
++ date： 日期类型（YY-MM-DD）
++ datetime：日期时间类型（YY-MM-DD hh:mm:ss）
+
+
+
 
 字段的属性值在控件模型中被使用到，主要用于控制表单输入、字段显示格式等业务特性。
 
