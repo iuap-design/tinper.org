@@ -1,113 +1,25 @@
-# 树控件
+# 树
 
-树控件以ztree为核心，框架主要对关联datatable进行了处理。
-UI组件的使用方式，可点击[链接查看](/dist/neoui/plugin/tree.html).
+本例实现NeoUI组件ztree的数据绑定。
 
-
-
-# 依赖资源
-
-**CSS资源**
-
-需要引入字体图标(font-awesome.css)，框架样式(u.css)，Tree组件样式(tree.css),资源CDN地址：
-
-```
-http://design.yyuap.com/static/uui/latest/css/font-awesome.css
-http://design.yyuap.com/static/uui/latest/css/u.css
-http://design.yyuap.com/static/uui/latest/css/tree.css
-```
-
-**JS依赖**
-
-需要引入jquery,knockout,框架文件(u.js),Tree组件脚本(u-tree.js)如需支持ie8，需额外引入腻子脚本(u-polyfill.js)，资源CDN地址：
-
-```
-http://design.yyuap.com/static/uui/latest/js/u-polyfill.js
-http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js
-http://design.yyuap.com/static/knockout/knockout-3.2.0.debug.js
-http://design.yyuap.com/static/uui/latest/js/u.js
-http://design.yyuap.com/static/uui/latest/js/u-tree.js
-```
+[试一试](http://tinper.org/webide/#/demos/kero/tree-dt)
 
 
+# API
 
-# 如何使用
+## \# u-meta 属性
 
-1、创建div
+* type：`tree`
 
-    <div id="treeTest" class="ztree" u-meta='{"id":"treeTest","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'>
-    </div>
+* idField: 节点的主键字段，此字段在dataTable中定义
+
+* pidField: 父节点的主键字段，此字段在dataTable中定义
+
+* nameField: 节点名称字段，此字段在dataTable中定义
+
+* setting: 树的setting定义字段，此字段在dataTable所在的viewModel中定义
 
 
-示例中#treeTest为树控件的顶层div，u-meta中为树控件的属性设置，其中data为dataTable的变量名，type固定为tree，idField和pidField分别对应父子项结构中对应的field字段，nameField为显示信息对应的field，setting为viewModel中定义的ztree对应配置信息。
+相关内容：
 
-
-树的详细API：http://www.ztree.me/v3/api.php
-
-2、创建viewModel
-
-	$(document).ready(function () {
-		viewModel = {
-			dataTable: new u.DataTable({
-	            meta: {
-	                'id': {
-	                    'value':""
-	                },
-	                'pid': {
-	                    'value':""
-	                },
-	                'title':{
-	                    'value':""
-	                }
-	            }
-	        }),
-	        treeSetting:{
-	            view:{
-	                showLine:false,
-	                multiSelect:true
-	            }
-	        }
-	
-		}
-	});
-
-过程1中使用的dataTable以及ztree对应配置信息都需要定义到viewModel中。
-
-3、创建app
-
-	var app = u.createApp({
-	    el: 'body',
-	    model: viewModel
-	});
-
-创建app的时候会根据传入的el对应的选择器查找dom元素，并将dom元素下的所有代码u-meta的元素解析为控件，model属性为对应之前定义的viewModel。
-
-4、dataTable中添加数据
-
-	var data = [{
-	            "id": "01",
-	            "pid": "root",
-	            "title": "f1"
-	        },{
-	            "id": "02",
-	            "pid": "root",
-	            "title": "f2"
-	        },{
-	            "id": "101",
-	            "pid": "01",
-	            "title": "f11"
-	        },{
-	            "id": "102",
-	            "pid": "01",
-	            "title": "f12"
-	        },{
-	            "id": "201",
-	            "pid": "02",
-	            "title": "f21"
-	        }]
-	viewModel.dataTable.removeAllRows();
-	viewModel.dataTable.setSimpleData(data);
-
-通过dataTable的setSimpleData方法将数据插入dataTable中。框架会自动将数据传入树控件并显示。
-
-# 示例
+[基础树](http://tinper.org/dist/neoui/plugin/tree.html) 
