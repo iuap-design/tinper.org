@@ -165,18 +165,99 @@
     </tr>
 </table>
 
+## renderType
+
+<table>
+    <tr>
+        <td>类型</td>
+          <td>默认值</td>
+          <td>说明</td>
+    </tr>
+    <tr>
+          <td>function</td>
+          <td>null</td>
+          <td>数据列的渲染方式，通过function创建数据列对应的编辑控件</td>
+    </tr>
+</table>
+
+**object属性说明**
+
+<table>
+    <tr>
+        <td>属性</td>
+          <td >说明</td>
+    </tr>
+    <tr>
+          <td>value</td>
+          <td>单元格对应的value值</td>
+    </tr>
+    <tr>
+          <td>element</td>
+          <td>单元格渲染时，组件提供的顶层div，自定义渲染内容在此div下进行渲染</td>
+    </tr>
+    <tr>
+          <td>gridObj</td>
+          <td>表格控件对象</td>
+    </tr>
+    <tr>
+          <td>row</td>
+          <td>单元格所在行对应的行对象，可获取所在行其他列信息</td>
+    </tr>
+    <tr>
+          <td>gridCompColumn</td>
+          <td>单元格对应的列对象，可获取所在列的配置信息</td>
+    </tr>
+    <tr>
+          <td>rowIndex</td>
+          <td>单元格所在行的index</td>
+    </tr>
+</table>
+
 ## editType
 
 <table>
     <tr>
         <td>类型</td>
-    	  <td>默认值</td>
-    	  <td>说明</td>
+          <td>默认值</td>
+          <td>说明</td>
     </tr>
     <tr>
-    	  <td>function</td>
-    	  <td>null</td>
-    	  <td>数据列的编辑方式，通过function创建数据列对应的编辑控件</td>
+          <td>function</td>
+          <td>null</td>
+          <td>数据列的编辑方式，通过function创建数据列对应的编辑控件</td>
+    </tr>
+</table>
+
+**object属性说明**
+
+<table>
+    <tr>
+        <td>属性</td>
+          <td >说明</td>
+    </tr>
+    <tr>
+          <td>value</td>
+          <td>单元格对应的value值</td>
+    </tr>
+    <tr>
+          <td>element</td>
+          <td>单元格编辑时，组件提供的顶层div，自定义编辑内容在此div下进行编辑</td>
+    </tr>
+    <tr>
+          <td>gridObj</td>
+          <td>表格控件对象</td>
+    </tr>
+    <tr>
+          <td>field</td>
+          <td>数据列对应的field</td>
+    </tr>
+    <tr>
+          <td>rowObj</td>
+          <td>数据行对象</td>
+    </tr>
+    <tr>
+          <td>rowIndex</td>
+          <td>数据行对应的index</td>
     </tr>
 </table>
 
