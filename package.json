@@ -4,6 +4,7 @@
   "description": "iuap-design tinper",
   "main": "server/app.js",
   "scripts": {
+    "check": "node bin/checkjson.js",
     "dev": "node server/app.js",
     "cate": "node bin/category",
     "reload": "node bin/reload",
@@ -66,7 +67,7 @@
     "fs-extra": "^0.30.0",
     "gulp-replace": "^0.5.4",
     "js-yaml": "^3.6.1",
-    "kero-adapter": "^3.1.5",
+    "neoui-kero": "^3.1.5",
     "koa": "^1.1.2",
     "koa-body": "^1.4.0",
     "koa-bodyparser": "^2.0.1",

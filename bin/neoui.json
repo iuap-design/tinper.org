@@ -1,7 +1,7 @@
 {
 	"stylePlugin": {
-		"nenoui-collapse":"折叠组件",
 		"neoui-avatar":"头像",
+		"neoui-collapse":"折叠组件",
 		"neoui-badge":"徽章",
 		"neoui-breadcrumbs":"面包屑",
 		"neoui-card":"卡片",
@@ -10,26 +10,27 @@
 		"neoui-forms":"表单",
 		"neoui-img":"图片",
 		"neoui-layout.grid":"表格布局",
+		"neoui-layout.md":"md布局",
+		"neoui-layout.nav":"nav布局",
 		"neoui-layout.slidepanel":"面板布局",
 		"neoui-list-group":"列表",
 		"neoui-nav":"导航",
+		"neoui-navbar":"导航条",
 		"neoui-panel":"面板",
 		"neoui-pearls":"流程引导",
 		"neoui-rating":"评分",
 		"neoui-ribbon":"色带",
+		"neoui-steps":"步骤",
 		"neoui-tags":"标签",
 		"neoui-weather":"天气",
-		"neoui-widget":"挂件",
-		"neoui-navbar":"导航条",
-		"neoui-steps":"步骤"
+		"neoui-widget":"挂件"
 	},
 	"jsPlugin": {
-		"neoui-collapse":"折叠组件",
-		"neoui-mobdatetimepicker":"移动端日期组件",
 		"neoui-autocomplete":"自动完成",
 		"neoui-button":"按钮",
 		"neoui-checkbox":"checkbox框",
 		"neoui-clockpicker":"表盘选择器",
+		"neoui-collapse":"折叠组件",
 		"neoui-combo":"combo",
 		"neoui-combobox":"combobox",
 		"neoui-data-table":"数据表",
@@ -42,6 +43,7 @@
 		"neoui-menu":"菜单",
 		"neoui-message":"消息框",
 		"neoui-month":"月份",
+		"neoui-monthdate":"月日",
 		"neoui-multilang":"多语言",
 		"neoui-navmenu":"导航菜单",
 		"neoui-pagination":"分页",
@@ -56,8 +58,7 @@
 		"neoui-tooltip":"提示tip",
 		"neoui-validate":"验证",
 		"neoui-year":"年份",
-		"neoui-yearmonth":"年月",
-		"neoui-monthdate":"月日"
+		"neoui-yearmonth":"年月"
 	},
 	"theme": [
 		{"class":"bg-red","color":"244,67,54"},
@@ -112,6 +113,9 @@
 		},
 		"neoui-checkbox": {
 			"Checkbox": "import {Checkbox} from 'tinper-neoui/js/neoui-checkbox';"
+		},
+		"neoui-collapse": {
+			"showCollapse": "import {showCollapse} from 'tinper-neoui/js/neoui-collapse';"
 		},
 		"neoui-combo": {
 			"Combo": "import {Combo} from 'tinper-neoui/js/neoui-combo';"
@@ -193,7 +197,8 @@
 			"doValidate": "import {doValidate} from 'tinper-neoui/js/neoui-validate';"
 		},
 		"neoui-datetimepicker": {
-			"DateTimePicker": "import {DateTimePicker} from 'tinper-neoui/js/neoui-datetimepicker';"
+			"DateTimePicker": "import {DateTimePicker} from 'tinper-neoui/js/neoui-datetimepicker';",
+			"MobDateTimePicker": "import {MobDateTimePicker} from 'tinper-neoui/js/neoui-mobdatetimepicker';"
 		},
 		"neoui-time": {
 			"Time": "import {Time} from 'tinper-neoui/js/neoui-time';"
@@ -204,6 +209,9 @@
 		"neoui-month": {
 			"Month": "import {Month} from 'tinper-neoui/js/neoui-month';"
 		},
+		"neoui-monthdate": {
+			"MonthDate": "import {MonthDate} from 'tinper-neoui/js/neoui-monthdate';"
+		},
 		"neoui-year": {
 			"Year": "import {Year} from 'tinper-neoui/js/neoui-year';"
 		},
@@ -213,73 +221,79 @@
 	},
 	"ko":{
 		"keroa-checkbox":{
-			"CheckboxAdapter":"import {CheckboxAdapter} from 'kero-adapter/js/component/keroa-checkbox';"
+			"CheckboxAdapter":"import {CheckboxAdapter} from 'neoui-kero/js/component/keroa-checkbox';"
 		},
 		"keroa-ckeditor":{
-			"CkEditorAdapter":"import {CkEditorAdapter} from 'kero-adapter/js/component/keroa-ckeditor';"
+			"CkEditorAdapter":"import {CkEditorAdapter} from 'neoui-kero/js/component/keroa-ckeditor';"
 		},
 		"keroa-combo":{
-			"ComboboxAdapter":"import {ComboboxAdapter} from 'kero-adapter/js/component/keroa-combo';"
+			"ComboboxAdapter":"import {ComboboxAdapter} from 'neoui-kero/js/component/keroa-combo';"
 		},
 		"keroa-currency":{
-			"CurrencyAdapter":"import {CurrencyAdapter} from 'kero-adapter/js/component/keroa-currency';"
+			"CurrencyAdapter":"import {CurrencyAdapter} from 'neoui-kero/js/component/keroa-currency';"
 		},
 		"keroa-datetimepicker":{
-			"DateTimeAdapter":"import {DateTimeAdapter} from 'kero-adapter/js/component/keroa-datetimepicker';"
+			"DateTimeAdapter":"import {DateTimeAdapter} from 'neoui-kero/js/component/keroa-datetimepicker';"
 		},
 		"keroa-float":{
-			"FloatAdapter":"import {FloatAdapter} from 'kero-adapter/js/component/keroa-float';"
+			"FloatAdapter":"import {FloatAdapter} from 'neoui-kero/js/component/keroa-float';"
 		},
 		"keroa-grid":{
-			"GridAdapter":"import {GridAdapter} from 'kero-adapter/js/component/keroa-grid';"
+			"GridAdapter":"import {GridAdapter} from 'neoui-kero/js/component/keroa-grid';"
 		},
 		"keroa-integer":{
-			"IntegerAdapter":"import {IntegerAdapter} from 'kero-adapter/js/component/keroa-integer';"
+			"IntegerAdapter":"import {IntegerAdapter} from 'neoui-kero/js/component/keroa-integer';"
 		},
 		"keroa-month":{
-			"MonthAdapter":"import {MonthAdapter} from 'kero-adapter/js/component/keroa-month';"
+			"MonthAdapter":"import {MonthAdapter} from 'neoui-kero/js/component/keroa-month';"
+		},
+		"keroa-monthdate":{
+			"MonthDateAdapter":"import {MonthDateAdapter} from 'neoui-kero/js/component/keroa-monthdate';"
+		},
+		"keroa-multilang":{
+			"MultilangAdapter":"import {MultilangAdapter} from 'neoui-kero/js/component/keroa-multilang';"
 		},
 		"keroa-pagination":{
-			"PaginationAdapter":"import {PaginationAdapter} from 'kero-adapter/js/component/keroa-pagination';"
+			"PaginationAdapter":"import {PaginationAdapter} from 'neoui-kero/js/component/keroa-pagination';"
 		},
 		"keroa-password":{
-			"PassWordAdapter":"import {PassWordAdapter} from 'kero-adapter/js/component/keroa-password';"
+			"PassWordAdapter":"import {PassWordAdapter} from 'neoui-kero/js/component/keroa-password';"
 		},
 		"keroa-percent":{
-			"PercentAdapter":"import {PercentAdapter} from 'kero-adapter/js/component/keroa-percent';"
+			"PercentAdapter":"import {PercentAdapter} from 'neoui-kero/js/component/keroa-percent';"
 		},
 		"keroa-progress":{
-			"ProgressAdapter":"import {ProgressAdapter} from 'kero-adapter/js/component/keroa-progress';"
+			"ProgressAdapter":"import {ProgressAdapter} from 'neoui-kero/js/component/keroa-progress';"
 		},
 		"keroa-radio":{
-			"RadioAdapter":"import {RadioAdapter} from 'kero-adapter/js/component/keroa-radio';"
+			"RadioAdapter":"import {RadioAdapter} from 'neoui-kero/js/component/keroa-radio';"
 		},
 		"keroa-string":{
-			"StringAdapter":"import {StringAdapter} from 'kero-adapter/js/component/keroa-string';"
+			"StringAdapter":"import {StringAdapter} from 'neoui-kero/js/component/keroa-string';"
 		},
 		"keroa-switch":{
-			"SwitchAdapter":"import {SwitchAdapter} from 'kero-adapter/js/component/keroa-switch';"
+			"SwitchAdapter":"import {SwitchAdapter} from 'neoui-kero/js/component/keroa-switch';"
 		},
 		"keroa-textarea":{
-			"TextAreaAdapter":"import {TextAreaAdapter} from 'kero-adapter/js/component/keroa-textarea';"
+			"TextAreaAdapter":"import {TextAreaAdapter} from 'neoui-kero/js/component/keroa-textarea';"
 		},
 		"keroa-textfield":{
-			"TextFieldAdapter":"import {TextFieldAdapter} from 'kero-adapter/js/component/keroa-textfield';"
+			"TextFieldAdapter":"import {TextFieldAdapter} from 'neoui-kero/js/component/keroa-textfield';"
 		},
 		"keroa-time":{
-			"TimeAdapter":"import {TimeAdapter} from 'kero-adapter/js/component/keroa-time';"
+			"TimeAdapter":"import {TimeAdapter} from 'neoui-kero/js/component/keroa-time';"
 		},
 		"keroa-tree":{
-			"TreeAdapter":"import {TreeAdapter} from 'kero-adapter/js/component/keroa-tree';"
+			"TreeAdapter":"import {TreeAdapter} from 'neoui-kero/js/component/keroa-tree';"
 		},
 		"keroa-url":{
-			"UrlAdapter":"import {UrlAdapter} from 'kero-adapter/js/component/keroa-url';"
+			"UrlAdapter":"import {UrlAdapter} from 'neoui-kero/js/component/keroa-url';"
 		},
 		"keroa-year":{
-			"YearAdapter":"import {YearAdapter} from 'kero-adapter/js/component/keroa-year';"
+			"YearAdapter":"import {YearAdapter} from 'neoui-kero/js/component/keroa-year';"
 		},
 		"keroa-yearmonth":{
-			"YearMonthAdapter":"import {YearMonthAdapter} from 'kero-adapter/js/component/keroa-yearmonth';"
+			"YearMonthAdapter":"import {YearMonthAdapter} from 'neoui-kero/js/component/keroa-yearmonth';"
 		}
 	}
 }
