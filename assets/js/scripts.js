@@ -30,6 +30,26 @@ $(document).ready(function() {
         $(this).siblings('.examples-code').slideToggle("fast");
     });
 
+    //拷贝代码
+    $(".examples-code code").click(function() {
+        if (!(window.getSelection().toString().length > 0)) {
+            var selections = window.getSelection(),
+            range = document.createRange();
+            range.selectNodeContents(this);
+            selections.removeAllRanges();
+            selections.addRange(range);
+            $(this).addClass('copied');
+            try { s = document.execCommand("copy") } catch (t) { console.error(t) }
+            selections.removeAllRanges();
+        }
+        
+    });
+
+    $(".examples-code code").mouseout(function() {
+         $(this).removeClass('copied');
+          // window.getSelection().removeAllRanges();
+    });
+
     // 暂时处理iphone fix导致二级目录无法展开bug
     if (!!(navigator.platform == 'iPhone')) {
         $('.u-navbar').eq(0).css({
