@@ -118,12 +118,21 @@ fs.readdir(scssPath, function(err, scssFiles) {
 			'            "catlog": "jsselect",',
 			'            "list":[',
 		];
-		for(var ji = 0, jLen = jsPlugin.length; ji < jLen; ji ++) {
+		//老版js插件解析代码
+		// for(var ji = 0, jLen = jsPlugin.length; ji < jLen; ji ++) {
+		// 	var jiStr;
+		// 	var jsName = neouiJsonJs[jsPlugin[ji]];
+		// 	ji < jLen - 1 ? jiStr = `                {"name":"${jsName}","file":"${jsPlugin[ji]}"},` : jiStr = `                {"name":"${jsName}","file":"${jsPlugin[ji]}"}`;
+		// 	jsDataAry.push(jiStr);
+		// }
+		//新版js插件解析代码
+		for(var key in neouiJsonJs) {
 			var jiStr;
-			var jsName = neouiJsonJs[jsPlugin[ji]];
-			ji < jLen - 1 ? jiStr = `                {"name":"${jsName}","file":"${jsPlugin[ji]}"},` : jiStr = `                {"name":"${jsName}","file":"${jsPlugin[ji]}"}`;
+			var jsName = neouiJsonJs[key];
+			jiStr = `                {"name":"${jsName}","file":"${key}"},`;
 			jsDataAry.push(jiStr);
 		}
+		jsDataAry[jsDataAry.length-1] = jsDataAry[jsDataAry.length-1].substring(0,jsDataAry[jsDataAry.length-1].length-1);
 		var jsEndAry = [
 			'            ]',
 			'        },',
