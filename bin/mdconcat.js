@@ -190,6 +190,7 @@ async.auto({
                                       var codeHtml = [];
                                       var codeCss = [];
                                       var codeJs = [];
+                                      var optBtn = '<button  class="u-button u-button-block u-button-accent margin-top-15 codeOptBtn" ><i class="uf uf-arrow-down"></i>查看代码</button>' ;
 
                                       // react js代码
                                       var beeScript = beeShow = [];
@@ -228,6 +229,7 @@ async.auto({
                                                 //     codeHtml = codeHtmlFun(data);
                                                 //     cb(null,null)
                                                 // })
+                                                
                                                 demoHtml = '<div class="example-content">' + ts + '</div>\r\n';
                                                 codeHtml = codeHtmlFun(ts);
                                                 cb(null,null)
@@ -270,8 +272,8 @@ async.auto({
                                       },function(err,results){
                                             // console.log("exPath:",exPath,"\nfiles:",files,'\nbeeShow:'+ beeShow.length);
                                             baseDemo ='\r\n' + demoMd + '\r\n' +
-                                                demoHtml + '\r\n' + demoCss + '\r\n' + demoJs + '\r\n' + beeScript + '\r\n' +
-                                                codeHtml + '\r\n' + codeCss + '\r\n' + codeJs + '\r\n' + beeShow + '\r\n';
+                                                demoHtml + '\r\n' + demoCss + '\r\n' + demoJs + '\r\n' + beeScript + '<div class="ex-code-par">' + optBtn +
+                                                codeHtml + '\r\n' + codeCss + '\r\n' + codeJs + '\r\n' + beeShow  +'</div>';
                                                 demoMd = [];
                                                 demoHtml = [];
                                                 demoCss = [];
