@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     $('.u-hamburger').click(function() {
         var attrTarget = $(this).attr('data-target');
@@ -11,6 +13,22 @@ $(document).ready(function() {
         $('#content-inner').toggleClass('doctoggle');
     });
 
+    $(".codeOptBtn").click(function() {
+
+        //动态的修改查看代码按钮前图标
+        $btni = $(this).find("i");
+        if ($btni.hasClass('uf-arrow-down')) {
+            $btni.removeClass('uf-arrow-down');
+            $btni.addClass('uf-arrow-up');
+        }else {
+            $btni.addClass('uf-arrow-down');
+            $btni.removeClass('uf-arrow-up');
+        }
+        //修改父类样式
+        $(this).parent(".ex-code-par").toggleClass("show-code");
+        //动态的展示代码
+        $(this).siblings('.examples-code').slideToggle("fast");
+    });
 
     // 暂时处理iphone fix导致二级目录无法展开bug
     if (!!(navigator.platform == 'iPhone')) {

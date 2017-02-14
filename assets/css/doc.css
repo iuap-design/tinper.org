@@ -233,12 +233,32 @@ p code{
     background: #fff;
     border: 1px solid #ddd;
 }
+
+.ex-code-par .examples-code {
+    display:none;
+}
+
+
 .example-content-edge{
     padding-top:20px;
     padding-bottom: 0px;
 }
 .example-content.ex-hide{
     display: none;
+}
+
+
+
+.ex-code-par.show-code {
+    border: 1px solid #ddd;
+    border-top: 0px;
+    border-radius: 0.25rem;
+    // padding-bottom: 10px;
+}
+
+.ex-code-par .examples-code {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*编辑代码高亮*/
