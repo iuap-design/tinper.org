@@ -67,7 +67,6 @@
     "fs-extra": "^0.30.0",
     "gulp-replace": "^0.5.4",
     "js-yaml": "^3.6.1",
-    "neoui-kero": "^3.1.5",
     "koa": "^1.1.2",
     "koa-body": "^1.4.0",
     "koa-bodyparser": "^2.0.1",
@@ -77,9 +76,10 @@
     "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
     "marked": "^0.3.6",
+    "neoui-kero": "^3.1.5",
     "pygmentize-bundled": "^2.3.0",
     "tinper-bee": "0.0.6",
-    "tinper-neoui": "^3.1.5",
+    "tinper-neoui": "^3.1.25",
     "tinper-neoui-polyfill": "^3.1.5"
   },
   "config": {
