@@ -29,8 +29,7 @@
             "description": "用于兼容ie8,包含respond,html5,及框架基础函数支持",
             "catlog": "polyselect",
             "list":[
-                {"name":"核心函数支持","file":"u-polyfill-core"},
-                {"name":"响应式支持","file":"u-polyfill-respond"}
+                {"name":"Polyfill模块","file":"u-polyfill"}
             ]
         },
         "neocss": {
@@ -101,12 +100,29 @@
                 {"name":"年月","file":"neoui-yearmonth"}
             ]
         },
-        "keroadapter": {
-            "title": "KeroAdapter",
-            "description": "实现Neoui数据绑定",
+        "tree": {
+            "title": "Tree",
+            "description": "树",
+            "catlog": "treeselect",
+            "list":[
+                {"name":"树","file":"tree"}
+            ]
+        },
+        "grid": {
+            "title": "Grid",
+            "description": "表格",
+            "catlog": "gridselect",
+            "list":[
+                {"name":"表格","file":"grid"}
+            ]
+        },
+        "kero": {
+            "title": "Kero",
+            "description": "前端数据模型",
             "catlog": "adselect",
             "list":[
-                {"name":"UI组件数据绑定","file":"keroadapter"}
+                {"name":"前端数据模型","file":"kero"},
+                {"name":"http请求封装","file":"kero-fetch"}
             ]
         }
     }

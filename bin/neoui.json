@@ -229,20 +229,11 @@
 		"keroa-combo":{
 			"ComboboxAdapter":"import {ComboboxAdapter} from 'neoui-kero/js/component/keroa-combo';"
 		},
-		"keroa-currency":{
-			"CurrencyAdapter":"import {CurrencyAdapter} from 'neoui-kero/js/component/keroa-currency';"
-		},
 		"keroa-datetimepicker":{
 			"DateTimeAdapter":"import {DateTimeAdapter} from 'neoui-kero/js/component/keroa-datetimepicker';"
 		},
-		"keroa-float":{
-			"FloatAdapter":"import {FloatAdapter} from 'neoui-kero/js/component/keroa-float';"
-		},
 		"keroa-grid":{
 			"GridAdapter":"import {GridAdapter} from 'neoui-kero/js/component/keroa-grid';"
-		},
-		"keroa-integer":{
-			"IntegerAdapter":"import {IntegerAdapter} from 'neoui-kero/js/component/keroa-integer';"
 		},
 		"keroa-month":{
 			"MonthAdapter":"import {MonthAdapter} from 'neoui-kero/js/component/keroa-month';"
@@ -256,38 +247,33 @@
 		"keroa-pagination":{
 			"PaginationAdapter":"import {PaginationAdapter} from 'neoui-kero/js/component/keroa-pagination';"
 		},
-		"keroa-password":{
-			"PassWordAdapter":"import {PassWordAdapter} from 'neoui-kero/js/component/keroa-password';"
-		},
-		"keroa-percent":{
-			"PercentAdapter":"import {PercentAdapter} from 'neoui-kero/js/component/keroa-percent';"
-		},
 		"keroa-progress":{
 			"ProgressAdapter":"import {ProgressAdapter} from 'neoui-kero/js/component/keroa-progress';"
 		},
 		"keroa-radio":{
 			"RadioAdapter":"import {RadioAdapter} from 'neoui-kero/js/component/keroa-radio';"
 		},
-		"keroa-string":{
-			"StringAdapter":"import {StringAdapter} from 'neoui-kero/js/component/keroa-string';"
-		},
 		"keroa-switch":{
 			"SwitchAdapter":"import {SwitchAdapter} from 'neoui-kero/js/component/keroa-switch';"
 		},
-		"keroa-textarea":{
-			"TextAreaAdapter":"import {TextAreaAdapter} from 'neoui-kero/js/component/keroa-textarea';"
-		},
 		"keroa-textfield":{
-			"TextFieldAdapter":"import {TextFieldAdapter} from 'neoui-kero/js/component/keroa-textfield';"
+			"TextFieldAdapter":"import {TextFieldAdapter} from 'neoui-kero/js/component/keroa-textfield';",
+			"FloatAdapter":"import {FloatAdapter} from 'neoui-kero/js/component/keroa-float';",
+			"TextAreaAdapter":"import {TextAreaAdapter} from 'neoui-kero/js/component/keroa-textarea';",
+			"IntegerAdapter":"import {IntegerAdapter} from 'neoui-kero/js/component/keroa-integer';",
+			"PassWordAdapter":"import {PassWordAdapter} from 'neoui-kero/js/component/keroa-password';",
+			"PercentAdapter":"import {PercentAdapter} from 'neoui-kero/js/component/keroa-percent';",
+			"StringAdapter":"import {StringAdapter} from 'neoui-kero/js/component/keroa-string';",
+			"CurrencyAdapter":"import {CurrencyAdapter} from 'neoui-kero/js/component/keroa-currency';",
+			"PhoneNumberAdapter":"import {PhoneNumberAdapter} from 'neoui-kero/js/component/keroa-phoneNumber';",
+			"LandLineAdapter":"import {LandLineAdapter} from 'neoui-kero/js/component/keroa-landLine';",
+			"UrlAdapter":"import {UrlAdapter} from 'neoui-kero/js/component/keroa-url';"
 		},
 		"keroa-time":{
 			"TimeAdapter":"import {TimeAdapter} from 'neoui-kero/js/component/keroa-time';"
 		},
 		"keroa-tree":{
 			"TreeAdapter":"import {TreeAdapter} from 'neoui-kero/js/component/keroa-tree';"
-		},
-		"keroa-url":{
-			"UrlAdapter":"import {UrlAdapter} from 'neoui-kero/js/component/keroa-url';"
 		},
 		"keroa-year":{
 			"YearAdapter":"import {YearAdapter} from 'neoui-kero/js/component/keroa-year';"

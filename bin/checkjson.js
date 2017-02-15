@@ -15,14 +15,23 @@ i = 0;
 styleAry = [];
 jsAry = [];
 
+/**
+ * neoui-mobdatetimepicker是neoui-datetimepicker的手机适应组件，ko中没有
+ * 其他组件是因为只有ui组件，没有对应的ko组件
+ * @type {Array}
+ */
 var jsKoAry=['neoui-collapse','neoui-mobdatetimepicker','neoui-autocomplete','neoui-button',
             'neoui-clockpicker','neoui-combobox','neoui-data-table','neoui-dialog',
             'neoui-layout.md','neoui-layout.nav','neoui-loader','neoui-loading',
             'neoui-menu','neoui-message','neoui-navmenu','neoui-refer','neoui-slidePanel',
-            'neoui-tabs','neoui-tooltip','neoui-validate'],//js中对比ko的特例
-    koJsAry=['keroa-ckeditor','keroa-currency','keroa-float','keroa-grid',
-            'keroa-integer','keroa-password','keroa-percent','keroa-string',
-            'keroa-textarea','keroa-tree','keroa-url'];//ko中对比js的特例
+            'neoui-tabs','neoui-tooltip','neoui-validate'],//js有，ko中没有
+            /**
+             * keroa-ckeditor暂时搁置
+             * keroa-grid对应于tinper-neoui-grid仓库,所以ui组件中没有对应的
+             * keroa-tree对应于tinper-neoui-tree仓库，所以ui组件中没有对应的
+             * @type {Array}
+             */
+    koJsAry=['keroa-ckeditor','keroa-grid','keroa-tree'];//ko中有，js中没有
 
 /**
  * 校验json和node_modules中的资源是否存在
@@ -41,7 +50,6 @@ fs.readdir(scssPath, function(err, scssFiles) {
             jsAry.push(fileName);
 
         });
-
         /**
          * panel1:校验stylePlugin参数
          */

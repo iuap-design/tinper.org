@@ -82,8 +82,7 @@ fs.readdir(scssPath, function(err, scssFiles) {
 			'            "description": "用于兼容ie8,包含respond,html5,及框架基础函数支持",',
 			'            "catlog": "polyselect",',
 			'            "list":[',
-			'                {"name":"核心函数支持","file":"u-polyfill-core"},',
-			'                {"name":"响应式支持","file":"u-polyfill-respond"}',
+			'                {"name":"Polyfill模块","file":"u-polyfill"}',
 			'            ]',
 			'        },',
 		];
@@ -140,21 +139,45 @@ fs.readdir(scssPath, function(err, scssFiles) {
 		var jsDataConcat = jsDataAry.concat(jsEndAry);
 		// js end
 
+		// tree
+		var treeDataAry = [
+			'        "tree": {',
+			'            "title": "Tree",',
+			'            "description": "树",',
+			'            "catlog": "treeselect",',
+			'            "list":[',
+			'                {"name":"树","file":"tree"}',
+			'            ]',
+			'        },'
+		];
 
-		// keroadapter
+		// grid
+		var gridDataAry = [
+			'        "grid": {',
+			'            "title": "Grid",',
+			'            "description": "表格",',
+			'            "catlog": "gridselect",',
+			'            "list":[',
+			'                {"name":"表格","file":"grid"}',
+			'            ]',
+			'        },'
+		];
+
+		// kero
 		var adapterDataAry = [
-			'        "keroadapter": {',
-			'            "title": "KeroAdapter",',
-			'            "description": "实现Neoui数据绑定",',
+			'        "kero": {',
+			'            "title": "Kero",',
+			'            "description": "前端数据模型",',
 			'            "catlog": "adselect",',
 			'            "list":[',
-			'                {"name":"UI组件数据绑定","file":"keroadapter"}',
+			'                {"name":"前端数据模型","file":"kero"},',
+			'                {"name":"http请求封装","file":"kero-fetch"}',
 			'            ]',
 			'        }'
 		];
 
 		var checkEnd = ['    }'];
-		var panelCheck = checkHead.concat(polyDataAry, styleDataConcat, jsDataConcat, adapterDataAry, checkEnd);
+		var panelCheck = checkHead.concat(polyDataAry, styleDataConcat, jsDataConcat, treeDataAry, gridDataAry, adapterDataAry, checkEnd);
 
 		// 数据底部
 		var dataEndAry = ['}'];
