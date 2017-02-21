@@ -24,7 +24,7 @@ var jsonPath = getResolvePath(basePath + 'CHANGELOG-ALL.json');
 if(fs.existsSync(jsonPath)){
   var JsonObj=JSON.parse(fs.readFileSync(jsonPath));
   var nowAllVersionObj = JsonObj.versions[0];
-  var nowAllVersion = nowAllVersionObj['verison'];
+  var nowAllVersion = nowAllVersionObj['version'];
   var PKG_VERSION = nowAllVersion.split('.');
   PKG_VERSION[PKG_VERSION.length-1]++;
   var nextAllVersion = PKG_VERSION.join('.');
@@ -32,7 +32,7 @@ if(fs.existsSync(jsonPath)){
 
 var proAllArr = [],otherAllArr = [],featAllArr = [];
 var nowVersionObj = {
-  "verison":nextAllVersion
+  "version":nextAllVersion
 }
 // 遍历源码仓库
 for(var i in prodNameArr){
