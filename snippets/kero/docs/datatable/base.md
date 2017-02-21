@@ -20,42 +20,85 @@
 		})
 
 
-meta中是模型的字段信息，字段名对应的对象为字段的属性定义。其中常用字段的属性定义的有type、以及一些校验属性（详情参考[这里](validateapi.html)）、default（设置字段的默认值）等。没有字段属性时，可以为空对象。
+meta中是模型的字段信息，字段名对应的对象为字段的属性定义。其中常用字段的属性定义的有type、以及一些校验属性（详情参考[这里](validateapi.html)）、default（设置字段的默认值）以及不同控件的属性设置等。没有字段属性时，可以为空对象。
 
-default可以对应函数（返回具体的默认值），也可以是具体的对象。
+* 下面是常用的type类型。
+	+ string：字符串
+	+ integer：整型
+	+ float：浮点型
+	+ date： 日期类型（YY-MM-DD）
+	+ datetime：日期时间类型（YY-MM-DD hh:mm:ss）
+
+* default可以对应函数（返回具体的默认值），也可以是具体的对象。
 	
-+ 对应函数的写法。
+	+ 对应函数的写法。
+	
+	``` 
+	meta: {
+		        f1: {
+		            default: function() {
+		                return '02-01';//'02-01'为返回的默认值
+		            }
+		        }
+		   }
+	```
+	
+	+ 对应对象的写法。default:function(){return 'aa'}。
+	
+	``` 
+	meta: {
+		        f1: {
+	            	default: {
+	                    value: '02-01'//value对应具体的默认值
+	                } 
+		        }
+		   }
+	```
+* 控件的属性设置
+	+ integerAdapter （整数）
 
-``` 
-meta: {
-	        f1: {
-	            default: function() {
-	                return '02-01';//'02-01'为返回的默认值
-	            }
-	        }
-	   }
-```
+	|属性名称| 属性值类型|具体描述|
+	|-------|:-------:|:------:|
+	|max|integer|输入的值小于等于max|
+	|min|integer|输入的值大于等于min|
+	|maxNotEq|integer|输入的值小于max|
+	|minNotEq|integer|输入的值大于min|
+	
+	+ stringAdapter （字符串）
+	
+	|属性名称| 属性值类型|具体描述|
+	|-------|:-------:|:------:|
+	|minLength|integer|输入的字符串长度大于等于minLength|
+	|maxLength|integer|输入的字符串长度小于等于maxLength|
 
-+ 对应对象的写法。default:function(){return 'aa'}。
+	+ floatAdapter（浮点数）
+	
+	|属性名称| 属性值类型|具体描述|默认值|
+	|-------|:-------:|:------:|------|
+	|precision|integer|浮点数的精度|2|
+	|max|integer|输入的值小于等于max||
+	|min|integer|输入的值大于等于min||
+	|maxNotEq|integer|输入的值小于max||
+	|minNotEq|integer|输入的值大于min||
 
-``` 
-meta: {
-	        f1: {
-            	default: {
-                    value: '02-01'//value对应具体的默认值
-                } 
-	        }
-	   }
-```
+	+ currencyAdapter（货币）
+	
+	|属性名称| 属性值类型|具体描述|默认值|
+	|-------|:-------:|:------:|------|
+	|precision|integer|浮点数的精度|2|
+	|max|integer|输入的值小于等于max||
+	|min|integer|输入的值大于等于min||
+	|maxNotEq|integer|输入的值小于max||
+	|minNotEq|integer|输入的值大于min||
+	|curSymbol|String|货币符号|￥|
 
-下面是常用的type类型。
+	+ percentAdapter（百分比）
+	
 
-+ string：字符串
-+ integer：整型
-+ float：浮点型
-+ date： 日期类型（YY-MM-DD）
-+ datetime：日期时间类型（YY-MM-DD hh:mm:ss）
-
+	|属性名称| 属性值类型|具体描述|默认值|
+	|-------|:-------:|:------:|------|
+	|precision|integer|浮点数的精度|2|
+	
 
 
 
