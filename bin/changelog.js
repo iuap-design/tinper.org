@@ -1,26 +1,141 @@
 var fs = require('fs');
 var path = require('path');
-var envPath = process.cwd();
-var PKG = require('../package.json');
 
-/**
- * version 调整
- */
-var PKG_VERSION = PKG.version.split('.');
-PKG_VERSION[PKG_VERSION.length-1]++;
-var NEW_VERSION = PKG_VERSION.join('.');
+function getResolvePath(p){
+	return path.resolve(__dirname, p)
+}
 
-/**
- * 修改package.json version版本信息
- */
-// var packPath = path.resolve(envPath,'package.json');
-// var readData = fs.readFileSync(packPath, 'utf-8');
-// var result = readData.replace(/("version":\s*")(\d+.\d+.\d+)"/,`$1${NEW_VERSION}"`);
-// fs.writeFileSync(packPath,result, 'utf-8');
+var prodNameArr = [
+	'tinper-sparrow',
+	'tinper-neoui',
+	'kero',
+	'neoui-kero',
+	'tinper-neoui-grid',
+	'tinper-neoui-tree',
+	'tinper-neoui-polyfill',
+	'compox',
+	'compox-util',
+	'kero-fetch',
+	'neoui-kero-mixin'
+];
+var basePath = '../changelog/';
+// 读取当前版本号对应的各仓库版本号
+var jsonPath = getResolvePath(basePath + 'CHANGELOG-ALL.json');
+if(fs.existsSync(jsonPath)){
+  var JsonObj=JSON.parse(fs.readFileSync(jsonPath));
+  var nowAllVersionObj = JsonObj.versions[0];
+  var nowAllVersion = nowAllVersionObj['version'];
+  var PKG_VERSION = nowAllVersion.split('.');
+  PKG_VERSION[PKG_VERSION.length-1]++;
+  var nextAllVersion = PKG_VERSION.join('.');
+}
 
-/**
- * 命令执行
- */
-// var execSync = require('child_process').execSync;
-// var command = `git tag v${NEW_VERSION} && git push origin v${NEW_VERSION} && git add -A && git commit -m 'build tag & CHANGELOG' && git push origin release`
-// execSync(command);
+var proAllArr = [],otherAllArr = [],featAllArr = [];
+var nowVersionObj = {
+  "version":nextAllVersion
+}
+// 遍历源码仓库
+for(var i in prodNameArr){
+  var prodName = prodNameArr[i];
+  var filePath = getResolvePath('../node_modules/' + prodName + '/CHANGELOG.md');
+  // 读取仓库下的changelog文件
+  if(fs.existsSync(filePath)){
+    var dStr = fs.readFileSync(filePath,'utf-8');
+    // 获取第一个a标签的内容
+    var aArr = dStr.split('<a name="');
+    if(aArr.length > 1){
+      var firstA = aArr[1];
+      var baseStr = '<a name="' + firstA;
+      var nowVersion = firstA.substring(0,firstA.indexOf('"'));
+      nowVersionObj[prodName] = nowVersion;
+      // 判断当前版本号是否已经存在
+      if(nowAllVersionObj[prodName] == nowVersion){
+
+      }else{
+        var beginIndex = baseStr.indexOf('### Bug Fixes');
+				if(beginIndex > -1){
+					// 存在fixes才执行后续处理
+					beginIndex  += 13;
+					var endIndex = baseStr.indexOf('### Features');
+					if(endIndex == -1){
+						endIndex = baseStr.length;
+					}
+					var sortStr = baseStr.substring(beginIndex,endIndex);
+					var sortArr = sortStr.split('* ');
+
+					for(var i in sortArr){
+						var nowStr = sortArr[i];
+						if(i > 0){
+							if(nowStr.indexOf('pro-') == 0){
+								proAllArr.push(nowStr);
+							}else{
+								otherAllArr.push(nowStr);
+							}
+						}
+					}
+				}
+				// 处理feat
+				var endIndex = baseStr.indexOf('### Features');
+				if(endIndex > -1){
+					featAllArr.push(baseStr.substring(endIndex + 12));
+				}
+      }
+    }
+  }
+}
+var dateObj = new Date();
+var dateStr = dateObj.getFullYear() + '-' + (dateObj.getMonth()+ 1) + '-' +  dateObj.getDate();
+nowVersionObj['date'] = dateStr;
+// 写入changelogAll.json
+JsonObj.versions.splice(0,0,nowVersionObj);
+fs.writeFileSync(jsonPath,JSON.stringify(JsonObj));
+
+// 写入changelog
+var allFilePath = getResolvePath(basePath + 'CHANGELOG-ALL.md');
+var oldStr = fs.readFileSync(allFilePath,'utf-8');
+var proStr = '';
+for(var i in proAllArr){
+	var nowForStr = proAllArr[i];
+	var lastIndex = nowForStr.lastIndexOf(')') + 1;
+	nowForStr = nowForStr.substring(0, lastIndex);
+	proStr += '* ' + nowForStr + '\r\n\r\n';
+}
+var otherStr = '';
+for(var i in otherAllArr){
+	var nowForStr = otherAllArr[i];
+	var lastIndex = nowForStr.lastIndexOf(')') + 1;
+	nowForStr = nowForStr.substring(0, lastIndex);
+	otherStr += '* ' + nowForStr + '\r\n\r\n';
+}
+
+var featStr = '';
+for(var i in featAllArr){
+	var nowForStr = featAllArr[i];
+	var lastIndex = nowForStr.lastIndexOf(')') + 1;
+	nowForStr = nowForStr.substring(0, lastIndex);
+	featStr += nowForStr + '\r\n\r\n';
+}
+
+
+
+var allStr = '<a name="' + nextAllVersion + '"></a>\r\n<h2 class="logtit"> ' + 'V'+ nextAllVersion + ' ' + '<a class="u-button u-button-floating loglink" href=' + '"//design.yyuap.com/static/download/iuap-design-'+ nextAllVersion + '.zip">' + '<i class="icon uf uf-downloadd logicon"></i></a> ' + '<i class="logdate">(' + dateStr + ')</i></h2>\r\n\r\n';
+if(proStr || otherStr){
+	allStr += '### Bug Fixes \r\n';
+	allStr += proStr;
+	allStr += otherStr;
+}
+
+if(featStr){
+	allStr += '### Features \r\n';
+	allStr += featStr;
+}
+
+
+var writeStr = allStr + oldStr;
+fs.writeFile(allFilePath, writeStr, function(err){
+	if(err){
+		console.log('write err');
+	}else{
+		console.log('changeLog all write success');
+	}
+})

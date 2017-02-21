@@ -16,6 +16,8 @@ var koModule = neojson.ko;
 
 var zipPath;
 
+var tinperTree = 'tinper-neoui-tree';
+var tinperGrid = 'tinper-neoui-grid';
 var tinperPoly = 'tinper-neoui-polyfill';
 var tinperNeoui = 'tinper-neoui';
 var readfile = '../custom/README.md';
@@ -41,28 +43,53 @@ module.exports = function(data, self, cb){
 	 * polyfill定制部分
 	 */
 	var polyBasePath = path.resolve(__dirname, basePath + tinperPoly);
-	var polyJs = [];
+	var polyJs = '';
 
 	if(dataJson.polyselect) {
-		for(var pi = 0, polyLen = dataJson.polyselect.length; pi < polyLen; pi++) {
-			polyJs.push(polyBasePath + '/dist/' + dataJson.polyselect[pi] + '.js');
-		}
+		polyJs = polyBasePath + '/dist/u-polyfill.js';
 	}
 	gulp.task('poly', function(){
-		if(polyJs.length === 2){
+		if(polyJs){
 			return gulp.src(polyJs)
-				.pipe(concat('u-polyfill.js'))
 				.pipe(gulp.dest(path.resolve(__dirname,'../download')));
-		} else if (polyJs.length === 1 && dataJson.polyselect[0] === 'u-polyfill-core') {
-			return gulp.src(polyJs)
-				.pipe(rename('u-polyfill.js'))
+		}
+	});
+
+	/**
+	 * tree定制部分
+	 */
+	var treeBasePath = path.resolve(__dirname, basePath + tinperTree);
+ 	var treeJs = '',treeCss = '';
+	if(dataJson.treeselect){
+		treeJs = treeBasePath + '/dist/js/u-tree.js'
+		treeCss = treeBasePath + '/dist/css/tree.css'
+	}
+	gulp.task('tree', function(){
+		if(treeJs&&treeCss){
+			gulp.src(treeJs)
 				.pipe(gulp.dest(path.resolve(__dirname,'../download')));
-		} else if (polyJs.length === 1 && dataJson.polyselect[0] === 'u-polyfill-respond') {
-			return gulp.src(polyJs)
-				.pipe(rename('u-polyfill.js'))
+
+			gulp.src(treeCss)
 				.pipe(gulp.dest(path.resolve(__dirname,'../download')));
-		} else {
-			return ;
+		}
+	});
+
+	/**
+	 * grid定制部分
+	 */
+	var gridBasePath = path.resolve(__dirname, basePath + tinperGrid);
+	var gridJs = '',gridCss = '';
+	if(dataJson.gridselect){
+		gridJs = gridBasePath + '/dist/js/u-grid.js'
+		gridCss = gridBasePath + '/dist/css/grid.css'
+	}
+	gulp.task('grid', function(){
+		if(gridJs&&gridCss){
+			gulp.src(gridJs)
+				.pipe(gulp.dest(path.resolve(__dirname,'../download')));
+
+			gulp.src(gridCss)
+				.pipe(gulp.dest(path.resolve(__dirname,'../download')));
 		}
 	});
 
@@ -82,24 +109,6 @@ module.exports = function(data, self, cb){
 	var neouiBasePath = path.resolve(__dirname,basePath + tinperNeoui);
 	var neouiCss =[];
 	var neouiJs =[];
-	/**
-	 * 以下注释部分为线上scss编译css准备,对应gulp任务为gulp sass
-	 */
-	// if(dataJson.cssselect) {
-	// 	for (var ci=0; ci<dataJson.cssselect.length; ci++) {
-	// 		neouiCss.push(neouiBasePath + '/scss/ui/' + dataJson.cssselect[ci] + '.scss');
-	// 	}
-	// }
-	// if(dataJson.jsselect) {
-	// 	for (var ji=0; ji<dataJson.jsselect.length; ji++) {
-	// 		neouiCss.push(neouiBasePath + '/scss/ui/' + dataJson.jsselect[ji] + '.scss');
-	// 		neouiJs.push(neouiBasePath + '/js/' + dataJson.jsselect[ji] + '.js');
-	// 	}
-	//
-	// 	if(dataJson.adselect){
-	// 		// console.log('选择ko');
-	// 	}
-	// }
 
 	if(dataJson.cssselect) {
 		for (var ci=0; ci<dataJson.cssselect.length; ci++) {
@@ -111,12 +120,10 @@ module.exports = function(data, self, cb){
 			neouiCss.push(neouiBasePath + '/custom/' + dataJson.jsselect[ji] + '.css');
 			neouiJs.push(neouiBasePath + '/js/' + dataJson.jsselect[ji] + '.js');
 		}
-
 		if(dataJson.adselect){
 			// console.log('选择ko');
 		}
 	}
-
 
 	// js内容
 	var entryPath = path.resolve(__dirname,'../entry.js');
@@ -125,6 +132,7 @@ module.exports = function(data, self, cb){
 
 	var entryFun = function() {
 		if(dataJson.jsselect){
+			dataNeo.push("import {u} from 'tinper-sparrow/js/index';import * as compox from 'compox/js/index';import * as compox_util from 'compox-util/js/index';")
 			for(var i=0, neoLength = dataJson.jsselect.length; i < neoLength; i++ ) {
 				var pluginModule = neoModule[dataJson.jsselect[i]];
 				for (var key in pluginModule) {
@@ -136,16 +144,45 @@ module.exports = function(data, self, cb){
 	};
 	entryFun();
 
-	// kero-adapter内容
+	// kero内容
 	var dataKo = [""];
 	var koFun = function(){
-		if(dataJson.adselect && dataJson.jsselect) {
-			for(var i=0, neoLength = dataJson.jsselect.length; i < neoLength; i++ ) {
-				var koName = 'keroa-' + dataJson.jsselect[i].substr(6);
-				var koObj = koModule[koName];
-				for(var key in koObj) {
-					dataKo.push(koObj[key]);
-					ex[key] = key;
+		if(dataJson.adselect){
+			console.log()
+			for (var j = 0; j < dataJson.adselect.length; j++) {
+				var adselect_ = dataJson.adselect[j];
+				if(adselect_ == 'kero' && dataJson.jsselect) {
+					for(var i=0, neoLength = dataJson.jsselect.length; i < neoLength; i++ ) {
+						var koName = 'keroa-' + dataJson.jsselect[i].substr(6);
+						var koObj = koModule[koName];
+						for(var key in koObj) {
+							dataKo.push(koObj[key]);
+							ex[key] = key;
+						}
+					}
+					//当树组件被选择的时候加入keroa-tree这个ko组件
+					if(dataJson.treeselect){
+						koName = 'keroa-tree';
+						koObj = koModule[koName];
+						for(var key in koObj) {
+							dataKo.push(koObj[key]);
+							ex[key] = key;
+						}
+					}
+					//当表格组件被选择的时候加入keroa-tree这个ko组件
+					if(dataJson.gridselect){
+						koName = 'keroa-grid';
+						koObj = koModule[koName];
+						for(var key in koObj) {
+							dataKo.push(koObj[key]);
+							ex[key] = key;
+						}
+					}
+					dataKo.push("import {DataTable, u as kero} from 'kero/js/index';");
+				}
+				console.log(adselect_);
+				if(adselect_ == 'kero-fetch'){
+					dataKo.push("import * as kero_fetch from 'kero-fetch/js/index';");
 				}
 			}
 		}
@@ -154,7 +191,6 @@ module.exports = function(data, self, cb){
 
 	// 写入入口文件
 	var dataImport = dataNeo.concat(dataKo).join('\n');
-	// var dataNeoStr = dataNeo.join('\n');
 	fs.writeFileSync(entryPath,dataImport);
 	var exBefore = '\nvar ex = ';
 	var exStr = JSON.stringify(ex);
@@ -195,7 +231,7 @@ module.exports = function(data, self, cb){
 	})
 
 	// js部分
-	gulp.task('webpack', ['styleconcat','poly'], function() {
+	gulp.task('webpack', ['styleconcat','poly','tree','grid'], function() {
 		return gulp.src(path.resolve(__dirname, '../entry.js'))
 			.pipe(webpack({
 				module:{
