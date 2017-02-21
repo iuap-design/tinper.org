@@ -106,180 +106,180 @@
 	},
 	"es6":{
 		"neoui-autocomplete": {
-			"Autocomplete": "import {Autocomplete} from 'tinper-neoui/js/neoui-autocomplete';"
+			"Autocomplete": "import {Autocomplete} from 'tinper-neoui/src/neoui-autocomplete';"
 		},
 		"neoui-button": {
-			"Button": "import {Button} from 'tinper-neoui/js/neoui-button';"
+			"Button": "import {Button} from 'tinper-neoui/src/neoui-button';"
 		},
 		"neoui-checkbox": {
-			"Checkbox": "import {Checkbox} from 'tinper-neoui/js/neoui-checkbox';"
+			"Checkbox": "import {Checkbox} from 'tinper-neoui/src/neoui-checkbox';"
 		},
 		"neoui-collapse": {
-			"showCollapse": "import {showCollapse} from 'tinper-neoui/js/neoui-collapse';"
+			"showCollapse": "import {showCollapse} from 'tinper-neoui/src/neoui-collapse';"
 		},
 		"neoui-combo": {
-			"Combo": "import {Combo} from 'tinper-neoui/js/neoui-combo';"
+			"Combo": "import {Combo} from 'tinper-neoui/src/neoui-combo';"
 		},
 		"neoui-combobox": {
-			"Combobox": "import {Combobox} from 'tinper-neoui/js/neoui-combobox';"
+			"Combobox": "import {Combobox} from 'tinper-neoui/src/neoui-combobox';"
 		},
 		"neoui-data-table": {
-			"Table": "import {Table} from 'tinper-neoui/js/neoui-data-table';"
+			"Table": "import {Table} from 'tinper-neoui/src/neoui-data-table';"
 		},
 		"neoui-dialog": {
-			"messageDialog": "import {messageDialog} from 'tinper-neoui/js/neoui-dialog';",
-			"confirmDialog": "import {confirmDialog} from 'tinper-neoui/js/neoui-dialog';",
-			"dialogMode": "import {dialogMode} from 'tinper-neoui/js/neoui-dialog';",
-			"dialog": "import {dialog} from 'tinper-neoui/js/neoui-dialog';",
-			"dialogWizard": "import {dialogWizard} from 'tinper-neoui/js/neoui-dialog';"
+			"messageDialog": "import {messageDialog} from 'tinper-neoui/src/neoui-dialog';",
+			"confirmDialog": "import {confirmDialog} from 'tinper-neoui/src/neoui-dialog';",
+			"dialogMode": "import {dialogMode} from 'tinper-neoui/src/neoui-dialog';",
+			"dialog": "import {dialog} from 'tinper-neoui/src/neoui-dialog';",
+			"dialogWizard": "import {dialogWizard} from 'tinper-neoui/src/neoui-dialog';"
 		},
 		"neoui-layout.md": {
-			"MDLayout": "import {MDLayout} from 'tinper-neoui/js/neoui-layout.md';"
+			"MDLayout": "import {MDLayout} from 'tinper-neoui/src/neoui-layout.md';"
 		},
 		"neoui-layout.nav": {
-			"NavLayout": "import {NavLayout} from 'tinper-neoui/js/neoui-layout.nav';",
-			"NavLayoutTab": "import {NavLayoutTab} from 'tinper-neoui/js/neoui-layout.nav';"
+			"NavLayout": "import {NavLayout} from 'tinper-neoui/src/neoui-layout.nav';",
+			"NavLayoutTab": "import {NavLayoutTab} from 'tinper-neoui/src/neoui-layout.nav';"
 		},
 		"neoui-loader": {
-			"showLoader": "import {showLoader} from 'tinper-neoui/js/neoui-loader';",
-			"hideLoader": "import {hideLoader} from 'tinper-neoui/js/neoui-loader';"
+			"showLoader": "import {showLoader} from 'tinper-neoui/src/neoui-loader';",
+			"hideLoader": "import {hideLoader} from 'tinper-neoui/src/neoui-loader';"
 		},
 		"neoui-loading": {
-			"Loading": "import {Loading} from 'tinper-neoui/js/neoui-loading';",
-			"showLoading": "import {showLoading} from 'tinper-neoui/js/neoui-loading';",
-			"hideLoading": "import {hideLoading} from 'tinper-neoui/js/neoui-loading';",
-			"showWaiting": "import {showWaiting} from 'tinper-neoui/js/neoui-loading';",
-			"removeWaiting": "import {removeWaiting} from 'tinper-neoui/js/neoui-loading';"
+			"Loading": "import {Loading} from 'tinper-neoui/src/neoui-loading';",
+			"showLoading": "import {showLoading} from 'tinper-neoui/src/neoui-loading';",
+			"hideLoading": "import {hideLoading} from 'tinper-neoui/src/neoui-loading';",
+			"showWaiting": "import {showWaiting} from 'tinper-neoui/src/neoui-loading';",
+			"removeWaiting": "import {removeWaiting} from 'tinper-neoui/src/neoui-loading';"
 		},
 		"neoui-menu": {
-			"Menu": "import {Menu} from 'tinper-neoui/js/neoui-menu';"
+			"Menu": "import {Menu} from 'tinper-neoui/src/neoui-menu';"
 		},
 		"neoui-message": {
-			"showMessageDialog": "import {showMessageDialog} from 'tinper-neoui/js/neoui-message';",
-			"showMessage": "import {showMessage} from 'tinper-neoui/js/neoui-message';"
+			"showMessageDialog": "import {showMessageDialog} from 'tinper-neoui/src/neoui-message';",
+			"showMessage": "import {showMessage} from 'tinper-neoui/src/neoui-message';"
 		},
 		"neoui-multilang": {
-			"Multilang": "import {Multilang} from 'tinper-neoui/js/neoui-multilang';"
+			"Multilang": "import {Multilang} from 'tinper-neoui/src/neoui-multilang';"
 		},
 		"neoui-navmenu": {
-			"NavMenu": "import {NavMenu} from 'tinper-neoui/js/neoui-navmenu';"
+			"NavMenu": "import {NavMenu} from 'tinper-neoui/src/neoui-navmenu';"
 		},
 		"neoui-pagination": {
-			"pagination": "import {pagination} from 'tinper-neoui/js/neoui-pagination';"
+			"pagination": "import {pagination} from 'tinper-neoui/src/neoui-pagination';"
 		},
 		"neoui-progress": {
-			"Progress": "import {Progress} from 'tinper-neoui/js/neoui-progress';"
+			"Progress": "import {Progress} from 'tinper-neoui/src/neoui-progress';"
 		},
 		"neoui-radio": {
-			"Radio": "import {Radio} from 'tinper-neoui/js/neoui-radio';"
+			"Radio": "import {Radio} from 'tinper-neoui/src/neoui-radio';"
 		},
 		"neoui-refer": {
-			"refer": "import {refer} from 'tinper-neoui/js/neoui-refer';"
+			"refer": "import {refer} from 'tinper-neoui/src/neoui-refer';"
 		},
 		"neoui-slidePanel": {
-			"slidePanel": "import {slidePanel} from 'tinper-neoui/js/neoui-slidePanel';"
+			"slidePanel": "import {slidePanel} from 'tinper-neoui/src/neoui-slidePanel';"
 		},
 		"neoui-switch": {
-			"Switch": "import {Switch} from 'tinper-neoui/js/neoui-switch';"
+			"Switch": "import {Switch} from 'tinper-neoui/src/neoui-switch';"
 		},
 		"neoui-tabs": {
-			"Tabs": "import {Tabs} from 'tinper-neoui/js/neoui-tabs';"
+			"Tabs": "import {Tabs} from 'tinper-neoui/src/neoui-tabs';"
 		},
 		"neoui-textfield": {
-			"Text": "import {Text} from 'tinper-neoui/js/neoui-textfield';"
+			"Text": "import {Text} from 'tinper-neoui/src/neoui-textfield';"
 		},
 		"neoui-tooltip": {
-			"Tooltip": "import {Tooltip} from 'tinper-neoui/js/neoui-tooltip';"
+			"Tooltip": "import {Tooltip} from 'tinper-neoui/src/neoui-tooltip';"
 		},
 		"neoui-validate": {
-			"Validate": "import {Validate} from 'tinper-neoui/js/neoui-validate';",
-			"validate": "import {validate} from 'tinper-neoui/js/neoui-validate';",
-			"doValidate": "import {doValidate} from 'tinper-neoui/js/neoui-validate';"
+			"Validate": "import {Validate} from 'tinper-neoui/src/neoui-validate';",
+			"validate": "import {validate} from 'tinper-neoui/src/neoui-validate';",
+			"doValidate": "import {doValidate} from 'tinper-neoui/src/neoui-validate';"
 		},
 		"neoui-datetimepicker": {
-			"DateTimePicker": "import {DateTimePicker} from 'tinper-neoui/js/neoui-datetimepicker';",
-			"MobDateTimePicker": "import {MobDateTimePicker} from 'tinper-neoui/js/neoui-mobdatetimepicker';"
+			"DateTimePicker": "import {DateTimePicker} from 'tinper-neoui/src/neoui-datetimepicker';",
+			"MobDateTimePicker": "import {MobDateTimePicker} from 'tinper-neoui/src/neoui-mobdatetimepicker';"
 		},
 		"neoui-time": {
-			"Time": "import {Time} from 'tinper-neoui/js/neoui-time';"
+			"Time": "import {Time} from 'tinper-neoui/src/neoui-time';"
 		},
 		"neoui-clockpicker": {
-			"ClockPicker": "import {ClockPicker} from 'tinper-neoui/js/neoui-clockpicker';"
+			"ClockPicker": "import {ClockPicker} from 'tinper-neoui/src/neoui-clockpicker';"
 		},
 		"neoui-month": {
-			"Month": "import {Month} from 'tinper-neoui/js/neoui-month';"
+			"Month": "import {Month} from 'tinper-neoui/src/neoui-month';"
 		},
 		"neoui-monthdate": {
-			"MonthDate": "import {MonthDate} from 'tinper-neoui/js/neoui-monthdate';"
+			"MonthDate": "import {MonthDate} from 'tinper-neoui/src/neoui-monthdate';"
 		},
 		"neoui-year": {
-			"Year": "import {Year} from 'tinper-neoui/js/neoui-year';"
+			"Year": "import {Year} from 'tinper-neoui/src/neoui-year';"
 		},
 		"neoui-yearmonth": {
-			"YearMonth": "import {YearMonth} from 'tinper-neoui/js/neoui-yearmonth';"
+			"YearMonth": "import {YearMonth} from 'tinper-neoui/src/neoui-yearmonth';"
 		}
 	},
 	"ko":{
 		"keroa-checkbox":{
-			"CheckboxAdapter":"import {CheckboxAdapter} from 'neoui-kero/js/component/keroa-checkbox';"
+			"CheckboxAdapter":"import {CheckboxAdapter} from 'neoui-kero/src/keroa-checkbox';"
 		},
 		"keroa-ckeditor":{
-			"CkEditorAdapter":"import {CkEditorAdapter} from 'neoui-kero/js/component/keroa-ckeditor';"
+			"CkEditorAdapter":"import {CkEditorAdapter} from 'neoui-kero/src/keroa-ckeditor';"
 		},
 		"keroa-combo":{
-			"ComboboxAdapter":"import {ComboboxAdapter} from 'neoui-kero/js/component/keroa-combo';"
+			"ComboboxAdapter":"import {ComboboxAdapter} from 'neoui-kero/src/keroa-combo';"
 		},
 		"keroa-datetimepicker":{
-			"DateTimeAdapter":"import {DateTimeAdapter} from 'neoui-kero/js/component/keroa-datetimepicker';"
+			"DateTimeAdapter":"import {DateTimeAdapter} from 'neoui-kero/src/keroa-datetimepicker';"
 		},
 		"keroa-grid":{
-			"GridAdapter":"import {GridAdapter} from 'neoui-kero/js/component/keroa-grid';"
+			"GridAdapter":"import {GridAdapter} from 'neoui-kero/src/keroa-grid';"
 		},
 		"keroa-month":{
-			"MonthAdapter":"import {MonthAdapter} from 'neoui-kero/js/component/keroa-month';"
+			"MonthAdapter":"import {MonthAdapter} from 'neoui-kero/src/keroa-month';"
 		},
 		"keroa-monthdate":{
-			"MonthDateAdapter":"import {MonthDateAdapter} from 'neoui-kero/js/component/keroa-monthdate';"
+			"MonthDateAdapter":"import {MonthDateAdapter} from 'neoui-kero/src/keroa-monthdate';"
 		},
 		"keroa-multilang":{
-			"MultilangAdapter":"import {MultilangAdapter} from 'neoui-kero/js/component/keroa-multilang';"
+			"MultilangAdapter":"import {MultilangAdapter} from 'neoui-kero/src/keroa-multilang';"
 		},
 		"keroa-pagination":{
-			"PaginationAdapter":"import {PaginationAdapter} from 'neoui-kero/js/component/keroa-pagination';"
+			"PaginationAdapter":"import {PaginationAdapter} from 'neoui-kero/src/keroa-pagination';"
 		},
 		"keroa-progress":{
-			"ProgressAdapter":"import {ProgressAdapter} from 'neoui-kero/js/component/keroa-progress';"
+			"ProgressAdapter":"import {ProgressAdapter} from 'neoui-kero/src/keroa-progress';"
 		},
 		"keroa-radio":{
-			"RadioAdapter":"import {RadioAdapter} from 'neoui-kero/js/component/keroa-radio';"
+			"RadioAdapter":"import {RadioAdapter} from 'neoui-kero/src/keroa-radio';"
 		},
 		"keroa-switch":{
-			"SwitchAdapter":"import {SwitchAdapter} from 'neoui-kero/js/component/keroa-switch';"
+			"SwitchAdapter":"import {SwitchAdapter} from 'neoui-kero/src/keroa-switch';"
 		},
 		"keroa-textfield":{
-			"TextFieldAdapter":"import {TextFieldAdapter} from 'neoui-kero/js/component/keroa-textfield';",
-			"FloatAdapter":"import {FloatAdapter} from 'neoui-kero/js/component/keroa-float';",
-			"TextAreaAdapter":"import {TextAreaAdapter} from 'neoui-kero/js/component/keroa-textarea';",
-			"IntegerAdapter":"import {IntegerAdapter} from 'neoui-kero/js/component/keroa-integer';",
-			"PassWordAdapter":"import {PassWordAdapter} from 'neoui-kero/js/component/keroa-password';",
-			"PercentAdapter":"import {PercentAdapter} from 'neoui-kero/js/component/keroa-percent';",
-			"StringAdapter":"import {StringAdapter} from 'neoui-kero/js/component/keroa-string';",
-			"CurrencyAdapter":"import {CurrencyAdapter} from 'neoui-kero/js/component/keroa-currency';",
-			"PhoneNumberAdapter":"import {PhoneNumberAdapter} from 'neoui-kero/js/component/keroa-phoneNumber';",
-			"LandLineAdapter":"import {LandLineAdapter} from 'neoui-kero/js/component/keroa-landLine';",
-			"UrlAdapter":"import {UrlAdapter} from 'neoui-kero/js/component/keroa-url';"
+			"TextFieldAdapter":"import {TextFieldAdapter} from 'neoui-kero/src/keroa-textfield';",
+			"FloatAdapter":"import {FloatAdapter} from 'neoui-kero/src/keroa-float';",
+			"TextAreaAdapter":"import {TextAreaAdapter} from 'neoui-kero/src/keroa-textarea';",
+			"IntegerAdapter":"import {IntegerAdapter} from 'neoui-kero/src/keroa-integer';",
+			"PassWordAdapter":"import {PassWordAdapter} from 'neoui-kero/src/keroa-password';",
+			"PercentAdapter":"import {PercentAdapter} from 'neoui-kero/src/keroa-percent';",
+			"StringAdapter":"import {StringAdapter} from 'neoui-kero/src/keroa-string';",
+			"CurrencyAdapter":"import {CurrencyAdapter} from 'neoui-kero/src/keroa-currency';",
+			"PhoneNumberAdapter":"import {PhoneNumberAdapter} from 'neoui-kero/src/keroa-phoneNumber';",
+			"LandLineAdapter":"import {LandLineAdapter} from 'neoui-kero/src/keroa-landLine';",
+			"UrlAdapter":"import {UrlAdapter} from 'neoui-kero/src/keroa-url';"
 		},
 		"keroa-time":{
-			"TimeAdapter":"import {TimeAdapter} from 'neoui-kero/js/component/keroa-time';"
+			"TimeAdapter":"import {TimeAdapter} from 'neoui-kero/src/keroa-time';"
 		},
 		"keroa-tree":{
-			"TreeAdapter":"import {TreeAdapter} from 'neoui-kero/js/component/keroa-tree';"
+			"TreeAdapter":"import {TreeAdapter} from 'neoui-kero/src/keroa-tree';"
 		},
 		"keroa-year":{
-			"YearAdapter":"import {YearAdapter} from 'neoui-kero/js/component/keroa-year';"
+			"YearAdapter":"import {YearAdapter} from 'neoui-kero/src/keroa-year';"
 		},
 		"keroa-yearmonth":{
-			"YearMonthAdapter":"import {YearMonthAdapter} from 'neoui-kero/js/component/keroa-yearmonth';"
+			"YearMonthAdapter":"import {YearMonthAdapter} from 'neoui-kero/src/keroa-yearmonth';"
 		}
 	}
 }

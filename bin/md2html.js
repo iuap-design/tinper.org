@@ -1,3 +1,9 @@
+/**
+ * Module : 用模板引擎转换页面
+ * Author : 胡玥(huyueb@yonyou.com)
+ * Date	  : 2017-02-21
+ */
+
 var fs = require('fs');
 var fse = require('fs-extra');
 var template = require( 'art-template' );
@@ -19,19 +25,18 @@ template.config('closeTag','}}}');
 
 /**
  * tinper基本配置获取
+ * envPath:根目录所在的绝对路径
  */
+
 var envPath = process.cwd();
-console.log(envPath);
 var ymlPath = path.join(envPath,'_config.yml');
 var ymlConfig = yaml.safeLoad(fs.readFileSync(ymlPath, 'utf8'));
 var MDLAYOUT = ymlConfig.md_layout;
 
 var srcPath = path.join(envPath,'src');
 var mdFun = function(srcPath,callback) {
-	// console.log('srcPath--'+srcPath);
 	fs.readdir(srcPath, function(err, sub){
 		var sub = ut.rmdot(sub);
-
 		sub.forEach(function(subNum, index){
 			var subPath = path.join(srcPath,subNum);
 			var isDir = fs.statSync(subPath).isDirectory();
@@ -56,7 +61,6 @@ var mdFun = function(srcPath,callback) {
 				}
 			}
 		});
-
 		if(callback){
 			callback();
 		}
@@ -64,7 +68,7 @@ var mdFun = function(srcPath,callback) {
 };
 
 /**
- * md转html
+ * md转html方法
  * @param  {[type]} oldPath  [description]
  * @param  {[type]} newPath  [description]
  * @param  {[type]} fullName [description]
@@ -104,10 +108,11 @@ var markedFun = function(oldPath,newPath,fullName) {
 };
 
 /**
- * 复制文档
+ * 复制文档方法
  * @param  {[type]} oldPath [description]
  */
 var copyFun = function(oldPath,callback) {
+	//将src路径切换到dist
 	newPath = oldPath.replace('src','dist');
 
 	// 测试此处fse不能执行异步
@@ -162,6 +167,19 @@ var renderFun = function(newPath) {
 			data = require(dataFile);
 			break;
 		}
+
+	}
+	/**
+	 * 当发现是根目录下dist下的index.html中时，
+	 * 需要拼接来自changelog/CHANGELOG-ALL.json中的version和date字段，
+	 * 用于在官网首页显示最新版本号和更新时间
+	 */
+	if(newPath.indexOf('dist/index.html')!= -1){
+		var data_index = require(envPath+'/changelog/CHANGELOG-ALL.json');
+		if(data_index && data_index.versions && data_index.versions.length > 0){
+			data['version'] = data_index.versions[0].version;
+			data['date'] = data_index.versions[0].date;
+		}
 	}
 
 	// 此部分后续需要增加配置API
@@ -177,11 +195,5 @@ var renderFun = function(newPath) {
 			fs.writeFileSync(newPath, renders);
 		}
 	}
-
 };
-
-
-
-// mdFun(srcPath);
 module.exports = mdFun;
-// renderFun('/Users/liwei/Desktop/o/work/tinper.org/dist/neoui/component/breadcrumb.html')

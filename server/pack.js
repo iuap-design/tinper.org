@@ -80,6 +80,8 @@ module.exports = function(data, self, cb){
 	var gridBasePath = path.resolve(__dirname, basePath + tinperGrid);
 	var gridJs = '',gridCss = '';
 	if(dataJson.gridselect){
+		console.log("dataJson.gridselect:"+dataJson.gridselect)
+		console.log("gridBasePath:"+gridBasePath)
 		gridJs = gridBasePath + '/dist/js/u-grid.js'
 		gridCss = gridBasePath + '/dist/css/grid.css'
 	}
@@ -127,12 +129,12 @@ module.exports = function(data, self, cb){
 
 	// js内容
 	var entryPath = path.resolve(__dirname,'../entry.js');
-	var dataNeo = ["import {extend} from \'tinper-sparrow/js/extend\';"];
+	var dataNeo = ["import {extend} from \'tinper-sparrow/src/extend\';"];
 	var ex = {};
 
 	var entryFun = function() {
 		if(dataJson.jsselect){
-			dataNeo.push("import {u} from 'tinper-sparrow/js/index';import * as compox from 'compox/js/index';import * as compox_util from 'compox-util/js/index';")
+			dataNeo.push("import {u} from 'tinper-sparrow/src/index';import * as compox from 'compox/src/index';import * as compox_util from 'compox-util/src/index';")
 			for(var i=0, neoLength = dataJson.jsselect.length; i < neoLength; i++ ) {
 				var pluginModule = neoModule[dataJson.jsselect[i]];
 				for (var key in pluginModule) {
@@ -178,11 +180,11 @@ module.exports = function(data, self, cb){
 							ex[key] = key;
 						}
 					}
-					dataKo.push("import {DataTable, u as kero} from 'kero/js/index';");
+					dataKo.push("import {DataTable, u as kero} from 'kero/src/index';");
 				}
 				console.log(adselect_);
 				if(adselect_ == 'kero-fetch'){
-					dataKo.push("import * as kero_fetch from 'kero-fetch/js/index';");
+					dataKo.push("import * as kero_fetch from 'kero-fetch/src/index';");
 				}
 			}
 		}
