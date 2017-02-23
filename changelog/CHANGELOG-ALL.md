@@ -1,3 +1,18 @@
+<a name="3.1.27"></a>
+<h2 class="logtit"> V3.1.27 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.27.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-2-23)</i></h2>
+
+### Features
+
+* 添加自动生成changelog ([332f820](https://github.com/iuap-design/compox/commit/332f820))
+
+* adapter层setValue增加beforeSetValue调用，方便组件个性化设置 ([44706df](https://github.com/iuap-design/neoui-kero/commit/44706df))
+
+* 对框架进行升级，新增源码仓库compox、compox-util、kero-fetch、neoui-kero、neoui-kero-mixin ([880cb40](https://github.com/iuap-design/neoui-kero/commit/880cb40))
+
+* grid增加参数fixedFloat可设置固定列在左侧还是右侧 ([9c31d26](https://github.com/iuap-design/tinper-neoui-grid/commit/9c31d26))
+
+
+
 <a name="3.1.23"></a>
 <h2 class="logtit"> V3.1.23 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.23.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-1-19)</i></h2>
 

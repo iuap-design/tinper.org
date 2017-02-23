@@ -1,5 +1,19 @@
 {
     "versions": [{
+        "version": "3.1.27",
+        "tinper-sparrow": "3.1.27",
+        "tinper-neoui": "3.1.27",
+        "kero": "3.1.27",
+        "neoui-kero": "3.1.27",
+        "tinper-neoui-grid": "3.1.28",
+        "tinper-neoui-tree": "3.1.27",
+        "tinper-neoui-polyfill": "3.1.26",
+        "compox": "3.1.26",
+        "compox-util": "3.1.26",
+        "kero-fetch": "3.1.26",
+        "neoui-kero-mixin": "3.1.26",
+        "date": "2017-2-23"
+    }, {
         "version": "3.1.26",
         "date": "2017-1-19",
         "tinper-sparrow": "3.1.26",
@@ -13,7 +27,7 @@
         "compox-util": "3.1.26",
         "kero-fetch": "3.1.26",
         "neoui-kero-mixin": "3.1.26"
-    },{
+    }, {
         "version": "3.1.23",
         "date": "2017-1-19",
         "tinper-sparrow": "3.1.23",
