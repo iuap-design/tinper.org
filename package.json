@@ -14,6 +14,7 @@
     "catch": "sh bin/catchmd.sh",
     "custom": "node presass",
     "logcopy": "node logcopy",
+    "catch": "sh bin/catchmd.sh",
     "dist": "npm run custom && npm run logcopy && npm run cate && npm run packdata && npm run docs && npm run mark",
     "packdata": "node bin/packdata",
     "deploy": "sh bin/fetch.sh && npm run custom && npm run logcopy && npm run cate && npm run packdata && npm run docs && npm run mark"
