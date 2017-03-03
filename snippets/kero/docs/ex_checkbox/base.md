@@ -64,6 +64,7 @@ var checkboxAObject = app.getComp('c1');//c1为在u-meta中定义的id值
 
 ```
 
+**注：** 复选框在dataTable中对应的字段应该是`string`类型。 对该字段赋值如下： yourDataTable.setValue('f1',选中的值);如果checkbox为多选时，“选中的值”需要用逗号分隔。如：'a,b,c'
 
 ## \# setEnable对象
 
