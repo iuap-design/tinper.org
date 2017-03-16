@@ -174,7 +174,9 @@ var renderFun = function(newPath) {
 	 * 需要拼接来自changelog/CHANGELOG-ALL.json中的version和date字段，
 	 * 用于在官网首页显示最新版本号和更新时间
 	 */
-	if(newPath.indexOf('dist/index.html')!= -1){
+	 
+	if(newPath.indexOf('dist/index.html')!= -1|| newPath.indexOf('dist\\index.html')!=-1){
+		console.log("---in---"+envPath);
 		var data_index = require(envPath+'/changelog/CHANGELOG-ALL.json');
 		if(data_index && data_index.versions && data_index.versions.length > 0){
 			data['version'] = data_index.versions[0].version;
