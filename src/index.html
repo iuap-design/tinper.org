@@ -40,9 +40,9 @@
                     </div>
 
 
-                    <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
+                    <!-- <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
                         <a class="product_img uba_link" href="/dist/uba/index.html">
-                            <!-- <img  src="/assets/images/uba.png" alt=""> -->
+                            
                             <i class="icon uf uf-uba-col"></i>
                             <p>前端集成开发</p>
 
@@ -51,7 +51,7 @@
                     </div>
                     <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
                         <a class="product_img neoui_link" href="/dist/neoui/index.html">
-                            <!-- <img  src="/assets/images/neouik.png" alt=""> -->
+                           
                             <i class="icon uf uf-neoui-col"></i>
                             <p>UI框架</p>
 
@@ -61,7 +61,7 @@
 
                     <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
                         <a class="product_img react_link" href="//bee.tinper.org/">
-                            <!-- <img  src="/assets/images/bee.png" alt=""> -->
+                           
                             <i class="icon uf uf-bee-col"></i>
                             <p>React组件库</p>
 
@@ -70,7 +70,7 @@
                     </div>
                     <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
                         <a class="product_img grid_link" href="/dist/grid/index.html">
-                            <!-- <img  src="/assets/images/grid.png" alt=""> -->
+                           
                             <i class="icon uf uf-gridlogo"></i>
                             <p>表格控件</p>
                         </a>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
                         <a class="product_img kero_link" href="/dist/kero/index.html">
-                            <!-- <img  src="/assets/images/kero.png" alt=""> -->
+                           
                             <i class="icon uf uf-kero-col"></i>
                             <p>UI数据模型</p>
                         </a>
@@ -86,12 +86,50 @@
                     </div>
                     <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
                         <a class="product_img sparrow_link" href="/dist/sparrow/index.html">
-                            <!-- <img  src="/assets/images/sparrow.png" alt=""> -->
+                            
                             <i class="icon uf uf-sparrow-col"></i>
                             <p>前端基础库</p>
                         </a>
 
-                    </div>
+                    </div> -->
+    
+                     <section class="products-row">
+                        <div class="products-row-inner">
+                            {{{each product as item}}}
+                            <div class="products-item">
+                                <a href="javascript:void(0)" class="products-item-link">
+                                    <div class="products-item-img {{{item.img}}}">
+                                    </div>
+                                    <h3 class="products-item-heading">{{{item.name}}}</h3>
+                                </a>
+                                <div class="products-item-popout">
+                                    <div class="product-item-popout-down-arrow">
+                                    </div>
+                                    <div class="product-item-close-btn uf uf-close">
+                                      
+                                    </div>
+                                    <div class="products-item-popout-inner full-width">
+                                        <h4 class="products-item-popout-heading">{{{item.name}}}</h4>
+                                        <p class="products-item-popout-desc">
+                                          {{{item.introduce}}}
+                                        </p>
+                                        {{{each item.features as feat}}}
+                                        <div class="products-item-popout-wrapper">
+
+                                            <h5 class="products-item-popout-subheading"><i class="{{{feat.img}}}"></i>{{{feat.name}}}</h5>
+                                            <p class="products-item-popout-paragraph">
+                                                {{{feat.desc}}}
+                                            </p>
+                                        </div>
+                                         {{{/each}}}
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            {{{/each}}}
+                        </div>
+                    </section>
 
 
 

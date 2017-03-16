@@ -22,12 +22,20 @@
             <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
 
                 {{{each nav as top}}}
-                    <li class="dropdown">
+                    <li class="dropdown" index="#{{{top.idFlag}}}">
                         <a class="nav-par" href="{{{top.href}}}">{{{top.name}}}</a>
                         {{{if top.sub}}}
-                            <ul>
+                            <ul class="hide">
                                 {{{each top.sub as second}}}
-                                    <li><a href="{{{second.href}}}" target="_blank">{{{second.name}}}</a></li>
+                                    <li class="nav-first-sub"><a href="{{{second.href}}}" target="_blank">{{{second.name}}}</a>
+                                       <ul class="nav-two-sub-ul">
+                                        {{{each second.sub as third}}}
+                                            <li><a href="{{{third.href}}}" target="_blank">{{{third.name}}}</a></li>
+                                         {{{/each}}}
+                                       </ul>
+                                        
+
+                                    </li>
                                 {{{/each}}}
                             </ul>
                         {{{/if}}}
@@ -35,6 +43,7 @@
                 {{{/each}}}
 
             </ul>
+
         </div>
 
         <div class="github-fork-button show-max">
@@ -45,5 +54,65 @@
             Fork
           </a>
         </div>
+
+
+        {{{each nav as item}}}
+            {{{ if item.sub }}}
+                <div class="tab-content hidden-xs" id="{{{item.idFlag}}}">
+                        <div class="tab-content-left">
+                            <ul>
+                            
+                            
+                                {{{each item.sub as tableft index}}}
+                                    {{{if index === 0}}}
+                                        <li class="active">
+                
+                                    {{{else}}}
+                                        <li>
+                                    {{{/if}}}
+
+                                             <a index="#{{{tableft.idFlag}}}">{{{tableft.name}}}
+                                                {{{if tableft.idFlag}}}
+                                                     <i class="uf uf-arrow-right"></i>
+                                                {{{/if}}}
+                                            </a>
+                                        </li>
+                                {{{/each}}}
+                                    
+                            </ul>
+                        </div>
+                        <div class="tab-content-right">
+                            
+                                 {{{each item.sub as itemtworight firstindex}}}
+
+                                    {{{if itemtworight.idFlag}}}
+                                        {{{if firstindex ==0 }}}    
+                                            <ul id="{{{itemtworight.idFlag}}}">
+
+                                        {{{else}}}
+                                            <ul id="{{{itemtworight.idFlag}}}" class="hide">
+                                        {{{/if}}}
+                                        {{{each itemtworight.sub as navsub index}}}
+                                            {{{if index === 0}}}
+                                                <li class="active">
+                                          
+                                            {{{else}}}
+                                                <li>
+                                            {{{/if}}}
+                                                <a href="{{{navsub.href}}}">
+                                                    <p class="title">{{{navsub.name}}}</p>
+                                                    <p class="desc">{{{navsub.desc}}}</p>
+                                                </a>
+                                            </li>
+                                        {{{/each}}}
+                                        </ul>
+                                    {{{/if}}}
+                                {{{/each}}}
+
+                            
+                        </div>
+                </div>
+            {{{/if}}}
+        {{{/each}}}
     </div>
 </nav>

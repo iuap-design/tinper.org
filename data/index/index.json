@@ -1,61 +1,225 @@
 ﻿{
     "title": "tinper,企业级Web应用前端框架",
-    "nav": [
-        {
-            "name":"首页",
-            "href":"/"
-        },
-        {
-            "name":"产品",
-            "href":"#",
-            "sub":[
-                {
-                    "name":"前端集成开发工具uba",
-                    "href":"/dist/uba/index.html"
-                },
-                {
-                    "name":"UI框架neoui",
-                    "href":"/dist/neoui/index.html"
-                },
-                {
-                    "name":"React组件库bee",
-                    "href":"http://bee.tinper.org/"
-                },
-                {
-                    "name":"表格控件grid",
-                    "href":"/dist/grid/index.html"
-                },
-                {
-                    "name":"UI数据模型kero",
-                    "href":"/dist/kero/index.html"
-                },
-                {
-                    "name":"前端基础库sparrow",
-                    "href":"/dist/sparrow/index.html"
-                }
-            ]
-        },
-        {
-            "name":"样式板",
-            "href":"//tinper.org/webide/"
-        },
-        {
-            "name":"下载",
-            "href":"#",
-            "sub":[
-                {
-                    "name":"版本下载",
-                    "href":"/dist/log/docs/changelog.html"
-                },
-                {
-                    "name":"定制下载",
-                    "href":"/dist/package/index.html"
-                }
-            ]
-        },
-        {
-            "name":"反馈",
-            "href":"https://github.com/iuap-design/tinper.org/issues"
-        }
-    ]
+    "nav": [{
+        "name": "首页",
+        "href": "/"
+    }, {
+        "name": "产品",
+        "href": "#",
+        "idFlag":"product",
+        "sub": [{
+            "name": "工具类",
+            "href": "javascript:void(0)",
+            "idFlag":"tool",
+            "sub":[{
+                "name": "uba",
+                "desc":"前端集成开发工具",
+                "href":""
+            },{
+                "name": "bee-tools",
+                "desc":"组件开发工具",
+                "href":""
+            }]
+        }, {
+            "name": "前端框架库",
+            "href": "javascript:void(0)",
+            "idFlag":"front",
+            "sub":[{
+                "name":"moy",
+                "desc":"应用框架",
+                "href":""
+            },{
+                "name":"kero",
+                "desc":"UI数据模型",
+                "href":""
+            },{
+                "name":"neoui",
+                "desc":"UI框架",
+                "href":""
+            },{
+                "name":"sparrow",
+                "desc":"前端基础库",
+                "href":""
+            },{
+                "name":"bee",
+                "desc":"react 组件库",
+                "href":""
+            }]
+            
+        }, {
+            "name": "开发服务",
+            "href": "javascript:void(0)",
+            "idFlag":"service",
+             "sub":[{
+                "name":"样式版",
+                "href":""
+            },{
+                "name":"应用模板中心",
+                "href":""
+            },{
+                "name":"资源下载",
+                "href":""
+            },{
+                "name":"可视化设计器",
+                "href":"http://design.yyuap.com/designer/"
+            }]
+        }, {
+            "name": "Nodejs框架库",
+            "href": "javascript:void(0)"
+        }, {
+            "name": "移动开发",
+            "href": "javascript:void(0)"
+        }]
+    }, {
+        "name": "方案",
+        "href": "javascript:void(0)"
+    }, {
+        "name": "开发者中心",
+        "href": "javascript:void(0)"
+    }, {
+        "name": "技术支持",
+        "href": "https://github.com/iuap-design/tinper.org/issues"
+    }],
+    "product": [{
+        "name": "前端集成开发工具uba",
+        "href": "/dist/uba/index.html",
+        "img":"uf uf-uba-col",
+        "introduce": "tinper-uba 是一个集项目初始化、本地服务、数据模拟、资源编译、发布部署于一体的前端集成开发工具。为您提供多种项目最佳实践，使用五条命令即可打通开发全过程。轻量小巧，上手简单，是你强大的开发助手。",
+        "features": [{
+            "name": "功能强大",
+            "img": "uf uf-leaf",
+            "desc": "uba是一个集合并、压缩、模板生成、打包及发布为一体的前端application开发工具"
+        }, {
+            "name": "操作简单",
+            "img": "uf uf-bullseye",
+            "desc": "指令简单易用，提供完善的帮助文档,帮助开发人员专注开发"
+        }, {
+            "name": "快速构建应用",
+            "img": "uf uf-4square",
+            "desc": "生成项目结构明朗清晰，同时内部集成强大的tinper前端组件库，可快速搭建起前端项目"
+        }, {
+            "name": "多平台支持",
+            "img": "uf uf-equipment",
+            "desc": "使用npm发包，覆盖主流开发平台，便于代码迁移"
+        }]
+    }, {
+        "name": "UI框架neoui",
+        "href": "/dist/neoui/index.html",
+        "img":"uf uf-neoui-col",
+        "introduce": "tinper-neoui是基于 UI 设计语言 iuap design 实现的企业级前端UI框架，包含丰富的全局样式、丰富的CSS组件和JavaScript插件，并且提供丰富的字体图标。tinper-neoui帮助用户快速构建标准一致的前端页面，提高开发效率。",
+        "features": [{
+            "name": "响应式",
+            "img": "uf uf-grid",
+            "desc": "提供响应式解决方案，组件多端适配，一次代码书写，多端运行"
+        }, {
+            "name": "浏览器兼容性",
+            "img": "uf uf-equipment",
+            "desc": "支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题",
+            "link": "https://github.com/iuap-design/tinper-neoui-polyfill/blob/release/README.md"
+        }, {
+            "name": "按需定制",
+            "img": "uf uf-rulerpen",
+            "desc": "开发者可以通过自定义 Syle样式组件、JavaScript 插件，定制一份属于特制的neoui框架"
+        }, {
+            "name": "丰富的组件",
+            "img": "uf uf-puzzle-o",
+            "desc": "丰富的CSS组件、30+个JavaScript插件并在持续开发中，代码简洁、 规范、易于修改"
+        }, {
+            "name": "完善文档示例",
+            "img": "uf uf-book",
+            "desc": "每个组件都有详细的文档讲解、API说明、示例展示，用户可以在线调试，下载示例"
+        }]
+    }, {
+        "name": "React组件库bee",
+        "href": "http://bee.tinper.org/",
+        "img":"uf uf-bee-col",
+        "introduce": "tinper-bee 是基于 iuap design 的 react 组件库，包含丰富的基础组件和应用组件，支持组件的灵活调用和扩展，助力快速进行应用的组件化开发。",
+        "features": [{
+            "name": "组件支持可插拔使用",
+            "img": "uf uf-plug-o",
+            "desc": "支持组件单独引入，需要哪个引入哪个，不添加冗余文件"
+        }, {
+            "name": "提供丰富基础组件",
+            "img": "uf uf-puzzle-o",
+            "desc": "包含大量简单易用的基础组件，支持快速搭建页面的结构性组件，适用于企业应用的复杂表单表格组件"
+        }, {
+            "name": "丰富的企业级特性组件",
+            "img": "uf uf-qi-c-o",
+            "desc": "提供适用于企业级应用的表单，表格和grid组件，满足您大量数据处理操作展示和复杂交互需求"
+        }, {
+            "name": "支持组件的扩展和自定义",
+            "img": "uf uf-rulerpen",
+            "desc": "每个组件提供了丰富的API接口和充分自由度给用户来定义自己的组件，实现用户想要的效果和特性"
+        }]
+    }, {
+        "name": "表格控件grid",
+        "href": "/dist/grid/index.html",
+        "img":"uf uf-gridlogo",
+        "introduce": "Grid表格控件将数据以表格的方式进行展示，同时提供了排序、交换列、数字列、复选、合计、自定义渲染、修改等复杂功能，满足了复杂场景下数据展示的需求。",
+        "features": [{
+            "name": "多终端支持",
+            "img": "uf uf-equipment",
+            "desc": "支持IE8+、Firefox、Chrome、safari等多平台主流浏览器"
+        }, {
+            "name": "功能强大",
+            "img": "uf uf-super",
+            "desc": "支持表格排序、交换列、数字列、复选、合计等复杂功能"
+        }, {
+            "name": "丰富组件配套",
+            "img": "uf uf-puzzle-o",
+            "desc": "与neoui完美结合，打造致美表格控"
+        }, {
+            "name": "完善的文档说明",
+            "img": "uf uf-book",
+            "desc": "从快速上手到具体使用进行详细说明，每个API都有详细文档讲解、示例展示，方便用户使用"
+        }]
+    }, {
+        "name": "UI数据模型kero",
+        "href": "/dist/kero/index.html",
+        "img":"uf uf-kero-col",
+        "introduce": "kero是一个基于knockout扩展的Library，做为MVVM架构中Model层的增强，提供多维数据模型，解决企业应用中复杂的业务应用场景的开发问题",
+        "features": [{
+            "name": "多终端支持",
+            "img": "uf uf-equipment",
+            "desc": "支持IE8+、Firefox、Chrome、safari等多平台主流浏览器"
+        }, {
+            "name": "完善的控件体系",
+            "img": "uf uf-leaf",
+            "desc": "包含常用控件，常见NeoUI，支持多端适配"
+        }, {
+            "name": "双向数据绑定",
+            "img": "uf uf-link",
+            "desc": "实现了模型与UI之间的双向自动更新"
+        }, {
+            "name": "多维数据模型",
+            "img": "uf uf-box-o-2",
+            "desc": "解决了字段关联、主子数据、主子孙等多维数据模型的绑定问题"
+        }, {
+            "name": "完善的文档说明",
+            "img": "uf uf-book",
+            "desc": "从快速上手到具体使用进行详细说明，每个API都有详细文档讲解、示例展示，方便用户使用"
+        }]
+    }, {
+        "name": "前端基础库sparrow",
+        "href": "/dist/sparrow/index.html",
+        "img":"uf  uf-sparrow-col",
+        "introduce": "tinper-sparrow 是一个轻量级 javascript 库，让开发者能更方便地进行 DOM操作、events处理、动画效果实现和AJAX交互等，并且提供丰富的API封装，如多平台多浏览器判断、Cookies操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。",
+        "features": [{
+            "name": "多终端支持",
+            "img": "uf uf-equipment",
+            "desc": "支持IE8+ 、firefox、Chrome、Safari等主流浏览器，支持iOS、Android、windows、MAC"
+        }, {
+            "name": "丰富的工具方法",
+            "img": "uf uf-leaf",
+            "desc": "方便进行DOM操作、AJAX交互，提供多平台多浏览器判断、Cookies操作、数据类型处理等一系列功能方法"
+        }, {
+            "name": "完善的文档说明",
+            "img": "uf uf-book",
+            "desc": "从快速上手到具体使用进行详细说明，每个API都有详细文档讲解、示例展示，方便用户使用"
+        }, {
+            "name": "ES6语法特性",
+            "img": "uf uf-es",
+            "desc": "核心代码使用ES6语法编写，发挥全新语法特性优势，支持API按需导入"
+        }]
+    }]
 }
