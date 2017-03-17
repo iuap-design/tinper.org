@@ -14,7 +14,7 @@
             "sub":[{
                 "name": "uba",
                 "desc":"前端集成开发工具",
-                "href":""
+                "href":"/dist/uba/index.html"
             },{
                 "name": "bee-tools",
                 "desc":"组件开发工具",
@@ -31,19 +31,19 @@
             },{
                 "name":"kero",
                 "desc":"UI数据模型",
-                "href":""
+                "href":"/dist/kero/index.html"
             },{
                 "name":"neoui",
                 "desc":"UI框架",
-                "href":""
+                "href":"/dist/neoui/index.html"
             },{
                 "name":"sparrow",
                 "desc":"前端基础库",
-                "href":""
+                "href":"/dist/sparrow/index.html"
             },{
                 "name":"bee",
                 "desc":"react 组件库",
-                "href":""
+                "href":"http://bee.tinper.org"
             }]
             
         }, {
@@ -52,13 +52,13 @@
             "idFlag":"service",
              "sub":[{
                 "name":"样式版",
-                "href":""
+                "href":"http://tinper.org/webide"
             },{
                 "name":"应用模板中心",
-                "href":""
+                "href":"http://design.yyuap.com/mall"
             },{
                 "name":"资源下载",
-                "href":""
+                "href":"http://tinper.org/dist/log/docs/changelog.html"
             },{
                 "name":"可视化设计器",
                 "href":"http://design.yyuap.com/designer/"
