@@ -6,6 +6,9 @@ $(document).ready(function() {
         $targetDom.toggleClass("in");
 
     });
+    var paddingLeft = $('.u-navbar-header a img').offset()?$('.u-navbar-header a img').offset().left:130;
+
+    $('.tab-content').css({'padding-left':paddingLeft});
 
     //导航
     $('.nav-first-sub').mouseenter(function() {

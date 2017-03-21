@@ -488,7 +488,9 @@ a.product_img.sparrow_link:hover:before {
 .products-item-img {
     color: #607d8b;
     display: block;
-    font-size: 48px;
+    // font-size: 48px;
+    font-size: 26px;
+    text-align: center;
 }
 
 .products-item-img::before {
@@ -496,11 +498,36 @@ a.product_img.sparrow_link:hover:before {
     border-radius: 50%;
     box-shadow: none;
     display: block;
-    height: 64px;
+    height: 100px;
+    line-height:100px;
     margin: 0 auto;
     padding: 8px;
     transition: box-shadow .2s;
-    width: 64px;
+    width: 100px;
+}
+
+.products-item-img.uf-uba-col:before {
+    content: "uba";
+}
+
+.products-item-img.uf-neoui-col:before {
+    content: "neoui";
+}
+
+.products-item-img.uf-bee-col:before {
+    content: "bee";
+}
+
+.products-item-img.uf-gridlogo:before {
+    content: "grid";
+}
+
+.products-item-img.uf-kero-col:before {
+    content: "kero";
+}
+
+.products-item-img.uf-sparrow-col:before {
+    content: "sparrow";
 }
 
 .products-item-img:hover::before {
