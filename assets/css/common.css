@@ -751,3 +751,12 @@ a.product_img.sparrow_link:hover:before {
 .tab-content-right li.active a .desc {
     color: #FFF;
 }
+
+
+@media (max-width: 767px) {
+    
+    .part1 {
+        position:relative;
+        z-index:-1;
+    }
+}
