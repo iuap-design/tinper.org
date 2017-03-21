@@ -75,7 +75,7 @@
         "href": "javascript:void(0)"
     }, {
         "name": "开发者中心",
-        "href": "javascript:void(0)"
+        "href": "./docs/moy/"
     }, {
         "name": "技术支持",
         "href": "https://github.com/iuap-design/tinper.org/issues"
