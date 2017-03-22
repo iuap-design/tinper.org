@@ -27,7 +27,7 @@
             "sub":[{
                 "name":"moy",
                 "desc":"应用框架",
-                "href":""
+                "href":"javascript:void(0)"
             },{
                 "name":"kero",
                 "desc":"UI数据模型",
@@ -52,7 +52,7 @@
             "idFlag":"service",
              "sub":[{
                 "name":"样式版",
-                "href":"http://tinper.org/webide"
+                "href":"./webide"
             },{
                 "name":"应用模板中心",
                 "href":"http://design.yyuap.com/mall"
