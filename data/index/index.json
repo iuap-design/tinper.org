@@ -21,7 +21,7 @@
                 "href":""
             }]
         }, {
-            "name": "前端框架库",
+            "name": "前端框架和类库",
             "href": "javascript:void(0)",
             "idFlag":"front",
             "sub":[{
@@ -58,13 +58,13 @@
                 "href":"http://design.yyuap.com/mall"
             },{
                 "name":"资源下载",
-                "href":"http://tinper.org/dist/log/docs/changelog.html"
+                "href":"./dist/log/docs/changelog.html"
             },{
                 "name":"可视化设计器",
                 "href":"http://design.yyuap.com/designer/"
             }]
         }, {
-            "name": "Nodejs框架库",
+            "name": "Nodejs框架和类库",
             "href": "javascript:void(0)"
         }, {
             "name": "移动开发",

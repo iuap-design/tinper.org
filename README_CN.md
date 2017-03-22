@@ -8,7 +8,7 @@
 
 ## 介绍
 
-`tinper.org`是`tinper`框架的官网仓库，用于存放`tinepr`相关文档及示例。
+`tinper.org`是`tinper`框架的官网仓库，用于存放`tinper`相关文档及示例。
 
 > 在线webIDE示例查看，可移至此仓库查看：[tinper-webide](https://github.com/iuap-design/tinper-webide)
 

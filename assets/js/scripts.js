@@ -46,7 +46,7 @@ $(document).ready(function() {
         $(this).addClass('active').siblings().removeClass('active');
         var firstTab = $(this).find('a').attr('index');
         //有对应的右侧内容则显示，没有则清空右侧区域
-        if (firstTab) {
+        if (firstTab && firstTab!=="#") {
 
             $('.tab-content-right li ').removeClass('active');
 
