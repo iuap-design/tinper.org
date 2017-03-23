@@ -14,11 +14,7 @@
             "sub":[{
                 "name": "uba",
                 "desc":"前端集成开发工具",
-                "href":"/dist/uba/index.html"
-            },{
-                "name": "bee-tools",
-                "desc":"组件开发工具",
-                "href":""
+                "href":"./docs/uba/"
             }]
         }, {
             "name": "前端框架和类库",
@@ -27,19 +23,19 @@
             "sub":[{
                 "name":"moy",
                 "desc":"应用框架",
-                "href":"javascript:void(0)"
+                "href":"./docs/moy"
             },{
                 "name":"kero",
                 "desc":"UI数据模型",
-                "href":"/dist/kero/index.html"
+                "href":"./docs/moy/kero-begin.html"
             },{
                 "name":"neoui",
                 "desc":"UI框架",
-                "href":"/dist/neoui/index.html"
+                "href":"./docs/neoui"
             },{
                 "name":"sparrow",
                 "desc":"前端基础库",
-                "href":"/dist/sparrow/index.html"
+                "href":"./docs/sparrow"
             },{
                 "name":"bee",
                 "desc":"react 组件库",
@@ -63,19 +59,10 @@
                 "name":"可视化设计器",
                 "href":"http://design.yyuap.com/designer/"
             }]
-        }, {
-            "name": "Nodejs框架和类库",
-            "href": "javascript:void(0)"
-        }, {
-            "name": "移动开发",
-            "href": "javascript:void(0)"
         }]
     }, {
-        "name": "方案",
-        "href": "javascript:void(0)"
-    }, {
         "name": "开发者中心",
-        "href": "./docs/moy/"
+        "href": "./docs/moy"
     }, {
         "name": "技术支持",
         "href": "https://github.com/iuap-design/tinper.org/issues"
@@ -114,7 +101,7 @@
         }, {
             "name": "浏览器兼容性",
             "img": "uf uf-equipment",
-            "desc": "支持IE8+ 、firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题",
+            "desc": "支持IE8+ 、Firefox、Chrome、Safari等主流浏览器，轻松帮您解决浏览器兼容问题",
             "link": "https://github.com/iuap-design/tinper-neoui-polyfill/blob/release/README.md"
         }, {
             "name": "按需定制",
@@ -159,7 +146,7 @@
         "features": [{
             "name": "多终端支持",
             "img": "uf uf-equipment",
-            "desc": "支持IE8+、Firefox、Chrome、safari等多平台主流浏览器"
+            "desc": "支持IE8+、Firefox、Chrome、Safari等多平台主流浏览器"
         }, {
             "name": "功能强大",
             "img": "uf uf-super",
@@ -181,7 +168,7 @@
         "features": [{
             "name": "多终端支持",
             "img": "uf uf-equipment",
-            "desc": "支持IE8+、Firefox、Chrome、safari等多平台主流浏览器"
+            "desc": "支持IE8+、Firefox、Chrome、Safari等多平台主流浏览器"
         }, {
             "name": "完善的控件体系",
             "img": "uf uf-leaf",
@@ -207,7 +194,7 @@
         "features": [{
             "name": "多终端支持",
             "img": "uf uf-equipment",
-            "desc": "支持IE8+ 、firefox、Chrome、Safari等主流浏览器，支持iOS、Android、windows、MAC"
+            "desc": "支持IE8+ 、Firefox、Chrome、Safari等主流浏览器，支持iOS、Android、Windows、MAC"
         }, {
             "name": "丰富的工具方法",
             "img": "uf uf-leaf",

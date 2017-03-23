@@ -32,7 +32,7 @@ $(document).ready(function() {
        //tabId不存在的话，隐藏所有的子菜单
      
        //如果tabId存在，则显示子菜单内容。
-       if (tabId) {
+       if (tabId && tabId!=="#") {
           if($(tabId).is( ":hidden" )){
             $(tabId).slideDown();
           }
@@ -94,8 +94,6 @@ $(document).ready(function() {
             return;
         }
         $(".products-item-popout").hide();
-
-
         var $arrow = $popout.find('.product-item-popout-down-arrow');
         var leftValue = this.offsetLeft + this.offsetWidth / 2 - 6;
         //加上内容的margin
@@ -104,6 +102,12 @@ $(document).ready(function() {
         $popout.show();
 
         $arrow.css({ left: leftValue + 'px' });
+
+        //给圆形添加box-shadow效果
+        //先去掉其他的圆形的box-shadow效果
+        $('.products-item-img').removeClass('active');
+        $(this).find('.products-item-img').addClass('active');
+        
     });
 
     $('.product-item-close-btn').click(function() {
