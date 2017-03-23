@@ -14,7 +14,7 @@
             "sub":[{
                 "name": "uba",
                 "desc":"前端集成开发工具",
-                "href":"./docs/uba/"
+                "href":"http://docs.tinper.org/uba"
             }]
         }, {
             "name": "前端框架和类库",
@@ -23,19 +23,19 @@
             "sub":[{
                 "name":"moy",
                 "desc":"应用框架",
-                "href":"./docs/moy"
+                "href":"http://docs.tinper.org/moy"
             },{
                 "name":"kero",
                 "desc":"UI数据模型",
-                "href":"./docs/moy/kero-begin.html"
+                "href":"http://docs.tinper.org/moy/kero-begin.html"
             },{
                 "name":"neoui",
                 "desc":"UI框架",
-                "href":"./docs/neoui"
+                "href":"http://docs.tinper.org/neoui"
             },{
                 "name":"sparrow",
                 "desc":"前端基础库",
-                "href":"./docs/sparrow"
+                "href":"http://docs.tinper.org/sparrow"
             },{
                 "name":"bee",
                 "desc":"react 组件库",
@@ -62,7 +62,7 @@
         }]
     }, {
         "name": "开发者中心",
-        "href": "./docs/moy"
+        "href": "http://docs.tinper.org/moy"
     }, {
         "name": "技术支持",
         "href": "https://github.com/iuap-design/tinper.org/issues"
