@@ -23,7 +23,7 @@
 
                 {{{each nav as top}}}
                     <li class="dropdown" index="#{{{top.idFlag}}}">
-                        <a class="nav-par" href="{{{top.href}}}">{{{top.name}}}</a>
+                        <a class="nav-par" href="{{{top.href}}}" >{{{top.name}}}</a>
                         {{{if top.sub}}}
                             <ul class="hide">
                                 {{{each top.sub as second}}}
@@ -99,7 +99,7 @@
                                             {{{else}}}
                                                 <li>
                                             {{{/if}}}
-                                                <a href="{{{navsub.href}}}">
+                                                <a href="{{{navsub.href}}}" target="_blank">
                                                     <p class="title">{{{navsub.name}}}</p>
                                                     <p class="desc">{{{navsub.desc}}}</p>
                                                 </a>
