@@ -30,7 +30,7 @@ $(document).ready(function() {
        var tabId = $(this).attr('index');
 
        //tabId不存在的话，隐藏所有的子菜单
-     
+
        //如果tabId存在，则显示子菜单内容。
        if (tabId && tabId!=="#") {
           if($(tabId).is( ":hidden" )){
@@ -107,7 +107,7 @@ $(document).ready(function() {
         //先去掉其他的圆形的box-shadow效果
         $('.products-item-img').removeClass('active');
         $(this).find('.products-item-img').addClass('active');
-        
+
     });
 
     $('.product-item-close-btn').click(function() {
@@ -150,7 +150,12 @@ $(document).ready(function() {
         }
 
     });
-
+    //版本下载中，其他场景下载显示
+    $('.down_info>p>span').click(function(){
+        var $this = $(this);
+        $this.parent().next().toggleClass('show-down');
+    });
+    
     $(".examples-code code").mouseout(function() {
         $(this).removeClass('copied');
         // window.getSelection().removeAllRanges();

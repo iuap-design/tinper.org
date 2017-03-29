@@ -1,3 +1,51 @@
+<a name="3.2.0"></a>
+<h2 class="logtit"> V3.2.0 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-3-28)</i></h2>
+
+<div class="down_info">
+<p>更多场景下载：<span>点击展开</span></p>
+<ul>
+<li ><p><a href="//design.yyuap.com/static/download/tinper-neoui-3.2.0.zip">neoui组件:</a>企业级前端UI框架</p></li>
+<li ><p><a href="//design.yyuap.com/static/download/neoui-kero-3.2.0.zip">kero组件:</a>包含前端UI框架以及多维数据模型</p></li>
+<li ><p><a href="//design.yyuap.com/static/download/kero-fetch-3.2.0.zip">kero-fetch:</a>对服务器交互时所需的方法进行封装</p></li>
+<li ><p><a href="//design.yyuap.com/static/download/tinper-neoui-polyfill-3.2.0.zip">IE8兼容:</a>针对IE8进行浏览器适配处理</p></li>
+<li ><p><a href="//design.yyuap.com/static/download/tinper-sparrow-3.2.0.zip">前端基础库:</a>前端基础库</p></li>
+</ul>
+</div>
+
+### Bug Fixes
+* 下拉组件由隐藏切换为显示时显示存在问题 ([51f6340](https://github.com/iuap-design/tinper-neoui/commit/51f6340))
+
+* 币种组件不再显示币种效果 ([70dac96](https://github.com/iuap-design/neoui-kero/commit/70dac96))
+
+* 解决grid超过10列之后交换最后一列导致显示错误的问题 ([01592de](https://github.com/iuap-design/tinper-neoui-grid/commit/01592de9c7e388f7c8845e5426ad8f4cbd86bae0))
+
+### Features
+
+
+* dialog组件新增拖拽功能 ([08b18a1](https://github.com/iuap-design/tinper-neoui/commit/08b18a1))
+
+* addSimpleData增加参数控制是否选中第一行 ([2aa0a3f](https://github.com/iuap-design/kero/commit/2aa0a3f66c3febe2c068de9ca462c86109e66e73))
+
+* 优化子表获取字段逻辑，没有当前行的情况下获取第一行 ([f077032](https://github.com/iuap-design/kero/commit/f077032542d9a20556ea18609f25804090df48cd))
+
+* datatable、row文档完善属性说明 ([0c30e86](https://github.com/iuap-design/kero/commit/0c30e86a8e3bb7aff5a8ce14f668762698898519))
+
+* 树表情况下增加不同的class以区分不同层级的节点 ([a5f1da2](https://github.com/iuap-design/tinper-neoui-grid/commit/a5f1da2abd5694a35c20e21e0e1e8db9bd356627))
+
+* grid支持多级表头 ([e3dc21b](https://github.com/iuap-design/tinper-neoui-grid/commit/e3dc21bdc80f21500a03a83cad269912390c5bdc))
+
+* 优化grid组件添加function的方式 ([230af94](https://github.com/iuap-design/tinper-neoui-grid/commit/230af94b757476e273a9a95b4a2612f00235a116))
+
+* grid组件使用comboRender及radioRender时可以直接在column上定义datasource ([2cbbe2a](https://github.com/iuap-design/neoui-kero/commit/2cbbe2a))
+
+* 优化grid编辑时只重绘当前编辑单元格，不再重绘整行数据 ([a0e6d84](https://github.com/iuap-design/tinper-neoui-grid/commit/a0e6d84116eb4e5b935f13f3cca9dd899b685f1a))
+
+* grid增加参数支持控制左右对齐 ([			cb7c48c](https://github.com/iuap-design/tinper-neoui-grid/commit/cb7c48cbf5e0a821ecf924e59d4e6023b32b82ea))
+
+* neoui-kero支持按照组件产出对应的js文件以方便项目使用 ([f0bc2b9](https://github.com/iuap-design/neoui-kero/commit/f0bc2b9))
+
+* 输入组件支持placeholder属性 ([9d67ed0](https://github.com/iuap-design/neoui-kero/commit/9d67ed0))
+
 <a name="3.1.27"></a>
 <h2 class="logtit"> V3.1.27 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.27.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-2-23)</i></h2>
 

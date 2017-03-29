@@ -333,3 +333,20 @@ p + h2.logtit{
     padding-top:20px;
     border-top:1px dotted #666;
 }
+
+/**
+ * 版本下载样式
+ */
+.down_info{
+
+}
+.down_info span{
+    color: #4caf50;
+    cursor: pointer;
+}
+.down_info>ul{
+    display: none;
+}
+.down_info>ul.show-down{
+    display: block;
+}

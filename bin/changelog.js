@@ -116,9 +116,22 @@ for(var i in featAllArr){
 	featStr += nowForStr + '\r\n\r\n';
 }
 
-
-
 var allStr = '<a name="' + nextAllVersion + '"></a>\r\n<h2 class="logtit"> ' + 'V'+ nextAllVersion + ' ' + '<a class="u-button u-button-floating loglink" href=' + '"//design.yyuap.com/static/download/iuap-design-'+ nextAllVersion + '.zip">' + '<i class="icon uf uf-downloadd logicon"></i></a> ' + '<i class="logdate">(' + dateStr + ')</i></h2>\r\n\r\n';
+var version_array = nextAllVersion.split('.');
+if(nextAllVersion&&version_array.length>1){
+	if(version_array[0]>=3&&version_array[1]>=2){
+		allStr +=
+		'<div class="down_info">\r\n'+
+			'<ul>\r\n'+
+				'<li ><p><a href="#">neoui组件:</a>企业级前端UI框架</p></li>'+
+				'<li ><p>kero组件<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型</p></li>'+
+				'<li ><p>kero-fetch<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>对服务器交互时所需的方法进行封装</p></li>'+
+				'<li ><p>IE8兼容<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>针对IE8进行浏览器适配处理</p></li>'+
+				'<li ><p>前端基础库<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>前端基础库</p></li>'+
+			'</ul>\r\n'+
+		'</div>\r\n';
+	}
+}
 if(proStr || otherStr){
 	allStr += '### Bug Fixes \r\n';
 	allStr += proStr;
