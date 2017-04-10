@@ -313,6 +313,7 @@ p code{
 /*changelog页面样式*/
 .article-container a.loglink{
     background: #4caf50;
+    margin: 0 5px;
 }
 .article-container a.loglink:hover{
     background: #fff;
@@ -345,7 +346,7 @@ p + h2.logtit{
     cursor: pointer;
 }
 .down_info>ul{
-    display: none;
+    /*display: none;*/
 }
 .down_info>ul.show-down{
     display: block;

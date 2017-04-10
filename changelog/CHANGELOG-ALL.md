@@ -2,13 +2,12 @@
 <h2 class="logtit"> V3.2.0 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-3-28)</i></h2>
 
 <div class="down_info">
-<p>更多场景下载：<span>点击展开</span></p>
+<h3>场景下载：</h3>
 <ul>
-<li ><p><a href="//design.yyuap.com/static/download/tinper-neoui-3.2.0.zip">neoui组件:</a>企业级前端UI框架</p></li>
-<li ><p><a href="//design.yyuap.com/static/download/neoui-kero-3.2.0.zip">kero组件:</a>包含前端UI框架以及多维数据模型</p></li>
-<li ><p><a href="//design.yyuap.com/static/download/kero-fetch-3.2.0.zip">kero-fetch:</a>对服务器交互时所需的方法进行封装</p></li>
-<li ><p><a href="//design.yyuap.com/static/download/tinper-neoui-polyfill-3.2.0.zip">IE8兼容:</a>针对IE8进行浏览器适配处理</p></li>
-<li ><p><a href="//design.yyuap.com/static/download/tinper-sparrow-3.2.0.zip">前端基础库:</a>前端基础库</p></li>
+<li ><p>neoui组件:&nbsp;<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li>
+<li ><p>kero组件:&nbsp;&nbsp;&nbsp;<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/neoui-kero-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li>
+<li ><p>IE8兼容:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-polyfill-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>针对IE浏览器兼容处理的js功能方法<a target="blank" href="http://docs.tinper.org/sparrow/#样式">----文档地址</a></p></li>
+<li ><p>前端基础库:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-sparrow-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>一些常用的基础方法，如操作cookie等<a target="blank" href="http://docs.tinper.org/sparrow/">----文档地址</a></p></li>
 </ul>
 </div>
 
