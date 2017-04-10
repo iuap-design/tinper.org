@@ -6,7 +6,7 @@
 <ul>
 <li ><p>neoui组件:&nbsp;<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li>
 <li ><p>kero组件:&nbsp;&nbsp;&nbsp;<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/neoui-kero-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li>
-<li ><p>IE8兼容:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-polyfill-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>针对IE浏览器兼容处理的js功能方法<a target="blank" href="http://docs.tinper.org/sparrow/#样式">----文档地址</a></p></li>
+<li ><p>IE8兼容:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-polyfill-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>对一些js方法的IE浏览器兼容</p></li>
 <li ><p>前端基础库:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-sparrow-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>一些常用的基础方法，如操作cookie等<a target="blank" href="http://docs.tinper.org/sparrow/">----文档地址</a></p></li>
 </ul>
 </div>
