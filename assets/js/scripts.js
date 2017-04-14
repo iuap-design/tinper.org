@@ -37,9 +37,13 @@ $(document).ready(function() {
             $(tabId).slideDown();
           }
        }else{
-          $('.tab-content').css({'display':'none'});
+        //   $('.tab-content').css({'display':'none'});
        }
+       $(this).closest('.u-navbar').off().on('mouseleave',function(){
+           $('.tab-content').css({'display':'none'});
+       })
     });
+
 
     //子菜单导航
     $('.tab-content-left li').on('mouseover', function() {
@@ -155,7 +159,7 @@ $(document).ready(function() {
         var $this = $(this);
         $this.parent().next().toggleClass('show-down');
     });
-    
+
     $(".examples-code code").mouseout(function() {
         $(this).removeClass('copied');
         // window.getSelection().removeAllRanges();
