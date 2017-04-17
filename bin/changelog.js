@@ -124,11 +124,11 @@ if(nextAllVersion&&version_array.length>1){
 		'<div class="down_info">\r\n'+
 			'<h3>场景下载</h3>\r\n'+
 			'<ul>\r\n'+
-				'<li ><p>neoui组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架</p><a target="_blank" href="http://docs.tinper.org/neoui/">----文档地址</a></li>'+
-				'<li ><p>kero组件<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/neoui-kero-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型</p><a target="_blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></li>'+
-				// '<li ><p>kero-fetch<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/kero-fetch-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>对服务器交互时所需的方法进行封装</p><a target="_blank" href="">----文档地址</a></li>'+
-				'<li ><p>IE8兼容<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-polyfill-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>针对IE8进行浏览器适配处理</p></li>'+
-				'<li ><p>前端基础库<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-sparrow-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>前端基础库</p><a target="_blank" href="http://docs.tinper.org/sparrow/">----文档地址</a></li>'+
+				'<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标</p><a target="_blank" href="http://docs.tinper.org/neoui/">----文档地址</a></li>'+
+				'<li ><p>包含UI组件和kero组件<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/neoui-kero-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型</p><a target="_blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></li>'+
+				'<li ><p>前端请求封装<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/kero-fetch-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>涉及到与服务器交互时的封装方法</p><a target="_blank" href="">----文档地址</a></li>'+
+				// '<li ><p>IE8兼容<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-polyfill-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>针对IE8进行浏览器适配处理</p></li>'+
+				// '<li ><p>前端基础库<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-sparrow-'+ nextAllVersion + '.zip"><i class="icon uf uf-downloadd logicon"></i></a>前端基础库</p><a target="_blank" href="http://docs.tinper.org/sparrow/">----文档地址</a></li>'+
 			'</ul>\r\n'+
 		'</div>\r\n';
 	}

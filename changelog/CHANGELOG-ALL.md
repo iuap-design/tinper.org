@@ -4,10 +4,11 @@
 <div class="down_info">
 <h3>场景下载：</h3>
 <ul>
-<li ><p>neoui组件:&nbsp;<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li>
-<li ><p>kero组件:&nbsp;&nbsp;&nbsp;<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/neoui-kero-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型，解决企业应用中复杂的业务应用场景的开发问题<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li>
-<li ><p>浏览器兼容:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-polyfill-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>让一些低级的浏览器支持最新的ecmascript5的一些特性</p></li>
-<li ><p>前端基础库:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-sparrow-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>一些常用的基础方法，如操作cookie等<a target="blank" href="http://docs.tinper.org/sparrow/">----文档地址</a></p></li>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标----<a target="blank" href="http://docs.tinper.org/neoui/">文档地址</a></p></li>
+<li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/neoui-kero-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型----<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">文档地址</a></p></li>
+<li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/kero-fetch-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法----<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">文档地址</a></p></li>
+<!-- <li ><p>浏览器兼容:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-polyfill-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>让一些低级的浏览器支持最新的es5的一些特性----<a target="blank" href="http://docs.tinper.org/moy/IE.html">文档地址</a></p></li> -->
+<!-- <li ><p>前端基础库:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-sparrow-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>一些常用的基础方法，如操作cookie等----<a target="blank" href="http://docs.tinper.org/sparrow/">文档地址</a></p></li> -->
 </ul>
 </div>
 

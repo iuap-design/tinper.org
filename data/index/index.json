@@ -41,7 +41,7 @@
                 "desc":"react 组件库",
                 "href":"http://bee.tinper.org"
             }]
-            
+
         }, {
             "name": "开发服务",
             "href": "javascript:void(0)",
@@ -55,6 +55,9 @@
             },{
                 "name":"资源下载",
                 "href":"./dist/log/docs/changelog.html"
+            },{
+                "name":"定制下载",
+                "href":"./dist/package/index.html"
             },{
                 "name":"可视化设计器",
                 "href":"http://design.yyuap.com/designer/"
