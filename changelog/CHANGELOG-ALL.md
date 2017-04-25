@@ -1,3 +1,60 @@
+<a name="3.2.1"></a>
+<h2 class="logtit"> V3.2.1 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-4-25)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/neoui-kero-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/kero-fetch-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+
+### Bug Fixes
+
+* 解决focus为最后一行，删除最后一行之后重新设置为新的最后一行时无法生效的问题 ([f3d0d77](https://github.com/iuap-design/kero/commit/f3d0d77))
+
+* 单选、下拉、多选getShowValue获取不到值 ([860f4c1](https://github.com/iuap-design/neoui-kero/commit/860f4c1))
+
+* 解决clockpickler组件第一次选择00:00无法存储数据的问题 ([0df9705](https://github.com/iuap-design/neoui-kero/commit/0df9705))
+
+* 解决tree通过datatable删除数据时报错的问题 ([12c2900](https://github.com/iuap-design/neoui-kero/commit/12c2900))
+
+* 解决grid中输入时无法通过鼠标滑动选择 ([54d7aa8](https://github.com/iuap-design/tinper-neoui-grid/commit/54d7aa8))
+
+* 解决grid超过10列之后交换最后一列导致显示错误的问题 ([01592de](https://github.com/iuap-design/tinper-neoui-grid/commit/01592de))
+
+* 解决表格全选操作之后翻页需要点击2次才能执行全选操作 ([2eae2b9](https://github.com/iuap-design/tinper-neoui-grid/commit/2eae2b9))
+
+### Features
+
+* addSimpleData增加参数控制是否选中第一行 ([2aa0a3f](https://github.com/iuap-design/kero/commit/2aa0a3f))
+
+* datatable、row文档完善属性说明 ([0c30e86](https://github.com/iuap-design/kero/commit/0c30e86))
+
+* datatable增加resetAllValue、resetValueByRow，row增加setStatus、resetValue用以支持重置数据的业务需求 ([5b13898](https://github.com/iuap-design/kero/commit/5b13898))
+
+* resetAllValue增加判断状态，如果为新增则删除此数据，如果为删除则新增此数据，如果为更新则还原数据 ([b868324](https://github.com/iuap-design/kero/commit/b868324))
+
+* 优化子表获取字段逻辑，没有当前行的情况下获取第一行 ([f077032](https://github.com/iuap-design/kero/commit/f077032))
+
+* 增加API getRowsByIndices ([170e590](https://github.com/iuap-design/kero/commit/170e590))
+
+* grid增加filterDataFun用于在新增数据之前进行过滤 ([3799a5a](https://github.com/iuap-design/tinper-neoui-grid/commit/3799a5a))
+
+* grid增加参数支持控制左右对齐 ([cb7c48c](https://github.com/iuap-design/tinper-neoui-grid/commit/cb7c48c))
+
+* grid支持多级表头 ([e3dc21b](https://github.com/iuap-design/tinper-neoui-grid/commit/e3dc21b))
+
+* grid组件支持动态设置固定列 ([30ef645](https://github.com/iuap-design/tinper-neoui-grid/commit/30ef645))
+
+* 优化grid编辑时只重绘当前编辑单元格，不再重绘整行数据 ([a0e6d84](https://github.com/iuap-design/tinper-neoui-grid/commit/a0e6d84))
+
+* 合计行支持在第一行显示，同时优化多级表头样式 ([48efee1](https://github.com/iuap-design/tinper-neoui-grid/commit/48efee1))
+
+* 增加参数rowHeight、sumRowHeight、headerHeight用于控制行高 ([b9406b8](https://github.com/iuap-design/tinper-neoui-grid/commit/b9406b8))
+
+* 树表情况下增加不同的class以区分不同层级的节点 ([a5f1da2](https://github.com/iuap-design/tinper-neoui-grid/commit/a5f1da2))
+
+* tree插入数据的时候增加指定index处理 ([d9db726](https://github.com/iuap-design/tinper-neoui-tree/commit/d9db726))
+
 <a name="3.2.0"></a>
 <h2 class="logtit"> V3.2.0 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-3-28)</i></h2>
 

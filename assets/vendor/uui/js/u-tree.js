@@ -1,5 +1,12 @@
 /** 
- * tinper-neoui-tree v3.1.2
+ * neoui-kero v3.2.1
+ * neoui kero
+ * author : [object Object]
+ * homepage : https://github.com/iuap-design/neoui-kero#readme
+ * bugs : https://github.com/iuap-design/neoui-kero/issues
+ **/ 
+/** 
+ * tinper-neoui-tree v3.2.1
  * tree
  * author : yonyou FED
  * homepage : https://github.com/iuap-design/tinper-neoui-tree#readme
@@ -372,15 +379,29 @@
 		addInitRoot: function(initRoot) {
 			_init.roots.push(initRoot);
 		},
-		addNodesData: function(setting, parentNode, nodes) {
+		addNodesData: function(setting, parentNode, nodes, index) {
 			var childKey = setting.data.key.children;
-			if (!parentNode[childKey]) parentNode[childKey] = [];
-			if (parentNode[childKey].length > 0) {
+			if (!parentNode[childKey]){
+				 parentNode[childKey] = [];
+				 index = -1;
+			}else if (index >= parentNode[childKey].length) {
+				 index = -1;
+			}
+
+			if (parentNode[childKey].length > 0 && index === 0) {
+				parentNode[childKey][0].isFirstNode = false;
+				view.setNodeLineIcos(setting, parentNode[childKey][0]);
+			}else if (parentNode[childKey].length > 0 && index < 0) {
 				parentNode[childKey][parentNode[childKey].length - 1].isLastNode = false;
 				view.setNodeLineIcos(setting, parentNode[childKey][parentNode[childKey].length - 1]);
 			}
 			parentNode.isParent = true;
-			parentNode[childKey] = parentNode[childKey].concat(nodes);
+			if (index < 0) {
+					parentNode[childKey] = parentNode[childKey].concat(nodes);
+			} else {
+					params = [index, 0].concat(nodes);
+					parentNode[childKey].splice.apply(parentNode[childKey], params);
+			}
 		},
 		addSelectedNode: function(setting, node) {
 			var root = data.getRoot(setting);
@@ -724,7 +745,7 @@
 			//点击时取消所有超链接效果
 			$('#'+event.data.treeId+' a').removeClass('focusNode');
 			//添加focusNode样式
-			
+
 			$('#'+node.tId+'_a').addClass('focusNode');
 
 			var setting = data.getSetting(event.data.treeId),
@@ -828,10 +849,12 @@
 	},
 	//method of operate ztree dom
 	view = {
-		addNodes: function(setting, parentNode, newNodes, isSilent) {
+		addNodes: function(setting, parentNode, newNodes, isSilent, index) {
 			if (setting.data.keep.leaf && parentNode && !parentNode.isParent) {
 				return;
 			}
+			if(!index && index !=0)
+				index = -1
 			if (!tools.isArray(newNodes)) {
 				newNodes = [newNodes];
 			}
@@ -852,14 +875,14 @@
 					});
 				}
 
-				data.addNodesData(setting, parentNode, newNodes);
-				view.createNodes(setting, parentNode.level + 1, newNodes, parentNode);
+				data.addNodesData(setting, parentNode, newNodes, index);
+				view.createNodes(setting, parentNode.level + 1, newNodes, parentNode, index);
 				if (!isSilent) {
 					view.expandCollapseParentNode(setting, parentNode, true);
 				}
 			} else {
-				data.addNodesData(setting, data.getRoot(setting), newNodes);
-				view.createNodes(setting, 0, newNodes, null);
+				data.addNodesData(setting, data.getRoot(setting), newNodes, index);
+				view.createNodes(setting, 0, newNodes, null, index);
 			}
 		},
 		appendNodes: function(setting, level, nodes, parentNode, initFlag, openFlag) {
@@ -956,7 +979,7 @@
 
 			var _tmpV = data.getRoot(setting)._ver;
 			if (setting.async.selfLoadFunc && typeof setting.async.selfLoadFunc == 'function'){
-				setting.async.selfLoadFunc.apply(this, node)	
+				setting.async.selfLoadFunc.apply(this, node)
 			}
 			else{
 				$.ajax({
@@ -982,7 +1005,7 @@
 						} catch(err) {
 							newNodes = msg;
 						}
-	
+
 						if (node) {
 							node.isAjaxing = null;
 							node.zAsync = true;
@@ -1039,8 +1062,8 @@
 				}
 			}
 		},
-		createNodes: function(setting, level, nodes, parentNode) {
-			if (!nodes || nodes.length == 0) return;
+		createNodes: function(setting, level, nodes, parentNode,index) {
+			/*if (!nodes || nodes.length == 0) return;
 			var root = data.getRoot(setting),
 			childKey = setting.data.key.children,
 			openFlag = !parentNode || parentNode.open || !!$$(parentNode[childKey][0], setting).get(0);
@@ -1054,6 +1077,37 @@
 					ulObj.append(zTreeHtml.join(''));
 				}
 			}
+			view.createNodeCallback(setting);*/
+
+			if (!nodes || nodes.length == 0) return;
+			var root = data.getRoot(setting),
+					childKey = setting.data.key.children,
+					openFlag = !parentNode || parentNode.open || !!$$(parentNode[childKey][0], setting).get(0);
+			root.createdNodes = [];
+			var zTreeHtml = view.appendNodes(setting, level, nodes, parentNode, true, openFlag),
+					parentObj, nextObj;
+
+			if (!parentNode) {
+					parentObj = setting.treeObj;
+					//setting.treeObj.append(zTreeHtml.join(''));
+			} else {
+					var ulObj = $$(parentNode, consts.id.UL, setting);
+					if (ulObj.get(0)) {
+							parentObj = ulObj;
+							//ulObj.append(zTreeHtml.join(''));
+					}
+			}
+			if (parentObj) {
+					if (index >= 0) {
+							nextObj = parentObj.children()[index];
+					}
+					if (index >= 0 && nextObj) {
+							$(nextObj).before(zTreeHtml.join(''));
+					} else {
+							parentObj.append(zTreeHtml.join(''));
+					}
+			}
+
 			view.createNodeCallback(setting);
 		},
 		destroy: function(setting) {
@@ -1198,17 +1252,24 @@
 			// parPaddingLeft=parseInt(setting.treeObj.css('paddingLeft')),
 			parPaddingLeft=9,
 			checkboxLength=18,
-			iconLength=21,
+			// 第一个图片的宽度
+			iconLength=18,
 			pLeft,
 			fontStyle = [];
-			
+
 			if(setting.check.enable){
-				pLeft=checkboxLength+parPaddingLeft+iconLength*(node.level+1)+'px';
+
+				// pLeft=checkboxLength+parPaddingLeft+iconLength*(node.level+1) + 30 +'px';
+				// 因为a标签前面的图标设置成了absolute，所以忽略前面的宽度即减去21px
+				pLeft=checkboxLength+parPaddingLeft+iconLength*(node.level +1) +'px';
+
+				mLeft = checkboxLength+parPaddingLeft+iconLength*(node.level+1) +'px';
 			}else{
-				pLeft=parPaddingLeft+iconLength*(node.level+1)+'px';
+				pLeft=parPaddingLeft+iconLength*(node.level +1)+'px';
+				mLeft=parPaddingLeft+iconLength*(node.level +1)+'px';
 			}
 			fontStyle.push('padding-left', ":",pLeft, ";");
-			fontStyle.push('margin-left', ":", '-'+pLeft, ";");
+			fontStyle.push('margin-left', ":", '-'+mLeft, ";");
 			// 将a标签的宽度根据上级100%再加上层级之间的padding值算出
 			parDomWidth='calc(100% + '+18*(node.level+1) +'px )';
 
@@ -1557,13 +1618,13 @@
 
 			var zTreeTools = {
 				setting : setting,
-				addNodes : function(parentNode, newNodes, isSilent) {
+				addNodes : function(parentNode, newNodes, isSilent, index) {
 					if (!newNodes) return null;
 					if (!parentNode) parentNode = null;
 					if (parentNode && !parentNode.isParent && setting.data.keep.leaf) return null;
 					var xNewNodes = tools.clone(tools.isArray(newNodes)? newNodes: [newNodes]);
 					function addCallback() {
-						view.addNodes(setting, parentNode, xNewNodes, (isSilent==true));
+						view.addNodes(setting, parentNode, xNewNodes, (isSilent==true), index);
 					}
 
 					if (tools.canAsync(setting, parentNode)) {
@@ -2642,12 +2703,15 @@
 			if (root.curHoverNode != node) {
 				_handler.onHoverOutNode(event);
 			}
+			$("#"+node.tId).addClass('hoverNode');
 			root.curHoverNode = node;
 			view.addHoverDom(setting, node);
 		},
 		onHoverOutNode: function(event, node) {
 			var setting = data.getSetting(event.data.treeId),
 			root = data.getRoot(setting);
+			// 清除hover效果
+			$("#"+event.data.treeId+" li").removeClass('hoverNode');
 			if (root.curHoverNode && !data.isSelectedNode(setting, root.curHoverNode)) {
 				view.removeTreeDom(setting, root.curHoverNode);
 				root.curHoverNode = null;

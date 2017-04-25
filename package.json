@@ -72,8 +72,8 @@
     "fs-extra": "^0.30.0",
     "gulp-replace": "^0.5.4",
     "js-yaml": "^3.6.1",
-    "kero": "^3.2.0",
-    "kero-fetch": "^3.2.0",
+    "kero": "^3.2.2",
+    "kero-fetch": "^3.2.1",
     "koa": "^1.1.2",
     "koa-body": "^1.4.0",
     "koa-bodyparser": "^2.0.1",
@@ -83,15 +83,15 @@
     "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
     "marked": "^0.3.6",
-    "neoui-kero": "^3.2.0",
+    "neoui-kero": "^3.2.1",
     "neoui-kero-mixin": "^3.2.0",
     "pygmentize-bundled": "^2.3.0",
     "tinper-bee": "0.0.6",
-    "tinper-neoui": "^3.2.0",
-    "tinper-neoui-grid": "^3.2.0",
+    "tinper-neoui": "^3.2.1",
+    "tinper-neoui-grid": "^3.2.1",
     "tinper-neoui-polyfill": "^3.2.0",
-    "tinper-neoui-tree": "^3.2.0",
-    "tinper-sparrow": "^3.2.0"
+    "tinper-neoui-tree": "^3.2.1",
+    "tinper-sparrow": "^3.2.1"
   },
   "config": {
     "commitizen": {
