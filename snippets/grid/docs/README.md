@@ -6,16 +6,16 @@
 
 ```
 <!--css-->
-<link rel="stylesheet" href="//design.yyuap.com/static/uui/latest/css/font-awesome.css">
-<link rel="stylesheet" href="//design.yyuap.com/static/uui/latest/css/u.css">
-<link rel="stylesheet" href="//design.yyuap.com/static/uui/latest/css/grid.css">
+<link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/font-awesome.css">
+<link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+<link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
 
 <!--js-->
-<script src="//design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
-<script src="//design.yyuap.com/static/uui/latest/js/u-polyfill.js"></script>
-<script src="//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
-<script src="//design.yyuap.com/static/uui/latest/js/u.js"></script>
-<script src="//design.yyuap.com/static/uui/latest/js/u-grid.js"></script>
+<script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+<script src="//design.yonyoucloud.com/static/uui/latest/js/u-polyfill.js"></script>
+<script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+<script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+<script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
 ```
 
 

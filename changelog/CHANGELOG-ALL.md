@@ -1,10 +1,10 @@
 <a name="3.2.1"></a>
-<h2 class="logtit"> V3.2.1 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-4-25)</i></h2>
+<h2 class="logtit"> V3.2.1 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-4-25)</i></h2>
 
 <div class="down_info">
 <h3>场景下载</h3>
 <ul>
-<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/neoui-kero-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/kero-fetch-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
 </div>
 
 ### Bug Fixes
@@ -56,16 +56,16 @@
 * tree插入数据的时候增加指定index处理 ([d9db726](https://github.com/iuap-design/tinper-neoui-tree/commit/d9db726))
 
 <a name="3.2.0"></a>
-<h2 class="logtit"> V3.2.0 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-3-28)</i></h2>
+<h2 class="logtit"> V3.2.0 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-3-28)</i></h2>
 
 <div class="down_info">
 <h3>场景下载：</h3>
 <ul>
-<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标----<a target="blank" href="http://docs.tinper.org/neoui/">文档地址</a></p></li>
-<li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/neoui-kero-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型----<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">文档地址</a></p></li>
-<li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/kero-fetch-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法----<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">文档地址</a></p></li>
-<!-- <li ><p>浏览器兼容:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-neoui-polyfill-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>让一些低级的浏览器支持最新的es5的一些特性----<a target="blank" href="http://docs.tinper.org/moy/IE.html">文档地址</a></p></li> -->
-<!-- <li ><p>前端基础库:<a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/tinper-sparrow-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>一些常用的基础方法，如操作cookie等----<a target="blank" href="http://docs.tinper.org/sparrow/">文档地址</a></p></li> -->
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标----<a target="blank" href="http://docs.tinper.org/neoui/">文档地址</a></p></li>
+<li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型----<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">文档地址</a></p></li>
+<li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法----<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">文档地址</a></p></li>
+<!-- <li ><p>浏览器兼容:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-polyfill-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>让一些低级的浏览器支持最新的es5的一些特性----<a target="blank" href="http://docs.tinper.org/moy/IE.html">文档地址</a></p></li> -->
+<!-- <li ><p>前端基础库:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-sparrow-3.2.0.zip"><i class="icon uf uf-downloadd logicon"></i></a>一些常用的基础方法，如操作cookie等----<a target="blank" href="http://docs.tinper.org/sparrow/">文档地址</a></p></li> -->
 </ul>
 </div>
 
@@ -104,7 +104,7 @@
 * 输入组件支持placeholder属性 ([9d67ed0](https://github.com/iuap-design/neoui-kero/commit/9d67ed0))
 
 <a name="3.1.27"></a>
-<h2 class="logtit"> V3.1.27 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.27.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-2-23)</i></h2>
+<h2 class="logtit"> V3.1.27 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.27.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-2-23)</i></h2>
 
 ### Features
 
@@ -119,7 +119,7 @@
 
 
 <a name="3.1.23"></a>
-<h2 class="logtit"> V3.1.23 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.23.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-1-19)</i></h2>
+<h2 class="logtit"> V3.1.23 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.23.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-1-19)</i></h2>
 
 ### Bug Fixes
 * float、time设置值 ([e03c349](https://github.com/iuap-design/kero-adapter/commit/e03c349))
@@ -134,7 +134,7 @@
 
 
 <a name="3.1.22"></a>
-<h2 class="logtit"> V3.1.22 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.22.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-1-12)</i></h2>
+<h2 class="logtit"> V3.1.22 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.22.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-1-12)</i></h2>
 
 ### Bug Fixes
 * 多语datetimepicker-月份中英文切换 ([e7935b0](https://github.com/iuap-design/tinper-neoui/commit/e7935b0))
@@ -142,7 +142,7 @@
 * 字体图标兼容 ([46b6105](https://github.com/iuap-design/tinper-neoui/commit/46b6105))
 
 <a name="3.1.21"></a>
-<h2 class="logtit"> V3.1.21 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.21.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-1-6)</i></h2>
+<h2 class="logtit"> V3.1.21 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.21.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-1-6)</i></h2>
 
 ### Bug Fixes
 * addrows在单页面中多次触发 ([144ab18](https://github.com/iuap-design/tinper-neoui-grid/commit/144ab18))
@@ -156,7 +156,7 @@
 * 节点长度过长时显示省略号 ([6be2f47](https://github.com/iuap-design/tinper-neoui-tree/commit/6be2f47))
 
 <a name="3.1.19"></a>
-<h2 class="logtit"> V3.1.19 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.19.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-29)</i></h2>
+<h2 class="logtit"> V3.1.19 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.19.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-29)</i></h2>
 
 ### Bug Fixes
 * 分页 ([b74aa28](https://github.com/iuap-design/neoui-kero/commit/b74aa28))
@@ -168,7 +168,7 @@
 * 优化IE下树的展示 ([db173f0](https://github.com/iuap-design/tinper-neoui-tree/commit/db173f0))
 
 <a name="3.1.18"></a>
-<h2 class="logtit"> V3.1.18 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.18.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-22)</i></h2>
+<h2 class="logtit"> V3.1.18 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.18.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-22)</i></h2>
 
 ### Bug Fixes
 * changelog样式 ([7079bde](https://github.com/iuap-design/neoui-kero/commit/7079bde))
@@ -178,7 +178,7 @@
 * 表盘setValue ([2a4ac82](https://github.com/iuap-design/tinper-neoui/commit/2a4ac82))
 
 <a name="3.1.17"></a>
-<h2 class="logtit"> V3.1.17 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.17.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-15)</i></h2>
+<h2 class="logtit"> V3.1.17 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.17.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-15)</i></h2>
 
 ### Bug Fixes
 * form情况下按照showFix展示 ([986f72f](https://github.com/iuap-design/neoui-kero/commit/986f72f))
@@ -204,7 +204,7 @@
 * 日期组件点击确定的时候控制时间范围 ([9769c22](https://github.com/iuap-design/tinper-neoui/commit/9769c22))
 
 <a name="3.1.16"></a>
-<h2 class="logtit"> V3.1.16 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.16.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-8)</i></h2>
+<h2 class="logtit"> V3.1.16 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.16.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-8)</i></h2>
 
 ### Bug Fixes
 * grid中checkbox值变时dataTable字段值不变 ([12011c8](https://github.com/iuap-design/neoui-kero/commit/12011c8))
@@ -218,7 +218,7 @@
 * 兼容子表的情况，避免json转字符串的情况出现死循环 ([361d04c](https://github.com/iuap-design/tinper-neoui-grid/commit/361d04c))
 
 <a name="3.1.15"></a>
-<h2 class="logtit"> V3.1.15 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.15.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-1)</i></h2>
+<h2 class="logtit"> V3.1.15 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.15.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-12-1)</i></h2>
 
 ### Bug Fixes
 * 优化ztree选中之后更新至datatable会出现错误的情况 ([deb7f3f](https://github.com/iuap-design/neoui-kero/commit/deb7f3f))
@@ -228,7 +228,7 @@
 * grid增加onBeforeValueChange处理 ([be4fee3](https://github.com/iuap-design/tinper-neoui-grid/commit/be4fee3))
 
 <a name="3.1.14"></a>
-<h2 class="logtit"> V3.1.14 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.14.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-29)</i></h2>
+<h2 class="logtit"> V3.1.14 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.14.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-29)</i></h2>
 
 ### Bug Fixes
 * 翻页及pageSize改变时清空grid数据。datatable发生改变时设置silence为true。 ([cae6110](https://github.com/iuap-design/neoui-kero/commit/cae6110))
@@ -251,7 +251,7 @@
 NaN
 
 <a name="3.1.13"></a>
-<h2 class="logtit"> V3.1.13 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.13.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-24)</i></h2>
+<h2 class="logtit"> V3.1.13 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.13.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-24)</i></h2>
 
 ### Bug Fixes
 * 解决tree传递数据的时候除了id pid name，其他字段丢失的情况 ([db11473](https://github.com/iuap-design/neoui-kero/commit/db11473))
@@ -261,10 +261,10 @@ NaN
 * 云彩—-可编辑时显示图标 ([a95c9b3](https://github.com/iuap-design/tinper-neoui-grid/commit/a95c9b3))
 
 <a name="3.1.12"></a>
-<h2 class="logtit"> V3.1.12 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.12.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-17)</i></h2>
+<h2 class="logtit"> V3.1.12 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.12.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-17)</i></h2>
 
 <a name="3.1.9"></a>
-<h2 class="logtit"> V3.1.9 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.9.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-16)</i></h2>
+<h2 class="logtit"> V3.1.9 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.9.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-16)</i></h2>
 
 ### Bug Fixes
 * 日期组件支持对应特定行 ([fea8fe1](https://github.com/iuap-design/neoui-kero/commit/fea8fe1))
@@ -272,7 +272,7 @@ NaN
 * 参照兼容之前的逻辑 ([d867879](https://github.com/iuap-design/tinper-neoui/commit/d867879))
 
 <a name="3.1.8"></a>
-<h2 class="logtit"> V3.1.8 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.8.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-15)</i></h2>
+<h2 class="logtit"> V3.1.8 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.8.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-15)</i></h2>
 
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/neoui-kero/commit/ef520ed))
@@ -305,7 +305,7 @@ NaN
 NaN
 
 <a name="3.1.7"></a>
-<h2 class="logtit"> V3.1.7 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.7.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-10)</i></h2>
+<h2 class="logtit"> V3.1.7 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.7.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-10)</i></h2>
 
 ### Bug Fixes
 * pro-IUAPDESIGN-106:友云采：模态框需要支持设置高度 ([534509d](https://github.com/iuap-design/tinper-neoui/commit/534509d))
@@ -378,7 +378,7 @@ NaN
 NaN
 
 <a name="3.1.6"></a>
-<h2 class="logtit"> V3.1.6 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.6.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-3)</i></h2>
+<h2 class="logtit"> V3.1.6 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.6.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-3)</i></h2>
 
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/neoui-kero/commit/ef520ed))
@@ -449,7 +449,7 @@ NaN
 NaN
 
 <a name="3.1.5"></a>
-<h2 class="logtit"> V3.1.5 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.5.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-1)</i></h2>
+<h2 class="logtit"> V3.1.5 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.5.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-11-1)</i></h2>
 
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/neoui-kero/commit/ef520ed))
@@ -504,7 +504,7 @@ NaN
 
 
 <a name="3.1.4"></a>
-<h2 class="logtit"> V3.1.4 <a class="u-button u-button-floating loglink" href="//design.yyuap.com/static/download/iuap-design-3.1.4.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-10-27)</i></h2>
+<h2 class="logtit"> V3.1.4 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.1.4.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2016-10-27)</i></h2>
 
 ### Bug Fixes
 * pro-IUAPDESIGN-104:友云采:grid左侧的复选框和编辑控件的显示不一致 ([ef520ed](https://github.com/iuap-design/neoui-kero/commit/ef520ed))

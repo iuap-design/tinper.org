@@ -23,7 +23,7 @@ module.exports = {
 
     var getTpl = function(styles,htmls,scripts){
 
-      var ctxPath='http://design.yyuap.com/static/uui/latest';
+      var ctxPath='http://design.yonyoucloud.com/static/uui/latest';
     //    var ctxPath='/dist/vendor/uui';
       var tpl = [
         '<!DOCTYPE html>',
@@ -32,7 +32,7 @@ module.exports = {
         '<meta charset="UTF-8">',
         '<meta name="viewport" content="width=device-width, initial-scale=1">',
         '<title>Title</title>',
-        '<link rel="stylesheet" href="http://design.yyuap.com/static/uploader/css/webuploader.css">',
+        '<link rel="stylesheet" href="http://design.yonyoucloud.com/static/uploader/css/webuploader.css">',
         '<link rel="stylesheet" href="'+ ctxPath +'/css/font-awesome.css">',
         '<link rel="stylesheet" type="text/css" href="'+ ctxPath +'/css/u.css">',
         '<link rel="stylesheet" type="text/css" href="'+ ctxPath +'/css/tree.css">',
@@ -43,14 +43,14 @@ module.exports = {
         '</head>',
         '<body style="background-color: #eceff1;margin-left: 20px;width: calc(100% - 20px );">',
         htmls,
-        '<script src="http://design.yyuap.com/static/jquery/jquery-1.11.2.js"></script>',
-        '<script src="http://design.yyuap.com/static/uploader/js/webuploader.js"></script>',
-        '<script src="http://design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>',
+        '<script src="http://design.yonyoucloud.com/static/jquery/jquery-1.11.2.js"></script>',
+        '<script src="http://design.yonyoucloud.com/static/uploader/js/webuploader.js"></script>',
+        '<script src="http://design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>',
         '<script src="'+ ctxPath +'/js/u-polyfill.js"></script>',
         '<script src="'+ ctxPath +'/js/u.js"></script>',
         '<script src="'+ ctxPath +'/js/u-tree.js"></script>',
         '<script src="'+ ctxPath +'/js/u-grid.js"></script>',
-        '<script src="http://design.yyuap.com/static/requirejs/require.debug.js"></script>',
+        '<script src="http://design.yonyoucloud.com/static/requirejs/require.debug.js"></script>',
         '<script>',
         scripts,
         '</script>',
