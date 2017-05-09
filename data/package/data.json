@@ -1,61 +1,80 @@
 {
     "title": "定制页",
-    "nav": [
-        {
-            "name":"首页",
-            "href":"/"
+    "nav": [{
+            "name": "首页",
+            "href": "/"
+        }, {
+            "name": "产品",
+            "href": "#",
+            "idFlag": "product",
+            "sub": [{
+                "name": "工具类",
+                "href": "javascript:void(0)",
+                "idFlag": "tool",
+                "sub": [{
+                    "name": "uba",
+                    "desc": "前端集成开发工具",
+                    "href": "http://docs.tinper.org/uba"
+                }]
+            }, {
+                "name": "前端框架和类库",
+                "href": "javascript:void(0)",
+                "idFlag": "front",
+                "sub": [{
+                    "name": "moy",
+                    "desc": "应用框架",
+                    "href": "http://docs.tinper.org/moy"
+                }, {
+                    "name": "kero",
+                    "desc": "UI数据模型",
+                    "href": "http://docs.tinper.org/moy/kero-begin.html"
+                }, {
+                    "name": "neoui",
+                    "desc": "UI框架",
+                    "href": "http://docs.tinper.org/neoui"
+                }, {
+                    "name": "sparrow",
+                    "desc": "前端基础库",
+                    "href": "http://docs.tinper.org/sparrow"
+                }, {
+                    "name": "bee",
+                    "desc": "react 组件库",
+                    "href": "http://bee.tinper.org"
+                }]
+
+            }, {
+                "name": "开发服务",
+                "href": "javascript:void(0)",
+                "idFlag": "service",
+                "sub": [{
+                    "name": "样式版",
+                    "href": "/webide"
+                }, {
+                    "name": "应用模板中心",
+                    "href": "http://design.yyuap.com/mall"
+                }, {
+                    "name": "资源下载",
+                    "href": "/dist/log/docs/changelog.html"
+                }, {
+                    "name": "定制下载",
+                    "href": "/dist/package/index.html"
+                }, {
+                    "name": "可视化设计器",
+                    "href": "http://design.yyuap.com/designer/"
+                }]
+            }]
         },
         {
-            "name":"产品",
-            "href":"#",
-            "sub":[
-                {
-                    "name":"前端集成开发工具uba",
-                    "href":"/dist/uba/index.html"
-                },
-                {
-                    "name":"UI框架neoui",
-                    "href":"/dist/neoui/index.html"
-                },
-                {
-                    "name":"React组件库bee",
-                    "href":"http://bee.tinper.org/"
-                },
-                {
-                    "name":"表格控件grid",
-                    "href":"/dist/grid/index.html"
-                },
-                {
-                    "name":"UI数据模型kero",
-                    "href":"/dist/kero/index.html"
-                },
-                {
-                    "name":"前端基础库sparrow",
-                    "href":"/dist/sparrow/index.html"
-                }
-            ]
+            "name": "开发者中心",
+            "href": "http://docs.tinper.org/moy"
         },
         {
-            "name":"样式板",
-            "href":"//tinper.org/webide/"
+            "name": "技术博客",
+            "href": "https://github.com/iuap-design/blog/issues"
         },
         {
-            "name":"下载",
-            "href":"#",
-            "sub":[
-                {
-                    "name":"版本下载",
-                    "href":"/dist/log/docs/changelog.html"
-                },
-                {
-                    "name":"定制下载",
-                    "href":"/dist/package/index.html"
-                }
-            ]
-        },
-        {
-            "name":"反馈",
-            "href":"https://github.com/iuap-design/tinper.org/issues"
+            "name": "问题反馈",
+            "href": "https://github.com/iuap-design/tinper.org/issues"
         }
     ]
 }

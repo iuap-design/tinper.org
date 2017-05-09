@@ -48,16 +48,16 @@
             "idFlag":"service",
              "sub":[{
                 "name":"样式版",
-                "href":"./webide"
+                "href":"/webide"
             },{
                 "name":"应用模板中心",
                 "href":"http://design.yyuap.com/mall"
             },{
                 "name":"资源下载",
-                "href":"./dist/log/docs/changelog.html"
+                "href":"/dist/log/docs/changelog.html"
             },{
                 "name":"定制下载",
-                "href":"./dist/package/index.html"
+                "href":"/dist/package/index.html"
             },{
                 "name":"可视化设计器",
                 "href":"http://design.yyuap.com/designer/"
@@ -67,7 +67,10 @@
         "name": "开发者中心",
         "href": "http://docs.tinper.org/moy"
     }, {
-        "name": "技术支持",
+        "name": "技术博客",
+        "href": "https://github.com/iuap-design/blog/issues"
+    }, {
+        "name": "问题反馈",
         "href": "https://github.com/iuap-design/tinper.org/issues"
     }]
 }
