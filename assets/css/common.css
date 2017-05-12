@@ -87,7 +87,7 @@ img {
 
 /* 只有手机端才可以显示*/
 @media (max-width: 767px) {
-    
+
     .nav-list .dropdown:hover .nav-par+ul {
         display: block !important;
         margin: 0px;
@@ -457,12 +457,12 @@ a.product_img.sparrow_link:hover:before {
 .products-row-inner {
     /*margin: 0 10000px;*/
     padding: 20px 4px;
-    text-align: center;
+    text-align: left;
 }
 
 .products-item {
     margin: 40px 20px;
-    width: calc((100% - 280px)/6);
+
 }
 
 .products-item {
@@ -471,10 +471,12 @@ a.product_img.sparrow_link:hover:before {
     margin: 20px;
     min-width: 96px;
     vertical-align: top;
+    text-align: center;
 }
 
 .products-item-link {
     color: #757575;
+    cursor: pointer;
     display: block;
 }
 
@@ -811,7 +813,7 @@ a.product_img.sparrow_link:hover:before {
 
 
 @media (max-width: 767px) {
-    
+
     .part1 {
         position:relative;
         z-index:-1;
@@ -827,5 +829,95 @@ a.product_img.sparrow_link:hover:before {
 @media (min-width: 1024px) {
     .part2 .tinper-desc {
         font-size: 20px;
+    }
+}
+
+
+.products-item-content{
+
+}
+.products-item-content>.product-name{
+    color: white;
+    background-color: #1F649B;
+    padding: 30px 0;
+}
+.products-item-link.unlink{
+    opacity: 0.3;
+}
+.products-item-content.tinper-yon>.product-name{
+    background-color:#875415
+}
+.products-item-content.tinper-bee>.product-name{
+    background-color:#D25B57
+}
+.products-item-content.tinper-uba>.product-name{
+    background-color:#8983ED
+}
+.products-item-content.tinper-sparrow>.product-name{
+    background-color:#1067BE
+}
+.products-item-content.tinper-moy>.product-name{
+    background-color:#348921
+}
+.products-item-content.tinper-kero>.product-name{
+    background-color:#095C60
+}
+.products-item-content.tinper-webide>.product-name{
+    background-color:#8983ED
+}
+.products-item-content.tinper-neoui>.product-name{
+    background-color:#D25B57
+}
+.products-item-content.tinper-grid>.product-name{
+    background-color:#7ED850
+}
+.products-item-content.tinper-spriter>.product-name{
+    background-color:#FF7AC6
+}
+.products-item-content.tinper-monitor>.product-name{
+    background-color:#FF7F32
+}
+.products-item-content.tinper-designer>.product-name{
+    background-color:#584BBE
+}
+.products-item-content.tinper-store>.product-name{
+    background-color:#584BBE
+}
+.products-item-content>.product-introduction{
+    color: black;
+    background-color: #e7e4e4;
+        padding: 5px 0;
+}
+
+@media (min-width:1320px) {
+    .products-item{
+            width: calc((100% - 220px)/5);
+    }
+}
+
+@media screen and (max-width:1320px) {
+    .products-item {
+        margin: 10px;
+        width: calc((100% - 95px)/4);
+    }
+}
+@media screen and (max-width: 1100px) {
+    .products-item {
+        margin: 5px;
+        width: calc((100% - 40px)/3);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .products-item {
+        margin: 5px;
+        width: calc((100% - 25px)/2);
+    }
+}
+
+@media screen and (max-width:374px) {
+    .products-item {
+        margin: 1px;
+        width: calc((100% - 9px)/2);
     }
 }

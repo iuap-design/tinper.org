@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>个性化定制 | tinper-neoui</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="16x16"> -->
+    {{{include '../../partial/_header'}}}
+    <link rel="stylesheet" type="text/css" href="//design.yonyoucloud.com/static/uui/latest/css/u.min.css">
+    <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/uuifont/iconfont.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link href="/assets/css/style.css" rel="stylesheet" media="screen">
+    <style>
+        #header {
+            /*background: #DD3730;*/
+            box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        #logo {
+            float: left;
+            margin-left: 10%;
+            font-size: 1.4em;
+            line-height: 1.2em;
+            color: #48BE21;
+            cursor: pointer;
+        }
+
+        #navlist {
+            float: right;
+            margin: 0;
+            margin-right: 10%;
+        }
+
+        #navlist li {
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 1em 0.3em;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        #navlist li .active_ {
+            /*color: #fff;*/
+            border-bottom: 1px solid #48BE21;
+        }
+
+        #navlist li a {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-transition: color .5s;
+            text-decoration: none;
+            color: black;
+        }
+
+        .content {
+            margin: 0% 10%;
+            margin-top: 10px;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="logo" class="ff">{{{title}}}</h1>
+        <ul id="navlist" class="ff">
+            <li><a href="#" class="active_">首页</a></li>
+            <li><a href="https://github.com/iuap-design/blog/issues/195">新增一个库</a></li>
+            <li><a href="https://github.com/iuap-design/blog/issues/195">简介</a></li>
+        </ul>
+    </header>
+
+    <!-- Content -->
+    <div id="content" class="content">
+        <table class="u-table-base u-table-striped">
+            <thead>
+                <tr>
+                    <th>库名称</th>
+                    <th>地址</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{{each prod as item}}}
+                <tr>
+                    <td>{{{item.name}}}</td>
+                    <td>{{{item.href}}}</td>
+                </tr>
+                {{{/each}}}
+            </tbody>
+        </table>
+    </div>
+
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+    <!--[if lt IE 8]>
+<script src="http://design.yonyoucloud.com/static/uui/latest/js/u-polyfill.min.js"></script>
+<![endif]-->
+    <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+
+</html>

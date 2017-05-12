@@ -1,0 +1,41 @@
+{
+    "title": "tinper静态资源公共库",
+    "prod": [{
+        "name": "u.js",
+        "href": "//design.yonyoucloud.com/static/uui/latest/js/u.js"
+    }, {
+        "name": "u.css",
+        "href": "//design.yonyoucloud.com/static/uui/latest/css/u.css"
+    }, {
+        "name": "u-grid.js",
+        "href": "//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"
+    }, {
+        "name": "u-tree.js",
+        "href": "//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"
+    }, {
+        "name": "u-polyfill.js",
+        "href": "//design.yonyoucloud.com/static/uui/latest/css/u-polyfill.js"
+    }, {
+        "name": "director.js",
+        "href": "//design.yonyoucloud.com/static/director/director.js"
+    }, {
+        "name": "analytics.js",
+        "href": "//design.yonyoucloud.com/static/analytics/analytics.js"
+    }, {
+        "name": "jquery.js",
+        "href": "//design.yonyoucloud.com/static/jquery/jquery-1.11.2.js"
+    }, {
+        "name": "underscore.js",
+        "href": "//design.yonyoucloud.com/static/underscore/underscore.js"
+    }, {
+        "name": "font-awesome.css",
+        "href": "//design.yonyoucloud.com/static/uui/latest/css/font-awesome.css"
+    }, {
+        "name": "swiper.js",
+        "href": "//design.yonyoucloud.com/static/swiper/3.4.2/swiper.min.js"
+    }, {
+        "name": "swiper.css",
+        "href": "//design.yonyoucloud.com/static/swiper/3.4.2/swiper.min.css"
+    }]
+
+}

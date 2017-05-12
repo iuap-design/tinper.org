@@ -1,4 +1,5 @@
-﻿{
+﻿
+{
     "title": "tinper,企业级Web应用前端框架",
     "nav": [{
         "name": "首页",
@@ -6,61 +7,61 @@
     }, {
         "name": "产品",
         "href": "#",
-        "idFlag":"product",
+        "idFlag": "product",
         "sub": [{
             "name": "工具类",
             "href": "javascript:void(0)",
-            "idFlag":"tool",
-            "sub":[{
+            "idFlag": "tool",
+            "sub": [{
                 "name": "uba",
-                "desc":"前端集成开发工具",
-                "href":"http://docs.tinper.org/uba"
+                "desc": "前端集成开发工具",
+                "href": "http://docs.tinper.org/uba"
             }]
         }, {
             "name": "前端框架和类库",
             "href": "javascript:void(0)",
-            "idFlag":"front",
-            "sub":[{
-                "name":"moy",
-                "desc":"应用框架",
-                "href":"http://docs.tinper.org/moy"
-            },{
-                "name":"kero",
-                "desc":"UI数据模型",
-                "href":"http://docs.tinper.org/moy/kero-begin.html"
-            },{
-                "name":"neoui",
-                "desc":"UI框架",
-                "href":"http://docs.tinper.org/neoui"
-            },{
-                "name":"sparrow",
-                "desc":"前端基础库",
-                "href":"http://docs.tinper.org/sparrow"
-            },{
-                "name":"bee",
-                "desc":"react 组件库",
-                "href":"http://bee.tinper.org"
+            "idFlag": "front",
+            "sub": [{
+                "name": "moy",
+                "desc": "应用框架",
+                "href": "http://docs.tinper.org/moy"
+            }, {
+                "name": "kero",
+                "desc": "UI数据模型",
+                "href": "http://docs.tinper.org/moy/kero-begin.html"
+            }, {
+                "name": "neoui",
+                "desc": "UI框架",
+                "href": "http://docs.tinper.org/neoui"
+            }, {
+                "name": "sparrow",
+                "desc": "前端基础库",
+                "href": "http://docs.tinper.org/sparrow"
+            }, {
+                "name": "bee",
+                "desc": "react 组件库",
+                "href": "http://bee.tinper.org"
             }]
 
         }, {
             "name": "开发服务",
             "href": "javascript:void(0)",
-            "idFlag":"service",
-             "sub":[{
-                "name":"样式版",
-                "href":"/webide"
-            },{
-                "name":"应用模板中心",
-                "href":"http://design.yyuap.com/mall"
-            },{
-                "name":"资源下载",
-                "href":"/dist/log/docs/changelog.html"
-            },{
-                "name":"定制下载",
-                "href":"/dist/package/index.html"
-            },{
-                "name":"可视化设计器",
-                "href":"http://design.yyuap.com/designer/"
+            "idFlag": "service",
+            "sub": [{
+                "name": "样式版",
+                "href": "/webide"
+            }, {
+                "name": "应用模板中心",
+                "href": "http://design.yyuap.com/mall"
+            }, {
+                "name": "资源下载",
+                "href": "/dist/log/docs/changelog.html"
+            }, {
+                "name": "定制下载",
+                "href": "/dist/package/index.html"
+            }, {
+                "name": "可视化设计器",
+                "href": "http://design.yyuap.com/designer/"
             }]
         }]
     }, {
@@ -73,10 +74,86 @@
         "name": "问题反馈",
         "href": "https://github.com/iuap-design/tinper.org/issues"
     }],
+    "prod": [{
+        "name": "tinper-uba",
+        "href": "http://docs.tinper.org/uba/",
+        "class": "tinper-uba",
+        "introduce": "集成开发和调试工具"
+    },{
+        "name": "tinper-moy",
+        "href": "http://docs.tinper.org/moy/",
+        "class": "tinper-moy",
+        "introduce": "应用框架"
+    },{
+        "name": "tinper-kero",
+        "href": "http://docs.tinper.org/moy/kero-begin.html",
+        "class": "tinper-kero",
+        "introduce": "前端模型框架"
+    },{
+        "name": "tinper-webide",
+        "href": "http://tinper.org/webide/",
+        "class": "tinper-webide",
+        "introduce": "在线示例系统"
+    },{
+        "name": "tinper-neoui",
+        "href": "http://docs.tinper.org/neoui/",
+        "class": "tinper-neoui",
+        "introduce": "前端 UI 框架"
+    },{
+        "name": "tinper-bee",
+        "href": "http://bee.tinper.org/",
+        "class": "tinper-bee",
+        "introduce": "React 组件库"
+    },{
+        "name": "tinper-grid",
+        "href": "http://docs.tinper.org/moy/grid_index.html",
+        "class": "tinper-grid",
+        "introduce": "强大的企业表格插件"
+    },{
+        "name": "tinper-sparrow",
+        "href": "http://docs.tinper.org/sparrow/",
+        "class": "tinper-sparrow",
+        "introduce": "公共基础库"
+    },{
+        "name": "tinper-designer",
+        "href": "http://design.yyuap.com/designer/",
+        "class": "tinper-designer",
+        "introduce": "可视化 Web 设计器"
+    },{
+        "name": "tinper-cdn",
+        "href": "/dist/cdn/index.html",
+        "class": "tinper-cdn",
+        "introduce": "公共静态资源库"
+    },{
+        "name": "tinper-spriter",
+        "href": "https://github.com/iuap-design/blog/issues/194",
+        "class": "tinper-spriter",
+        "introduce": "自动雪碧图解决方案"
+    },{
+        "name": "tinper-monitor",
+        "href": "",
+        "class": "tinper-monitor",
+        "introduce": "性能监控解决方案"
+    },{
+        "name": "tinper-yon",
+        "href": "",
+        "class": "tinper-yon",
+        "introduce": "内部Node镜像服务"
+    },{
+        "name": "tinper-store",
+        "href": "",
+        "class": "tinper-store",
+        "introduce": "主题和组件中心"
+    },{
+        "name": "虚位以待",
+        "href": "javascript:;",
+        "class": "tinper-store",
+        "introduce": "等你来挑战..."
+    }],
     "product": [{
         "name": "前端集成开发工具uba",
         "href": "/dist/uba/index.html",
-        "img":"uf uf-uba-col",
+        "img": "uf uf-uba-col",
         "introduce": "tinper-uba 是一个集项目初始化、本地服务、数据模拟、资源编译、发布部署于一体的前端集成开发工具。为您提供多种项目最佳实践，使用五条命令即可打通开发全过程。轻量小巧，上手简单，是你强大的开发助手。",
         "features": [{
             "name": "功能强大",
@@ -98,7 +175,7 @@
     }, {
         "name": "UI框架neoui",
         "href": "/dist/neoui/index.html",
-        "img":"uf uf-neoui-col",
+        "img": "uf uf-neoui-col",
         "introduce": "tinper-neoui是基于 UI 设计语言 iuap design 实现的企业级前端UI框架，包含丰富的全局样式、丰富的CSS组件和JavaScript插件，并且提供丰富的字体图标。tinper-neoui帮助用户快速构建标准一致的前端页面，提高开发效率。",
         "features": [{
             "name": "响应式",
@@ -125,7 +202,7 @@
     }, {
         "name": "React组件库bee",
         "href": "http://bee.tinper.org/",
-        "img":"uf uf-bee-col",
+        "img": "uf uf-bee-col",
         "introduce": "tinper-bee 是基于 iuap design 的 react 组件库，包含丰富的基础组件和应用组件，支持组件的灵活调用和扩展，助力快速进行应用的组件化开发。",
         "features": [{
             "name": "组件支持可插拔使用",
@@ -147,7 +224,7 @@
     }, {
         "name": "表格控件grid",
         "href": "/dist/grid/index.html",
-        "img":"uf uf-gridlogo",
+        "img": "uf uf-gridlogo",
         "introduce": "Grid表格控件将数据以表格的方式进行展示，同时提供了排序、交换列、数字列、复选、合计、自定义渲染、修改等复杂功能，满足了复杂场景下数据展示的需求。",
         "features": [{
             "name": "多终端支持",
@@ -169,7 +246,7 @@
     }, {
         "name": "UI数据模型kero",
         "href": "/dist/kero/index.html",
-        "img":"uf uf-kero-col",
+        "img": "uf uf-kero-col",
         "introduce": "kero是一个基于knockout扩展的Library，做为MVVM架构中Model层的增强，提供多维数据模型，解决企业应用中复杂的业务应用场景的开发问题",
         "features": [{
             "name": "多终端支持",
@@ -195,7 +272,7 @@
     }, {
         "name": "前端基础库sparrow",
         "href": "/dist/sparrow/index.html",
-        "img":"uf  uf-sparrow-col",
+        "img": "uf  uf-sparrow-col",
         "introduce": "tinper-sparrow 是一个轻量级 javascript 库，让开发者能更方便地进行 DOM操作、events处理、动画效果实现和AJAX交互等，并且提供丰富的API封装，如多平台多浏览器判断、Cookies操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。",
         "features": [{
             "name": "多终端支持",

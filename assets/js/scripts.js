@@ -24,6 +24,13 @@ $(document).ready(function() {
     $('.nav-first-sub').mouseleave(function() {
         var $ulSiblings = $(this).find('ul');
         $ulSiblings.removeAttr('style');
+    });
+
+    $('.products-item-link').off().on('click',function(e){
+        var $this = $(this);
+        if($this.attr('href')==='javascript:;'){
+            alert('敬请期待！');
+        }
     })
 
     $('.nav-list li').mouseenter(function(){
