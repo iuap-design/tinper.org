@@ -836,6 +836,9 @@ a.product_img.sparrow_link:hover:before {
 .products-item-content{
 
 }
+.products-item-content:hover{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, .1);
+}
 .products-item-content>.product-name{
     color: white;
     background-color: #1F649B;
