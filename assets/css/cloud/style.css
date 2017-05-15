@@ -1,5 +1,5 @@
 .banner-cloud-front-left{
-	background: url(../../images/cloud/banner-cloud-front-left.png) no-repeat;
+	background: url(http://design.yonyoucloud.com/static/img/cloud/banner-cloud-front-left.png) no-repeat;
 	width:150px;
 	height: 76px;
 	position: absolute;
@@ -7,7 +7,7 @@
 	left:100px;
 }
 .banner-cloud-end-left{
-	background: url(../../images/cloud/banner-cloud-end-left.png) no-repeat;
+	background: url(http://design.yonyoucloud.com/static/img/cloud/banner-cloud-end-left.png) no-repeat;
 	width:294px;
 	height: 192px;
 	position: absolute;
@@ -15,7 +15,7 @@
 	left:600px;
 }
 .banner-cloud-end-center{
-	background: url(../../images/cloud/banner-cloud-end-center.png) no-repeat;
+	background: url(http://design.yonyoucloud.com/static/img/cloud/banner-cloud-end-center.png) no-repeat;
 	width:240px;
 	height: 78px;
 	position: absolute;
@@ -23,7 +23,7 @@
 	left:1500px;
 }
 .banner-cloud-end-right{
-	background: url(../../images/cloud/banner-cloud-end-right.png) no-repeat;
+	background: url(http://design.yonyoucloud.com/static/img/cloud/banner-cloud-end-right.png) no-repeat;
 width: 387px;
 height: 233px;
 position: absolute;
@@ -31,7 +31,7 @@ top: 294px;
 left: 300px;
 }
 .cloud--end--left2{
-	background: url(../../images/cloud/cloud--end--left2.png) no-repeat;
+	background: url(http://design.yonyoucloud.com/static/img/cloud/cloud--end--left2.png) no-repeat;
 	width:600px;
 	height: 295px;
 	position: absolute;
