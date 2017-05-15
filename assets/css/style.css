@@ -71,6 +71,8 @@
     background-size: cover;
     background-image: url(../images/0003.jpg);
     text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .content-wrapper.part1 .u-container {

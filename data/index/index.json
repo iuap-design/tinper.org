@@ -130,6 +130,11 @@
         "class": "tinper-spriter",
         "introduce": "自动雪碧图解决方案"
     },{
+        "name": "tinper-store",
+        "href": "http://design.yyuap.com/mall/",
+        "class": "tinper-store",
+        "introduce": "主题和组件中心"
+    },{
         "name": "tinper-monitor",
         "href": "",
         "class": "tinper-monitor",
@@ -140,10 +145,15 @@
         "class": "tinper-yon",
         "introduce": "内部Node镜像服务"
     },{
-        "name": "tinper-store",
+        "name": "tinper-mock",
         "href": "",
         "class": "tinper-store",
-        "introduce": "主题和组件中心"
+        "introduce": "在线数据 mock 服务"
+    },{
+        "name": "tinper-i18n",
+        "href": "",
+        "class": "tinper-store",
+        "introduce": "国际化解决方案"
     },{
         "name": "虚位以待",
         "href": "javascript:;",
