@@ -65,6 +65,7 @@
 /*内容区*/
 
 .content-wrapper.part1 {
+    height: 490px;
     padding-top: 50px;
     background-attachment: fixed;
     background-size: cover;
@@ -75,6 +76,14 @@
 .content-wrapper.part1 .u-container {
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+.u-container>.bounceIn{
+    margin-top: 100px;
+}
+
+.u-container>#top_down_info{
+    margin: 25px 0;
 }
 
 .content-wrapper.part1 .white a{
