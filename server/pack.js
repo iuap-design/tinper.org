@@ -134,7 +134,7 @@ module.exports = function(data, self, cb){
 
 	var entryFun = function() {
 		if(dataJson.jsselect){
-			dataNeo.push("import {u} from 'tinper-sparrow/src/index';import * as compox from 'compox/src/index';import * as compox_util from 'compox-util/src/index';")
+			dataNeo.push("import {BaseComponent} from 'tinper-neoui/src/neoui-BaseComponent';import {u} from 'tinper-sparrow/src/index';import * as compox from 'compox/src/index';import * as compox_util from 'compox-util/src/index';")
 			for(var i=0, neoLength = dataJson.jsselect.length; i < neoLength; i++ ) {
 				var pluginModule = neoModule[dataJson.jsselect[i]];
 				for (var key in pluginModule) {
@@ -154,6 +154,8 @@ module.exports = function(data, self, cb){
 			for (var j = 0; j < dataJson.adselect.length; j++) {
 				var adselect_ = dataJson.adselect[j];
 				if(adselect_ == 'kero' && dataJson.jsselect) {
+					dataKo.push("import {BaseAdapter} from 'neoui-kero/src/keroa-baseAdapter';");
+
 					for(var i=0, neoLength = dataJson.jsselect.length; i < neoLength; i++ ) {
 						var koName = 'keroa-' + dataJson.jsselect[i].substr(6);
 						var koObj = koModule[koName];
