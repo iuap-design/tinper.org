@@ -1,3 +1,48 @@
+<a name="3.2.2"></a>
+<h2 class="logtit"> V3.2.2 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.2.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-5-23)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.2.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.2.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.2.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+
+### Bug Fixes
+* 修改了嵌套按钮组中按钮高度不一致问题 ([0aa2428](https://github.com/iuap-design/tinper-neoui/commit/0aa2428))
+
+* 修改了嵌套按钮组中按钮高度不一致问题 ([ae8e7b4](https://github.com/iuap-design/tinper-neoui/commit/ae8e7b4))
+
+* 解决dataTable的off操作无法清除之前绑定的事件的问题 ([6a8bf1f](https://github.com/iuap-design/kero/commit/6a8bf1f))
+
+* 解决树清空选中后原有选中行依旧显示为选中的问题 ([c49fa1b](https://github.com/iuap-design/neoui-kero/commit/c49fa1b))
+
+* 解决内容区鼠标滑动未触发docus状态的问题 ([f6cb5f3](https://github.com/iuap-design/tinper-neoui-grid/commit/f6cb5f3))
+
+* 解决官网webIDE中拖拽demo拖动后宽度错位的问题 ([53caead](https://github.com/iuap-design/tinper-neoui-grid/commit/53caead))
+
+* 解决设置overWidthHiddenColumn为true之后当显示的数据列宽度不足时会将开发定义的隐藏列显示出来的问题 ([6917267](https://github.com/iuap-design/tinper-neoui-grid/commit/6917267))
+
+### Features
+
+
+* 新建Cascader组件 ([b40e512](https://github.com/iuap-design/tinper-neoui/commit/b40e512))
+
+
+
+* datatable增加参数forceDel，可不考虑状态强制删除数据 ([2ee566f](https://github.com/iuap-design/kero/commit/2ee566f))
+
+
+* columnMenu样式支持通过参数columnMenuType来控制 ([3cbeb21](https://github.com/iuap-design/tinper-neoui-grid/commit/3cbeb21))
+
+* 优化columnMenu的样式 ([3e3a5f7](https://github.com/iuap-design/tinper-neoui-grid/commit/3e3a5f7))
+
+* 增加参数sumRowFirst、sumRowFixed，支持合计行显示在第一行，并且可脱离内容区，不随纵向滚动条滚动 ([0d97363](https://github.com/iuap-design/tinper-neoui-grid/commit/0d97363))
+
+* 表格支持分组功能 ([77ac86b](https://github.com/iuap-design/tinper-neoui-grid/commit/77ac86b))
+
+
+* 添加getPath方法，与最新的ztree版本保持一致 ([b78ab0e](https://github.com/iuap-design/tinper-neoui-tree/commit/b78ab0e))
+
 <a name="3.2.1"></a>
 <h2 class="logtit"> V3.2.1 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.1.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-4-25)</i></h2>
 
