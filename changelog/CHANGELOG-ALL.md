@@ -8,9 +8,6 @@
 </div>
 
 ### Bug Fixes
-* 修改了嵌套按钮组中按钮高度不一致问题 ([0aa2428](https://github.com/iuap-design/tinper-neoui/commit/0aa2428))
-
-* 修改了嵌套按钮组中按钮高度不一致问题 ([ae8e7b4](https://github.com/iuap-design/tinper-neoui/commit/ae8e7b4))
 
 * 解决dataTable的off操作无法清除之前绑定的事件的问题 ([6a8bf1f](https://github.com/iuap-design/kero/commit/6a8bf1f))
 
