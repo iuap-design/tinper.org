@@ -7,61 +7,63 @@
     <title>个性化定制 | tinper-neoui</title>
     <link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="16x16"> -->
     {{{include '../../partial/_header'}}}
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" type="text/css" href="//design.yonyoucloud.com/static/uui/latest/css/u.min.css">
     <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="/assets/vendor/uuifont/iconfont.css">
     <link rel="stylesheet" href="/assets/css/common.css">
     <link href="/assets/css/style.css" rel="stylesheet" media="screen">
     <style>
-        #header {
-            /*background: #DD3730;*/
-            box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-        }
-
-        #logo {
-            float: left;
-            margin-left: 10%;
-            font-size: 1.4em;
-            line-height: 1.2em;
-            color: #48BE21;
-            cursor: pointer;
-        }
-
-        #navlist {
-            float: right;
-            margin: 0;
-            margin-right: 10%;
-        }
-
-        #navlist li {
-            display: inline-block;
-            text-transform: uppercase;
-            padding: 1em 0.3em;
-            font-size: 0.9em;
-            text-align: center;
-        }
-
-        #navlist li .active_ {
-            /*color: #fff;*/
-            border-bottom: 1px solid #48BE21;
-        }
-
-        #navlist li a {
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            -webkit-transition: color .5s;
-            text-decoration: none;
-            color: black;
-        }
-
-        .content {
-            margin: 0% 10%;
-            margin-top: 10px;
-            width: 80%;
-        }
-        th{
-            font-weight: bold!important;
-        }
+    #header {
+        /*background: #DD3730;*/
+        box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    
+    #logo {
+        float: left;
+        margin-left: 10%;
+        font-size: 1.4em;
+        line-height: 1.2em;
+        color: #48BE21;
+        cursor: pointer;
+    }
+    
+    #navlist {
+        float: right;
+        margin: 0;
+        margin-right: 10%;
+    }
+    
+    #navlist li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 1em 0.3em;
+        font-size: 0.9em;
+        text-align: center;
+    }
+    
+    #navlist li .active_ {
+        /*color: #fff;*/
+        border-bottom: 1px solid #48BE21;
+    }
+    
+    #navlist li a {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-transition: color .5s;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .content {
+        margin: 0% 10%;
+        margin-top: 10px;
+        width: 80%;
+    }
+    
+    th {
+        font-weight: bold!important;
+    }
     </style>
 </head>
 
@@ -74,27 +76,42 @@
             <li><a href="https://github.com/iuap-design/blog/blob/master/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/cdn%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83.md">简介</a></li>
         </ul>
     </header>
-
-    <!-- Content -->
-    <div id="content" class="content">
-        <table class="u-table-base u-table-striped">
-            <thead>
-                <tr>
-                    <th>库名称</th>
-                    <th>地址</th>
-                </tr>
-            </thead>
-            <tbody>
-                {{{each prod as item}}}
-                <tr>
-                    <td>{{{item.name}}}</td>
-                    <td>{{{item.href}}}</td>
-                </tr>
-                {{{/each}}}
-            </tbody>
-        </table>
+    <!-- start；content -->
+    <ul id="content">
+       
+    </ul>
+    <div id="dialog_content" style="display:none;">
+        <div class="u-msg-title">
+            <h4></h4>
+        </div>
+        <div class="u-msg-content">
+            <div class="form-group">
+                <span class="select-title">版本<br></span>
+                <select id="version" class="form-control" data-name="zepto">
+                    <!-- <option value="1.2.0">1.2.0</option>
+                    <option value="1.1.5">1.1.5</option> -->
+                </select>
+            </div>
+            <div class="form-group" id="resources">
+                <span class="inputGroup-title">资源<br></span>
+                <div class="download-con">
+                    
+                </div>
+                <!-- <div class="input-group" style="padding: 2px 0">
+                    <input id="url-1" type="text" readonly="readonly" class="form-control" value="//common.qunarzz.com/lib/prd/jquery/3.2.1/jquery.js" style="background: white">
+                    <span class="input-group-addon" style="cursor: pointer" data-clipboard-target="url-1">Copy</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="u-msg-footer">
+            <button class="u-msg-cancel u-button" style="margin-right:0;">关闭
+                <span class="u-button-container">
+                    <span class="u-ripple"></span>
+                </span>
+            </button>
+        </div>
     </div>
-
+    <!--end；content-->
     <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
     <!--[if lt IE 8]>
@@ -102,6 +119,7 @@
 <![endif]-->
     <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
     <script src="/assets/js/scripts.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
