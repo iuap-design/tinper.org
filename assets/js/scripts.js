@@ -20,6 +20,22 @@ $(document).ready(function() {
 
         //显示兄弟节点
     });
+    var $this = $(this),
+        $nav = $('.u-navbar.u-navbar-default'),
+        top = $(this).scrollTop();
+    if(top===0){
+        $nav.addClass('black_');
+    }
+    $(document).scroll(function() {
+        var $this = $(this),
+            $nav = $('.u-navbar.u-navbar-default'),
+            top = $(this).scrollTop();
+        if(top>50){
+            $nav.removeClass("black_").addClass('white_');
+        }else{
+            $nav.addClass('default').addClass('black_').removeClass('white_');
+        }
+      });
 
     $('.nav-first-sub').mouseleave(function() {
         var $ulSiblings = $(this).find('ul');
@@ -86,7 +102,7 @@ $(document).ready(function() {
         $rightUl.first().removeClass('hide').siblings().addClass('hide');
         $rightUl.find('li').first().addClass('active').siblings().removeClass('active');
 
-        $(this).css({'display':'none'});
+        // $(this).css({'display':'none'});
     });
 
 

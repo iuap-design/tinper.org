@@ -12,6 +12,27 @@ img {
     margin-bottom: 0px;
     box-sizing: border-box;
 }
+.u-navbar-default{
+    border: none;
+    transition: none;
+    background-color: transparent;
+    color: #fff;
+
+}
+.u-navbar-default.default{
+    -webkit-transition: background-color .6s;
+    transition: background-color .6s;
+}
+.u-navbar-default.black_{
+    background: linear-gradient(#01429C,transparent);
+    color: #fff;
+}
+.u-navbar-default.white_{
+    color: rgb(117, 117, 117);
+    background: #fff;
+    border-bottom: 1px solid #f2f2f5;
+
+}
 
 .u-container {
     box-sizing: border-box;
@@ -58,7 +79,7 @@ img {
 
 .u-navbar-default .u-navbar-toolbar > li a {
     cursor: pointer;
-    color: rgb(117, 117, 117);
+    color: inherit;
 }
 
 .nav-list .dropdown {
