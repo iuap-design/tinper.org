@@ -1,5 +1,5 @@
 {
-    "title": "tinper静态资源公共库",
+    "title": "tinper公共静态资源库",
     "prod": [{
         "name": "u.js",
         "href": "//design.yonyoucloud.com/static/uui/latest/js/u.js"

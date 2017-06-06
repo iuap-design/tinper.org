@@ -164,7 +164,7 @@ var CDN = {
         var msgTitle = title;
         var _this = this;
 
-        $("#version").change(function() {
+        $("#version").off("change").on("change",function() {
             $('#resources .download-con').html('');
             var downloadStr = '';
             var curVal = $(this).val().trim();
