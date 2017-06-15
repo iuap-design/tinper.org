@@ -6,65 +6,78 @@ $(document).ready(function() {
         $targetDom.toggleClass("in");
 
     });
-    var paddingLeft = $('.u-navbar-header a img').offset()?$('.u-navbar-header a img').offset().left:130;
+    var paddingLeft = $('.u-navbar-header a img').offset() ? $('.u-navbar-header a img').offset().left : 130;
 
-    $('.tab-content').css({'padding-left':paddingLeft});
+    $('.tab-content').css({
+        'padding-left': paddingLeft
+    });
 
     //导航
     $('.nav-first-sub').mouseenter(function() {
         var $ulSiblings = $(this).find('ul')
-            //获取兄弟节点ul，计算出长度。
+        //获取兄弟节点ul，计算出长度。
         var width = $ulSiblings.width();
         var right = '-' + width + 'px';
-        $ulSiblings.css({ "right": right, "display": "block" });
+        $ulSiblings.css({
+            "right": right,
+            "display": "block"
+        });
 
         //显示兄弟节点
     });
     var $this = $(this),
         $nav = $('.u-navbar.u-navbar-default'),
         top = $(this).scrollTop();
-    if(top===0){
+    if (top === 0) {
         $nav.addClass('black_');
     }
-    $(document).scroll(function() {
+    //导航栏的滚动动态切换效果
+    $(document).off("scroll").on("scroll",function() {
         var $this = $(this),
             $nav = $('.u-navbar.u-navbar-default'),
             top = $(this).scrollTop();
-        if(top>50){
+        if (top > 50) {
             $nav.removeClass("black_").addClass('white_');
-        }else{
+        } else {
             $nav.addClass('default').addClass('black_').removeClass('white_');
         }
-      });
+    });
+    //当不是首页的时候，取消导航栏的滚动动态切换效果
+    if (window.location.pathname !== '/') {
+        $nav.addClass('white_');
+        $(document).off("scroll");
+    }
 
     $('.nav-first-sub').mouseleave(function() {
         var $ulSiblings = $(this).find('ul');
         $ulSiblings.removeAttr('style');
     });
 
-    $('.products-item-link').off().on('click',function(e){
+    $('.products-item-link').off().on('click', function(e) {
         var $this = $(this);
-        if($this.attr('href')==='javascript:;'){
+        if ($this.attr('href') === 'javascript:;') {
             alert('敬请期待！');
         }
     })
 
-    $('.nav-list li').mouseenter(function(){
-       var tabId = $(this).attr('index');
+    $('.nav-list li').mouseenter(function() {
+        var tabId = $(this).attr('index');
 
-       //tabId不存在的话，隐藏所有的子菜单
+        //tabId不存在的话，隐藏所有的子菜单
 
-       //如果tabId存在，则显示子菜单内容。
-       if (tabId && tabId!=="#") {
-          if($(tabId).is( ":hidden" )){
-            $(tabId).slideDown();
-          }
-       }else{
-        //   $('.tab-content').css({'display':'none'});
-       }
-       $(this).closest('.u-navbar').off().on('mouseleave',function(){
-           $('.tab-content').css({'display':'none'});
-       })
+        //如果tabId存在，则显示子菜单内容。
+        if (tabId && tabId !== "#") {
+            if ($(tabId).is(":hidden")) {
+                $(tabId).slideDown();
+            }
+        } else {
+            //   $('.tab-content').css({'display':'none'});
+        }
+        $(this).closest('.u-navbar').off().on('mouseleave', function() {
+            $('.tab-content').css({
+                'display': 'none'
+            });
+        })
     });
 
 
@@ -73,7 +86,7 @@ $(document).ready(function() {
         $(this).addClass('active').siblings().removeClass('active');
         var firstTab = $(this).find('a').attr('index');
         //有对应的右侧内容则显示，没有则清空右侧区域
-        if (firstTab && firstTab!=="#") {
+        if (firstTab && firstTab !== "#") {
 
             $('.tab-content-right li ').removeClass('active');
 
@@ -90,12 +103,12 @@ $(document).ready(function() {
 
     });
 
-    $('.tab-content-right li').mouseenter(function(){
+    $('.tab-content-right li').mouseenter(function() {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
     //当鼠标移开子菜单时，内容隐藏
-    $('.tab-content').mouseleave(function(){
+    $('.tab-content').mouseleave(function() {
         //重置将第一项选中
         $(this).find('.tab-content-left li').first().addClass('active').siblings().removeClass('active');
         var $rightUl = $(this).find('.tab-content-right ul');
@@ -125,10 +138,14 @@ $(document).ready(function() {
         var leftValue = this.offsetLeft + this.offsetWidth / 2 - 6;
         //加上内容的margin
         var height = $popout.height() + 40;
-        $parent.css({ "margin-bottom": height });
+        $parent.css({
+            "margin-bottom": height
+        });
         $popout.show();
 
-        $arrow.css({ left: leftValue + 'px' });
+        $arrow.css({
+            left: leftValue + 'px'
+        });
 
         //给圆形添加box-shadow效果
         //先去掉其他的圆形的box-shadow效果
@@ -172,13 +189,17 @@ $(document).ready(function() {
             selections.removeAllRanges();
             selections.addRange(range);
             $(this).addClass('copied');
-            try { s = document.execCommand("copy") } catch (t) { console.error(t) }
+            try {
+                s = document.execCommand("copy")
+            } catch (t) {
+                console.error(t)
+            }
             selections.removeAllRanges();
         }
 
     });
     //版本下载中，其他场景下载显示
-    $('.down_info>p>span').click(function(){
+    $('.down_info>p>span').click(function() {
         var $this = $(this);
         $this.parent().next().toggleClass('show-down');
     });
@@ -206,7 +227,10 @@ $(document).ready(function() {
             $.each($(".product_img"), function(index, item) {
                 $(item).hover(function() {
                         $(item).find("aside").hide();
-                        $(item).find("aside").css({ "opacity": "0.8", "visibility": "visible" }).show(250);
+                        $(item).find("aside").css({
+                            "opacity": "0.8",
+                            "visibility": "visible"
+                        }).show(250);
                         $(item).find("aside").append(arr[index]);
                     },
                     function() {

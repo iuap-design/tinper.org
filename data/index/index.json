@@ -149,15 +149,20 @@
         "class": "tinper-store",
         "introduce": "模板商城"
     }, {
+        "name": "tinper-yon",
+        "href": "https://github.com/iuap-design/yon/blob/master/README.md",
+        "class": "tinper-yon",
+        "introduce": "内部Node镜像服务"
+    }, {
+        "name": "tinper-tdoc",
+        "href": "https://github.com/iuap-design/tdoc/blob/master/README.md",
+        "class": "tinper-tdoc",
+        "introduce": "前端工程文档生成工具"
+    }, {
         "name": "tinper-monitor",
         "href": "",
         "class": "tinper-monitor",
         "introduce": "性能监控解决方案"
-    }, {
-        "name": "tinper-yon",
-        "href": "",
-        "class": "tinper-yon",
-        "introduce": "内部Node镜像服务"
     }, {
         "name": "tinper-mock",
         "href": "",
