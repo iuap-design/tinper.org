@@ -7,7 +7,7 @@
 <li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.3.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.3.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.3.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
 </div>
 
-### Bug Fixes 
+### Bug Fixes
 * 修改eq方法的==为=== ([b1b390a](https://github.com/iuap-design/kero/commit/b1b390a))
 
 * 解决数字组件校验失效的问题 ([1f6afdc](https://github.com/iuap-design/neoui-kero/commit/1f6afdc))
@@ -16,7 +16,7 @@
 
 * 优化app的getComp相关api ([067acb8](https://github.com/iuap-design/compox/commit/067acb8))
 
-### Features 
+### Features
 
 
 * 分页控件跳转页码处支持回车操作，同时确定按钮支持参数设置showBtnOk是否显示 ([8fa9c39](https://github.com/iuap-design/tinper-neoui/commit/8fa9c39))
@@ -32,7 +32,9 @@
 
 
 * grid树表情况下支持异步加载 ([f0cadf4](https://github.com/iuap-design/tinper-neoui-grid/commit/f0cadf4))
+
 * 优化columnMenuType为border情况下的操作区展示 ([28d7a43](https://github.com/iuap-design/tinper-neoui-grid/commit/28d7a43))
+
 * 增加参数支持整体宽度大于所有显示列宽度时非最后一列也可以自动扩展宽度 ([175e98d](https://github.com/iuap-design/tinper-neoui-grid/commit/175e98d))
 
 <a name="3.2.2"></a>

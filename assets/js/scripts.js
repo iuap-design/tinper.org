@@ -11,6 +11,18 @@ $(document).ready(function() {
     $('.tab-content').css({
         'padding-left': paddingLeft
     });
+    var is_mobile = false;
+    if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+        if (window.location.href.indexOf("?mobile") < 0) {
+            try {
+                if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                    is_mobile = true;
+                } else if (/iPad/i.test(navigator.userAgent)) {} else {
+                    is_mobile = true;
+                }
+            } catch (e) {}
+        }
+    }
 
     //导航
     $('.nav-first-sub').mouseenter(function() {
@@ -32,7 +44,7 @@ $(document).ready(function() {
         $nav.addClass('black_');
     }
     //导航栏的滚动动态切换效果
-    $(document).off("scroll").on("scroll",function() {
+    $(document).off("scroll").on("scroll", function() {
         var $this = $(this),
             $nav = $('.u-navbar.u-navbar-default'),
             top = $(this).scrollTop();
@@ -43,7 +55,7 @@ $(document).ready(function() {
         }
     });
     //当不是首页的时候，取消导航栏的滚动动态切换效果
-    if (window.location.pathname !== '/') {
+    if (window.location.pathname !== '/' || is_mobile) {
         $nav.addClass('white_');
         $(document).off("scroll");
     }
