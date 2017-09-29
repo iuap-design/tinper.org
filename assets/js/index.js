@@ -74,9 +74,24 @@ productData.forEach(function (item) {
 });
 parentTag.html(tagHtml);
 $('body').on('click', '.pruduct_link', function () {
-    alert('正在建设中');
+    alert('正在建设中,敬请期待！');
     // $('.tinper_tips').css({ width: '100%', height: '100%' });
 });
+function getScrollTop() {
+    var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+    if (document.body) {
+        bodyScrollTop = document.body.scrollTop;
+    }
+    if (document.documentElement) {
+        documentScrollTop = document.documentElement.scrollTop;
+    }
+    scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+    return scrollTop;
+}
+// 修改nav滚动到中部刷新背景为透明
+if(getScrollTop()>51){
+    $('.u-navbar').addClass('u-navbar-default.white_');
+}
 // $('body').on('click', '.tinper_tips', function () {
 //     $('.tinper_tips').css({
 //         width: 0, height: 0
