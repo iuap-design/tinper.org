@@ -952,6 +952,9 @@ a.product_img.sparrow_link:hover:before {
 .tinper_family *{
     box-sizing: border-box;
 }
+.tinper_family a:hover,.tinper_family  a:visited,.tinper_family  a:link, .tinper_family   a:active{
+    text-decoration: none;
+}
 .tinper_family ul li{
     list-style: none;
 }
@@ -963,11 +966,11 @@ a.product_img.sparrow_link:hover:before {
 }
 .tinper_family .tinper_product .tinper_list .tinper_flag{
     width: 136px;height: 50px;background: #db993a;color: #fff;font-size: 16px;font-weight: bold;word-break: break-all;padding: 0px 5px;border-radius: 8px;line-height: 50px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
+    /*box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
     -o-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
     -ms-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
-    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);*/
     position: absolute;left: 20px;top: 20px;
 }
 .tinper_family .tinper_product .tinper_list .tinper_flag_line{

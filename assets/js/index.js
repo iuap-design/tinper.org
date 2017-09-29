@@ -3,11 +3,11 @@ var productData = [
         title: 'React<br>开发解决方案',
         product: [
             { url: "https://github.com/uba-templates/template-iuap-react-solution/blob/master/docs/index.md", isEnable: true, ename: "tinper-react", name: "开发框架" },
-            { url: "", isEnable: false, ename: "Mirror", name: "应用框架" },
+            { url: "https://github.com/mirrorjs/mirror/blob/master/README_zh.md", isEnable: true, ename: "Mirror", name: "应用框架" },
             { url: "http://bee.tinper.org/", isEnable: true, ename: "tinper-bee", name: "组件库" },
             { url: "", isEnable: false, ename: "Libra", name: "移动端组件库" },
             { url: "", isEnable: false, ename: "bee-app-comp", name: "应用组件库" },
-            { url: "", isEnable: false, ename: "optimize", name: "性能优化方案" }
+            { url: "https://github.com/nolanlawson/optimize-js", isEnable: true, ename: "optimize", name: "性能优化方案" }
         ]
     },
     {
@@ -74,11 +74,11 @@ productData.forEach(function (item) {
 });
 parentTag.html(tagHtml);
 $('body').on('click', '.pruduct_link', function () {
-    // console.log('aa');
-    $('.tinper_tips').css({ width: '100%', height: '100%' });
+    alert('正在建设中');
+    // $('.tinper_tips').css({ width: '100%', height: '100%' });
 });
-$('body').on('click', '.tinper_tips', function () {
-    $('.tinper_tips').css({
-        width: 0, height: 0
-    })
-})
+// $('body').on('click', '.tinper_tips', function () {
+//     $('.tinper_tips').css({
+//         width: 0, height: 0
+//     })
+// })
