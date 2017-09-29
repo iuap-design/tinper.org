@@ -152,7 +152,7 @@ footer p {
 footer i.lable-icon {
     /*font-size: 50px;*/
     font-size: 45px;
-    // vertical-align: middle;
+    /*vertical-align: middle;*/
 }
 
 footer .footer-part {
@@ -186,7 +186,7 @@ footer .footer-part-title {
 
 footer .footer-part-desc {
     /*width: 75%;*/
-    // display: inline-block;
+    /*// display: inline-block;*/
     /*float: left;*/
     /*
     margin-top: 11px;*/
@@ -460,11 +460,11 @@ a.product_img.sparrow_link:hover:before {
     box-sizing: border-box;
 }
 
-// h1, h2, h3, h4, h5, h6 {
+/*// h1, h2, h3, h4, h5, h6 {
 //     overflow: hidden;
 //     padding: 0;
 //     text-overflow: ellipsis;
-// }
+// }*/
 .products-row {
     background-color: #f7f7f7;
     /*margin: -40px -10024px 40px;*/
@@ -511,7 +511,7 @@ a.product_img.sparrow_link:hover:before {
 .products-item-img {
     color: #607d8b;
     display: block;
-    // font-size: 48px;
+    /*// font-size: 48px;*/
     font-size: 26px;
     text-align: center;
 }
@@ -603,7 +603,7 @@ a.product_img.sparrow_link:hover:before {
     margin-top: 40px;
     position: absolute;
     text-align: left;
-    // z-index: 1000;
+    /*// z-index: 1000;*/
     padding-left: 120px;
     padding-right: 120px;
 }
@@ -705,7 +705,7 @@ a.product_img.sparrow_link:hover:before {
     top: 50px;
     left: 0px;
     opacity: 0.94;
-    // height: 0px;
+    /*// height: 0px;*/
     padding-top: 21px;
     background: #fff;
     border-bottom: 4px solid rgb(76, 175, 80);
@@ -943,5 +943,102 @@ a.product_img.sparrow_link:hover:before {
     .products-item {
         margin: 1px;
         width: calc((100% - 9px)/2);
+    }
+}
+/*家族图谱修改*/
+.tinper_family{
+    width: 100%;margin: 0 auto;max-width: 1080px;overflow: hidden;text-align: center;box-sizing: border-box;min-height: 700px;
+}
+.tinper_family *{
+    box-sizing: border-box;
+}
+.tinper_family ul li{
+    list-style: none;
+}
+.tinper_family .tinper_product{
+    overflow: hidden;position: relative;
+}
+.tinper_family .tinper_product .tinper_list{
+    position: relative;display: block;overflow: hidden;border-bottom: 1px solid #ccc;
+}
+.tinper_family .tinper_product .tinper_list .tinper_flag{
+    width: 136px;height: 50px;background: #db993a;color: #fff;font-size: 16px;font-weight: bold;word-break: break-all;padding: 0px 5px;border-radius: 8px;line-height: 50px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
+    -o-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
+    -ms-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .7);
+    position: absolute;left: 20px;top: 20px;
+}
+.tinper_family .tinper_product .tinper_list .tinper_flag_line{
+    line-height: 25px;
+}
+.tinper_family .tinper_product .tinper_list .tinper_item{
+    width: 100%;height: 100%;float: left;padding-left: 176px;
+}
+.tinper_family .tinper_product .tinper_list .tinper_item ul{
+    padding: 20px 0 0 0;overflow: hidden;margin: 0;
+}
+.tinper_family .tinper_product .tinper_list .tinper_item ul a{
+    color: #333;
+}
+.tinper_family .tinper_product .tinper_list .tinper_item li{
+    float: left;height: 50px;border-right: 1px solid #ccc;padding: 2px 10px;border-radius: 2px;margin: 0 5px 20px 5px;
+    transition:All .2s ease-in-out;
+    -webkit-transition:All .2s ease-in-out;
+    -moz-transition:All .2s ease-in-out;
+    -o-transition:All .2s ease-in-out;
+}
+.tinper_family .tinper_product .tinper_list .tinper_item .noEnable{
+    opacity: 0.3;cursor: pointer;
+}
+.tinper_family .tinper_product .tinper_list .tinper_item li:hover{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, .1);
+border-right: 1px solid #fff;
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+}
+.tinper_family .tinper_product .tinper_list .tinper_item ul a:last-child>li{
+    border-right: 0;
+}
+.tinper_family .tinper_product .tinper_list .tinper_item li>div:first-child{
+    color: #000;
+}
+.tinper_family .tinper_product .tinper_list .tinper_item li>div:last-child{
+    color: #343434;
+}
+.tinper_tips{
+    position: fixed;z-index: 9999;width: 0%;height: 0%;background-color: rgba(0,0,0,0.8);
+    left: 0;top: 0;overflow: hidden;margin: auto;right: 0;bottom: 0;    
+    transition: all .4s;
+    -moz-transition: all .4s;	/* Firefox 4 */
+    -webkit-transition: all .4s;	/* Safari 和 Chrome */
+    -o-transition: all .4s;
+}
+
+.tinper_tips .tips_box{
+    width: 50%;height: 243px;position: absolute;left: 0;right: 0;top: 0;bottom: 0;border-radius: 4px;background: #fff;margin: auto;text-align: center;
+}
+.tinper_tips .tips_box >div:first-child{
+    line-height: 200px;font-size: 24px;
+}
+.tinper_tips .tips_box >div:last-child{
+    line-height: 43px;font-size: 16px;border-top: 1px solid #ccc;
+}
+@media(max-width: 767px){
+    .tinper_family .tinper_product .tinper_list .tinper_flag{
+        width: 80%;margin: auto;left: 0;right: 0;
+    }
+    .tinper_family .tinper_product .tinper_list .tinper_item{
+        padding: 0 16px;margin-top: 70px;
+    }
+    .tinper_family .tinper_product .tinper_list .tinper_item li{
+        width: 70%;margin: 10px auto;float: none;border-right: 0;border-bottom: 1px solid #ccc;
+    }
+    .tinper_family .tinper_product .tinper_list .tinper_item ul>a:last-child > li{
+        border: none;
     }
 }
