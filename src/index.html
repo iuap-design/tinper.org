@@ -15,12 +15,12 @@
     <div class="content">
         <div class="content-wrapper part1">
             <!-- 云彩 开始 -->
-    		<div class="banner-cloud-front-left rellax" data-rellax-speed="3"></div>
-    		<div class="banner-cloud-end-left rellax" data-rellax-speed="6"></div>
-    		<div class="banner-cloud-end-center rellax" data-rellax-speed="3.5"></div>
-    		<div class="banner-cloud-end-right rellax" data-rellax-speed="8.5"></div>
-    		<div class="cloud--end--left2 rellax" data-rellax-speed="10"></div>
-    		<div class="cloud--front--right rellax" data-rellax-speed="8"></div>
+            <div class="banner-cloud-front-left rellax" data-rellax-speed="3"></div>
+            <div class="banner-cloud-end-left rellax" data-rellax-speed="6"></div>
+            <div class="banner-cloud-end-center rellax" data-rellax-speed="3.5"></div>
+            <div class="banner-cloud-end-right rellax" data-rellax-speed="8.5"></div>
+            <div class="cloud--end--left2 rellax" data-rellax-speed="10"></div>
+            <div class="cloud--front--right rellax" data-rellax-speed="8"></div>
             <!-- 云彩 结束 -->
             <div class="u-container">
                 <div class="bounceIn">
@@ -37,130 +37,24 @@
 
             </div>
         </div>
-        <!-- 产品简述 start-->
-        <div class="content-wrapper part2  bg-grey-100 padding-vertical-50">
-            <div class="u-container ">
-                <div class="u-row text-center">
-                    <div class="u-col-md-12">
-                        <div class="page text-center">
-                            <!-- <p class="grey-600 tinper-desc">tinper，由前端集成开发工具uba、前端UI框架neoui、react组件库bee、表格组件grid、UI数据模型kero、前端基础库sparrow组成，旨在帮助开发者快速进行应用开发，提高开发效率。</p> -->
-                            <h1>tinper 家族图谱</h1>
-                        </div>
-                        <!-- <div class="height-50"></div> -->
-                    </div>
+        <!-- 产品简述 修改家族图谱start-->
+        <div class="tinper_family">
+            <h1 class="tinper_title">tinper 家族图谱</h1>
+            <div class="tinper_product" id="tinper_family">
 
-
-                    <!-- <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a class="product_img uba_link" href="/dist/uba/index.html">
-
-                            <i class="icon uf uf-uba-col"></i>
-                            <p>前端集成开发</p>
-
-                        </a>
-
-                    </div>
-                    <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a class="product_img neoui_link" href="/dist/neoui/index.html">
-
-                            <i class="icon uf uf-neoui-col"></i>
-                            <p>UI框架</p>
-
-                        </a>
-
-                    </div>
-
-                    <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a class="product_img react_link" href="//bee.tinper.org/">
-
-                            <i class="icon uf uf-bee-col"></i>
-                            <p>React组件库</p>
-
-                        </a>
-
-                    </div>
-                    <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a class="product_img grid_link" href="/dist/grid/index.html">
-
-                            <i class="icon uf uf-gridlogo"></i>
-                            <p>表格控件</p>
-                        </a>
-
-                    </div>
-                    <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a class="product_img kero_link" href="/dist/kero/index.html">
-
-                            <i class="icon uf uf-kero-col"></i>
-                            <p>UI数据模型</p>
-                        </a>
-
-                    </div>
-                    <div class="u-col-sm-2 u-col-xs-4 margin-top-10">
-                        <a class="product_img sparrow_link" href="/dist/sparrow/index.html">
-
-                            <i class="icon uf uf-sparrow-col"></i>
-                            <p>前端基础库</p>
-                        </a>
-
-                    </div> -->
-
-                    <section class="products-row">
-                        <div class="products-row-inner">
-                            {{{each prod as item}}}
-                            <div class="products-item">
-                                {{{if item.href}}}
-                                    <a href="{{{item.href}}}" class="products-item-link">
-                                {{{else}}}
-                                    <a href="javascript:;" class="products-item-link unlink">
-                                {{{/if}}}
-
-                                    <div class="products-item-content {{{item.class}}}">
-                                        <div class="product-name">
-                                            {{{item.name}}}
-                                        </div>
-                                        <div class="product-introduction">
-                                            {{{item.introduce}}}
-                                        </div>
-                                    </div>
-
-                                </a>
-                                <!-- <div class="products-item-popout">
-                                    <div class="product-item-popout-down-arrow">
-                                    </div>
-                                    <div class="product-item-close-btn uf uf-close">
-
-                                    </div>
-                                    <div class="products-item-popout-inner full-width">
-                                        <h4 class="products-item-popout-heading">{{{item.name}}}</h4>
-                                        <p class="products-item-popout-desc">
-                                          {{{item.introduce}}}
-                                        </p>
-                                        {{{each item.features as feat}}}
-                                        <div class="products-item-popout-wrapper">
-
-                                            <h5 class="products-item-popout-subheading"><i class="{{{feat.img}}}"></i>{{{feat.name}}}</h5>
-                                            <p class="products-item-popout-paragraph">
-                                                {{{feat.desc}}}
-                                            </p>
-                                        </div>
-                                         {{{/each}}}
-
-
-                                    </div>
-                                </div> -->
-                            </div>
-                            {{{/each}}}
-                        </div>
-                    </section>
-
-
-
-                </div>
             </div>
         </div>
+        <!-- 产品简述 家族图谱 end-->
+        <!-- 产品简述 start-->
+        
         <!-- 产品简述 end-->
         <div class="content-wrapper part3 padding-vertical-50">
             <div class="u-container">
-                <h2 class="text-center"><font><font>为什么选用tinper</font></font></h2>
+                <h2 class="text-center">
+                    <font>
+                        <font>为什么选用tinper</font>
+                    </font>
+                </h2>
                 <div class="u-row text-center">
 
 
@@ -231,7 +125,9 @@
                 <div class="u-row">
                     <div class="height-100"></div>
                     <div class="page">
-                        <h2 class="text-center"><font>自适应网页设计</font></h2>
+                        <h2 class="text-center">
+                            <font>自适应网页设计</font>
+                        </h2>
                         <p class="text-center">
 
                             <font>栅格化布局 响应式组件 全面兼容多端</font>
@@ -254,7 +150,11 @@
                     <div class="page">
                         <div class="u-col-md-6">
                             <div class="height-150"></div>
-                            <h2 class="text-left"><font><font>原子化设计</font></font></h2>
+                            <h2 class="text-left">
+                                <font>
+                                    <font>原子化设计</font>
+                                </font>
+                            </h2>
                             <p class="text-left">
                                 <font>
                                     <font>将界面元素打散重构</font>
@@ -282,7 +182,11 @@
                         </div>
                         <div class="u-col-md-6 userdev">
                             <div class="grey-800">
-                                <h3 class="text-left"><font><font>用户开发案例</font></font></h3>
+                                <h3 class="text-left">
+                                    <font>
+                                        <font>用户开发案例</font>
+                                    </font>
+                                </h3>
                                 <p>广大的开发者基于 tinper 平台构建企业级应用，我们汇聚部分优秀应用案例供您参考</p>
                                 <!--  <p>
                                 <a class="u-button u-button-success u-button-lg u-button-squared" href="/dist/case/index.html">查看用户开发案例</a>
@@ -306,20 +210,34 @@
                             <font>企业开发者的选择</font>
                         </p>
                         <div class="u-col-md-8 user-img">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/song-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/dyl-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/wei-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/hehe-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/caven-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/bail-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/xie-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/he-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/xry-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/jiangj-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/rose-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/zj-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/lily-profile-200.jpg" alt="">
-                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/cross-profile-200.jpg" alt="">
+                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/song-profile-200.jpg"
+                                alt="">
+                                <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/dyl-profile-200.jpg"
+                                    alt="">
+                                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/wei-profile-200.jpg"
+                                        alt="">
+                                        <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/hehe-profile-200.jpg"
+                                            alt="">
+                                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/caven-profile-200.jpg"
+                                                alt="">
+                                                <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/bail-profile-200.jpg"
+                                                    alt="">
+                                                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/xie-profile-200.jpg"
+                                                        alt="">
+                                                        <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/he-profile-200.jpg"
+                                                            alt="">
+                                                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/xry-profile-200.jpg"
+                                                                alt="">
+                                                                <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/jiangj-profile-200.jpg"
+                                                                    alt="">
+                                                                    <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/rose-profile-200.jpg"
+                                                                        alt="">
+                                                                        <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/zj-profile-200.jpg"
+                                                                            alt="">
+                                                                            <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/lily-profile-200.jpg"
+                                                                                alt="">
+                                                                                <img class="iu width-100" onmouseout="this.className='iu'" onmouseover="this.className='ui'" src="/assets/images/avator/cross-profile-200.jpg"
+                                                                                    alt="">
                         </div>
                         <div class="u-col-md-4">
                             <div class="vertical-align h">
@@ -360,15 +278,17 @@
         {{{include '../partial/_footer'}}}
 
         <!-- 版权 end -->
-        <script type="text/javascript" src="/assets/js/rellax/rellax.min.js" ></script>
-		<script type="text/javascript">
-			var DEBUG = true;
-      		var rellax = new Rellax('.rellax');
-		</script>
+        <script type="text/javascript" src="/assets/js/rellax/rellax.min.js"></script>
+        <script type="text/javascript">
+                                                                                                                      var DEBUG = true;
+                                                                                                                      var rellax = new Rellax('.rellax');
+        </script>
         <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
         <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js">
+
         </script>
         <script src="/assets/js/scripts.js"></script>
+        <script src="/assets/js/index.js"></script>
 </body>
 <!-- Body End-->
 
