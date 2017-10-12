@@ -64,7 +64,6 @@ productData.forEach(function (item) {
     var lh = item.title.indexOf('br') > -1 ? "tinper_flag_line" : "";
     tagHtml += ' <div class="tinper_list"><div class="tinper_flag ' + lh + '">' + item.title + '</div><div class="tinper_item"><ul>';
     item.product.forEach(function (i,index) {
-        console.log(i.name+'网址为：'+i.url)
         var url = i.isEnable ? i.url : 'javascript:;',
             clickEven = !(i.isEnable) ? "pruduct_link" : "",
             Enable = !(i.isEnable) ? "noEnable" : "";
