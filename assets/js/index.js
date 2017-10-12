@@ -2,10 +2,10 @@ var productData = [
     {
         title: 'React<br>开发解决方案',
         product: [
-            { url: "https://github.com/uba-templates/template-iuap-react-solution/blob/master/docs/index.md", isEnable: true, ename: "tinper-react", name: "开发框架" },
-            { url: "https://github.com/mirrorjs/mirror/blob/master/README_zh.md", isEnable: true, ename: "Mirror", name: "应用框架" },
+            { url: "http://react.tinper.org/", isEnable: true, ename: "tinper-react", name: "开发框架" },
+            // { url: "https://github.com/mirrorjs/mirror/blob/master/README_zh.md", isEnable: true, ename: "Mirror", name: "应用框架" },
             { url: "http://bee.tinper.org/", isEnable: true, ename: "tinper-bee", name: "组件库" },
-            { url: "", isEnable: false, ename: "Libra", name: "移动端组件库" },
+            { url: "https://github.com/lebra/lebra-components", isEnable: true, ename: "Libra", name: "移动端组件库" },
             { url: "", isEnable: false, ename: "bee-app-comp", name: "应用组件库" },
             { url: "https://github.com/nolanlawson/optimize-js", isEnable: true, ename: "optimize", name: "性能优化方案" }
         ]
@@ -68,7 +68,7 @@ productData.forEach(function (item) {
         var url = i.isEnable ? i.url : 'javascript:;',
             clickEven = !(i.isEnable) ? "pruduct_link" : "",
             Enable = !(i.isEnable) ? "noEnable" : "";
-        tagHtml += '<a href="' + url + '" data-type="' + i.isEnable + '" class="' + clickEven + '"><li class="'+Enable+'"><div>' + i.ename + '</div><div>' + i.name + '</div></li></a>';
+        tagHtml += '<a target="_blank" href="' + url + '" data-type="' + i.isEnable + '" class="' + clickEven + '"><li class="'+Enable+'"><div>' + i.ename + '</div><div>' + i.name + '</div></li></a>';
     })
     tagHtml += '</ul></div></div>';
 });
