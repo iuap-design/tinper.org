@@ -29,11 +29,9 @@ var repoNameArr = [
 	// 'tinper-sparrow',
 	'tinper-neoui',
 	'kero',
-	// no release branch make can not get md from github
-	// 'tinper-uba',
-	// 'ynpm-tool',
-	// 'tinper-bee-honeycomb',
-	// 'tinper-webide',
+	'ynpm-tool',
+	'tinper-bee-honeycomb',
+	'tinper-webide',
 ];
 var branch = {
 	'tinper-uba': 'master',
