@@ -1,0 +1,694 @@
+# bee-RadioGroup
+
+
+单选框组合
+
+RadioGroup将Radio集成为自己的子组件。故API需注意。
+
+
+## API
+
+
+## RadioGroup.Radio
+
+|参数|说明|类型|默认值|
+|---|----|---|------|
+|color|one of: `primary` `success` `info` `error`  `warning` `dark`|string|''|
+|disabled|是否可用|bool|false|
+
+## RadioGroup
+
+|参数|说明|类型|默认值|
+|---|----|---|------|
+|onChange|暴露在外层的触发radio是否选中的方法|func|''|
+|selectedValue|被选中的radio值|string|''|
+|name|radio组名|string|''|
+|Children|Radio子组件|obj|''|
+
+
+## 案例
+
+###  RadioGroup
+
+单选按钮适用于多个选择只能选一个的情况。故以组的形式呈现。
+
+<div class="example-content"><div id="ReactRadioGroupDemo1"></div>
+</div>
+
+
+
+<div class="ex-code-par"><button  class="u-button u-button-block u-button-accent margin-top-15 codeOptBtn" ><i class="uf uf-arrow-down"></i>查看代码</button><div class="examples-code"><pre><code>
+&lt;div id="ReactRadioGroupDemo1">&lt;/div>
+</code></pre>
+</div>
+
+
+
+<div class="examples-code"><pre><code>
+import { RadioGroup } from 'tinper-bee';
+
+
+const Demo1 = React.createClass({
+  getInitialState() {
+    return {selectedValue: 'apple'};
+  },
+
+  handleChange(value) {
+    this.setState({selectedValue: value});
+  },
+
+  render() {
+    return (
+      &lt;RadioGroup
+        name="fruit"
+        selectedValue={this.state.selectedValue}
+        onChange={this.handleChange}>
+
+          &lt;RadioGroup.Radio colors="warning" value="apple" >apple&lt;/RadioGroup.Radio>
+
+          &lt;RadioGroup.Radio colors="success" value="orange" >Orange&lt;/RadioGroup.Radio>
+
+          &lt;RadioGroup.Radio colors="info" value="watermelon" >Watermelon&lt;/RadioGroup.Radio>
+
+          &lt;RadioGroup.Radio colors="danger" value="banana" >Banana&lt;/RadioGroup.Radio>
+
+          &lt;RadioGroup.Radio colors="dark" value="grape" >Grape&lt;/RadioGroup.Radio>
+
+      &lt;/RadioGroup>
+    );
+  }
+});	
+
+
+ReactDOM.render(&lt;Demo1 />, document.getElementById('ReactRadioGroupDemo1'));
+
+
+</code></pre>
+</div>
+</div>
+
+###  disabled的Radio
+
+在Ridao上添加参数disabled便设置成当前radio不可用
+
+<div class="example-content"><div id="ReactRadioGroupDemo2"></div>
+</div>
+
+
+
+
+<script>
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+
+
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _RadioGroupDemo = __webpack_require__(1);
+
+	var _RadioGroupDemo2 = _interopRequireDefault(_RadioGroupDemo);
+
+	var _reactDom = __webpack_require__(3);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _src = __webpack_require__(4);
+
+	var _src2 = _interopRequireDefault(_src);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var Demo2 = React.createClass({
+	  displayName: 'Demo2',
+	  getInitialState: function getInitialState() {
+	    return { selectedValue: 'apple' };
+	  },
+	  handleChange: function handleChange(value) {
+	    this.setState({ selectedValue: value });
+	  },
+	  render: function render() {
+	    return React.createElement(
+	      _src2['default'],
+	      {
+	        name: 'fruit',
+	        selectedValue: this.state.selectedValue,
+	        onChange: this.handleChange },
+	      React.createElement(
+	        _src2['default'].Radio,
+	        { value: 'apple' },
+	        'apple'
+	      ),
+	      React.createElement(
+	        _src2['default'].Radio,
+	        { value: 'orange' },
+	        'Orange'
+	      ),
+	      React.createElement(
+	        _src2['default'].Radio,
+	        { disabled: true, value: 'watermelon' },
+	        'Watermelon'
+	      )
+	    );
+	  }
+	});
+
+	var Demo1 = React.createClass({
+	  displayName: 'Demo1',
+	  getInitialState: function getInitialState() {
+	    return { selectedValue: 'apple' };
+	  },
+	  handleChange: function handleChange(value) {
+	    this.setState({ selectedValue: value });
+	  },
+	  render: function render() {
+	    return React.createElement(
+	      _src2['default'],
+	      {
+	        name: 'fruit',
+	        selectedValue: this.state.selectedValue,
+	        onChange: this.handleChange },
+	      React.createElement(
+	        _src2['default'].Radio,
+	        { colors: 'warning', value: 'apple' },
+	        'apple'
+	      ),
+	      React.createElement(
+	        _src2['default'].Radio,
+	        { colors: 'success', value: 'orange' },
+	        'Orange'
+	      ),
+	      React.createElement(
+	        _src2['default'].Radio,
+	        { colors: 'info', value: 'watermelon' },
+	        'Watermelon'
+	      ),
+	      React.createElement(
+	        _src2['default'].Radio,
+	        { colors: 'danger', value: 'banana' },
+	        'Banana'
+	      ),
+	      React.createElement(
+	        _src2['default'].Radio,
+	        { colors: 'dark', value: 'grape' },
+	        'Grape'
+	      )
+	    );
+	  }
+	});
+
+	_reactDom2['default'].render(React.createElement(Demo2, null), document.getElementById('ReactRadioGroupDemo2'));
+	_reactDom2['default'].render(React.createElement(Demo1, null), document.getElementById('ReactRadioGroupDemo1'));
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(3);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _src = __webpack_require__(4);
+
+	var _src2 = _interopRequireDefault(_src);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var App = _react2['default'].createClass({
+	  displayName: 'App',
+	  getInitialState: function getInitialState() {
+	    return { selectedValue: 'apple' };
+	  },
+	  handleChange: function handleChange(value) {
+	    this.setState({ selectedValue: value });
+	  },
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      _src2['default'],
+	      {
+	        name: 'fruit',
+	        selectedValue: this.state.selectedValue,
+	        onChange: this.handleChange },
+	      _react2['default'].createElement(
+	        _src2['default'].Radio,
+	        { colors: 'warning', value: 'apple' },
+	        'apple'
+	      ),
+	      _react2['default'].createElement(
+	        _src2['default'].Radio,
+	        { value: 'orange' },
+	        'Orange'
+	      ),
+	      _react2['default'].createElement(
+	        _src2['default'].Radio,
+	        { value: 'watermelon' },
+	        'Watermelon'
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = App;
+	module.exports = exports['default'];
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	module.exports = React;
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	module.exports = ReactDOM;
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _RadioGroup = __webpack_require__(5);
+
+	var _RadioGroup2 = _interopRequireDefault(_RadioGroup);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	exports['default'] = _RadioGroup2['default'];
+	module.exports = exports['default'];
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(6);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _Radio = __webpack_require__(7);
+
+	var _Radio2 = _interopRequireDefault(_Radio);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
+
+	var propTypes = {
+	  name: _react.PropTypes.string,
+	  /**
+	   * 选中的值
+	   */
+	  selectedValue: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.number, _react.PropTypes.bool]),
+	  /**
+	  * 暴露给用户，且与子Radio通信的方法
+	  */
+	  onChange: _react.PropTypes.func,
+
+	  children: _react.PropTypes.node.isRequired,
+
+	  Component: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.func, _react.PropTypes.object])
+	};
+
+	var defaultProps = {
+	  Component: 'div'
+	};
+
+	/**
+	 * 与子Radio通信
+	 */
+	var childContextTypes = {
+	  radioGroup: _react2['default'].PropTypes.object
+	};
+
+	var RadioGroup = function (_React$Component) {
+	  _inherits(RadioGroup, _React$Component);
+
+	  function RadioGroup(props, context) {
+	    _classCallCheck(this, RadioGroup);
+
+	    return _possibleConstructorReturn(this, _React$Component.call(this, props, context));
+	  }
+
+	  /**
+	    * 一旦外层change方法触发本身props发生改变，则调用getChildContext更新与子Radio的通信信息（radioGroup）
+	    */
+
+	  RadioGroup.prototype.getChildContext = function getChildContext() {
+	    var _props = this.props;
+	    var name = _props.name;
+	    var selectedValue = _props.selectedValue;
+	    var onChange = _props.onChange;
+
+	    return {
+	      radioGroup: {
+	        name: name, selectedValue: selectedValue, onChange: onChange
+	      }
+	    };
+	  };
+
+	  RadioGroup.prototype.render = function render() {
+	    var _props2 = this.props;
+	    var Component = _props2.Component;
+	    var name = _props2.name;
+	    var selectedValue = _props2.selectedValue;
+	    var onChange = _props2.onChange;
+	    var children = _props2.children;
+
+	    var others = _objectWithoutProperties(_props2, ['Component', 'name', 'selectedValue', 'onChange', 'children']);
+
+	    return _react2['default'].createElement(
+	      Component,
+	      others,
+	      children
+	    );
+	  };
+
+	  return RadioGroup;
+	}(_react2['default'].Component);
+
+	RadioGroup.childContextTypes = childContextTypes;
+	RadioGroup.propTypes = propTypes;
+	RadioGroup.defaultProps = defaultProps;
+	RadioGroup.Radio = _Radio2['default'];
+	exports['default'] = RadioGroup;
+	module.exports = exports['default'];
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	  Copyright (c) 2016 Jed Watson.
+	  Licensed under the MIT License (MIT), see
+	  http://jedwatson.github.io/classnames
+	*/
+	/* global define */
+
+	(function () {
+		'use strict';
+
+		var hasOwn = {}.hasOwnProperty;
+
+		function classNames () {
+			var classes = [];
+
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				if (!arg) continue;
+
+				var argType = typeof arg;
+
+				if (argType === 'string' || argType === 'number') {
+					classes.push(arg);
+				} else if (Array.isArray(arg)) {
+					classes.push(classNames.apply(null, arg));
+				} else if (argType === 'object') {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
+						}
+					}
+				}
+			}
+
+			return classes.join(' ');
+		}
+
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = classNames;
+		} else if (true) {
+			// register as 'classnames', consistent with npm package name
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+				return classNames;
+			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else {
+			window.classNames = classNames;
+		}
+	}());
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _classnames = __webpack_require__(6);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
+
+	var propTypes = {
+	  /**
+	    * radio 颜色 样式
+	    */
+	  colors: _react2['default'].PropTypes.oneOf(['', 'dark', 'success', 'info', 'warning', 'danger', 'primary']),
+	  /**
+	  * radio 是否可用
+	  */
+	  disabled: _react2['default'].PropTypes.bool
+	};
+
+	var defaultProps = {
+	  active: false,
+	  disabled: false
+	};
+
+	/**
+	 * 建立与RadioGroup通信
+	 */
+	var contextTypes = {
+	  radioGroup: _react2['default'].PropTypes.object
+	};
+
+	var clsPrefix = "u-radio";
+
+	var Radio = function (_React$Component) {
+	  _inherits(Radio, _React$Component);
+
+	  function Radio(props, context) {
+	    _classCallCheck(this, Radio);
+
+	    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props, context));
+
+	    _this.handleClick = _this.handleClick.bind(_this);
+
+	    return _this;
+	  }
+
+	  Radio.prototype.handleClick = function handleClick(event) {
+	    var onChange = this.context.radioGroup.onChange;
+
+
+	    if (this.props.disabled) {
+	      return;
+	    }
+
+	    if (onChange) {
+	      onChange(this.props.value);
+	    }
+	  };
+
+	  Radio.prototype.render = function render() {
+	    var _context$radioGroup = this.context.radioGroup;
+	    var name = _context$radioGroup.name;
+	    var selectedValue = _context$radioGroup.selectedValue;
+	    /**
+	     * 自身的属性
+	     */
+
+	    var _props = this.props;
+	    var disabled = _props.disabled;
+	    var colors = _props.colors;
+	    var className = _props.className;
+	    var children = _props.children;
+
+	    var others = _objectWithoutProperties(_props, ['disabled', 'colors', 'className', 'children']);
+
+	    var optional = {};
+	    /**
+	     * 若父级selectedValue与本身的value值相同，则改radio被选中
+	     */
+	    if (selectedValue !== undefined) {
+	      optional.checked = this.props.value === selectedValue;
+	    }
+
+	    var classes = {
+	      'u-radio': true,
+	      'is-checked': optional.checked,
+	      disabled: disabled
+	    };
+
+	    if (colors) {
+	      classes[clsPrefix + '-' + colors] = true;
+	    }
+
+	    var input = _react2['default'].createElement('input', _extends({}, others, {
+	      type: 'radio',
+	      name: name,
+	      disabled: this.props.disabled
+	    }));
+	    return _react2['default'].createElement(
+	      'label',
+	      { onClick: this.handleClick, className: (0, _classnames2['default'])(className, classes) },
+	      input,
+	      _react2['default'].createElement(
+	        'label',
+	        { className: 'u-radio-label' },
+	        children
+	      )
+	    );
+	  };
+
+	  return Radio;
+	}(_react2['default'].Component);
+
+	Radio.contextTypes = contextTypes;
+	Radio.propTypes = propTypes;
+	Radio.defaultProps = defaultProps;
+
+	exports['default'] = Radio;
+	module.exports = exports['default'];
+
+/***/ }
+/******/ ]);
+</script>
+<div class="ex-code-par"><button  class="u-button u-button-block u-button-accent margin-top-15 codeOptBtn" ><i class="uf uf-arrow-down"></i>查看代码</button><div class="examples-code"><pre><code>
+&lt;div id="ReactRadioGroupDemo2">&lt;/div>
+</code></pre>
+</div>
+
+
+
+<div class="examples-code"><pre><code>
+import { RadioGroup } from 'tinper-bee';
+
+const Demo2 = React.createClass({
+  getInitialState() {
+    return {selectedValue: 'apple'};
+  },
+
+  handleChange(value) {
+    this.setState({selectedValue: value});
+  },
+
+  render() {
+    return (
+      &lt;RadioGroup
+        name="fruit"
+        selectedValue={this.state.selectedValue}
+        onChange={this.handleChange}>
+
+          &lt;RadioGroup.Radio value="apple" >apple&lt;/RadioGroup.Radio>
+
+          &lt;RadioGroup.Radio value="orange" >Orange&lt;/RadioGroup.Radio>
+
+          &lt;RadioGroup.Radio disabled value="watermelon" >Watermelon&lt;/RadioGroup.Radio>
+
+      &lt;/RadioGroup>
+    );
+  }
+});
+
+
+ReactDOM.render(&lt;Demo2 />, document.getElementById('ReactRadioGroupDemo2'));
+
+
+</code></pre>
+</div>
+</div>
