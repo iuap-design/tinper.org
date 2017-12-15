@@ -31,9 +31,9 @@ var repoNameArr = [
 	'tinper-neoui',
 	'kero',
 	// no release branch
-	// 'ynpm-tool',
-	// 'tinper-bee-honeycomb',
-	// 'tinper-webide',
+	'ynpm-tool',
+	'tinper-bee-honeycomb',
+	'tinper-webide',
 ];
 function loadMdFromGithub() {
 	function readRemoteFile (url, cb) {
