@@ -1,3 +1,17 @@
+## 0.2.2(2017-12-15)
+
+### Fixs
+
+* Finsh Install or Publish, Process exit status from 1 to 0
+
+
+## 0.2.1(2017-12-14)
+
+### Fixs
+
+* `ini` module cant find
+
+
 ## 0.2.0(2017-12-13)
 
 ###Features

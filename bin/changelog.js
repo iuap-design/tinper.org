@@ -24,17 +24,24 @@ var prodNameArr = [
 
 var repoNameArr = [
 	'tinper-bee',
-	'tinper-uba',
-	'tinper-moy',
-	'tdoc',
-	'tinper-sparrow',
+	// 'tinper-moy',
+	// 'tdoc',
+	// 'tinper-sparrow',
 	'tinper-neoui',
 	'kero',
-	// no release branch
+	// no release branch make can not get md from github
+	// 'tinper-uba',
 	// 'ynpm-tool',
 	// 'tinper-bee-honeycomb',
 	// 'tinper-webide',
 ];
+var branch = {
+	'tinper-uba': 'master',
+	'ynpm-tool': 'master',
+	'tdoc': 'master',
+	'tinper-webide': 'master',
+	'tinper-bee-honeycomb': 'master',
+}
 function loadMdFromGithub() {
 	function readRemoteFile (url, cb) {
   		var callback = function () {
@@ -61,15 +68,18 @@ function loadMdFromGithub() {
 		(function(j){
 
 			var repoName = repoNameArr[j];
+			var branchName = branch[repoName] ? branch[repoName] : 'release'; 
 			var outPath = path.join(envPath, 'src/log', repoName);
 			var filePath = {
 				host: 'api.github.com',
+				// path: '/repos/iuap-design/' + repoName + '/contents/CHANGELOG.md' + '?ref=' + branchName,
 				path: '/repos/iuap-design/' + repoName + '/contents/CHANGELOG.md',
 				headers: {
 					'User-Agent': 'jinhujie',
-					'Authorization': 'token caeab0cf4791fa0d50050c1062a7f8155a63ca56'
+					'Authorization': 'token bd05c2dd65e52b0889be0dfef2367b3baae265e0'
 				}
 			}
+			console.log(filePath)
 
 			dirPath = path.join(envPath, 'src/log/' + repoName);
 			if (!fs.existsSync(dirPath) && repoName) {

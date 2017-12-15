@@ -1,3 +1,147 @@
+<a name="3.2.221"></a>
+<h2 class="logtit"> V3.2.221 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.221.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.221.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.221.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.221.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.220"></a>
+<h2 class="logtit"> V3.2.220 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.220.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.220.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.220.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.220.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.219"></a>
+<h2 class="logtit"> V3.2.219 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.219.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.219.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.219.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.219.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.218"></a>
+<h2 class="logtit"> V3.2.218 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.218.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.218.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.218.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.218.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.217"></a>
+<h2 class="logtit"> V3.2.217 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.217.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.217.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.217.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.217.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.216"></a>
+<h2 class="logtit"> V3.2.216 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.216.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.216.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.216.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.216.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.215"></a>
+<h2 class="logtit"> V3.2.215 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.215.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.215.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.215.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.215.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.214"></a>
+<h2 class="logtit"> V3.2.214 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.214.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.214.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.214.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.214.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.213"></a>
+<h2 class="logtit"> V3.2.213 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.213.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.213.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.213.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.213.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.212"></a>
+<h2 class="logtit"> V3.2.212 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.212.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.212.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.212.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.212.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.211"></a>
+<h2 class="logtit"> V3.2.211 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.211.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.211.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.211.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.211.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.210"></a>
+<h2 class="logtit"> V3.2.210 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.210.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.210.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.210.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.210.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.209"></a>
+<h2 class="logtit"> V3.2.209 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.209.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.209.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.209.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.209.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.208"></a>
+<h2 class="logtit"> V3.2.208 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.208.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.208.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.208.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.208.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.207"></a>
+<h2 class="logtit"> V3.2.207 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.207.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.207.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.207.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.207.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.206"></a>
+<h2 class="logtit"> V3.2.206 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.206.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.206.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.206.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.206.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.205"></a>
+<h2 class="logtit"> V3.2.205 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.205.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.205.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.205.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.205.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.204"></a>
+<h2 class="logtit"> V3.2.204 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.204.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.204.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.204.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.204.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
 <a name="3.2.203"></a>
 <h2 class="logtit"> V3.2.203 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.203.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-12-15)</i></h2>
 

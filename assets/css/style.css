@@ -151,7 +151,7 @@ a.product-title {
     width: 100%;
     max-width: 1080px;
     margin-top: 20px;
-    /*background: #ece8e8;*/
+    background: #f8f8f8;
     font-size: 15px;
 }
 
@@ -174,7 +174,7 @@ a.product-title {
 .version {
     float: left;
     line-height: 46px;
-    width: 360px;
+    width: 340px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

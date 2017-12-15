@@ -25,20 +25,22 @@ $(document.body).ready(function() {
 	for (var i = 0; i < H2s.length; i++) {
 		var H2 = $(H2s[i]);
 		var id = H2.text();
-		var releaseName = id.match(/[0-9]+\.[0-9]+\.[0-9]+/);
-		if (projName == 'kero' || projName == 'tinper-neoui' || projName == 'tinper-sparrow') {
-			releaseName = 'v' + releaseName;
-		}
-		var href = 'https://github.com/iuap-design/' + projName + '/archive/' + releaseName + '.zip';
+		if (!(id.indexOf('.') == -1)) {
+			var releaseName = id.match(/[0-9]+\.[0-9]+\.[0-9]+/);
+			if (projName == 'kero' || projName == 'tinper-neoui' || projName == 'tinper-sparrow') {
+				releaseName = 'v' + releaseName;
+			}
+			var href = 'https://github.com/iuap-design/' + projName + '/archive/' + releaseName + '.zip';
 
-		H2.attr('id', id).append(
-			$('<a></a>').attr('href', href).addClass('uf uf-download').css('marginLeft', 15)
-		);
+			H2.attr('id', id).append(
+				$('<a></a>').attr('href', href).addClass('uf uf-download').css('marginLeft', 15)
+			);
 
-		if (!isCollected(id)) {
-			collection.append($('<li></li>').append($('<a></a>').append(id).attr('href', '#' + id)));
+			if (!isCollected(id)) {
+				collection.append($('<li></li>').append($('<a></a>').append(id).attr('href', '#' + id)));
+			}
+			hasCollected.push(H2[0].childNodes[0].innerHTML);
 		}
-		hasCollected.push(H2[0].childNodes[0].innerHTML);
 	}
 	$('#content').append(leftNav.append(collection));
 
