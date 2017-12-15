@@ -160,9 +160,6 @@ a.product-title {
 }
 
 .versions a {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-start;*/
     font-size: 14px;
     color: #636363;
     cursor: pointer;
@@ -170,6 +167,10 @@ a.product-title {
 }
 .versions a:hover {
     color: #00bcd4;    
+}
+.versioins-header {
+    width: 100%;
+    background: #FFF;
 }
 .version {
     float: left;
@@ -180,5 +181,4 @@ a.product-title {
     white-space: nowrap;
     border-bottom: 1px dashed #ededed;
     font-family: 'Microsoft YaHei',Arial;
-    /*color: #000;*/
 }
