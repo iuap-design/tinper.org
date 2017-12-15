@@ -1,5 +1,8 @@
 var fs = require('fs');
+var fse = require('fs-extra');
 var path = require('path');
+var http = require('https');
+var envPath = process.cwd();
 
 function getResolvePath(p){
 	return path.resolve(__dirname, p)
@@ -18,6 +21,80 @@ var prodNameArr = [
 	'kero-fetch',
 	'neoui-kero-mixin'
 ];
+
+var repoNameArr = [
+	'tinper-bee',
+	'tinper-uba',
+	'tinper-moy',
+	'tdoc',
+	'tinper-sparrow',
+	'tinper-neoui',
+	'kero',
+	// no release branch
+	// 'ynpm-tool',
+	// 'tinper-bee-honeycomb',
+	// 'tinper-webide',
+];
+function loadMdFromGithub() {
+	function readRemoteFile (url, cb) {
+  		var callback = function () {
+    		// 回调函数，避免重复调用
+    		callback = function () {};
+    		cb.apply(null, arguments);
+  		};
+
+  		var req = http.get(url, function (res) {
+    		var b = [];
+    		res.on('data', function (c) {
+      			b.push(c);
+    		});
+    		res.on('end', function () {
+      			callback(null, Buffer.concat(b));
+    		});
+    		res.on('error', callback);
+  		});
+  		req.on('error', callback);
+	}
+
+
+	for(var i in repoNameArr){
+		(function(j){
+
+			var repoName = repoNameArr[j];
+			var outPath = path.join(envPath, 'src/log', repoName);
+			var filePath = {
+				host: 'api.github.com',
+				path: '/repos/iuap-design/' + repoName + '/contents/CHANGELOG.md',
+				headers: {
+					'User-Agent': 'jinhujie',
+					'Authorization': 'token caeab0cf4791fa0d50050c1062a7f8155a63ca56'
+				}
+			}
+
+			dirPath = path.join(envPath, 'src/log/' + repoName);
+			if (!fs.existsSync(dirPath) && repoName) {
+				fs.mkdirSync(dirPath);
+			}
+
+			readRemoteFile(filePath, function (err, buffer) {
+				console.log(repoName)
+  				if (err) {
+  					console.log(err);
+  				}else{
+		  			var str = new Buffer(buffer, 'base64').toString('utf8');
+  					var content = JSON.parse(str).content;
+  					var parsedStr = content ? new Buffer(content, 'base64').toString('utf8') : '';
+  					fs.writeFileSync(getResolvePath('../src/log/' + repoName + '/' + repoName + '.md'), parsedStr, {encoding: 'utf8'});
+  				}
+			});
+			fse.copySync(path.join(envPath, '/assets/css/log/index.css'), outPath + '/index.css');
+			fse.copySync(path.join(envPath, '/assets/js/log/index.js'), outPath + '/index.js');
+			fse.copySync(path.join(envPath, '/src/log/SUMMARY.md'), outPath + '/SUMMARY.md');
+		})(i)
+	}
+}
+loadMdFromGithub();
+
 var basePath = '../changelog/';
 // 读取当前版本号对应的各仓库版本号
 var jsonPath = getResolvePath(basePath + 'CHANGELOG-ALL.json');
