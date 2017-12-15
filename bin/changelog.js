@@ -1,8 +1,8 @@
 var fs = require('fs');
 var fse = require('fs-extra');
 var path = require('path');
-var http = require('https');
 var envPath = process.cwd();
+var gapi = require('./g-api.js');
 
 function getResolvePath(p){
 	return path.resolve(__dirname, p)
@@ -22,86 +22,67 @@ var prodNameArr = [
 	'neoui-kero-mixin'
 ];
 
+//要加载的changelog的仓库repo名
 var repoNameArr = [
 	'tinper-bee',
-	// 'tinper-moy',
-	// 'tdoc',
-	// 'tinper-sparrow',
+	'tinper-moy',
+	'tinper-sparrow',
 	'tinper-neoui',
-	'kero',
-	'ynpm-tool',
 	'tinper-bee-honeycomb',
 	'tinper-webide',
+	'tinper-uba',
+	'YY-Code-Guide',
+	'tdoc',
+	'kero',
+	'ynpm-tool',
 ];
+//changelog.md文件分支名
 var branch = {
 	'tinper-uba': 'master',
 	'ynpm-tool': 'master',
 	'tdoc': 'master',
 	'tinper-webide': 'master',
 	'tinper-bee-honeycomb': 'master',
+	'YY-Code-Guide': 'master',
 }
-function loadMdFromGithub() {
-	function readRemoteFile (url, cb) {
-  		var callback = function () {
-    		// 回调函数，避免重复调用
-    		callback = function () {};
-    		cb.apply(null, arguments);
-  		};
 
-  		var req = http.get(url, function (res) {
-    		var b = [];
-    		res.on('data', function (c) {
-      			b.push(c);
-    		});
-    		res.on('end', function () {
-      			callback(null, Buffer.concat(b));
-    		});
-    		res.on('error', callback);
-  		});
-  		req.on('error', callback);
-	}
+//从github加载changelog.md文件,写入到src/log/下
+for(var i in repoNameArr){
+	(function(j){
+		var repoName = repoNameArr[j];
+		var dirPath = path.join(envPath, 'src/log/' + repoName);
 
+		if (!fs.existsSync(dirPath) && repoName) {
+			fs.mkdirSync(dirPath);
+		}
 
-	for(var i in repoNameArr){
-		(function(j){
+		var branchName = branch[repoName] ? branch[repoName] : 'release';
+		//只有蜂巢项目的owner是tinper-bee
+		var owner = repoName == 'tinper-bee-honeycomb' ? 'tinper-bee' : 'iuap-design';
+		var options = {
+			owner: owner,
+			repo: repoName,
+			path: 'CHANGELOG.md',
+			branch: branchName,
+			callback: writeMD,
+		}
 
-			var repoName = repoNameArr[j];
-			var branchName = branch[repoName] ? branch[repoName] : 'release'; 
-			var outPath = path.join(envPath, 'src/log', repoName);
-			var filePath = {
-				host: 'api.github.com',
-				// path: '/repos/iuap-design/' + repoName + '/contents/CHANGELOG.md' + '?ref=' + branchName,
-				path: '/repos/iuap-design/' + repoName + '/contents/CHANGELOG.md',
-				headers: {
-					'User-Agent': 'jinhujie',
-					'Authorization': 'token bd05c2dd65e52b0889be0dfef2367b3baae265e0'
-				}
-			}
-			console.log(filePath)
+		function writeMD (str) {
+			var outPath = getResolvePath('../src/log/' + repoName + '/' + repoName + '.md');
+			var content = JSON.parse(str).content;
 
-			dirPath = path.join(envPath, 'src/log/' + repoName);
-			if (!fs.existsSync(dirPath) && repoName) {
-				fs.mkdirSync(dirPath);
-			}
+			fs.writeFileSync(outPath, content, {encoding: 'base64'});
+		}
 
-			readRemoteFile(filePath, function (err, buffer) {
-				console.log(repoName)
-  				if (err) {
-  					console.log(err);
-  				}else{
-		  			var str = new Buffer(buffer, 'base64').toString('utf8');
-  					var content = JSON.parse(str).content;
-  					var parsedStr = content ? new Buffer(content, 'base64').toString('utf8') : '';
-  					fs.writeFileSync(getResolvePath('../src/log/' + repoName + '/' + repoName + '.md'), parsedStr, {encoding: 'utf8'});
-  				}
-			});
-			fse.copySync(path.join(envPath, '/assets/css/log/index.css'), outPath + '/index.css');
-			fse.copySync(path.join(envPath, '/assets/js/log/index.js'), outPath + '/index.js');
-			fse.copySync(path.join(envPath, '/src/log/SUMMARY.md'), outPath + '/SUMMARY.md');
-		})(i)
-	}
+		gapi.contents(options, writeMD);
+
+		var assetsPath = path.join(envPath, 'src/log', repoName);
+
+		fse.copySync(path.join(envPath, '/assets/css/log/index.css'), assetsPath + '/index.css');
+		fse.copySync(path.join(envPath, '/assets/js/log/index.js'), assetsPath + '/index.js');
+		fse.copySync(path.join(envPath, '/src/log/SUMMARY.md'), assetsPath + '/SUMMARY.md');
+	})(i)
 }
-loadMdFromGithub();
 
 var basePath = '../changelog/';
 // 读取当前版本号对应的各仓库版本号
