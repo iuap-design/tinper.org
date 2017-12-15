@@ -65,7 +65,7 @@
 /*内容区*/
 
 .content-wrapper.part1 {
-    height: 490px;
+    height: 224px;
     padding-top: 50px;
     background-attachment: fixed;
     background-size: cover;
@@ -81,7 +81,7 @@
 }
 
 .u-container>.bounceIn{
-    margin-top: 100px;
+    margin-top: 22px;
 }
 
 .u-container>#top_down_info{
@@ -145,4 +145,40 @@ a.product-title {
     color: rgb(117, 117, 117);
     text-decoration: none;
     margin-bottom: 20px;
+}
+
+.changelog {
+    width: 100%;
+    max-width: 1080px;
+    margin-top: 20px;
+    /*background: #ece8e8;*/
+    font-size: 15px;
+}
+
+.changelog-row {
+    padding: 10px 0;
+}
+
+.versions a {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+    font-size: 14px;
+    color: #636363;
+    cursor: pointer;
+    text-decoration: none;
+}
+.versions a:hover {
+    color: #00bcd4;    
+}
+.version {
+    float: left;
+    line-height: 46px;
+    width: 360px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px dashed #ededed;
+    font-family: 'Microsoft YaHei',Arial;
+    /*color: #000;*/
 }

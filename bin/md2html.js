@@ -6,6 +6,7 @@
 
 var fs = require('fs');
 var fse = require('fs-extra');
+var fsg = require('graceful-fs');
 var template = require( 'art-template' );
 var execSync = require('child_process').execSync;
 var path = require('path');
@@ -86,9 +87,9 @@ var markedFun = function(oldPath,newPath,fullName) {
 	// 读取layout,后续优化为缓存,或本级处理单一目录
 	var baseCont;
 	if(MDLAYOUT[cataMenu]){
-		baseCont = fs.readFileSync(path.join(envPath, 'layout', MDLAYOUT[cataMenu]),'utf-8');
+		baseCont = fsg.readFileSync(path.join(envPath, 'layout', MDLAYOUT[cataMenu]),'utf-8');
 	} else {
-		baseCont = fs.readFileSync(path.join(envPath, 'layout', MDLAYOUT.default), 'utf-8');
+		baseCont = fsg.readFileSync(path.join(envPath, 'layout', MDLAYOUT.default), 'utf-8');
 	}
 
 	// 填充layout
