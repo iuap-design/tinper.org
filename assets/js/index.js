@@ -6,7 +6,7 @@ var productData = [
             // { url: "https://github.com/mirrorjs/mirror/blob/master/README_zh.md", isEnable: true, ename: "Mirror", name: "应用框架" },
             { url: "http://bee.tinper.org/", isEnable: true, ename: "tinper-bee", name: "组件库" },
             { url: "https://github.com/lebra/lebra-components", isEnable: true, ename: "Libra", name: "移动端组件库" },
-            { url: "", isEnable: false, ename: "bee-app-comp", name: "应用组件库" },
+            { url: "http://comb.tinper.org", isEnable: true, ename: "honeycomb", name: "蜂巢" },
             { url: "https://github.com/nolanlawson/optimize-js", isEnable: true, ename: "optimize", name: "性能优化方案" }
         ]
     },
@@ -41,7 +41,7 @@ var productData = [
         product: [
             { url: "http://tinper.org/webide/#/demos/ui/button", isEnable: true, ename: "tinper-webide", name: "示例系统" },
             { url: "https://github.com/iuap-design/iuap-insight", isEnable: true, ename: "iuap-insight", name: "端到端数据上报" },
-            { url: "http://docs.tinper.org/uba/", isEnable: false, ename: "tinper-mock", name: "在线数据mock服务" },
+            { url: "https://mock.yonyoucloud.com", isEnable: true, ename: "tinper-mock", name: "接口管理平台" },
             { url: "http://design.yyuap.com/designer/", isEnable: true, ename: "tinper-designer", name: "可视化开发服务" },
             { url: "http://design.yyuap.com/mall/", isEnable: true, ename: "tinper-store", name: "模板商城" },
         ]

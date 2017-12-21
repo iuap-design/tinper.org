@@ -68,6 +68,7 @@
     "async": "^2.1.2",
     "bee-alert": "0.0.2",
     "browser-sync": "^2.17.5",
+    "cheerio": "^1.0.0-rc.2",
     "chokidar": "^1.6.1",
     "compox": "^3.2.2",
     "compox-util": "^3.2.3",
