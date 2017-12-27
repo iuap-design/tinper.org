@@ -7,6 +7,7 @@
     "check": "node bin/checkjson.js",
     "dev": "node server/app.js",
     "changelog": "node bin/changelog.js",
+    "changelog-all": " node bin/changelog-all.js",
     "cate": "node bin/category",
     "reload": "node bin/reload",
     "mark": "node bin/index",

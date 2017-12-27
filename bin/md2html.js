@@ -174,7 +174,7 @@ var renderFun = function(newPath) {
 	 * 当发现是根目录下dist下的index.html中时，
 	 * 需要拼接来自changelog/CHANGELOG-ALL.json中的version和date字段，
 	 * 用于在官网首页显示最新版本号和更新时间
-	 */
+	*/ 
 	 
 	if(newPath.indexOf('dist/index.html')!= -1|| newPath.indexOf('dist\\index.html')!=-1){
 		console.log("---in---"+envPath);
@@ -183,6 +183,7 @@ var renderFun = function(newPath) {
 			data['version'] = data_index.versions[0].version;
 			data['date'] = data_index.versions[0].date;
 		}
+		data['tag'] = 'itisatag';
 	}
 
 	// 此部分后续需要增加配置API
@@ -195,6 +196,8 @@ var renderFun = function(newPath) {
 			renders = renders.replace(`href="${fullName}"`,`href="${fullName}" class="active"`);
 			// 去除代码高亮换行bug
 			renders = renders.replace(/<code>\s/g,'<code>');
+			//
+			renders = renders.replace('itisatag', '<h1>byrenders</h1>');
 			fs.writeFileSync(newPath, renders);
 		}
 	}
