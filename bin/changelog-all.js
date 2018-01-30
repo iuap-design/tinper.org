@@ -88,7 +88,19 @@ for(var i in repoNameArr){
 		}
 
 
-		gapi.contents(options, writeMD);
+		// gapi.contents(options, writeMD);
+		function readRealeseList (resStr) {
+			var res = JSON.parse(resStr);
+			var realeseList = [];
+			res.foeEach(realease => {
+				realeseList.push(realease.tag_name);
+			})
+			console.log(realeseList);
+
+		}
+		if (repoName === 'tinper-bee'){
+			gapi.releases('iuap-design', 'tinper-bee', readRealeseList);
+		}
 
 		var assetsPath = path.join(envPath, 'src/log', repoName);
 

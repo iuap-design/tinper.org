@@ -1,4 +1,146 @@
 <a name="3.2.4"></a>
+<h2 class="logtit"> V3.2.4 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.4.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2018-1-30)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.4.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.4.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.4.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+
+### Bug Fixes 
+* 修改上下箭头不一致bug ([4f0bd06](https://github.com/iuap-design/tinper-neoui/commit/4f0bd06))
+
+* 修改下拉框在取消选中的时候不更新title ([835b236](https://github.com/iuap-design/tinper-neoui/commit/835b236))
+
+* 修改日期控件容器高度，修复日期控件不能下跳月份 ([381fbe0](https://github.com/iuap-design/tinper-neoui/commit/381fbe0))
+
+* 修改booleanRender在grid的edittable设置为false时，还能编辑的bug ([d8762b7](https://github.com/iuap-design/neoui-kero/commit/d8762b7))
+
+* 修改年月控件设置format不起作用的bug ([7759858](https://github.com/iuap-design/neoui-kero/commit/7759858))
+
+* 将grid中的下拉框ui风格与表单中的下拉框风格保持统一 ([efcc911](https://github.com/iuap-design/neoui-kero/commit/efcc911))
+
+* 解决float类型输入框不能输入小键盘减号bug ([a997e5a](https://github.com/iuap-design/neoui-kero/commit/a997e5a))
+
+* 修复inter和float的数值为0时就设置为空字符串的bug ([d66e10e](https://github.com/iuap-design/tinper-neoui-grid/commit/d66e10e))
+
+* 修改显示和隐藏grid菜单的时候列的计算宽度bug ([48478ad](https://github.com/iuap-design/tinper-neoui-grid/commit/48478ad))
+
+* 修改getCompsByElement未找到bug ([11a475d](https://github.com/iuap-design/compox-util/commit/11a475d))
+
+* 修改在setValue的时候传入ValidateType来判断类型 ([ad55906](https://github.com/iuap-design/neoui-kero-mixin/commit/ad55906))
+
+### Features 
+
+
+* 当在多选的时候，设置selectChangeDatatable为true时，选中一个数据就会动态的去改变datatable ([5e8464a](https://github.com/iuap-design/tinper-neoui/commit/5e8464a))
+* 添加reade ([8caaa85](https://github.com/iuap-design/tinper-neoui/commit/8caaa85))
+* 添加单选下拉框在设置readonly的注释 ([b7a7156](https://github.com/iuap-design/tinper-neoui/commit/b7a7156))
+
+
+
+* 给row.setValue增加validType判断 ([3e15ca4](https://github.com/iuap-design/kero/commit/3e15ca4))
+
+
+
+* 增加switchRender可以赋值0和1来设置开关 ([6654ccf](https://github.com/iuap-design/neoui-kero/commit/6654ccf))
+* 当在多选的时候，设置selectChangeDatatable为true时，选中一个数据就会动态的去改变datatable ([add000e](https://github.com/iuap-design/neoui-kero/commit/add000e))
+* 支持radio控件的boolean类型的true和false与true和false比较 ([9e74018](https://github.com/iuap-design/neoui-kero/commit/9e74018))
+
+
+
+* grid增加参数nullField用于过滤datatable中存在但是grid中不应存在的字段（主要针对主子表情况下的子表字段） ([e303507](https://github.com/iuap-design/tinper-neoui-grid/commit/e303507))
+* grid增加接口onBeforeCreateLeftMul支持是否创建数据行前的复选框 ([5e2686b](https://github.com/iuap-design/tinper-neoui-grid/commit/5e2686b))
+* 增加grid列支持通过参数来配置文字对齐方式 ([5f28bb7](https://github.com/iuap-design/tinper-neoui-grid/commit/5f28bb7))
+
+
+
+* 增加validType参数进行eq判断 ([0e2722b](https://github.com/iuap-design/neoui-kero-mixin/commit/0e2722b))
+
+<a name="3.2.4"></a>
+<h2 class="logtit"> V3.2.4 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.4.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2018-1-30)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.4.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.4.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.4.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+
+### Bug Fixes 
+* 修改上下箭头不一致bug ([4f0bd06](https://github.com/iuap-design/tinper-neoui/commit/4f0bd06))
+
+* 修改下拉框在取消选中的时候不更新title ([835b236](https://github.com/iuap-design/tinper-neoui/commit/835b236))
+
+* 修改日期控件容器高度，修复日期控件不能下跳月份 ([381fbe0](https://github.com/iuap-design/tinper-neoui/commit/381fbe0))
+
+* 修改booleanRender在grid的edittable设置为false时，还能编辑的bug ([d8762b7](https://github.com/iuap-design/neoui-kero/commit/d8762b7))
+
+* 修改年月控件设置format不起作用的bug ([7759858](https://github.com/iuap-design/neoui-kero/commit/7759858))
+
+* 将grid中的下拉框ui风格与表单中的下拉框风格保持统一 ([efcc911](https://github.com/iuap-design/neoui-kero/commit/efcc911))
+
+* 解决float类型输入框不能输入小键盘减号bug ([a997e5a](https://github.com/iuap-design/neoui-kero/commit/a997e5a))
+
+* 修复inter和float的数值为0时就设置为空字符串的bug ([d66e10e](https://github.com/iuap-design/tinper-neoui-grid/commit/d66e10e))
+
+* 修改显示和隐藏grid菜单的时候列的计算宽度bug ([48478ad](https://github.com/iuap-design/tinper-neoui-grid/commit/48478ad))
+
+* 修改getCompsByElement未找到bug ([11a475d](https://github.com/iuap-design/compox-util/commit/11a475d))
+
+* 修改在setValue的时候传入ValidateType来判断类型 ([ad55906](https://github.com/iuap-design/neoui-kero-mixin/commit/ad55906))
+
+### Features 
+
+
+* 当在多选的时候，设置selectChangeDatatable为true时，选中一个数据就会动态的去改变datatable ([5e8464a](https://github.com/iuap-design/tinper-neoui/commit/5e8464a))
+* 添加reade ([8caaa85](https://github.com/iuap-design/tinper-neoui/commit/8caaa85))
+* 添加单选下拉框在设置readonly的注释 ([b7a7156](https://github.com/iuap-design/tinper-neoui/commit/b7a7156))
+
+
+
+* 给row.setValue增加validType判断 ([3e15ca4](https://github.com/iuap-design/kero/commit/3e15ca4))
+
+
+
+* 增加switchRender可以赋值0和1来设置开关 ([6654ccf](https://github.com/iuap-design/neoui-kero/commit/6654ccf))
+* 当在多选的时候，设置selectChangeDatatable为true时，选中一个数据就会动态的去改变datatable ([add000e](https://github.com/iuap-design/neoui-kero/commit/add000e))
+* 支持radio控件的boolean类型的true和false与true和false比较 ([9e74018](https://github.com/iuap-design/neoui-kero/commit/9e74018))
+
+
+
+* grid增加参数nullField用于过滤datatable中存在但是grid中不应存在的字段（主要针对主子表情况下的子表字段） ([e303507](https://github.com/iuap-design/tinper-neoui-grid/commit/e303507))
+* grid增加接口onBeforeCreateLeftMul支持是否创建数据行前的复选框 ([5e2686b](https://github.com/iuap-design/tinper-neoui-grid/commit/5e2686b))
+* 增加grid列支持通过参数来配置文字对齐方式 ([5f28bb7](https://github.com/iuap-design/tinper-neoui-grid/commit/5f28bb7))
+
+
+
+* 增加validType参数进行eq判断 ([0e2722b](https://github.com/iuap-design/neoui-kero-mixin/commit/0e2722b))
+
+<a name="3.2.5"></a>
+<h2 class="logtit"> V3.2.5 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.5.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2018-1-30)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.5.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.5.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.5.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.282"></a>
+<h2 class="logtit"> V3.2.282 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.282.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2018-1-30)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.282.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.282.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.282.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.281"></a>
+<h2 class="logtit"> V3.2.281 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.281.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2018-1-30)</i></h2>
+
+<div class="down_info">
+<h3>场景下载</h3>
+<ul>
+<li ><p>仅包含ui组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/tinper-neoui-3.2.281.zip"><i class="icon uf uf-downloadd logicon"></i></a>企业级前端UI框架，包含全局样式、CSS组件、JavaScript插件，并且提供丰富的字体图标<a target="blank" href="http://docs.tinper.org/neoui/">----文档地址</a></p></li><li ><p>包含UI组件和kero组件:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/neoui-kero-3.2.281.zip"><i class="icon uf uf-downloadd logicon"></i></a>包含前端UI框架以及多维数据模型<a target="blank" href="http://docs.tinper.org/moy/kero-begin.html#起步">----文档地址</a></p></li><li ><p>仅包含前端请求:<a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/kero-fetch-3.2.281.zip"><i class="icon uf uf-downloadd logicon"></i></a>基于kero，涉及到与服务器交互时的封装方法<a target="blank" href="http://docs.tinper.org/moy/kero-fetch.html">----文档地址</a></p></li></ul>
+</div>
+<a name="3.2.4"></a>
 <h2 class="logtit"> V3.2.4 <a class="u-button u-button-floating loglink" href="//design.yonyoucloud.com/static/download/iuap-design-3.2.4.zip"><i class="icon uf uf-downloadd logicon"></i></a> <i class="logdate">(2017-8-7)</i></h2>
 
 <div class="down_info">

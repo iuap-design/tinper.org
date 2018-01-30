@@ -28,4 +28,28 @@ gapi.contents = function ({
 	});
 }
 
+gapi.releases = function (owner, repo, callback){
+	var options = {
+		host: 'api.github.com',
+		path: `/repos/${owner}/${repo}/releases`,
+		headers: {
+			'User-Agent': 'jinhujie',
+		}
+	};
+
+	https.get(options, function (res) {
+		var str = '';
+	
+		res.on('data', function(c){
+			str += c;
+		});
+		res.on('end', function(){
+			callback(str);
+		});
+		res.on('error', function(err){
+			console.log(err);
+		});
+	});
+}
+
 module.exports = gapi;
