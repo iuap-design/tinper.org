@@ -183,7 +183,6 @@ var renderFun = function(newPath) {
 			data['version'] = data_index.versions[0].version;
 			data['date'] = data_index.versions[0].date;
 		}
-		data['tag'] = 'itisatag';
 	}
 
 	// 此部分后续需要增加配置API
@@ -196,8 +195,6 @@ var renderFun = function(newPath) {
 			renders = renders.replace(`href="${fullName}"`,`href="${fullName}" class="active"`);
 			// 去除代码高亮换行bug
 			renders = renders.replace(/<code>\s/g,'<code>');
-			//
-			renders = renders.replace('itisatag', '<h1>byrenders</h1>');
 			fs.writeFileSync(newPath, renders);
 		}
 	}
