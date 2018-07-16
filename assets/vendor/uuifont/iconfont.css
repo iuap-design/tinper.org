@@ -229,6 +229,8 @@
 
 .uf-tianqi1:before { content: "\e774"; }
 
+.uf-link:before { content: "\e6fe"; }
+
 .uf-Linked:before { content: "\e6fe"; }
 
 .uf-eye:before { content: "\e692"; }
@@ -316,6 +318,8 @@
 .uf-4-s:before { content: "\e68e"; }
 
 .uf-giftbox:before { content: "\e693"; }
+
+.uf-github-c:before { content: "\e695"; }
 
 .uf-githublogo:before { content: "\e695"; }
 
