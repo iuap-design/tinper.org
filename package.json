@@ -61,6 +61,7 @@
     "gulp-webpack": "^1.5.0",
     "gulp-zip": "^3.2.0",
     "node-native-zip": "^1.1.0",
+    "node-sass": "^4.9.2",
     "rimraf": "^2.5.3",
     "webpack": "^1.13.2"
   },
