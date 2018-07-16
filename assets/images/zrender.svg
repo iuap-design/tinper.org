@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="108px" viewBox="0 0 108 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>zrender</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="88.6209239%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#1677DC" offset="0%"></stop>
+            <stop stop-color="#73C8FB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-812.000000, -253.000000)">
+        <path d="M838.92,262 L893.08,262 C902.976943,262 911,270.023057 911,279.92 L911,334.08 C911,343.976943 902.976943,352 893.08,352 L838.92,352 C829.023057,352 821,343.976943 821,334.08 L821,279.92 C821,270.023057 829.023057,262 838.92,262 Z M840,271 C834.477153,271 830,275.477153 830,281 L830,333 C830,338.522847 834.477153,343 840,343 L892,343 C897.522847,343 902,338.522847 902,333 L902,281 C902,275.477153 897.522847,271 892,271 L840,271 Z M892.434817,275 C895.504141,275 898,277.497435 898,280.56538 L898,333.434817 C898,336.502762 895.504141,339 892.434817,339 L839.565183,339 C836.495859,339 834,336.502762 834,333.434817 L834,280.565183 C834,277.497238 836.495859,275 839.565183,275 L892.434817,275 Z M854,323 L879,323 L879,316.310734 L863.229391,316.310734 L878.68638,297.19209 L878.68638,291 L854.358423,291 L854.358423,297.553672 L869.098566,297.553672 L854,316.310734 L854,323 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>
