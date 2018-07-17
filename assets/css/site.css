@@ -22,6 +22,7 @@ body{
     font-weight: 200;
     line-height: 30px;
     letter-spacing: 2px;
+    max-width: 560px;
   }
   
   .btn:hover, .btn:focus {
@@ -146,7 +147,8 @@ body{
   }
   
   .home-landscape-content{
-    max-width: 1130px;
+    /* max-width: 1130px; */
+    width: 84%;
     margin: 0 auto;
     position: relative;
   }
@@ -157,6 +159,7 @@ body{
     position: relative;
     display: inline-block;
     vertical-align: top;
+    padding-top: 4%;
   }
   .home-landscape-content-left{
     width: 54%;
@@ -225,7 +228,7 @@ body{
   }
   
   .navigation-content{
-    max-width: 1130px;
+    width: 84%;
     margin: 0 auto;
   }
   /* .navigation-content nav ul ul li {
@@ -483,7 +486,7 @@ body{
     background-size:contain;
   }
   .home-product-content{
-    max-width: 1140px;
+    width: 84%;
     /*min-height:1136px; */
     margin: 0 auto;
     background-color: #F8FAFD;
@@ -534,7 +537,6 @@ body{
     font-weight: 300;
     margin: 0;
   }
-  
   .product-title{
         font-family: PingFangSC-Regular;
       font-size: 16px;
@@ -550,6 +552,11 @@ body{
       color: #969699;
       font-weight: 300;
       margin: 0;
+      overflow:hidden; 
+      text-overflow:ellipsis;
+      display:-webkit-box; 
+      -webkit-box-orient:vertical;
+      -webkit-line-clamp:2;
   }
   
   .product-btn{
@@ -583,7 +590,7 @@ body{
     border-radius: 4px;
     background: #FFFFFF;
     text-decoration: none;
-    min-height: 160px;
+    height: 160px;
     display: block;
     margin:5px;
     padding: 23px 30px 16px 30px;
@@ -645,7 +652,7 @@ body{
   }
   
   .home-standard-content{
-    max-width: 1140px;
+    width: 84%;
     margin: 0 auto;
     min-height: 440px;
   }
@@ -1127,7 +1134,7 @@ body{
     background-size: 50%;
   }
   .home-contact-us-content{
-     max-width: 1060px;
+    width:84%;
     margin: 0 auto; 
     display: block;
     font-size: 0;

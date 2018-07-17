@@ -56,8 +56,8 @@
         
         <div class="home-landscape-content">
             <div class="home-landscape-content-left">
-                <h1><a href="/"><img src="assets/images/tinperlogos 60w.png"/></a><br/>企业级前端技术平台</h1>
-                <p class="home-intro-p">tinper前端技术平台在线官网，由用友网络大前端技术团队创建，提供开箱即用的前端/设计解决方案，以及多种公共的前端开发工具，助力快速进行应用的组件化开发。</p>
+                <h1><a href="/"><img src="assets/images/tinperlogos 60w.png"/></a><br/>企业级开源前端技术平台</h1>
+                <p class="home-intro-p">tinper 致力于为企业客户和个人开发者提供快速构建泛端应用的服务和能力，其中包含了完整的开发框架、公共SDK以及配套的开发服务，用友网络大前端团队为您提供技术服务。</p>
             </div>
             <div class="home-landscape-content-right">
               <div id="bm">
@@ -76,8 +76,16 @@
                 <div class="home-product-top">
                     <div class="intro-content intro-product-content">
                         <img class="h5-decoration" src="assets/images/h5product.png">
+                        <h5>公共开发服务体系</h5>
+                        <p>提供公共开发服务，包含开发规范、可视化开发服务、在线数据mock服务等。</p>
+                    </div>
+                    <%:=newsListPro({list: group4, product: childPro})%>
+                </div>
+                <div class="home-product-top">
+                    <div class="intro-content intro-product-content">
+                        <img class="h5-decoration" src="assets/images/h5product.png">
                         <h5>tinper-react 开发框架体系</h5>
-                        <p>基于iuap design的React开发框架，包含丰富的基础组件和应用组件，支持组件的灵活调用和扩展，助力快速进行应用的组件化开发。</p>
+                        <p>这是一套经过几十个项目锤炼出来的一套开发框架，其中结合了基础工程化能力、开发规范、基础组件和应用组件的能力应用、应用状态管理最佳实践、典型开发案例等。</p>
                     </div>
                     <%:=newsListPro({list: group1, product: childPro})%>
                 </div>
@@ -85,7 +93,7 @@
                     <div class="intro-content intro-product-content">
                         <img class="h5-decoration" src="assets/images/h5product.png">
                         <h5>tinper-moy 开发框架体系</h5>
-                        <p>moy 是基于模型框架 kero 和 UI 框架 neoui 实现的应用框架，是一种前端集成解决方案，为企业级应用开发而生。</p>
+                        <p>moy 是从 NC65 走出来的轻量级前端框架，采用MVVM架构模式，结合模型框架 kero 和 UI 框架 neoui 向上提供完整的前端集成解决方案。</p>
                     </div>
                     <%:=newsListPro({list: group2, product: childPro})%>
                 </div>
@@ -93,17 +101,9 @@
                     <div class="intro-content intro-product-content">
                         <img class="h5-decoration" src="assets/images/h5product.png">
                         <h5>公共 JS-SDK 能力体系</h5>
-                        <p>tinper-sparrow是一个轻量级 javascript 库，让开发者能更方便地进行 DOM操作、events处理、动画效果实现和AJAX交互等，并且提供丰富的API封装，如多平台多浏览器判断、Cookies操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。</p>
+                        <p>将前端公共的基础能力以JS-SDK的形式进行封装和发布，方便开发者按需引入，节省重复造轮子的成本。</p>
                     </div>
                     <%:=newsListPro({list: group3, product: childPro})%>
-                </div>
-                <div class="home-product-top">
-                    <div class="intro-content intro-product-content">
-                        <img class="h5-decoration" src="assets/images/h5product.png">
-                        <h5>公共开发服务体系</h5>
-                        <p>提供公共开发服务，包含开发规范、可视化开发服务、在线数据mock服务等。</p>
-                    </div>
-                    <%:=newsListPro({list: group4, product: childPro})%>
                 </div>
                 <div class="home-product-top">
                     <div class="intro-content intro-product-content">
@@ -140,7 +140,6 @@
                     </div>
             </div>
             <div class="changelog-row clearfix">
-                <div>
                 <div class="versions u-col-4">
                     <a href="dist/log/tinper-bee/tinper-bee.html" title="基于React的UI组件库">
                         <div class="version">
@@ -190,7 +189,6 @@
                         <div class="version">
                             <i class="uf uf-bell"></i>【蜂巢】发布V0.0.1版本 一站式前端解决方案</div>
                     </a>
-                </div>
                 </div>
             </div>
         </div>   
@@ -254,35 +252,34 @@
             group1: [
                 {"name": "tinper-react","desc": "开发框架","icon":"assets/images/tinper.png","introduce":"iuap 应用平台前端开发框架","href": "https://github.com/yonyou-iuap/iuap_pap_react"},
                 {"name": "tinper-acs","desc": "应用组件库","icon":"assets/images/gallery.svg","introduce":"tinper 应用组件中心","href": "https://github.com/tinper-acs"},
-                {"name":"tinper-bee","desc":"组件库","icon":"assets/images/bee.png","introduce":"基于 iuap design 的 react 组件库，包含丰富的基础组件和应用组件","href":"http://bee.tinper.org/"},
+                {"name":"tinper-bee","desc":"组件库","icon":"assets/images/bee.png","introduce":"基于 iuap design 的 react 组件库","href":"http://bee.tinper.org/"},
                 {"name":"Libra","desc":"移动端组件库","icon":"assets/images/Libra.png","introduce":"一款针对移动端的react组件库","href":"https://github.com/lebra/lebra-components"},
                 {"name":"HoneyComb","desc":"蜂巢","icon":"assets/images/HoneyComb.png","introduce":"一站式应用开发前端解决方案","href":"http://comb.tinper.org/#/"}
             ],
             group2:[
-                {"name":"creact-moy-app","desc":"脚手架工具","icon":"assets/images/product5.svg","introduce":"moy 是基于模型框架 kero 和 UI 框架 neoui 实现的应用框架","href":"https://github.com/iuap-design/create-moy-app"},
-                {"name":"neoui","desc":"前端ui框架","icon":"assets/images/neouik.png","introduce":"tinper-neoui是基于 UI 设计语言 iuap design 实现的企业级前端UI框架","href":"http://docs.tinper.org/neoui/"},
-                {"name":"Kero","desc":"模型框架","icon":"assets/images/kero.png","introduce":"Kero依托基于 MVVM 架构的 Knockout 类库","href":"http://docs.tinper.org/moy/kero-begin.html"},
-                {"name":"moy-component","desc":"组件库","icon":"assets/images/map.svg","introduce":"级联组件","href":"http://docs.tinper.org/moy/kero/cascader.html"},
-                {"name":"tinper-webide","desc":"示例系统","icon":"assets/images/zrender.svg","introduce":"tinper集成开发环境，是tinper组件库的在线示例系统","href":"http://tinper.org/webide/#/demos/ui/button"}
+                {"name":"creact-moy-app","desc":"脚手架工具","icon":"assets/images/product5.svg","introduce":"前端框架的快速开发工具","href":"https://github.com/iuap-design/create-moy-app"},
+                {"name":"neoui","desc":"前端ui框架","icon":"assets/images/neouik.png","introduce":"基于iuap design 实现的企业级前端UI框架","href":"http://docs.tinper.org/neoui/"},
+                {"name":"Kero","desc":"模型框架","icon":"assets/images/kero.png","introduce":"基于 MVVM 架构的 Knockout 类库","href":"http://docs.tinper.org/moy/kero-begin.html"},
+                {"name":"moy-component","desc":"组件库","icon":"assets/images/map.svg","introduce":"基于moy的前端组件库","href":"http://docs.tinper.org/moy/kero/cascader.html"},
+                {"name":"tinper-webide","desc":"示例系统","icon":"assets/images/zrender.svg","introduce":"基于moy的在线示例系统","href":"http://tinper.org/webide/#/demos/ui/button"}
             ],
             group3:[
-                {"name":"sparrow.js","desc":"基础工具库","icon":"assets/images/sparrow.png","introduce":"sparrow.js是一个轻量级javascript库","href":"http://docs.tinper.org/sparrow/"},
+                {"name":"sparrow.js","desc":"基础工具库","icon":"assets/images/sparrow.png","introduce":"一款轻量级javascript工具库","href":"http://docs.tinper.org/sparrow/"},
                 {"name":"iuap-insight","desc":"端到端数据上报","icon":"assets/images/iuap.png","introduce":"端到端数据采集整体方案","href":"https://github.com/iuap-design/iuap-insight"},
-                {"name":"小友","desc":"Web SDK","icon":"assets/images/xiaoyou.svg","introduce":"小友智能机器人","href":"https://github.com/iuap-design/xiaoyouweb"},
-                {"name":"IMSDK","icon":"assets/images/product1.svg","introduce":"IMSDK-WEB 是一款解决 web 即时通讯的工具包","href":"https://github.com/iuap-design/YYIMSDK"},
-                {"name":"友云音数据采集","desc":"SDK","icon":"assets/images/友云音.png","introduce":"","href":"#"}
+                {"name":"小友","desc":"Web SDK","icon":"assets/images/xiaoyou.svg","introduce":"将AI能力端化，为应用快速接入智能服务","href":"https://github.com/iuap-design/xiaoyouweb"},
+                {"name":"IMSDK","icon":"assets/images/product1.svg","introduce":"一款解决 web 即时通讯的工具包","href":"https://github.com/iuap-design/YYIMSDK"},
+                {"name":"yyy-jssdk","desc":"数据采集SDK","icon":"assets/images/友云音.png","introduce":"源代码及文档在公司内网gitlab","href":"http://git.yonyou.com/mtl/yyy-jssdk/tree/master"}
             ],
             group4:[
-                {"name":"YY-Code-Guide","desc":"开发规范","icon":"assets/images/product2.svg","introduce":"用友云前端开发规范","href":"https://github.com/iuap-design/YY-Code-Guide"},
-                {"name":"tinper-icons","desc":"图标字体库","icon":"assets/images/icon.png","introduce":"提供丰富的图标字体，方便开发使用","href":"http://docs.tinper.org/neoui/global.html#%E5%9B%BE%E6%A0%87"},
+                {"name":"ynpm","desc":"前端包管理中心","icon":"assets/images/ec.svg","introduce":"用友内部镜像仓库，是一款高效的包管理工具","href":"https://github.com/iuap-design/ynpm-tool/blob/master/README.md"},
+                {"name":"tinper-mock","desc":"在线数据mock服务","icon":"assets/images/clay.svg","introduce":"高效、易用、功能强大的可视化接口管理平台","href":"https://mock.yonyoucloud.com/"},
                 {"name":"tinper-cdn","desc":"公共CDN资源","icon":"assets/images/CDN.svg","introduce":"tinper公共静态资源库","href":"/dist/cdn/index.html"},
-                {"name":"ynpm","desc":"前端包管理中心","icon":"assets/images/ec.svg","introduce":"ynpm是用友内部镜像仓库，是一款高效的包管理工具","href":"https://github.com/iuap-design/ynpm-tool/blob/master/README.md"},
-                {"name":"tinper-designer","desc":"可视化开发服务","icon":"assets/images/map.svg","introduce":"可视化开发工具提供自动生成应用软件服务","href":"http://design.yyuap.com/designer/"},
-                {"name":"tinper-mock","desc":"在线数据mock服务","icon":"assets/images/clay.svg","introduce":"高效、易用、功能强大的可视化接口管理平台","href":"https://mock.yonyoucloud.com/"}
+                {"name":"YY-Code-Guide","desc":"开发规范","icon":"assets/images/product2.svg","introduce":"用友云前端开发规范","href":"https://github.com/iuap-design/YY-Code-Guide"},
+                {"name":"tinper-icons","desc":"图标字体库","icon":"assets/images/icon.png","introduce":"提供丰富的图标字体，方便开发使用","href":"http://docs.tinper.org/neoui/global.html#%E5%9B%BE%E6%A0%87"}
             ],
             group5:[
                 {"name":"tinper-spriter","desc":"图片处理","icon":"assets/images/rule.svg","introduce":"前端雪碧图优化","href":"https://github.com/iuap-design/blog/issues/194"},
-                {"name":"tinper-uba","desc":"前端工程化工具","icon":"assets/images/uba.png","introduce":"前端集成开发和调试工具","href":"http://docs.tinper.org/uba/"},
+                {"name":"tinper-uba","desc":"前端工程化工具","icon":"assets/images/uba.png","introduce":"一款可视化跨平台前端集成开发工具","href":"https://github.com/tinper-uba/uba-gui"},
                 {"name":"tinper-tdoc","desc":"静态文档网站生成","icon":"assets/images/doc.svg","introduce":"前端工程文档生成工具","href":"https://github.com/iuap-design/tdoc/blob/master/README.md"},
                 {"name":"bee-tools","icon":"assets/images/bee-tool.svg","introduce":"tinper-bee组件库的前端构建工具","href":"https://github.com/iuap-design/iweb-tool"}
             ]
