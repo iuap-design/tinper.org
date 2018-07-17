@@ -99,6 +99,7 @@ body{
   .home-landscape {
     width: 100%;
     max-height: 590px;
+    min-height: 575px;
     /* background: url("../img/background2.jpg") bottom; */
     background-color: #102131;
     background-repeat: no-repeat;
@@ -478,7 +479,7 @@ body{
   .home-product{
     width: 100%;
     /*margin-top: -160px;*/
-    background: url(../img/background2.jpg) center -40px no-repeat;
+    background: url(../images/background2.jpg) center -40px no-repeat;
     background-size:contain;
   }
   .home-product-content{
@@ -502,7 +503,15 @@ body{
     text-align: left;
     padding-top: 42px;
   }
-  
+  .changelog-content{
+    max-width: 372px;
+    margin: 0 auto;
+    padding-bottom: 18px;
+    text-align: center;
+    border-top: 2px solid #DBE4FD;
+    border-left: 2px solid #DBE4FD;
+    border-right: 2px solid #DBE4FD;
+  }
   .intro-product-content{
     max-width: 
   }
@@ -574,9 +583,9 @@ body{
     border-radius: 4px;
     background: #FFFFFF;
     text-decoration: none;
-    min-height: 177px;
+    min-height: 160px;
     display: block;
-    margin:0 5px 0 5px;
+    margin:5px;
     padding: 23px 30px 16px 30px;
   }
   
@@ -631,12 +640,12 @@ body{
   /*standard*/
   .home-standard{
      width: 100%;
-     margin-top: 50px;
+     margin-top: 120px;
      /*margin-bottom: 20px;*/
   }
   
   .home-standard-content{
-    max-width: 1060px;
+    max-width: 1140px;
     margin: 0 auto;
     min-height: 440px;
   }
@@ -1397,6 +1406,8 @@ body{
   .changelog-row {
     padding: 10px 0;
     font-size: 15px;
+    background-color: #F8FAFD;
+    box-shadow: 0 3px 20px 0 rgba(16,33,49,0.14);
   }
   .versions a {
     font-size: 14px;
