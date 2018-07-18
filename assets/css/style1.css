@@ -846,7 +846,7 @@ width: 100%;
     /*绉诲姩绔鑸爮*/
 
     .mobile-nav-header{
-      border-bottom: 1px solid #eee;
+      /* border-bottom: 1px solid #eee; */
       margin-bottom: 24px;
       padding-bottom: 11px;
     }
