@@ -480,6 +480,7 @@ main {
   position: relative;
   border-top: 1px solid #eee;
   text-align: center;
+  margin:0 10px;
 }
 .copyright-text{
   position: absolute;
@@ -639,6 +640,10 @@ width: 100%;
 
 .row-left .index-post-desc{
   padding-right:0;
+}
+.u-col-md-4,.u-col-4 {
+    width: 100%; 
+    text-align: left;
 }
 }
 

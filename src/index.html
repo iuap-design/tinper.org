@@ -139,7 +139,7 @@
                         <h5>tinper 最新产品动态</h5>
                     </div>
             </div>
-            <div class="changelog-row clearfix">
+            <div class="changelog-row clearfix" id="changelog-row">
                 <div class="versions u-col-4">
                     <a href="dist/log/tinper-bee/tinper-bee.html" title="基于React的UI组件库">
                         <div class="version">
@@ -263,6 +263,7 @@
     <!-- JavaScript -->
     <script>
         var childPro = template(document.getElementById('child-product').innerHTML);
+        //产品矩阵
         var data = {
             newsListPro: childPro,
             group1: [
@@ -287,7 +288,7 @@
                 {"name":"yyy-jssdk","desc":"数据采集SDK","icon":"assets/images/友云音.png","introduce":"源代码及文档在公司内网gitlab","href":"http://git.yonyou.com/mtl/yyy-jssdk/tree/master"}
             ],
             group4:[
-                {"name":"ynpm","desc":"前端包管理中心","icon":"assets/images/ec.svg","introduce":"用友内部镜像仓库，是一款高效的包管理工具","href":"https://github.com/iuap-design/ynpm-tool/blob/master/README.md"},
+                {"name":"ynpm","desc":"前端包管理中心","icon":"assets/images/ec.svg","introduce":"一款快速、安全、可统计的包管理平台","href":"https://package.yonyoucloud.com/"},
                 {"name":"tinper-mock","desc":"在线数据mock服务","icon":"assets/images/clay.svg","introduce":"高效、易用、功能强大的可视化接口管理平台","href":"https://mock.yonyoucloud.com/"},
                 {"name":"tinper-cdn","desc":"公共CDN资源","icon":"assets/images/CDN.svg","introduce":"tinper公共静态资源库","href":"/dist/cdn/index.html"},
                 {"name":"YY-Code-Guide","desc":"开发规范","icon":"assets/images/product2.svg","introduce":"用友云前端开发规范","href":"https://github.com/iuap-design/YY-Code-Guide"},
