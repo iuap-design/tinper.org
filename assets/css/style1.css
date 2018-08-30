@@ -426,6 +426,14 @@ main {
     font-size:45px;
     padding: 0 5px;
 }
+.page .row :first-child>.footer-part{
+    display: flex;
+}
+.page .row img{
+    width: 120px;
+    height: 120px;
+    padding: 0 5px;
+}
 .page .row .footer-part-label{
     display: inline-block;
     /* float: left; */
