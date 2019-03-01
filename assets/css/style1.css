@@ -892,6 +892,9 @@ width: 100%;
     top: 0;
     }
 }
-
-
-
+.home-landscape-content-left img{
+    height:60px;
+}
+.home-landscape-content-right img{
+    height: 305px;
+}
